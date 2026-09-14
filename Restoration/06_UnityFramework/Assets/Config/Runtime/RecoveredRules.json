@@ -1,0 +1,1426 @@
+{
+  "evidence": "CoinItem.js and GameScene.js original constructors; device-cached GameData normalized by original GameManagement; no live server substitution.",
+  "supportedCountries": [
+    "ID",
+    "BR",
+    "PH",
+    "TH",
+    "MY",
+    "US",
+    "GB",
+    "ZA",
+    "NG",
+    "IN",
+    "EG",
+    "VN",
+    "KZ",
+    "MX",
+    "AR",
+    "CO",
+    "RU",
+    "TR",
+    "JP",
+    "KR",
+    "CA",
+    "DE",
+    "FR",
+    "AU",
+    "PK",
+    "BD"
+  ],
+  "drops": [
+    {
+      "threshold": 1,
+      "values": [
+        1
+      ],
+      "weights": [
+        100
+      ]
+    },
+    {
+      "threshold": 2,
+      "values": [
+        1
+      ],
+      "weights": [
+        100
+      ]
+    },
+    {
+      "threshold": 5,
+      "values": [
+        1,
+        2
+      ],
+      "weights": [
+        50,
+        50
+      ]
+    },
+    {
+      "threshold": 10,
+      "values": [
+        1,
+        2,
+        5
+      ],
+      "weights": [
+        30,
+        40,
+        30
+      ]
+    },
+    {
+      "threshold": 20,
+      "values": [
+        1,
+        2,
+        5
+      ],
+      "weights": [
+        30,
+        40,
+        30
+      ]
+    },
+    {
+      "threshold": 50,
+      "values": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "weights": [
+        20,
+        20,
+        30,
+        30
+      ]
+    },
+    {
+      "threshold": 100,
+      "values": [
+        1,
+        2,
+        5,
+        10,
+        50
+      ],
+      "weights": [
+        15,
+        20,
+        25,
+        30,
+        10
+      ]
+    },
+    {
+      "threshold": 200,
+      "values": [
+        1,
+        2,
+        5,
+        10,
+        50
+      ],
+      "weights": [
+        15,
+        20,
+        25,
+        30,
+        10
+      ]
+    },
+    {
+      "threshold": 500,
+      "values": [
+        2,
+        5,
+        10,
+        50
+      ],
+      "weights": [
+        15,
+        40,
+        30,
+        15
+      ]
+    },
+    {
+      "threshold": 1000,
+      "values": [
+        5,
+        10,
+        50
+      ],
+      "weights": [
+        45,
+        35,
+        20
+      ]
+    },
+    {
+      "threshold": 2000,
+      "values": [
+        5,
+        10,
+        50
+      ],
+      "weights": [
+        40,
+        40,
+        20
+      ]
+    }
+  ],
+  "lotteryScores": [
+    {
+      "lotteryCount": 0,
+      "requiredScore": 50
+    },
+    {
+      "lotteryCount": 1,
+      "requiredScore": 150
+    },
+    {
+      "lotteryCount": 3,
+      "requiredScore": 200
+    },
+    {
+      "lotteryCount": 6,
+      "requiredScore": 300
+    },
+    {
+      "lotteryCount": 10,
+      "requiredScore": 400
+    },
+    {
+      "lotteryCount": 20,
+      "requiredScore": 400
+    },
+    {
+      "lotteryCount": 50,
+      "requiredScore": 400
+    },
+    {
+      "lotteryCount": 99999999999,
+      "requiredScore": 400
+    }
+  ],
+  "lotteryRewards": [
+    {
+      "amount": 10000,
+      "probability": 15,
+      "index": 1,
+      "type": "money"
+    },
+    {
+      "amount": 10,
+      "probability": 0,
+      "index": 2,
+      "type": "coin"
+    },
+    {
+      "amount": 5000,
+      "probability": 15,
+      "index": 3,
+      "type": "money"
+    },
+    {
+      "amount": 10000,
+      "probability": 20,
+      "index": 4,
+      "type": "money"
+    },
+    {
+      "amount": 5,
+      "probability": 0,
+      "index": 5,
+      "type": "coin"
+    },
+    {
+      "amount": 5000,
+      "probability": 15,
+      "index": 6,
+      "type": "money"
+    },
+    {
+      "amount": 5000,
+      "probability": 20,
+      "index": 7,
+      "type": "money"
+    },
+    {
+      "amount": 1,
+      "probability": 15,
+      "index": 8,
+      "type": "coin"
+    }
+  ],
+  "cashGroups": [
+    {
+      "baseMinReward": 0.01,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 200,
+          "ratio": 20
+        },
+        {
+          "le": 200,
+          "lh": 300,
+          "ratio": 20
+        },
+        {
+          "le": 300,
+          "lh": 490,
+          "ratio": 20
+        },
+        {
+          "le": 490,
+          "lh": 500,
+          "ratio": 250
+        },
+        {
+          "le": 500,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 500,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 800,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 1000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 2000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 3000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 5000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 220,
+      "countries": [
+        "US",
+        "GB",
+        "CA",
+        "DE",
+        "FR",
+        "AU",
+        "BR",
+        "MY",
+        "TR"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group1",
+      "guideMoney": 220,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 500,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 800,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 1000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 2000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 3000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 5000,
+          "condition_video": 200000
+        }
+      ]
+    },
+    {
+      "baseMinReward": 0.01,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 800,
+          "ratio": 20
+        },
+        {
+          "le": 800,
+          "lh": 1200,
+          "ratio": 20
+        },
+        {
+          "le": 1200,
+          "lh": 1960,
+          "ratio": 20
+        },
+        {
+          "le": 1960,
+          "lh": 2000,
+          "ratio": 250
+        },
+        {
+          "le": 2000,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 2000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 3200,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 4000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 8000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 12000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 20000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 880,
+      "countries": [
+        "MX",
+        "ZA",
+        "EG"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group2",
+      "guideMoney": 880,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 2000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 3200,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 4000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 8000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 12000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 20000,
+          "condition_video": 200000
+        }
+      ]
+    },
+    {
+      "baseMinReward": 0.1,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 2000,
+          "ratio": 20
+        },
+        {
+          "le": 2000,
+          "lh": 3000,
+          "ratio": 20
+        },
+        {
+          "le": 3000,
+          "lh": 4900,
+          "ratio": 20
+        },
+        {
+          "le": 4900,
+          "lh": 5000,
+          "ratio": 250
+        },
+        {
+          "le": 5000,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 5000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 8000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 10000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 20000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 30000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 50000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 2200,
+      "countries": [
+        "RU",
+        "IN",
+        "PH",
+        "TH",
+        "PK",
+        "BD"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group3",
+      "guideMoney": 2200,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 5000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 8000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 10000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 20000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 30000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 50000,
+          "condition_video": 200000
+        }
+      ]
+    },
+    {
+      "baseMinReward": 1,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 20000,
+          "ratio": 20
+        },
+        {
+          "le": 20000,
+          "lh": 30000,
+          "ratio": 20
+        },
+        {
+          "le": 30000,
+          "lh": 49000,
+          "ratio": 20
+        },
+        {
+          "le": 49000,
+          "lh": 50000,
+          "ratio": 250
+        },
+        {
+          "le": 50000,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 50000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 80000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 100000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 300000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 500000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 22000,
+      "countries": [
+        "NG",
+        "JP",
+        "AR",
+        "KZ"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group4",
+      "guideMoney": 22000,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 50000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 80000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 100000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 300000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 500000,
+          "condition_video": 200000
+        }
+      ]
+    },
+    {
+      "baseMinReward": 4,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 80000,
+          "ratio": 20
+        },
+        {
+          "le": 80000,
+          "lh": 120000,
+          "ratio": 20
+        },
+        {
+          "le": 120000,
+          "lh": 196000,
+          "ratio": 20
+        },
+        {
+          "le": 196000,
+          "lh": 200000,
+          "ratio": 250
+        },
+        {
+          "le": 200000,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 320000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 400000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 800000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 1200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 2000000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 88000,
+      "countries": [
+        "CO",
+        "KR"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group5",
+      "guideMoney": 88000,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 320000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 400000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 800000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 1200000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 2000000,
+          "condition_video": 200000
+        }
+      ]
+    },
+    {
+      "baseMinReward": 20,
+      "ranges": [
+        {
+          "le": 0,
+          "lh": 4000000,
+          "ratio": 20
+        },
+        {
+          "le": 4000000,
+          "lh": 6000000,
+          "ratio": 20
+        },
+        {
+          "le": 6000000,
+          "lh": 9800000,
+          "ratio": 20
+        },
+        {
+          "le": 9800000,
+          "lh": 10000000,
+          "ratio": 250
+        },
+        {
+          "le": 10000000,
+          "lh": 999999999999,
+          "ratio": 40
+        }
+      ],
+      "real_products": [
+        {
+          "condition_merge": 100,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 10000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 16000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 20000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 40000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 60000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 600,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 100000000,
+          "condition_video": 200000
+        }
+      ],
+      "newGuideReward": 4400000,
+      "countries": [
+        "VN",
+        "ID"
+      ],
+      "fluctuation": {
+        "min": 0.8,
+        "max": 1.2
+      },
+      "id": "group6",
+      "guideMoney": 4400000,
+      "new_Fake_products": [
+        {
+          "condition_merge": 50,
+          "condition_ad": 50,
+          "condition_login_days": 15,
+          "condition_daily_merge": 5,
+          "id": 1,
+          "condition_coin": 0,
+          "withdrawAmount": 10000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 100,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 2,
+          "condition_coin": 0,
+          "withdrawAmount": 16000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 200,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 3,
+          "condition_coin": 0,
+          "withdrawAmount": 20000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 300,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 4,
+          "condition_coin": 0,
+          "withdrawAmount": 40000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 400,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 5,
+          "condition_coin": 0,
+          "withdrawAmount": 60000000,
+          "condition_video": 200000
+        },
+        {
+          "condition_merge": 500,
+          "condition_ad": 50,
+          "condition_login_days": 30,
+          "condition_daily_merge": 5,
+          "id": 6,
+          "condition_coin": 0,
+          "withdrawAmount": 100000000,
+          "condition_video": 200000
+        }
+      ]
+    }
+  ],
+  "videoRewards": [
+    {
+      "min": 0,
+      "max": 30,
+      "qMin": 0.16,
+      "qMax": 0.25
+    },
+    {
+      "min": 31,
+      "max": 50,
+      "qMin": 0.14,
+      "qMax": 0.22
+    },
+    {
+      "min": 51,
+      "max": 100,
+      "qMin": 0.12,
+      "qMax": 0.18
+    },
+    {
+      "min": 101,
+      "max": 200,
+      "qMin": 0.09,
+      "qMax": 0.15
+    },
+    {
+      "min": 201,
+      "max": 999999,
+      "qMin": 0.08,
+      "qMax": 0.13
+    }
+  ],
+  "coins": [
+    {
+      "value": 1,
+      "upgrade": 2,
+      "mergeScore": 0,
+      "radiusPixels": 27,
+      "visualWidthPixels": 54,
+      "visualHeightPixels": 54,
+      "dropDamping": 0.17,
+      "spritePath": "Gameplay/Coins/1"
+    },
+    {
+      "value": 2,
+      "upgrade": 5,
+      "mergeScore": 1,
+      "radiusPixels": 32,
+      "visualWidthPixels": 64,
+      "visualHeightPixels": 64,
+      "dropDamping": 0.17,
+      "spritePath": "Gameplay/Coins/2"
+    },
+    {
+      "value": 5,
+      "upgrade": 10,
+      "mergeScore": 1,
+      "radiusPixels": 55,
+      "visualWidthPixels": 110,
+      "visualHeightPixels": 110,
+      "dropDamping": 0.3,
+      "spritePath": "Gameplay/Coins/5"
+    },
+    {
+      "value": 10,
+      "upgrade": 20,
+      "mergeScore": 2,
+      "radiusPixels": 57.5,
+      "visualWidthPixels": 116,
+      "visualHeightPixels": 116,
+      "dropDamping": 0.3,
+      "spritePath": "Gameplay/Coins/10"
+    },
+    {
+      "value": 20,
+      "upgrade": 50,
+      "mergeScore": 3,
+      "radiusPixels": 71.5,
+      "visualWidthPixels": 145,
+      "visualHeightPixels": 145,
+      "dropDamping": 0.4,
+      "spritePath": "Gameplay/Coins/20"
+    },
+    {
+      "value": 50,
+      "upgrade": 100,
+      "mergeScore": 4,
+      "radiusPixels": 85,
+      "visualWidthPixels": 174,
+      "visualHeightPixels": 174,
+      "dropDamping": 0.4,
+      "spritePath": "Gameplay/Coins/50"
+    },
+    {
+      "value": 100,
+      "upgrade": 200,
+      "mergeScore": 5,
+      "radiusPixels": 103,
+      "visualWidthPixels": 210,
+      "visualHeightPixels": 210,
+      "dropDamping": 0.4,
+      "spritePath": "Gameplay/Coins/100"
+    },
+    {
+      "value": 200,
+      "upgrade": 500,
+      "mergeScore": 6,
+      "radiusPixels": 121,
+      "visualWidthPixels": 246,
+      "visualHeightPixels": 246,
+      "dropDamping": 0.4,
+      "spritePath": "Gameplay/Coins/200"
+    },
+    {
+      "value": 500,
+      "upgrade": 1000,
+      "mergeScore": 7,
+      "radiusPixels": 131,
+      "visualWidthPixels": 266,
+      "visualHeightPixels": 266,
+      "dropDamping": 0.5,
+      "spritePath": "Gameplay/Coins/500"
+    },
+    {
+      "value": 1000,
+      "upgrade": 2000,
+      "mergeScore": 8,
+      "radiusPixels": 140,
+      "visualWidthPixels": 284,
+      "visualHeightPixels": 284,
+      "dropDamping": 0.5,
+      "spritePath": "Gameplay/Coins/1000"
+    },
+    {
+      "value": 2000,
+      "upgrade": 2000,
+      "mergeScore": 9,
+      "radiusPixels": 192,
+      "visualWidthPixels": 388,
+      "visualHeightPixels": 388,
+      "dropDamping": 0.5,
+      "spritePath": "Gameplay/Coins/2000"
+    }
+  ],
+  "physics": {
+    "gravityPixels": -980,
+    "mergeSensorExtraRadius": 6,
+    "dropGravityBase": 1.55,
+    "dropGravityDistanceBonus": 1.2,
+    "settleGravity": 1.15,
+    "dropSpeedBase": 1150,
+    "dropSpeedDistanceBonus": 1500,
+    "dropSpeedFallback": 3600,
+    "minEffectiveDropDistance": 180,
+    "dropDistanceRange": 900,
+    "dropDampingMultiplier": 0.25,
+    "minimumDropDamping": 0.05,
+    "settleLinearDamping": 2.45,
+    "contactSettleDelay": 0.35,
+    "angularDamping": 12,
+    "density": 0.55,
+    "densityRadiusBase": 55,
+    "densityMin": 0.18,
+    "densityMax": 0.75,
+    "restitution": 0.25,
+    "friction": 0.4
+  },
+  "flow": {
+    "initialBottomValues": [
+      1,
+      2,
+      5,
+      2,
+      1
+    ],
+    "firstRewardDrop": 10,
+    "secondRewardDrop": 16,
+    "adRewardDrop": 22,
+    "drawRewardStrong": 1,
+    "validLoginMergeCount": 5,
+    "saveInterval": 2,
+    "previewDelay": 0.3,
+    "spawnDuration": 0.18,
+    "spawnInitialScale": 0.2,
+    "spawnUnlockBuffer": 0.05,
+    "popupDelay": 0.6,
+    "idleGuideDelay": 15,
+    "failStillVelocity": 2,
+    "failStillAngularVelocity": 2,
+    "failStillDuration": 0.35,
+    "failMaxWait": 2,
+    "failAnimationDuration": 1.15,
+    "mergeSpawnLiftPixels": 28
+  }
+}
