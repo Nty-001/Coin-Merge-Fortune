@@ -1,0 +1,27 @@
+{
+    "passed": true,
+    "unityVersion": "2022.3.62f3c1",
+    "error": "",
+    "checks": [
+        "Five original bottom coins plus a world-space preview",
+        "Preview sprite loaded with physics disabled",
+        "Embedded default is US rewarded cohort B",
+        "Drop accepted after preview tween",
+        "Released preview leaves queue until delay elapses",
+        "Real physics contact merges 1+1 into 2 and awards original score",
+        "Merged world-space SpriteRenderer coin exists",
+        "Saved board reload preserves merged coin and cumulative score",
+        "Player reset retains separate GM profile",
+        "Guide Button opens initial cash reward",
+        "Guide reward settles real cached guideMoney once",
+        "Remaining guide Buttons reach original terminal step",
+        "Failure delay opens original fail prefab",
+        "Failed revive ad leaves failure dialog usable",
+        "Completed 3_A ad opens revive reward",
+        "Revive reward closes, grants cash, resumes physics",
+        "Revive removes ceil(5/3) lower coins and restores one preview",
+        "Original revive placement crosses existing SDK mock facade",
+        "Failure restart retains draw score and cash; no initial coins recreated"
+    ],
+    "scope": "Actual Unity Play Mode: physical merge, queue, save, guide cash, fail/revive mock branches. Does not certify visual/whole-lifecycle parity."
+}
