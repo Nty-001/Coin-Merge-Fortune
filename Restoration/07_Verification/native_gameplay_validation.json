@@ -21,7 +21,14 @@
         "Revive reward closes, grants cash, resumes physics",
         "Revive removes ceil(5/3) lower coins and restores one preview",
         "Original revive placement crosses existing SDK mock facade",
-        "Failure restart retains draw score and cash; no initial coins recreated"
+        "Failure restart retains draw score and cash; no initial coins recreated",
+        "Score threshold automatically opens wheel after original popup delay",
+        "Wheel Button starts animation without spending score early",
+        "Wheel animation completes before score spending and prize popup",
+        "Unavailable 2_A ad leaves prize unsettled",
+        "Started-but-failed 2_A ad settles exactly as original error callback",
+        "Repeated prize click is idempotent",
+        "Wheel reward crosses original SDK placement"
     ],
     "scope": "Actual Unity Play Mode: physical merge, queue, save, guide cash, fail/revive mock branches. Does not certify visual/whole-lifecycle parity."
 }

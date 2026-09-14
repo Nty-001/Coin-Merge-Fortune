@@ -24,9 +24,10 @@
     "Some field semantics require further manual verification; exact values and code references are preserved.",
     "Custom gameplay and dynamic UI behavior need C# ports and prefab binding.",
     "Spine mesh/clipping/deform and exact animations need Unity-native conversion.",
-    "Native gameplay Play Mode passes 19 checks; full lifecycle, visuals and cross-engine physics trajectories remain incomplete.",
+    "Native gameplay Play Mode passes 26 checks; full lifecycle, visuals and cross-engine physics trajectories remain incomplete.",
     "Native disassembly preserves code bytes but is not source-level semantic recovery."
   ],
-  "nativeGameplayPlayMode": "passed_19_checks",
-  "csharpOriginalJsDifferentialCases": 900
+  "nativeGameplayPlayMode": "passed_26_checks",
+  "csharpOriginalJsDifferentialCases": 900,
+  "csharpOriginalMoneyFormatCases": 364
 }

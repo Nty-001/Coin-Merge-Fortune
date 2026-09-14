@@ -107,6 +107,23 @@ namespace CoinMerge.Recovery.Editor
                         player.gameTotalScore=151;player.roundScore=42;double balance=player.fakeMoney;
                         board.TriggerFailure();board.ResetAfterFailure();
                         Require(player.gameTotalScore==151&&player.roundScore==0&&player.fakeMoney==balance&&board.Coins.Count==1,"Failure restart retains draw score and cash; no initial coins recreated");
+                        player.gameTotalScore=50;board.ResetAfterFailure();next=EditorApplication.timeSinceStartup+1;break;
+                    case 4:
+                        Require(session.wheelView.gameObject.activeSelf,"Score threshold automatically opens wheel after original popup delay");
+                        session.wheelView.draw.onClick.Invoke();
+                        Require(session.wheelView.IsSpinning&&player.gameTotalScore==50,"Wheel Button starts animation without spending score early");
+                        Capture("native_wheel.png");next=EditorApplication.timeSinceStartup+10;break;
+                    case 5:
+                        Require(session.wheelRewardView.gameObject.activeSelf&&player.currentLotteryCount==1&&player.gameTotalScore==0,"Wheel animation completes before score spending and prize popup");
+                        beforeReward=player.fakeMoney;int beforeCoins=player.coin1024Number;
+                        session.Sdk.NextAdOutcome=AdOutcome.Unavailable;session.wheelRewardView.claim.onClick.Invoke();
+                        Require(session.wheelRewardView.gameObject.activeSelf&&player.fakeMoney==beforeReward&&player.coin1024Number==beforeCoins,"Unavailable 2_A ad leaves prize unsettled");
+                        double prize=session.wheelRewardView.Cash;int coinPrize=session.wheelRewardView.Coins;
+                        session.Sdk.NextAdOutcome=AdOutcome.Failed;session.wheelRewardView.claim.onClick.Invoke();
+                        Require(!session.wheelRewardView.gameObject.activeSelf&&player.fakeMoney==beforeReward+prize&&player.coin1024Number==beforeCoins+coinPrize,"Started-but-failed 2_A ad settles exactly as original error callback");
+                        session.wheelRewardView.claim.onClick.Invoke();
+                        Require(player.fakeMoney==beforeReward+prize&&player.coin1024Number==beforeCoins+coinPrize,"Repeated prize click is idempotent");
+                        Require(session.Sdk.Trace.Contains("ad.request:2_A"),"Wheel reward crosses original SDK placement");
                         Finish(null);break;
                 }
             }

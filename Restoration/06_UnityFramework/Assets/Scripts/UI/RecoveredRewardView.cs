@@ -8,6 +8,7 @@ namespace CoinMerge.Recovery
         public GameObject highestGroup,normalGroup,guideGroup,doubleGroup;
         public Text highestAmount,normalAmount,guideAmount,doubleAmount;
         public Button mask,highestClose,guideClose;
+        public RecoveredLocalization Locale {get;set;}
         public event Action Closed;
         public int Kind {get;private set;}
         public double Amount {get;private set;}
@@ -17,7 +18,7 @@ namespace CoinMerge.Recovery
         {
             Kind=kind;Amount=amount;
             highestGroup.SetActive(kind==4);normalGroup.SetActive(kind==3);guideGroup.SetActive(kind==5);doubleGroup.SetActive(kind==1||kind==2);
-            string value=amount.ToString("F2",System.Globalization.CultureInfo.InvariantCulture);
+            string value=Locale.Money(amount);
             highestAmount.text=normalAmount.text=guideAmount.text=doubleAmount.text=value;
             autoClose=kind==2||kind==3?1.5f:-1;gameObject.SetActive(true);
         }

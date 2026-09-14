@@ -10,5 +10,6 @@ namespace CoinMerge.Recovery
         [Min(1)] public int velocityIterations=10,positionIterations=10;
         public string defaultCountry="US",defaultCohort="B";
         public bool defaultRewardedVariant=true;
+        public RecoveredWheelTimings wheel=new RecoveredWheelTimings();
     }
 }

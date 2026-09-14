@@ -1,0 +1,1824 @@
+{
+  "vectors": [
+    {
+      "country": "ID",
+      "amount": 0,
+      "expected": "Rp0"
+    },
+    {
+      "country": "ID",
+      "amount": 0.005,
+      "expected": "Rp0"
+    },
+    {
+      "country": "ID",
+      "amount": 0.145,
+      "expected": "Rp0"
+    },
+    {
+      "country": "ID",
+      "amount": 0.999,
+      "expected": "Rp1"
+    },
+    {
+      "country": "ID",
+      "amount": 1,
+      "expected": "Rp1"
+    },
+    {
+      "country": "ID",
+      "amount": 1.005,
+      "expected": "Rp1"
+    },
+    {
+      "country": "ID",
+      "amount": 1.995,
+      "expected": "Rp2"
+    },
+    {
+      "country": "ID",
+      "amount": 9.999,
+      "expected": "Rp10"
+    },
+    {
+      "country": "ID",
+      "amount": 100.5,
+      "expected": "Rp101"
+    },
+    {
+      "country": "ID",
+      "amount": 234.28,
+      "expected": "Rp234"
+    },
+    {
+      "country": "ID",
+      "amount": 999.999,
+      "expected": "Rp1,000"
+    },
+    {
+      "country": "ID",
+      "amount": 1234.567,
+      "expected": "Rp1,235"
+    },
+    {
+      "country": "ID",
+      "amount": 10000.995,
+      "expected": "Rp10,001"
+    },
+    {
+      "country": "ID",
+      "amount": 500000,
+      "expected": "Rp500,000"
+    },
+    {
+      "country": "BR",
+      "amount": 0,
+      "expected": "R$0"
+    },
+    {
+      "country": "BR",
+      "amount": 0.005,
+      "expected": "R$0"
+    },
+    {
+      "country": "BR",
+      "amount": 0.145,
+      "expected": "R$0.14"
+    },
+    {
+      "country": "BR",
+      "amount": 0.999,
+      "expected": "R$0.99"
+    },
+    {
+      "country": "BR",
+      "amount": 1,
+      "expected": "R$1"
+    },
+    {
+      "country": "BR",
+      "amount": 1.005,
+      "expected": "R$1"
+    },
+    {
+      "country": "BR",
+      "amount": 1.995,
+      "expected": "R$1.99"
+    },
+    {
+      "country": "BR",
+      "amount": 9.999,
+      "expected": "R$9.99"
+    },
+    {
+      "country": "BR",
+      "amount": 100.5,
+      "expected": "R$100.5"
+    },
+    {
+      "country": "BR",
+      "amount": 234.28,
+      "expected": "R$234.28"
+    },
+    {
+      "country": "BR",
+      "amount": 999.999,
+      "expected": "R$999.99"
+    },
+    {
+      "country": "BR",
+      "amount": 1234.567,
+      "expected": "R$1,234.56"
+    },
+    {
+      "country": "BR",
+      "amount": 10000.995,
+      "expected": "R$10,000.99"
+    },
+    {
+      "country": "BR",
+      "amount": 500000,
+      "expected": "R$500,000"
+    },
+    {
+      "country": "PH",
+      "amount": 0,
+      "expected": "₱0"
+    },
+    {
+      "country": "PH",
+      "amount": 0.005,
+      "expected": "₱0"
+    },
+    {
+      "country": "PH",
+      "amount": 0.145,
+      "expected": "₱0.14"
+    },
+    {
+      "country": "PH",
+      "amount": 0.999,
+      "expected": "₱0.99"
+    },
+    {
+      "country": "PH",
+      "amount": 1,
+      "expected": "₱1"
+    },
+    {
+      "country": "PH",
+      "amount": 1.005,
+      "expected": "₱1"
+    },
+    {
+      "country": "PH",
+      "amount": 1.995,
+      "expected": "₱1.99"
+    },
+    {
+      "country": "PH",
+      "amount": 9.999,
+      "expected": "₱9.99"
+    },
+    {
+      "country": "PH",
+      "amount": 100.5,
+      "expected": "₱100.5"
+    },
+    {
+      "country": "PH",
+      "amount": 234.28,
+      "expected": "₱234.28"
+    },
+    {
+      "country": "PH",
+      "amount": 999.999,
+      "expected": "₱999.99"
+    },
+    {
+      "country": "PH",
+      "amount": 1234.567,
+      "expected": "₱1,234.56"
+    },
+    {
+      "country": "PH",
+      "amount": 10000.995,
+      "expected": "₱10,000.99"
+    },
+    {
+      "country": "PH",
+      "amount": 500000,
+      "expected": "₱500,000"
+    },
+    {
+      "country": "TH",
+      "amount": 0,
+      "expected": "฿0"
+    },
+    {
+      "country": "TH",
+      "amount": 0.005,
+      "expected": "฿0"
+    },
+    {
+      "country": "TH",
+      "amount": 0.145,
+      "expected": "฿0.14"
+    },
+    {
+      "country": "TH",
+      "amount": 0.999,
+      "expected": "฿0.99"
+    },
+    {
+      "country": "TH",
+      "amount": 1,
+      "expected": "฿1"
+    },
+    {
+      "country": "TH",
+      "amount": 1.005,
+      "expected": "฿1"
+    },
+    {
+      "country": "TH",
+      "amount": 1.995,
+      "expected": "฿1.99"
+    },
+    {
+      "country": "TH",
+      "amount": 9.999,
+      "expected": "฿9.99"
+    },
+    {
+      "country": "TH",
+      "amount": 100.5,
+      "expected": "฿100.5"
+    },
+    {
+      "country": "TH",
+      "amount": 234.28,
+      "expected": "฿234.28"
+    },
+    {
+      "country": "TH",
+      "amount": 999.999,
+      "expected": "฿999.99"
+    },
+    {
+      "country": "TH",
+      "amount": 1234.567,
+      "expected": "฿1,234.56"
+    },
+    {
+      "country": "TH",
+      "amount": 10000.995,
+      "expected": "฿10,000.99"
+    },
+    {
+      "country": "TH",
+      "amount": 500000,
+      "expected": "฿500,000"
+    },
+    {
+      "country": "MY",
+      "amount": 0,
+      "expected": "RM0"
+    },
+    {
+      "country": "MY",
+      "amount": 0.005,
+      "expected": "RM0"
+    },
+    {
+      "country": "MY",
+      "amount": 0.145,
+      "expected": "RM0.14"
+    },
+    {
+      "country": "MY",
+      "amount": 0.999,
+      "expected": "RM0.99"
+    },
+    {
+      "country": "MY",
+      "amount": 1,
+      "expected": "RM1"
+    },
+    {
+      "country": "MY",
+      "amount": 1.005,
+      "expected": "RM1"
+    },
+    {
+      "country": "MY",
+      "amount": 1.995,
+      "expected": "RM1.99"
+    },
+    {
+      "country": "MY",
+      "amount": 9.999,
+      "expected": "RM9.99"
+    },
+    {
+      "country": "MY",
+      "amount": 100.5,
+      "expected": "RM100.5"
+    },
+    {
+      "country": "MY",
+      "amount": 234.28,
+      "expected": "RM234.28"
+    },
+    {
+      "country": "MY",
+      "amount": 999.999,
+      "expected": "RM999.99"
+    },
+    {
+      "country": "MY",
+      "amount": 1234.567,
+      "expected": "RM1,234.56"
+    },
+    {
+      "country": "MY",
+      "amount": 10000.995,
+      "expected": "RM10,000.99"
+    },
+    {
+      "country": "MY",
+      "amount": 500000,
+      "expected": "RM500,000"
+    },
+    {
+      "country": "US",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "US",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "US",
+      "amount": 0.145,
+      "expected": "$0.14"
+    },
+    {
+      "country": "US",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "US",
+      "amount": 1,
+      "expected": "$1"
+    },
+    {
+      "country": "US",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "US",
+      "amount": 1.995,
+      "expected": "$1.99"
+    },
+    {
+      "country": "US",
+      "amount": 9.999,
+      "expected": "$9.99"
+    },
+    {
+      "country": "US",
+      "amount": 100.5,
+      "expected": "$100.5"
+    },
+    {
+      "country": "US",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "US",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "US",
+      "amount": 1234.567,
+      "expected": "$1,234.56"
+    },
+    {
+      "country": "US",
+      "amount": 10000.995,
+      "expected": "$10,000.99"
+    },
+    {
+      "country": "US",
+      "amount": 500000,
+      "expected": "$500,000"
+    },
+    {
+      "country": "GB",
+      "amount": 0,
+      "expected": "£0"
+    },
+    {
+      "country": "GB",
+      "amount": 0.005,
+      "expected": "£0"
+    },
+    {
+      "country": "GB",
+      "amount": 0.145,
+      "expected": "£0.14"
+    },
+    {
+      "country": "GB",
+      "amount": 0.999,
+      "expected": "£0.99"
+    },
+    {
+      "country": "GB",
+      "amount": 1,
+      "expected": "£1"
+    },
+    {
+      "country": "GB",
+      "amount": 1.005,
+      "expected": "£1"
+    },
+    {
+      "country": "GB",
+      "amount": 1.995,
+      "expected": "£1.99"
+    },
+    {
+      "country": "GB",
+      "amount": 9.999,
+      "expected": "£9.99"
+    },
+    {
+      "country": "GB",
+      "amount": 100.5,
+      "expected": "£100.5"
+    },
+    {
+      "country": "GB",
+      "amount": 234.28,
+      "expected": "£234.28"
+    },
+    {
+      "country": "GB",
+      "amount": 999.999,
+      "expected": "£999.99"
+    },
+    {
+      "country": "GB",
+      "amount": 1234.567,
+      "expected": "£1,234.56"
+    },
+    {
+      "country": "GB",
+      "amount": 10000.995,
+      "expected": "£10,000.99"
+    },
+    {
+      "country": "GB",
+      "amount": 500000,
+      "expected": "£500,000"
+    },
+    {
+      "country": "ZA",
+      "amount": 0,
+      "expected": "R.0"
+    },
+    {
+      "country": "ZA",
+      "amount": 0.005,
+      "expected": "R.0"
+    },
+    {
+      "country": "ZA",
+      "amount": 0.145,
+      "expected": "R.0.14"
+    },
+    {
+      "country": "ZA",
+      "amount": 0.999,
+      "expected": "R.0.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 1,
+      "expected": "R.1"
+    },
+    {
+      "country": "ZA",
+      "amount": 1.005,
+      "expected": "R.1"
+    },
+    {
+      "country": "ZA",
+      "amount": 1.995,
+      "expected": "R.1.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 9.999,
+      "expected": "R.9.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 100.5,
+      "expected": "R.100.5"
+    },
+    {
+      "country": "ZA",
+      "amount": 234.28,
+      "expected": "R.234.28"
+    },
+    {
+      "country": "ZA",
+      "amount": 999.999,
+      "expected": "R.999.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 1234.567,
+      "expected": "R.1,234.56"
+    },
+    {
+      "country": "ZA",
+      "amount": 10000.995,
+      "expected": "R.10,000.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 500000,
+      "expected": "R.500,000"
+    },
+    {
+      "country": "NG",
+      "amount": 0,
+      "expected": "₦0"
+    },
+    {
+      "country": "NG",
+      "amount": 0.005,
+      "expected": "₦0"
+    },
+    {
+      "country": "NG",
+      "amount": 0.145,
+      "expected": "₦0"
+    },
+    {
+      "country": "NG",
+      "amount": 0.999,
+      "expected": "₦1"
+    },
+    {
+      "country": "NG",
+      "amount": 1,
+      "expected": "₦1"
+    },
+    {
+      "country": "NG",
+      "amount": 1.005,
+      "expected": "₦1"
+    },
+    {
+      "country": "NG",
+      "amount": 1.995,
+      "expected": "₦2"
+    },
+    {
+      "country": "NG",
+      "amount": 9.999,
+      "expected": "₦10"
+    },
+    {
+      "country": "NG",
+      "amount": 100.5,
+      "expected": "₦101"
+    },
+    {
+      "country": "NG",
+      "amount": 234.28,
+      "expected": "₦234"
+    },
+    {
+      "country": "NG",
+      "amount": 999.999,
+      "expected": "₦1,000"
+    },
+    {
+      "country": "NG",
+      "amount": 1234.567,
+      "expected": "₦1,235"
+    },
+    {
+      "country": "NG",
+      "amount": 10000.995,
+      "expected": "₦10,001"
+    },
+    {
+      "country": "NG",
+      "amount": 500000,
+      "expected": "₦500,000"
+    },
+    {
+      "country": "IN",
+      "amount": 0,
+      "expected": "₹0"
+    },
+    {
+      "country": "IN",
+      "amount": 0.005,
+      "expected": "₹0"
+    },
+    {
+      "country": "IN",
+      "amount": 0.145,
+      "expected": "₹0.14"
+    },
+    {
+      "country": "IN",
+      "amount": 0.999,
+      "expected": "₹0.99"
+    },
+    {
+      "country": "IN",
+      "amount": 1,
+      "expected": "₹1"
+    },
+    {
+      "country": "IN",
+      "amount": 1.005,
+      "expected": "₹1"
+    },
+    {
+      "country": "IN",
+      "amount": 1.995,
+      "expected": "₹1.99"
+    },
+    {
+      "country": "IN",
+      "amount": 9.999,
+      "expected": "₹9.99"
+    },
+    {
+      "country": "IN",
+      "amount": 100.5,
+      "expected": "₹100.5"
+    },
+    {
+      "country": "IN",
+      "amount": 234.28,
+      "expected": "₹234.28"
+    },
+    {
+      "country": "IN",
+      "amount": 999.999,
+      "expected": "₹999.99"
+    },
+    {
+      "country": "IN",
+      "amount": 1234.567,
+      "expected": "₹1234.56"
+    },
+    {
+      "country": "IN",
+      "amount": 10000.995,
+      "expected": "₹10000.99"
+    },
+    {
+      "country": "IN",
+      "amount": 500000,
+      "expected": "₹500000"
+    },
+    {
+      "country": "EG",
+      "amount": 0,
+      "expected": "0E£"
+    },
+    {
+      "country": "EG",
+      "amount": 0.005,
+      "expected": "0E£"
+    },
+    {
+      "country": "EG",
+      "amount": 0.145,
+      "expected": "0.14E£"
+    },
+    {
+      "country": "EG",
+      "amount": 0.999,
+      "expected": "0.99E£"
+    },
+    {
+      "country": "EG",
+      "amount": 1,
+      "expected": "1E£"
+    },
+    {
+      "country": "EG",
+      "amount": 1.005,
+      "expected": "1E£"
+    },
+    {
+      "country": "EG",
+      "amount": 1.995,
+      "expected": "1.99E£"
+    },
+    {
+      "country": "EG",
+      "amount": 9.999,
+      "expected": "9.99E£"
+    },
+    {
+      "country": "EG",
+      "amount": 100.5,
+      "expected": "100.5E£"
+    },
+    {
+      "country": "EG",
+      "amount": 234.28,
+      "expected": "234.28E£"
+    },
+    {
+      "country": "EG",
+      "amount": 999.999,
+      "expected": "999.99E£"
+    },
+    {
+      "country": "EG",
+      "amount": 1234.567,
+      "expected": "1,234.56E£"
+    },
+    {
+      "country": "EG",
+      "amount": 10000.995,
+      "expected": "10,000.99E£"
+    },
+    {
+      "country": "EG",
+      "amount": 500000,
+      "expected": "500,000E£"
+    },
+    {
+      "country": "VN",
+      "amount": 0,
+      "expected": "0₫"
+    },
+    {
+      "country": "VN",
+      "amount": 0.005,
+      "expected": "0₫"
+    },
+    {
+      "country": "VN",
+      "amount": 0.145,
+      "expected": "0₫"
+    },
+    {
+      "country": "VN",
+      "amount": 0.999,
+      "expected": "1₫"
+    },
+    {
+      "country": "VN",
+      "amount": 1,
+      "expected": "1₫"
+    },
+    {
+      "country": "VN",
+      "amount": 1.005,
+      "expected": "1₫"
+    },
+    {
+      "country": "VN",
+      "amount": 1.995,
+      "expected": "2₫"
+    },
+    {
+      "country": "VN",
+      "amount": 9.999,
+      "expected": "10₫"
+    },
+    {
+      "country": "VN",
+      "amount": 100.5,
+      "expected": "101₫"
+    },
+    {
+      "country": "VN",
+      "amount": 234.28,
+      "expected": "234₫"
+    },
+    {
+      "country": "VN",
+      "amount": 999.999,
+      "expected": "1,000₫"
+    },
+    {
+      "country": "VN",
+      "amount": 1234.567,
+      "expected": "1,235₫"
+    },
+    {
+      "country": "VN",
+      "amount": 10000.995,
+      "expected": "10,001₫"
+    },
+    {
+      "country": "VN",
+      "amount": 500000,
+      "expected": "500,000₫"
+    },
+    {
+      "country": "KZ",
+      "amount": 0,
+      "expected": "0₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 0.005,
+      "expected": "0₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 0.145,
+      "expected": "0₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 0.999,
+      "expected": "1₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 1,
+      "expected": "1₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 1.005,
+      "expected": "1₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 1.995,
+      "expected": "2₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 9.999,
+      "expected": "10₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 100.5,
+      "expected": "101₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 234.28,
+      "expected": "234₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 999.999,
+      "expected": "1 000₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 1234.567,
+      "expected": "1 235₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 10000.995,
+      "expected": "10 001₸"
+    },
+    {
+      "country": "KZ",
+      "amount": 500000,
+      "expected": "500 000₸"
+    },
+    {
+      "country": "MX",
+      "amount": 0,
+      "expected": "Mex$0"
+    },
+    {
+      "country": "MX",
+      "amount": 0.005,
+      "expected": "Mex$0"
+    },
+    {
+      "country": "MX",
+      "amount": 0.145,
+      "expected": "Mex$0.14"
+    },
+    {
+      "country": "MX",
+      "amount": 0.999,
+      "expected": "Mex$0.99"
+    },
+    {
+      "country": "MX",
+      "amount": 1,
+      "expected": "Mex$1"
+    },
+    {
+      "country": "MX",
+      "amount": 1.005,
+      "expected": "Mex$1"
+    },
+    {
+      "country": "MX",
+      "amount": 1.995,
+      "expected": "Mex$1.99"
+    },
+    {
+      "country": "MX",
+      "amount": 9.999,
+      "expected": "Mex$9.99"
+    },
+    {
+      "country": "MX",
+      "amount": 100.5,
+      "expected": "Mex$100.5"
+    },
+    {
+      "country": "MX",
+      "amount": 234.28,
+      "expected": "Mex$234.28"
+    },
+    {
+      "country": "MX",
+      "amount": 999.999,
+      "expected": "Mex$999.99"
+    },
+    {
+      "country": "MX",
+      "amount": 1234.567,
+      "expected": "Mex$1,234.56"
+    },
+    {
+      "country": "MX",
+      "amount": 10000.995,
+      "expected": "Mex$10,000.99"
+    },
+    {
+      "country": "MX",
+      "amount": 500000,
+      "expected": "Mex$500,000"
+    },
+    {
+      "country": "AR",
+      "amount": 0,
+      "expected": "ARS$0"
+    },
+    {
+      "country": "AR",
+      "amount": 0.005,
+      "expected": "ARS$0"
+    },
+    {
+      "country": "AR",
+      "amount": 0.145,
+      "expected": "ARS$0"
+    },
+    {
+      "country": "AR",
+      "amount": 0.999,
+      "expected": "ARS$1"
+    },
+    {
+      "country": "AR",
+      "amount": 1,
+      "expected": "ARS$1"
+    },
+    {
+      "country": "AR",
+      "amount": 1.005,
+      "expected": "ARS$1"
+    },
+    {
+      "country": "AR",
+      "amount": 1.995,
+      "expected": "ARS$2"
+    },
+    {
+      "country": "AR",
+      "amount": 9.999,
+      "expected": "ARS$10"
+    },
+    {
+      "country": "AR",
+      "amount": 100.5,
+      "expected": "ARS$101"
+    },
+    {
+      "country": "AR",
+      "amount": 234.28,
+      "expected": "ARS$234"
+    },
+    {
+      "country": "AR",
+      "amount": 999.999,
+      "expected": "ARS$1.000"
+    },
+    {
+      "country": "AR",
+      "amount": 1234.567,
+      "expected": "ARS$1.235"
+    },
+    {
+      "country": "AR",
+      "amount": 10000.995,
+      "expected": "ARS$10.001"
+    },
+    {
+      "country": "AR",
+      "amount": 500000,
+      "expected": "ARS$500.000"
+    },
+    {
+      "country": "CO",
+      "amount": 0,
+      "expected": "Col$0"
+    },
+    {
+      "country": "CO",
+      "amount": 0.005,
+      "expected": "Col$0"
+    },
+    {
+      "country": "CO",
+      "amount": 0.145,
+      "expected": "Col$0"
+    },
+    {
+      "country": "CO",
+      "amount": 0.999,
+      "expected": "Col$1"
+    },
+    {
+      "country": "CO",
+      "amount": 1,
+      "expected": "Col$1"
+    },
+    {
+      "country": "CO",
+      "amount": 1.005,
+      "expected": "Col$1"
+    },
+    {
+      "country": "CO",
+      "amount": 1.995,
+      "expected": "Col$2"
+    },
+    {
+      "country": "CO",
+      "amount": 9.999,
+      "expected": "Col$10"
+    },
+    {
+      "country": "CO",
+      "amount": 100.5,
+      "expected": "Col$101"
+    },
+    {
+      "country": "CO",
+      "amount": 234.28,
+      "expected": "Col$234"
+    },
+    {
+      "country": "CO",
+      "amount": 999.999,
+      "expected": "Col$1.000"
+    },
+    {
+      "country": "CO",
+      "amount": 1234.567,
+      "expected": "Col$1.235"
+    },
+    {
+      "country": "CO",
+      "amount": 10000.995,
+      "expected": "Col$10.001"
+    },
+    {
+      "country": "CO",
+      "amount": 500000,
+      "expected": "Col$500.000"
+    },
+    {
+      "country": "RU",
+      "amount": 0,
+      "expected": "0₽"
+    },
+    {
+      "country": "RU",
+      "amount": 0.005,
+      "expected": "0₽"
+    },
+    {
+      "country": "RU",
+      "amount": 0.145,
+      "expected": "0,14₽"
+    },
+    {
+      "country": "RU",
+      "amount": 0.999,
+      "expected": "0,99₽"
+    },
+    {
+      "country": "RU",
+      "amount": 1,
+      "expected": "1₽"
+    },
+    {
+      "country": "RU",
+      "amount": 1.005,
+      "expected": "1₽"
+    },
+    {
+      "country": "RU",
+      "amount": 1.995,
+      "expected": "1,99₽"
+    },
+    {
+      "country": "RU",
+      "amount": 9.999,
+      "expected": "9,99₽"
+    },
+    {
+      "country": "RU",
+      "amount": 100.5,
+      "expected": "100,5₽"
+    },
+    {
+      "country": "RU",
+      "amount": 234.28,
+      "expected": "234,28₽"
+    },
+    {
+      "country": "RU",
+      "amount": 999.999,
+      "expected": "999,99₽"
+    },
+    {
+      "country": "RU",
+      "amount": 1234.567,
+      "expected": "1 234,56₽"
+    },
+    {
+      "country": "RU",
+      "amount": 10000.995,
+      "expected": "10 000,99₽"
+    },
+    {
+      "country": "RU",
+      "amount": 500000,
+      "expected": "500 000₽"
+    },
+    {
+      "country": "TR",
+      "amount": 0,
+      "expected": "₺0"
+    },
+    {
+      "country": "TR",
+      "amount": 0.005,
+      "expected": "₺0"
+    },
+    {
+      "country": "TR",
+      "amount": 0.145,
+      "expected": "₺0.14"
+    },
+    {
+      "country": "TR",
+      "amount": 0.999,
+      "expected": "₺0.99"
+    },
+    {
+      "country": "TR",
+      "amount": 1,
+      "expected": "₺1"
+    },
+    {
+      "country": "TR",
+      "amount": 1.005,
+      "expected": "₺1"
+    },
+    {
+      "country": "TR",
+      "amount": 1.995,
+      "expected": "₺1.99"
+    },
+    {
+      "country": "TR",
+      "amount": 9.999,
+      "expected": "₺9.99"
+    },
+    {
+      "country": "TR",
+      "amount": 100.5,
+      "expected": "₺100.5"
+    },
+    {
+      "country": "TR",
+      "amount": 234.28,
+      "expected": "₺234.28"
+    },
+    {
+      "country": "TR",
+      "amount": 999.999,
+      "expected": "₺999.99"
+    },
+    {
+      "country": "TR",
+      "amount": 1234.567,
+      "expected": "₺1.234.56"
+    },
+    {
+      "country": "TR",
+      "amount": 10000.995,
+      "expected": "₺10.000.99"
+    },
+    {
+      "country": "TR",
+      "amount": 500000,
+      "expected": "₺500.000"
+    },
+    {
+      "country": "JP",
+      "amount": 0,
+      "expected": "0円"
+    },
+    {
+      "country": "JP",
+      "amount": 0.005,
+      "expected": "0円"
+    },
+    {
+      "country": "JP",
+      "amount": 0.145,
+      "expected": "0円"
+    },
+    {
+      "country": "JP",
+      "amount": 0.999,
+      "expected": "1円"
+    },
+    {
+      "country": "JP",
+      "amount": 1,
+      "expected": "1円"
+    },
+    {
+      "country": "JP",
+      "amount": 1.005,
+      "expected": "1円"
+    },
+    {
+      "country": "JP",
+      "amount": 1.995,
+      "expected": "2円"
+    },
+    {
+      "country": "JP",
+      "amount": 9.999,
+      "expected": "10円"
+    },
+    {
+      "country": "JP",
+      "amount": 100.5,
+      "expected": "101円"
+    },
+    {
+      "country": "JP",
+      "amount": 234.28,
+      "expected": "234円"
+    },
+    {
+      "country": "JP",
+      "amount": 999.999,
+      "expected": "1,000円"
+    },
+    {
+      "country": "JP",
+      "amount": 1234.567,
+      "expected": "1,235円"
+    },
+    {
+      "country": "JP",
+      "amount": 10000.995,
+      "expected": "10,001円"
+    },
+    {
+      "country": "JP",
+      "amount": 500000,
+      "expected": "500,000円"
+    },
+    {
+      "country": "KR",
+      "amount": 0,
+      "expected": "₩0"
+    },
+    {
+      "country": "KR",
+      "amount": 0.005,
+      "expected": "₩0"
+    },
+    {
+      "country": "KR",
+      "amount": 0.145,
+      "expected": "₩0"
+    },
+    {
+      "country": "KR",
+      "amount": 0.999,
+      "expected": "₩1"
+    },
+    {
+      "country": "KR",
+      "amount": 1,
+      "expected": "₩1"
+    },
+    {
+      "country": "KR",
+      "amount": 1.005,
+      "expected": "₩1"
+    },
+    {
+      "country": "KR",
+      "amount": 1.995,
+      "expected": "₩2"
+    },
+    {
+      "country": "KR",
+      "amount": 9.999,
+      "expected": "₩10"
+    },
+    {
+      "country": "KR",
+      "amount": 100.5,
+      "expected": "₩101"
+    },
+    {
+      "country": "KR",
+      "amount": 234.28,
+      "expected": "₩234"
+    },
+    {
+      "country": "KR",
+      "amount": 999.999,
+      "expected": "₩1,000"
+    },
+    {
+      "country": "KR",
+      "amount": 1234.567,
+      "expected": "₩1,235"
+    },
+    {
+      "country": "KR",
+      "amount": 10000.995,
+      "expected": "₩10,001"
+    },
+    {
+      "country": "KR",
+      "amount": 500000,
+      "expected": "₩500,000"
+    },
+    {
+      "country": "CA",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "CA",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "CA",
+      "amount": 0.145,
+      "expected": "$0.14"
+    },
+    {
+      "country": "CA",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "CA",
+      "amount": 1,
+      "expected": "$1"
+    },
+    {
+      "country": "CA",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "CA",
+      "amount": 1.995,
+      "expected": "$1.99"
+    },
+    {
+      "country": "CA",
+      "amount": 9.999,
+      "expected": "$9.99"
+    },
+    {
+      "country": "CA",
+      "amount": 100.5,
+      "expected": "$100.5"
+    },
+    {
+      "country": "CA",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "CA",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "CA",
+      "amount": 1234.567,
+      "expected": "$1,234.56"
+    },
+    {
+      "country": "CA",
+      "amount": 10000.995,
+      "expected": "$10,000.99"
+    },
+    {
+      "country": "CA",
+      "amount": 500000,
+      "expected": "$500,000"
+    },
+    {
+      "country": "DE",
+      "amount": 0,
+      "expected": "€0"
+    },
+    {
+      "country": "DE",
+      "amount": 0.005,
+      "expected": "€0"
+    },
+    {
+      "country": "DE",
+      "amount": 0.145,
+      "expected": "€0.14"
+    },
+    {
+      "country": "DE",
+      "amount": 0.999,
+      "expected": "€0.99"
+    },
+    {
+      "country": "DE",
+      "amount": 1,
+      "expected": "€1"
+    },
+    {
+      "country": "DE",
+      "amount": 1.005,
+      "expected": "€1"
+    },
+    {
+      "country": "DE",
+      "amount": 1.995,
+      "expected": "€1.99"
+    },
+    {
+      "country": "DE",
+      "amount": 9.999,
+      "expected": "€9.99"
+    },
+    {
+      "country": "DE",
+      "amount": 100.5,
+      "expected": "€100.5"
+    },
+    {
+      "country": "DE",
+      "amount": 234.28,
+      "expected": "€234.28"
+    },
+    {
+      "country": "DE",
+      "amount": 999.999,
+      "expected": "€999.99"
+    },
+    {
+      "country": "DE",
+      "amount": 1234.567,
+      "expected": "€1,234.56"
+    },
+    {
+      "country": "DE",
+      "amount": 10000.995,
+      "expected": "€10,000.99"
+    },
+    {
+      "country": "DE",
+      "amount": 500000,
+      "expected": "€500,000"
+    },
+    {
+      "country": "FR",
+      "amount": 0,
+      "expected": "€0"
+    },
+    {
+      "country": "FR",
+      "amount": 0.005,
+      "expected": "€0"
+    },
+    {
+      "country": "FR",
+      "amount": 0.145,
+      "expected": "€0,14"
+    },
+    {
+      "country": "FR",
+      "amount": 0.999,
+      "expected": "€0,99"
+    },
+    {
+      "country": "FR",
+      "amount": 1,
+      "expected": "€1"
+    },
+    {
+      "country": "FR",
+      "amount": 1.005,
+      "expected": "€1"
+    },
+    {
+      "country": "FR",
+      "amount": 1.995,
+      "expected": "€1,99"
+    },
+    {
+      "country": "FR",
+      "amount": 9.999,
+      "expected": "€9,99"
+    },
+    {
+      "country": "FR",
+      "amount": 100.5,
+      "expected": "€100,5"
+    },
+    {
+      "country": "FR",
+      "amount": 234.28,
+      "expected": "€234,28"
+    },
+    {
+      "country": "FR",
+      "amount": 999.999,
+      "expected": "€999,99"
+    },
+    {
+      "country": "FR",
+      "amount": 1234.567,
+      "expected": "€1.234,56"
+    },
+    {
+      "country": "FR",
+      "amount": 10000.995,
+      "expected": "€10.000,99"
+    },
+    {
+      "country": "FR",
+      "amount": 500000,
+      "expected": "€500.000"
+    },
+    {
+      "country": "AU",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "AU",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "AU",
+      "amount": 0.145,
+      "expected": "$0.14"
+    },
+    {
+      "country": "AU",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "AU",
+      "amount": 1,
+      "expected": "$1"
+    },
+    {
+      "country": "AU",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "AU",
+      "amount": 1.995,
+      "expected": "$1.99"
+    },
+    {
+      "country": "AU",
+      "amount": 9.999,
+      "expected": "$9.99"
+    },
+    {
+      "country": "AU",
+      "amount": 100.5,
+      "expected": "$100.5"
+    },
+    {
+      "country": "AU",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "AU",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "AU",
+      "amount": 1234.567,
+      "expected": "$1,234.56"
+    },
+    {
+      "country": "AU",
+      "amount": 10000.995,
+      "expected": "$10,000.99"
+    },
+    {
+      "country": "AU",
+      "amount": 500000,
+      "expected": "$500,000"
+    },
+    {
+      "country": "PK",
+      "amount": 0,
+      "expected": "Rs0"
+    },
+    {
+      "country": "PK",
+      "amount": 0.005,
+      "expected": "Rs0"
+    },
+    {
+      "country": "PK",
+      "amount": 0.145,
+      "expected": "Rs0.14"
+    },
+    {
+      "country": "PK",
+      "amount": 0.999,
+      "expected": "Rs0.99"
+    },
+    {
+      "country": "PK",
+      "amount": 1,
+      "expected": "Rs1"
+    },
+    {
+      "country": "PK",
+      "amount": 1.005,
+      "expected": "Rs1"
+    },
+    {
+      "country": "PK",
+      "amount": 1.995,
+      "expected": "Rs1.99"
+    },
+    {
+      "country": "PK",
+      "amount": 9.999,
+      "expected": "Rs9.99"
+    },
+    {
+      "country": "PK",
+      "amount": 100.5,
+      "expected": "Rs100.5"
+    },
+    {
+      "country": "PK",
+      "amount": 234.28,
+      "expected": "Rs234.28"
+    },
+    {
+      "country": "PK",
+      "amount": 999.999,
+      "expected": "Rs999.99"
+    },
+    {
+      "country": "PK",
+      "amount": 1234.567,
+      "expected": "Rs1,234.56"
+    },
+    {
+      "country": "PK",
+      "amount": 10000.995,
+      "expected": "Rs10,000.99"
+    },
+    {
+      "country": "PK",
+      "amount": 500000,
+      "expected": "Rs500,000"
+    },
+    {
+      "country": "BD",
+      "amount": 0,
+      "expected": "৳0"
+    },
+    {
+      "country": "BD",
+      "amount": 0.005,
+      "expected": "৳0"
+    },
+    {
+      "country": "BD",
+      "amount": 0.145,
+      "expected": "৳0.14"
+    },
+    {
+      "country": "BD",
+      "amount": 0.999,
+      "expected": "৳0.99"
+    },
+    {
+      "country": "BD",
+      "amount": 1,
+      "expected": "৳1"
+    },
+    {
+      "country": "BD",
+      "amount": 1.005,
+      "expected": "৳1"
+    },
+    {
+      "country": "BD",
+      "amount": 1.995,
+      "expected": "৳1.99"
+    },
+    {
+      "country": "BD",
+      "amount": 9.999,
+      "expected": "৳9.99"
+    },
+    {
+      "country": "BD",
+      "amount": 100.5,
+      "expected": "৳100.5"
+    },
+    {
+      "country": "BD",
+      "amount": 234.28,
+      "expected": "৳234.28"
+    },
+    {
+      "country": "BD",
+      "amount": 999.999,
+      "expected": "৳999.99"
+    },
+    {
+      "country": "BD",
+      "amount": 1234.567,
+      "expected": "৳1,234.56"
+    },
+    {
+      "country": "BD",
+      "amount": 10000.995,
+      "expected": "৳10,000.99"
+    },
+    {
+      "country": "BD",
+      "amount": 500000,
+      "expected": "৳500,000"
+    }
+  ]
+}

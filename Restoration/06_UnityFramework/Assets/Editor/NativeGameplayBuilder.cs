@@ -13,6 +13,13 @@ namespace CoinMerge.Recovery.Editor
     {
         const string RuntimePath="Assets/Prefabs/Runtime";
         [Serializable] sealed class LabelSettings {public bool _enableWrapText=true;public int overflow;}
+        [Serializable] sealed class CoinLoaderSettings {public int coin_type=1;}
+        static readonly List<LocalizedLabelBinding> Labels=new List<LocalizedLabelBinding>();
+        static void Label(Dictionary<int,GameObject> nodes,int id,string key)
+        {
+            var text=Component<Text>(nodes,id);Labels.Add(new LocalizedLabelBinding {label=text,key=key});
+            text.text=new RecoveredLocalization("US").Label(key);
+        }
         static Dictionary<int,GameObject> Nodes(GameObject root)
         {
             var nodes=new Dictionary<int,GameObject>();
@@ -47,7 +54,7 @@ namespace CoinMerge.Recovery.Editor
                     {
                         var text=node.GetComponent<Text>();text.enabled=component.enabled;
                         var settings=new LabelSettings();JsonUtility.FromJsonOverwrite(component.rawJson.Replace("\"_N$overflow\"","\"overflow\""),settings);
-                        text.horizontalOverflow=settings._enableWrapText?HorizontalWrapMode.Wrap:HorizontalWrapMode.Overflow;
+                        text.horizontalOverflow=settings.overflow!=0&&settings._enableWrapText?HorizontalWrapMode.Wrap:HorizontalWrapMode.Overflow;
                         text.resizeTextForBestFit=settings.overflow==2;text.resizeTextMinSize=1;text.resizeTextMaxSize=component.fontSize;
                         text.verticalOverflow=settings.overflow==2?VerticalWrapMode.Truncate:VerticalWrapMode.Overflow;
                         if(text.font&&text.font.lineHeight>0)text.lineSpacing=(float)component.lineHeight/component.fontSize*text.font.fontSize/text.font.lineHeight;
@@ -66,6 +73,7 @@ namespace CoinMerge.Recovery.Editor
         [MenuItem("Coin Merge/Author native main gameplay assets")]
         public static void Run()
         {
+            Labels.Clear();
             Directory.CreateDirectory(RuntimePath);Directory.CreateDirectory("Assets/Config/Runtime");AssetDatabase.Refresh();
             var config=AssetDatabase.LoadAssetAtPath<GameBalanceConfig>("Assets/Config/Runtime/GameBalance.asset");
             config.pixelsPerUnit=32;config.velocityIterations=10;config.positionIterations=10;
@@ -96,6 +104,7 @@ namespace CoinMerge.Recovery.Editor
             foreach(int id in new[]{12,18,30,35,61,63,65})nodes[id].SetActive(false);
             nodes[10].SetActive(false);nodes[11].SetActive(false);
             Component<Text>(nodes,25).text="Withdraw";Component<Text>(nodes,34).text="Wheel";Component<Text>(nodes,56).text="Next";
+            Label(nodes,25,"8");Label(nodes,34,"91");Label(nodes,56,"43");
             // Retain source placeholder for rolling notice; actual random notice formatter is pending.
             Component<Text>(nodes,39).text="";
             var progress=Component<Image>(nodes,69);progress.type=Image.Type.Filled;progress.fillMethod=Image.FillMethod.Horizontal;progress.fillOrigin=0;
@@ -116,6 +125,17 @@ namespace CoinMerge.Recovery.Editor
             session.remainingText=Component<Text>(nodes,75);session.highestText=Component<Text>(nodes,48);session.progressFill=progress;
             session.nextImage=Component<Image>(nodes,54);session.bubble=nodes[8];session.dropGuide=nodes[13];
             BindReward(session,canvas.transform);BindFail(session,canvas.transform);BindGuide(session,canvas.transform);
+            BindWheel(session,canvas.transform);session.wheelButton=Button(nodes[73]);
+            session.localizedLabels=Labels.ToArray();
+            var currency=new List<CurrencyIconBinding>();
+            foreach(var meta in root.GetComponentsInChildren<RecoveredNode>(true))
+                foreach(var component in meta.originalComponents)
+                    if(component.className=="LoaderCoinSprite")
+                    {
+                        var setting=new CoinLoaderSettings();JsonUtility.FromJsonOverwrite(component.rawJson,setting);
+                        currency.Add(new CurrencyIconBinding {image=meta.GetComponent<Image>(),type=setting.coin_type});
+                    }
+            session.currencyIcons=currency.ToArray();
             var es=new GameObject("EventSystem",typeof(EventSystem),typeof(StandaloneInputModule));es.transform.SetParent(root.transform,false);
             PrefabUtility.SaveAsPrefabAsset(root,RuntimePath+"/RecoveredMain.prefab");
             EditorSceneManager.SaveScene(scene,"Assets/Scenes/RecoveredMain.unity");
@@ -141,6 +161,7 @@ namespace CoinMerge.Recovery.Editor
             view.highestAmount=Component<Text>(n,37);view.normalAmount=Component<Text>(n,47);view.guideAmount=Component<Text>(n,52);view.doubleAmount=Component<Text>(n,43);
             view.mask=Button(n[10]);view.highestClose=Button(n[16]);view.guideClose=Button(n[11]);
             Component<Text>(n,17).text="Collect";Component<Text>(n,29).text="Collect";
+            Label(n,17,"37");Label(n,29,"37");Label(n,15,"36");Label(n,20,"35");Label(n,23,"36");Label(n,27,"44");
             root.SetActive(false);
         }
         static void BindFail(RecoveredGameSession session,Transform parent)
@@ -149,6 +170,7 @@ namespace CoinMerge.Recovery.Editor
             view.revive=Button(n[6]);view.close=Button(n[7]);view.restart=Button(n[44]);
             view.scoreText=Component<Text>(n,24);view.mergesText=Component<Text>(n,33);view.bestText=Component<Text>(n,30);
             Component<Text>(n,18).text="Revive";Component<Text>(n,44).text="Restart";Component<Text>(n,12).text="Game over";
+            Label(n,18,"33");Label(n,12,"29");
             root.SetActive(false);
         }
         static void BindGuide(RecoveredGameSession session,Transform parent)
@@ -162,6 +184,19 @@ namespace CoinMerge.Recovery.Editor
             Component<Text>(n,26).text="Drag left or right to drop coins";
             Component<Text>(n,29).text="Merge matching coins";Component<Text>(n,30).text="Collect rewards";
             Component<Text>(n,19).text="Withdraw";Component<Text>(n,34).text="Collect your reward";
+            Label(n,26,"84");Label(n,29,"86");Label(n,30,"87");Label(n,34,"88");Label(n,19,"8");Label(n,37,"89");Label(n,38,"90");
+            root.SetActive(false);
+        }
+        static void BindWheel(RecoveredGameSession session,Transform parent)
+        {
+            var n=Dialog("LuckDrawDialog",parent,out var root);var view=root.AddComponent<RecoveredWheelView>();session.wheelView=view;
+            view.config=session.board.Config;view.draw=Button(n[12]);view.drawLabel=Component<Text>(n,25);view.countLabel=Component<Text>(n,64);view.nextScoreLabel=Component<Text>(n,66);
+            view.slots=new RecoveredWheelSlot[8];
+            for(int i=0;i<8;i++)view.slots[i]=new RecoveredWheelSlot {selected=n[33+4*i],coin=n[16+i],money=Component<Image>(n,35+4*i),coinAmount=Component<Text>(n,34+4*i)};
+            root.SetActive(false);
+            n=Dialog("LuckyDrawRewardDialog",parent,out root);var reward=root.AddComponent<RecoveredWheelRewardView>();session.wheelRewardView=reward;
+            reward.claim=Button(n[3]);reward.money=Component<Image>(n,13);reward.coin=n[11];reward.glow=(RectTransform)n[6].transform;
+            reward.amountLabel=Component<Text>(n,16);reward.hintLabel=Component<Text>(n,19);reward.titleLabel=Component<Text>(n,7);reward.claimLabel=Component<Text>(n,8);
             root.SetActive(false);
         }
     }
