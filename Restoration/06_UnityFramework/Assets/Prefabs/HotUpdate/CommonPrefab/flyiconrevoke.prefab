@@ -8,14 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1002}
-    -
-      component: {fileID: 1003}
-    -
-      component: {fileID: 1004}
+  - component: {fileID: 1001}
+  - component: {fileID: 1002}
+  - component: {fileID: 1003}
+  - component: {fileID: 1004}
   m_Layer: 5
   m_Name: "flyiconrevoke"
   m_TagString: "Untagged"
@@ -60,42 +56,41 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"flyiconrevoke\", \"_components\": [{\"$ref\": 2}], \"_prefab\": {\"$ref\": 3}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [97, 97]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 2
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 2
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1003
 CanvasRenderer:
   m_ObjectHideFlags: 0

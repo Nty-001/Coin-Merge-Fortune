@@ -8,10 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1006}
+  - component: {fileID: 1001}
+  - component: {fileID: 1006}
   m_Layer: 5
   m_Name: "ToastView"
   m_TagString: "Untagged"
@@ -31,8 +29,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1003
+  - fileID: 1003
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,14 +46,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1003}
-    -
-      component: {fileID: 1007}
-    -
-      component: {fileID: 1008}
-    -
-      component: {fileID: 1009}
+  - component: {fileID: 1003}
+  - component: {fileID: 1007}
+  - component: {fileID: 1008}
+  - component: {fileID: 1009}
   m_Layer: 5
   m_Name: "btn"
   m_TagString: "Untagged"
@@ -76,8 +69,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1005
+  - fileID: 1005
   m_Father: {fileID: 1001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94,16 +86,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1005}
-    -
-      component: {fileID: 1010}
-    -
-      component: {fileID: 1011}
-    -
-      component: {fileID: 1012}
-    -
-      component: {fileID: 1013}
+  - component: {fileID: 1005}
+  - component: {fileID: 1010}
+  - component: {fileID: 1011}
+  - component: {fileID: 1012}
+  - component: {fileID: 1013}
   m_Layer: 5
   m_Name: "txt_btn"
   m_TagString: "Untagged"
@@ -148,78 +135,76 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"ToastView\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 5}, {\"$ref\": 6}], \"_prefab\": {\"$ref\": 7}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1624]}, \"_trs\": [375, 812, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Widget"
-      className: "cc.Widget"
-      sourceId: 5
-      rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "5f656hmSV5AHYoVlEH1lyrI"
-      className: "ToastView"
-      sourceId: 6
-      rawJson: "{\"__type__\": \"5f656hmSV5AHYoVlEH1lyrI\", \"lbl_txt\": {\"$ref\": 4}, \"bg\": {\"$ref\": 2}, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 1
+  - type: "cc.Widget"
+    className: "cc.Widget"
+    sourceId: 5
+    rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "5f656hmSV5AHYoVlEH1lyrI"
+    className: "ToastView"
+    sourceId: 6
+    rawJson: "{\"__type__\": \"5f656hmSV5AHYoVlEH1lyrI\", \"lbl_txt\": {\"$ref\": 4}, \"bg\": {\"$ref\": 2}, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 1
 --- !u!114 &1007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,42 +222,41 @@ MonoBehaviour:
   sourceObjectId: 2
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"btn\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 3}], \"_components\": [{\"$ref\": 8}], \"_prefab\": {\"$ref\": 9}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [726, 66]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 8
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd813198-8546-4563-8bf6-8ae64257d926\"}, \"node\": {\"$ref\": 2}}"
-      sprite: "fd813198-8546-4563-8bf6-8ae64257d926"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 8
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd813198-8546-4563-8bf6-8ae64257d926\"}, \"node\": {\"$ref\": 2}}"
+    sprite: "fd813198-8546-4563-8bf6-8ae64257d926"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -328,78 +312,76 @@ MonoBehaviour:
   sourceObjectId: 3
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"txt_btn\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 4}, {\"$ref\": 10}], \"_prefab\": {\"$ref\": 11}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [112.74, 71.52]}}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 4
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"Agree\", \"_lineHeight\": 52, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"node\": {\"$ref\": 3}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}"
-      sprite: ""
-      text: "Agree"
-      fontSize: 40
-      lineHeight: 52
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.LabelOutline"
-      className: "cc.LabelOutline"
-      sourceId: 10
-      rawJson: "{\"__type__\": \"cc.LabelOutline\", \"_width\": 3, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286210137]}, \"node\": {\"$ref\": 3}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 4
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"Agree\", \"_lineHeight\": 52, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"node\": {\"$ref\": 3}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}"
+    sprite: ""
+    text: "Agree"
+    fontSize: 40
+    lineHeight: 52
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.LabelOutline"
+    className: "cc.LabelOutline"
+    sourceId: 10
+    rawJson: "{\"__type__\": \"cc.LabelOutline\", \"_width\": 3, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286210137]}, \"node\": {\"$ref\": 3}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1011
 CanvasRenderer:
   m_ObjectHideFlags: 0

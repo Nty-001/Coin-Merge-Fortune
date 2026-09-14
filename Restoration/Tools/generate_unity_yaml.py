@@ -1,4 +1,4 @@
-"""Emit native Unity YAML assets without executing the unlicensed editor.
+"""Emit native Unity YAML assets with Unity-compatible sequence formatting.
 The exact source graph is preserved as metadata; engine semantic parity remains unverified.
 """
 import json,re,hashlib,shutil,collections
@@ -20,12 +20,18 @@ def yaml(x,indent=0):
     if isinstance(x,dict):
         for k,v in x.items():
             if isinstance(v,dict) and all(not isinstance(z,(dict,list)) for z in v.values()):lines.append(pad+k+': '+flow(v))
-            elif isinstance(v,(dict,list)) and v:lines.append(pad+k+':');lines.extend(yaml(v,indent+2))
+            elif isinstance(v,(dict,list)) and v:
+                lines.append(pad+k+':')
+                # Unity's YAML subset requires compact mapping entries in sequences.
+                lines.extend(yaml(v,indent if isinstance(v,list) else indent+2))
             elif isinstance(v,(dict,list)):lines.append(pad+k+(': {}' if isinstance(v,dict) else ': []'))
             else:lines.append(pad+k+': '+scalar(v))
     elif isinstance(x,list):
         for v in x:
-            if isinstance(v,(dict,list)):lines.append(pad+'-');lines.extend(yaml(v,indent+2))
+            if isinstance(v,(dict,list)):
+                child=yaml(v,indent+2)
+                if child:lines.append(pad+'- '+child[0].lstrip());lines.extend(child[1:])
+                else:lines.append(pad+'- '+('{}' if isinstance(v,dict) else '[]'))
             else:lines.append(pad+'- '+scalar(v))
     return lines
 def meta(p):
@@ -137,4 +143,4 @@ for p in sorted(A.rglob('*')):
 (U/'ProjectSettings/EditorBuildSettings.asset').write_text('%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n--- !u!1045 &1\nEditorBuildSettings:\n  m_ObjectHideFlags: 0\n  serializedVersion: 2\n  m_Scenes:\n  - enabled: 1\n    path: Assets/Scenes/MockFlow.unity\n    guid: '+guid(A/'Scenes/MockFlow.unity')+'\n  m_configObjects: {}\n',encoding='utf-8')
 (O/'07_Verification/native_yaml_inventory.json').write_text(json.dumps(allstats,indent=2),encoding='utf-8')
 (O/'07_Verification/native_yaml_unported_components.json').write_text(json.dumps(unmapped,ensure_ascii=False,indent=2),encoding='utf-8')
-print({'prefabs':len(list((A/'Prefabs').rglob('*.prefab'))),'scenes':len(list((A/'Scenes').glob('*.unity'))),'metadataOnlyComponents':len(unmapped),'editorValidation':'blocked: Unity license'})
+print({'prefabs':len(list((A/'Prefabs').rglob('*.prefab'))),'scenes':len(list((A/'Scenes').glob('*.unity'))),'metadataOnlyComponents':len(unmapped),'editorValidation':'Run RecoveredAssetValidation.Run after generation'})

@@ -16,7 +16,7 @@
   "originalJsMockPaths": "passed",
   "csharpCompile": "passed",
   "csharpMockChecks": 11,
-  "editorImport": "blocked_no_license",
+  "editorImport": "passed_structure_63_prefabs_5_scenes",
   "liveServerConfig": "blocked_pending_explicit_client_id_authorization",
   "cachedServerConfig": "recovered_from_device",
   "remaining": [
@@ -24,7 +24,7 @@
     "Some field semantics require further manual verification; exact values and code references are preserved.",
     "Custom gameplay and dynamic UI behavior need C# ports and prefab binding.",
     "Spine mesh/clipping/deform and exact animations need Unity-native conversion.",
-    "Unity import/Play Mode/visual and physics parity tests remain unperformed.",
+    "Unity asset structure import passed; Play Mode, visual and physics parity remain unperformed.",
     "Native disassembly preserves code bytes but is not source-level semantic recovery."
   ]
 }

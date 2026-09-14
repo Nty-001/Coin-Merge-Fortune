@@ -8,16 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1004}
-    -
-      component: {fileID: 1005}
-    -
-      component: {fileID: 1006}
-    -
-      component: {fileID: 1007}
+  - component: {fileID: 1001}
+  - component: {fileID: 1004}
+  - component: {fileID: 1005}
+  - component: {fileID: 1006}
+  - component: {fileID: 1007}
   m_Layer: 5
   m_Name: "block_6"
   m_TagString: "Untagged"
@@ -37,8 +32,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1003
+  - fileID: 1003
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55,14 +49,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1003}
-    -
-      component: {fileID: 1008}
-    -
-      component: {fileID: 1009}
-    -
-      component: {fileID: 1010}
+  - component: {fileID: 1003}
+  - component: {fileID: 1008}
+  - component: {fileID: 1009}
+  - component: {fileID: 1010}
   m_Layer: 5
   m_Name: "sprite_block"
   m_TagString: "Untagged"
@@ -107,114 +97,111 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"block_6\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 3}, {\"$ref\": 4}, {\"$ref\": 5}], \"_prefab\": {\"$ref\": 6}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [174, 182]}}"
   originalComponents:
-    -
-      type: "cc.RigidBody"
-      className: "cc.RigidBody"
-      sourceId: 3
-      rawJson: "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 5
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.PhysicsPolygonCollider"
-      className: "cc.PhysicsPolygonCollider"
-      sourceId: 4
-      rawJson: "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-12, 91]}, {\"__type__\": \"cc.Vec2\", \"values\": [-33, 85]}, {\"__type__\": \"cc.Vec2\", \"values\": [-45, 79]}, {\"__type__\": \"cc.Vec2\", \"values\": [-54, 71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-56, 71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, 53]}, {\"__type__\": \"cc.Vec2\", \"values\": [-82, 33]}, {\"__type__\": \"cc.Vec2\", \"values\": [-87, 12]}, {\"__type__\": \"cc.Vec2\", \"values\": [-87, -12]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -38]}, {\"__type__\": \"cc.Vec2\", \"values\": [-74, -50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-66, -59]}, {\"__type__\": \"cc.Vec2\", \"values\": [-66, -61]}, {\"__type__\": \"cc.Vec2\", \"values\": [-56, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-54, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-45, -79]}, {\"__type__\": \"cc.Vec2\", \"values\": [-21, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [-16, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [-12, -91]}, {\"__type__\": \"cc.Vec2\", \"values\": [15, -91]}, {\"__type__\": \"cc.Vec2\", \"values\": [25, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [34, -86]}, {\"__type__\": \"cc.Vec2\", \"values\": [49, -78]}, {\"__type__\": \"cc.Vec2\", \"values\": [66, -63]}, {\"__type__\": \"cc.Vec2\", \"values\": [66, -61]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, -58]}, {\"__type__\": \"cc.Vec2\", \"values\": [80, -40]}, {\"__type__\": \"cc.Vec2\", \"values\": [87, -14]}, {\"__type__\": \"cc.Vec2\", \"values\": [87, 13]}, {\"__type__\": \"cc.Vec2\", \"values\": [85, 17]}, {\"__type__\": \"cc.Vec2\", \"values\": [84, 26]}, {\"__type__\": \"cc.Vec2\", \"values\": [76, 46]}, {\"__type__\": \"cc.Vec2\", \"values\": [74, 47]}, {\"__type__\": \"cc.Vec2\", \"values\": [73, 51]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 56]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 58]}, {\"__type__\": \"cc.Vec2\", \"values\": [64, 61]}, {\"__type__\": \"cc.Vec2\", \"values\": [64, 63]}, {\"__type__\": \"cc.Vec2\", \"values\": [48, 77]}, {\"__type__\": \"cc.Vec2\", \"values\": [31, 86]}, {\"__type__\": \"cc.Vec2\", \"values\": [13, 91]}], \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 5
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"66a9b557-bb19-4a55-b33e-b5d24c2e1f06\"}, \"node\": {\"$ref\": 1}}"
-      sprite: "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.RigidBody"
+    className: "cc.RigidBody"
+    sourceId: 3
+    rawJson: "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 5
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.PhysicsPolygonCollider"
+    className: "cc.PhysicsPolygonCollider"
+    sourceId: 4
+    rawJson: "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-12, 91]}, {\"__type__\": \"cc.Vec2\", \"values\": [-33, 85]}, {\"__type__\": \"cc.Vec2\", \"values\": [-45, 79]}, {\"__type__\": \"cc.Vec2\", \"values\": [-54, 71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-56, 71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, 53]}, {\"__type__\": \"cc.Vec2\", \"values\": [-82, 33]}, {\"__type__\": \"cc.Vec2\", \"values\": [-87, 12]}, {\"__type__\": \"cc.Vec2\", \"values\": [-87, -12]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -38]}, {\"__type__\": \"cc.Vec2\", \"values\": [-74, -50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-66, -59]}, {\"__type__\": \"cc.Vec2\", \"values\": [-66, -61]}, {\"__type__\": \"cc.Vec2\", \"values\": [-56, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-54, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-45, -79]}, {\"__type__\": \"cc.Vec2\", \"values\": [-21, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [-16, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [-12, -91]}, {\"__type__\": \"cc.Vec2\", \"values\": [15, -91]}, {\"__type__\": \"cc.Vec2\", \"values\": [25, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [34, -86]}, {\"__type__\": \"cc.Vec2\", \"values\": [49, -78]}, {\"__type__\": \"cc.Vec2\", \"values\": [66, -63]}, {\"__type__\": \"cc.Vec2\", \"values\": [66, -61]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, -58]}, {\"__type__\": \"cc.Vec2\", \"values\": [80, -40]}, {\"__type__\": \"cc.Vec2\", \"values\": [87, -14]}, {\"__type__\": \"cc.Vec2\", \"values\": [87, 13]}, {\"__type__\": \"cc.Vec2\", \"values\": [85, 17]}, {\"__type__\": \"cc.Vec2\", \"values\": [84, 26]}, {\"__type__\": \"cc.Vec2\", \"values\": [76, 46]}, {\"__type__\": \"cc.Vec2\", \"values\": [74, 47]}, {\"__type__\": \"cc.Vec2\", \"values\": [73, 51]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 56]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 58]}, {\"__type__\": \"cc.Vec2\", \"values\": [64, 61]}, {\"__type__\": \"cc.Vec2\", \"values\": [64, 63]}, {\"__type__\": \"cc.Vec2\", \"values\": [48, 77]}, {\"__type__\": \"cc.Vec2\", \"values\": [31, 86]}, {\"__type__\": \"cc.Vec2\", \"values\": [13, 91]}], \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 5
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"66a9b557-bb19-4a55-b33e-b5d24c2e1f06\"}, \"node\": {\"$ref\": 1}}"
+    sprite: "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!50 &1005
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -291,42 +278,41 @@ MonoBehaviour:
   sourceObjectId: 2
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"sprite_block\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 7}], \"_prefab\": {\"$ref\": 8}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [174, 182]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 7
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"66a9b557-bb19-4a55-b33e-b5d24c2e1f06\"}, \"node\": {\"$ref\": 2}}"
-      sprite: "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 7
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"66a9b557-bb19-4a55-b33e-b5d24c2e1f06\"}, \"node\": {\"$ref\": 2}}"
+    sprite: "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1009
 CanvasRenderer:
   m_ObjectHideFlags: 0

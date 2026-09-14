@@ -8,16 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1004}
-    -
-      component: {fileID: 1005}
-    -
-      component: {fileID: 1006}
-    -
-      component: {fileID: 1007}
+  - component: {fileID: 1001}
+  - component: {fileID: 1004}
+  - component: {fileID: 1005}
+  - component: {fileID: 1006}
+  - component: {fileID: 1007}
   m_Layer: 5
   m_Name: "block_7"
   m_TagString: "Untagged"
@@ -37,8 +32,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1003
+  - fileID: 1003
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -55,14 +49,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1003}
-    -
-      component: {fileID: 1008}
-    -
-      component: {fileID: 1009}
-    -
-      component: {fileID: 1010}
+  - component: {fileID: 1003}
+  - component: {fileID: 1008}
+  - component: {fileID: 1009}
+  - component: {fileID: 1010}
   m_Layer: 5
   m_Name: "sprite_block"
   m_TagString: "Untagged"
@@ -107,114 +97,111 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"block_7\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 3}, {\"$ref\": 4}, {\"$ref\": 5}], \"_prefab\": {\"$ref\": 6}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [210, 218]}}"
   originalComponents:
-    -
-      type: "cc.RigidBody"
-      className: "cc.RigidBody"
-      sourceId: 3
-      rawJson: "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 5
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.PhysicsPolygonCollider"
-      className: "cc.PhysicsPolygonCollider"
-      sourceId: 4
-      rawJson: "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-14, 109]}, {\"__type__\": \"cc.Vec2\", \"values\": [-40, 102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-41, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [-44, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [-52, 96]}, {\"__type__\": \"cc.Vec2\", \"values\": [-53, 94]}, {\"__type__\": \"cc.Vec2\", \"values\": [-61, 90]}, {\"__type__\": \"cc.Vec2\", \"values\": [-63, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [-65, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-76, 77]}, {\"__type__\": \"cc.Vec2\", \"values\": [-76, 75]}, {\"__type__\": \"cc.Vec2\", \"values\": [-85, 66]}, {\"__type__\": \"cc.Vec2\", \"values\": [-93, 50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, 49]}, {\"__type__\": \"cc.Vec2\", \"values\": [-96, 43]}, {\"__type__\": \"cc.Vec2\", \"values\": [-99, 39]}, {\"__type__\": \"cc.Vec2\", \"values\": [-105, 15]}, {\"__type__\": \"cc.Vec2\", \"values\": [-105, -16]}, {\"__type__\": \"cc.Vec2\", \"values\": [-102, -31]}, {\"__type__\": \"cc.Vec2\", \"values\": [-98, -43]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, -47]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, -50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-93, -51]}, {\"__type__\": \"cc.Vec2\", \"values\": [-91, -57]}, {\"__type__\": \"cc.Vec2\", \"values\": [-89, -58]}, {\"__type__\": \"cc.Vec2\", \"values\": [-88, -62]}, {\"__type__\": \"cc.Vec2\", \"values\": [-83, -67]}, {\"__type__\": \"cc.Vec2\", \"values\": [-83, -69]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -73]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, -81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, -81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, -83]}, {\"__type__\": \"cc.Vec2\", \"values\": [-68, -83]}, {\"__type__\": \"cc.Vec2\", \"values\": [-58, -92]}, {\"__type__\": \"cc.Vec2\", \"values\": [-47, -97]}, {\"__type__\": \"cc.Vec2\", \"values\": [-46, -99]}, {\"__type__\": \"cc.Vec2\", \"values\": [-43, -99]}, {\"__type__\": \"cc.Vec2\", \"values\": [-39, -102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-27, -106]}, {\"__type__\": \"cc.Vec2\", \"values\": [-12, -109]}, {\"__type__\": \"cc.Vec2\", \"values\": [14, -109]}, {\"__type__\": \"cc.Vec2\", \"values\": [38, -103]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [79, -74]}, {\"__type__\": \"cc.Vec2\", \"values\": [79, -72]}, {\"__type__\": \"cc.Vec2\", \"values\": [85, -66]}, {\"__type__\": \"cc.Vec2\", \"values\": [98, -42]}, {\"__type__\": \"cc.Vec2\", \"values\": [105, -11]}, {\"__type__\": \"cc.Vec2\", \"values\": [105, 11]}, {\"__type__\": \"cc.Vec2\", \"values\": [99, 39]}, {\"__type__\": \"cc.Vec2\", \"values\": [96, 43]}, {\"__type__\": \"cc.Vec2\", \"values\": [92, 55]}, {\"__type__\": \"cc.Vec2\", \"values\": [90, 56]}, {\"__type__\": \"cc.Vec2\", \"values\": [89, 60]}, {\"__type__\": \"cc.Vec2\", \"values\": [82, 68]}, {\"__type__\": \"cc.Vec2\", \"values\": [82, 70]}, {\"__type__\": \"cc.Vec2\", \"values\": [77, 74]}, {\"__type__\": \"cc.Vec2\", \"values\": [77, 76]}, {\"__type__\": \"cc.Vec2\", \"values\": [72, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, 83]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 83]}, {\"__type__\": \"cc.Vec2\", \"values\": [65, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, 89]}, {\"__type__\": \"cc.Vec2\", \"values\": [38, 103]}, {\"__type__\": \"cc.Vec2\", \"values\": [34, 103]}, {\"__type__\": \"cc.Vec2\", \"values\": [29, 106]}, {\"__type__\": \"cc.Vec2\", \"values\": [24, 106]}, {\"__type__\": \"cc.Vec2\", \"values\": [15, 109]}], \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 5
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"03441240-d62a-4a7c-a1ad-0ee5ab29c1ab\"}, \"node\": {\"$ref\": 1}}"
-      sprite: "03441240-d62a-4a7c-a1ad-0ee5ab29c1ab"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.RigidBody"
+    className: "cc.RigidBody"
+    sourceId: 3
+    rawJson: "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 5
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.PhysicsPolygonCollider"
+    className: "cc.PhysicsPolygonCollider"
+    sourceId: 4
+    rawJson: "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-14, 109]}, {\"__type__\": \"cc.Vec2\", \"values\": [-40, 102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-41, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [-44, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [-52, 96]}, {\"__type__\": \"cc.Vec2\", \"values\": [-53, 94]}, {\"__type__\": \"cc.Vec2\", \"values\": [-61, 90]}, {\"__type__\": \"cc.Vec2\", \"values\": [-63, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [-65, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-76, 77]}, {\"__type__\": \"cc.Vec2\", \"values\": [-76, 75]}, {\"__type__\": \"cc.Vec2\", \"values\": [-85, 66]}, {\"__type__\": \"cc.Vec2\", \"values\": [-93, 50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, 49]}, {\"__type__\": \"cc.Vec2\", \"values\": [-96, 43]}, {\"__type__\": \"cc.Vec2\", \"values\": [-99, 39]}, {\"__type__\": \"cc.Vec2\", \"values\": [-105, 15]}, {\"__type__\": \"cc.Vec2\", \"values\": [-105, -16]}, {\"__type__\": \"cc.Vec2\", \"values\": [-102, -31]}, {\"__type__\": \"cc.Vec2\", \"values\": [-98, -43]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, -47]}, {\"__type__\": \"cc.Vec2\", \"values\": [-95, -50]}, {\"__type__\": \"cc.Vec2\", \"values\": [-93, -51]}, {\"__type__\": \"cc.Vec2\", \"values\": [-91, -57]}, {\"__type__\": \"cc.Vec2\", \"values\": [-89, -58]}, {\"__type__\": \"cc.Vec2\", \"values\": [-88, -62]}, {\"__type__\": \"cc.Vec2\", \"values\": [-83, -67]}, {\"__type__\": \"cc.Vec2\", \"values\": [-83, -69]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -71]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -73]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, -81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, -81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-70, -83]}, {\"__type__\": \"cc.Vec2\", \"values\": [-68, -83]}, {\"__type__\": \"cc.Vec2\", \"values\": [-58, -92]}, {\"__type__\": \"cc.Vec2\", \"values\": [-47, -97]}, {\"__type__\": \"cc.Vec2\", \"values\": [-46, -99]}, {\"__type__\": \"cc.Vec2\", \"values\": [-43, -99]}, {\"__type__\": \"cc.Vec2\", \"values\": [-39, -102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-27, -106]}, {\"__type__\": \"cc.Vec2\", \"values\": [-12, -109]}, {\"__type__\": \"cc.Vec2\", \"values\": [14, -109]}, {\"__type__\": \"cc.Vec2\", \"values\": [38, -103]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, -89]}, {\"__type__\": \"cc.Vec2\", \"values\": [79, -74]}, {\"__type__\": \"cc.Vec2\", \"values\": [79, -72]}, {\"__type__\": \"cc.Vec2\", \"values\": [85, -66]}, {\"__type__\": \"cc.Vec2\", \"values\": [98, -42]}, {\"__type__\": \"cc.Vec2\", \"values\": [105, -11]}, {\"__type__\": \"cc.Vec2\", \"values\": [105, 11]}, {\"__type__\": \"cc.Vec2\", \"values\": [99, 39]}, {\"__type__\": \"cc.Vec2\", \"values\": [96, 43]}, {\"__type__\": \"cc.Vec2\", \"values\": [92, 55]}, {\"__type__\": \"cc.Vec2\", \"values\": [90, 56]}, {\"__type__\": \"cc.Vec2\", \"values\": [89, 60]}, {\"__type__\": \"cc.Vec2\", \"values\": [82, 68]}, {\"__type__\": \"cc.Vec2\", \"values\": [82, 70]}, {\"__type__\": \"cc.Vec2\", \"values\": [77, 74]}, {\"__type__\": \"cc.Vec2\", \"values\": [77, 76]}, {\"__type__\": \"cc.Vec2\", \"values\": [72, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [70, 83]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, 83]}, {\"__type__\": \"cc.Vec2\", \"values\": [65, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, 87]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, 89]}, {\"__type__\": \"cc.Vec2\", \"values\": [38, 103]}, {\"__type__\": \"cc.Vec2\", \"values\": [34, 103]}, {\"__type__\": \"cc.Vec2\", \"values\": [29, 106]}, {\"__type__\": \"cc.Vec2\", \"values\": [24, 106]}, {\"__type__\": \"cc.Vec2\", \"values\": [15, 109]}], \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 5
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"03441240-d62a-4a7c-a1ad-0ee5ab29c1ab\"}, \"node\": {\"$ref\": 1}}"
+    sprite: "03441240-d62a-4a7c-a1ad-0ee5ab29c1ab"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!50 &1005
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -291,42 +278,41 @@ MonoBehaviour:
   sourceObjectId: 2
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"sprite_block\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 7}], \"_prefab\": {\"$ref\": 8}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [210, 218]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 7
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"03441240-d62a-4a7c-a1ad-0ee5ab29c1ab\"}, \"node\": {\"$ref\": 2}}"
-      sprite: "03441240-d62a-4a7c-a1ad-0ee5ab29c1ab"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 7
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"03441240-d62a-4a7c-a1ad-0ee5ab29c1ab\"}, \"node\": {\"$ref\": 2}}"
+    sprite: "03441240-d62a-4a7c-a1ad-0ee5ab29c1ab"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1009
 CanvasRenderer:
   m_ObjectHideFlags: 0

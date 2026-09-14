@@ -8,10 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1002}
+  - component: {fileID: 1001}
+  - component: {fileID: 1002}
   m_Layer: 5
   m_Name: "PZ_TX"
   m_TagString: "Untagged"
@@ -56,39 +54,38 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"PZ_TX\", \"_components\": [{\"$ref\": 2}], \"_prefab\": {\"$ref\": 3}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1624]}, \"_trs\": [0, 0, 0, 0, 0, 0, 1, 1.5, 1.5, 1]}"
   originalComponents:
-    -
-      type: "sp.Skeleton"
-      className: "sp.Skeleton"
-      sourceId: 2
-      rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"defaultAnimation\": \"idle1\", \"_preCacheMode\": 0, \"premultipliedAlpha\": false, \"_animationName\": \"idle1\", \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"c80b42c1-1e4d-4ece-a55c-7c6a5616b57c\"}, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "sp.Skeleton"
+    className: "sp.Skeleton"
+    sourceId: 2
+    rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"defaultAnimation\": \"idle1\", \"_preCacheMode\": 0, \"premultipliedAlpha\": false, \"_animationName\": \"idle1\", \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"c80b42c1-1e4d-4ece-a55c-7c6a5616b57c\"}, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0

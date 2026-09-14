@@ -8,10 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1001}
-    -
-      component: {fileID: 1132}
+  - component: {fileID: 1001}
+  - component: {fileID: 1132}
   m_Layer: 5
   m_Name: "LuckDrawDialog"
   m_TagString: "Untagged"
@@ -31,12 +29,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1025
-    -
-      fileID: 1005
-    -
-      fileID: 1027
+  - fileID: 1025
+  - fileID: 1005
+  - fileID: 1027
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53,10 +48,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1003}
-    -
-      component: {fileID: 1133}
+  - component: {fileID: 1003}
+  - component: {fileID: 1133}
   m_Layer: 5
   m_Name: "rectLayout"
   m_TagString: "Untagged"
@@ -76,22 +69,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1007
-    -
-      fileID: 1009
-    -
-      fileID: 1011
-    -
-      fileID: 1013
-    -
-      fileID: 1015
-    -
-      fileID: 1017
-    -
-      fileID: 1019
-    -
-      fileID: 1021
+  - fileID: 1007
+  - fileID: 1009
+  - fileID: 1011
+  - fileID: 1013
+  - fileID: 1015
+  - fileID: 1017
+  - fileID: 1019
+  - fileID: 1021
   m_Father: {fileID: 1005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108,10 +93,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1005}
-    -
-      component: {fileID: 1134}
+  - component: {fileID: 1005}
+  - component: {fileID: 1134}
   m_Layer: 5
   m_Name: "content"
   m_TagString: "Untagged"
@@ -131,18 +114,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1051
-    -
-      fileID: 1053
-    -
-      fileID: 1029
-    -
-      fileID: 1003
-    -
-      fileID: 1023
-    -
-      fileID: 1125
+  - fileID: 1051
+  - fileID: 1053
+  - fileID: 1029
+  - fileID: 1003
+  - fileID: 1023
+  - fileID: 1125
   m_Father: {fileID: 1001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,10 +136,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1007}
-    -
-      component: {fileID: 1135}
+  - component: {fileID: 1007}
+  - component: {fileID: 1135}
   m_Layer: 5
   m_Name: "rectNode1"
   m_TagString: "Untagged"
@@ -182,14 +157,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1059
-    -
-      fileID: 1061
-    -
-      fileID: 1031
-    -
-      fileID: 1065
+  - fileID: 1059
+  - fileID: 1061
+  - fileID: 1031
+  - fileID: 1065
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -206,10 +177,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1009}
-    -
-      component: {fileID: 1136}
+  - component: {fileID: 1009}
+  - component: {fileID: 1136}
   m_Layer: 5
   m_Name: "rectNode2"
   m_TagString: "Untagged"
@@ -229,14 +198,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1067
-    -
-      fileID: 1069
-    -
-      fileID: 1033
-    -
-      fileID: 1073
+  - fileID: 1067
+  - fileID: 1069
+  - fileID: 1033
+  - fileID: 1073
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -253,10 +218,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1011}
-    -
-      component: {fileID: 1137}
+  - component: {fileID: 1011}
+  - component: {fileID: 1137}
   m_Layer: 5
   m_Name: "rectNode3"
   m_TagString: "Untagged"
@@ -276,14 +239,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1075
-    -
-      fileID: 1077
-    -
-      fileID: 1035
-    -
-      fileID: 1081
+  - fileID: 1075
+  - fileID: 1077
+  - fileID: 1035
+  - fileID: 1081
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -300,10 +259,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1013}
-    -
-      component: {fileID: 1138}
+  - component: {fileID: 1013}
+  - component: {fileID: 1138}
   m_Layer: 5
   m_Name: "rectNode4"
   m_TagString: "Untagged"
@@ -323,14 +280,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1083
-    -
-      fileID: 1085
-    -
-      fileID: 1037
-    -
-      fileID: 1089
+  - fileID: 1083
+  - fileID: 1085
+  - fileID: 1037
+  - fileID: 1089
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -347,10 +300,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1015}
-    -
-      component: {fileID: 1139}
+  - component: {fileID: 1015}
+  - component: {fileID: 1139}
   m_Layer: 5
   m_Name: "rectNode5"
   m_TagString: "Untagged"
@@ -370,14 +321,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1091
-    -
-      fileID: 1093
-    -
-      fileID: 1039
-    -
-      fileID: 1097
+  - fileID: 1091
+  - fileID: 1093
+  - fileID: 1039
+  - fileID: 1097
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -394,10 +341,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1017}
-    -
-      component: {fileID: 1140}
+  - component: {fileID: 1017}
+  - component: {fileID: 1140}
   m_Layer: 5
   m_Name: "rectNode6"
   m_TagString: "Untagged"
@@ -417,14 +362,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1099
-    -
-      fileID: 1101
-    -
-      fileID: 1041
-    -
-      fileID: 1105
+  - fileID: 1099
+  - fileID: 1101
+  - fileID: 1041
+  - fileID: 1105
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -441,10 +382,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1019}
-    -
-      component: {fileID: 1141}
+  - component: {fileID: 1019}
+  - component: {fileID: 1141}
   m_Layer: 5
   m_Name: "rectNode7"
   m_TagString: "Untagged"
@@ -464,14 +403,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1107
-    -
-      fileID: 1109
-    -
-      fileID: 1043
-    -
-      fileID: 1113
+  - fileID: 1107
+  - fileID: 1109
+  - fileID: 1043
+  - fileID: 1113
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -488,10 +423,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1021}
-    -
-      component: {fileID: 1142}
+  - component: {fileID: 1021}
+  - component: {fileID: 1142}
   m_Layer: 5
   m_Name: "rectNode7"
   m_TagString: "Untagged"
@@ -511,14 +444,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1115
-    -
-      fileID: 1117
-    -
-      fileID: 1045
-    -
-      fileID: 1121
+  - fileID: 1115
+  - fileID: 1117
+  - fileID: 1045
+  - fileID: 1121
   m_Father: {fileID: 1003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -535,14 +464,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1023}
-    -
-      component: {fileID: 1143}
-    -
-      component: {fileID: 1144}
-    -
-      component: {fileID: 1145}
+  - component: {fileID: 1023}
+  - component: {fileID: 1143}
+  - component: {fileID: 1144}
+  - component: {fileID: 1145}
   m_Layer: 5
   m_Name: "btn1"
   m_TagString: "Untagged"
@@ -562,10 +487,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1047
-    -
-      fileID: 1049
+  - fileID: 1047
+  - fileID: 1049
   m_Father: {fileID: 1005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -582,14 +505,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1025}
-    -
-      component: {fileID: 1146}
-    -
-      component: {fileID: 1147}
-    -
-      component: {fileID: 1148}
+  - component: {fileID: 1025}
+  - component: {fileID: 1146}
+  - component: {fileID: 1147}
+  - component: {fileID: 1148}
   m_Layer: 5
   m_Name: "sprite_nask_bg"
   m_TagString: "Untagged"
@@ -625,10 +544,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1027}
-    -
-      component: {fileID: 1149}
+  - component: {fileID: 1027}
+  - component: {fileID: 1149}
   m_Layer: 5
   m_Name: "rectNode"
   m_TagString: "Untagged"
@@ -648,12 +565,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1127
-    -
-      fileID: 1129
-    -
-      fileID: 1131
+  - fileID: 1127
+  - fileID: 1129
+  - fileID: 1131
   m_Father: {fileID: 1001}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -670,10 +584,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1029}
-    -
-      component: {fileID: 1150}
+  - component: {fileID: 1029}
+  - component: {fileID: 1150}
   m_Layer: 5
   m_Name: "icon"
   m_TagString: "Untagged"
@@ -693,10 +605,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1055
-    -
-      fileID: 1057
+  - fileID: 1055
+  - fileID: 1057
   m_Father: {fileID: 1005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -713,14 +623,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1031}
-    -
-      component: {fileID: 1151}
-    -
-      component: {fileID: 1152}
-    -
-      component: {fileID: 1153}
+  - component: {fileID: 1031}
+  - component: {fileID: 1151}
+  - component: {fileID: 1152}
+  - component: {fileID: 1153}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -740,8 +646,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1063
+  - fileID: 1063
   m_Father: {fileID: 1007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -758,14 +663,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1033}
-    -
-      component: {fileID: 1154}
-    -
-      component: {fileID: 1155}
-    -
-      component: {fileID: 1156}
+  - component: {fileID: 1033}
+  - component: {fileID: 1154}
+  - component: {fileID: 1155}
+  - component: {fileID: 1156}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -785,8 +686,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1071
+  - fileID: 1071
   m_Father: {fileID: 1009}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -803,14 +703,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1035}
-    -
-      component: {fileID: 1157}
-    -
-      component: {fileID: 1158}
-    -
-      component: {fileID: 1159}
+  - component: {fileID: 1035}
+  - component: {fileID: 1157}
+  - component: {fileID: 1158}
+  - component: {fileID: 1159}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -830,8 +726,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1079
+  - fileID: 1079
   m_Father: {fileID: 1011}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -848,14 +743,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1037}
-    -
-      component: {fileID: 1160}
-    -
-      component: {fileID: 1161}
-    -
-      component: {fileID: 1162}
+  - component: {fileID: 1037}
+  - component: {fileID: 1160}
+  - component: {fileID: 1161}
+  - component: {fileID: 1162}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -875,8 +766,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1087
+  - fileID: 1087
   m_Father: {fileID: 1013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -893,14 +783,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1039}
-    -
-      component: {fileID: 1163}
-    -
-      component: {fileID: 1164}
-    -
-      component: {fileID: 1165}
+  - component: {fileID: 1039}
+  - component: {fileID: 1163}
+  - component: {fileID: 1164}
+  - component: {fileID: 1165}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -920,8 +806,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1095
+  - fileID: 1095
   m_Father: {fileID: 1015}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -938,14 +823,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1041}
-    -
-      component: {fileID: 1166}
-    -
-      component: {fileID: 1167}
-    -
-      component: {fileID: 1168}
+  - component: {fileID: 1041}
+  - component: {fileID: 1166}
+  - component: {fileID: 1167}
+  - component: {fileID: 1168}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -965,8 +846,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1103
+  - fileID: 1103
   m_Father: {fileID: 1017}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -983,14 +863,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1043}
-    -
-      component: {fileID: 1169}
-    -
-      component: {fileID: 1170}
-    -
-      component: {fileID: 1171}
+  - component: {fileID: 1043}
+  - component: {fileID: 1169}
+  - component: {fileID: 1170}
+  - component: {fileID: 1171}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -1010,8 +886,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1111
+  - fileID: 1111
   m_Father: {fileID: 1019}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1028,14 +903,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1045}
-    -
-      component: {fileID: 1172}
-    -
-      component: {fileID: 1173}
-    -
-      component: {fileID: 1174}
+  - component: {fileID: 1045}
+  - component: {fileID: 1172}
+  - component: {fileID: 1173}
+  - component: {fileID: 1174}
   m_Layer: 5
   m_Name: "coin"
   m_TagString: "Untagged"
@@ -1055,8 +926,7 @@ RectTransform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1119
+  - fileID: 1119
   m_Father: {fileID: 1021}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1073,14 +943,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1047}
-    -
-      component: {fileID: 1175}
-    -
-      component: {fileID: 1176}
-    -
-      component: {fileID: 1177}
+  - component: {fileID: 1047}
+  - component: {fileID: 1175}
+  - component: {fileID: 1176}
+  - component: {fileID: 1177}
   m_Layer: 5
   m_Name: "redBg"
   m_TagString: "Untagged"
@@ -1100,8 +966,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-    -
-      fileID: 1123
+  - fileID: 1123
   m_Father: {fileID: 1023}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1118,16 +983,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1049}
-    -
-      component: {fileID: 1178}
-    -
-      component: {fileID: 1179}
-    -
-      component: {fileID: 1180}
-    -
-      component: {fileID: 1181}
+  - component: {fileID: 1049}
+  - component: {fileID: 1178}
+  - component: {fileID: 1179}
+  - component: {fileID: 1180}
+  - component: {fileID: 1181}
   m_Layer: 5
   m_Name: "btnLabel"
   m_TagString: "Untagged"
@@ -1163,10 +1023,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1051}
-    -
-      component: {fileID: 1182}
+  - component: {fileID: 1051}
+  - component: {fileID: 1182}
   m_Layer: 5
   m_Name: "PiaoDai_TX"
   m_TagString: "Untagged"
@@ -1202,10 +1060,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1053}
-    -
-      component: {fileID: 1183}
+  - component: {fileID: 1053}
+  - component: {fileID: 1183}
   m_Layer: 5
   m_Name: "bgSpine"
   m_TagString: "Untagged"
@@ -1241,14 +1097,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1055}
-    -
-      component: {fileID: 1184}
-    -
-      component: {fileID: 1185}
-    -
-      component: {fileID: 1186}
+  - component: {fileID: 1055}
+  - component: {fileID: 1184}
+  - component: {fileID: 1185}
+  - component: {fileID: 1186}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -1284,14 +1136,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1057}
-    -
-      component: {fileID: 1187}
-    -
-      component: {fileID: 1188}
-    -
-      component: {fileID: 1189}
+  - component: {fileID: 1057}
+  - component: {fileID: 1187}
+  - component: {fileID: 1188}
+  - component: {fileID: 1189}
   m_Layer: 5
   m_Name: "编组 4"
   m_TagString: "Untagged"
@@ -1327,14 +1175,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1059}
-    -
-      component: {fileID: 1190}
-    -
-      component: {fileID: 1191}
-    -
-      component: {fileID: 1192}
+  - component: {fileID: 1059}
+  - component: {fileID: 1190}
+  - component: {fileID: 1191}
+  - component: {fileID: 1192}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -1370,14 +1214,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1061}
-    -
-      component: {fileID: 1193}
-    -
-      component: {fileID: 1194}
-    -
-      component: {fileID: 1195}
+  - component: {fileID: 1061}
+  - component: {fileID: 1193}
+  - component: {fileID: 1194}
+  - component: {fileID: 1195}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -1413,14 +1253,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1063}
-    -
-      component: {fileID: 1196}
-    -
-      component: {fileID: 1197}
-    -
-      component: {fileID: 1198}
+  - component: {fileID: 1063}
+  - component: {fileID: 1196}
+  - component: {fileID: 1197}
+  - component: {fileID: 1198}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -1456,14 +1292,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1065}
-    -
-      component: {fileID: 1199}
-    -
-      component: {fileID: 1200}
-    -
-      component: {fileID: 1201}
+  - component: {fileID: 1065}
+  - component: {fileID: 1199}
+  - component: {fileID: 1200}
+  - component: {fileID: 1201}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -1499,14 +1331,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1067}
-    -
-      component: {fileID: 1202}
-    -
-      component: {fileID: 1203}
-    -
-      component: {fileID: 1204}
+  - component: {fileID: 1067}
+  - component: {fileID: 1202}
+  - component: {fileID: 1203}
+  - component: {fileID: 1204}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -1542,14 +1370,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1069}
-    -
-      component: {fileID: 1205}
-    -
-      component: {fileID: 1206}
-    -
-      component: {fileID: 1207}
+  - component: {fileID: 1069}
+  - component: {fileID: 1205}
+  - component: {fileID: 1206}
+  - component: {fileID: 1207}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -1585,14 +1409,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1071}
-    -
-      component: {fileID: 1208}
-    -
-      component: {fileID: 1209}
-    -
-      component: {fileID: 1210}
+  - component: {fileID: 1071}
+  - component: {fileID: 1208}
+  - component: {fileID: 1209}
+  - component: {fileID: 1210}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -1628,14 +1448,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1073}
-    -
-      component: {fileID: 1211}
-    -
-      component: {fileID: 1212}
-    -
-      component: {fileID: 1213}
+  - component: {fileID: 1073}
+  - component: {fileID: 1211}
+  - component: {fileID: 1212}
+  - component: {fileID: 1213}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -1671,14 +1487,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1075}
-    -
-      component: {fileID: 1214}
-    -
-      component: {fileID: 1215}
-    -
-      component: {fileID: 1216}
+  - component: {fileID: 1075}
+  - component: {fileID: 1214}
+  - component: {fileID: 1215}
+  - component: {fileID: 1216}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -1714,14 +1526,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1077}
-    -
-      component: {fileID: 1217}
-    -
-      component: {fileID: 1218}
-    -
-      component: {fileID: 1219}
+  - component: {fileID: 1077}
+  - component: {fileID: 1217}
+  - component: {fileID: 1218}
+  - component: {fileID: 1219}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -1757,14 +1565,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1079}
-    -
-      component: {fileID: 1220}
-    -
-      component: {fileID: 1221}
-    -
-      component: {fileID: 1222}
+  - component: {fileID: 1079}
+  - component: {fileID: 1220}
+  - component: {fileID: 1221}
+  - component: {fileID: 1222}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -1800,14 +1604,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1081}
-    -
-      component: {fileID: 1223}
-    -
-      component: {fileID: 1224}
-    -
-      component: {fileID: 1225}
+  - component: {fileID: 1081}
+  - component: {fileID: 1223}
+  - component: {fileID: 1224}
+  - component: {fileID: 1225}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -1843,14 +1643,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1083}
-    -
-      component: {fileID: 1226}
-    -
-      component: {fileID: 1227}
-    -
-      component: {fileID: 1228}
+  - component: {fileID: 1083}
+  - component: {fileID: 1226}
+  - component: {fileID: 1227}
+  - component: {fileID: 1228}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -1886,14 +1682,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1085}
-    -
-      component: {fileID: 1229}
-    -
-      component: {fileID: 1230}
-    -
-      component: {fileID: 1231}
+  - component: {fileID: 1085}
+  - component: {fileID: 1229}
+  - component: {fileID: 1230}
+  - component: {fileID: 1231}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -1929,14 +1721,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1087}
-    -
-      component: {fileID: 1232}
-    -
-      component: {fileID: 1233}
-    -
-      component: {fileID: 1234}
+  - component: {fileID: 1087}
+  - component: {fileID: 1232}
+  - component: {fileID: 1233}
+  - component: {fileID: 1234}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -1972,14 +1760,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1089}
-    -
-      component: {fileID: 1235}
-    -
-      component: {fileID: 1236}
-    -
-      component: {fileID: 1237}
+  - component: {fileID: 1089}
+  - component: {fileID: 1235}
+  - component: {fileID: 1236}
+  - component: {fileID: 1237}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -2015,14 +1799,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1091}
-    -
-      component: {fileID: 1238}
-    -
-      component: {fileID: 1239}
-    -
-      component: {fileID: 1240}
+  - component: {fileID: 1091}
+  - component: {fileID: 1238}
+  - component: {fileID: 1239}
+  - component: {fileID: 1240}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -2058,14 +1838,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1093}
-    -
-      component: {fileID: 1241}
-    -
-      component: {fileID: 1242}
-    -
-      component: {fileID: 1243}
+  - component: {fileID: 1093}
+  - component: {fileID: 1241}
+  - component: {fileID: 1242}
+  - component: {fileID: 1243}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -2101,14 +1877,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1095}
-    -
-      component: {fileID: 1244}
-    -
-      component: {fileID: 1245}
-    -
-      component: {fileID: 1246}
+  - component: {fileID: 1095}
+  - component: {fileID: 1244}
+  - component: {fileID: 1245}
+  - component: {fileID: 1246}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -2144,14 +1916,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1097}
-    -
-      component: {fileID: 1247}
-    -
-      component: {fileID: 1248}
-    -
-      component: {fileID: 1249}
+  - component: {fileID: 1097}
+  - component: {fileID: 1247}
+  - component: {fileID: 1248}
+  - component: {fileID: 1249}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -2187,14 +1955,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1099}
-    -
-      component: {fileID: 1250}
-    -
-      component: {fileID: 1251}
-    -
-      component: {fileID: 1252}
+  - component: {fileID: 1099}
+  - component: {fileID: 1250}
+  - component: {fileID: 1251}
+  - component: {fileID: 1252}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -2230,14 +1994,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1101}
-    -
-      component: {fileID: 1253}
-    -
-      component: {fileID: 1254}
-    -
-      component: {fileID: 1255}
+  - component: {fileID: 1101}
+  - component: {fileID: 1253}
+  - component: {fileID: 1254}
+  - component: {fileID: 1255}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -2273,14 +2033,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1103}
-    -
-      component: {fileID: 1256}
-    -
-      component: {fileID: 1257}
-    -
-      component: {fileID: 1258}
+  - component: {fileID: 1103}
+  - component: {fileID: 1256}
+  - component: {fileID: 1257}
+  - component: {fileID: 1258}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -2316,14 +2072,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1105}
-    -
-      component: {fileID: 1259}
-    -
-      component: {fileID: 1260}
-    -
-      component: {fileID: 1261}
+  - component: {fileID: 1105}
+  - component: {fileID: 1259}
+  - component: {fileID: 1260}
+  - component: {fileID: 1261}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -2359,14 +2111,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1107}
-    -
-      component: {fileID: 1262}
-    -
-      component: {fileID: 1263}
-    -
-      component: {fileID: 1264}
+  - component: {fileID: 1107}
+  - component: {fileID: 1262}
+  - component: {fileID: 1263}
+  - component: {fileID: 1264}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -2402,14 +2150,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1109}
-    -
-      component: {fileID: 1265}
-    -
-      component: {fileID: 1266}
-    -
-      component: {fileID: 1267}
+  - component: {fileID: 1109}
+  - component: {fileID: 1265}
+  - component: {fileID: 1266}
+  - component: {fileID: 1267}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -2445,14 +2189,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1111}
-    -
-      component: {fileID: 1268}
-    -
-      component: {fileID: 1269}
-    -
-      component: {fileID: 1270}
+  - component: {fileID: 1111}
+  - component: {fileID: 1268}
+  - component: {fileID: 1269}
+  - component: {fileID: 1270}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -2488,14 +2228,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1113}
-    -
-      component: {fileID: 1271}
-    -
-      component: {fileID: 1272}
-    -
-      component: {fileID: 1273}
+  - component: {fileID: 1113}
+  - component: {fileID: 1271}
+  - component: {fileID: 1272}
+  - component: {fileID: 1273}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -2531,14 +2267,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1115}
-    -
-      component: {fileID: 1274}
-    -
-      component: {fileID: 1275}
-    -
-      component: {fileID: 1276}
+  - component: {fileID: 1115}
+  - component: {fileID: 1274}
+  - component: {fileID: 1275}
+  - component: {fileID: 1276}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -2574,14 +2306,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1117}
-    -
-      component: {fileID: 1277}
-    -
-      component: {fileID: 1278}
-    -
-      component: {fileID: 1279}
+  - component: {fileID: 1117}
+  - component: {fileID: 1277}
+  - component: {fileID: 1278}
+  - component: {fileID: 1279}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -2617,14 +2345,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1119}
-    -
-      component: {fileID: 1280}
-    -
-      component: {fileID: 1281}
-    -
-      component: {fileID: 1282}
+  - component: {fileID: 1119}
+  - component: {fileID: 1280}
+  - component: {fileID: 1281}
+  - component: {fileID: 1282}
   m_Layer: 5
   m_Name: "numberTxt"
   m_TagString: "Untagged"
@@ -2660,14 +2384,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1121}
-    -
-      component: {fileID: 1283}
-    -
-      component: {fileID: 1284}
-    -
-      component: {fileID: 1285}
+  - component: {fileID: 1121}
+  - component: {fileID: 1283}
+  - component: {fileID: 1284}
+  - component: {fileID: 1285}
   m_Layer: 5
   m_Name: "money"
   m_TagString: "Untagged"
@@ -2703,14 +2423,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1123}
-    -
-      component: {fileID: 1286}
-    -
-      component: {fileID: 1287}
-    -
-      component: {fileID: 1288}
+  - component: {fileID: 1123}
+  - component: {fileID: 1286}
+  - component: {fileID: 1287}
+  - component: {fileID: 1288}
   m_Layer: 5
   m_Name: "drawTimesTxt"
   m_TagString: "Untagged"
@@ -2746,14 +2462,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1125}
-    -
-      component: {fileID: 1289}
-    -
-      component: {fileID: 1290}
-    -
-      component: {fileID: 1291}
+  - component: {fileID: 1125}
+  - component: {fileID: 1289}
+  - component: {fileID: 1290}
+  - component: {fileID: 1291}
   m_Layer: 5
   m_Name: "drawTimesHintTxt"
   m_TagString: "Untagged"
@@ -2789,14 +2501,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1127}
-    -
-      component: {fileID: 1292}
-    -
-      component: {fileID: 1293}
-    -
-      component: {fileID: 1294}
+  - component: {fileID: 1127}
+  - component: {fileID: 1292}
+  - component: {fileID: 1293}
+  - component: {fileID: 1294}
   m_Layer: 5
   m_Name: "unselect"
   m_TagString: "Untagged"
@@ -2832,14 +2540,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1129}
-    -
-      component: {fileID: 1295}
-    -
-      component: {fileID: 1296}
-    -
-      component: {fileID: 1297}
+  - component: {fileID: 1129}
+  - component: {fileID: 1295}
+  - component: {fileID: 1296}
+  - component: {fileID: 1297}
   m_Layer: 5
   m_Name: "select"
   m_TagString: "Untagged"
@@ -2875,14 +2579,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-    -
-      component: {fileID: 1131}
-    -
-      component: {fileID: 1298}
-    -
-      component: {fileID: 1299}
-    -
-      component: {fileID: 1300}
+  - component: {fileID: 1131}
+  - component: {fileID: 1298}
+  - component: {fileID: 1299}
+  - component: {fileID: 1300}
   m_Layer: 5
   m_Name: "icon"
   m_TagString: "Untagged"
@@ -2927,150 +2627,146 @@ MonoBehaviour:
   sourceObjectId: 1
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"LuckDrawDialog\", \"_children\": [{\"$ref\": 13}, {\"$ref\": 3}, {\"$ref\": 14}], \"_components\": [{\"$ref\": 71}, {\"$ref\": 72}, {\"$ref\": 73}, {\"$ref\": 74}], \"_prefab\": {\"$ref\": 75}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1624]}, \"_trs\": [375, 812, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Widget"
-      className: "cc.Widget"
-      sourceId: 71
-      rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.BlockInputEvents"
-      className: "cc.BlockInputEvents"
-      sourceId: 72
-      rawJson: "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "828a89/o+lD2o7BDeEFbGzx"
-      className: "FontView"
-      sourceId: 73
-      rawJson: "{\"__type__\": \"828a89/o+lD2o7BDeEFbGzx\", \"ttffont\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 1
-    -
-      type: "f4f6fPXsgdDJoGWz/Z75qu/"
-      className: "LuckDrawDialog"
-      sourceId: 74
-      rawJson: "{\"__type__\": \"f4f6fPXsgdDJoGWz/Z75qu/\", \"btnDrawLabel\": {\"$ref\": 26}, \"maskNode\": {\"$ref\": 13}, \"rectContent\": {\"$ref\": 2}, \"drawTimesLabel2\": {\"$ref\": 67}, \"drawTimesLabel\": {\"$ref\": 65}, \"btnLabel\": {\"$ref\": 26}, \"btnDraw\": {\"$ref\": 12}, \"bgSpine\": {\"$ref\": 29}, \"contentNode\": {\"$ref\": 3}, \"node\": {\"$ref\": 1}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 1
+  - type: "cc.Widget"
+    className: "cc.Widget"
+    sourceId: 71
+    rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.BlockInputEvents"
+    className: "cc.BlockInputEvents"
+    sourceId: 72
+    rawJson: "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "828a89/o+lD2o7BDeEFbGzx"
+    className: "FontView"
+    sourceId: 73
+    rawJson: "{\"__type__\": \"828a89/o+lD2o7BDeEFbGzx\", \"ttffont\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 1
+  - type: "f4f6fPXsgdDJoGWz/Z75qu/"
+    className: "LuckDrawDialog"
+    sourceId: 74
+    rawJson: "{\"__type__\": \"f4f6fPXsgdDJoGWz/Z75qu/\", \"btnDrawLabel\": {\"$ref\": 26}, \"maskNode\": {\"$ref\": 13}, \"rectContent\": {\"$ref\": 2}, \"drawTimesLabel2\": {\"$ref\": 67}, \"drawTimesLabel\": {\"$ref\": 65}, \"btnLabel\": {\"$ref\": 26}, \"btnDraw\": {\"$ref\": 12}, \"bgSpine\": {\"$ref\": 29}, \"contentNode\": {\"$ref\": 3}, \"node\": {\"$ref\": 1}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 1
 --- !u!114 &1133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,42 +2801,41 @@ MonoBehaviour:
   sourceObjectId: 3
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"content\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 27}, {\"$ref\": 28}, {\"$ref\": 15}, {\"$ref\": 2}, {\"$ref\": 12}, {\"$ref\": 66}], \"_components\": [{\"$ref\": 77}], \"_prefab\": {\"$ref\": 78}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1050]}}"
   originalComponents:
-    -
-      type: "cc.BlockInputEvents"
-      className: "cc.BlockInputEvents"
-      sourceId: 77
-      rawJson: "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 3}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.BlockInputEvents"
+    className: "cc.BlockInputEvents"
+    sourceId: 77
+    rawJson: "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 3}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!114 &1135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,42 +2989,41 @@ MonoBehaviour:
   sourceObjectId: 12
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"btn1\", \"_parent\": {\"$ref\": 3}, \"_children\": [{\"$ref\": 24}, {\"$ref\": 25}], \"_components\": [{\"$ref\": 87}], \"_prefab\": {\"$ref\": 88}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [470, 122]}, \"_trs\": [4.852, -462.976, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 87
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"cd716fcd-072f-4d7b-b158-c11cbee228aa\"}, \"node\": {\"$ref\": 12}}"
-      sprite: "cd716fcd-072f-4d7b-b158-c11cbee228aa"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 87
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"cd716fcd-072f-4d7b-b158-c11cbee228aa\"}, \"node\": {\"$ref\": 12}}"
+    sprite: "cd716fcd-072f-4d7b-b158-c11cbee228aa"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1144
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3385,78 +3079,76 @@ MonoBehaviour:
   sourceObjectId: 13
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"sprite_nask_bg\", \"_opacity\": 200, \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 89}, {\"$ref\": 90}], \"_prefab\": {\"$ref\": 91}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [2000, 2000]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 89
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fee62731-326a-4232-b718-01c6e63fb668\"}, \"node\": {\"$ref\": 13}}"
-      sprite: "fee62731-326a-4232-b718-01c6e63fb668"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.Widget"
-      className: "cc.Widget"
-      sourceId: 90
-      rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"_left\": -625, \"_right\": -625, \"_top\": -188, \"_bottom\": -188, \"_originalWidth\": 100, \"_originalHeight\": 100, \"node\": {\"$ref\": 13}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 89
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fee62731-326a-4232-b718-01c6e63fb668\"}, \"node\": {\"$ref\": 13}}"
+    sprite: "fee62731-326a-4232-b718-01c6e63fb668"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.Widget"
+    className: "cc.Widget"
+    sourceId: 90
+    rawJson: "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"_left\": -625, \"_right\": -625, \"_top\": -188, \"_bottom\": -188, \"_originalWidth\": 100, \"_originalHeight\": 100, \"node\": {\"$ref\": 13}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3546,42 +3238,41 @@ MonoBehaviour:
   sourceObjectId: 16
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 4}, \"_children\": [{\"$ref\": 34}], \"_components\": [{\"$ref\": 94}], \"_prefab\": {\"$ref\": 95}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 94
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 16}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 94
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 16}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3637,42 +3328,41 @@ MonoBehaviour:
   sourceObjectId: 17
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 5}, \"_children\": [{\"$ref\": 38}], \"_components\": [{\"$ref\": 96}], \"_prefab\": {\"$ref\": 97}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 96
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 17}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 96
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 17}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3728,42 +3418,41 @@ MonoBehaviour:
   sourceObjectId: 18
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 6}, \"_children\": [{\"$ref\": 42}], \"_components\": [{\"$ref\": 98}], \"_prefab\": {\"$ref\": 99}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 98
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 18}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 98
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 18}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3819,42 +3508,41 @@ MonoBehaviour:
   sourceObjectId: 19
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 7}, \"_children\": [{\"$ref\": 46}], \"_components\": [{\"$ref\": 100}], \"_prefab\": {\"$ref\": 101}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 100
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 19}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 100
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 19}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1161
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3910,42 +3598,41 @@ MonoBehaviour:
   sourceObjectId: 20
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 8}, \"_children\": [{\"$ref\": 50}], \"_components\": [{\"$ref\": 102}], \"_prefab\": {\"$ref\": 103}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 102
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 20}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 102
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 20}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4001,42 +3688,41 @@ MonoBehaviour:
   sourceObjectId: 21
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 9}, \"_children\": [{\"$ref\": 54}], \"_components\": [{\"$ref\": 104}], \"_prefab\": {\"$ref\": 105}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 104
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 21}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 104
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 21}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1167
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4092,42 +3778,41 @@ MonoBehaviour:
   sourceObjectId: 22
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 10}, \"_children\": [{\"$ref\": 58}], \"_components\": [{\"$ref\": 106}], \"_prefab\": {\"$ref\": 107}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 106
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 22}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 106
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 22}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1170
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4183,42 +3868,41 @@ MonoBehaviour:
   sourceObjectId: 23
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"coin\", \"_active\": false, \"_parent\": {\"$ref\": 11}, \"_children\": [{\"$ref\": 62}], \"_components\": [{\"$ref\": 108}], \"_prefab\": {\"$ref\": 109}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [296, 310]}, \"_trs\": [0, 14.228, 0, 0, 0, 0, 1, 0.2, 0.2, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 108
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 23}}"
-      sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 108
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"565c9f09-039f-450a-9a48-32f6e5e9c02f\"}, \"node\": {\"$ref\": 23}}"
+    sprite: "565c9f09-039f-450a-9a48-32f6e5e9c02f"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1173
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4274,42 +3958,41 @@ MonoBehaviour:
   sourceObjectId: 24
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"redBg\", \"_active\": false, \"_parent\": {\"$ref\": 12}, \"_children\": [{\"$ref\": 64}], \"_components\": [{\"$ref\": 110}], \"_prefab\": {\"$ref\": 111}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [78, 36]}, \"_trs\": [224.111, 54.777, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 110
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3a453ccb-3258-4d80-94b1-962e0e65e478\"}, \"node\": {\"$ref\": 24}}"
-      sprite: "3a453ccb-3258-4d80-94b1-962e0e65e478"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 110
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3a453ccb-3258-4d80-94b1-962e0e65e478\"}, \"node\": {\"$ref\": 24}}"
+    sprite: "3a453ccb-3258-4d80-94b1-962e0e65e478"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4365,78 +4048,76 @@ MonoBehaviour:
   sourceObjectId: 25
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"btnLabel\", \"_parent\": {\"$ref\": 12}, \"_components\": [{\"$ref\": 26}, {\"$ref\": 112}], \"_prefab\": {\"$ref\": 113}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 100]}}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 26
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"点击抽奖\", \"_fontSize\": 48, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 25}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
-      sprite: ""
-      text: "点击抽奖"
-      fontSize: 48
-      lineHeight: 40
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
-    -
-      type: "cc.LabelOutline"
-      className: "cc.LabelOutline"
-      sourceId: 112
-      rawJson: "{\"__type__\": \"cc.LabelOutline\", \"_width\": 6, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4280512810]}, \"node\": {\"$ref\": 25}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 26
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"点击抽奖\", \"_fontSize\": 48, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 25}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
+    sprite: ""
+    text: "点击抽奖"
+    fontSize: 48
+    lineHeight: 40
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
+  - type: "cc.LabelOutline"
+    className: "cc.LabelOutline"
+    sourceId: 112
+    rawJson: "{\"__type__\": \"cc.LabelOutline\", \"_width\": 6, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4280512810]}, \"node\": {\"$ref\": 25}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1179
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4511,42 +4192,41 @@ MonoBehaviour:
   sourceObjectId: 27
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"PiaoDai_TX\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 114}], \"_prefab\": {\"$ref\": 115}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [76, 6.85]}, \"_trs\": [-26.331, 10.893, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "sp.Skeleton"
-      className: "sp.Skeleton"
-      sourceId: 114
-      rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"defaultAnimation\": \"idle\", \"_preCacheMode\": 0, \"_animationName\": \"idle\", \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"7e61e8de-670f-495e-9549-fce8234ec73b\"}, \"node\": {\"$ref\": 27}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "sp.Skeleton"
+    className: "sp.Skeleton"
+    sourceId: 114
+    rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"defaultAnimation\": \"idle\", \"_preCacheMode\": 0, \"_animationName\": \"idle\", \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"7e61e8de-670f-495e-9549-fce8234ec73b\"}, \"node\": {\"$ref\": 27}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!114 &1183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4564,42 +4244,41 @@ MonoBehaviour:
   sourceObjectId: 28
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"bgSpine\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 29}], \"_prefab\": {\"$ref\": 116}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1624]}, \"_trs\": [3.789, 62.612, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "sp.Skeleton"
-      className: "sp.Skeleton"
-      sourceId: 29
-      rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"_preCacheMode\": 0, \"loop\": false, \"premultipliedAlpha\": false, \"timeScale\": 2, \"_animationName\": \"idle\", \"_playTimes\": 1, \"node\": {\"$ref\": 28}, \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"e0434db8-76ce-4c32-a6f4-4088a1267d05\"}}"
-      sprite: ""
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "sp.Skeleton"
+    className: "sp.Skeleton"
+    sourceId: 29
+    rawJson: "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"_preCacheMode\": 0, \"loop\": false, \"premultipliedAlpha\": false, \"timeScale\": 2, \"_animationName\": \"idle\", \"_playTimes\": 1, \"node\": {\"$ref\": 28}, \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"e0434db8-76ce-4c32-a6f4-4088a1267d05\"}}"
+    sprite: ""
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!114 &1184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4617,42 +4296,41 @@ MonoBehaviour:
   sourceObjectId: 30
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 15}, \"_components\": [{\"$ref\": 117}], \"_prefab\": {\"$ref\": 118}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 117
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 30}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 117
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 30}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4708,42 +4386,41 @@ MonoBehaviour:
   sourceObjectId: 31
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"编组 4\", \"_parent\": {\"$ref\": 15}, \"_components\": [{\"$ref\": 119}], \"_prefab\": {\"$ref\": 120}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [84, 84]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 119
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"b602806c-de26-414a-b786-55de2b3093f2\"}, \"node\": {\"$ref\": 31}}"
-      sprite: "b602806c-de26-414a-b786-55de2b3093f2"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 119
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"b602806c-de26-414a-b786-55de2b3093f2\"}, \"node\": {\"$ref\": 31}}"
+    sprite: "b602806c-de26-414a-b786-55de2b3093f2"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1188
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4799,42 +4476,41 @@ MonoBehaviour:
   sourceObjectId: 32
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 4}, \"_components\": [{\"$ref\": 121}], \"_prefab\": {\"$ref\": 122}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 121
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 32}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 121
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 32}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4890,42 +4566,41 @@ MonoBehaviour:
   sourceObjectId: 33
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 4}, \"_components\": [{\"$ref\": 123}], \"_prefab\": {\"$ref\": 124}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 123
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 33}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 123
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 33}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4981,42 +4656,41 @@ MonoBehaviour:
   sourceObjectId: 34
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 16}, \"_components\": [{\"$ref\": 125}], \"_prefab\": {\"$ref\": 126}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 125
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 34}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 125
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 34}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5076,42 +4750,41 @@ MonoBehaviour:
   sourceObjectId: 35
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 4}, \"_components\": [{\"$ref\": 127}], \"_prefab\": {\"$ref\": 128}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 127
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 35}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 127
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 35}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1200
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5167,42 +4840,41 @@ MonoBehaviour:
   sourceObjectId: 36
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 129}], \"_prefab\": {\"$ref\": 130}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 129
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 36}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 129
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 36}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5258,42 +4930,41 @@ MonoBehaviour:
   sourceObjectId: 37
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 131}], \"_prefab\": {\"$ref\": 132}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 131
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 37}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 131
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 37}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1206
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5349,42 +5020,41 @@ MonoBehaviour:
   sourceObjectId: 38
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 17}, \"_components\": [{\"$ref\": 133}], \"_prefab\": {\"$ref\": 134}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 133
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 38}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 133
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 38}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1209
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5444,42 +5114,41 @@ MonoBehaviour:
   sourceObjectId: 39
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 135}], \"_prefab\": {\"$ref\": 136}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 135
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 39}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 135
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 39}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5535,42 +5204,41 @@ MonoBehaviour:
   sourceObjectId: 40
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 6}, \"_components\": [{\"$ref\": 137}], \"_prefab\": {\"$ref\": 138}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 137
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 40}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 137
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 40}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1215
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5626,42 +5294,41 @@ MonoBehaviour:
   sourceObjectId: 41
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 6}, \"_components\": [{\"$ref\": 139}], \"_prefab\": {\"$ref\": 140}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 139
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 41}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 139
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 41}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5717,42 +5384,41 @@ MonoBehaviour:
   sourceObjectId: 42
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 18}, \"_components\": [{\"$ref\": 141}], \"_prefab\": {\"$ref\": 142}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 141
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 42}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 141
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 42}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5812,42 +5478,41 @@ MonoBehaviour:
   sourceObjectId: 43
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 6}, \"_components\": [{\"$ref\": 143}], \"_prefab\": {\"$ref\": 144}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 143
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 43}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 143
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 43}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5903,42 +5568,41 @@ MonoBehaviour:
   sourceObjectId: 44
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 7}, \"_components\": [{\"$ref\": 145}], \"_prefab\": {\"$ref\": 146}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 145
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 44}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 145
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 44}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5994,42 +5658,41 @@ MonoBehaviour:
   sourceObjectId: 45
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 7}, \"_components\": [{\"$ref\": 147}], \"_prefab\": {\"$ref\": 148}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 147
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 45}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 147
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 45}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1230
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6085,42 +5748,41 @@ MonoBehaviour:
   sourceObjectId: 46
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 19}, \"_components\": [{\"$ref\": 149}], \"_prefab\": {\"$ref\": 150}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 149
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 46}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 149
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 46}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1233
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6180,42 +5842,41 @@ MonoBehaviour:
   sourceObjectId: 47
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 7}, \"_components\": [{\"$ref\": 151}], \"_prefab\": {\"$ref\": 152}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 151
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 47}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 151
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 47}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6271,42 +5932,41 @@ MonoBehaviour:
   sourceObjectId: 48
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 8}, \"_components\": [{\"$ref\": 153}], \"_prefab\": {\"$ref\": 154}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 153
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 48}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 153
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 48}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6362,42 +6022,41 @@ MonoBehaviour:
   sourceObjectId: 49
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 8}, \"_components\": [{\"$ref\": 155}], \"_prefab\": {\"$ref\": 156}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 155
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 49}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 155
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 49}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6453,42 +6112,41 @@ MonoBehaviour:
   sourceObjectId: 50
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 20}, \"_components\": [{\"$ref\": 157}], \"_prefab\": {\"$ref\": 158}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 157
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 50}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 157
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 50}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6548,42 +6206,41 @@ MonoBehaviour:
   sourceObjectId: 51
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 8}, \"_components\": [{\"$ref\": 159}], \"_prefab\": {\"$ref\": 160}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 159
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 51}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 159
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 51}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6639,42 +6296,41 @@ MonoBehaviour:
   sourceObjectId: 52
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 9}, \"_components\": [{\"$ref\": 161}], \"_prefab\": {\"$ref\": 162}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 161
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 52}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 161
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 52}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6730,42 +6386,41 @@ MonoBehaviour:
   sourceObjectId: 53
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 9}, \"_components\": [{\"$ref\": 163}], \"_prefab\": {\"$ref\": 164}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 163
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 53}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 163
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 53}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6821,42 +6476,41 @@ MonoBehaviour:
   sourceObjectId: 54
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 21}, \"_components\": [{\"$ref\": 165}], \"_prefab\": {\"$ref\": 166}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 165
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 54}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 165
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 54}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6916,42 +6570,41 @@ MonoBehaviour:
   sourceObjectId: 55
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 9}, \"_components\": [{\"$ref\": 167}], \"_prefab\": {\"$ref\": 168}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 167
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 55}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 167
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 55}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7007,42 +6660,41 @@ MonoBehaviour:
   sourceObjectId: 56
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 10}, \"_components\": [{\"$ref\": 169}], \"_prefab\": {\"$ref\": 170}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 169
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 56}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 169
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 56}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1263
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7098,42 +6750,41 @@ MonoBehaviour:
   sourceObjectId: 57
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 10}, \"_components\": [{\"$ref\": 171}], \"_prefab\": {\"$ref\": 172}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 171
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 57}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 171
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 57}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1266
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7189,42 +6840,41 @@ MonoBehaviour:
   sourceObjectId: 58
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 22}, \"_components\": [{\"$ref\": 173}], \"_prefab\": {\"$ref\": 174}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 173
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 58}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 173
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 58}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1269
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7284,42 +6934,41 @@ MonoBehaviour:
   sourceObjectId: 59
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 10}, \"_components\": [{\"$ref\": 175}], \"_prefab\": {\"$ref\": 176}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 175
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 59}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 175
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 59}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1272
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7375,42 +7024,41 @@ MonoBehaviour:
   sourceObjectId: 60
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 11}, \"_components\": [{\"$ref\": 177}], \"_prefab\": {\"$ref\": 178}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 177
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 60}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 177
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 60}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1275
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7466,42 +7114,41 @@ MonoBehaviour:
   sourceObjectId: 61
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_active\": false, \"_parent\": {\"$ref\": 11}, \"_components\": [{\"$ref\": 179}], \"_prefab\": {\"$ref\": 180}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 179
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 61}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 179
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 61}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7557,42 +7204,41 @@ MonoBehaviour:
   sourceObjectId: 62
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"numberTxt\", \"_parent\": {\"$ref\": 23}, \"_components\": [{\"$ref\": 181}], \"_prefab\": {\"$ref\": 182}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278208689]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [0, -230.63, 0, 0, 0, 0, 1, 5, 5, 5]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 181
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 62}}"
-      sprite: ""
-      text: "+1"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 181
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"+1\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 62}}"
+    sprite: ""
+    text: "+1"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7652,42 +7298,41 @@ MonoBehaviour:
   sourceObjectId: 63
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"money\", \"_active\": false, \"_parent\": {\"$ref\": 11}, \"_components\": [{\"$ref\": 183}], \"_prefab\": {\"$ref\": 184}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 183
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 63}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 183
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 63}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7743,42 +7388,41 @@ MonoBehaviour:
   sourceObjectId: 64
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"drawTimesTxt\", \"_parent\": {\"$ref\": 24}, \"_components\": [{\"$ref\": 65}], \"_prefab\": {\"$ref\": 185}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 30]}, \"_trs\": [-0.148, -0.004, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 65
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"9次\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 64}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
-      sprite: ""
-      text: "9次"
-      fontSize: 20
-      lineHeight: 20
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 65
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"9次\", \"_fontSize\": 20, \"_lineHeight\": 20, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 64}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
+    sprite: ""
+    text: "9次"
+    fontSize: 20
+    lineHeight: 20
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7838,42 +7482,41 @@ MonoBehaviour:
   sourceObjectId: 66
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"drawTimesHintTxt\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 67}], \"_prefab\": {\"$ref\": 186}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [680, 40]}, \"_trs\": [-2.03, -561.537, 0, 0, 0, 0, 1, 1, 1, 1]}"
   originalComponents:
-    -
-      type: "cc.Label"
-      className: "cc.Label"
-      sourceId: 67
-      rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"再得xx分，抽奖次数+1\", \"_fontSize\": 35, \"_lineHeight\": 35, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 66}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
-      sprite: ""
-      text: "再得xx分，抽奖次数+1"
-      fontSize: 35
-      lineHeight: 35
-      horizontalAlign: 1
-      verticalAlign: 1
-      font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Label"
+    className: "cc.Label"
+    sourceId: 67
+    rawJson: "{\"__type__\": \"cc.Label\", \"_string\": \"再得xx分，抽奖次数+1\", \"_fontSize\": 35, \"_lineHeight\": 35, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 66}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}"
+    sprite: ""
+    text: "再得xx分，抽奖次数+1"
+    fontSize: 35
+    lineHeight: 35
+    horizontalAlign: 1
+    verticalAlign: 1
+    font: "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1290
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7933,42 +7576,41 @@ MonoBehaviour:
   sourceObjectId: 68
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"unselect\", \"_parent\": {\"$ref\": 14}, \"_components\": [{\"$ref\": 187}], \"_prefab\": {\"$ref\": 188}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 187
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 68}}"
-      sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 187
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fd4a226c-bdc3-4f42-bbb9-1a5db1283de5\"}, \"node\": {\"$ref\": 68}}"
+    sprite: "fd4a226c-bdc3-4f42-bbb9-1a5db1283de5"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8024,42 +7666,41 @@ MonoBehaviour:
   sourceObjectId: 69
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"select\", \"_parent\": {\"$ref\": 14}, \"_components\": [{\"$ref\": 189}], \"_prefab\": {\"$ref\": 190}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [118, 118]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 189
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 69}}"
-      sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 189
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3892357c-81e3-41c3-8118-c9f2a090da7b\"}, \"node\": {\"$ref\": 69}}"
+    sprite: "3892357c-81e3-41c3-8118-c9f2a090da7b"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8115,42 +7756,41 @@ MonoBehaviour:
   sourceObjectId: 70
   originalNodeJson: "{\"__type__\": \"cc.Node\", \"_name\": \"icon\", \"_parent\": {\"$ref\": 14}, \"_components\": [{\"$ref\": 191}], \"_prefab\": {\"$ref\": 192}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [70, 50]}}"
   originalComponents:
-    -
-      type: "cc.Sprite"
-      className: "cc.Sprite"
-      sourceId: 191
-      rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 70}}"
-      sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
-      text: ""
-      fontSize: 40
-      lineHeight: 40
-      horizontalAlign: 0
-      verticalAlign: 0
-      font: ""
-      spriteType: 0
-      fillRange: 1
-      fillStart: 0
-      fillType: 0
-      enabled: 1
-      target: -1
-      content: -1
-      viewport: -1
-      radius: 25
-      offset:
-        - 0
-        - 0
-      size:
-        - 100
-        - 100
-      bodyType: 2
-      gravityScale: 1
-      linearDamping: 0
-      angularDamping: 0
-      friction: 0.2
-      restitution: 0
-      density: 1
-      sensor: 0
-      isCustom: 0
+  - type: "cc.Sprite"
+    className: "cc.Sprite"
+    sourceId: 191
+    rawJson: "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"3ddb7cd6-f96f-44b1-accf-1eca6b267915\"}, \"node\": {\"$ref\": 70}}"
+    sprite: "3ddb7cd6-f96f-44b1-accf-1eca6b267915"
+    text: ""
+    fontSize: 40
+    lineHeight: 40
+    horizontalAlign: 0
+    verticalAlign: 0
+    font: ""
+    spriteType: 0
+    fillRange: 1
+    fillStart: 0
+    fillType: 0
+    enabled: 1
+    target: -1
+    content: -1
+    viewport: -1
+    radius: 25
+    offset:
+    - 0
+    - 0
+    size:
+    - 100
+    - 100
+    bodyType: 2
+    gravityScale: 1
+    linearDamping: 0
+    angularDamping: 0
+    friction: 0.2
+    restitution: 0
+    density: 1
+    sensor: 0
+    isCustom: 0
 --- !u!222 &1299
 CanvasRenderer:
   m_ObjectHideFlags: 0
