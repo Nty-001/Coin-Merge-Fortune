@@ -1,0 +1,49 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Material",
+      "_name": "builtin-3d-particle",
+      "_techniqueData": {
+        "0": {
+          "defines": {
+            "CC_USE_BILLBOARD": true,
+            "CC_USE_STRETCHED_BILLBOARD": false,
+            "CC_USE_HORIZONTAL_BILLBOARD": false,
+            "CC_USE_VERTICAL_BILLBOARD": false,
+            "CC_USE_MESH": false
+          },
+          "props": {
+            "mainTiling_Offset": {
+              "__type__": "cc.Vec4",
+              "values": [
+                1,
+                1,
+                0,
+                0
+              ]
+            },
+            "tintColor": {
+              "__type__": "cc.Color",
+              "values": [
+                2141562284
+              ]
+            },
+            "mainTexture": {
+              "$asset": "600301aa-3357-4a10-b086-84f011fa32ba"
+            }
+          }
+        }
+      },
+      "_effectAsset": {
+        "$asset": "829a282c-b049-4019-bd38-5ace8d8a6417"
+      }
+    }
+  ],
+  "uuid": "432fa09c-cf03-4cff-a186-982604408a07",
+  "source": "export_20260914/unpacked/base/assets/assets/internal/import/0b/0b6c4470e.9537f.json",
+  "paths": [
+    "materials/builtin-3d-particle"
+  ]
+}

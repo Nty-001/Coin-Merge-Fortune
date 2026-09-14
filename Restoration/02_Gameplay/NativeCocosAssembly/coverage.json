@@ -1,0 +1,43 @@
+{
+  "source": "export_20260914\\unpacked\\split_config.arm64_v8a\\lib\\arm64-v8a\\libcocos2djs.so",
+  "sha256": "33d5a048a035d373fd6da8e4ea8a44320ab955efe3795b31864bda98351e7056",
+  "architecture": "AArch64",
+  "functionSymbols": 40962,
+  "sections": [
+    {
+      "section": ".text",
+      "address": "0xaba000",
+      "bytes": 16528452,
+      "coveredBytes": 16528452,
+      "pseudoDataBytes": 184200,
+      "instructions": 4132113,
+      "file": "text.asm"
+    },
+    {
+      "section": "__lcxx_override",
+      "address": "0x1a7d444",
+      "bytes": 268,
+      "coveredBytes": 268,
+      "pseudoDataBytes": 0,
+      "instructions": 67,
+      "file": "__lcxx_override.asm"
+    },
+    {
+      "section": ".plt",
+      "address": "0x1a7d550",
+      "bytes": 352576,
+      "coveredBytes": 352576,
+      "pseudoDataBytes": 0,
+      "instructions": 88144,
+      "file": "plt.asm"
+    }
+  ],
+  "allExecutableBytesCovered": true,
+  "elapsedSeconds": 17.61,
+  "limitations": [
+    "Disassembly is not source-level C++ recovery.",
+    "Stripped function names and indirect call destinations are not invented.",
+    "Original package has no libil2cpp.so; this is the actual Cocos native library.",
+    "Complete executable section coverage does not imply all higher-level semantics are understood."
+  ]
+}

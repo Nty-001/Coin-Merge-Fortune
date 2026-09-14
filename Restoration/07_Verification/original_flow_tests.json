@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "originalFunctions": [
+    "HWLshowAd",
+    "window.XSSdkCallback",
+    "ServerConfig.sendCash",
+    "ServerConfig.httpCashSend",
+    "ServerConfig.sendCashRecord",
+    "AESUtil.encrypt",
+    "HWLwordArrayToBuffer"
+  ],
+  "checks": [
+    "ad duplicate lock",
+    "native ad trigger",
+    "ad success callback",
+    "ad error callback",
+    "watch count increment",
+    "music pause/resume",
+    "withdraw payload encrypted",
+    "withdraw success response",
+    "withdraw history request",
+    "HTTP failure rejection"
+  ],
+  "transport": "in-memory mock only",
+  "trace": [
+    {
+      "event": "mock_native",
+      "method": "isAdRejected"
+    },
+    {
+      "event": "showVideoOpen",
+      "args": [
+        "fixture_reward"
+      ]
+    },
+    "music.pause",
+    {
+      "event": "mock_native",
+      "method": "qcz_playAd"
+    },
+    {
+      "event": "showVideo",
+      "args": [
+        "fixture_reward"
+      ]
+    },
+    "music.resume",
+    {
+      "event": "showVideoComplete",
+      "args": [
+        "fixture_reward"
+      ]
+    },
+    {
+      "event": "mock_native",
+      "method": "isAdRejected"
+    },
+    {
+      "event": "showVideoOpen",
+      "args": [
+        "fixture_error"
+      ]
+    },
+    "music.pause",
+    {
+      "event": "mock_native",
+      "method": "qcz_playAd"
+    },
+    "music.resume",
+    "toast",
+    {
+      "event": "showVideoFail",
+      "args": [
+        "fixture_error",
+        42
+      ]
+    },
+    {
+      "event": "mock_native",
+      "method": "getClientId"
+    },
+    {
+      "event": "mock_native",
+      "method": "getAdid"
+    },
+    {
+      "event": "mock_transport",
+      "method": "POST",
+      "url": "https://b.coinmergefortune.top/api/coin",
+      "bodyBytes": 256
+    },
+    {
+      "event": "mock_transport",
+      "method": "POST",
+      "url": "https://b.coinmergefortune.top/api/coin",
+      "bodyBytes": 96
+    },
+    {
+      "event": "mock_transport",
+      "method": "POST",
+      "url": "https://b.coinmergefortune.top/api/coin",
+      "bodyBytes": 96
+    }
+  ]
+}

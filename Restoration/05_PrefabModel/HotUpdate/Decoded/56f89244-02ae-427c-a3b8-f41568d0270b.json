@@ -1,0 +1,60 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "flyrealicon",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "flyrealicon",
+      "_components": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_prefab": {
+        "$ref": 3
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          62,
+          62
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "a386dc39-965b-452b-818e-e8b7a51098f4"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    }
+  ],
+  "uuid": "56f89244-02ae-427c-a3b8-f41568d0270b",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/56/56f89244-02ae-427c-a3b8-f41568d0270b.66d6b.json",
+  "paths": [
+    "CommonPrefab/flyrealicon"
+  ]
+}

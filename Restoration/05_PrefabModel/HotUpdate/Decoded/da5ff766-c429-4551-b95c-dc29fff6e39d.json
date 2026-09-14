@@ -1,0 +1,654 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "UpdateDialog",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "UpdateDialog",
+      "_children": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 14
+        },
+        {
+          "$ref": 15
+        },
+        {
+          "$ref": 16
+        },
+        {
+          "$ref": 17
+        }
+      ],
+      "_prefab": {
+        "$ref": 18
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      },
+      "_trs": [
+        375,
+        812,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bg",
+      "_children": [
+        {
+          "$ref": 7
+        },
+        {
+          "$ref": 9
+        },
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 6
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 19
+        }
+      ],
+      "_prefab": {
+        "$ref": 20
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          632,
+          387
+        ]
+      },
+      "_trs": [
+        0,
+        85.867,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "_parent": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "node",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 21
+        }
+      ],
+      "_prefab": {
+        "$ref": 22
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          800
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_nask_bg",
+      "_opacity": 200,
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 23
+        },
+        {
+          "$ref": 24
+        }
+      ],
+      "_prefab": {
+        "$ref": 25
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278190080
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 11
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 26
+        }
+      ],
+      "_prefab": {
+        "$ref": 27
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          421,
+          146
+        ]
+      },
+      "_trs": [
+        0,
+        -128.096,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "close",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 13
+        }
+      ],
+      "_prefab": {
+        "$ref": 28
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          100,
+          100
+        ]
+      },
+      "_trs": [
+        280.312,
+        159.548,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "title",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 8
+        }
+      ],
+      "_prefab": {
+        "$ref": 29
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278190080
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          450,
+          100
+        ]
+      },
+      "_trs": [
+        -0.786,
+        125.022,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "更新",
+      "_fontSize": 52,
+      "_lineHeight": 52,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 7
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "tip1",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 10
+        }
+      ],
+      "_prefab": {
+        "$ref": 30
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4281545523
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          500,
+          100
+        ]
+      },
+      "_trs": [
+        -1.434,
+        31.456,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "新版本已发布,请更新到最新版本新版本已发布,请更新到最新版本",
+      "_fontSize": 32,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 9
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "确认Lab",
+      "_parent": {
+        "$ref": 5
+      },
+      "_components": [
+        {
+          "$ref": 12
+        }
+      ],
+      "_prefab": {
+        "$ref": 31
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4294931002
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          350,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "立刻更新",
+      "_fontSize": 50,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 11
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "close",
+      "_parent": {
+        "$ref": 6
+      },
+      "_components": [
+        {
+          "$ref": 32
+        }
+      ],
+      "_prefab": {
+        "$ref": 33
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          34,
+          34
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828a89/o+lD2o7BDeEFbGzx",
+      "ttffont": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "93169cRaBBO2Jmn/2NmnozC",
+      "tips1": {
+        "$ref": 10
+      },
+      "btn": {
+        "$ref": 12
+      },
+      "closeBrn": {
+        "$ref": 6
+      },
+      "title": {
+        "$ref": 8
+      },
+      "contentNode": {
+        "$ref": 3
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_type": 1,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "5c4b192a-d6d9-4e21-8c9b-1528ffdeafd2"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "1aDE0dRNhMcJvcZaTFkdRW",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_enabled": false,
+      "_alignFlags": 45,
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c9Y2feUxZNz5YrRaKxddms",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "fee62731-326a-4232-b718-01c6e63fb668"
+      },
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "_originalWidth": 100,
+      "_originalHeight": 100,
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "abJif5Wa9BKrOTv3zKdRuu",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_type": 1,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "feuefieaNN/qyxkZ+wbZuj",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "f6ETToAk5C2ovJao89Ei3I",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "caISbdhLxNo6yXDNn5X8sZ",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e6FNS7wi9FH4EqNK5gyDmR",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "6c3i0PHtZOdaJa96w2G2U+",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "c391e010-1b3e-4aa4-84fa-e77b19e12527"
+      },
+      "node": {
+        "$ref": 13
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dbmsYapOdNHrv0ZDrHqjIV",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "da5ff766-c429-4551-b95c-dc29fff6e39d",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/da/da5ff766-c429-4551-b95c-dc29fff6e39d.a4706.json",
+  "paths": [
+    "GameDialog/UpdateDialog"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_4",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_4",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          116,
+          122
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          116,
+          122
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -7,
+            61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -22,
+            57
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -30,
+            53
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -36,
+            47
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -38,
+            47
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -47,
+            37
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -48,
+            33
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -50,
+            32
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -54,
+            24
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -58,
+            9
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -58,
+            -10
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -54,
+            -25
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -46,
+            -39
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -30,
+            -53
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -13,
+            -60
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            11,
+            -61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            19,
+            -59
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            36,
+            -50
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            46,
+            -40
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            54,
+            -26
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            58,
+            -11
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            57,
+            16
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            53,
+            24
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            53,
+            27
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            49,
+            32
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            48,
+            36
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            45,
+            38
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            45,
+            40
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            35,
+            50
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            21,
+            58
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            9,
+            61
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "a52e5e07-0f14-4570-8ac2-788ad5013016"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "a52e5e07-0f14-4570-8ac2-788ad5013016"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "53e1b3bc-d5c3-4786-a742-0e75bbd1d382",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/53/53e1b3bc-d5c3-4786-a742-0e75bbd1d382.8ebaa.json",
+  "paths": [
+    "Block/block_4"
+  ]
+}

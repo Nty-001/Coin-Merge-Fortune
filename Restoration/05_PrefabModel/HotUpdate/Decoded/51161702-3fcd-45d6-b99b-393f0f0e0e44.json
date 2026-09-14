@@ -1,0 +1,57 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "flyiconrevoke",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "flyiconrevoke",
+      "_components": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_prefab": {
+        "$ref": 3
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          97,
+          97
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    }
+  ],
+  "uuid": "51161702-3fcd-45d6-b99b-393f0f0e0e44",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/51/51161702-3fcd-45d6-b99b-393f0f0e0e44.0aa27.json",
+  "paths": [
+    "CommonPrefab/flyiconrevoke"
+  ]
+}

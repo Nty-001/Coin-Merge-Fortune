@@ -1,0 +1,3136 @@
+window.__require = function e(t, o, a) {
+function s(i, c) {
+if (!o[i]) {
+if (!t[i]) {
+var l = i.split("/");
+l = l[l.length - 1];
+if (!t[l]) {
+var r = "function" == typeof __require && __require;
+if (!c && r) return r(l, !0);
+if (n) return n(l, !0);
+throw new Error("Cannot find module '" + i + "'");
+}
+i = l;
+}
+var h = o[i] = {
+exports: {}
+};
+t[i][0].call(h.exports, function(e) {
+return s(t[i][1][e] || e);
+}, h, h.exports, e, t, o, a);
+}
+return o[i].exports;
+}
+for (var n = "function" == typeof __require && __require, i = 0; i < a.length; i++) s(a[i]);
+return s;
+}({
+AddHeartView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "7e3a3gRQiJLrrLy9944vKcH", "AddHeartView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/EventCenter"), i = e("../ATools/GameEventConsts"), c = e("../ATools/LocalDataManager"), l = e("../ATools/TouchButton"), r = e("../ATools/UIManager"), h = e("../Game/Utils"), u = e("../GameScene"), {ccclass: d, property: g} = cc._decorator;
+let p = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_close = null;
+this.btn_add = null;
+this.lbl_heart = null;
+this.lbl_time = null;
+this.closeCallBack = null;
+this.addCallBack = null;
+}
+onLoad() {
+n.EventCenter.getInstance().register(i.GameEventName.HeartBeat, () => {
+this.lbl_time.string = this.getTimeStr();
+}, this);
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+this.lbl_heart.string = `Your life: ${c.default.getInstance().getGameData().getHeart()}`;
+this.lbl_time.string = this.getTimeStr();
+this.closeCallBack = e.closeCallBack;
+this.addCallBack = e.addCallBack;
+}
+getTimeStr() {
+let e = u.default.instance.heartDown;
+return `After<color=#FF3218>${h.default.getTimeStr(1e3 * e)}</c> +1`;
+}
+registerEvent() {
+this.btn_close.addComponent(l.default).registerTouchEvent(() => {
+this.closeCallBack && this.closeCallBack();
+this.onClose();
+});
+this.btn_add.addComponent(l.default).registerTouchEvent(() => {
+if (c.default.getInstance().getGameData().reduceCoins(100)) {
+c.default.getInstance().getGameData().addHeart(1);
+this.onClose();
+this.addCallBack && this.addCallBack();
+} else r.default.instance.onShowToast("Not enough gold coins");
+});
+}
+};
+a([ g(cc.Node) ], p.prototype, "btn_close", void 0);
+a([ g(cc.Node) ], p.prototype, "btn_add", void 0);
+a([ g(cc.Label) ], p.prototype, "lbl_heart", void 0);
+a([ g(cc.RichText) ], p.prototype, "lbl_time", void 0);
+p = a([ s.registerUIPath("prefab/AddHeartView"), d ], p);
+o.default = p;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/EventCenter": "EventCenter",
+"../ATools/GameEventConsts": "GameEventConsts",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager",
+"../Game/Utils": "Utils",
+"../GameScene": "GameScene"
+} ],
+AudioManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "6ef6bD61yxLu6p/WIbT++ep", "AudioManager");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class {
+static playSound(e, t = !1, o = 1) {
+return cc.audioEngine.play(e, t, o);
+}
+static playMusic(e, t = !0, o = 1) {
+return cc.audioEngine.play(e, t, o);
+}
+static stopMusic(e) {
+cc.audioEngine.stop(e);
+}
+static stopSound(e) {
+cc.audioEngine.stop(e);
+}
+static pauseOne(e) {
+cc.audioEngine.pauseEffect(e);
+}
+static resumeOne(e) {
+cc.audioEngine.resumeEffect(e);
+}
+static pauseAll() {
+cc.audioEngine.pauseAll();
+}
+static resumeAll() {
+cc.audioEngine.resumeAll();
+}
+};
+cc._RF.pop();
+}, {} ],
+BaseRecord: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "bdca0Q0Dt5Hq4wKs//14qrm", "BaseRecord");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class {
+parseFromUserDefault(e) {
+if (e) {
+for (let t in this) "function" != typeof this[t] && "todayData" != t && e.hasOwnProperty(t) && (this[t] = e[t]);
+for (let e in this) this[e];
+this.parseEndCallback();
+}
+}
+};
+cc._RF.pop();
+}, {} ],
+BaseUI: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "35d03Mv0U9FQJTwc/zvyIV4", "BaseUI");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.registerUIPath = o.UIConfig = void 0;
+const s = e("./UIManager");
+o.UIConfig = {};
+o.registerUIPath = function(e) {
+return function(t) {
+let a = e.substring(e.lastIndexOf("/") + 1);
+o.UIConfig[a] ? console.error(`prefab${a} == ${o.UIConfig[a]}`) : o.UIConfig[a] = e;
+t.__UIName = a;
+};
+};
+const {ccclass: n, property: i} = cc._decorator;
+let c = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.contentNode = null;
+this.params = null;
+}
+onLoad() {}
+onShowUI(e) {
+this.params = e.param;
+this.node.active = !0;
+this.onShow(this.params);
+this.contentNode && this.pop(this.contentNode);
+}
+onClose() {
+this.node.active && (this.node.active = !1);
+}
+onDestroyView() {
+delete s.default.instance.all_ui[this.node.name];
+this.node.destroy();
+}
+pop(e) {
+return new Promise(t => {
+cc.tween(e).call(() => {
+e.scale = 0;
+}).to(.35, {
+scale: 1
+}, {
+easing: cc.easing.backOut
+}).call(() => {
+t(!0);
+}).start();
+});
+}
+opp(e) {
+return new Promise(t => {
+cc.tween(e).call(() => {
+e.scale = 0;
+}).to(.15, {
+scale: 1.2
+}).to(.1, {
+scale: 1
+}).call(() => {
+t(!0);
+}).start();
+});
+}
+};
+a([ i(cc.Node) ], c.prototype, "contentNode", void 0);
+c = a([ n ], c);
+o.default = c;
+cc._RF.pop();
+}, {
+"./UIManager": "UIManager"
+} ],
+BlockUtils: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "bf6cfka9uBPAZcvwmqaqzHM", "BlockUtils");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("./Block"), s = e("./PoolManager"), n = e("./Utils");
+class i {
+static init() {
+const e = this;
+for (let t = 0; t < i.blockIds.length; t++) {
+let o = "Block/" + `block_${i.blockIds[t]}`;
+n.default.loadRes(o, cc.Prefab).then(o => {
+e.m_resMap.set(`block_${i.blockIds[t]}`, o);
+});
+}
+}
+static createAllInitBlocks() {
+for (let e = 0; e < i.blockIds.length; e++) {
+let t = this.getPrefabRes(`block_${i.blockIds[e]}`), o = cc.instantiate(t);
+i.initBlocks.push(o);
+}
+}
+static createBlock(e, t, o) {
+const s = i.getPrefabNode(o);
+let n = s.getComponent(a.default);
+n || (n = s.addComponent(a.default));
+s.setPosition(t);
+s.scale = i.getOriginScale(o.type);
+s.parent = e;
+n.init(o);
+return n;
+}
+static getPrefabNode(e) {
+const t = `Prefab/Game/GameObject/Block/block_${e.type}`.split("/").pop();
+let o = null;
+if (e.type < a.BlockType.type_luckyBag && s.poolManager.getPool("Block").size() > 0) {
+e.fromPool = !0;
+o = s.poolManager.getNode("Block");
+let t = i.blockIds.indexOf(e.type);
+o.getComponent(cc.PhysicsPolygonCollider).points = i.initBlocks[t].getComponent(cc.PhysicsPolygonCollider).points;
+o.getComponent(cc.PhysicsPolygonCollider).apply();
+o.children[0].getComponent(cc.Sprite).spriteFrame = i.initBlocks[t].getComponent(cc.Sprite).spriteFrame;
+} else {
+const e = this.getPrefabRes(t);
+o = cc.instantiate(e);
+}
+if (!o || !cc.isValid(o)) {
+const e = this.getPrefabRes(t);
+o = cc.instantiate(e);
+}
+return o;
+}
+static getPrefabRes(e) {
+return this.m_resMap.has(e) ? this.m_resMap.get(e) : null;
+}
+static getOriginScale(e) {
+return {
+1: 1,
+2: 1,
+3: 1,
+4: 1,
+5: 1,
+6: 1,
+7: 1,
+8: 1,
+9: 1,
+10: 1,
+11: 1,
+100: 1
+}[e] || .8;
+}
+}
+o.default = i;
+i.m_resMap = new Map();
+i.initBlocks = [];
+i.blockIds = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
+cc._RF.pop();
+}, {
+"./Block": "Block",
+"./PoolManager": "PoolManager",
+"./Utils": "Utils"
+} ],
+Block: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "4bdd29QO2lBM5i94uj0TE4V", "Block");
+var a, s = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+}, n = this && this.__awaiter || function(e, t, o, a) {
+return new (o || (o = Promise))(function(s, n) {
+function i(e) {
+try {
+l(a.next(e));
+} catch (e) {
+n(e);
+}
+}
+function c(e) {
+try {
+l(a.throw(e));
+} catch (e) {
+n(e);
+}
+}
+function l(e) {
+e.done ? s(e.value) : (t = e.value, t instanceof o ? t : new o(function(e) {
+e(t);
+})).then(i, c);
+var t;
+}
+l((a = a.apply(e, t || [])).next());
+});
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.BlockType = void 0;
+const i = e("./BlockUtils"), c = e("./PoolManager"), l = e("./LevelManager"), r = e("./Wall"), h = e("../ATools/SoundManager");
+var u;
+(function(e) {
+e[e.type_min = 1] = "type_min";
+e[e.type_2 = 2] = "type_2";
+e[e.type_3 = 3] = "type_3";
+e[e.type_4 = 4] = "type_4";
+e[e.type_5 = 5] = "type_5";
+e[e.type_6 = 6] = "type_6";
+e[e.type_7 = 7] = "type_7";
+e[e.type_8 = 8] = "type_8";
+e[e.type_9 = 9] = "type_9";
+e[e.type_10 = 10] = "type_10";
+e[e.type_11 = 11] = "type_11";
+e[e.type_max = 12] = "type_max";
+e[e.type_luckyBag = 100] = "type_luckyBag";
+})(u = o.BlockType || (o.BlockType = {}));
+const {ccclass: d, property: g} = cc._decorator;
+let p = a = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.sprite_block = null;
+this.rigidBody = null;
+this.physicsCollider = null;
+this.canMerge = !0;
+this.overFrameCount = 0;
+this.isCanPlayDropMusic = !1;
+this.totalTriggerContactNum = 0;
+this.animatingState = !1;
+this.isHavePlayHitEffect = !0;
+this.viewData = null;
+}
+onLoad() {
+this.node.getComponent(cc.Sprite) && (this.node.getComponent(cc.Sprite).enabled = !1);
+}
+initRigidBodyAndCollider() {
+this.rigidBody = this.node.getComponent(cc.RigidBody);
+this.sprite_block = this.node.children[0].getComponent(cc.Sprite);
+this.physicsCollider = this.node.getComponent(cc.PhysicsCollider);
+this.rigidBody.bullet = !1;
+this.rigidBody.type = cc.RigidBodyType.Dynamic;
+this.rigidBody.gravityScale = 80;
+this.rigidBody.linearDamping = 0;
+this.physicsCollider.friction = 1;
+this.physicsCollider.restitution = .2;
+}
+onEnable() {}
+onDisable() {}
+tryFailed(e, t) {
+if (!e) {
+this.overFrameCount = 0;
+return !1;
+}
+if (l.default.getInstance().isGameOver) {
+this.overFrameCount = 0;
+return !1;
+}
+const o = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO).y + this.node.height * i.default.getOriginScale(this.viewData.type) / 2;
+this.node.height, i.default.getOriginScale(this.viewData.type);
+if (o < e.y) {
+this.overFrameCount = 0;
+return !1;
+}
+this.overFrameCount += t;
+if (this.overFrameCount > 300) {
+this.rigidBody.type = cc.RigidBodyType.Static;
+this.destorySelf();
+l.default.getInstance().gameOver();
+}
+return !0;
+}
+isCanMerge(e) {
+return this.viewData.type == e.viewData.type && this.canMerge && e.canMerge;
+}
+onBeginContact(e, t, o) {
+if (l.default.getInstance().isGameOver) return;
+if (this.animatingState) return;
+const a = this.getOtherData(o);
+if ("Block" != a.type || !a.block.animatingState) {
+this.totalTriggerContactNum++;
+if (this.totalTriggerContactNum > 3) {
+this.physicsCollider.restitution = 0;
+this.rigidBody.linearDamping = .5;
+this.rigidBody.gravityScale = 4;
+}
+switch (a.type) {
+case "Block":
+if (this.isCanMerge(a.block)) l.default.getInstance().mergeTwoBlock(this, a.block); else {
+this.isCanPlayDropMusic && h.default.playSound("floor");
+this.isCanPlayDropMusic = !1;
+if (!this.isHavePlayHitEffect) {
+l.default.getInstance().createHitEffect(e.getWorldManifold().points[0]);
+this.isHavePlayHitEffect = !0;
+}
+}
+break;
+
+case "Wall":
+if (a.wall.getWallType() == r.WallType.Bottom) {
+this.isCanPlayDropMusic && h.default.playSound("floor");
+this.isCanPlayDropMusic = !1;
+this.isHavePlayHitEffect = !0;
+}
+}
+}
+}
+getOtherData(e) {
+const t = e.node.getComponent(a);
+if (t) return {
+type: "Block",
+block: t
+};
+const o = e.node.getComponent(r.default);
+return o ? {
+type: "Wall",
+wall: o
+} : {
+type: "Unknow"
+};
+}
+destorySelf() {
+l.default.getInstance().removeBlockFromArr(this);
+this.recycleItem();
+}
+recycleItem() {
+if (cc.sys.isNative && cc.sys.os == cc.sys.OS_IOS) this.node.destroy(); else {
+this.sprite_block.node.active = !0;
+this.node.stopAllActions();
+this.node.scale = i.default.getOriginScale(this.viewData.type);
+this.node.angle = 0;
+this.canMerge = !0;
+this.overFrameCount = 0;
+this.isCanPlayDropMusic = !0;
+this.totalTriggerContactNum = 0;
+this.animatingState = !1;
+this.isHavePlayHitEffect = !1;
+this.rigidBody.active = !0;
+this.viewData = null;
+"Block" == this.node.name ? c.poolManager.putNode(this.node) : this.node.destroy();
+}
+}
+init(e) {
+this.viewData = e;
+this.canMerge = !0;
+this.overFrameCount = 0;
+this.node.name = "Block";
+switch (this.viewData.type) {
+case u.type_luckyBag:
+this.node.name = "LuckyBag";
+this.canMerge = !1;
+}
+this.initRigidBodyAndCollider();
+this.addBlockEffect();
+cc.sys.isBrowser && e.fromPool;
+}
+addBlockEffect() {}
+playMergeAni() {
+this.sprite_block.node.active = !1;
+}
+playBornAni() {
+this.sprite_block.node.active = !0;
+}
+getBlockType() {
+return this.viewData.type;
+}
+playScaleAction() {
+this.node.scale = 0 * i.default.getOriginScale(this.viewData.type);
+this.animatingState = !0;
+cc.tween(this.node).to(.1, {
+scale: i.default.getOriginScale(this.viewData.type)
+}).call(() => {
+this.animatingState = !1;
+}).to(.05, {
+scale: 1.2 * i.default.getOriginScale(this.viewData.type)
+}).to(.05, {
+scale: i.default.getOriginScale(this.viewData.type)
+}).start();
+}
+playBomb(e) {
+cc.tween(this.node).delay(e).call(() => {
+const e = this.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
+l.default.getInstance().createBomb(this.viewData.type, e);
+h.default.playSound("disappear");
+this.destorySelf();
+}).start();
+}
+getWorldPoint() {
+return this.physicsCollider.points.map(e => this.node.convertToWorldSpaceAR(e));
+}
+getRadius() {
+return this.physicsCollider.radius;
+}
+mergeAndMoveToTargetBlock(e, t) {
+return n(this, void 0, void 0, function*() {
+yield new Promise(e => {
+this.scheduleOnce(e, .01);
+});
+e.animatingState = !0;
+this.playMergeAni();
+e.playMergeAni();
+e.rigidBody.type = cc.RigidBodyType.Static;
+this.rigidBody.active = !1;
+cc.Tween.stopAllByTarget(this.node);
+t && (yield new Promise(t => {
+cc.tween(this.node).to(.1, {
+position: e.node.position
+}).call(() => {
+t();
+}).start();
+}));
+this.destorySelf();
+e.destorySelf();
+});
+}
+calculateMinDistance(e, t) {
+let o = Number.MAX_SAFE_INTEGER;
+for (let a = 0; a < e.length; a++) for (let a = 0; a < t.length; a++) {
+const s = cc.Vec2.distance(e[a], t[a]);
+s < o && (o = s);
+}
+return o;
+}
+getMinDistance(e) {
+return e && this.isCanMerge(e) ? this.calculateMinDistance(this.getWorldPoint(), e.getWorldPoint()) : Number.MAX_SAFE_INTEGER;
+}
+isCanChangeXDrop(e) {
+if (e.getBlockType() == u.type_luckyBag) return !1;
+if (this == e) return !1;
+if (this.getBlockType() != e.getBlockType()) return !1;
+const t = this.getWorldPoint(), o = e.node.convertToWorldSpaceAR(cc.Vec2.ZERO).y;
+let a = 0;
+t.forEach(e => {
+a / t.length > .02 + .1 || cc.director.getPhysicsManager().rayCast(e, cc.v2(e.x, o), cc.RayCastType.Any).length <= 0 && a++;
+});
+return a / t.length >= .1;
+}
+};
+p = a = s([ d ], p);
+o.default = p;
+cc._RF.pop();
+}, {
+"../ATools/SoundManager": "SoundManager",
+"./BlockUtils": "BlockUtils",
+"./LevelManager": "LevelManager",
+"./PoolManager": "PoolManager",
+"./Wall": "Wall"
+} ],
+EventCenter: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "11aa0/IGkZLs4CYvJaMzLaE", "EventCenter");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.EventCenter = o.Observer = o.GameEventInterface = void 0;
+class a {
+constructor(e, t, o, a = !1) {
+this.name = e;
+this.callback = t;
+this.context = o;
+this.isSwallow = a;
+}
+}
+o.GameEventInterface = a;
+class s {
+constructor(e) {
+this.m_eventInterface = null;
+this.m_eventInterface = e;
+}
+notify(...e) {
+this.m_eventInterface.callback.call(this.m_eventInterface.context, ...e);
+}
+compar(e) {
+return e == this.m_eventInterface.context;
+}
+getGameEventInterface() {
+return this.m_eventInterface;
+}
+}
+o.Observer = s;
+class n {
+constructor() {
+this.listeners = new Map();
+}
+static getInstance() {
+null == n.m_instance && (n.m_instance = new n());
+return n.m_instance;
+}
+register(e, t, o, n = !1) {
+const i = new a(e, t, o, n);
+0 == this.listeners.has(i.name) && this.listeners.set(i.name, new Array());
+this.listeners.get(i.name).push(new s(i));
+}
+remove(e, t) {
+if (0 == this.listeners.has(e)) return;
+let o = this.listeners.get(e), a = o.length;
+for (let e = 0; e < a; e++) if (o[e].compar(t)) {
+o.splice(e, 1);
+break;
+}
+0 == o.length && this.listeners.delete(e);
+}
+fire(e, ...t) {
+if (0 == this.listeners.has(e)) return;
+let o = this.listeners.get(e);
+for (let e = o.length - 1; e >= 0; --e) {
+let a = o[e];
+a.notify(...t);
+if (a.getGameEventInterface().isSwallow) break;
+}
+}
+}
+o.EventCenter = n;
+n.m_instance = null;
+cc._RF.pop();
+}, {} ],
+FailureView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "11c9fWNcqhH4JiE3t6Zxg9C", "FailureView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/LocalDataManager"), i = e("../ATools/SoundManager"), c = e("../ATools/TouchButton"), l = e("../ATools/UIManager"), r = e("../Game/LevelManager"), h = e("../GameScene"), {ccclass: u, property: d} = cc._decorator;
+let g = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_close = null;
+this.btn_retrt = null;
+this.btn_back = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+i.default.playSound(i.SoundName.ShiBai);
+}
+registerEvent() {
+this.btn_close.addComponent(c.default).registerTouchEvent(() => {
+this.onClose();
+h.default.instance.onEnterHome();
+});
+this.btn_retrt.addComponent(c.default).registerTouchEvent(() => {
+this.onClose();
+this.restartGame();
+});
+this.btn_back.addComponent(c.default).registerTouchEvent(() => {
+this.onClose();
+h.default.instance.onEnterHome();
+});
+}
+restartGame() {
+n.default.getInstance().getGameData().reduceHeart(1) ? r.default.getInstance().startGame() : l.default.instance.onShowView(s.UIConfig.AddHeartView, {
+addCallBack: () => {
+n.default.getInstance().getGameData().reduceCoins(100) ? r.default.getInstance().startGame() : l.default.instance.onShowToast("Not enough gold coins");
+},
+closeCallBack: () => {
+h.default.instance.onEnterHome();
+}
+});
+}
+};
+a([ d(cc.Node) ], g.prototype, "btn_close", void 0);
+a([ d(cc.Node) ], g.prototype, "btn_retrt", void 0);
+a([ d(cc.Node) ], g.prototype, "btn_back", void 0);
+g = a([ s.registerUIPath("prefab/FailureView"), u ], g);
+o.default = g;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/SoundManager": "SoundManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager",
+"../Game/LevelManager": "LevelManager",
+"../GameScene": "GameScene"
+} ],
+GameEventConsts: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "f6949VAkcJFg5tLYeuNBIfv", "GameEventConsts");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.GameEventName = void 0;
+(function(e) {
+e.HeartBeat = "HeartBeat";
+e.UseCoins = "UseCoins";
+e.UserHeart = "UserHeart";
+e.PassLevel = "PassLevel";
+e.AgreeMent = "AgreeMent";
+e.EnterGame = "EnterGame";
+e.RetryGame = "RetryGame";
+e.EnterHome = "EnterHome";
+e.PassLvChanged = "PassLvChanged";
+e.MergedMaxLvChanged = "MergedMaxLvChanged";
+e.MergeCountChanged = "MergeCountChanged";
+})(o.GameEventName || (o.GameEventName = {}));
+cc._RF.pop();
+}, {} ],
+GameMapLayer: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "df800HSMZFIUIexUBkafTz+", "GameMapLayer");
+var a, s = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+}, n = this && this.__awaiter || function(e, t, o, a) {
+return new (o || (o = Promise))(function(s, n) {
+function i(e) {
+try {
+l(a.next(e));
+} catch (e) {
+n(e);
+}
+}
+function c(e) {
+try {
+l(a.throw(e));
+} catch (e) {
+n(e);
+}
+}
+function l(e) {
+e.done ? s(e.value) : (t = e.value, t instanceof o ? t : new o(function(e) {
+e(t);
+})).then(i, c);
+var t;
+}
+l((a = a.apply(e, t || [])).next());
+});
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const i = e("../ATools/TouchButton"), c = e("../GameScene"), l = e("./LevelManager"), r = e("./PhysicsManager"), h = e("./Wall"), {ccclass: u, property: d} = cc._decorator;
+let g = a = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.layout_dynamic_zIndex = null;
+this.block_show = null;
+this.node_xian = null;
+this.wall_left = null;
+this.wall_right = null;
+this.wall_top = null;
+this.wall_bottom = null;
+this.lbl_mode = null;
+this.btn_back = null;
+this.btn_restart = null;
+this._isAutoDrop = !1;
+}
+get isAutoDrop() {
+return this._isAutoDrop;
+}
+set isAutoDrop(e) {
+this._isAutoDrop = e;
+}
+onLoad() {
+a.instance = this;
+[ this.wall_left, this.wall_right, this.wall_top, this.wall_bottom ].forEach(e => {
+var t;
+null === (t = e.getComponent(cc.Widget)) || void 0 === t || t.updateAlignment();
+});
+this.wall_left.addComponent(h.default).init(h.WallType.Left);
+this.wall_right.addComponent(h.default).init(h.WallType.Right);
+this.wall_top.addComponent(h.default).init(h.WallType.Top);
+this.wall_bottom.addComponent(h.default).init(h.WallType.Bottom);
+this.block_show.active = !1;
+r.default.openPhysics();
+this.scheduleOnce(() => {
+l.default.getInstance().initLevelManager(this);
+}, 1);
+this.btn_back.addComponent(i.default).registerTouchEvent(() => {
+c.default.instance.onEnterHome();
+});
+this.btn_restart.addComponent(i.default).registerTouchEvent(() => {
+l.default.getInstance().startGame();
+});
+}
+onEnable() {}
+onDisable() {}
+onDestroy() {
+a.instance = null;
+}
+static getInstance() {
+return a.instance;
+}
+getBlockParent() {
+return this.layout_dynamic_zIndex;
+}
+getLineWorldPos() {
+return this.node_xian.convertToWorldSpaceAR(cc.Vec2.ZERO);
+}
+playBomoSpine(e) {}
+playBlockIdleAction(e) {
+let t = null;
+this.block_show.children.forEach(o => {
+o.name == e.toString() && (t = o.getComponent(cc.Sprite));
+});
+if (!t) return;
+t.node.stopActionByTag(1929);
+const o = cc.tween(t.node).to(.4, {
+scaleX: .85,
+scaleY: 1.2,
+y: 100
+}).to(.4, {
+scaleX: 1.2,
+scaleY: .85,
+y: -50
+}).to(.4, {
+scaleX: 1,
+scaleY: 1,
+y: 0
+}).delay(.4);
+cc.tween(t.node).tag(1929).delay(2).repeat(99999, o).start();
+}
+stopBlockIdleAction() {
+this.block_show.children.forEach(e => {
+e.stopActionByTag(1929);
+e.scale = 1;
+e.setPosition(cc.Vec2.ZERO);
+});
+}
+delayTime(e) {
+return n(this, void 0, void 0, function*() {
+yield new Promise(t => {
+this.scheduleOnce(t, e);
+});
+});
+}
+showMode(e) {
+this.lbl_mode.string = [ "beginner", "simple", "normal", "hard", "limit", "hell" ][e] + "  Score0";
+}
+setScore(e, t) {
+this.lbl_mode.string = [ "beginner", "simple", "normal", "hard", "limit", "hell" ][e] + "  Score" + t;
+}
+onClickBackBtn() {
+l.default.getInstance().tttt();
+}
+};
+g.instance = null;
+s([ d(cc.Node) ], g.prototype, "layout_dynamic_zIndex", void 0);
+s([ d(cc.Node) ], g.prototype, "block_show", void 0);
+s([ d(cc.Node) ], g.prototype, "node_xian", void 0);
+s([ d(cc.Node) ], g.prototype, "wall_left", void 0);
+s([ d(cc.Node) ], g.prototype, "wall_right", void 0);
+s([ d(cc.Node) ], g.prototype, "wall_top", void 0);
+s([ d(cc.Node) ], g.prototype, "wall_bottom", void 0);
+s([ d(cc.Label) ], g.prototype, "lbl_mode", void 0);
+s([ d(cc.Node) ], g.prototype, "btn_back", void 0);
+s([ d(cc.Node) ], g.prototype, "btn_restart", void 0);
+g = a = s([ u ], g);
+o.default = g;
+cc._RF.pop();
+}, {
+"../ATools/TouchButton": "TouchButton",
+"../GameScene": "GameScene",
+"./LevelManager": "LevelManager",
+"./PhysicsManager": "PhysicsManager",
+"./Wall": "Wall"
+} ],
+GameMapTouch: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "5a8d2hF7GJO2apv5N2IPeY6", "GameMapTouch");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.touchBeginCallback = null;
+this.touchMoveCallback = null;
+this.touchEndCallback = null;
+}
+onEnable() {
+this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+}
+onDisable() {
+this.node.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+this.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+this.node.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+}
+onTouchStart(e) {
+var t;
+const o = e.getLocation();
+null === (t = this.touchBeginCallback) || void 0 === t || t.call(this, o);
+}
+onTouchMoved(e) {
+var t;
+const o = e.getLocation();
+null === (t = this.touchMoveCallback) || void 0 === t || t.call(this, o);
+}
+onTouchEnd(e) {
+var t;
+const o = e.getLocation();
+null === (t = this.touchEndCallback) || void 0 === t || t.call(this, o);
+}
+onTouchCancel(e) {
+this.onTouchEnd(e);
+}
+init(e) {
+this.touchBeginCallback = e.touchBeginCallback;
+this.touchMoveCallback = e.touchMoveCallback;
+this.touchEndCallback = e.touchEndCallback;
+}
+};
+cc._RF.pop();
+}, {} ],
+GameMenu: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "2d3c6iRBbRFqLCuf/c5oAjR", "GameMenu");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/EventCenter"), i = e("../ATools/GameEventConsts"), c = e("../ATools/LocalDataManager"), l = e("../ATools/TouchButton"), r = e("../ATools/UIManager"), {ccclass: h, property: u} = cc._decorator;
+let d = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.btn_coin = null;
+this.btn_heart = null;
+this.lbl_coin = null;
+this.lbl_heart = null;
+}
+onLoad() {
+n.EventCenter.getInstance().register(i.GameEventName.UseCoins, this.onFlushCoin, this);
+n.EventCenter.getInstance().register(i.GameEventName.UserHeart, this.onFlushCoin, this);
+this.btn_coin.addComponent(l.default).registerTouchEvent(() => {
+r.default.instance.onShowView(s.UIConfig.InfoView, {
+type: 1
+});
+});
+this.btn_heart.addComponent(l.default).registerTouchEvent(() => {
+r.default.instance.onShowView(s.UIConfig.AddHeartView, {
+type: 1
+});
+});
+}
+onDestroy() {
+n.EventCenter.getInstance().remove(i.GameEventName.UseCoins, this);
+n.EventCenter.getInstance().remove(i.GameEventName.UserHeart, this);
+}
+start() {
+this.onFlushCoin();
+}
+onFlushCoin() {
+let e = c.default.getInstance().getGameData().getCoins(), t = c.default.getInstance().getGameData().getHeart();
+this.lbl_coin.string = `${e}`;
+this.lbl_heart.string = `${t}`;
+}
+};
+a([ u(cc.Node) ], d.prototype, "btn_coin", void 0);
+a([ u(cc.Node) ], d.prototype, "btn_heart", void 0);
+a([ u(cc.Label) ], d.prototype, "lbl_coin", void 0);
+a([ u(cc.Label) ], d.prototype, "lbl_heart", void 0);
+d = a([ h ], d);
+o.default = d;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/EventCenter": "EventCenter",
+"../ATools/GameEventConsts": "GameEventConsts",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager"
+} ],
+GameModel: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "3256aK6RsBBibgOsFHktWKM", "GameModel");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("./BaseRecord"), s = e("./EventCenter"), n = e("./GameEventConsts"), i = e("./LocalDataManager");
+class c extends a.default {
+constructor() {
+super();
+this.base_name = "GameModel";
+this.NewUser = !0;
+this.coins = 0;
+this.heart = 10;
+this.open_bgm = !0;
+this.open_music = !0;
+this.mergedMaxLv = 1;
+this.mergeCount = 0;
+this.passStaus = [ 1, 0, 0, 0, 0, 0 ];
+this.passlevel = [ 0, 0, 0, 0, 0, 0 ];
+this.achieveStaus = [ 1, 0, 0, 0, 0, 0 ];
+}
+parseEndCallback() {}
+init() {}
+setMusicStatus(e) {
+this.open_bgm = e;
+this.open_music = e;
+i.default.getInstance().saveToUserDefault();
+}
+getMusicStatus() {
+return this.open_bgm;
+}
+setSoundStatus(e) {
+this.open_music = e;
+i.default.getInstance().saveToUserDefault();
+}
+getSoundStatus() {
+return this.open_music;
+}
+getIsNewUser() {
+return this.NewUser;
+}
+setIsNewUser(e) {
+this.NewUser = e;
+i.default.getInstance().saveToUserDefault();
+}
+getCoins() {
+return this.coins;
+}
+addCoins(e = 1) {
+this.coins += e;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.UseCoins);
+}
+reduceCoins(e = 1) {
+if (this.coins < e) return !1;
+this.coins -= e;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.UseCoins);
+return !0;
+}
+getHeart() {
+return this.heart;
+}
+addHeart(e = 1) {
+if (!(this.heart >= 10)) {
+this.heart += e;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.UserHeart);
+}
+}
+reduceHeart(e = 1) {
+if (this.heart < e) return !1;
+this.heart -= e;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.UserHeart);
+return !0;
+}
+getPassLevel(e) {
+return this.passlevel[e];
+}
+addPassLevel(e, t = 1) {
+this.passlevel[e] += t;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.PassLevel);
+}
+getPassStatus(e) {
+return this.passStaus[e];
+}
+setPassStatus(e, t) {
+this.passStaus[e] = t;
+i.default.getInstance().saveToUserDefault();
+}
+getAchieveStatus(e) {
+return this.achieveStaus[e];
+}
+setAchieveStatus(e, t) {
+this.achieveStaus[e] = t;
+i.default.getInstance().saveToUserDefault();
+}
+setTotalMergeCount(e, t, o) {
+if (e + 1 > this.mergedMaxLv) {
+this.mergedMaxLv = e + 1;
+s.EventCenter.getInstance().fire(n.GameEventName.MergedMaxLvChanged);
+} else null == o || o();
+this.mergeCount += t;
+i.default.getInstance().saveToUserDefault();
+s.EventCenter.getInstance().fire(n.GameEventName.MergeCountChanged);
+}
+resetAllBlockStorage(e) {
+this.gameStorage = e;
+i.default.getInstance().saveToUserDefault();
+}
+getAllBlockStorage() {
+return this.gameStorage;
+}
+}
+o.default = c;
+c._name = "GameModel";
+cc._RF.pop();
+}, {
+"./BaseRecord": "BaseRecord",
+"./EventCenter": "EventCenter",
+"./GameEventConsts": "GameEventConsts",
+"./LocalDataManager": "LocalDataManager"
+} ],
+GameScene: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "1e715AvPr9LvLFJE2giP6tP", "GameScene");
+var a, s = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const n = e("./ATools/BaseUI"), i = e("./ATools/EventCenter"), c = e("./ATools/GameEventConsts"), l = e("./ATools/LocalDataManager"), r = e("./ATools/SoundManager"), h = e("./ATools/UIManager"), u = e("./Game/LevelManager"), {ccclass: d, property: g} = cc._decorator;
+let p = a = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.home = null;
+this.heartDown = 1200;
+}
+onLoad() {
+a.instance = this;
+this.schedule(() => {
+i.EventCenter.getInstance().fire(c.GameEventName.HeartBeat);
+if (this.heartDown > 0) {
+this.heartDown--;
+this.addHeart();
+}
+}, 1, cc.macro.REPEAT_FOREVER, 0);
+}
+start() {
+r.default.loopBgm();
+}
+addHeart() {
+if (l.default.getInstance().getGameData().getHeart() < 10 && this.heartDown <= 0) {
+this.heartDown = 1200;
+l.default.getInstance().getGameData().addHeart(1);
+}
+}
+onEnterGame(e) {
+if (l.default.getInstance().getGameData().reduceHeart(1)) {
+this.home.active = !1;
+u.default.getInstance().startGame(e);
+} else h.default.instance.onShowView(n.UIConfig.AddHeartView, {
+type: 1
+});
+}
+onEnterHome() {
+this.home.active = !0;
+}
+};
+p.instance = null;
+s([ g(cc.Node) ], p.prototype, "home", void 0);
+p = a = s([ d ], p);
+o.default = p;
+cc._RF.pop();
+}, {
+"./ATools/BaseUI": "BaseUI",
+"./ATools/EventCenter": "EventCenter",
+"./ATools/GameEventConsts": "GameEventConsts",
+"./ATools/LocalDataManager": "LocalDataManager",
+"./ATools/SoundManager": "SoundManager",
+"./ATools/UIManager": "UIManager",
+"./Game/LevelManager": "LevelManager"
+} ],
+Game: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "1b8e3j3XAZFgInFqs08Dbrj", "Game");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const {ccclass: s, property: n} = cc._decorator;
+let i = class extends cc.Component {};
+i = a([ s ], i);
+o.default = i;
+cc._RF.pop();
+}, {} ],
+GuideView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "a8fb6EdUJROLYRpOqrP19Dk", "GuideView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/EventCenter"), i = e("../ATools/GameEventConsts"), c = e("../ATools/LocalDataManager"), l = e("../ATools/TouchButton"), r = e("../ATools/UIManager"), {ccclass: h, property: u} = cc._decorator;
+let d = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_Agree = null;
+this.btn_Reject = null;
+this.btn_Privacy = null;
+this.btn_Agreement = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {}
+registerEvent() {
+this.btn_Agree.addComponent(l.default).registerTouchEvent(this.onClickAgree.bind(this));
+this.btn_Reject.addComponent(l.default).registerTouchEvent(this.onClickReject.bind(this));
+this.btn_Privacy.addComponent(l.default).registerTouchEvent(this.onClickPrivacy.bind(this));
+this.btn_Agreement.addComponent(l.default).registerTouchEvent(this.onClickAgreement.bind(this));
+}
+onClickAgree() {
+n.EventCenter.getInstance().fire(i.GameEventName.AgreeMent);
+c.default.getInstance().getGameData().setIsNewUser(!1);
+this.onDestroyView();
+}
+onClickReject() {
+cc.sys.localStorage.clear();
+cc.game.end();
+}
+onClickPrivacy() {
+r.default.instance.onShowView(s.UIConfig.PolicyView, {
+type: 1
+});
+}
+onClickAgreement() {
+r.default.instance.onShowView(s.UIConfig.PolicyView, {
+type: 2
+});
+}
+};
+a([ u(cc.Node) ], d.prototype, "btn_Agree", void 0);
+a([ u(cc.Node) ], d.prototype, "btn_Reject", void 0);
+a([ u(cc.Node) ], d.prototype, "btn_Privacy", void 0);
+a([ u(cc.Node) ], d.prototype, "btn_Agreement", void 0);
+d = a([ s.registerUIPath("prefab/GuideView"), h ], d);
+o.default = d;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/EventCenter": "EventCenter",
+"../ATools/GameEventConsts": "GameEventConsts",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager"
+} ],
+HomeView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "4f92d79EGJA8YYHtb2CA/I4", "HomeView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/TouchButton"), i = e("../ATools/UIManager"), c = e("./Item"), {ccclass: l, property: r} = cc._decorator;
+let h = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.items = [];
+this.btn_set = null;
+this.btn_honor = null;
+}
+onLoad() {
+this.btn_set.addComponent(n.default).registerTouchEvent(() => {
+i.default.instance.onShowView(s.UIConfig.SettingView, {
+type: 1
+});
+});
+this.btn_honor.addComponent(n.default).registerTouchEvent(() => {
+i.default.instance.onShowView(s.UIConfig.HonorView, {
+type: 1
+});
+});
+}
+start() {
+this.initView();
+}
+initView() {
+this.items.forEach((e, t) => {
+e.initItem(t);
+});
+}
+};
+a([ r(c.default) ], h.prototype, "items", void 0);
+a([ r(cc.Node) ], h.prototype, "btn_set", void 0);
+a([ r(cc.Node) ], h.prototype, "btn_honor", void 0);
+h = a([ l ], h);
+o.default = h;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager",
+"./Item": "Item"
+} ],
+HonorItem: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "0f25en2YsBIZoq2fqgOzq/4", "HonorItem");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/LocalDataManager"), n = e("../ATools/TouchButton"), i = e("../ATools/UIManager"), {ccclass: c, property: l} = cc._decorator;
+let r = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.finish = null;
+this.coin = null;
+this.check = null;
+this.level = 0;
+}
+onLoad() {
+this.node.addComponent(n.default).registerTouchEvent(() => {
+if (s.default.getInstance().getGameData().reduceCoins(1e3)) {
+s.default.getInstance().getGameData().setAchieveStatus(this.level, 1);
+this.flushItem();
+} else i.default.instance.onShowToast("Not enough gold coins");
+});
+}
+start() {}
+initItem(e) {
+this.level = e;
+this.flushItem();
+}
+flushItem() {
+if (s.default.getInstance().getGameData().getAchieveStatus(this.level)) {
+this.finish.active = !0;
+this.check.active = !0;
+this.coin.active = !1;
+} else {
+this.finish.active = !1;
+this.check.active = !1;
+this.coin.active = !0;
+}
+}
+};
+a([ l(cc.Node) ], r.prototype, "finish", void 0);
+a([ l(cc.Node) ], r.prototype, "coin", void 0);
+a([ l(cc.Node) ], r.prototype, "check", void 0);
+r = a([ c ], r);
+o.default = r;
+cc._RF.pop();
+}, {
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager"
+} ],
+HonorView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "dd561EEDP1GwqDmL4q+ZZB0", "HonorView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/TouchButton"), i = e("./HonorItem"), {ccclass: c, property: l} = cc._decorator;
+let r = class extends s.default {
+constructor() {
+super(...arguments);
+this.items = [];
+this.btn_close = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+this.initItem();
+}
+registerEvent() {
+this.btn_close.addComponent(n.default).registerTouchEvent(() => {
+this.onClose();
+});
+}
+initItem() {
+this.items.forEach((e, t) => {
+e.initItem(t);
+});
+}
+};
+a([ l(i.default) ], r.prototype, "items", void 0);
+a([ l(cc.Node) ], r.prototype, "btn_close", void 0);
+r = a([ s.registerUIPath("prefab/HonorView"), c ], r);
+o.default = r;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/TouchButton": "TouchButton",
+"./HonorItem": "HonorItem"
+} ],
+ImagesPanel: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "2abafFeuJ9IFJ3ZaMFMMZS8", "ImagesPanel");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const {ccclass: s, property: n, executeInEditMode: i, menu: c} = cc._decorator;
+let l = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.images = [];
+this._value = 0;
+}
+get value() {
+return this._value;
+}
+set value(e) {
+if (this._value !== e) {
+this._value = e;
+this._updateValue();
+}
+}
+onLoad() {
+this._loadPanel();
+this._updateValue();
+}
+_loadPanel() {
+this.node.getComponent(cc.Sprite) || this.node.addComponent(cc.Sprite);
+}
+_updateValue() {
+if (this._value >= 0 && this._value < this.images.length) {
+const e = this.images[this._value], t = this.node.getComponent(cc.Sprite);
+t && (t.spriteFrame = e);
+}
+}
+};
+a([ n(cc.SpriteFrame) ], l.prototype, "images", void 0);
+a([ n(cc.Integer) ], l.prototype, "value", null);
+l = a([ s, i, c("ImagesPanel") ], l);
+o.default = l;
+cc._RF.pop();
+}, {} ],
+InfoView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "6588a8jrHlGGpv+C6PU8vWS", "InfoView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/LocalDataManager"), i = e("../ATools/TouchButton"), {ccclass: c, property: l} = cc._decorator;
+let r = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_close = null;
+this.lbl_coin = null;
+this.lbl_heart = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+this.onFlushCoin();
+}
+registerEvent() {
+this.btn_close.addComponent(i.default).registerTouchEvent(() => {
+this.onClose();
+});
+}
+onFlushCoin() {
+let e = n.default.getInstance().getGameData().getCoins(), t = n.default.getInstance().getGameData().getHeart();
+this.lbl_coin.string = `${e}`;
+this.lbl_heart.string = `${t}`;
+}
+};
+a([ l(cc.Node) ], r.prototype, "btn_close", void 0);
+a([ l(cc.Label) ], r.prototype, "lbl_coin", void 0);
+a([ l(cc.Label) ], r.prototype, "lbl_heart", void 0);
+r = a([ s.registerUIPath("prefab/InfoView"), c ], r);
+o.default = r;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton"
+} ],
+Item: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "429bcD8CB5NX67rv+zufyNz", "Item");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/ImagesPanel"), n = e("../ATools/LocalDataManager"), i = e("../ATools/TouchButton"), c = e("../ATools/UIManager"), l = e("../GameScene"), {ccclass: r, property: h} = cc._decorator;
+let u = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.lvel = null;
+this.coin = null;
+this.imagesPanel = null;
+this.gameModel = 0;
+this.isOpen = !1;
+}
+onLoad() {
+this.node.addComponent(i.default).registerTouchEvent(() => {
+if (this.isOpen) l.default.instance.onEnterGame(this.gameModel); else if (n.default.getInstance().getGameData().reduceCoins(1e3 * this.gameModel)) {
+n.default.getInstance().getGameData().setPassStatus(this.gameModel, 1);
+this.initItem(this.gameModel);
+} else c.default.instance.onShowToast("Not enough gold coins");
+});
+}
+start() {}
+initItem(e) {
+this.gameModel = e;
+let t = n.default.getInstance().getGameData().getPassStatus(e);
+this.isOpen = !!t;
+n.default.getInstance().getGameData().getPassLevel(e);
+if (t) {
+this.imagesPanel.value = 0;
+this.coin.active = !1;
+} else {
+this.imagesPanel.value = 1;
+this.coin.active = !0;
+}
+}
+};
+a([ h(cc.Label) ], u.prototype, "lvel", void 0);
+a([ h(cc.Node) ], u.prototype, "coin", void 0);
+a([ h(s.default) ], u.prototype, "imagesPanel", void 0);
+u = a([ r ], u);
+o.default = u;
+cc._RF.pop();
+}, {
+"../ATools/ImagesPanel": "ImagesPanel",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager",
+"../GameScene": "GameScene"
+} ],
+LevelManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "10598zefMRKSZPB+CzpSGY7", "LevelManager");
+var a = this && this.__awaiter || function(e, t, o, a) {
+return new (o || (o = Promise))(function(s, n) {
+function i(e) {
+try {
+l(a.next(e));
+} catch (e) {
+n(e);
+}
+}
+function c(e) {
+try {
+l(a.throw(e));
+} catch (e) {
+n(e);
+}
+}
+function l(e) {
+e.done ? s(e.value) : (t = e.value, t instanceof o ? t : new o(function(e) {
+e(t);
+})).then(i, c);
+var t;
+}
+l((a = a.apply(e, t || [])).next());
+});
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/EventCenter"), i = e("../ATools/GameEventConsts"), c = e("../ATools/LocalDataManager"), l = e("../ATools/SoundManager"), r = e("../ATools/UIManager"), h = e("./Block"), u = e("./BlockUtils"), d = e("./GameMapLayer"), g = e("./GameMapTouch"), p = e("./LevelUtils");
+class f {
+constructor() {
+this.mapLayer = null;
+this.isNewer = !0;
+this.toBigKind = [];
+this.toSmallKind = [];
+this.curBlockType = h.BlockType.type_min;
+this.allBlock = [];
+this.stepCount = 0;
+this.luckyBagHas = 0;
+this.isGameOver = !1;
+this.continueEleminateCount = 0;
+this.isUsingRemoveBlockProp = !1;
+this.frameCount = 0;
+this.mergeFlag = !1;
+this.eleminateScheduleId = null;
+this.lineWorldPos = null;
+this.curMode = 1;
+this.targetScore = 0;
+this.curScore = 0;
+cc.director.getScheduler().enableForTarget(this);
+n.EventCenter.getInstance().register(i.GameEventName.PassLvChanged, this.onPassLvChangedNtf, this);
+n.EventCenter.getInstance().register(i.GameEventName.MergedMaxLvChanged, this.onMergedMaxLvChangedNtf, this);
+}
+static getInstance() {
+f._instance || (f._instance = new f());
+return f._instance;
+}
+onDestroy() {
+cc.director.getScheduler().unschedule(this.frameSchedule, this);
+cc.director.getScheduler().unschedule(this.autoDropSchedule, this);
+n.EventCenter.getInstance().remove(i.GameEventName.PassLvChanged, this);
+n.EventCenter.getInstance().remove(i.GameEventName.MergedMaxLvChanged, this);
+}
+onPassLvChangedNtf() {
+this.reInitKind();
+}
+onMergedMaxLvChangedNtf() {
+return a(this, void 0, void 0, function*() {
+this.reInitKind();
+});
+}
+autoDropSchedule(e) {
+this.tryAutoDrop();
+}
+tryFailed(e) {
+if (this.isGameOver) return;
+this.mapLayer && (this.lineWorldPos = this.mapLayer.getLineWorldPos());
+let t = 0;
+for (let o = this.allBlock.length - 1; o >= 0; o--) {
+const a = this.allBlock[o].tryFailed(this.lineWorldPos, e);
+a ? this.mapLayer.node_xian.active = a : (t += 1) % 3 == 0 && (this.mapLayer.node_xian.active = a);
+}
+}
+frameSchedule(e) {
+this.frameCount++;
+this.frameCount % 20 == 0 && this.tryFailed(20);
+this.frameCount % 180 == 0 && this.tryAutoMerge();
+this.frameCount >= 999 && (this.frameCount = 0);
+}
+tryAutoDrop() {
+d.default.getInstance().isAutoDrop && this.onTouchEnd(cc.v2(cc.winSize.width / 2, cc.winSize.height / 2));
+}
+tryAutoMerge() {
+const e = new Map();
+this.allBlock.forEach(t => {
+let o = e.get(t.getBlockType());
+if (!o) {
+o = [];
+e.set(t.getBlockType(), o);
+}
+o.push(t);
+});
+const t = [ h.BlockType.type_min, h.BlockType.type_2, h.BlockType.type_3, h.BlockType.type_4, h.BlockType.type_5, h.BlockType.type_6, h.BlockType.type_7, h.BlockType.type_8, h.BlockType.type_9, h.BlockType.type_10, h.BlockType.type_11 ];
+for (let o = 0; o < t.length; o++) {
+const a = e.get(t[o]), s = this.getCanAutoMergeBlock(a);
+if (s.length >= 2) {
+this.mergeTwoBlock(s[0], s[1]);
+return;
+}
+}
+}
+getCanAutoMergeBlock(e) {
+if (!e) return [];
+if (e.length < 2) return [];
+const t = {
+1: 20,
+2: 20,
+3: 20,
+4: 20,
+5: 30,
+6: 30,
+7: 30,
+8: 30,
+9: 20,
+10: 20,
+11: 20
+};
+for (let o = e.length - 1; o >= 1; o--) {
+const a = e[o], s = e[o - 1];
+if (a.getMinDistance(s) <= t[a.getBlockType()]) return [ a, s ];
+e.splice(o, 1);
+}
+return e;
+}
+reInitKind() {
+this.toBigKind = [];
+this.toSmallKind = [];
+const e = c.default.getInstance().getNextBlockItemConfig();
+for (let t = 0; t < e.length; t++) {
+this.toBigKind.push(Object.assign({}, e[t]));
+this.toSmallKind.push(Object.assign({}, e[t]));
+}
+}
+restartEleminateSchedule() {
+clearTimeout(this.eleminateScheduleId);
+this.eleminateScheduleId = setTimeout(() => {
+this.continueEleminateSchedule(0);
+}, 800);
+}
+continueEleminateSchedule(e) {
+d.default.getInstance().playBomoSpine(this.continueEleminateCount);
+this.continueEleminateCount = 0;
+}
+isCanTouch() {
+return !(this.isGameOver || !this.mapLayer.block_show.active || this.mapLayer.block_show.getNumberOfRunningActions() > 0);
+}
+tryConvertWorldPos(e) {
+if (this.isNewer && this.curBlockType == h.BlockType.type_11) {
+e.x = Math.max(e.x, 250);
+e.x = Math.min(e.x, 500);
+}
+return e;
+}
+onTouchBegin(e) {
+d.default.getInstance().stopBlockIdleAction();
+if (this.isCanTouch()) {
+e = this.tryConvertWorldPos(e);
+this.changeBlockShowX(e);
+this.changeCirclePointActive(!0);
+this.changeCirclePointX(e);
+}
+}
+onTouchMove(e) {
+if (this.isCanTouch()) {
+e = this.tryConvertWorldPos(e);
+this.changeBlockShowX(e);
+this.changeCirclePointActive(!0);
+this.changeCirclePointX(e);
+}
+}
+onTouchEnd(e) {
+if (!this.isCanTouch()) return;
+this.stepCount++;
+e = this.tryConvertWorldPos(e);
+this.mapLayer.block_show.active = !1;
+this.changeCirclePointActive(!1);
+l.default.playClickSound();
+const t = this.mapLayer.block_show.convertToWorldSpaceAR(cc.Vec2.ZERO);
+let o = this.createBlock({
+type: this.curBlockType,
+worldPos: t,
+isScale: !1,
+fromStorage: !1
+});
+o.isHavePlayHitEffect = !1;
+o.isCanPlayDropMusic = !0;
+const a = c.default.getInstance().getGMConfig();
+this.resetAllBlocksRigidType();
+this.curBlockType = this.genNextType();
+d.default.getInstance().delayTime(a.dropGaps).then(() => {
+this.showTipsBlock();
+});
+}
+tryAutoChangeX(e) {
+if (!d.default.getInstance().isAutoDrop) return;
+if (!c.default.getInstance().getGMConfig().smartDrop) return;
+const t = this.getAllBlock();
+for (let o = t.length - 1; o >= 0; o--) if (t[o].isCanChangeXDrop(e)) {
+const a = t[o].node.x;
+if (a <= -cc.winSize.width / 2 || a >= cc.winSize.height / 2) break;
+e.node.x = a;
+break;
+}
+}
+resetAllBlocksRigidType() {
+for (let e = 0; e < this.allBlock.length; e++) {
+this.allBlock[e].totalTriggerContactNum = 0;
+this.allBlock[e].rigidBody.type = cc.RigidBodyType.Dynamic;
+}
+}
+createCirclePointAndChangeY() {}
+changeBlockShowX(e) {
+this.mapLayer.block_show.x = this.mapLayer.block_show.getParent().convertToNodeSpaceAR(e).x;
+}
+changeCirclePointActive(e) {}
+changeCirclePointX(e) {}
+genNextType() {
+let e = h.BlockType.type_min;
+e = p.default.genNextBlockType(this.toBigKind);
+e = Math.max(e, h.BlockType.type_min);
+return Math.min(e, h.BlockType.type_max);
+}
+showTipsBlock() {
+this.mapLayer.block_show.active = !0;
+this.mapLayer.block_show.children.forEach(e => {
+const t = e.name == this.curBlockType.toString();
+e.active = t;
+});
+this.mapLayer.block_show.scale = 0;
+cc.tween(this.mapLayer.block_show).to(.15, {
+scale: u.default.getOriginScale(this.curBlockType)
+}).start();
+d.default.getInstance().playBlockIdleAction(this.curBlockType);
+}
+loadFromStorage() {
+d.default.getInstance().delayTime(.01).then(() => {
+const e = c.default.getInstance().getGameData().getAllBlockStorage();
+for (let t = 0; t < e.length; t++) {
+const o = e[t];
+o.worldX <= 0 || o.worldX >= cc.winSize.width || o.worldY <= 0 || o.worldY >= cc.winSize.height || (this.createBlock({
+type: o.type,
+worldPos: cc.v2(o.worldX, o.worldY),
+isScale: !1,
+fromStorage: !0
+}).node.angle = o.angle);
+}
+});
+}
+cleanAllBlocks() {
+for (let e = this.allBlock.length - 1; e >= 0; e--) this.allBlock[e].destorySelf();
+this.allBlock = [];
+}
+createBlock(e) {
+console.log("createBlock: ", e.type, e.worldPos, e.isScale, e.fromStorage);
+e.worldPos || (e.worldPos = cc.v2(cc.winSize.width / 2, cc.winSize.height / 2));
+(isNaN(e.worldPos.x) || isNaN(e.worldPos.y)) && (e.worldPos = cc.v2(cc.winSize.width / 2, cc.winSize.height / 2));
+(e.worldPos.x < 0 || e.worldPos.x > cc.winSize.width || e.worldPos.y < 0 || e.worldPos.y > cc.winSize.height) && (e.worldPos = cc.v2(cc.winSize.width / 2, cc.winSize.height / 2));
+const t = this.mapLayer.getBlockParent(), o = t.convertToNodeSpaceAR(e.worldPos), a = u.default.createBlock(t, o, {
+type: e.type,
+fromStorage: e.fromStorage,
+fromPool: !1
+});
+this.allBlock.push(a);
+e.isScale && a.playScaleAction();
+return a;
+}
+createBomb(e, t) {}
+createHitEffect(e) {}
+initLevelManager(e) {
+this.mapLayer = e;
+u.default.createAllInitBlocks();
+cc.director.getScheduler().unschedule(this.frameSchedule, this);
+cc.director.getScheduler().schedule(this.frameSchedule, this, .016);
+cc.director.getScheduler().unschedule(this.autoDropSchedule, this);
+cc.director.getScheduler().schedule(this.autoDropSchedule, this, .65);
+this.mapLayer.node.addComponent(g.default).init({
+touchBeginCallback: this.onTouchBegin.bind(this),
+touchMoveCallback: this.onTouchMove.bind(this),
+touchEndCallback: this.onTouchEnd.bind(this)
+});
+this.reInitKind();
+}
+startGame(e = this.curMode, t = !1) {
+return a(this, void 0, void 0, function*() {
+this.curMode = e;
+this.mapLayer.showMode(e);
+let o = c.default.getInstance().getGameData().getPassLevel(0);
+2 == this.curMode && (o = c.default.getInstance().getGameData().getPassLevel(1));
+this.targetScore = 400 * o;
+this.curScore = 0;
+this.mapLayer.setScore(this.curMode, this.curScore);
+this.stepCount = 0;
+this.isGameOver = !1;
+this.mapLayer.block_show.active = !1;
+this.mapLayer.node_xian.active = !1;
+this.curBlockType = this.genNextType();
+yield d.default.getInstance().delayTime(.01);
+this.showTipsBlock();
+t || this.cleanAllBlocks();
+});
+}
+createAllObject(e) {
+return a(this, void 0, void 0, function*() {
+e || this.loadFromStorage();
+yield d.default.getInstance().delayTime(.01);
+this.createCirclePointAndChangeY();
+});
+}
+mergeTwoBlock(e, t) {
+return a(this, void 0, void 0, function*() {
+if (!cc.isValid(e) || !cc.isValid(t)) return;
+e.canMerge = !1;
+t.canMerge = !1;
+this.mergeFlag = !0;
+this.continueEleminateCount++;
+this.restartEleminateSchedule();
+const o = e.getBlockType();
+l.default.playSound(l.SoundName.merger);
+const a = e.node.convertToWorldSpaceAR(cc.Vec2.ZERO), s = t.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
+let n = t, i = e, c = a;
+if (a.y > s.y) {
+n = e;
+i = t;
+c = s;
+}
+if (o == h.BlockType.type_11) ; else {
+yield n.mergeAndMoveToTargetBlock(i, !0);
+this.createBlock({
+type: o + 1,
+worldPos: c,
+isScale: !0,
+fromStorage: !1
+});
+this.addEachMergeReward(o, c);
+yield this.onMergeCountLocalReport(o);
+}
+if (this.mergeFlag) {
+this.resetAllBlocksRigidType();
+this.mergeFlag = !1;
+}
+});
+}
+onMergeCountLocalReport(e) {
+return a(this, void 0, void 0, function*() {
+e = Math.min(e, h.BlockType.type_max - 1);
+yield new Promise(t => {
+c.default.getInstance().getGameData().setTotalMergeCount(e, 1, t);
+});
+});
+}
+onMergeTwoMax() {
+this.isGameOver = !0;
+1 == this.curMode ? c.default.getInstance().getGameData().addPassLevel(0) : c.default.getInstance().getGameData().addPassLevel(1);
+d.default.getInstance().delayTime(.7).then(() => {
+let e = 0;
+for (let t = this.allBlock.length - 1; t >= 0; t--) {
+this.allBlock[t].getBlockType();
+const o = .1 + .025 * t;
+this.allBlock[t].playBomb(o);
+e < o && (e = o);
+}
+console.log("SUCCESS");
+r.default.instance.onShowView(s.UIConfig.VictoryView);
+});
+}
+addEachMergeReward(e, t) {
+this.curScore += 10;
+this.mapLayer.setScore(this.curMode, this.curScore);
+c.default.getInstance().getGameData().addCoins(10);
+}
+getCurMaxBlockType() {
+let e = h.BlockType.type_min;
+for (let t = 0; t < this.allBlock.length; t++) {
+let o = Number(this.allBlock[t].getBlockType());
+e < o && o != h.BlockType.type_luckyBag && (e = o);
+}
+return e;
+}
+removeBlockFromArr(e) {
+const t = this.allBlock.indexOf(e);
+-1 != t && this.allBlock.splice(t, 1);
+}
+getAllBlock() {
+return this.allBlock;
+}
+gameOver() {
+if (this.isGameOver) return;
+this.isGameOver = !0;
+this.mapLayer.node_xian.active = !1;
+this.mapLayer.block_show.active = !1;
+let e = 0;
+for (let t = this.allBlock.length - 1; t >= 0; t--) {
+this.allBlock[t].getBlockType();
+const o = .1 + .025 * t;
+this.allBlock[t].playBomb(o);
+e < o && (e = o);
+}
+d.default.getInstance().delayTime(e + .1).then(() => {
+r.default.instance.onShowView(s.UIConfig.FailureView);
+});
+}
+findType(e) {
+for (let t = 0; t < this.allBlock.length; t++) if (this.allBlock[t].getBlockType() == e) return !0;
+return !1;
+}
+cleanThreeLowLevelBlocks() {
+this.curBlockType <= 3 && this.reGenTopBlock();
+this.allBlock.forEach((e, t) => {
+if (e.getBlockType() <= 3) {
+const o = .1 + .025 * t;
+e.playBomb(o);
+}
+});
+}
+reGenTopBlock() {
+this.curBlockType = this.genNextType();
+this.showTipsBlock();
+}
+cleanAllBlocksExcept3() {
+this.allBlock.sort((e, t) => e.getBlockType() - t.getBlockType());
+let e = this.allBlock.length, t = e > 3 ? e - 3 : 0;
+for (let o = e - 1; o > e - 1 - t; o--) this.allBlock[o].playBomb(.1 + .025 * (e - o));
+this.reGenTopBlock();
+}
+getBlock(e) {
+let t = [];
+this.allBlock.forEach(o => {
+o.getBlockType() == e && t.push(o);
+});
+return t;
+}
+tttt() {
+this.createBlock({
+type: 2,
+worldPos: cc.v2(0, 0),
+isScale: !0,
+fromStorage: !1
+});
+}
+}
+o.default = f;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/EventCenter": "EventCenter",
+"../ATools/GameEventConsts": "GameEventConsts",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/SoundManager": "SoundManager",
+"../ATools/UIManager": "UIManager",
+"./Block": "Block",
+"./BlockUtils": "BlockUtils",
+"./GameMapLayer": "GameMapLayer",
+"./GameMapTouch": "GameMapTouch",
+"./LevelUtils": "LevelUtils"
+} ],
+LevelUtils: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "9023fVBmiVE1ppEak4XsY9y", "LevelUtils");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("../ATools/LocalDataManager"), s = e("./Block"), n = e("./LevelManager"), i = e("./Utils");
+o.default = class {
+static saveBlockToStorage() {
+const e = [];
+n.default.getInstance().getAllBlock().forEach(t => {
+const o = t.node.convertToWorldSpaceAR(cc.Vec2.ZERO);
+e.push({
+type: t.getBlockType(),
+worldX: o.x,
+worldY: o.y,
+angle: t.node.angle
+});
+});
+a.default.getInstance().getGameData().resetAllBlockStorage(e);
+}
+static genNextBlockType(e) {
+let t = 0;
+e = e.filter(e => {
+t += e.weigh;
+return e.weigh > 0;
+});
+let o = s.BlockType.type_min, a = i.default.getRandomIntInRange(1, t);
+for (let t = 0; t < e.length; t++) {
+if (a <= e[t].weigh) {
+o = e[t].id;
+break;
+}
+a -= e[t].weigh;
+}
+return o;
+}
+};
+cc._RF.pop();
+}, {
+"../ATools/LocalDataManager": "LocalDataManager",
+"./Block": "Block",
+"./LevelManager": "LevelManager",
+"./Utils": "Utils"
+} ],
+LoadAllResources: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "15e3bx54YBHTruhq5JcoC63", "LoadAllResources");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("./ResManager"), s = e("./Singleton");
+class n {
+constructor(e, t, o) {
+this.hasStartLoad = !1;
+this.completedCount = 0;
+this.totalCount = 0;
+this.m_resMap = new Map();
+this.resPath = e;
+this.resType = t;
+if (o) this.startLoad(o); else {
+this.completedCount = -1;
+this.totalCount = -1;
+}
+}
+startLoad(e) {
+a.default.loadDir(this.resPath, this.resType, (t, o) => {
+if (0 == this.hasStartLoad) {
+this.hasStartLoad = !0;
+e.startLoadCount++;
+}
+this.completedCount = t;
+this.totalCount = o;
+this.totalCount != this.completedCount && e.updateProgress();
+}, t => {
+if (0 == this.hasStartLoad) {
+this.hasStartLoad = !0;
+e.startLoadCount++;
+}
+for (let e = 0; e < t.length; e++) this.m_resMap.set(t[e].name, t[e]);
+0 == this.m_resMap.size && (this.hasStartLoad = !0);
+e.finishLoadCount++;
+e.updateProgress();
+});
+}
+getRes(e) {
+return this.m_resMap.has(e) ? this.m_resMap.get(e) : null;
+}
+setRes(e, t) {
+this.m_resMap.set(e, t);
+}
+removeRes(e) {
+this.m_resMap.has(e) && this.m_resMap.delete(e);
+}
+}
+o.default = class extends s.default {
+constructor() {
+super();
+this.allBaseLoader = [];
+this.startLoadCount = 0;
+this.finishLoadCount = 0;
+this.m_progressCallback = null;
+this.m_initFinished = !1;
+this.has = 0;
+this.total = 0;
+this.extraHas = 0;
+this.extraTotal = 0;
+}
+loadAllRes(e) {
+this.m_progressCallback = e;
+const t = new n("Audio", cc.AudioClip, this);
+this.allBaseLoader.push(t);
+this.m_initFinished = !0;
+this.updateProgress();
+}
+updateProgress() {
+var e;
+if (!this.m_initFinished) return;
+if (this.startLoadCount < this.allBaseLoader.length) return;
+for (let e = 0; e < this.allBaseLoader.length; e++) if (0 == this.allBaseLoader[e].totalCount || 0 == this.allBaseLoader[e].completedCount) return;
+this.has = 0;
+this.total = 0;
+this.allBaseLoader.forEach(e => {
+this.has += e.completedCount;
+this.total += e.totalCount;
+});
+let t = (this.has + this.extraHas) / (this.total + this.extraTotal);
+null === (e = this.m_progressCallback) || void 0 === e || e.call(this, t);
+t >= 1 && this.allBaseLoader.forEach(() => {});
+}
+getBaseLoader(e) {
+let t = null;
+for (let o = 0; o < this.allBaseLoader.length; o++) this.allBaseLoader[o].resType == e && (t = this.allBaseLoader[o]);
+return t;
+}
+getAudioRes(e) {
+var t;
+return null === (t = this.getBaseLoader(cc.AudioClip)) || void 0 === t ? void 0 : t.getRes(e);
+}
+getJsonRes(e) {
+var t;
+return null === (t = this.getBaseLoader(cc.JsonAsset)) || void 0 === t ? void 0 : t.getRes(e);
+}
+};
+cc._RF.pop();
+}, {
+"./ResManager": "ResManager",
+"./Singleton": "Singleton"
+} ],
+LoadScene: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "e1b90/rohdEk4SdmmEZANaD", "LoadScene");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("./ATools/BaseUI"), n = e("./ATools/EventCenter"), i = e("./ATools/GameEventConsts"), c = e("./ATools/LoadAllResources"), l = e("./ATools/LocalDataManager"), r = e("./ATools/UIManager"), h = e("./Game/BlockUtils"), {ccclass: u, property: d} = cc._decorator;
+let g = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.pgb = null;
+this.loadDuration = 2;
+this.progress = 0;
+this.isLoadingGameScene = !1;
+this.isStartLoading = !1;
+}
+onLoad() {
+n.EventCenter.getInstance().register(i.GameEventName.AgreeMent, this.startLoading, this);
+l.default.getInstance().initConfig();
+l.default.getInstance().loadOrRequlestStorageData(() => {});
+c.default.getInstance().loadAllRes(() => {});
+h.default.init();
+this.isStartLoading = !1;
+this.progress = 0;
+this.isLoadingGameScene = !1;
+this.updateProgressBar();
+this.showUserView();
+}
+start() {}
+update(e) {
+if (this.isStartLoading && !this.isLoadingGameScene) {
+this.progress += e / Math.max(this.loadDuration, .01);
+if (this.progress >= 1) {
+this.progress = 1;
+this.updateProgressBar();
+this.loadGameScene();
+} else this.updateProgressBar();
+}
+}
+updateProgressBar() {
+if (this.pgb) {
+this.pgb.type = cc.Sprite.Type.FILLED;
+this.pgb.fillType = cc.Sprite.FillType.HORIZONTAL;
+this.pgb.fillStart = 0;
+this.pgb.fillRange = this.progress;
+}
+}
+loadGameScene() {
+this.isLoadingGameScene = !0;
+cc.director.loadScene("GameScene");
+}
+showUserView() {
+l.default.getInstance().getGameData().getIsNewUser() ? r.default.instance.onShowView(s.UIConfig.GuideView) : this.isStartLoading = !0;
+}
+startLoading() {
+this.isStartLoading = !0;
+}
+};
+a([ d(cc.Sprite) ], g.prototype, "pgb", void 0);
+a([ d ], g.prototype, "loadDuration", void 0);
+g = a([ u ], g);
+o.default = g;
+cc._RF.pop();
+}, {
+"./ATools/BaseUI": "BaseUI",
+"./ATools/EventCenter": "EventCenter",
+"./ATools/GameEventConsts": "GameEventConsts",
+"./ATools/LoadAllResources": "LoadAllResources",
+"./ATools/LocalDataManager": "LocalDataManager",
+"./ATools/UIManager": "UIManager",
+"./Game/BlockUtils": "BlockUtils"
+} ],
+LocalDataManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "61871KIZ6hGiLMw60ceFHdv", "LocalDataManager");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("../Game/Utils"), s = e("./GameModel"), n = e("./Singleton"), i = e("./UserDefault");
+class c extends n.default {
+constructor() {
+super();
+this.m_gameCacheData = {};
+this.next_config = {};
+}
+destoryInstance() {
+c.destroyInstance();
+}
+loadOrRequlestStorageData(e) {
+let t = i.default.getItem_json(this.getStoreKey());
+if (t) {
+this.parseStorageData(t);
+e && e();
+} else {
+this.parseStorageData();
+e && e();
+}
+}
+getStoreKey() {
+return "Coin_7826";
+}
+saveToUserDefault(e) {
+i.default.setItem_json(this.getStoreKey(), this.m_gameCacheData);
+}
+parseStorageData(e) {
+this.m_gameCacheData = {};
+let t = [ s.default ];
+for (let e = 0; e < t.length; e++) {
+let o = t[e], a = new o(), s = o._name;
+this.m_gameCacheData[s] = a;
+}
+for (let o = 0; o < t.length; o++) {
+let a = t[o]._name;
+e && e[a] ? this.m_gameCacheData[a].parseFromUserDefault(e[a]) : this.m_gameCacheData[a].parseEndCallback();
+}
+this.saveToUserDefault();
+}
+removeGameLocalDataFromUserdefault() {
+i.default.removeItem(this.getStoreKey());
+}
+getData(e) {
+let t = e._name;
+this.m_gameCacheData[t] || (this.m_gameCacheData[t] = new e());
+return this.m_gameCacheData[t];
+}
+removeData(e) {
+let t = e._name;
+if (this.m_gameCacheData[t]) {
+this.m_gameCacheData[t] = new e();
+this.saveToUserDefault();
+return !0;
+}
+return !1;
+}
+clear_data() {
+this.removeGameLocalDataFromUserdefault();
+this.parseStorageData();
+this.saveToUserDefault();
+}
+getGameData() {
+return this.getData(s.default);
+}
+initConfig() {
+return new Promise(e => {
+a.default.loadRes("./Json/next_config", cc.JsonAsset).then(t => {
+this.next_config = t.json;
+e && e({});
+}).catch(() => {
+e && e({});
+});
+});
+}
+getNextBlockItemConfig() {
+const e = this.next_config, t = c.getInstance().getGameData().getPassLevel(0);
+if (t <= 0) {
+const t = c.getInstance().getGameData().mergedMaxLv;
+return this.getValueByKey(t, e.firstAppearRule);
+}
+return this.getValueByKey(t, e.appearRule);
+}
+getValueByKey(e, t) {
+try {
+if (!t) return 10;
+const o = Object.keys(t);
+o.sort((e, t) => parseInt(e) - parseInt(t));
+let a = -1;
+for (let s = 0; s < o.length; s++) {
+-1 == a && (a = t[o[s] + ""]);
+e >= parseInt(o[s]) && (a = t[o[s] + ""]);
+}
+return a;
+} catch (e) {
+return 1;
+}
+}
+getGMConfig() {
+return {
+smartDrop: !0,
+gravityScale: 80,
+linearDamping: .7,
+scale: {
+1: .7,
+2: .75,
+3: .7,
+4: .65,
+5: .8,
+6: .82,
+7: .82,
+8: .85,
+9: .9,
+10: .88,
+11: .88,
+100: .8
+},
+dropGaps: .35,
+dropGaps2: .35,
+failedFrame: 300
+};
+}
+}
+o.default = c;
+c.savedTimeStamp = 0;
+cc._RF.pop();
+}, {
+"../Game/Utils": "Utils",
+"./GameModel": "GameModel",
+"./Singleton": "Singleton",
+"./UserDefault": "UserDefault"
+} ],
+PhysicsManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "6a031eNbvdBKaI+MVYdsCKg", "PhysicsManager");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const {ccclass: s, property: n} = cc._decorator;
+let i = class {
+static openPhysics() {
+const e = cc.director.getPhysicsManager();
+e.enabled = !0;
+cc.sys.isBrowser || (e.debugDrawFlags = 0);
+cc.director.getPhysicsManager().enabledAccumulator = !0;
+cc.PhysicsManager.FIXED_TIME_STEP = 1 / 60;
+cc.PhysicsManager.VELOCITY_ITERATIONS = 2;
+cc.PhysicsManager.POSITION_ITERATIONS = 2;
+cc.director.getCollisionManager().enabled = !0;
+}
+static closePhysics() {
+cc.director.getPhysicsManager().enabled = !1;
+cc.director.getCollisionManager().enabled = !1;
+}
+};
+i = a([ s ], i);
+o.default = i;
+cc._RF.pop();
+}, {} ],
+PolicyView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "4d666NjoM9JP4EQnlwcjJOH", "PolicyView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/ImagesPanel"), i = e("../ATools/TouchButton"), {ccclass: c, property: l} = cc._decorator;
+let r = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_close = null;
+this.lbl_heart = null;
+this.policy = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+this.lbl_heart.string = 1 === e.type ? "Privacy Policy" : "User Agreement";
+this.policy.value = 1 === e.type ? 0 : 1;
+}
+registerEvent() {
+this.btn_close.addComponent(i.default).registerTouchEvent(() => {
+this.onDestroyView();
+});
+}
+};
+a([ l(cc.Node) ], r.prototype, "btn_close", void 0);
+a([ l(cc.Label) ], r.prototype, "lbl_heart", void 0);
+a([ l(n.default) ], r.prototype, "policy", void 0);
+r = a([ s.registerUIPath("prefab/PolicyView"), c ], r);
+o.default = r;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/ImagesPanel": "ImagesPanel",
+"../ATools/TouchButton": "TouchButton"
+} ],
+PoolManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "ac8cbJErGBNmYY8nqQpR7Dy", "PoolManager");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.poolManager = void 0;
+const a = e("./Utils");
+class s {
+constructor() {
+this.allPools = new Map();
+}
+static get instance() {
+s._instance || (s._instance = new s());
+return s._instance;
+}
+_parseName(e) {
+return e.split("/").pop();
+}
+getPool(e) {
+this.allPools.get(e) || this.allPools.set(e, new cc.NodePool(e));
+return this.allPools.get(e);
+}
+clearPool(e) {
+const t = this.getPool(e);
+t && t.clear();
+}
+clearAllPool() {
+this.allPools.forEach(e => {
+null == e || e.clear();
+});
+this.allPools.clear();
+}
+getNode(e) {
+const t = this.getPool(e);
+if (t.size() > 0) return t.get();
+let o = "" + e;
+a.default.loadRes(o, cc.Prefab).then(e => cc.instantiate(e));
+}
+putNode(e) {
+this.getPool(e.name).put(e);
+}
+}
+o.poolManager = s.instance;
+cc._RF.pop();
+}, {
+"./Utils": "Utils"
+} ],
+ResManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "901b4y1sCZPBoSaqHlRpfGK", "ResManager");
+var a = this && this.__awaiter || function(e, t, o, a) {
+return new (o || (o = Promise))(function(s, n) {
+function i(e) {
+try {
+l(a.next(e));
+} catch (e) {
+n(e);
+}
+}
+function c(e) {
+try {
+l(a.throw(e));
+} catch (e) {
+n(e);
+}
+}
+function l(e) {
+e.done ? s(e.value) : (t = e.value, t instanceof o ? t : new o(function(e) {
+e(t);
+})).then(i, c);
+var t;
+}
+l((a = a.apply(e, t || [])).next());
+});
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class {
+static loadSpriteFrame(e, t) {
+cc.loader.loadRes(e, cc.SpriteFrame, function(e, o) {
+e ? console.log("UIUtils::loadSpriteFrame error " + e, o) : t(o);
+});
+}
+static loadPrefab(e) {
+return this.loadResByPromise(e, cc.Prefab);
+}
+static loadJson(e) {
+return this.loadResByPromise(e, cc.JsonAsset);
+}
+static preloadScene(e, t) {
+cc.director.preloadScene(e, t);
+}
+static loadScene(e, t) {
+cc.director.loadScene(e, t);
+}
+static loadRes(e, t, o, a = null) {
+cc.resources.load(e, t, (t, s) => {
+if (t) {
+console.log(`resource${e}err:` + t.message);
+null == a || a();
+} else null == o || o(s);
+});
+}
+static loadResByPromise(e, t) {
+return a(this, void 0, void 0, function*() {
+return new Promise((o, a) => {
+this.loadRes(e, t, o, a);
+}).catch(t => {
+console.log(`loadResByPromise catch; url = ${e}, reason = `, t);
+return null;
+});
+});
+}
+static loadDir(e, t, o, a) {
+cc.resources.loadDir(e, t, o, (t, o) => {
+t ? console.log(`resource${e}err:` + t.message) : a(o);
+});
+}
+};
+cc._RF.pop();
+}, {} ],
+SettingView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "f0005Qb+LhLNI6PLGn4oqcb", "SettingView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), n = e("../ATools/LocalDataManager"), i = e("../ATools/SoundManager"), c = e("../ATools/TouchButton"), l = e("../ATools/UIManager"), {ccclass: r, property: h} = cc._decorator;
+let u = class extends s.default {
+constructor() {
+super(...arguments);
+this.btn_close = null;
+this.btn_privacy = null;
+this.btn_agree = null;
+this.btn_music = null;
+this.dian = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+const t = n.default.getInstance().getGameData().getMusicStatus();
+this.dian.x = t ? 16 : -16;
+this.btn_music.color = t ? new cc.Color(255, 255, 255, 255) : new cc.Color(79, 83, 80, 255);
+}
+registerEvent() {
+this.btn_close.addComponent(c.default).registerTouchEvent(() => {
+this.onClose();
+});
+this.btn_agree.addComponent(c.default).registerTouchEvent(() => {
+l.default.instance.onShowView(s.UIConfig.PolicyView, {
+type: 2
+});
+});
+this.btn_privacy.addComponent(c.default).registerTouchEvent(() => {
+l.default.instance.onShowView(s.UIConfig.PolicyView, {
+type: 1
+});
+});
+this.btn_music.addComponent(c.default).registerTouchEvent(() => {
+let e = n.default.getInstance().getGameData().getMusicStatus();
+n.default.getInstance().getGameData().setMusicStatus(!e);
+e = !e;
+this.dian.x = e ? 16 : -16;
+if (e) {
+i.default.loopBgm();
+this.btn_music.color = new cc.Color(255, 255, 255, 255);
+} else {
+i.default.stopMusic(i.default.bgMusicId);
+this.btn_music.color = new cc.Color(79, 83, 80, 255);
+}
+});
+}
+};
+a([ h(cc.Node) ], u.prototype, "btn_close", void 0);
+a([ h(cc.Node) ], u.prototype, "btn_privacy", void 0);
+a([ h(cc.Node) ], u.prototype, "btn_agree", void 0);
+a([ h(cc.Node) ], u.prototype, "btn_music", void 0);
+a([ h(cc.Node) ], u.prototype, "dian", void 0);
+u = a([ s.registerUIPath("prefab/SettingView"), r ], u);
+o.default = u;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI",
+"../ATools/LocalDataManager": "LocalDataManager",
+"../ATools/SoundManager": "SoundManager",
+"../ATools/TouchButton": "TouchButton",
+"../ATools/UIManager": "UIManager"
+} ],
+Singleton: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "3cc2aAhDbtFAa0I6sjZYhyv", "Singleton");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class {
+static getInstance() {
+this.instance || (this.instance = new this());
+return this.instance;
+}
+static destroyInstance() {
+this.instance = null;
+}
+};
+cc._RF.pop();
+}, {} ],
+SoundManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "38a53fhmFBA+6OZ2GtnENh4", "SoundManager");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.SoundName = void 0;
+const a = e("./AudioManager"), s = e("./LoadAllResources"), n = e("./LocalDataManager");
+var i;
+(function(e) {
+e.bgm_game = "BG";
+e.click_sound = "button";
+e.merger = "HeCheng";
+e.FangZhi = "FangZhi";
+e.HeChengZuiDaYinBi = "HeChengZuiDaYinBi";
+e.ShiBai = "ShiBai";
+})(i = o.SoundName || (o.SoundName = {}));
+class c {
+static playSound(e, t = !1, o = 1) {
+c.isWatchVideo && (o = 0);
+if (0 == n.default.getInstance().getGameData().open_music) return -1;
+let i = s.default.getInstance().getAudioRes(e);
+return null == i ? -1 : a.default.playSound(i, t, o);
+}
+static playClickSound(e = i.click_sound, t = !1, o = 1) {
+c.isWatchVideo && (o = 0);
+if (0 == n.default.getInstance().getGameData().open_music) return -1;
+let l = s.default.getInstance().getAudioRes(e);
+return null == l ? -1 : a.default.playSound(l, t, o);
+}
+static playMusic(e, t = !0, o = 1) {
+c.isWatchVideo && (o = 0);
+let n = s.default.getInstance().getAudioRes(e);
+return null == n ? -1 : a.default.playMusic(n, t, o);
+}
+static stopMusic(e) {
+a.default.stopMusic(e);
+}
+static stopSound(e) {
+a.default.stopSound(e);
+}
+static pauseOne(e) {
+a.default.pauseOne(e);
+}
+static resumeOne(e) {
+a.default.resumeOne(e);
+}
+static pauseAll() {
+a.default.pauseAll();
+}
+static resumeAll() {
+a.default.resumeAll();
+}
+static getDuration(e) {
+let t = s.default.getInstance().getAudioRes(e);
+return null == t ? -1 : t.duration;
+}
+static loopBgm(e = i.bgm_game) {
+if (n.default.getInstance().getGameData().getMusicStatus()) {
+c.stopMusic(c.bgMusicId);
+c.bgMusicId = c.playMusic(e, !0, .7);
+}
+}
+}
+o.default = c;
+c.isWatchVideo = !1;
+c.bgMusicId = -1;
+cc._RF.pop();
+}, {
+"./AudioManager": "AudioManager",
+"./LoadAllResources": "LoadAllResources",
+"./LocalDataManager": "LocalDataManager"
+} ],
+ToastView: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "5f656hmSV5AHYoVlEH1lyrI", "ToastView");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const s = e("../ATools/BaseUI"), {ccclass: n, property: i} = cc._decorator;
+let c = class extends s.default {
+constructor() {
+super(...arguments);
+this.bg = null;
+this.lbl_txt = null;
+}
+onLoad() {
+this.registerEvent();
+}
+start() {}
+onShow(e) {
+this.node.active = !0;
+this.showTxt(e);
+}
+registerEvent() {}
+showTxt(e) {
+this.lbl_txt.string = e;
+this.bg.stopAllActions();
+cc.tween(this.bg).set({
+y: 0
+}).delay(.8).by(.5, {
+y: 100
+}).call(() => {
+this.onClose();
+}).start();
+}
+};
+a([ i(cc.Node) ], c.prototype, "bg", void 0);
+a([ i(cc.Label) ], c.prototype, "lbl_txt", void 0);
+c = a([ s.registerUIPath("prefab/ToastView"), n ], c);
+o.default = c;
+cc._RF.pop();
+}, {
+"../ATools/BaseUI": "BaseUI"
+} ],
+TouchButton: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "ecb28PDzb5FurFtrc2g30jQ", "TouchButton");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("./SoundManager");
+o.default = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.m_touchInterface = null;
+this.m_actionTag = 1048578;
+this.isTouch = !1;
+this.m_originScale = 1;
+this.canTouch = !0;
+}
+onEnable() {
+this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+this.node.on(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+}
+onDisable() {
+this.node.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+this.node.off(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+this.node.off(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+this.node.off(cc.Node.EventType.TOUCH_CANCEL, this.onTouchCancel, this);
+this.node.stopActionByTag(this.m_actionTag);
+this.node.scale = this.m_originScale;
+}
+onTouchStart(e) {
+if (!this.canTouch) return;
+let t = e.getLocation(), o = this.node.getParent().convertToNodeSpaceAR(t);
+if (this.node.getBoundingBox().contains(o)) {
+this.isTouch = !0;
+this.m_touchInterface.swallowTouch && e.stopPropagation();
+cc.tween(this.node).to(this.m_touchInterface.scaleTime, {
+scale: this.m_touchInterface.scale * this.m_originScale
+}).tag(this.m_actionTag).start();
+} else this.isTouch = !1;
+}
+onTouchMoved(e) {
+e.getDelta().mag() > 8 && (this.isTouch = !1);
+}
+onTouchEnd(e) {
+var t, o;
+if (this.isTouch) {
+this.m_touchInterface.swallowTouch && e.stopPropagation();
+this.m_touchInterface.playClickSound && a.default.playClickSound();
+null === (o = (t = this.m_touchInterface).touchEndCallback) || void 0 === o || o.call(t);
+}
+this.isTouch = !1;
+cc.tween(this.node).to(this.m_touchInterface.scaleTime, {
+scale: this.m_originScale
+}).tag(this.m_actionTag).start();
+}
+onTouchCancel(e) {
+this.isTouch = !1;
+cc.tween(this.node).to(this.m_touchInterface.scaleTime, {
+scale: this.m_originScale
+}).tag(this.m_actionTag).start();
+}
+registerTouchEvent(e, t = 1.1, o = !0, a = !0) {
+this.m_originScale = this.node.scale;
+this.m_touchInterface = {
+touchEndCallback: e,
+scale: t,
+scaleTime: .1,
+swallowTouch: o,
+playClickSound: a
+};
+}
+updateOriginScale(e) {
+this.m_originScale = e;
+}
+};
+cc._RF.pop();
+}, {
+"./SoundManager": "SoundManager"
+} ],
+UIManager: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "9e0af7F7JNO6INe6cvPEm7f", "UIManager");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("./BaseUI");
+class s {
+constructor() {
+this.all_ui = {};
+this.ui_is_loading = {};
+}
+static get instance() {
+s._instance || (s._instance = new s());
+return s._instance;
+}
+show_ui(e) {
+return new Promise(t => {
+if (!this.ui_is_loading[e.ui_name]) {
+this.ui_is_loading[e.ui_name] = !0;
+if (this.all_ui[e.ui_name]) {
+this.all_ui[e.ui_name].onShowUI(e);
+this.ui_is_loading[e.ui_name] = !1;
+this.all_ui[e.ui_name].node.zIndex = this.max_zindex() + 1;
+t();
+} else cc.resources.load(e.ui_path, cc.Prefab, (o, a) => {
+if (o) {
+this.ui_is_loading[e.ui_name] = !1;
+t();
+} else {
+const o = cc.instantiate(a), s = o.getComponent(e.ui_name);
+s.onShowUI(e);
+this.all_ui[e.ui_name] = s;
+this.ui_is_loading[e.ui_name] = !1;
+cc.director.getScene().addChild(o, this.max_zindex() + 1);
+t();
+}
+});
+}
+});
+}
+max_zindex() {
+const e = Object.keys(this.all_ui);
+let t = 0;
+for (const o of e) {
+const e = this.all_ui[o].node;
+e.zIndex > t && (t = e.zIndex);
+}
+return t;
+}
+close_ui(e) {
+this.all_ui[e] && this.all_ui[e].onClose();
+}
+close_all_views() {
+for (let e in this.all_ui) this.all_ui[e].onClose();
+}
+clear_ui() {
+const e = Object.keys(this.all_ui);
+for (const t of e) {
+const e = this.all_ui[t].node;
+cc.isValid(e) && e.destroy();
+}
+this.all_ui = {};
+this.ui_is_loading = {};
+}
+ui_is_show(e) {
+return !!this.all_ui[e] && this.all_ui[e].node.active;
+}
+onShowToast(e) {
+const t = {
+ui_path: a.UIConfig.ToastView,
+ui_name: "ToastView",
+param: e
+};
+this.show_ui(t);
+}
+onShowView(e, t) {
+let o = e.split("/").pop();
+const a = {
+ui_path: e,
+ui_name: o,
+param: t
+};
+this.show_ui(a);
+}
+}
+o.default = s;
+s._instance = null;
+cc._RF.pop();
+}, {
+"./BaseUI": "BaseUI"
+} ],
+UserDefault: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "c2c67woB0VP0aok5g5GCefq", "UserDefault");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.default = class {
+static setItem(e, t) {
+cc.sys.localStorage.setItem(e, t);
+}
+static setItem_json(e, t) {
+cc.sys.localStorage.setItem(e, JSON.stringify(t));
+}
+static getItem(e) {
+return cc.sys.localStorage.getItem(e);
+}
+static getItem_json(e) {
+let t = cc.sys.localStorage.getItem(e);
+return JSON.parse(t);
+}
+static removeItem(e) {
+cc.sys.localStorage.removeItem(e);
+}
+};
+cc._RF.pop();
+}, {} ],
+Utils: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "7213787GeJADbSUL5kZh4mQ", "Utils");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+const a = e("../ATools/SoundManager");
+o.default = class {
+static getRandomIntInRange(e, t) {
+return Math.floor(Math.random() * (t - e + 1) + e);
+}
+static playSpine(e, t, o = !1, a = null) {
+if (e && t) {
+e.setAnimation(0, t, o);
+e.setCompleteListener(() => {
+null == a || a(e);
+});
+}
+}
+static addClick(e, t, o) {
+e instanceof cc.Node && !e.getComponent(cc.Button) && e.addComponent(cc.Button);
+const s = e instanceof cc.Button ? e : e.getComponent(cc.Button);
+s.transition = cc.Button.Transition.SCALE;
+s.node.on("click", () => {
+a.default.playClickSound();
+t.call(o || this, s);
+}, this);
+}
+static loadRes(e, t) {
+return new Promise((o, a) => {
+cc.loader.loadRes(e, t, (e, t) => {
+e ? a && a(e) : o && o(t);
+});
+});
+}
+static getTimeStr(e, t = !1) {
+let o = Math.round(e / 1e3);
+const a = this.prefixZero(o % 60);
+if ((o = Math.floor(o / 60)) <= 60 && t) return `${this.prefixZero(o)}:${a}`;
+{
+const e = this.prefixZero(o % 60);
+o = Math.floor(o / 60);
+this.prefixZero(o);
+return `${e}:${a}`;
+}
+}
+static prefixZero(e, t = 2) {
+return (Array(t).join("0") + Math.floor(e)).slice(-t);
+}
+};
+cc._RF.pop();
+}, {
+"../ATools/SoundManager": "SoundManager"
+} ],
+Wall: [ function(e, t, o) {
+"use strict";
+cc._RF.push(t, "8b11fQHu7tNqqyV5i1XPhwy", "Wall");
+var a = this && this.__decorate || function(e, t, o, a) {
+var s, n = arguments.length, i = n < 3 ? t : null === a ? a = Object.getOwnPropertyDescriptor(t, o) : a;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, o, a); else for (var c = e.length - 1; c >= 0; c--) (s = e[c]) && (i = (n < 3 ? s(i) : n > 3 ? s(t, o, i) : s(t, o)) || i);
+return n > 3 && i && Object.defineProperty(t, o, i), i;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+o.WallType = void 0;
+(function(e) {
+e.Left = "Left";
+e.Right = "Right";
+e.Top = "Top";
+e.Bottom = "Bottom";
+})(o.WallType || (o.WallType = {}));
+const {ccclass: s, property: n} = cc._decorator;
+let i = class extends cc.Component {
+constructor() {
+super(...arguments);
+this.rigidBody = null;
+this.physicsCollider = null;
+this.wallType = null;
+}
+onLoad() {
+this.rigidBody = this.node.getComponent(cc.RigidBody);
+this.physicsCollider = this.node.getComponent(cc.PhysicsCollider);
+this.rigidBody.type = cc.RigidBodyType.Static;
+this.rigidBody.gravityScale = 0;
+this.physicsCollider.friction = 1;
+this.physicsCollider.restitution = .1;
+}
+init(e) {
+this.wallType = e;
+}
+getWallType() {
+return this.wallType;
+}
+};
+i = a([ s ], i);
+o.default = i;
+cc._RF.pop();
+}, {} ]
+}, {}, [ "AudioManager", "BaseRecord", "BaseUI", "EventCenter", "GameEventConsts", "GameModel", "ImagesPanel", "LoadAllResources", "LocalDataManager", "ResManager", "Singleton", "SoundManager", "TouchButton", "UIManager", "UserDefault", "Block", "BlockUtils", "Game", "GameMapLayer", "GameMapTouch", "LevelManager", "LevelUtils", "PhysicsManager", "PoolManager", "Utils", "Wall", "GameScene", "LoadScene", "AddHeartView", "FailureView", "GameMenu", "GuideView", "HomeView", "HonorItem", "HonorView", "InfoView", "Item", "PolicyView", "SettingView", "ToastView" ]);

@@ -1,0 +1,46 @@
+# Unity-generated data
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/MemoryCaptures/
+**/Recordings/
+**/.vs/
+**/*.csproj
+**/*.sln
+**/*.user
+**/*.pid
+
+# Local acquisition includes device identifiers, private app state and caches.
+/export_20260914/
+/paid_ui_work/
+/Restoration/03_Configuration/CapturedDevice/
+/Restoration/03_Configuration/ServerCapture/
+/Restoration/03_Configuration/field_values.csv
+/Restoration/07_Verification/unity_build.log
+
+# Tool installations, generated binaries, transient logs and independent review copies.
+**/python_deps/
+**/__pycache__/
+**/node_modules/
+/Restoration/07_Verification/Compiled/
+/WorkReview_20260914/UnityLicenseProbe/
+/WorkReview_20260914/UnityImportReview/
+/WorkReview_20260914/*.log
+/WorkReview_20260914/*.pid
+/WorkReview_20260914/*.local.*
+
+# The 231 MB native assembly remains local; a compressed copy can be versioned.
+/Restoration/02_Gameplay/NativeCocosAssembly/text.asm
+
+# Credentials are never project assets.
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.pfx
+*.p12

@@ -1,0 +1,698 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "GameRealWDActiveTips",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "GameRealWDActiveTips",
+      "_children": [
+        {
+          "$ref": 9
+        },
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 14
+        },
+        {
+          "$ref": 15
+        },
+        {
+          "$ref": 16
+        },
+        {
+          "$ref": 17
+        }
+      ],
+      "_prefab": {
+        "$ref": 18
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      },
+      "_trs": [
+        375,
+        812,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "content",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 6
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 19
+        }
+      ],
+      "_prefab": {
+        "$ref": 20
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          654,
+          922
+        ]
+      },
+      "_trs": [
+        0.645,
+        30.117,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 8
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 21
+        }
+      ],
+      "_prefab": {
+        "$ref": 22
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          470,
+          122
+        ]
+      },
+      "_trs": [
+        0.81,
+        -302.039,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "title",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 10
+        },
+        {
+          "$ref": 23
+        }
+      ],
+      "_prefab": {
+        "$ref": 24
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          212,
+          75
+        ]
+      },
+      "_trs": [
+        1.64,
+        385.18,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnClose",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 11
+        }
+      ],
+      "_prefab": {
+        "$ref": 25
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          100,
+          100
+        ]
+      },
+      "_trs": [
+        272.289,
+        406.966,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon2",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 12
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 26
+        }
+      ],
+      "_prefab": {
+        "$ref": 27
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          420,
+          298
+        ]
+      },
+      "_trs": [
+        0.44,
+        90.764,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "我们获取不到你的设备信息请观看视频后再试",
+      "_fontSize": 54,
+      "_lineHeight": 60,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 12
+      },
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnLabel",
+      "_parent": {
+        "$ref": 3
+      },
+      "_components": [
+        {
+          "$ref": 13
+        },
+        {
+          "$ref": 28
+        }
+      ],
+      "_prefab": {
+        "$ref": 29
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          90.55,
+          75
+        ]
+      },
+      "_trs": [
+        4.074,
+        5.048,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "mask",
+      "_opacity": 200,
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 30
+        }
+      ],
+      "_prefab": {
+        "$ref": 31
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278190080
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          4000,
+          4000
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "提现提示",
+      "_fontSize": 50,
+      "_lineHeight": 50,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 4
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnClose",
+      "_parent": {
+        "$ref": 5
+      },
+      "_components": [
+        {
+          "$ref": 32
+        }
+      ],
+      "_prefab": {
+        "$ref": 33
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          34,
+          34
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "txt2",
+      "_parent": {
+        "$ref": 6
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 34
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4291577181
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          430,
+          120
+        ]
+      },
+      "_trs": [
+        1.173,
+        -246.367,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "ads",
+      "_fontSize": 50,
+      "_lineHeight": 50,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 8
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "_originalWidth": 1500,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "ef5f7YVU0FAZYsPHrQuLxN0",
+      "bottomtips": {
+        "$ref": 7
+      },
+      "btnLabel": {
+        "$ref": 13
+      },
+      "btn": {
+        "$ref": 3
+      },
+      "tip": {
+        "$ref": 7
+      },
+      "title": {
+        "$ref": 10
+      },
+      "btnClose": {
+        "$ref": 5
+      },
+      "contentNode": {
+        "$ref": 2
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828a89/o+lD2o7BDeEFbGzx",
+      "ttffont": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "95fe7f58-28d0-4f98-936e-78c4a3e8ffca"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "9cYJFb7xVFRJO/TQTizort",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "cd716fcd-072f-4d7b-b158-c11cbee228aa"
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "9di2NLmkZMD4JLZJXTHqII",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 6,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288621633
+        ]
+      },
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "0bNffAFZBJU7pfuXt6J28w",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "adD2msoXtLt5K6g2bJeogE",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "c75b7d61-ae35-450e-8fe0-56d7b0f60152"
+      },
+      "node": {
+        "$ref": 6
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "49Ua1RmyJIXYhk9kA97MRM",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 6,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4280512810
+        ]
+      },
+      "node": {
+        "$ref": 8
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "b9AfResBtH/LQ4Ho/g9hgq",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "fee62731-326a-4232-b718-01c6e63fb668"
+      },
+      "node": {
+        "$ref": 9
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "18CeTEhI5DK7SDkqM4M/v/",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "e04e2f34-1e74-4431-87de-02d9debce1e9"
+      },
+      "node": {
+        "$ref": 11
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "41f6v/fAVDYYA5qLnhvtzz",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "0fQhSVEcZD475y99OwdXaL",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "29e8dd88-2fe5-4b2e-b277-c6fb3c581ab0",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/29/29e8dd88-2fe5-4b2e-b277-c6fb3c581ab0.6aaf0.json",
+  "paths": [
+    "GameDialog/GameRealWDActiveTips"
+  ]
+}

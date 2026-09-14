@@ -1,0 +1,479 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "GameWithdrawItem",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "GameWithdrawItem",
+      "_children": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 2
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 11
+        },
+        {
+          "$ref": 12
+        },
+        {
+          "$ref": 13
+        }
+      ],
+      "_prefab": {
+        "$ref": 14
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          340,
+          129
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "select",
+      "_active": false,
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 6
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 15
+        }
+      ],
+      "_prefab": {
+        "$ref": 16
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          331,
+          124
+        ]
+      },
+      "_trs": [
+        3.643,
+        -3.643,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "unEnough",
+      "_active": false,
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 17
+        }
+      ],
+      "_prefab": {
+        "$ref": 18
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          323,
+          116
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "unselect",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 5
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 19
+        }
+      ],
+      "_prefab": {
+        "$ref": 20
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          323,
+          116
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 4
+      },
+      "_components": [
+        {
+          "$ref": 8
+        },
+        {
+          "$ref": 21
+        }
+      ],
+      "_prefab": {
+        "$ref": 22
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4281528319
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          300,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 9
+        },
+        {
+          "$ref": 23
+        }
+      ],
+      "_prefab": {
+        "$ref": 24
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          300,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 3
+      },
+      "_components": [
+        {
+          "$ref": 10
+        },
+        {
+          "$ref": 25
+        }
+      ],
+      "_prefab": {
+        "$ref": 26
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          300,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "999,999,00",
+      "_fontSize": 48,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 5
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "999,999,00",
+      "_fontSize": 48,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 6
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "999,999,00",
+      "_fontSize": 48,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 7
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "4ec23dGqBZBAKQq6cEsBH5q",
+      "itemEnough": {
+        "$ref": 3
+      },
+      "itemSelect": {
+        "$ref": 2
+      },
+      "coinLabel3": {
+        "$ref": 10
+      },
+      "coinLabel2": {
+        "$ref": 9
+      },
+      "coinLabel1": {
+        "$ref": 8
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828a89/o+lD2o7BDeEFbGzx",
+      "ttffont": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "5a90af46-ac07-489a-bc78-b8a53d559f4a"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "b63+FN5ulGLLWZlckCBnK+",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "4f20b518-4bf1-4967-adb2-a90a01e30e85"
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "a8yxzyKzBO45Eg+a6u0tAx",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "9eeaf313-9bbf-4dad-a185-af17ab05e61f"
+      },
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "4cwhKK4g5OP7/WxzcGlwvK",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 5,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4280832444
+        ]
+      },
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e8iPE28lNHEb8j5SujWLhV",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 5,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278225665
+        ]
+      },
+      "node": {
+        "$ref": 6
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "8bLkpCSjpBW7IVFVrTXNOP",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 5,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4289177511
+        ]
+      },
+      "node": {
+        "$ref": 7
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "758txbDqFDZoAFmiWxgVrI",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "8ef26a9d-05b9-4071-b3ba-d1208d9a40a2",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/8e/8ef26a9d-05b9-4071-b3ba-d1208d9a40a2.88947.json",
+  "paths": [
+    "GameDialog/GameWithdrawItem"
+  ]
+}

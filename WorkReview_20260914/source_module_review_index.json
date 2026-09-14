@@ -1,0 +1,6611 @@
+[
+  {
+    "variant": "Packaged",
+    "name": "AddHeartView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/AddHeartView.js",
+    "classId": "7e3a3gRQiJLrrLy9944vKcH",
+    "bodyBytes": 2367,
+    "sha256": "7ed419d6170940767fe0d706bcc7248714f355f7611d084828a4797a73bad97d",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 33,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "getTimeStr() {"
+      },
+      {
+        "line": 43,
+        "declaration": "registerEvent() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "AudioManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/AudioManager.js",
+    "classId": "6ef6bD61yxLu6p/WIbT++ep",
+    "bodyBytes": 644,
+    "sha256": "71fea8cce6736c5916367212ca194ba3f923b6dc721ab3b55f4a8730a27140c7",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static playSound(e, t = !1, o = 1) {"
+      },
+      {
+        "line": 14,
+        "declaration": "static playMusic(e, t = !0, o = 1) {"
+      },
+      {
+        "line": 17,
+        "declaration": "static stopMusic(e) {"
+      },
+      {
+        "line": 20,
+        "declaration": "static stopSound(e) {"
+      },
+      {
+        "line": 23,
+        "declaration": "static pauseOne(e) {"
+      },
+      {
+        "line": 26,
+        "declaration": "static resumeOne(e) {"
+      },
+      {
+        "line": 29,
+        "declaration": "static pauseAll() {"
+      },
+      {
+        "line": 32,
+        "declaration": "static resumeAll() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "BaseRecord",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/BaseRecord.js",
+    "classId": "bdca0Q0Dt5Hq4wKs//14qrm",
+    "bodyBytes": 390,
+    "sha256": "1b2dc86fb8eac8d94d5e744c838cf022d04f03fe8fdb254617add0143aef8e1c",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "parseFromUserDefault(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "BaseUI",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/BaseUI.js",
+    "classId": "35d03Mv0U9FQJTwc/zvyIV4",
+    "bodyBytes": 1778,
+    "sha256": "b63f60cfc44258b7cc4ce3159a028a3505ec273d7035824dbff9fc72a0a8d5bf",
+    "methods": [
+      {
+        "line": 27,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 33,
+        "declaration": "onShowUI(e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "onClose() {"
+      },
+      {
+        "line": 42,
+        "declaration": "onDestroyView() {"
+      },
+      {
+        "line": 46,
+        "declaration": "pop(e) {"
+      },
+      {
+        "line": 59,
+        "declaration": "opp(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "BlockUtils",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/BlockUtils.js",
+    "classId": "bf6cfka9uBPAZcvwmqaqzHM",
+    "bodyBytes": 1908,
+    "sha256": "3b72a48b5f59cfb3d32dc52a21ca9bb012c8fb80dd334e3593742f6d3ed8fa28",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "static init() {"
+      },
+      {
+        "line": 21,
+        "declaration": "static createAllInitBlocks() {"
+      },
+      {
+        "line": 27,
+        "declaration": "static createBlock(e, t, o) {"
+      },
+      {
+        "line": 37,
+        "declaration": "static getPrefabNode(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "static getPrefabRes(e) {"
+      },
+      {
+        "line": 60,
+        "declaration": "static getOriginScale(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Block",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Block.js",
+    "classId": "4bdd29QO2lBM5i94uj0TE4V",
+    "bodyBytes": 7519,
+    "sha256": "24020751f556a588d5160e256f4cfa020bcaec07d34b5ab2d7d87860fdb95b8e",
+    "methods": [
+      {
+        "line": 59,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 72,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 75,
+        "declaration": "initRigidBodyAndCollider() {"
+      },
+      {
+        "line": 88,
+        "declaration": "tryFailed(e, t) {"
+      },
+      {
+        "line": 111,
+        "declaration": "isCanMerge(e) {"
+      },
+      {
+        "line": 114,
+        "declaration": "onBeginContact(e, t, o) {"
+      },
+      {
+        "line": 146,
+        "declaration": "getOtherData(e) {"
+      },
+      {
+        "line": 160,
+        "declaration": "destorySelf() {"
+      },
+      {
+        "line": 164,
+        "declaration": "recycleItem() {"
+      },
+      {
+        "line": 181,
+        "declaration": "init(e) {"
+      },
+      {
+        "line": 196,
+        "declaration": "playMergeAni() {"
+      },
+      {
+        "line": 199,
+        "declaration": "playBornAni() {"
+      },
+      {
+        "line": 202,
+        "declaration": "getBlockType() {"
+      },
+      {
+        "line": 205,
+        "declaration": "playScaleAction() {"
+      },
+      {
+        "line": 218,
+        "declaration": "playBomb(e) {"
+      },
+      {
+        "line": 226,
+        "declaration": "getWorldPoint() {"
+      },
+      {
+        "line": 229,
+        "declaration": "getRadius() {"
+      },
+      {
+        "line": 232,
+        "declaration": "mergeAndMoveToTargetBlock(e, t) {"
+      },
+      {
+        "line": 254,
+        "declaration": "calculateMinDistance(e, t) {"
+      },
+      {
+        "line": 262,
+        "declaration": "getMinDistance(e) {"
+      },
+      {
+        "line": 265,
+        "declaration": "isCanChangeXDrop(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "EventCenter",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/EventCenter.js",
+    "classId": "11aa0/IGkZLs4CYvJaMzLaE",
+    "bodyBytes": 1478,
+    "sha256": "3c21a8f88360e7c12bbf33318307b8ae0ca3b4d3047f5bf56b2376bc985b1b38",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor(e, t, o, a = !1) {"
+      },
+      {
+        "line": 21,
+        "declaration": "constructor(e) {"
+      },
+      {
+        "line": 25,
+        "declaration": "notify(...e) {"
+      },
+      {
+        "line": 28,
+        "declaration": "compar(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "getGameEventInterface() {"
+      },
+      {
+        "line": 37,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 40,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 44,
+        "declaration": "register(e, t, o, n = !1) {"
+      },
+      {
+        "line": 49,
+        "declaration": "remove(e, t) {"
+      },
+      {
+        "line": 58,
+        "declaration": "fire(e, ...t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "FailureView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/FailureView.js",
+    "classId": "11c9fWNcqhH4JiE3t6Zxg9C",
+    "bodyBytes": 2117,
+    "sha256": "b6e4cd9e5eaa3f6b62970d6eb6dc57f4e95bb418b1833868a693b299ed1f591f",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 27,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 30,
+        "declaration": "registerEvent() {"
+      },
+      {
+        "line": 44,
+        "declaration": "restartGame() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameEventConsts",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameEventConsts.js",
+    "classId": "f6949VAkcJFg5tLYeuNBIfv",
+    "bodyBytes": 591,
+    "sha256": "6c87560d88d862b18bc85a4ecc151dc2db70ddbbe344234cf19c45c8319a11ec",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameMapLayer",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameMapLayer.js",
+    "classId": "df800HSMZFIUIexUBkafTz+",
+    "bodyBytes": 4257,
+    "sha256": "84abd9b8d58cc0a2b07066707dfe368ace80501ba64f344fbdf7331610d9b6c0",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 55,
+        "declaration": "get isAutoDrop() {"
+      },
+      {
+        "line": 58,
+        "declaration": "set isAutoDrop(e) {"
+      },
+      {
+        "line": 61,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 85,
+        "declaration": "onDestroy() {"
+      },
+      {
+        "line": 88,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 91,
+        "declaration": "getBlockParent() {"
+      },
+      {
+        "line": 94,
+        "declaration": "getLineWorldPos() {"
+      },
+      {
+        "line": 98,
+        "declaration": "playBlockIdleAction(e) {"
+      },
+      {
+        "line": 120,
+        "declaration": "stopBlockIdleAction() {"
+      },
+      {
+        "line": 127,
+        "declaration": "delayTime(e) {"
+      },
+      {
+        "line": 134,
+        "declaration": "showMode(e) {"
+      },
+      {
+        "line": 137,
+        "declaration": "setScore(e, t) {"
+      },
+      {
+        "line": 140,
+        "declaration": "onClickBackBtn() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameMapTouch",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameMapTouch.js",
+    "classId": "5a8d2hF7GJO2apv5N2IPeY6",
+    "bodyBytes": 1501,
+    "sha256": "7661131d41b9e181082d0dc2fb7bdbf24059b6a41754ac43fcc659437d64c1c4",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 17,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 29,
+        "declaration": "onTouchStart(e) {"
+      },
+      {
+        "line": 34,
+        "declaration": "onTouchMoved(e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "onTouchEnd(e) {"
+      },
+      {
+        "line": 44,
+        "declaration": "onTouchCancel(e) {"
+      },
+      {
+        "line": 47,
+        "declaration": "init(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameMenu",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameMenu.js",
+    "classId": "2d3c6iRBbRFqLCuf/c5oAjR",
+    "bodyBytes": 2102,
+    "sha256": "49b09f5bfe9dbcd0db45c9e8059b5f78accf267393e561c27ce5b544c5310b35",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 24,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 38,
+        "declaration": "onDestroy() {"
+      },
+      {
+        "line": 42,
+        "declaration": "start() {"
+      },
+      {
+        "line": 45,
+        "declaration": "onFlushCoin() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameModel",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameModel.js",
+    "classId": "3256aK6RsBBibgOsFHktWKM",
+    "bodyBytes": 2806,
+    "sha256": "40bebad6010fc579f00e3b9792c24d94ebc51d6b906fbdd75565d2b4995603a4",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 28,
+        "declaration": "setMusicStatus(e) {"
+      },
+      {
+        "line": 33,
+        "declaration": "getMusicStatus() {"
+      },
+      {
+        "line": 36,
+        "declaration": "setSoundStatus(e) {"
+      },
+      {
+        "line": 40,
+        "declaration": "getSoundStatus() {"
+      },
+      {
+        "line": 43,
+        "declaration": "getIsNewUser() {"
+      },
+      {
+        "line": 46,
+        "declaration": "setIsNewUser(e) {"
+      },
+      {
+        "line": 50,
+        "declaration": "getCoins() {"
+      },
+      {
+        "line": 53,
+        "declaration": "addCoins(e = 1) {"
+      },
+      {
+        "line": 58,
+        "declaration": "reduceCoins(e = 1) {"
+      },
+      {
+        "line": 65,
+        "declaration": "getHeart() {"
+      },
+      {
+        "line": 68,
+        "declaration": "addHeart(e = 1) {"
+      },
+      {
+        "line": 75,
+        "declaration": "reduceHeart(e = 1) {"
+      },
+      {
+        "line": 82,
+        "declaration": "getPassLevel(e) {"
+      },
+      {
+        "line": 85,
+        "declaration": "addPassLevel(e, t = 1) {"
+      },
+      {
+        "line": 90,
+        "declaration": "getPassStatus(e) {"
+      },
+      {
+        "line": 93,
+        "declaration": "setPassStatus(e, t) {"
+      },
+      {
+        "line": 97,
+        "declaration": "getAchieveStatus(e) {"
+      },
+      {
+        "line": 100,
+        "declaration": "setAchieveStatus(e, t) {"
+      },
+      {
+        "line": 104,
+        "declaration": "setTotalMergeCount(e, t, o) {"
+      },
+      {
+        "line": 113,
+        "declaration": "resetAllBlockStorage(e) {"
+      },
+      {
+        "line": 117,
+        "declaration": "getAllBlockStorage() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GameScene",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GameScene.js",
+    "classId": "1e715AvPr9LvLFJE2giP6tP",
+    "bodyBytes": 1782,
+    "sha256": "bf3aa522a818dec8f9418481ef913b4e0774f0778abd7626d143c6fa941c07ec",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 32,
+        "declaration": "start() {"
+      },
+      {
+        "line": 35,
+        "declaration": "addHeart() {"
+      },
+      {
+        "line": 41,
+        "declaration": "onEnterGame(e) {"
+      },
+      {
+        "line": 49,
+        "declaration": "onEnterHome() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Game",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Game.js",
+    "classId": "1b8e3j3XAZFgInFqs08Dbrj",
+    "bodyBytes": 721,
+    "sha256": "7e293a62441f5117fe748dca17199be9929756811e04a3b3c542ad49a302a29e",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "GuideView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/GuideView.js",
+    "classId": "a8fb6EdUJROLYRpOqrP19Dk",
+    "bodyBytes": 2162,
+    "sha256": "495403f1ecef9ad6d1e57c92ca6bca94f9bf73ac0bd91e4d50cad0ffe24b07fd",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 24,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 29,
+        "declaration": "registerEvent() {"
+      },
+      {
+        "line": 35,
+        "declaration": "onClickAgree() {"
+      },
+      {
+        "line": 40,
+        "declaration": "onClickReject() {"
+      },
+      {
+        "line": 44,
+        "declaration": "onClickPrivacy() {"
+      },
+      {
+        "line": 49,
+        "declaration": "onClickAgreement() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "HomeView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/HomeView.js",
+    "classId": "4f92d79EGJA8YYHtb2CA/I4",
+    "bodyBytes": 1466,
+    "sha256": "173a3eeda8d50c06b9098a89aeceddc9e4f4b7d408e5c8a4edff7ec3da315ec9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 35,
+        "declaration": "start() {"
+      },
+      {
+        "line": 38,
+        "declaration": "initView() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "HonorItem",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/HonorItem.js",
+    "classId": "0f25en2YsBIZoq2fqgOzq/4",
+    "bodyBytes": 1684,
+    "sha256": "e93975bc2dfb490dce2ee95f3f34422afc9cacd8d4589fb7c2a7f0cc4d5bf21b",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 24,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 33,
+        "declaration": "initItem(e) {"
+      },
+      {
+        "line": 37,
+        "declaration": "flushItem() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "HonorView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/HonorView.js",
+    "classId": "dd561EEDP1GwqDmL4q+ZZB0",
+    "bodyBytes": 1274,
+    "sha256": "5c2334ef225fe572ccc9fa0c86901699c476e15e430924ace0afa31dca810090",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 29,
+        "declaration": "registerEvent() {"
+      },
+      {
+        "line": 34,
+        "declaration": "initItem() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "ImagesPanel",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/ImagesPanel.js",
+    "classId": "2abafFeuJ9IFJ3ZaMFMMZS8",
+    "bodyBytes": 1404,
+    "sha256": "45e943ed7745013a9bafe412d054e0bee0482cc964a8c460afdec3f656de2515",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "get value() {"
+      },
+      {
+        "line": 25,
+        "declaration": "set value(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 35,
+        "declaration": "_loadPanel() {"
+      },
+      {
+        "line": 38,
+        "declaration": "_updateValue() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "InfoView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/InfoView.js",
+    "classId": "6588a8jrHlGGpv+C6PU8vWS",
+    "bodyBytes": 1502,
+    "sha256": "8c860d8c7749307d9d2def4b0516629ade54bc0bf4bdd453958a7596d15a4df9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 27,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 30,
+        "declaration": "registerEvent() {"
+      },
+      {
+        "line": 35,
+        "declaration": "onFlushCoin() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Item",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Item.js",
+    "classId": "429bcD8CB5NX67rv+zufyNz",
+    "bodyBytes": 1869,
+    "sha256": "d873bf2f0a51082667df6b3688e764b7b15d27f3483cb2f99b3729f54f858f70",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 34,
+        "declaration": "initItem(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "LevelManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/LevelManager.js",
+    "classId": "10598zefMRKSZPB+CzpSGY7",
+    "bodyBytes": 12864,
+    "sha256": "a0fbbfb94ae7e6a10555f0bf87f68b6a80352b144a55a27fc691b6dc7db8d2bd",
+    "methods": [
+      {
+        "line": 37,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 60,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 64,
+        "declaration": "onDestroy() {"
+      },
+      {
+        "line": 70,
+        "declaration": "onPassLvChangedNtf() {"
+      },
+      {
+        "line": 73,
+        "declaration": "onMergedMaxLvChangedNtf() {"
+      },
+      {
+        "line": 78,
+        "declaration": "autoDropSchedule(e) {"
+      },
+      {
+        "line": 81,
+        "declaration": "tryFailed(e) {"
+      },
+      {
+        "line": 90,
+        "declaration": "frameSchedule(e) {"
+      },
+      {
+        "line": 96,
+        "declaration": "tryAutoDrop() {"
+      },
+      {
+        "line": 99,
+        "declaration": "tryAutoMerge() {"
+      },
+      {
+        "line": 118,
+        "declaration": "getCanAutoMergeBlock(e) {"
+      },
+      {
+        "line": 141,
+        "declaration": "reInitKind() {"
+      },
+      {
+        "line": 150,
+        "declaration": "restartEleminateSchedule() {"
+      },
+      {
+        "line": 156,
+        "declaration": "continueEleminateSchedule(e) {"
+      },
+      {
+        "line": 160,
+        "declaration": "isCanTouch() {"
+      },
+      {
+        "line": 163,
+        "declaration": "tryConvertWorldPos(e) {"
+      },
+      {
+        "line": 170,
+        "declaration": "onTouchBegin(e) {"
+      },
+      {
+        "line": 179,
+        "declaration": "onTouchMove(e) {"
+      },
+      {
+        "line": 187,
+        "declaration": "onTouchEnd(e) {"
+      },
+      {
+        "line": 210,
+        "declaration": "tryAutoChangeX(e) {"
+      },
+      {
+        "line": 221,
+        "declaration": "resetAllBlocksRigidType() {"
+      },
+      {
+        "line": 228,
+        "declaration": "changeBlockShowX(e) {"
+      },
+      {
+        "line": 233,
+        "declaration": "genNextType() {"
+      },
+      {
+        "line": 239,
+        "declaration": "showTipsBlock() {"
+      },
+      {
+        "line": 251,
+        "declaration": "loadFromStorage() {"
+      },
+      {
+        "line": 265,
+        "declaration": "cleanAllBlocks() {"
+      },
+      {
+        "line": 269,
+        "declaration": "createBlock(e) {"
+      },
+      {
+        "line": 285,
+        "declaration": "initLevelManager(e) {"
+      },
+      {
+        "line": 299,
+        "declaration": "startGame(e = this.curMode, t = !1) {"
+      },
+      {
+        "line": 318,
+        "declaration": "createAllObject(e) {"
+      },
+      {
+        "line": 325,
+        "declaration": "mergeTwoBlock(e, t) {"
+      },
+      {
+        "line": 359,
+        "declaration": "onMergeCountLocalReport(e) {"
+      },
+      {
+        "line": 367,
+        "declaration": "onMergeTwoMax() {"
+      },
+      {
+        "line": 382,
+        "declaration": "addEachMergeReward(e, t) {"
+      },
+      {
+        "line": 387,
+        "declaration": "getCurMaxBlockType() {"
+      },
+      {
+        "line": 395,
+        "declaration": "removeBlockFromArr(e) {"
+      },
+      {
+        "line": 399,
+        "declaration": "getAllBlock() {"
+      },
+      {
+        "line": 402,
+        "declaration": "gameOver() {"
+      },
+      {
+        "line": 418,
+        "declaration": "findType(e) {"
+      },
+      {
+        "line": 422,
+        "declaration": "cleanThreeLowLevelBlocks() {"
+      },
+      {
+        "line": 431,
+        "declaration": "reGenTopBlock() {"
+      },
+      {
+        "line": 435,
+        "declaration": "cleanAllBlocksExcept3() {"
+      },
+      {
+        "line": 441,
+        "declaration": "getBlock(e) {"
+      },
+      {
+        "line": 448,
+        "declaration": "tttt() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "LevelUtils",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/LevelUtils.js",
+    "classId": "9023fVBmiVE1ppEak4XsY9y",
+    "bodyBytes": 873,
+    "sha256": "1fd0f52527e319647ada1d5f2860927935f4098aefc2f01fb27e1dba640abc00",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "static saveBlockToStorage() {"
+      },
+      {
+        "line": 25,
+        "declaration": "static genNextBlockType(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "LoadAllResources",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/LoadAllResources.js",
+    "classId": "15e3bx54YBHTruhq5JcoC63",
+    "bodyBytes": 2602,
+    "sha256": "2313ad873d93034d8aa80343d462e815569a52ec7f4427fd2eb5c9b822ea7ffe",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor(e, t, o) {"
+      },
+      {
+        "line": 24,
+        "declaration": "startLoad(e) {"
+      },
+      {
+        "line": 44,
+        "declaration": "getRes(e) {"
+      },
+      {
+        "line": 47,
+        "declaration": "setRes(e, t) {"
+      },
+      {
+        "line": 50,
+        "declaration": "removeRes(e) {"
+      },
+      {
+        "line": 55,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 67,
+        "declaration": "loadAllRes(e) {"
+      },
+      {
+        "line": 74,
+        "declaration": "updateProgress() {"
+      },
+      {
+        "line": 89,
+        "declaration": "getBaseLoader(e) {"
+      },
+      {
+        "line": 94,
+        "declaration": "getAudioRes(e) {"
+      },
+      {
+        "line": 98,
+        "declaration": "getJsonRes(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "LoadScene",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/LoadScene.js",
+    "classId": "e1b90/rohdEk4SdmmEZANaD",
+    "bodyBytes": 2326,
+    "sha256": "e51f4d20bb58b0f7d325a0de1cc646a143b512c1d8fde14df0072f184b71d3a8",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 38,
+        "declaration": "update(e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "updateProgressBar() {"
+      },
+      {
+        "line": 56,
+        "declaration": "loadGameScene() {"
+      },
+      {
+        "line": 60,
+        "declaration": "showUserView() {"
+      },
+      {
+        "line": 63,
+        "declaration": "startLoading() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "LocalDataManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/LocalDataManager.js",
+    "classId": "61871KIZ6hGiLMw60ceFHdv",
+    "bodyBytes": 2628,
+    "sha256": "747f6c5f731b9b940894832e53490cbd9f137bbb957df8d8669f2ea0cda6532b",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 17,
+        "declaration": "destoryInstance() {"
+      },
+      {
+        "line": 20,
+        "declaration": "loadOrRequlestStorageData(e) {"
+      },
+      {
+        "line": 30,
+        "declaration": "getStoreKey() {"
+      },
+      {
+        "line": 33,
+        "declaration": "saveToUserDefault(e) {"
+      },
+      {
+        "line": 36,
+        "declaration": "parseStorageData(e) {"
+      },
+      {
+        "line": 49,
+        "declaration": "removeGameLocalDataFromUserdefault() {"
+      },
+      {
+        "line": 52,
+        "declaration": "getData(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "removeData(e) {"
+      },
+      {
+        "line": 66,
+        "declaration": "clear_data() {"
+      },
+      {
+        "line": 71,
+        "declaration": "getGameData() {"
+      },
+      {
+        "line": 74,
+        "declaration": "initConfig() {"
+      },
+      {
+        "line": 84,
+        "declaration": "getNextBlockItemConfig() {"
+      },
+      {
+        "line": 92,
+        "declaration": "getValueByKey(e, t) {"
+      },
+      {
+        "line": 107,
+        "declaration": "getGMConfig() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "PhysicsManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/PhysicsManager.js",
+    "classId": "6a031eNbvdBKaI+MVYdsCKg",
+    "bodyBytes": 1194,
+    "sha256": "8474b466fc6bc91d29e9a300b2717d7597530f907ab5dee51c91d9c68ca3cab5",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "static openPhysics() {"
+      },
+      {
+        "line": 27,
+        "declaration": "static closePhysics() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "PolicyView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/PolicyView.js",
+    "classId": "4d666NjoM9JP4EQnlwcjJOH",
+    "bodyBytes": 1409,
+    "sha256": "5ac4f6e2719a92b4298162ff22e1e51c9052af6d0b63293e8ad10ab94b49da2e",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 27,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "registerEvent() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "PoolManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/PoolManager.js",
+    "classId": "ac8cbJErGBNmYY8nqQpR7Dy",
+    "bodyBytes": 893,
+    "sha256": "bdd2d10a0d51063d89643f495bf665142123b5a23ed7e8d2480affdd8524c938",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 16,
+        "declaration": "static get instance() {"
+      },
+      {
+        "line": 20,
+        "declaration": "_parseName(e) {"
+      },
+      {
+        "line": 23,
+        "declaration": "getPool(e) {"
+      },
+      {
+        "line": 27,
+        "declaration": "clearPool(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "clearAllPool() {"
+      },
+      {
+        "line": 37,
+        "declaration": "getNode(e) {"
+      },
+      {
+        "line": 43,
+        "declaration": "putNode(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "ResManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/ResManager.js",
+    "classId": "901b4y1sCZPBoSaqHlRpfGK",
+    "bodyBytes": 1540,
+    "sha256": "851c0252b5afa8025f7c36f24e2ee6394d6001f960dd193e7114641de3480958",
+    "methods": [
+      {
+        "line": 36,
+        "declaration": "static loadSpriteFrame(e, t) {"
+      },
+      {
+        "line": 41,
+        "declaration": "static loadPrefab(e) {"
+      },
+      {
+        "line": 44,
+        "declaration": "static loadJson(e) {"
+      },
+      {
+        "line": 47,
+        "declaration": "static preloadScene(e, t) {"
+      },
+      {
+        "line": 50,
+        "declaration": "static loadScene(e, t) {"
+      },
+      {
+        "line": 53,
+        "declaration": "static loadRes(e, t, o, a = null) {"
+      },
+      {
+        "line": 61,
+        "declaration": "static loadResByPromise(e, t) {"
+      },
+      {
+        "line": 71,
+        "declaration": "static loadDir(e, t, o, a) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "SettingView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/SettingView.js",
+    "classId": "f0005Qb+LhLNI6PLGn4oqcb",
+    "bodyBytes": 2389,
+    "sha256": "9ddbceda9d24508dc3c672698318f9ee687cce2ce6468c38b1233c02a769ab4c",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 29,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 34,
+        "declaration": "registerEvent() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Singleton",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Singleton.js",
+    "classId": "3cc2aAhDbtFAa0I6sjZYhyv",
+    "bodyBytes": 328,
+    "sha256": "8de741fe31ce687dc19c25be0ca23058c674fb53b7043e136ef026f0ee794751",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 15,
+        "declaration": "static destroyInstance() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "SoundManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/SoundManager.js",
+    "classId": "38a53fhmFBA+6OZ2GtnENh4",
+    "bodyBytes": 1777,
+    "sha256": "3b606976070c9dfbf73814485691f65a85345463f877df3f8e5ece21e0ce0f8f",
+    "methods": [
+      {
+        "line": 22,
+        "declaration": "static playSound(e, t = !1, o = 1) {"
+      },
+      {
+        "line": 28,
+        "declaration": "static playClickSound(e = i.click_sound, t = !1, o = 1) {"
+      },
+      {
+        "line": 34,
+        "declaration": "static playMusic(e, t = !0, o = 1) {"
+      },
+      {
+        "line": 39,
+        "declaration": "static stopMusic(e) {"
+      },
+      {
+        "line": 42,
+        "declaration": "static stopSound(e) {"
+      },
+      {
+        "line": 45,
+        "declaration": "static pauseOne(e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "static resumeOne(e) {"
+      },
+      {
+        "line": 51,
+        "declaration": "static pauseAll() {"
+      },
+      {
+        "line": 54,
+        "declaration": "static resumeAll() {"
+      },
+      {
+        "line": 57,
+        "declaration": "static getDuration(e) {"
+      },
+      {
+        "line": 61,
+        "declaration": "static loopBgm(e = i.bgm_game) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "ToastView",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/ToastView.js",
+    "classId": "5f656hmSV5AHYoVlEH1lyrI",
+    "bodyBytes": 1250,
+    "sha256": "ade16e29e0518b1110005dde6525622f3193c0b4562ece7119c3edaf5c1c6a52",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onShow(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "showTxt(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "TouchButton",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/TouchButton.js",
+    "classId": "ecb28PDzb5FurFtrc2g30jQ",
+    "bodyBytes": 2368,
+    "sha256": "d1b37cd7a377dda9bde8b66b2fa813c177ea261d12914ce5c0968813c2ffdc64",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 20,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 34,
+        "declaration": "onTouchStart(e) {"
+      },
+      {
+        "line": 45,
+        "declaration": "onTouchMoved(e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "onTouchEnd(e) {"
+      },
+      {
+        "line": 60,
+        "declaration": "onTouchCancel(e) {"
+      },
+      {
+        "line": 66,
+        "declaration": "registerTouchEvent(e, t = 1.1, o = !0, a = !0) {"
+      },
+      {
+        "line": 76,
+        "declaration": "updateOriginScale(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "UIManager",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/UIManager.js",
+    "classId": "9e0af7F7JNO6INe6cvPEm7f",
+    "bodyBytes": 1767,
+    "sha256": "ee27a7f49757ce1ab4693a657203722f8798bec10630d068ad81c78ef9602c67",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 16,
+        "declaration": "static get instance() {"
+      },
+      {
+        "line": 20,
+        "declaration": "show_ui(e) {"
+      },
+      {
+        "line": 45,
+        "declaration": "max_zindex() {"
+      },
+      {
+        "line": 54,
+        "declaration": "close_ui(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "close_all_views() {"
+      },
+      {
+        "line": 60,
+        "declaration": "clear_ui() {"
+      },
+      {
+        "line": 69,
+        "declaration": "ui_is_show(e) {"
+      },
+      {
+        "line": 72,
+        "declaration": "onShowToast(e) {"
+      },
+      {
+        "line": 80,
+        "declaration": "onShowView(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "UserDefault",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/UserDefault.js",
+    "classId": "c2c67woB0VP0aok5g5GCefq",
+    "bodyBytes": 536,
+    "sha256": "91211b6e9e1284bb252afe3fc8c2bb8607b7a6a6f3e1db923cb0a53066006b0b",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static setItem(e, t) {"
+      },
+      {
+        "line": 14,
+        "declaration": "static setItem_json(e, t) {"
+      },
+      {
+        "line": 17,
+        "declaration": "static getItem(e) {"
+      },
+      {
+        "line": 20,
+        "declaration": "static getItem_json(e) {"
+      },
+      {
+        "line": 24,
+        "declaration": "static removeItem(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Utils",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Utils.js",
+    "classId": "7213787GeJADbSUL5kZh4mQ",
+    "bodyBytes": 1244,
+    "sha256": "0b844aac6a7a5c1ec13353dcf756cfde042b16b0a24b0490ff626ed6b7afd65e",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "static getRandomIntInRange(e, t) {"
+      },
+      {
+        "line": 15,
+        "declaration": "static playSpine(e, t, o = !1, a = null) {"
+      },
+      {
+        "line": 23,
+        "declaration": "static addClick(e, t, o) {"
+      },
+      {
+        "line": 32,
+        "declaration": "static loadRes(e, t) {"
+      },
+      {
+        "line": 39,
+        "declaration": "static getTimeStr(e, t = !1) {"
+      },
+      {
+        "line": 50,
+        "declaration": "static prefixZero(e, t = 2) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "Packaged",
+    "name": "Wall",
+    "file": "Restoration/02_Gameplay/Packaged/Modules/Wall.js",
+    "classId": "8b11fQHu7tNqqyV5i1XPhwy",
+    "bodyBytes": 1340,
+    "sha256": "22cb526f194df3f6950bc373f2f18cec2f20460b32ef1f76f5035217d3fa0fbf",
+    "methods": [
+      {
+        "line": 24,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 30,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 38,
+        "declaration": "init(e) {"
+      },
+      {
+        "line": 41,
+        "declaration": "getWallType() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "AccountCheckManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/AccountCheckManager.js",
+    "classId": "9d70eHlTp9MaK819yq7qs25",
+    "bodyBytes": 1849,
+    "sha256": "38c49142da6847ef6586ca5498f8ed3e811dd45e89d7665cbf23fc01fcb1a2cb",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static validateEmail(e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "static validatePhone08(e) {"
+      },
+      {
+        "line": 46,
+        "declaration": "static validatePhone10(e) {"
+      },
+      {
+        "line": 53,
+        "declaration": "static validatePhone10Or11(e) {"
+      },
+      {
+        "line": 60,
+        "declaration": "static validatePhone84(e) {"
+      },
+      {
+        "line": 67,
+        "declaration": "static validatePhone09(e) {"
+      },
+      {
+        "line": 74,
+        "declaration": "static validateAccount(e) {"
+      },
+      {
+        "line": 82,
+        "declaration": "static validatePhone55(e) {"
+      },
+      {
+        "line": 90,
+        "declaration": "static validateCPFJ(e) {"
+      },
+      {
+        "line": 98,
+        "declaration": "static validatePix(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "AccountDetailsView",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/AccountDetailsView.js",
+    "classId": "4da49ae6f1KfoMUK2WeXyG2",
+    "bodyBytes": 5756,
+    "sha256": "3f1344cae258cc159a6ea79a9197539c0e9fa5c84dee551140480bddafa9e36c",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 34,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 66,
+        "declaration": "updateConfirmButtonState() {"
+      },
+      {
+        "line": 71,
+        "declaration": "onItemClicked(e, t, a) {"
+      },
+      {
+        "line": 82,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 141,
+        "declaration": "showPayNode(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "AdaptNotchScreen",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/AdaptNotchScreen.js",
+    "classId": "b263fmlKzNLN7Xsg2QNBAEG",
+    "bodyBytes": 1769,
+    "sha256": "f86b420ac34b2e9904b18375584a8d818f2d690fc405d5dc85431d384c369f3e",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "start() {"
+      },
+      {
+        "line": 26,
+        "declaration": "adaptNotchScreen() {"
+      },
+      {
+        "line": 40,
+        "declaration": "adaptNotchScreen1() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "AudioManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/AudioManager.js",
+    "classId": "e6f16jqz9FMLpibKLER5yx8",
+    "bodyBytes": 790,
+    "sha256": "131c4d240f819687889744d5a6b1aee1b96cf00ee1b6cef5229d8f796f358282",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static playSound(e, t = !1, a = 1) {"
+      },
+      {
+        "line": 14,
+        "declaration": "static playMusic(e, t = !0, a = 1) {"
+      },
+      {
+        "line": 17,
+        "declaration": "static stopMusic(e) {"
+      },
+      {
+        "line": 20,
+        "declaration": "static pauseMusic(e) {"
+      },
+      {
+        "line": 23,
+        "declaration": "static resumeMusic(e) {"
+      },
+      {
+        "line": 26,
+        "declaration": "static stopSound(e) {"
+      },
+      {
+        "line": 29,
+        "declaration": "static pauseOne(e) {"
+      },
+      {
+        "line": 32,
+        "declaration": "static resumeOne(e) {"
+      },
+      {
+        "line": 35,
+        "declaration": "static pauseAll() {"
+      },
+      {
+        "line": 38,
+        "declaration": "static resumeAll() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaoXiangFly",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaoXiangFly.js",
+    "classId": "12f07SCnXhGUbN8cfcihv0u",
+    "bodyBytes": 2293,
+    "sha256": "7501e8a356fd5fb0b733f48631b218d67dec16998b0e447757dd518b9a554e70",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 26,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 29,
+        "declaration": "initBaoxiang() {"
+      },
+      {
+        "line": 42,
+        "declaration": "refreshBaoxiang() {"
+      },
+      {
+        "line": 46,
+        "declaration": "stopBubbleMovement() {"
+      },
+      {
+        "line": 50,
+        "declaration": "startBaoxiangMoveAnimation() {"
+      },
+      {
+        "line": 58,
+        "declaration": "onDisable() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaoXiangOkSpin",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaoXiangOkSpin.js",
+    "classId": "11ec6tQOrFHlYdx80pSVTST",
+    "bodyBytes": 2274,
+    "sha256": "c6652bb7afe6a09833066cf2534749e89f234ba6903183144fba0810189fba66",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 38,
+        "declaration": "tryAddBox() {"
+      },
+      {
+        "line": 58,
+        "declaration": "showHand() {"
+      },
+      {
+        "line": 64,
+        "declaration": "static getInstance() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaseRecord",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaseRecord.js",
+    "classId": "bb262Cqo3xCvJ+9mTWDWLR1",
+    "bodyBytes": 412,
+    "sha256": "270adac3b7b7cf738a172caf4efe81e747d1fe9f3e826262b5052080cef84a56",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "parseFromUserDefault(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaseScene",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaseScene.js",
+    "classId": "a43fbLHQ+hH1ZwtpkBSnQzb",
+    "bodyBytes": 389,
+    "sha256": "db5a5b3076f6d7f8b5ee769bffbf6937acbf6fde7ee0de1f192d436dd86f44a4",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 16,
+        "declaration": "start() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaseTodayDataRecord",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaseTodayDataRecord.js",
+    "classId": "120c5CxUJ9HBZ/LrM2SSwOE",
+    "bodyBytes": 5349,
+    "sha256": "438f698f89f39e265f40b078dae898e3aa3dfdfff573f6036619cff3706971ac",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "parseFromUserDefault(e) {"
+      },
+      {
+        "line": 19,
+        "declaration": "adaptForDate() {"
+      },
+      {
+        "line": 23,
+        "declaration": "static getCurrentDate() {"
+      },
+      {
+        "line": 27,
+        "declaration": "static checkAndUpdateLoginDays() {"
+      },
+      {
+        "line": 62,
+        "declaration": "static addDailyLevel() {"
+      },
+      {
+        "line": 69,
+        "declaration": "static setConsecutiveLoginDays(e) {"
+      },
+      {
+        "line": 92,
+        "declaration": "static checkLoginDays() {"
+      },
+      {
+        "line": 109,
+        "declaration": "static setDebugLoginDays(e) {"
+      },
+      {
+        "line": 134,
+        "declaration": "static checkLoginDaysPass() {"
+      },
+      {
+        "line": 139,
+        "declaration": "static clearLoginRecords() {"
+      },
+      {
+        "line": 145,
+        "declaration": "static getLoginRecords() {"
+      },
+      {
+        "line": 148,
+        "declaration": "static getDailyLoginRecords() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "BaseUI",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/BaseUI.js",
+    "classId": "1d695x/0PtFTrOwiZHv/H6J",
+    "bodyBytes": 4477,
+    "sha256": "259a19d9e68d445162722e74bfc4e8570cdc10774ce8ff73c65772f9f076d030",
+    "methods": [
+      {
+        "line": 25,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 38,
+        "declaration": "getName() {"
+      },
+      {
+        "line": 42,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 61,
+        "declaration": "android_back_callback() {"
+      },
+      {
+        "line": 64,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 75,
+        "declaration": "register_event(e, t, a, i) {"
+      },
+      {
+        "line": 85,
+        "declaration": "unregister_event(e, t, a) {"
+      },
+      {
+        "line": 88,
+        "declaration": "onDestroy() {"
+      },
+      {
+        "line": 91,
+        "declaration": "hide() {"
+      },
+      {
+        "line": 102,
+        "declaration": "on_close_call(e, ...t) {"
+      },
+      {
+        "line": 111,
+        "declaration": "delay_add_nodes(e, t, a, i = .1) {"
+      },
+      {
+        "line": 117,
+        "declaration": "pop(e) {"
+      },
+      {
+        "line": 129,
+        "declaration": "opp(e) {"
+      },
+      {
+        "line": 142,
+        "declaration": "static open(e) {"
+      },
+      {
+        "line": 157,
+        "declaration": "static open_with_parm(e) {"
+      },
+      {
+        "line": 162,
+        "declaration": "static close(...e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CashTimeDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CashTimeDialog.js",
+    "classId": "bb0436lvs5O3rmvlXcbjt+S",
+    "bodyBytes": 3938,
+    "sha256": "710f1af60ae16ea785141bc75e668efc75169fb97fffa939481d534862bbf216",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 54,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ChinaDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ChinaDialog.js",
+    "classId": "7756cTKRphNKLIiavtyFJ3D",
+    "bodyBytes": 1516,
+    "sha256": "be12ed497b0f421c625fcdeae1047882299c5bb47f6f1f47e18998b0cf1ce8c1",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 24,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 30,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CircleProgress",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CircleProgress.js",
+    "classId": "3bb33v+xVpKg6zDYoqG9tZW",
+    "bodyBytes": 1679,
+    "sha256": "63b3661756658028f019e1dc3cf97307ae6685702152c73805c5c7810d01f5f5",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 24,
+        "declaration": "setCircleProgress(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CoinItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CoinItem.js",
+    "classId": "cdd4chPxjlBea7Xn2092bM9",
+    "bodyBytes": 13864,
+    "sha256": "524c1b6dc3ae1b5524aa46d42e4cb319d1fff5723886cdcc98c51fb3c44ae6d0",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 128,
+        "declaration": "get newplayData() {"
+      },
+      {
+        "line": 131,
+        "declaration": "get value() {"
+      },
+      {
+        "line": 134,
+        "declaration": "set value(e) {"
+      },
+      {
+        "line": 138,
+        "declaration": "get isMerging() {"
+      },
+      {
+        "line": 141,
+        "declaration": "set isMerging(e) {"
+      },
+      {
+        "line": 144,
+        "declaration": "get isPreview() {"
+      },
+      {
+        "line": 147,
+        "declaration": "set isPreview(e) {"
+      },
+      {
+        "line": 150,
+        "declaration": "static setMergePausedForGameOver(e) {"
+      },
+      {
+        "line": 153,
+        "declaration": "static isMergePausedForGameOver() {"
+      },
+      {
+        "line": 156,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 159,
+        "declaration": "start() {"
+      },
+      {
+        "line": 162,
+        "declaration": "update(e) {"
+      },
+      {
+        "line": 165,
+        "declaration": "setupPhysics(e = !0, t = -1) {"
+      },
+      {
+        "line": 211,
+        "declaration": "disablePhysics() {"
+      },
+      {
+        "line": 238,
+        "declaration": "pauseMergeForGameOver() {"
+      },
+      {
+        "line": 255,
+        "declaration": "resumeAfterRevive() {"
+      },
+      {
+        "line": 280,
+        "declaration": "updateDisplay() {"
+      },
+      {
+        "line": 287,
+        "declaration": "onBeginContact(e, t, a) {"
+      },
+      {
+        "line": 317,
+        "declaration": "onEndContact(e, t, a) {"
+      },
+      {
+        "line": 323,
+        "declaration": "isMergeSensorCollider(e) {"
+      },
+      {
+        "line": 326,
+        "declaration": "isSideWallCollider(e) {"
+      },
+      {
+        "line": 330,
+        "declaration": "getSolidColliderRadius() {"
+      },
+      {
+        "line": 334,
+        "declaration": "getCoinDensity(e) {"
+      },
+      {
+        "line": 338,
+        "declaration": "relaxDropPhysicsAfterContact() {"
+      },
+      {
+        "line": 351,
+        "declaration": "updateDropPhysicsSettling(e) {"
+      },
+      {
+        "line": 366,
+        "declaration": "stopCoinTweens() {"
+      },
+      {
+        "line": 370,
+        "declaration": "resetSpriteVisualScale() {"
+      },
+      {
+        "line": 376,
+        "declaration": "playCollisionEffect() {"
+      },
+      {
+        "line": 385,
+        "declaration": "stopCollisionEffect() {"
+      },
+      {
+        "line": 398,
+        "declaration": "merge(e) {"
+      },
+      {
+        "line": 440,
+        "declaration": "getMergedCoinSpawnData(e) {"
+      },
+      {
+        "line": 450,
+        "declaration": "release(e = 0) {"
+      },
+      {
+        "line": 454,
+        "declaration": "getWidth() {"
+      },
+      {
+        "line": 457,
+        "declaration": "getHeight() {"
+      },
+      {
+        "line": 460,
+        "declaration": "getRadius() {"
+      },
+      {
+        "line": 463,
+        "declaration": "getTopY() {"
+      },
+      {
+        "line": 466,
+        "declaration": "getBottomY() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CollectDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CollectDialog.js",
+    "classId": "c7617LpMHRG+piwK+TUMgc+",
+    "bodyBytes": 4552,
+    "sha256": "53fecbe4d5b54b4dbe75bc475439e6fd3b2bdd53a40886f7731a51cd05284a19",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 31,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 67,
+        "declaration": "showScoreDialog() {"
+      },
+      {
+        "line": 81,
+        "declaration": "playRandomAnimation() {"
+      },
+      {
+        "line": 94,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 120,
+        "declaration": "showSingleRewardView() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CollectSuccessDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CollectSuccessDialog.js",
+    "classId": "fa0ca5xAbxBy5jn39XS4EOG",
+    "bodyBytes": 2892,
+    "sha256": "532d285d20ef86542e61f20ee583bb78a55b6a605fc6dff4898767c263b86b5d",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 27,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 41,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 52,
+        "declaration": "showRewardView(e = !1) {"
+      },
+      {
+        "line": 56,
+        "declaration": "showScoreDialog() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CommonInterface",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CommonInterface.js",
+    "classId": "55a53gFvPJFN7+efXzwVnSB",
+    "bodyBytes": 166,
+    "sha256": "852df3b3f65af0bfef3ffca9a47835b110da2ebb2abba9a8f3ad19fd0aeb8cc9",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "CongratulationsViewNew",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/CongratulationsViewNew.js",
+    "classId": "8144flhHaFPaqPTN7b2bMU6",
+    "bodyBytes": 115,
+    "sha256": "d93db32820fcf8e34658fae414cba529e67a8b19c6e9dc13d8e86478e076d879",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "Controller",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/Controller.js",
+    "classId": "58b56wQ+zFKw5vCrJPK9KxQ",
+    "bodyBytes": 246,
+    "sha256": "7b5844ae9a0049aa470e5c480576aac478b043a6a393613f14b7032b9c0fe06e",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "constructor() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "DateUtils",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/DateUtils.js",
+    "classId": "d786eMsEFFEG4FKRYXNS8FX",
+    "bodyBytes": 2207,
+    "sha256": "213f00657497ee9c17c5214f920372183fe9f026e09a31e742d8d985d831e85f",
+    "methods": [
+      {
+        "line": 19,
+        "declaration": "static stringFormat(e, ...t) {"
+      },
+      {
+        "line": 25,
+        "declaration": "static fixZeroStart(e, t) {"
+      },
+      {
+        "line": 28,
+        "declaration": "static getCurrentUTCTimeString(e) {"
+      },
+      {
+        "line": 32,
+        "declaration": "static getCurrentUTCTimeString2() {"
+      },
+      {
+        "line": 36,
+        "declaration": "static getYYYYMMDD(e, t) {"
+      },
+      {
+        "line": 40,
+        "declaration": "static getTimeString(e, t) {"
+      },
+      {
+        "line": 65,
+        "declaration": "static formatTimestamp(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "DebugComponent",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/DebugComponent.js",
+    "classId": "82de4T1DGpEkKEAyZS6oc5K",
+    "bodyBytes": 1981,
+    "sha256": "47ecb9708c280ed4999119b265be4a9f76c3fa14b23aa1cc94ccd07c033c7d90",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 41,
+        "declaration": "click_TopGamePlay() {"
+      },
+      {
+        "line": 48,
+        "declaration": "click_NextGamePlay() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "DebugDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/DebugDialog.js",
+    "classId": "6347ftpZZJA/bKJMiTqADeR",
+    "bodyBytes": 7153,
+    "sha256": "29eea4d23b4fb88a97f3980d281218bebc58c2608c4cab1b4095164bbd94660a",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 45,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 56,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 73,
+        "declaration": "refreshData(e) {"
+      },
+      {
+        "line": 103,
+        "declaration": "refreshGame() {"
+      },
+      {
+        "line": 113,
+        "declaration": "setEditString(e, t) {"
+      },
+      {
+        "line": 116,
+        "declaration": "getScoreEditBox() {"
+      },
+      {
+        "line": 119,
+        "declaration": "getDrawScoreEditBox() {"
+      },
+      {
+        "line": 122,
+        "declaration": "getCoin1024EditBox() {"
+      },
+      {
+        "line": 125,
+        "declaration": "getEditString(e) {"
+      },
+      {
+        "line": 128,
+        "declaration": "getEditNumber(e, t = 0) {"
+      },
+      {
+        "line": 133,
+        "declaration": "getEditNumberArray(e, t) {"
+      },
+      {
+        "line": 148,
+        "declaration": "fillNumberArray(e, t) {"
+      },
+      {
+        "line": 151,
+        "declaration": "applyDrawScoreDebugValue(e) {"
+      },
+      {
+        "line": 162,
+        "declaration": "saveDebugCountry(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "EventCenter",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/EventCenter.js",
+    "classId": "26ee7wg7/pOAKAkdXSq/9iI",
+    "bodyBytes": 1627,
+    "sha256": "1edff3f51d0f37153b3c15db5e2c74853b532bf2d27815d92233e74364bc82c9",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "constructor(e, t, a, i = !1) {"
+      },
+      {
+        "line": 22,
+        "declaration": "constructor(e) {"
+      },
+      {
+        "line": 26,
+        "declaration": "notify(...e) {"
+      },
+      {
+        "line": 29,
+        "declaration": "compar(e) {"
+      },
+      {
+        "line": 32,
+        "declaration": "getGameEventInterface() {"
+      },
+      {
+        "line": 38,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 42,
+        "declaration": "register(e, t, a, i = !1) {"
+      },
+      {
+        "line": 47,
+        "declaration": "remove(e, t) {"
+      },
+      {
+        "line": 56,
+        "declaration": "fire(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "EventManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/EventManager.js",
+    "classId": "e831aDxtCRN87KUq7bv2OQh",
+    "bodyBytes": 1090,
+    "sha256": "cedb94f3991d33712ba13318e106c82f0a21f241462a13ce3b7be0696319796f",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "constructor(e, t, a) {"
+      },
+      {
+        "line": 19,
+        "declaration": "trigger(...e) {"
+      },
+      {
+        "line": 24,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 27,
+        "declaration": "static get_instance() {"
+      },
+      {
+        "line": 31,
+        "declaration": "listen(e) {"
+      },
+      {
+        "line": 40,
+        "declaration": "cancel_listen(e, t, a) {"
+      },
+      {
+        "line": 47,
+        "declaration": "emit(e, ...t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "FailDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/FailDialog.js",
+    "classId": "7d8dfcsiFtHHq6eTEbbJqMf",
+    "bodyBytes": 4073,
+    "sha256": "e81e288b9c011c31e88a5371e0b92e2eadb07722cb0d848fa44e5093e5284ff9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 34,
+        "declaration": "setResetGame() {"
+      },
+      {
+        "line": 39,
+        "declaration": "onClickReAliveAd() {"
+      },
+      {
+        "line": 49,
+        "declaration": "completeReAliveReward(e) {"
+      },
+      {
+        "line": 58,
+        "declaration": "setWatchingAdState(e) {"
+      },
+      {
+        "line": 64,
+        "declaration": "tryShowRealCoinEffect(e) {"
+      },
+      {
+        "line": 71,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "FlyAnimation",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/FlyAnimation.js",
+    "classId": "ddc501F+pROSY5JIdP0Ep4D",
+    "bodyBytes": 6339,
+    "sha256": "fa060a9e58e6251525348d3d9020e0c0538acba09245e792a062c3d768e7314a",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 50,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 53,
+        "declaration": "ShowPropsFlyEffect(e, t, a) {"
+      },
+      {
+        "line": 74,
+        "declaration": "ShowCoinEffect(e, t, a = !0) {"
+      },
+      {
+        "line": 80,
+        "declaration": "ShowRealCoinEffect(e, t) {"
+      },
+      {
+        "line": 87,
+        "declaration": "getRelativePosition(e, t) {"
+      },
+      {
+        "line": 91,
+        "declaration": "range(e = 0, t = 1) {"
+      },
+      {
+        "line": 98,
+        "declaration": "rangeInt(e, t) {"
+      },
+      {
+        "line": 102,
+        "declaration": "fly_add_action(e, t, a) {"
+      },
+      {
+        "line": 131,
+        "declaration": "flyPropsAction(e, t, a, i, o) {"
+      },
+      {
+        "line": 157,
+        "declaration": "flyRealCoinAction(e, t) {"
+      },
+      {
+        "line": 185,
+        "declaration": "createRewardToast(e, t) {"
+      },
+      {
+        "line": 198,
+        "declaration": "createRewardRealToast(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "FontView",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/FontView.js",
+    "classId": "828a89/o+lD2o7BDeEFbGzx",
+    "bodyBytes": 1357,
+    "sha256": "c34ea4f26580f19d69b82f1818b7c0284bc70408fe9cc2b369d362dfef029998",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 24,
+        "declaration": "setLabelFont() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameClickManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameClickManager.js",
+    "classId": "67fb3/BdUtI5Il0EwYPjjXP",
+    "bodyBytes": 1772,
+    "sha256": "2e56d4d09f2d3b1f9c868f7cff4099d2b1a3328752450f402a90beb6a3681c09",
+    "methods": [
+      {
+        "line": 38,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 44,
+        "declaration": "init(e) {"
+      },
+      {
+        "line": 47,
+        "declaration": "createClickSpine(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "getClickSpineNodeFromNodePool() {"
+      },
+      {
+        "line": 76,
+        "declaration": "recyclePerson(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameClickSpine",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameClickSpine.js",
+    "classId": "28f1cmQSUJHQp6fgSDTaANH",
+    "bodyBytes": 1076,
+    "sha256": "fff5476a2fe3b8d63f081462894d2d2b49356f9d62bcf5531f861dfbbb361f71",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "playSpine() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameEventConsts",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameEventConsts.js",
+    "classId": "5cb7eggs15IZZF/ba1QJ41F",
+    "bodyBytes": 792,
+    "sha256": "7d79c4f89418ad887e8724e77231457a2aa05d20016c11feea60c675ea5061b6",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameFakeWDDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameFakeWDDialog.js",
+    "classId": "94bf9cFdKtMOpmEFi9uXZm7",
+    "bodyBytes": 5912,
+    "sha256": "5cdfdc7c7ed1faadb3aa78f8aebecc52f4f4e78b17287d073f01b46504e30109",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 32,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 46,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 49,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 58,
+        "declaration": "lateUpdate() {"
+      },
+      {
+        "line": 64,
+        "declaration": "updateUI() {"
+      },
+      {
+        "line": 92,
+        "declaration": "onitemWithdraw(e) {"
+      },
+      {
+        "line": 98,
+        "declaration": "refreshUI() {"
+      },
+      {
+        "line": 108,
+        "declaration": "requestLayoutAdapt() {"
+      },
+      {
+        "line": 112,
+        "declaration": "adaptLayout() {"
+      },
+      {
+        "line": 160,
+        "declaration": "getScrollViewNode(e) {"
+      },
+      {
+        "line": 163,
+        "declaration": "disableWidget(e) {"
+      },
+      {
+        "line": 167,
+        "declaration": "getEdgeMargin(e) {"
+      },
+      {
+        "line": 170,
+        "declaration": "getConfig() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameFakeWDItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameFakeWDItem.js",
+    "classId": "828fa1heI1JZrDtwrOIJ5qr",
+    "bodyBytes": 3113,
+    "sha256": "5eec40732fad2a3248279a73696b1a0836335237c7a41e9d917c7b6abe1d8985",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 27,
+        "declaration": "initdata(e) {"
+      },
+      {
+        "line": 59,
+        "declaration": "refreshSelectBGSprite(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameLocalData",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameLocalData.js",
+    "classId": "799007kX09IIp0mkDMgpcVG",
+    "bodyBytes": 2949,
+    "sha256": "8f66590c9f77a0a5e8ccbc674118221c558182783c0c5b306d45c62e2f559b11",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 18,
+        "declaration": "destoryInstance() {"
+      },
+      {
+        "line": 21,
+        "declaration": "loadOrRequlestStorageData(e) {"
+      },
+      {
+        "line": 33,
+        "declaration": "getStoreKey() {"
+      },
+      {
+        "line": 36,
+        "declaration": "getLegacyStoreKey() {"
+      },
+      {
+        "line": 39,
+        "declaration": "saveToUserDefault(e) {"
+      },
+      {
+        "line": 43,
+        "declaration": "parseStorageData(e) {"
+      },
+      {
+        "line": 56,
+        "declaration": "removeGameLocalDataFromUserdefault() {"
+      },
+      {
+        "line": 60,
+        "declaration": "getData(e) {"
+      },
+      {
+        "line": 65,
+        "declaration": "removeData(e) {"
+      },
+      {
+        "line": 74,
+        "declaration": "clear_data() {"
+      },
+      {
+        "line": 79,
+        "declaration": "set_local_storeage() {"
+      },
+      {
+        "line": 82,
+        "declaration": "getPersistDataTypes() {"
+      },
+      {
+        "line": 85,
+        "declaration": "getPersistStorageData() {"
+      },
+      {
+        "line": 93,
+        "declaration": "getSaveDataByClassName(e, t) {"
+      },
+      {
+        "line": 102,
+        "declaration": "convertLegacyNewGamePlayData(e) {"
+      },
+      {
+        "line": 109,
+        "declaration": "getStorageJson(e) {"
+      },
+      {
+        "line": 117,
+        "declaration": "removeLegacyStoreData() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameManagement",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameManagement.js",
+    "classId": "bda10BvToFIobdRuKG5cJ4w",
+    "bodyBytes": 19400,
+    "sha256": "d899e5ffac3d1b8331315f51905161b9cc8e22c94b6d213aac941bd3637a399a",
+    "methods": [
+      {
+        "line": 38,
+        "declaration": "static normalizeCountry(e) {"
+      },
+      {
+        "line": 43,
+        "declaration": "static get globalData() {"
+      },
+      {
+        "line": 51,
+        "declaration": "static getDefaultGlobalConfig() {"
+      },
+      {
+        "line": 135,
+        "declaration": "static normalizeBlastConfig(e) {"
+      },
+      {
+        "line": 153,
+        "declaration": "static GetadaptForTallDevices() {"
+      },
+      {
+        "line": 158,
+        "declaration": "static loadSpriteFrame(e, t) {"
+      },
+      {
+        "line": 163,
+        "declaration": "static loadRandomPlatformSpriteFrame(e) {"
+      },
+      {
+        "line": 171,
+        "declaration": "static getCountryIdByCountry(e) {"
+      },
+      {
+        "line": 177,
+        "declaration": "static initJsonData() {"
+      },
+      {
+        "line": 216,
+        "declaration": "static GetCountryDang() {"
+      },
+      {
+        "line": 244,
+        "declaration": "static getnor(e = 1, t = !1) {"
+      },
+      {
+        "line": 262,
+        "declaration": "static getRandomInRange(e, t) {"
+      },
+      {
+        "line": 266,
+        "declaration": "static getlastTXmon() {"
+      },
+      {
+        "line": 274,
+        "declaration": "static getXS() {"
+      },
+      {
+        "line": 282,
+        "declaration": "static GetCountryIndewx() {"
+      },
+      {
+        "line": 286,
+        "declaration": "static GetCountry() {"
+      },
+      {
+        "line": 290,
+        "declaration": "static GetJsonDataIndex() {"
+      },
+      {
+        "line": 334,
+        "declaration": "static getNextDataNumber(e, t) {"
+      },
+      {
+        "line": 338,
+        "declaration": "static getCurrentJsonData(e, t) {"
+      },
+      {
+        "line": 343,
+        "declaration": "static getCurrentRewardMultiplier(e, t) {"
+      },
+      {
+        "line": 350,
+        "declaration": "static getCurrentFirstJsonData(e, t) {"
+      },
+      {
+        "line": 358,
+        "declaration": "static getmonstr(e) {"
+      },
+      {
+        "line": 420,
+        "declaration": "static getRealMonstr(e) {"
+      },
+      {
+        "line": 455,
+        "declaration": "static getPlayerCoin(e) {"
+      },
+      {
+        "line": 498,
+        "declaration": "static formatStr(e) {"
+      },
+      {
+        "line": 504,
+        "declaration": "static toFixed(e, t) {"
+      },
+      {
+        "line": 507,
+        "declaration": "static roundToDecimal(e, t) {"
+      },
+      {
+        "line": 510,
+        "declaration": "static getMaxNumber(e, t) {"
+      },
+      {
+        "line": 513,
+        "declaration": "static getPlayerUseCoin(e) {"
+      },
+      {
+        "line": 528,
+        "declaration": "static get countryCashName() {"
+      },
+      {
+        "line": 532,
+        "declaration": "static get realConfig() {"
+      },
+      {
+        "line": 541,
+        "declaration": "static get real_products() {"
+      },
+      {
+        "line": 545,
+        "declaration": "static get newfake_products() {"
+      },
+      {
+        "line": 551,
+        "declaration": "static get fake_products() {"
+      },
+      {
+        "line": 557,
+        "declaration": "static getPlatformSpr() {"
+      },
+      {
+        "line": 581,
+        "declaration": "static getPlayDataWithdrawRecords() {"
+      },
+      {
+        "line": 608,
+        "declaration": "static get_reward_base_min() {"
+      },
+      {
+        "line": 626,
+        "declaration": "static getDataType() {"
+      },
+      {
+        "line": 630,
+        "declaration": "static cashCoin(e) {"
+      },
+      {
+        "line": 654,
+        "declaration": "static getCurrencyConfig(e) {"
+      },
+      {
+        "line": 697,
+        "declaration": "static getCashTimeConfig() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameObjectFlyTo",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameObjectFlyTo.js",
+    "classId": "b8a67IH6+1DmaaC4uENOrgt",
+    "bodyBytes": 1013,
+    "sha256": "4f96a598e1418304d60e272430db18e9a8bb444666f09d2b2143e0c3431ec2fb",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "setToastData(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealTXYZ",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealTXYZ.js",
+    "classId": "e44dcjlfIxFwozYs342510p",
+    "bodyBytes": 9521,
+    "sha256": "09c9ff000ce7649771c072443ae7ff3af0330e0edc43a00c2fc9ee4a2a4d86e1",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 59,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 64,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 67,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 85,
+        "declaration": "showContent() {"
+      },
+      {
+        "line": 100,
+        "declaration": "onRealCashResult(e, t) {"
+      },
+      {
+        "line": 105,
+        "declaration": "showyzDialog() {"
+      },
+      {
+        "line": 175,
+        "declaration": "refreshData(e) {"
+      },
+      {
+        "line": 179,
+        "declaration": "showNextWithdrawResult() {"
+      },
+      {
+        "line": 202,
+        "declaration": "ensureWithdrawStepData(e) {"
+      },
+      {
+        "line": 206,
+        "declaration": "findFirstUnmetWithdrawStep(e, t) {"
+      },
+      {
+        "line": 211,
+        "declaration": "isWithdrawConditionMet(e, t) {"
+      },
+      {
+        "line": 214,
+        "declaration": "getWithdrawConditionCount() {"
+      },
+      {
+        "line": 217,
+        "declaration": "getNumber(e) {"
+      },
+      {
+        "line": 220,
+        "declaration": "debugshow() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDADIDTips",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDADIDTips.js",
+    "classId": "27c699oFrZEN5WZ4MB3PLhM",
+    "bodyBytes": 1790,
+    "sha256": "0ad69b8f348b3e62300e493c4dce291b62c2309a7c9ed313c0d361cc0f9316c2",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 37,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDAccountBR",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDAccountBR.js",
+    "classId": "6e7319A1XtHf6EpdaFmPjUO",
+    "bodyBytes": 7814,
+    "sha256": "e1995f582746a6275ea36def9de2f91c00dc5cf6f30fd5dacb133fb1d73c3364",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 39,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 118,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 154,
+        "declaration": "refreshPlatform() {"
+      },
+      {
+        "line": 172,
+        "declaration": "validatePixAcc(e) {"
+      },
+      {
+        "line": 181,
+        "declaration": "checkBtn() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDAccountID",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDAccountID.js",
+    "classId": "5747emnmN9BiKAry+SBYm0X",
+    "bodyBytes": 7167,
+    "sha256": "f2e5d2a14ce18320ba42b9989e1baf71e994859f075249c92f36fe42208a33ea",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 37,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 105,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 134,
+        "declaration": "refreshPlatform() {"
+      },
+      {
+        "line": 153,
+        "declaration": "checkBtn() {"
+      },
+      {
+        "line": 158,
+        "declaration": "validatePhone(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDAccount",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDAccount.js",
+    "classId": "3d2a3YZqD5OLJ+ysE4b5Kjc",
+    "bodyBytes": 3398,
+    "sha256": "886886011beb1bd69097554dc0d619147f06ddcef8251b969b235a7389a95b28",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 30,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 70,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDActiveTips",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDActiveTips.js",
+    "classId": "ef5f7YVU0FAZYsPHrQuLxN0",
+    "bodyBytes": 1922,
+    "sha256": "c19efd05ead6550bd30b89474c3d6a6a396bc04a13f284ea6c8986b7ed006b25",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 27,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 36,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 42,
+        "declaration": "updateTime() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDDialog.js",
+    "classId": "f1d67UEXnlPRqBzqbYfRDiw",
+    "bodyBytes": 9273,
+    "sha256": "19a05fddbdc3039911c9014bfdfbe9ac029e607f723cff7b6e615166dc27b42c",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 72,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 86,
+        "declaration": "touchCoinWDAccount(e) {"
+      },
+      {
+        "line": 128,
+        "declaration": "hasCachedWithdrawAccount() {"
+      },
+      {
+        "line": 131,
+        "declaration": "isPhoneAccountCountry(e) {"
+      },
+      {
+        "line": 134,
+        "declaration": "getSafeString(e) {"
+      },
+      {
+        "line": 137,
+        "declaration": "getConfig() {"
+      },
+      {
+        "line": 140,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 155,
+        "declaration": "updateUI() {"
+      },
+      {
+        "line": 172,
+        "declaration": "onitemWithdraw(e) {"
+      },
+      {
+        "line": 178,
+        "declaration": "showReward() {"
+      },
+      {
+        "line": 206,
+        "declaration": "setProgress(e) {"
+      },
+      {
+        "line": 244,
+        "declaration": "showRewardView() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDEmailOccupy",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDEmailOccupy.js",
+    "classId": "ffeb2BA+UxFqILsGIBcd29J",
+    "bodyBytes": 1656,
+    "sha256": "0825a311193897bcc943c5e63d1d89a3ac2e8ec218f3c668fcbbc837cf084f0a",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 34,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDHelp",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDHelp.js",
+    "classId": "f142cGUKoNDQrxShxNR7/ok",
+    "bodyBytes": 1272,
+    "sha256": "aaf18a124cf53071e4caf0417bd1f66db8f841e2fe04d2f36896f1c2f6728383",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 28,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDItem.js",
+    "classId": "5b337VhB7FDELcsMEsvurZX",
+    "bodyBytes": 1851,
+    "sha256": "5f0861d84a6edeb0cfb7868242713407302be7aa44ddb4aea20c624bcde89992",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "refreshSelect(e, t = !1, a) {"
+      },
+      {
+        "line": 39,
+        "declaration": "initRedldata(e, t, a) {"
+      },
+      {
+        "line": 43,
+        "declaration": "initdata(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDRecordItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDRecordItem.js",
+    "classId": "e0aa9cHA7JEWY95OrkY+hoK",
+    "bodyBytes": 4503,
+    "sha256": "ac8d78ae186b611ca0731c256b9d2956a67d5824a493b69a8e739133e7efeedc",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 45,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 51,
+        "declaration": "initdata(e, t) {"
+      },
+      {
+        "line": 85,
+        "declaration": "onToggleClick() {"
+      },
+      {
+        "line": 89,
+        "declaration": "updateUIState() {"
+      },
+      {
+        "line": 94,
+        "declaration": "requestParentLayoutUpdate() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDRecord",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDRecord.js",
+    "classId": "decb6Lh461CSLj5j9V9+BVS",
+    "bodyBytes": 5188,
+    "sha256": "b70778ba24d8daf92084a1799d561e9a494e2d43999846de162e798bb5410406",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 28,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 36,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 39,
+        "declaration": "lateUpdate() {"
+      },
+      {
+        "line": 45,
+        "declaration": "stopDebugTimer() {"
+      },
+      {
+        "line": 49,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "clearItemsChildren() {"
+      },
+      {
+        "line": 66,
+        "declaration": "onRealCashSend() {"
+      },
+      {
+        "line": 73,
+        "declaration": "onRealCashResult(e, t) {"
+      },
+      {
+        "line": 78,
+        "declaration": "successData() {"
+      },
+      {
+        "line": 93,
+        "declaration": "debugData() {"
+      },
+      {
+        "line": 109,
+        "declaration": "requestLayoutAdapt() {"
+      },
+      {
+        "line": 113,
+        "declaration": "adaptLayout() {"
+      },
+      {
+        "line": 169,
+        "declaration": "refreshItemsLayout(e) {"
+      },
+      {
+        "line": 175,
+        "declaration": "getScrollViewNode(e) {"
+      },
+      {
+        "line": 178,
+        "declaration": "updateWidgetAlignment(e) {"
+      },
+      {
+        "line": 183,
+        "declaration": "disableWidget(e) {"
+      },
+      {
+        "line": 187,
+        "declaration": "getEdgeMargin(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDTXSuccess",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDTXSuccess.js",
+    "classId": "be3f6PF+ftIyrrgEGSn/u3f",
+    "bodyBytes": 1823,
+    "sha256": "e58a091f314a3c5e40c6b1c3bf6e3f5a858e49d9f9fc97adc8d106ce08bdb599",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 35,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameRealWDTXTips",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameRealWDTXTips.js",
+    "classId": "2319cvN5GdPbo9o0vIt5Dp9",
+    "bodyBytes": 3977,
+    "sha256": "4b00d26fef74d0e6e4eb83ae5164bf31bd58c34790deff7cb693b40c777c09f9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 30,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 39,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "getConfig() {"
+      },
+      {
+        "line": 51,
+        "declaration": "setProgress(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameScene",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameScene.js",
+    "classId": "b29e7YqrYBOBY7dpeJAAkIx",
+    "bodyBytes": 73952,
+    "sha256": "935bbbdd84fb3dcd36f4f03bb5096210ccdfbe72ef748fecdfe81667c7fe7db9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 178,
+        "declaration": "static get instance() {"
+      },
+      {
+        "line": 181,
+        "declaration": "isGameOverState() {"
+      },
+      {
+        "line": 184,
+        "declaration": "static consumeSkipInitialBottomCoinsOnce() {"
+      },
+      {
+        "line": 189,
+        "declaration": "setTaskBtnShowOrHide() {"
+      },
+      {
+        "line": 226,
+        "declaration": "setTaskButtonActive(e) {"
+      },
+      {
+        "line": 229,
+        "declaration": "isTaskButtonRequestValid(e) {"
+      },
+      {
+        "line": 232,
+        "declaration": "set1024Label() {"
+      },
+      {
+        "line": 236,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 317,
+        "declaration": "updateProgressbar(e = !0) {"
+      },
+      {
+        "line": 331,
+        "declaration": "showLuckDrawDialogAfterDelay() {"
+      },
+      {
+        "line": 340,
+        "declaration": "shouldDelayLuckDrawPopup() {"
+      },
+      {
+        "line": 343,
+        "declaration": "shouldDelayRewardPopup() {"
+      },
+      {
+        "line": 346,
+        "declaration": "isPopupShowingOrLoading(e) {"
+      },
+      {
+        "line": 349,
+        "declaration": "isOnMainSceneWithoutPopup() {"
+      },
+      {
+        "line": 361,
+        "declaration": "scheduleRewardPopup(e) {"
+      },
+      {
+        "line": 370,
+        "declaration": "getDrawResult() {"
+      },
+      {
+        "line": 375,
+        "declaration": "setshowGuide() {"
+      },
+      {
+        "line": 378,
+        "declaration": "setLabel() {"
+      },
+      {
+        "line": 398,
+        "declaration": "setFakeMoney() {"
+      },
+      {
+        "line": 409,
+        "declaration": "startGetMoneyTipScroll() {"
+      },
+      {
+        "line": 420,
+        "declaration": "stopGetMoneyTipScroll() {"
+      },
+      {
+        "line": 426,
+        "declaration": "scrollGetMoneyTip() {"
+      },
+      {
+        "line": 456,
+        "declaration": "getMoneyTipScrollDistance() {"
+      },
+      {
+        "line": 460,
+        "declaration": "getMoneyTipScrollNodes() {"
+      },
+      {
+        "line": 474,
+        "declaration": "refreshGetMoneyTipScrollStartYs(e) {"
+      },
+      {
+        "line": 478,
+        "declaration": "refreshGetMoneyTipText() {"
+      },
+      {
+        "line": 484,
+        "declaration": "fitGetMoneyTipLabel(e) {"
+      },
+      {
+        "line": 493,
+        "declaration": "updateGetMoneyTipRichTextLayout(e) {"
+      },
+      {
+        "line": 497,
+        "declaration": "getRandomFakeUserName() {"
+      },
+      {
+        "line": 500,
+        "declaration": "getRandomLetter() {"
+      },
+      {
+        "line": 503,
+        "declaration": "getRandomFakeWithdrawAmount() {"
+      },
+      {
+        "line": 510,
+        "declaration": "getRandomInt(e, t) {"
+      },
+      {
+        "line": 513,
+        "declaration": "refreshDeadLineOpacity() {"
+      },
+      {
+        "line": 551,
+        "declaration": "getFakeMoneyIconNode() {"
+      },
+      {
+        "line": 558,
+        "declaration": "playFlyFakePlusMoney(e) {"
+      },
+      {
+        "line": 583,
+        "declaration": "hideFlyFakePlusMoney() {"
+      },
+      {
+        "line": 593,
+        "declaration": "getFlyFakePlusMoneyNode() {"
+      },
+      {
+        "line": 602,
+        "declaration": "adaptHomeForFullScreen() {"
+      },
+      {
+        "line": 620,
+        "declaration": "refreshChildrenWidgetAlignment(e) {"
+      },
+      {
+        "line": 623,
+        "declaration": "refreshWidgetAlignment(e) {"
+      },
+      {
+        "line": 629,
+        "declaration": "onDestroy() {"
+      },
+      {
+        "line": 651,
+        "declaration": "setGuideLineEnabled(e) {"
+      },
+      {
+        "line": 656,
+        "declaration": "showGuideLine() {"
+      },
+      {
+        "line": 659,
+        "declaration": "hideGuideLine() {"
+      },
+      {
+        "line": 662,
+        "declaration": "removeTopTwoThirdCoins() {"
+      },
+      {
+        "line": 722,
+        "declaration": "resumeGameAfterRevive() {"
+      },
+      {
+        "line": 736,
+        "declaration": "resumeBoardCoinsAfterRevive() {"
+      },
+      {
+        "line": 744,
+        "declaration": "update(e) {"
+      },
+      {
+        "line": 786,
+        "declaration": "getRandomDropValue() {"
+      },
+      {
+        "line": 802,
+        "declaration": "setupPreviewQueue() {"
+      },
+      {
+        "line": 807,
+        "declaration": "ensureCurrentRoundStats() {"
+      },
+      {
+        "line": 816,
+        "declaration": "resetCurrentRoundStats() {"
+      },
+      {
+        "line": 823,
+        "declaration": "advancePreviewQueue() {"
+      },
+      {
+        "line": 829,
+        "declaration": "createCoinNode(e, t, a, i, o = !1, n = !0) {"
+      },
+      {
+        "line": 843,
+        "declaration": "playCoinSpawnTween(e) {"
+      },
+      {
+        "line": 863,
+        "declaration": "unlockCoinSpawn(e, t, a) {"
+      },
+      {
+        "line": 874,
+        "declaration": "cancelCoinSpawnUnlockFallback() {"
+      },
+      {
+        "line": 880,
+        "declaration": "cancelCoinSpawnTween(e) {"
+      },
+      {
+        "line": 891,
+        "declaration": "getGroundYInGameArea() {"
+      },
+      {
+        "line": 897,
+        "declaration": "adaptPlayAreaForBottomBar() {"
+      },
+      {
+        "line": 930,
+        "declaration": "keepCoinsAboveGround() {"
+      },
+      {
+        "line": 947,
+        "declaration": "createInitialBottomCoins() {"
+      },
+      {
+        "line": 956,
+        "declaration": "findChildByName(e, t) {"
+      },
+      {
+        "line": 966,
+        "declaration": "getNextPreviewSprite() {"
+      },
+      {
+        "line": 972,
+        "declaration": "updateNextPreviewCoin() {"
+      },
+      {
+        "line": 978,
+        "declaration": "loadGameSceneData() {"
+      },
+      {
+        "line": 1003,
+        "declaration": "saveBoardState(e = !1) {"
+      },
+      {
+        "line": 1030,
+        "declaration": "savePreviewPositionState() {"
+      },
+      {
+        "line": 1034,
+        "declaration": "markBoardStateDirty() {"
+      },
+      {
+        "line": 1037,
+        "declaration": "flushBoardStateToStorage() {"
+      },
+      {
+        "line": 1044,
+        "declaration": "clearBoardState() {"
+      },
+      {
+        "line": 1060,
+        "declaration": "clearAllCoinNodes() {"
+      },
+      {
+        "line": 1080,
+        "declaration": "clearRuntimeEffectNodes() {"
+      },
+      {
+        "line": 1091,
+        "declaration": "destroyRuntimeEffectChildren(e, t) {"
+      },
+      {
+        "line": 1102,
+        "declaration": "resetGameAfterFailWithoutAd() {"
+      },
+      {
+        "line": 1150,
+        "declaration": "onCreateMergedCoin(e) {"
+      },
+      {
+        "line": 1215,
+        "declaration": "getMergedCoinSpawnPosition(e, t) {"
+      },
+      {
+        "line": 1226,
+        "declaration": "getMergedCoinVisualSpawnPosition(e) {"
+      },
+      {
+        "line": 1229,
+        "declaration": "playMerge1024Flow(e, t) {"
+      },
+      {
+        "line": 1279,
+        "declaration": "getMerge1024EffectWorldPosition(e) {"
+      },
+      {
+        "line": 1286,
+        "declaration": "getNodeLocalPositionFromWorld(e, t) {"
+      },
+      {
+        "line": 1291,
+        "declaration": "playMerge1024PrefabAnimation(e, t) {"
+      },
+      {
+        "line": 1312,
+        "declaration": "flyMerge1024PrefabToGetMoney(e) {"
+      },
+      {
+        "line": 1343,
+        "declaration": "getGetMoneyButtonWorldPosition() {"
+      },
+      {
+        "line": 1346,
+        "declaration": "playGetMoneyButtonPulse() {"
+      },
+      {
+        "line": 1368,
+        "declaration": "finishMerge1024Flow(e) {"
+      },
+      {
+        "line": 1375,
+        "declaration": "playMergeStarFlyEffect(e, t = -1) {"
+      },
+      {
+        "line": 1420,
+        "declaration": "applyDrawProgressAfterStarArrive(e) {"
+      },
+      {
+        "line": 1426,
+        "declaration": "setupMergeStarStyle(e) {"
+      },
+      {
+        "line": 1445,
+        "declaration": "getDrawProgressBarTargetWorldPosition() {"
+      },
+      {
+        "line": 1455,
+        "declaration": "getRandomRange(e, t) {"
+      },
+      {
+        "line": 1458,
+        "declaration": "playMergeEffectAt(e, t) {"
+      },
+      {
+        "line": 1477,
+        "declaration": "getMergeChainStatus() {"
+      },
+      {
+        "line": 1483,
+        "declaration": "showMergeComboUI(e) {"
+      },
+      {
+        "line": 1518,
+        "declaration": "setMergeComboNearLastMerge(e, t) {"
+      },
+      {
+        "line": 1531,
+        "declaration": "playMergeComboAppearTween(e, t, a = null) {"
+      },
+      {
+        "line": 1550,
+        "declaration": "playMergeComboHideTween(e, t, a = null) {"
+      },
+      {
+        "line": 1565,
+        "declaration": "playMergeIconFadeOutTween(e, t) {"
+      },
+      {
+        "line": 1585,
+        "declaration": "hideMergeComboUI() {"
+      },
+      {
+        "line": 1607,
+        "declaration": "setupGround() {"
+      },
+      {
+        "line": 1623,
+        "declaration": "removeLegacyWalls() {"
+      },
+      {
+        "line": 1634,
+        "declaration": "createWall(e, t, a, i, o) {"
+      },
+      {
+        "line": 1645,
+        "declaration": "createPreviewCoin() {"
+      },
+      {
+        "line": 1657,
+        "declaration": "createNextPreviewCoin() {"
+      },
+      {
+        "line": 1660,
+        "declaration": "resumePreviewCoin() {"
+      },
+      {
+        "line": 1665,
+        "declaration": "scheduleCreatePreviewCoin(e = this.nextPreviewCoinDelay) {"
+      },
+      {
+        "line": 1672,
+        "declaration": "onDelayedPreviewCoin() {"
+      },
+      {
+        "line": 1675,
+        "declaration": "cancelDelayedPreviewCoin() {"
+      },
+      {
+        "line": 1678,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 1692,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 1704,
+        "declaration": "onTouchStart(e) {"
+      },
+      {
+        "line": 1712,
+        "declaration": "onTouchMove(e) {"
+      },
+      {
+        "line": 1715,
+        "declaration": "onTouchEnd(e) {"
+      },
+      {
+        "line": 1726,
+        "declaration": "updatePreviewPosition(e) {"
+      },
+      {
+        "line": 1736,
+        "declaration": "getPreviewXByTouchEvent(e) {"
+      },
+      {
+        "line": 1740,
+        "declaration": "getCurrentPreviewRadius() {"
+      },
+      {
+        "line": 1745,
+        "declaration": "drawGuideLine() {"
+      },
+      {
+        "line": 1784,
+        "declaration": "dropCoin() {"
+      },
+      {
+        "line": 1817,
+        "declaration": "scheduleGameOverCheck(e = .8) {"
+      },
+      {
+        "line": 1825,
+        "declaration": "onScheduledGameOverCheck() {"
+      },
+      {
+        "line": 1832,
+        "declaration": "cancelGameOverCheck() {"
+      },
+      {
+        "line": 1837,
+        "declaration": "clearPendingDeadLineFailCoin() {"
+      },
+      {
+        "line": 1842,
+        "declaration": "setPendingDeadLineFailCoin(e) {"
+      },
+      {
+        "line": 1852,
+        "declaration": "resumeAfterDeadLinePendingResolved() {"
+      },
+      {
+        "line": 1858,
+        "declaration": "checkShowReward() {"
+      },
+      {
+        "line": 1891,
+        "declaration": "getADDouble(e) {"
+      },
+      {
+        "line": 1897,
+        "declaration": "onGameHide() {"
+      },
+      {
+        "line": 1901,
+        "declaration": "resetWindowsCoinTimes(e = !0) {"
+      },
+      {
+        "line": 1906,
+        "declaration": "updateScore(e = !0) {"
+      },
+      {
+        "line": 1909,
+        "declaration": "getCoinScriptForDeadLineCheck(e) {"
+      },
+      {
+        "line": 1914,
+        "declaration": "isCoinAboveDeadLine(e) {"
+      },
+      {
+        "line": 1917,
+        "declaration": "isCoinStillForDeadLineCheck(e) {"
+      },
+      {
+        "line": 1924,
+        "declaration": "updatePendingDeadLineFailCoin(e) {"
+      },
+      {
+        "line": 1955,
+        "declaration": "checkGameOver() {"
+      },
+      {
+        "line": 1969,
+        "declaration": "triggerGameOver(e) {"
+      },
+      {
+        "line": 1997,
+        "declaration": "openFailDialog() {"
+      },
+      {
+        "line": 2011,
+        "declaration": "cancelPendingRewardAndLuckDrawPopups() {"
+      },
+      {
+        "line": 2022,
+        "declaration": "pauseBoardCoinMergesForGameOver() {"
+      },
+      {
+        "line": 2052,
+        "declaration": "freezeFailCoinPhysics(e) {"
+      },
+      {
+        "line": 2079,
+        "declaration": "restoreFailFrozenCoinPhysics() {"
+      },
+      {
+        "line": 2092,
+        "declaration": "forceShowFailBoardCoins() {"
+      },
+      {
+        "line": 2106,
+        "declaration": "applyFailCoinRedTint(e) {"
+      },
+      {
+        "line": 2115,
+        "declaration": "addFailCoinColorTarget(e, t) {"
+      },
+      {
+        "line": 2125,
+        "declaration": "restoreFailCoinTint() {"
+      },
+      {
+        "line": 2132,
+        "declaration": "playFailBoardCoinAnimation(e) {"
+      },
+      {
+        "line": 2199,
+        "declaration": "getBoardCoinNodes() {"
+      },
+      {
+        "line": 2210,
+        "declaration": "restart() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameUtils",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameUtils.js",
+    "classId": "3eac2BSwNxI8pireFFshRVn",
+    "bodyBytes": 7339,
+    "sha256": "829cb5c5dbb0c848c8e770fa64dee2a3cd9b73c0a886a78709db820f5eba3187",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 49,
+        "declaration": "set clientId(e) {"
+      },
+      {
+        "line": 52,
+        "declaration": "get clientId() {"
+      },
+      {
+        "line": 55,
+        "declaration": "getTodayDateString() {"
+      },
+      {
+        "line": 59,
+        "declaration": "recordLoginDays() {"
+      },
+      {
+        "line": 92,
+        "declaration": "addToday1024Number(e = 1) {"
+      },
+      {
+        "line": 103,
+        "declaration": "getLoginDays() {"
+      },
+      {
+        "line": 107,
+        "declaration": "getLotteryScoreConfig() {"
+      },
+      {
+        "line": 111,
+        "declaration": "getCurrentDrawScore() {"
+      },
+      {
+        "line": 118,
+        "declaration": "addGameTotalScore(e) {"
+      },
+      {
+        "line": 125,
+        "declaration": "spendGameTotalScoreForLottery() {"
+      },
+      {
+        "line": 134,
+        "declaration": "getDefaultRealProductsConfig() {"
+      },
+      {
+        "line": 178,
+        "declaration": "getRealProductsConfig() {"
+      },
+      {
+        "line": 192,
+        "declaration": "getWithdrawAmounts(e) {"
+      },
+      {
+        "line": 201,
+        "declaration": "isMaxLotteryLevel() {"
+      },
+      {
+        "line": 205,
+        "declaration": "getAvailableLotteryTimes() {"
+      },
+      {
+        "line": 217,
+        "declaration": "getRequiredScore(e) {"
+      },
+      {
+        "line": 222,
+        "declaration": "getNeedScoreAfterCurrentDraw(e, t) {"
+      },
+      {
+        "line": 226,
+        "declaration": "getRequiredScoreForNextLottery(e) {"
+      },
+      {
+        "line": 229,
+        "declaration": "checkLotteryStatus(e, t) {"
+      },
+      {
+        "line": 237,
+        "declaration": "calculateCashReward() {"
+      },
+      {
+        "line": 251,
+        "declaration": "getRatio(e, t) {"
+      },
+      {
+        "line": 256,
+        "declaration": "getNewGuideReward() {"
+      },
+      {
+        "line": 260,
+        "declaration": "getVideoRewardQ(e) {"
+      },
+      {
+        "line": 271,
+        "declaration": "getVideoGold() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameWDValidate1",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameWDValidate1.js",
+    "classId": "c03bbXmoPNAM4u7nUMRzmH+",
+    "bodyBytes": 2233,
+    "sha256": "2450084d9caec9c880217a6743b231668fe107e24952211d61d7afe899f2196e",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 35,
+        "declaration": "call_back() {"
+      },
+      {
+        "line": 47,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameWDValidate2",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameWDValidate2.js",
+    "classId": "41eccpsYg1MSoKGvxX4hiqo",
+    "bodyBytes": 4561,
+    "sha256": "c07501d5323c855d9ca1e4c8734d9082e7d3dbb2f1feeff6c803978d57a0f325",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 29,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 39,
+        "declaration": "close_call() {"
+      },
+      {
+        "line": 42,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameWithdrawDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameWithdrawDialog.js",
+    "classId": "46c6dHgLvlId6wKAcEer0kW",
+    "bodyBytes": 9223,
+    "sha256": "e054c3673fbd8272ffc216b119a2185a9c6cda59307af11f9d72c107265991b0",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 60,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 99,
+        "declaration": "preloadPlatformIcons() {"
+      },
+      {
+        "line": 114,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 125,
+        "declaration": "updateUI() {"
+      },
+      {
+        "line": 136,
+        "declaration": "onitemWithdraw() {"
+      },
+      {
+        "line": 165,
+        "declaration": "updateWithdrawButtonLabel(e) {"
+      },
+      {
+        "line": 169,
+        "declaration": "showRewardView() {"
+      },
+      {
+        "line": 191,
+        "declaration": "updateAccount() {"
+      },
+      {
+        "line": 198,
+        "declaration": "refreshAccountDetails(e = !1, t = !1) {"
+      },
+      {
+        "line": 234,
+        "declaration": "checkinfo() {"
+      },
+      {
+        "line": 239,
+        "declaration": "showAccountEnterTipsShake() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GameWithdrawItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GameWithdrawItem.js",
+    "classId": "4ec23dGqBZBAKQq6cEsBH5q",
+    "bodyBytes": 1458,
+    "sha256": "db48618fa79bf83e7a034f7fd857c74a9be02b0a9bc267c6586ce0e4cddc5a24",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "refreshSelectBGSprite(e) {"
+      },
+      {
+        "line": 29,
+        "declaration": "initdata(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GuideDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GuideDialog.js",
+    "classId": "7e64e2X2spIOKP/OXDwaKMQ",
+    "bodyBytes": 9101,
+    "sha256": "e47488ec6be9c74450e7007ab53a63ee561827ac53a51121d5066cf8f4698f41",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 37,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 65,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 70,
+        "declaration": "onAddFinished() {"
+      },
+      {
+        "line": 73,
+        "declaration": "showGuide() {"
+      },
+      {
+        "line": 100,
+        "declaration": "saveGuideStepStates() {"
+      },
+      {
+        "line": 112,
+        "declaration": "scheduleAdaptGuideLayout() {"
+      },
+      {
+        "line": 121,
+        "declaration": "adaptGuideLayout() {"
+      },
+      {
+        "line": 155,
+        "declaration": "adaptGuideRootToVisibleSize() {"
+      },
+      {
+        "line": 165,
+        "declaration": "updateWidgetAlignment(e) {"
+      },
+      {
+        "line": 170,
+        "declaration": "updateWidgetAlignmentRecursive(e) {"
+      },
+      {
+        "line": 176,
+        "declaration": "updateFullscreenNode(e) {"
+      },
+      {
+        "line": 183,
+        "declaration": "getActiveStep() {"
+      },
+      {
+        "line": 191,
+        "declaration": "resetGuideStep(e) {"
+      },
+      {
+        "line": 200,
+        "declaration": "alignGuideNodeToTargetNode(e, t, a) {"
+      },
+      {
+        "line": 208,
+        "declaration": "getWithdrawButtonNode() {"
+      },
+      {
+        "line": 212,
+        "declaration": "getFakeWithdrawMoneyNode() {"
+      },
+      {
+        "line": 218,
+        "declaration": "getNodeByPath(e, t) {"
+      },
+      {
+        "line": 226,
+        "declaration": "getStepBounds(e) {"
+      },
+      {
+        "line": 230,
+        "declaration": "collectStepBounds(e, t) {"
+      },
+      {
+        "line": 236,
+        "declaration": "isRenderableGuideNode(e) {"
+      },
+      {
+        "line": 239,
+        "declaration": "includeNodeBounds(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "GuidePropsDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/GuidePropsDialog.js",
+    "classId": "e8965QjwrVKdZTDiUYGuv0+",
+    "bodyBytes": 2020,
+    "sha256": "3129284ff6ef3ff2295a370caf7b019415927813a2df570ed93f976f44116cfa",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 28,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "HWL_TStool",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/HWL_TStool.js",
+    "classId": "e8045w7xxRBIrOiS6W9oXf9",
+    "bodyBytes": 14003,
+    "sha256": "23294b99b6ca721d40c81163f11b40da915b898f077effd1f61980a3cd4be05b",
+    "methods": [
+      {
+        "line": 38,
+        "declaration": "static addadnum() {"
+      },
+      {
+        "line": 41,
+        "declaration": "static netwrong() {"
+      },
+      {
+        "line": 47,
+        "declaration": "static pauseMusic() {"
+      },
+      {
+        "line": 51,
+        "declaration": "static resumeMusic() {"
+      },
+      {
+        "line": 57,
+        "declaration": "static initchaping() {"
+      },
+      {
+        "line": 69,
+        "declaration": "static get pasttime() {"
+      },
+      {
+        "line": 220,
+        "declaration": "setSecretKey(e) {"
+      },
+      {
+        "line": 223,
+        "declaration": "encrypt(e, t) {"
+      },
+      {
+        "line": 232,
+        "declaration": "decrypt(e, t) {"
+      },
+      {
+        "line": 241,
+        "declaration": "generateKey() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "HtmlBtn",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/HtmlBtn.js",
+    "classId": "108fc2cdhJJNZGMIttjUfh+",
+    "bodyBytes": 3173,
+    "sha256": "1002703fecd4085d233077c3e06595f4790486f13074dba91129a5e8a761aae0",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "displayNode() {"
+      },
+      {
+        "line": 60,
+        "declaration": "resetTaskEntryState(e = !1, t = !1) {"
+      },
+      {
+        "line": 66,
+        "declaration": "startHandTween() {"
+      },
+      {
+        "line": 76,
+        "declaration": "stopHandTween() {"
+      },
+      {
+        "line": 79,
+        "declaration": "start() {"
+      },
+      {
+        "line": 94,
+        "declaration": "onDestroy() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "HtmlDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/HtmlDialog.js",
+    "classId": "8f0dfVMes9ChpnVds/91H8a",
+    "bodyBytes": 3264,
+    "sha256": "6e0066ce1e3016b4d40bec12fbb41ba2774ae113000405d2e5ea1204a29f28f2",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 30,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 64,
+        "declaration": "closeDialog() {"
+      },
+      {
+        "line": 70,
+        "declaration": "hide() {"
+      },
+      {
+        "line": 76,
+        "declaration": "clearTasks() {"
+      },
+      {
+        "line": 84,
+        "declaration": "isCurrentRequestValid(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "HtmlItem",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/HtmlItem.js",
+    "classId": "10541TTvkdNCYC011er+44E",
+    "bodyBytes": 6868,
+    "sha256": "b093360e20524e324df954d20058abce80909b4a08eee4ba2d0ff775c17236d4",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 37,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 40,
+        "declaration": "init(e, t) {"
+      },
+      {
+        "line": 52,
+        "declaration": "initStatus(e) {"
+      },
+      {
+        "line": 63,
+        "declaration": "clickBtn() {"
+      },
+      {
+        "line": 66,
+        "declaration": "clickGoTask() {"
+      },
+      {
+        "line": 98,
+        "declaration": "claimReward() {"
+      },
+      {
+        "line": 127,
+        "declaration": "giveTaskReward() {"
+      },
+      {
+        "line": 138,
+        "declaration": "flyMoneyToGameScene(e, t) {"
+      },
+      {
+        "line": 167,
+        "declaration": "getRewardIconNode() {"
+      },
+      {
+        "line": 170,
+        "declaration": "normalizeStatus(e) {"
+      },
+      {
+        "line": 174,
+        "declaration": "getTaskString(e, ...t) {"
+      },
+      {
+        "line": 181,
+        "declaration": "setRequesting(e) {"
+      },
+      {
+        "line": 189,
+        "declaration": "parseResponse(e) {"
+      },
+      {
+        "line": 197,
+        "declaration": "isNodeValid() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ImagesPanel",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ImagesPanel.js",
+    "classId": "658043FPBdJWpjjTasnP92n",
+    "bodyBytes": 1534,
+    "sha256": "382cd2e408b00d9bc1f3b717573dcfe8a0bc071ef3de58cd55c1bb8642fe4bfb",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "get value() {"
+      },
+      {
+        "line": 25,
+        "declaration": "set value(e) {"
+      },
+      {
+        "line": 31,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 35,
+        "declaration": "_loadPanel() {"
+      },
+      {
+        "line": 38,
+        "declaration": "_updateValue() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "JBlab",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/JBlab.js",
+    "classId": "c190buIb55Iz7YnrBO178fD",
+    "bodyBytes": 1636,
+    "sha256": "9bd079f0f8c15626df1c2439c9e0cddfa1675ee150b5b33b09c1bd6a3fca55c0",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 29,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 33,
+        "declaration": "_updateColors() {"
+      },
+      {
+        "line": 43,
+        "declaration": "updateColors() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "Lab",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/Lab.js",
+    "classId": "2958djucVhM1oVSYkoABSUD",
+    "bodyBytes": 1587,
+    "sha256": "e6eada50b4d6fbd0aa1f8b5be6bb7c84fe0ae15e49dba6a453e1fe2ddf9de4f6",
+    "methods": [
+      {
+        "line": 22,
+        "declaration": "static getlab(e, t, a, i, n) {"
+      },
+      {
+        "line": 25,
+        "declaration": "static getstorelab(e, t, a, i, n) {"
+      },
+      {
+        "line": 33,
+        "declaration": "static GetLanguageText(e) {"
+      },
+      {
+        "line": 36,
+        "declaration": "static GetDetailsText() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LanguageDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LanguageDialog.js",
+    "classId": "5c78d5tq0dCbIRbz4aGnsHW",
+    "bodyBytes": 2598,
+    "sha256": "4c3af44133415d530965fec080c48f666b9e743fbb11aac6ba1946474f0f8132",
+    "methods": [
+      {
+        "line": 36,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 43,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 48,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 63,
+        "declaration": "onLanguageItemSelected(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LinkScript",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LinkScript.js",
+    "classId": "afef1tYdPhMjaODgRIJTJ1m",
+    "bodyBytes": 740,
+    "sha256": "362bf43d677d1f6577ffa86001196ce40c9633a9e78d3a4b41d59ce2538240ad",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "static register_ui_path(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LoadAllResources",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LoadAllResources.js",
+    "classId": "c6776SSNdROIboBy6ZhS1nO",
+    "bodyBytes": 2880,
+    "sha256": "d9af1c149b4bf58c261848e24f4f4cd29927c875caaf11308d209a36cd15527e",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor(e, t, a) {"
+      },
+      {
+        "line": 24,
+        "declaration": "startLoad(e) {"
+      },
+      {
+        "line": 44,
+        "declaration": "getRes(e) {"
+      },
+      {
+        "line": 47,
+        "declaration": "setRes(e, t) {"
+      },
+      {
+        "line": 50,
+        "declaration": "removeRes(e) {"
+      },
+      {
+        "line": 55,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 67,
+        "declaration": "loadAllRes(e) {"
+      },
+      {
+        "line": 74,
+        "declaration": "updateProgress() {"
+      },
+      {
+        "line": 91,
+        "declaration": "getBaseLoader(e) {"
+      },
+      {
+        "line": 96,
+        "declaration": "getAudioRes(e) {"
+      },
+      {
+        "line": 100,
+        "declaration": "getPrefabRes(e) {"
+      },
+      {
+        "line": 103,
+        "declaration": "getSpriteFrameRes(e) {"
+      },
+      {
+        "line": 107,
+        "declaration": "getSpineDataRes(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LoaderCoinSprite",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LoaderCoinSprite.js",
+    "classId": "d69e3xwokpN0oBzR++PtqB1",
+    "bodyBytes": 1306,
+    "sha256": "f77ee153102c9d5e144588a7d10e36bcd860f7abb4a568c35fa5bd8c127167c3",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 26,
+        "declaration": "loadCoinSprite() {"
+      },
+      {
+        "line": 35,
+        "declaration": "onDestroy() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LoaderRealCoinSprite",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LoaderRealCoinSprite.js",
+    "classId": "06500OwCRlGAr7owZhvXZf/",
+    "bodyBytes": 1451,
+    "sha256": "9dacbf2c05ff3420564e8fbeeb10c86a8312843ff6d7a97b18f8ffd5e23d2608",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 30,
+        "declaration": "loadCoinSprite(e = !1) {"
+      },
+      {
+        "line": 39,
+        "declaration": "onDestroy() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LoadingScene",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LoadingScene.js",
+    "classId": "665ebp+/hVHM53pKfrQzbkl",
+    "bodyBytes": 10064,
+    "sha256": "11526933662724b93182cf68965b60b5049ee810892428f0d1bdf5fc608f0e7c",
+    "methods": [
+      {
+        "line": 41,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 53,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 65,
+        "declaration": "startLoading() {"
+      },
+      {
+        "line": 87,
+        "declaration": "loadDataWith() {"
+      },
+      {
+        "line": 105,
+        "declaration": "loadGameDataConfig() {"
+      },
+      {
+        "line": 151,
+        "declaration": "onProgress(e) {"
+      },
+      {
+        "line": 154,
+        "declaration": "updateFakeProgress() {"
+      },
+      {
+        "line": 165,
+        "declaration": "continueLoadingAfterUpdate() {"
+      },
+      {
+        "line": 175,
+        "declaration": "loadResourcesAfterUpdate() {"
+      },
+      {
+        "line": 193,
+        "declaration": "showUpdateDialog(e, t) {"
+      },
+      {
+        "line": 205,
+        "declaration": "onLoadingFinish(e = !1) {"
+      },
+      {
+        "line": 226,
+        "declaration": "setLoadingProgress(e) {"
+      },
+      {
+        "line": 231,
+        "declaration": "preloadGameScene() {"
+      },
+      {
+        "line": 245,
+        "declaration": "ensureLocalDataReady() {"
+      },
+      {
+        "line": 255,
+        "declaration": "ensureJsonDataReady() {"
+      },
+      {
+        "line": 264,
+        "declaration": "loadLocalBlastConfig() {"
+      },
+      {
+        "line": 274,
+        "declaration": "promiseWithTimeout(e, t, a, i) {"
+      },
+      {
+        "line": 304,
+        "declaration": "getGlobalConfig() {"
+      },
+      {
+        "line": 308,
+        "declaration": "getVersionList(e) {"
+      },
+      {
+        "line": 315,
+        "declaration": "checkupdate() {"
+      },
+      {
+        "line": 338,
+        "declaration": "normalizeVersionValue(e) {"
+      },
+      {
+        "line": 341,
+        "declaration": "onDestroy() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LogUtils",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LogUtils.js",
+    "classId": "d39a0ZicgVJrIUwjndBpX1G",
+    "bodyBytes": 947,
+    "sha256": "77d8f2aa60ca2af223994259cbc7a7132a0757be72bb3a6d7c49c96585eab248",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static isString(e) {"
+      },
+      {
+        "line": 14,
+        "declaration": "static print(e, ...t) {"
+      },
+      {
+        "line": 27,
+        "declaration": "static Red(...e) {"
+      },
+      {
+        "line": 30,
+        "declaration": "static Green(...e) {"
+      },
+      {
+        "line": 33,
+        "declaration": "static Orange(...e) {"
+      },
+      {
+        "line": 36,
+        "declaration": "static Gray(...e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "static Blue(...e) {"
+      },
+      {
+        "line": 42,
+        "declaration": "static Purple(...e) {"
+      },
+      {
+        "line": 45,
+        "declaration": "static DeepPink(...e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "static Trace(...e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LuckDrawDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LuckDrawDialog.js",
+    "classId": "f4f6fPXsgdDJoGWz/Z75qu/",
+    "bodyBytes": 4884,
+    "sha256": "035a5eafef7391984b2ebdb56af9c673575e7ce4589ebf417a6ec7380004d9a8",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 22,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 37,
+        "declaration": "playingDraw() {"
+      },
+      {
+        "line": 64,
+        "declaration": "setDrawLabel() {"
+      },
+      {
+        "line": 71,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 98,
+        "declaration": "getRandomReward(e) {"
+      },
+      {
+        "line": 103,
+        "declaration": "playLotteryAnimation(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "LuckyDrawRewardDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/LuckyDrawRewardDialog.js",
+    "classId": "0012fFDtw1OsZHNzm3p9sC/",
+    "bodyBytes": 6392,
+    "sha256": "292feedde49748a15e42a7f268bd8afa6ffbde965835adc542d3e13efbd391b0",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 33,
+        "declaration": "onClickSure() {"
+      },
+      {
+        "line": 36,
+        "declaration": "showIfLookAD() {"
+      },
+      {
+        "line": 48,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 100,
+        "declaration": "closeAndSettleReward() {"
+      },
+      {
+        "line": 111,
+        "declaration": "settleReward(e) {"
+      },
+      {
+        "line": 124,
+        "declaration": "flyMoneyToGameScene(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "MKNoticeConsts",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/MKNoticeConsts.js",
+    "classId": "d44e8dQm8dNbLmvL3qFYUEU",
+    "bodyBytes": 778,
+    "sha256": "354ac9b89761ef7e8bd1462935828407cab26f87cda47b6ba7f1b6be522152a3",
+    "methods": [
+      {
+        "line": 13,
+        "declaration": "constructor(e, t = null, a = null, i = -1, n = !1, s = 1, r = !0) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "MKNotice",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/MKNotice.js",
+    "classId": "52cd3fcTWREopeExOnKoZpS",
+    "bodyBytes": 677,
+    "sha256": "1f8bc695e7af4ede76c98bcb620d531e394b9be5612e802143e709c9791d9e1c",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "constructor(e) {"
+      },
+      {
+        "line": 18,
+        "declaration": "getEventName() {"
+      },
+      {
+        "line": 21,
+        "declaration": "setDigitalMessage(e) {"
+      },
+      {
+        "line": 25,
+        "declaration": "getDigitalMessage() {"
+      },
+      {
+        "line": 28,
+        "declaration": "setTextMessage(e) {"
+      },
+      {
+        "line": 32,
+        "declaration": "getTextMessage() {"
+      },
+      {
+        "line": 35,
+        "declaration": "setParams(e) {"
+      },
+      {
+        "line": 39,
+        "declaration": "getParams() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "NativeCall",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/NativeCall.js",
+    "classId": "9ef572Cb05PfoTmsMDcLDTC",
+    "bodyBytes": 2895,
+    "sha256": "32585636aa45b734a8e2e3d6f6e9895f6ffda43fde9ad8987b28d751e9ba5dbd",
+    "methods": [
+      {
+        "line": 37,
+        "declaration": "static gameTopShow() {"
+      },
+      {
+        "line": 45,
+        "declaration": "static gameTopShows() {"
+      },
+      {
+        "line": 53,
+        "declaration": "static gameTopCome(e) {"
+      },
+      {
+        "line": 57,
+        "declaration": "static getgetDevicePrams() {"
+      },
+      {
+        "line": 61,
+        "declaration": "static gotoMarket() {"
+      },
+      {
+        "line": 64,
+        "declaration": "static getCientId() {"
+      },
+      {
+        "line": 67,
+        "declaration": "static getCientIdSync() {"
+      },
+      {
+        "line": 73,
+        "declaration": "static checkClientEndingWith(e) {"
+      },
+      {
+        "line": 83,
+        "declaration": "static checkClientEndingWithCoin() {"
+      },
+      {
+        "line": 91,
+        "declaration": "static getAdId() {"
+      },
+      {
+        "line": 94,
+        "declaration": "static openUrl(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "NewGamePlayData",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/NewGamePlayData.js",
+    "classId": "6c168kdq49BZbjpIRA5XkHG",
+    "bodyBytes": 4245,
+    "sha256": "46aa4527c889832d93aed4c795ef1bdc437e578d487a2425c068ad6d13ce0481",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 71,
+        "declaration": "parseFromUserDefault(e) {"
+      },
+      {
+        "line": 79,
+        "declaration": "resetDailyShareData() {"
+      },
+      {
+        "line": 87,
+        "declaration": "add_red_bag(e) {"
+      },
+      {
+        "line": 91,
+        "declaration": "add_show_video() {"
+      },
+      {
+        "line": 104,
+        "declaration": "getComFlag(e, t) {"
+      },
+      {
+        "line": 107,
+        "declaration": "setComFlag(e, t) {"
+      },
+      {
+        "line": 112,
+        "declaration": "getComDaily(e, t) {"
+      },
+      {
+        "line": 115,
+        "declaration": "setComDaily(e, t) {"
+      },
+      {
+        "line": 120,
+        "declaration": "getComSkin(e, t) {"
+      },
+      {
+        "line": 123,
+        "declaration": "setComSkin(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "PlatformLoader",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/PlatformLoader.js",
+    "classId": "b85799V1dJC7ZpCaCv8cxzU",
+    "bodyBytes": 1799,
+    "sha256": "a0613f2697ad8e55c810a87b0ca9dd414df8eab02878a9c649509e3409f73d65",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onEnable() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "PlayData",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/PlayData.js",
+    "classId": "22ec2+TAoJGtpf7g6liXvKr",
+    "bodyBytes": 2471,
+    "sha256": "9ef92b6c7f945044a28fbc5e15f38f9fec34bd5ec66e394e9548be338481bcd4",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 62,
+        "declaration": "parseEndCallback() {"
+      },
+      {
+        "line": 65,
+        "declaration": "add_show_video() {"
+      },
+      {
+        "line": 69,
+        "declaration": "parseFromUserDefault(e) {"
+      },
+      {
+        "line": 76,
+        "declaration": "normalizeScoreFields(e, t, a) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "PreviewSpine",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/PreviewSpine.js",
+    "classId": "28d8d6/vcBKQrzJRpS4YaAw",
+    "bodyBytes": 105,
+    "sha256": "eb5e46e62e55aaad1163e1aa60a56d60cd4092805f798717dc30980a88b6d4d1",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "PrivacyPolicyView",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/PrivacyPolicyView.js",
+    "classId": "4aae9XNfglH+IBktNP67JiA",
+    "bodyBytes": 1660,
+    "sha256": "126787838ec15b853f9618b012a789ade59dddb70166f3ba2e7f3def756112b0",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 30,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ResManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ResManager.js",
+    "classId": "1560egr9bNGO6j+Ixp3cBFk",
+    "bodyBytes": 2307,
+    "sha256": "3b59b8321c83ab9b14d554a9ece0967cf937ae22132a49cab2e05c38ed9d522f",
+    "methods": [
+      {
+        "line": 36,
+        "declaration": "static loadSpriteFrameAsync(e) {"
+      },
+      {
+        "line": 43,
+        "declaration": "static loadPrefab(e) {"
+      },
+      {
+        "line": 46,
+        "declaration": "static loadJson(e) {"
+      },
+      {
+        "line": 49,
+        "declaration": "static loadRemoteJson(e, t) {"
+      },
+      {
+        "line": 54,
+        "declaration": "static loadRemotePng(e, t) {"
+      },
+      {
+        "line": 61,
+        "declaration": "static preloadScene(e, t) {"
+      },
+      {
+        "line": 64,
+        "declaration": "static loadScene(e, t) {"
+      },
+      {
+        "line": 67,
+        "declaration": "static loadRes(e, t, a, i = null) {"
+      },
+      {
+        "line": 75,
+        "declaration": "static loadResByPromise(e, t) {"
+      },
+      {
+        "line": 85,
+        "declaration": "static loadDir(e, t, a, i) {"
+      },
+      {
+        "line": 90,
+        "declaration": "static loadOssImage(e, t, a = \"jcdls\") {"
+      },
+      {
+        "line": 95,
+        "declaration": "static loadOssJson(e, t, a = \"jcdls\") {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "RewardDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/RewardDialog.js",
+    "classId": "820d7wko5lHeazUlAuIrJ/y",
+    "bodyBytes": 7150,
+    "sha256": "aacb111bd494afcc6f91b971e4c8a17b5d3ed39b95a940b10932525513287331",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 23,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 43,
+        "declaration": "closePage() {"
+      },
+      {
+        "line": 54,
+        "declaration": "firstShowScore() {"
+      },
+      {
+        "line": 61,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 126,
+        "declaration": "flyMoneyToGameScene(e, t) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "RewardRealToast",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/RewardRealToast.js",
+    "classId": "e7a9bOSpDhLoq/1qzpLgsqm",
+    "bodyBytes": 1599,
+    "sha256": "1dead30a7ec50abd7da8cd709e9aacd45c36ace388524ec5e2938619b7b62350",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "RewardToast",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/RewardToast.js",
+    "classId": "a4dd6MfrmxPJpV/JSYVP+oP",
+    "bodyBytes": 1479,
+    "sha256": "30a326ea31c8bbb32c8e878e2ae3bd37c35deb7855f2c5ab529598bce3dea4e9",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ScoreDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ScoreDialog.js",
+    "classId": "b5537mriERGJIi6Jl8l6NYV",
+    "bodyBytes": 2725,
+    "sha256": "7dbaf0664df8651e354e22de8e3840b957b50c8160dbb37e134991ae48fca865",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 29,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 38,
+        "declaration": "setCLosePage() {"
+      },
+      {
+        "line": 46,
+        "declaration": "onitemRefresh(e) {"
+      },
+      {
+        "line": 53,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ServerConfig",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ServerConfig.js",
+    "classId": "9f95eg5l6tASIGjwYy3lkbf",
+    "bodyBytes": 15621,
+    "sha256": "d5b449289ead936610dd9b08ae7840cfa3f2890d4cd173fec1a455da781ad9d9",
+    "methods": [
+      {
+        "line": 52,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 86,
+        "declaration": "static get instance() {"
+      },
+      {
+        "line": 90,
+        "declaration": "loadAllConfig() {"
+      },
+      {
+        "line": 95,
+        "declaration": "getConfig(e) {"
+      },
+      {
+        "line": 117,
+        "declaration": "getCachedConfig(e) {"
+      },
+      {
+        "line": 120,
+        "declaration": "getCachedConfigAppVersion(e) {"
+      },
+      {
+        "line": 123,
+        "declaration": "cacheConfigAppVersion(e, t) {"
+      },
+      {
+        "line": 126,
+        "declaration": "refreshConfig(e, t = !0) {"
+      },
+      {
+        "line": 129,
+        "declaration": "cacheConfig(e, t) {"
+      },
+      {
+        "line": 132,
+        "declaration": "loadGroupConfig(e, t = !0) {"
+      },
+      {
+        "line": 173,
+        "declaration": "loadLocalConfig(e) {"
+      },
+      {
+        "line": 187,
+        "declaration": "setItem_json(e, t) {"
+      },
+      {
+        "line": 190,
+        "declaration": "getItem_json(e) {"
+      },
+      {
+        "line": 200,
+        "declaration": "setItem_str(e, t) {"
+      },
+      {
+        "line": 203,
+        "declaration": "getItem_str(e) {"
+      },
+      {
+        "line": 206,
+        "declaration": "getCountry() {"
+      },
+      {
+        "line": 219,
+        "declaration": "SwitchCountry(e) {"
+      },
+      {
+        "line": 224,
+        "declaration": "reqCountryConfig() {"
+      },
+      {
+        "line": 250,
+        "declaration": "sendCash(e) {"
+      },
+      {
+        "line": 253,
+        "declaration": "sendCashRecord() {"
+      },
+      {
+        "line": 256,
+        "declaration": "sendHTMLOfferLinkList() {"
+      },
+      {
+        "line": 259,
+        "declaration": "sendHTMLOffLinkClick(e = this.linkId, t = this.clickID) {"
+      },
+      {
+        "line": 265,
+        "declaration": "sendHTMLOffLinkClaimReward(e = this.linkId) {"
+      },
+      {
+        "line": 270,
+        "declaration": "getSendPlatType(e) {"
+      },
+      {
+        "line": 288,
+        "declaration": "httpCashSend(e, t, i) {"
+      },
+      {
+        "line": 360,
+        "declaration": "showVideoOpen(e) {"
+      },
+      {
+        "line": 363,
+        "declaration": "showVideoComplete(e) {"
+      },
+      {
+        "line": 366,
+        "declaration": "showVideo(e) {"
+      },
+      {
+        "line": 369,
+        "declaration": "showVideoFail(e, t = 0) {"
+      },
+      {
+        "line": 372,
+        "declaration": "reportADEvent(e, t, a = 0) {"
+      },
+      {
+        "line": 379,
+        "declaration": "reportADSend(e, t, a = 0) {"
+      },
+      {
+        "line": 424,
+        "declaration": "reportGameEvent(e, t) {"
+      },
+      {
+        "line": 431,
+        "declaration": "reportGameSend(e, t) {"
+      },
+      {
+        "line": 475,
+        "declaration": "getClientId() {"
+      },
+      {
+        "line": 483,
+        "declaration": "getAdId() {"
+      },
+      {
+        "line": 491,
+        "declaration": "N_getClientId() {"
+      },
+      {
+        "line": 494,
+        "declaration": "N_getAdId() {"
+      },
+      {
+        "line": 497,
+        "declaration": "N_vibrate(e = 1, t = 26, a = 0, i = 255) {"
+      },
+      {
+        "line": 503,
+        "declaration": "N_callPaste(e) {"
+      },
+      {
+        "line": 509,
+        "declaration": "N_gameScore() {"
+      },
+      {
+        "line": 512,
+        "declaration": "N_gameBoxShow() {"
+      },
+      {
+        "line": 520,
+        "declaration": "N_gameBoxCome() {"
+      },
+      {
+        "line": 523,
+        "declaration": "N_adRejected() {"
+      },
+      {
+        "line": 529,
+        "declaration": "N_getDevicePrams() {"
+      },
+      {
+        "line": 572,
+        "declaration": "gotoMarket() {"
+      },
+      {
+        "line": 576,
+        "declaration": "generateClickId() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "SettingDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/SettingDialog.js",
+    "classId": "b9246PTLYdOu6sfrLjwvVTL",
+    "bodyBytes": 4470,
+    "sha256": "316f3ca7d2986dce7041292e31406e27d06811739479456a1b658a0fa877310a",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 30,
+        "declaration": "get newplayData() {"
+      },
+      {
+        "line": 33,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 69,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 81,
+        "declaration": "onMusicBtn() {"
+      },
+      {
+        "line": 85,
+        "declaration": "resetMusicStatus(e) {"
+      },
+      {
+        "line": 93,
+        "declaration": "refreshMusicUI() {"
+      },
+      {
+        "line": 96,
+        "declaration": "onBgmBtn() {"
+      },
+      {
+        "line": 100,
+        "declaration": "resetBgmStatus(e) {"
+      },
+      {
+        "line": 115,
+        "declaration": "refreshBgmUI() {"
+      },
+      {
+        "line": 120,
+        "declaration": "onVibrateBtn() {"
+      },
+      {
+        "line": 125,
+        "declaration": "refreshVibrateUI() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "Singleton",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/Singleton.js",
+    "classId": "38f56XeLxdE8ZUbItEE2//d",
+    "bodyBytes": 328,
+    "sha256": "256e758f90da37d15961b0ce38da32d510c66a376bb1f67416eb3cb83ce07338",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 15,
+        "declaration": "static destroyInstance() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "SoundManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/SoundManager.js",
+    "classId": "592fb/d/ZFAqZQD5HqYZiEm",
+    "bodyBytes": 3082,
+    "sha256": "167608bac941c8e56d700ed1f3d235ff7f6053af3fb9d351d6fb72be9c20e156",
+    "methods": [
+      {
+        "line": 18,
+        "declaration": "static get playData() {"
+      },
+      {
+        "line": 21,
+        "declaration": "static isSoundEffectOpen() {"
+      },
+      {
+        "line": 24,
+        "declaration": "static isBgmOpen() {"
+      },
+      {
+        "line": 27,
+        "declaration": "static getAudioClip(e) {"
+      },
+      {
+        "line": 30,
+        "declaration": "static loadAudioClip(e, t) {"
+      },
+      {
+        "line": 44,
+        "declaration": "static playSound(e, t = !1, a = 1) {"
+      },
+      {
+        "line": 56,
+        "declaration": "static playClickSound(e = r.点击按钮, t = !1, a = .5) {"
+      },
+      {
+        "line": 68,
+        "declaration": "static playMusic(e, t = !0, a = 1) {"
+      },
+      {
+        "line": 83,
+        "declaration": "static stopMusic(e) {"
+      },
+      {
+        "line": 87,
+        "declaration": "static pauseBgm() {"
+      },
+      {
+        "line": 90,
+        "declaration": "static resumeBgm(e = r.bgm_game) {"
+      },
+      {
+        "line": 93,
+        "declaration": "static stopSound(e) {"
+      },
+      {
+        "line": 96,
+        "declaration": "static pauseOne(e) {"
+      },
+      {
+        "line": 99,
+        "declaration": "static resumeOne(e) {"
+      },
+      {
+        "line": 102,
+        "declaration": "static pauseAll() {"
+      },
+      {
+        "line": 105,
+        "declaration": "static resumeAll() {"
+      },
+      {
+        "line": 108,
+        "declaration": "static getDuration(e) {"
+      },
+      {
+        "line": 112,
+        "declaration": "static loopBgm(e = r.bgm_game) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "SuccessDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/SuccessDialog.js",
+    "classId": "d80e5LJRVVGca2w2dCYt3ZJ",
+    "bodyBytes": 5160,
+    "sha256": "87b16c664add9429638793f9be74a001f8fd42783e8c90356833f6bfb902d928",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 32,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 47,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 76,
+        "declaration": "playmove() {"
+      },
+      {
+        "line": 109,
+        "declaration": "showFaildRewardView() {"
+      },
+      {
+        "line": 112,
+        "declaration": "showSingleRewardView() {"
+      },
+      {
+        "line": 131,
+        "declaration": "showRewardView(e = !1) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "Toast",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/Toast.js",
+    "classId": "e7d550eQPFDEZrFWauHgtlE",
+    "bodyBytes": 2134,
+    "sha256": "0a0fa61d70299fa4c52900a334f7344e32a681f791240fd3d45d66ed147eda4a",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 40,
+        "declaration": "set_toast_interface(e) {"
+      },
+      {
+        "line": 43,
+        "declaration": "flush_view() {"
+      },
+      {
+        "line": 48,
+        "declaration": "flush_bottom_sprite_frame() {"
+      },
+      {
+        "line": 51,
+        "declaration": "flush_text_color() {"
+      },
+      {
+        "line": 54,
+        "declaration": "move_up() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "TouchButton",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/TouchButton.js",
+    "classId": "878c1RoNyJLx5zOQYZsegWz",
+    "bodyBytes": 2368,
+    "sha256": "b1d088e2a6b09442bb591335f08458ef2d8493f57b4f8be361443ee2a3d1275f",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 20,
+        "declaration": "onEnable() {"
+      },
+      {
+        "line": 26,
+        "declaration": "onDisable() {"
+      },
+      {
+        "line": 34,
+        "declaration": "onTouchStart(e) {"
+      },
+      {
+        "line": 45,
+        "declaration": "onTouchMoved(e) {"
+      },
+      {
+        "line": 48,
+        "declaration": "onTouchEnd(e) {"
+      },
+      {
+        "line": 60,
+        "declaration": "onTouchCancel(e) {"
+      },
+      {
+        "line": 66,
+        "declaration": "registerTouchEvent(e, t = 1.1, a = !0, i = !0) {"
+      },
+      {
+        "line": 76,
+        "declaration": "updateOriginScale(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UIConfig",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UIConfig.js",
+    "classId": "b616co+ObBJVLKlYsA78Ltk",
+    "bodyBytes": 292,
+    "sha256": "120d5563f50d35e1c06d78191d3b1230eabc4e9b29c023e570ee140ea24d321e",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UIManagerNew",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UIManagerNew.js",
+    "classId": "df2d0wgwvRPRq85p47v+kIp",
+    "bodyBytes": 4185,
+    "sha256": "b5fef0d8e8976297d10faeccdc1f3ddece3e732e7302a038d1891bbb9eacf0b1",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "static pruneInvalidUI() {"
+      },
+      {
+        "line": 23,
+        "declaration": "static show_ui(e) {"
+      },
+      {
+        "line": 79,
+        "declaration": "static showStackView() {"
+      },
+      {
+        "line": 85,
+        "declaration": "static popStackView(e) {"
+      },
+      {
+        "line": 96,
+        "declaration": "static max_zindex() {"
+      },
+      {
+        "line": 108,
+        "declaration": "static close_ui(e) {"
+      },
+      {
+        "line": 112,
+        "declaration": "static clear_ui() {"
+      },
+      {
+        "line": 121,
+        "declaration": "static clear_ui_cache() {"
+      },
+      {
+        "line": 126,
+        "declaration": "static show_toast(e) {"
+      },
+      {
+        "line": 135,
+        "declaration": "static close_all_views() {"
+      },
+      {
+        "line": 141,
+        "declaration": "static ui_is_show(e) {"
+      },
+      {
+        "line": 145,
+        "declaration": "static preloadUIComponents() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UIUtils",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UIUtils.js",
+    "classId": "006bfER66ZP/6NYjTlUxAiS",
+    "bodyBytes": 1619,
+    "sha256": "e4dee4e2a066d6800742171f1c1df6fd7e0eda40bc81bc4ab6eaa5d87ed2d84c",
+    "methods": [
+      {
+        "line": 12,
+        "declaration": "randomInt(e, t) {"
+      },
+      {
+        "line": 15,
+        "declaration": "loadSpriteFrame(e, t, a) {"
+      },
+      {
+        "line": 20,
+        "declaration": "loadAndSetSpriteFrame(e, t) {"
+      },
+      {
+        "line": 25,
+        "declaration": "httpDownloadImage(e, t) {"
+      },
+      {
+        "line": 35,
+        "declaration": "playSpine(e, t, a = !1, i = null) {"
+      },
+      {
+        "line": 43,
+        "declaration": "createSpine(e, t = null, a = new cc.Vec2(0, 0)) {"
+      },
+      {
+        "line": 50,
+        "declaration": "getScaleRadio() {"
+      },
+      {
+        "line": 61,
+        "declaration": "loadScene(e, t = null) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UI_TopRewardLayer",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UI_TopRewardLayer.js",
+    "classId": "d84d5A/JnZAHrbpYzfXJpGb",
+    "bodyBytes": 12181,
+    "sha256": "072fe55c2ee737aa1a8f9f556ac21af0aac0b628501c8b672fb92c0f714ca472",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 43,
+        "declaration": "static getInstance() {"
+      },
+      {
+        "line": 46,
+        "declaration": "refreshLanguage() {"
+      },
+      {
+        "line": 50,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 98,
+        "declaration": "flush_red_bag() {"
+      },
+      {
+        "line": 104,
+        "declaration": "flushprops() {"
+      },
+      {
+        "line": 116,
+        "declaration": "refreshLevel() {"
+      },
+      {
+        "line": 124,
+        "declaration": "refreshCoinData() {"
+      },
+      {
+        "line": 136,
+        "declaration": "playRealCoinAnimation() {"
+      },
+      {
+        "line": 156,
+        "declaration": "refreshTopUI(e = !0) {"
+      },
+      {
+        "line": 161,
+        "declaration": "refreshProgressData(e, t) {"
+      },
+      {
+        "line": 169,
+        "declaration": "startScaleAnimation() {"
+      },
+      {
+        "line": 184,
+        "declaration": "checkCompleteProgress(e) {"
+      },
+      {
+        "line": 189,
+        "declaration": "refreshStartCashTimeProgress(e, t) {"
+      },
+      {
+        "line": 203,
+        "declaration": "refreshCashTimeProgress(e, t) {"
+      },
+      {
+        "line": 209,
+        "declaration": "playCashTime() {"
+      },
+      {
+        "line": 226,
+        "declaration": "playLevelTips() {"
+      },
+      {
+        "line": 274,
+        "declaration": "Guideshow(e = !1, t) {"
+      },
+      {
+        "line": 282,
+        "declaration": "canTouchshow() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UpdateDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UpdateDialog.js",
+    "classId": "93169cRaBBO2Jmn/2NmnozC",
+    "bodyBytes": 1913,
+    "sha256": "2fea1a38eba31d9bd928f0fedb12a7b6d0621a3bbb208eb58cf06cbd160e8975",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 25,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 36,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "UserDefaultManager",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/UserDefaultManager.js",
+    "classId": "95cedyMfelLWZ+CwYb46W8K",
+    "bodyBytes": 543,
+    "sha256": "a832444b1bed086d473f5faef381453857e579cf226e435373fdb2af8e48d5d5",
+    "methods": [
+      {
+        "line": 11,
+        "declaration": "static setItem(e, t) {"
+      },
+      {
+        "line": 14,
+        "declaration": "static setItem_json(e, t) {"
+      },
+      {
+        "line": 17,
+        "declaration": "static getItem(e) {"
+      },
+      {
+        "line": 20,
+        "declaration": "static getItem_json(e) {"
+      },
+      {
+        "line": 24,
+        "declaration": "static removeItem(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "WinRewardView",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/WinRewardView.js",
+    "classId": "26625Y3ZHFMGpirsxPrKa3H",
+    "bodyBytes": 3151,
+    "sha256": "141731e696060cb5f8e24d1c846ec1ba8b2a0ff0a4d7b27ca5d3de3275b3dfee",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 32,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 43,
+        "declaration": "show(e) {"
+      },
+      {
+        "line": 62,
+        "declaration": "onWithdraw() {"
+      },
+      {
+        "line": 68,
+        "declaration": "closeCall() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "WithDrawPlatfrom",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/WithDrawPlatfrom.js",
+    "classId": "db0fe5Z66VGuJmmVrVjjEXl",
+    "bodyBytes": 10389,
+    "sha256": "c22ab6fe49c26f73baa3a36bb8654a2ddc38b6dcb37a870aa890bfa884be1195",
+    "methods": [],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "mergeRuleDialog",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/mergeRuleDialog.js",
+    "classId": "7a2fcJdLwFDHrK53O8wMUcC",
+    "bodyBytes": 1913,
+    "sha256": "30f68240d3e5db38c7adef15106bbd1ac1a885d27adeb60f525cc521ca73919c",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 28,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 37,
+        "declaration": "show(e) {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  },
+  {
+    "variant": "HotUpdate",
+    "name": "ts",
+    "file": "Restoration/02_Gameplay/HotUpdate/Modules/ts.js",
+    "classId": "22828ZTS79Cvo2sSgaS4Myv",
+    "bodyBytes": 1832,
+    "sha256": "52cf9dc76f4235baef5b74857b136b9da3ac644c4cb8f7e4c330e129d77beaa2",
+    "methods": [
+      {
+        "line": 17,
+        "declaration": "constructor() {"
+      },
+      {
+        "line": 21,
+        "declaration": "onLoad() {"
+      },
+      {
+        "line": 28,
+        "declaration": "_get_bounding_box_to_world(e) {"
+      },
+      {
+        "line": 34,
+        "declaration": "_check_collision(e) {"
+      },
+      {
+        "line": 42,
+        "declaration": "_event_update_opacity() {"
+      }
+    ],
+    "status": "Original full JS retained; no equivalence inferred from method names."
+  }
+]

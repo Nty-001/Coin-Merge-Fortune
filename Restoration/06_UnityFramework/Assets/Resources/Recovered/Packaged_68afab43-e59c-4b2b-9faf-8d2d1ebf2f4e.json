@@ -1,0 +1,247 @@
+{
+  "variant": "Packaged",
+  "uuid": "68afab43-e59c-4b2b-9faf-8d2d1ebf2f4e",
+  "name": "Block/block_9",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "block_9",
+      "parent": -1,
+      "children": [
+        2
+      ],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        266,
+        276
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"block_9\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 3}, {\"$ref\": 4}, {\"$ref\": 5}], \"_prefab\": {\"$ref\": 6}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [266, 276]}}",
+      "components": [
+        {
+          "type": "cc.RigidBody",
+          "className": "cc.RigidBody",
+          "sourceId": 3,
+          "rawJson": "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 5,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.PhysicsPolygonCollider",
+          "className": "cc.PhysicsPolygonCollider",
+          "sourceId": 4,
+          "rawJson": "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-14, 138]}, {\"__type__\": \"cc.Vec2\", \"values\": [-37, 133]}, {\"__type__\": \"cc.Vec2\", \"values\": [-52, 128]}, {\"__type__\": \"cc.Vec2\", \"values\": [-64, 122]}, {\"__type__\": \"cc.Vec2\", \"values\": [-65, 120]}, {\"__type__\": \"cc.Vec2\", \"values\": [-67, 120]}, {\"__type__\": \"cc.Vec2\", \"values\": [-68, 118]}, {\"__type__\": \"cc.Vec2\", \"values\": [-72, 117]}, {\"__type__\": \"cc.Vec2\", \"values\": [-74, 114]}, {\"__type__\": \"cc.Vec2\", \"values\": [-82, 110]}, {\"__type__\": \"cc.Vec2\", \"values\": [-89, 102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-91, 102]}, {\"__type__\": \"cc.Vec2\", \"values\": [-98, 95]}, {\"__type__\": \"cc.Vec2\", \"values\": [-98, 93]}, {\"__type__\": \"cc.Vec2\", \"values\": [-109, 81]}, {\"__type__\": \"cc.Vec2\", \"values\": [-123, 55]}, {\"__type__\": \"cc.Vec2\", \"values\": [-127, 39]}, {\"__type__\": \"cc.Vec2\", \"values\": [-129, 36]}, {\"__type__\": \"cc.Vec2\", \"values\": [-129, 31]}, {\"__type__\": \"cc.Vec2\", \"values\": [-131, 29]}, {\"__type__\": \"cc.Vec2\", \"values\": [-133, 16]}, {\"__type__\": \"cc.Vec2\", \"values\": [-132, -23]}, {\"__type__\": \"cc.Vec2\", \"values\": [-131, -28]}, {\"__type__\": \"cc.Vec2\", \"values\": [-129, -30]}, {\"__type__\": \"cc.Vec2\", \"values\": [-127, -43]}, {\"__type__\": \"cc.Vec2\", \"values\": [-123, -55]}, {\"__type__\": \"cc.Vec2\", \"values\": [-120, -59]}, {\"__type__\": \"cc.Vec2\", \"values\": [-120, -62]}, {\"__type__\": \"cc.Vec2\", \"values\": [-118, -66]}, {\"__type__\": \"cc.Vec2\", \"values\": [-115, -68]}, {\"__type__\": \"cc.Vec2\", \"values\": [-107, -84]}, {\"__type__\": \"cc.Vec2\", \"values\": [-102, -88]}, {\"__type__\": \"cc.Vec2\", \"values\": [-102, -90]}, {\"__type__\": \"cc.Vec2\", \"values\": [-97, -94]}, {\"__type__\": \"cc.Vec2\", \"values\": [-97, -96]}, {\"__type__\": \"cc.Vec2\", \"values\": [-82, -110]}, {\"__type__\": \"cc.Vec2\", \"values\": [-80, -110]}, {\"__type__\": \"cc.Vec2\", \"values\": [-78, -113]}, {\"__type__\": \"cc.Vec2\", \"values\": [-71, -116]}, {\"__type__\": \"cc.Vec2\", \"values\": [-67, -120]}, {\"__type__\": \"cc.Vec2\", \"values\": [-51, -128]}, {\"__type__\": \"cc.Vec2\", \"values\": [-26, -136]}, {\"__type__\": \"cc.Vec2\", \"values\": [-13, -138]}, {\"__type__\": \"cc.Vec2\", \"values\": [19, -138]}, {\"__type__\": \"cc.Vec2\", \"values\": [32, -136]}, {\"__type__\": \"cc.Vec2\", \"values\": [34, -134]}, {\"__type__\": \"cc.Vec2\", \"values\": [39, -134]}, {\"__type__\": \"cc.Vec2\", \"values\": [51, -130]}, {\"__type__\": \"cc.Vec2\", \"values\": [68, -122]}, {\"__type__\": \"cc.Vec2\", \"values\": [69, -120]}, {\"__type__\": \"cc.Vec2\", \"values\": [83, -112]}, {\"__type__\": \"cc.Vec2\", \"values\": [98, -98]}, {\"__type__\": \"cc.Vec2\", \"values\": [98, -96]}, {\"__type__\": \"cc.Vec2\", \"values\": [107, -87]}, {\"__type__\": \"cc.Vec2\", \"values\": [112, -77]}, {\"__type__\": \"cc.Vec2\", \"values\": [117, -72]}, {\"__type__\": \"cc.Vec2\", \"values\": [117, -68]}, {\"__type__\": \"cc.Vec2\", \"values\": [119, -67]}, {\"__type__\": \"cc.Vec2\", \"values\": [122, -57]}, {\"__type__\": \"cc.Vec2\", \"values\": [124, -55]}, {\"__type__\": \"cc.Vec2\", \"values\": [133, -16]}, {\"__type__\": \"cc.Vec2\", \"values\": [133, 15]}, {\"__type__\": \"cc.Vec2\", \"values\": [124, 52]}, {\"__type__\": \"cc.Vec2\", \"values\": [110, 79]}, {\"__type__\": \"cc.Vec2\", \"values\": [100, 90]}, {\"__type__\": \"cc.Vec2\", \"values\": [100, 92]}, {\"__type__\": \"cc.Vec2\", \"values\": [93, 98]}, {\"__type__\": \"cc.Vec2\", \"values\": [93, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [91, 100]}, {\"__type__\": \"cc.Vec2\", \"values\": [89, 104]}, {\"__type__\": \"cc.Vec2\", \"values\": [87, 104]}, {\"__type__\": \"cc.Vec2\", \"values\": [75, 115]}, {\"__type__\": \"cc.Vec2\", \"values\": [71, 116]}, {\"__type__\": \"cc.Vec2\", \"values\": [63, 123]}, {\"__type__\": \"cc.Vec2\", \"values\": [60, 123]}, {\"__type__\": \"cc.Vec2\", \"values\": [50, 129]}, {\"__type__\": \"cc.Vec2\", \"values\": [30, 134]}, {\"__type__\": \"cc.Vec2\", \"values\": [28, 136]}, {\"__type__\": \"cc.Vec2\", \"values\": [16, 138]}], \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 5,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"4f243371-7e21-4a50-aca9-67f7eb49384d\"}, \"node\": {\"$ref\": 1}}",
+          "sprite": "4f243371-7e21-4a50-aca9-67f7eb49384d",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "sprite_block",
+      "parent": 1,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        266,
+        276
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"sprite_block\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 7}], \"_prefab\": {\"$ref\": 8}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [266, 276]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 7,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"4f243371-7e21-4a50-aca9-67f7eb49384d\"}, \"node\": {\"$ref\": 2}}",
+          "sprite": "4f243371-7e21-4a50-aca9-67f7eb49384d",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 9
+}

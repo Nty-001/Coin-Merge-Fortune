@@ -1,0 +1,12 @@
+﻿PASS completed ad grants reward once
+PASS Cancelled does not grant reward
+PASS Failed does not grant reward
+PASS Unavailable does not grant reward
+PASS withdrawal trigger returns mock pending
+PASS same withdrawal id is idempotent
+PASS condition failure reaches rejected branch
+PASS missing account rejected
+PASS mock server error reaches failure branch
+PASS recovered upgrade map
+PASS original weighted boundary semantics
+TOTAL=11; local mock checks only, no network used

@@ -1,0 +1,247 @@
+{
+  "variant": "Packaged",
+  "uuid": "25cc6311-96dd-42b5-829a-8c733c268fe9",
+  "name": "Block/block_1",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "block_1",
+      "parent": -1,
+      "children": [
+        2
+      ],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        54,
+        57
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"block_1\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 3}, {\"$ref\": 4}, {\"$ref\": 5}], \"_prefab\": {\"$ref\": 6}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [54, 57]}}",
+      "components": [
+        {
+          "type": "cc.RigidBody",
+          "className": "cc.RigidBody",
+          "sourceId": 3,
+          "rawJson": "{\"__type__\": \"cc.RigidBody\", \"_gravityScale\": 5, \"enabledContactListener\": true, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 5,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.PhysicsPolygonCollider",
+          "className": "cc.PhysicsPolygonCollider",
+          "sourceId": 4,
+          "rawJson": "{\"__type__\": \"cc.PhysicsPolygonCollider\", \"points\": [{\"__type__\": \"cc.Vec2\", \"values\": [-5, 28.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [-19, 21.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [-27, 8.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [-23, -17.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [-10, -27.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [7, -28.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [22, -18.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [27, -6.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [22, 17.5]}, {\"__type__\": \"cc.Vec2\", \"values\": [9, 27.5]}], \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 5,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"c92ed130-9168-4bb9-a5b2-2ff8db01b471\"}, \"node\": {\"$ref\": 1}}",
+          "sprite": "c92ed130-9168-4bb9-a5b2-2ff8db01b471",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "sprite_block",
+      "parent": 1,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        54,
+        57
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"sprite_block\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 7}], \"_prefab\": {\"$ref\": 8}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [54, 57]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 7,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"c92ed130-9168-4bb9-a5b2-2ff8db01b471\"}, \"node\": {\"$ref\": 2}}",
+          "sprite": "c92ed130-9168-4bb9-a5b2-2ff8db01b471",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 9
+}

@@ -1,0 +1,644 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_10",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_10",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          284,
+          294
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          284,
+          294
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -10,
+            147
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -33,
+            143
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -51,
+            137
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -58,
+            133
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -61,
+            133
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -65,
+            129
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -68,
+            129
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -69,
+            127
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -79,
+            122
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -82,
+            118
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -90,
+            114
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -113,
+            89
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -118,
+            79
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -122,
+            75
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -133,
+            52
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -137,
+            35
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -139,
+            32
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -142,
+            12
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -142,
+            -16
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -140,
+            -31
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -135,
+            -46
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -135,
+            -50
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -130,
+            -61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -130,
+            -65
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -127,
+            -67
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -119,
+            -84
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -116,
+            -86
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -116,
+            -88
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -113,
+            -90
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -110,
+            -96
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -106,
+            -99
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -106,
+            -101
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -99,
+            -108
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -97,
+            -108
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -89,
+            -117
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -87,
+            -117
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -84,
+            -121
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -80,
+            -122
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -76,
+            -126
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -54,
+            -137
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -32,
+            -144
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -14,
+            -147
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            15,
+            -147
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            44,
+            -141
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            46,
+            -139
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            57,
+            -136
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            82,
+            -122
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            84,
+            -119
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            89,
+            -117
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            93,
+            -112
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            95,
+            -112
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            109,
+            -97
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            109,
+            -95
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            112,
+            -93
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            112,
+            -91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            118,
+            -84
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            119,
+            -80
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            121,
+            -79
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            132,
+            -57
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            139,
+            -33
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142,
+            -13
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142,
+            14
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            136,
+            44
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            123,
+            74
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            121,
+            75
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            113,
+            90
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            106,
+            97
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            106,
+            99
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            89,
+            116
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            84,
+            118
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            78,
+            124
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            52,
+            138
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            22,
+            146
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "160a4f08-3199-43cd-89fd-7a093fd19363"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "160a4f08-3199-43cd-89fd-7a093fd19363"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "76a16145-ed30-4a41-8e82-11dd76451363",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/76/76a16145-ed30-4a41-8e82-11dd76451363.7a7de.json",
+  "paths": [
+    "Block/block_10"
+  ]
+}

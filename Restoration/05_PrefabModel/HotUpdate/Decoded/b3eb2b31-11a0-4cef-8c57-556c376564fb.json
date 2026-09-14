@@ -1,0 +1,173 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "flyiconmove",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "flyiconmove",
+      "_children": [
+        {
+          "$ref": 2
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 4
+        }
+      ],
+      "_prefab": {
+        "$ref": 5
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          130,
+          134
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_active": false,
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 6
+        },
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          120,
+          120
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "New Sprite",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 9
+        }
+      ],
+      "_prefab": {
+        "$ref": 10
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          82,
+          89
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "Label",
+      "_lineHeight": 43,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 4,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4290598708
+        ]
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "d6WegeNdZPXJOPh/r/BCDF",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "7dECQC9i1HC4RKuPgZBfqX",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "b3eb2b31-11a0-4cef-8c57-556c376564fb",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/b3/b3eb2b31-11a0-4cef-8c57-556c376564fb.4ddf9.json",
+  "paths": [
+    "CommonPrefab/flyiconmove"
+  ]
+}

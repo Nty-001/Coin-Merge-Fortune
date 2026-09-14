@@ -1,0 +1,1645 @@
+{
+  "variant": "HotUpdate",
+  "uuid": "fc1a51e8-11b0-4abe-be6f-52f3875d3576",
+  "name": "GameDialog/GameRealWDTXTips",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "GameRealWDTXTips",
+      "parent": -1,
+      "children": [
+        12,
+        4
+      ],
+      "active": true,
+      "position": [
+        375,
+        812,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        750,
+        1624
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"GameRealWDTXTips\", \"_children\": [{\"$ref\": 12}, {\"$ref\": 4}], \"_components\": [{\"$ref\": 25}, {\"$ref\": 26}, {\"$ref\": 27}, {\"$ref\": 28}], \"_prefab\": {\"$ref\": 29}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 1624]}, \"_trs\": [375, 812, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Widget",
+          "className": "cc.Widget",
+          "sourceId": 25,
+          "rawJson": "{\"__type__\": \"cc.Widget\", \"_alignFlags\": 45, \"_originalWidth\": 1500, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "2319cvN5GdPbo9o0vIt5Dp9",
+          "className": "GameRealWDTXTips",
+          "sourceId": 26,
+          "rawJson": "{\"__type__\": \"2319cvN5GdPbo9o0vIt5Dp9\", \"btnLabel\": {\"$ref\": 20}, \"tips\": {\"$ref\": 17}, \"progressLabel\": {\"$ref\": 23}, \"progressBar\": {\"$ref\": 24}, \"coinLabel\": {\"$ref\": 19}, \"title\": {\"$ref\": 13}, \"btnClose\": {\"$ref\": 7}, \"contentNode\": {\"$ref\": 4}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        },
+        {
+          "type": "cc.BlockInputEvents",
+          "className": "cc.BlockInputEvents",
+          "sourceId": 27,
+          "rawJson": "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "828a89/o+lD2o7BDeEFbGzx",
+          "className": "FontView",
+          "sourceId": 28,
+          "rawJson": "{\"__type__\": \"828a89/o+lD2o7BDeEFbGzx\", \"ttffont\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "bg",
+      "parent": 4,
+      "children": [
+        5,
+        14,
+        15,
+        16,
+        18,
+        8,
+        3,
+        11
+      ],
+      "active": true,
+      "position": [
+        0,
+        49.014,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        654,
+        745
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"bg\", \"_children\": [{\"$ref\": 5}, {\"$ref\": 14}, {\"$ref\": 15}, {\"$ref\": 16}, {\"$ref\": 18}, {\"$ref\": 8}, {\"$ref\": 3}, {\"$ref\": 11}], \"_components\": [{\"$ref\": 30}, {\"$ref\": 31}], \"_prefab\": {\"$ref\": 32}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [654, 745]}, \"_trs\": [0, 49.014, 0, 0, 0, 0, 1, 1, 1, 1], \"_parent\": {\"$ref\": 4}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 30,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_type\": 1, \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"5c540834-0464-4e76-94f5-7e0ee01623ff\"}, \"node\": {\"$ref\": 2}}",
+          "sprite": "5c540834-0464-4e76-94f5-7e0ee01623ff",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 1,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 1,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Layout",
+          "className": "cc.Layout",
+          "sourceId": 31,
+          "rawJson": "{\"__type__\": \"cc.Layout\", \"_enabled\": false, \"_resize\": 1, \"_N$layoutType\": 2, \"_N$paddingTop\": 20, \"_N$paddingBottom\": 40, \"_N$spacingY\": 20, \"_layoutSize\": {\"__type__\": \"cc.Size\", \"values\": [1276, 924.5]}, \"node\": {\"$ref\": 2}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ProgressBar",
+      "parent": 2,
+      "children": [
+        21,
+        10
+      ],
+      "active": true,
+      "position": [
+        -266.689,
+        -53.178,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        1
+      ],
+      "size": [
+        646,
+        54
+      ],
+      "pivot": [
+        0,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"ProgressBar\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 21}, {\"$ref\": 10}], \"_components\": [{\"$ref\": 33}, {\"$ref\": 24}], \"_prefab\": {\"$ref\": 34}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [646, 54]}, \"_anchorPoint\": {\"__type__\": \"cc.Vec2\", \"values\": [0, 0.5]}, \"_trs\": [-266.689, -53.178, 0, 0, 0, 0, 1, 0.8, 0.8, 1]}",
+      "components": [
+        {
+          "type": "cc.ProgressBar",
+          "className": "cc.ProgressBar",
+          "sourceId": 24,
+          "rawJson": "{\"__type__\": \"cc.ProgressBar\", \"_N$mode\": 2, \"_N$progress\": 0.8, \"node\": {\"$ref\": 3}, \"_N$barSprite\": {\"$ref\": 22}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 33,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_type\": 1, \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"affbf61e-d43e-4a9a-8f89-10bf4c91f5a2\"}, \"node\": {\"$ref\": 3}}",
+          "sprite": "affbf61e-d43e-4a9a-8f89-10bf4c91f5a2",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 1,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 1,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "content",
+      "parent": 1,
+      "children": [
+        2
+      ],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        1200,
+        1624
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"content\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 2}], \"_prefab\": {\"$ref\": 35}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [1200, 1624]}}",
+      "components": []
+    },
+    {
+      "id": 5,
+      "name": "titbg",
+      "parent": 2,
+      "children": [
+        6,
+        7
+      ],
+      "active": false,
+      "position": [
+        0,
+        384.458,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        492,
+        148
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"titbg\", \"_active\": false, \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 6}, {\"$ref\": 7}], \"_prefab\": {\"$ref\": 36}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [492, 148]}, \"_trs\": [0, 384.458, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 6,
+      "name": "title",
+      "parent": 5,
+      "children": [],
+      "active": true,
+      "position": [
+        0.374,
+        -36.322,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1.5
+      ],
+      "size": [
+        430,
+        100
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"title\", \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 13}, {\"$ref\": 37}], \"_prefab\": {\"$ref\": 38}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [430, 100]}, \"_trs\": [0.374, -36.322, 0, 0, 0, 0, 1, 1, 1, 1.5]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 13,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"提示\", \"_fontSize\": 52, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 6}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "提示",
+          "fontSize": 52,
+          "lineHeight": 40,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 37,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_width\": 5, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4288621633]}, \"node\": {\"$ref\": 6}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "close",
+      "parent": 5,
+      "children": [],
+      "active": true,
+      "position": [
+        271.455,
+        -14.89,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        34,
+        34
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"close\", \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 39}], \"_prefab\": {\"$ref\": 40}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [34, 34]}, \"_trs\": [271.455, -14.89, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 39,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"e04e2f34-1e74-4431-87de-02d9debce1e9\"}, \"node\": {\"$ref\": 7}}",
+          "sprite": "e04e2f34-1e74-4431-87de-02d9debce1e9",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "conform",
+      "parent": 2,
+      "children": [
+        9
+      ],
+      "active": true,
+      "position": [
+        0,
+        -211.206,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        470,
+        122
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"conform\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 9}], \"_components\": [{\"$ref\": 41}], \"_prefab\": {\"$ref\": 42}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [470, 122]}, \"_trs\": [0, -211.206, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 41,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_type\": 1, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"cd716fcd-072f-4d7b-b158-c11cbee228aa\"}, \"node\": {\"$ref\": 8}}",
+          "sprite": "cd716fcd-072f-4d7b-b158-c11cbee228aa",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 1,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 1,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "conformLabel",
+      "parent": 8,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        400,
+        100
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"conformLabel\", \"_parent\": {\"$ref\": 8}, \"_components\": [{\"$ref\": 20}, {\"$ref\": 43}], \"_prefab\": {\"$ref\": 44}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [400, 100]}, \"_trs\": [0, 5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 20,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"Label\", \"_fontSize\": 54, \"_enableWrapText\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 9}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}",
+          "sprite": "",
+          "text": "Label",
+          "fontSize": 54,
+          "lineHeight": 40,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 43,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_width\": 5, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4281495814]}, \"node\": {\"$ref\": 9}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "progressLabel",
+      "parent": 3,
+      "children": [],
+      "active": true,
+      "position": [
+        333.361,
+        2.409,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1.25
+      ],
+      "size": [
+        66.03999999999999,
+        43.8
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"progressLabel\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 23}, {\"$ref\": 45}], \"_prefab\": {\"$ref\": 46}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [66.03999999999999, 43.8]}, \"_trs\": [333.361, 2.409, 0, 0, 0, 0, 1, 1, 1, 1.25]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 23,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"99%\", \"_fontSize\": 30, \"_lineHeight\": 30, \"_enableWrapText\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"node\": {\"$ref\": 10}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}",
+          "sprite": "",
+          "text": "99%",
+          "fontSize": 30,
+          "lineHeight": 30,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 45,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_width\": 3, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4281495814]}, \"node\": {\"$ref\": 10}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "coinspr",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        227.186,
+        -49.703,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "size": [
+        120,
+        73
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"coinspr\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 47}, {\"$ref\": 48}], \"_prefab\": {\"$ref\": 49}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [120, 73]}, \"_trs\": [227.186, -49.703, 0, 0, 0, 0, 1, 0.9, 0.9, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 47,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"f5c8858a-842b-452d-9928-30e7c29105c0\"}, \"node\": {\"$ref\": 11}}",
+          "sprite": "f5c8858a-842b-452d-9928-30e7c29105c0",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "d69e3xwokpN0oBzR++PtqB1",
+          "className": "LoaderCoinSprite",
+          "sourceId": 48,
+          "rawJson": "{\"__type__\": \"d69e3xwokpN0oBzR++PtqB1\", \"coin_type\": 2, \"node\": {\"$ref\": 11}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "mask",
+      "parent": 1,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        4000,
+        4000
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.7843137254901961
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"mask\", \"_opacity\": 200, \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 50}], \"_prefab\": {\"$ref\": 51}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [4000, 4000]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 50,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fee62731-326a-4232-b718-01c6e63fb668\"}, \"node\": {\"$ref\": 12}}",
+          "sprite": "fee62731-326a-4232-b718-01c6e63fb668",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "bg",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        -23.367,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        574,
+        175
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"bg\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 52}], \"_prefab\": {\"$ref\": 53}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [574, 175]}, \"_trs\": [0, -23.367, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 52,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"9fa788aa-010c-465e-b18b-223800dd1d65\"}, \"node\": {\"$ref\": 14}}",
+          "sprite": "9fa788aa-010c-465e-b18b-223800dd1d65",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "icon",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        2.281,
+        299.951,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.8,
+        1.8,
+        1
+      ],
+      "size": [
+        159,
+        46
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"icon\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 54}], \"_prefab\": {\"$ref\": 55}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [159, 46]}, \"_trs\": [2.281, 299.951, 0, 0, 0, 0, 1, 1.8, 1.8, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 54,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"9fa58b72-8aab-427a-bc09-92d05a505659\"}, \"node\": {\"$ref\": 15}}",
+          "sprite": "9fa58b72-8aab-427a-bc09-92d05a505659",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "hintTxt",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        8.736,
+        18.446,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        450,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.36470588235294116,
+        0.27058823529411763,
+        0.8,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"hintTxt\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 17}], \"_prefab\": {\"$ref\": 56}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291577181]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [450, 50]}, \"_trs\": [8.736, 18.446, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 17,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"当进度达到100%时可提现\", \"_fontSize\": 35, \"_lineHeight\": 35, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 16}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "当进度达到100%时可提现",
+          "fontSize": 35,
+          "lineHeight": 35,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "moneyTxt",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        -0.679,
+        155.643,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        311.76,
+        126
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        0.03529411764705882,
+        0.1843137254901961,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"moneyTxt\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 19}], \"_prefab\": {\"$ref\": 57}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4281272831]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [311.76, 126]}, \"_trs\": [-0.679, 155.643, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 19,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"$100.00\", \"_fontSize\": 90, \"_lineHeight\": 100, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"node\": {\"$ref\": 18}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "$100.00",
+          "fontSize": 90,
+          "lineHeight": 100,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "bar",
+      "parent": 3,
+      "children": [],
+      "active": true,
+      "position": [
+        7.114,
+        0.082,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        634,
+        40
+      ],
+      "pivot": [
+        0,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"bar\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 22}], \"_prefab\": {\"$ref\": 58}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [634, 40]}, \"_anchorPoint\": {\"__type__\": \"cc.Vec2\", \"values\": [0, 0.5]}, \"_trs\": [7.114, 0.082, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 22,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_type\": 3, \"_sizeMode\": 0, \"_fillRange\": 0.8, \"node\": {\"$ref\": 21}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"e2fe8ed7-9021-4a83-955c-8d4eb29e2308\"}}",
+          "sprite": "e2fe8ed7-9021-4a83-955c-8d4eb29e2308",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 3,
+          "fillRange": 0.8,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 3,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 59
+}

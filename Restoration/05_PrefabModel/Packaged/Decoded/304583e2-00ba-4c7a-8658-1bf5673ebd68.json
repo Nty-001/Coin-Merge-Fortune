@@ -1,0 +1,420 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_6",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_6",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          174,
+          182
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          174,
+          182
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -12,
+            91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -33,
+            85
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -45,
+            79
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -54,
+            71
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -56,
+            71
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -72,
+            53
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -82,
+            33
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -87,
+            12
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -87,
+            -12
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -80,
+            -38
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -74,
+            -50
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -66,
+            -59
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -66,
+            -61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -56,
+            -71
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -54,
+            -71
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -45,
+            -79
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -21,
+            -89
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -16,
+            -89
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -12,
+            -91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            15,
+            -91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            25,
+            -89
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            34,
+            -86
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            49,
+            -78
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            66,
+            -63
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            66,
+            -61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            70,
+            -58
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            80,
+            -40
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            87,
+            -14
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            87,
+            13
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            85,
+            17
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            84,
+            26
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            76,
+            46
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            74,
+            47
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            73,
+            51
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            68,
+            56
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            68,
+            58
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            64,
+            61
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            64,
+            63
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            48,
+            77
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            31,
+            86
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            13,
+            91
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "66a9b557-bb19-4a55-b33e-b5d24c2e1f06"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "304583e2-00ba-4c7a-8658-1bf5673ebd68",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/30/304583e2-00ba-4c7a-8658-1bf5673ebd68.7eb5f.json",
+  "paths": [
+    "Block/block_6"
+  ]
+}

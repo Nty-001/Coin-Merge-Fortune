@@ -1,0 +1,1517 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "SettingDialog",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "SettingDialog",
+      "_children": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 30
+        },
+        {
+          "$ref": 31
+        },
+        {
+          "$ref": 32
+        },
+        {
+          "$ref": 33
+        }
+      ],
+      "_prefab": {
+        "$ref": 34
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      },
+      "_trs": [
+        375,
+        812,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bg",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 10
+        },
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 16
+        },
+        {
+          "$ref": 17
+        },
+        {
+          "$ref": 18
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 35
+        }
+      ],
+      "_prefab": {
+        "$ref": 36
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          654,
+          562
+        ]
+      },
+      "_trs": [
+        -0.34,
+        30.539,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "titleLayout",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 25
+        },
+        {
+          "$ref": 15
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 37
+        }
+      ],
+      "_prefab": {
+        "$ref": 38
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          172,
+          100
+        ]
+      },
+      "_trs": [
+        0,
+        205.889,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "mask",
+      "_opacity": 200,
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 39
+        },
+        {
+          "$ref": 40
+        }
+      ],
+      "_prefab": {
+        "$ref": 41
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278190080
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          3000,
+          3000
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "musicNode",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 6
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 42
+        }
+      ],
+      "_prefab": {
+        "$ref": 43
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          554,
+          102
+        ]
+      },
+      "_trs": [
+        0,
+        54.242,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 5
+      },
+      "_children": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 21
+        }
+      ],
+      "_prefab": {
+        "$ref": 44
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          90,
+          56.7
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -250,
+        2.57,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "turnNode",
+      "_parent": {
+        "$ref": 6
+      },
+      "_children": [
+        {
+          "$ref": 8
+        },
+        {
+          "$ref": 9
+        }
+      ],
+      "_prefab": {
+        "$ref": 45
+      },
+      "_trs": [
+        455,
+        -1.694,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "musicon",
+      "_parent": {
+        "$ref": 7
+      },
+      "_children": [
+        {
+          "$ref": 19
+        }
+      ],
+      "_prefab": {
+        "$ref": 46
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          220,
+          120
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "musicoff",
+      "_active": false,
+      "_parent": {
+        "$ref": 7
+      },
+      "_children": [
+        {
+          "$ref": 20
+        }
+      ],
+      "_prefab": {
+        "$ref": 47
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          220,
+          120
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "vibrateNode",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 11
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 48
+        }
+      ],
+      "_prefab": {
+        "$ref": 49
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          554,
+          102
+        ]
+      },
+      "_trs": [
+        0,
+        -67.272,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 10
+      },
+      "_children": [
+        {
+          "$ref": 12
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 24
+        }
+      ],
+      "_prefab": {
+        "$ref": 50
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          90,
+          56.7
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -250,
+        2.57,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "turnNode",
+      "_parent": {
+        "$ref": 11
+      },
+      "_children": [
+        {
+          "$ref": 13
+        },
+        {
+          "$ref": 14
+        }
+      ],
+      "_prefab": {
+        "$ref": 51
+      },
+      "_trs": [
+        455,
+        -1.694,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "vibrateon",
+      "_parent": {
+        "$ref": 12
+      },
+      "_children": [
+        {
+          "$ref": 22
+        }
+      ],
+      "_prefab": {
+        "$ref": 52
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          220,
+          120
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "vibrateoff",
+      "_active": false,
+      "_parent": {
+        "$ref": 12
+      },
+      "_children": [
+        {
+          "$ref": 23
+        }
+      ],
+      "_prefab": {
+        "$ref": 53
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          220,
+          120
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "titleTxt",
+      "_parent": {
+        "$ref": 3
+      },
+      "_components": [
+        {
+          "$ref": 26
+        },
+        {
+          "$ref": 54
+        }
+      ],
+      "_prefab": {
+        "$ref": 55
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          108,
+          71
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -22,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnClose",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 27
+        }
+      ],
+      "_prefab": {
+        "$ref": 56
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          100,
+          100
+        ]
+      },
+      "_trs": [
+        272.289,
+        226.944,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn_agreement",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 28
+        }
+      ],
+      "_prefab": {
+        "$ref": 57
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          320,
+          120
+        ]
+      },
+      "_trs": [
+        -169.815,
+        -173.051,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn_privacy",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 29
+        }
+      ],
+      "_prefab": {
+        "$ref": 58
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          320,
+          120
+        ]
+      },
+      "_trs": [
+        161.051,
+        -173.679,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon",
+      "_parent": {
+        "$ref": 8
+      },
+      "_components": [
+        {
+          "$ref": 59
+        }
+      ],
+      "_prefab": {
+        "$ref": 60
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          110,
+          54
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon",
+      "_parent": {
+        "$ref": 9
+      },
+      "_components": [
+        {
+          "$ref": 61
+        }
+      ],
+      "_prefab": {
+        "$ref": 62
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          110,
+          54
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "音乐",
+      "_fontSize": 45,
+      "_lineHeight": 45,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 6
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon",
+      "_parent": {
+        "$ref": 13
+      },
+      "_components": [
+        {
+          "$ref": 63
+        }
+      ],
+      "_prefab": {
+        "$ref": 64
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          110,
+          54
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon",
+      "_parent": {
+        "$ref": 14
+      },
+      "_components": [
+        {
+          "$ref": 65
+        }
+      ],
+      "_prefab": {
+        "$ref": 66
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          110,
+          54
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "振动",
+      "_fontSize": 45,
+      "_lineHeight": 45,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 11
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnSet",
+      "_parent": {
+        "$ref": 3
+      },
+      "_components": [
+        {
+          "$ref": 67
+        }
+      ],
+      "_prefab": {
+        "$ref": 68
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          64,
+          68
+        ]
+      },
+      "_trs": [
+        -54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "设置",
+      "_fontSize": 50,
+      "_lineHeight": 50,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 15
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnClose",
+      "_parent": {
+        "$ref": 16
+      },
+      "_components": [
+        {
+          "$ref": 69
+        }
+      ],
+      "_prefab": {
+        "$ref": 70
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          34,
+          34
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 17
+      },
+      "_components": [
+        {
+          "$ref": 71
+        }
+      ],
+      "_prefab": {
+        "$ref": 72
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          260,
+          100
+        ]
+      },
+      "_trs": [
+        37.448,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "$ref": 18
+      },
+      "_components": [
+        {
+          "$ref": 73
+        }
+      ],
+      "_prefab": {
+        "$ref": 74
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4288240403
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          260,
+          100
+        ]
+      },
+      "_trs": [
+        -48.483,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "b9246PTLYdOu6sfrLjwvVTL",
+      "vibrateLabel": {
+        "$ref": 24
+      },
+      "musicLabel": {
+        "$ref": 21
+      },
+      "btn_agreement": {
+        "$ref": 17
+      },
+      "btn_privacy": {
+        "$ref": 18
+      },
+      "btn_vibrate_off": {
+        "$ref": 14
+      },
+      "btn_vibrate_on": {
+        "$ref": 13
+      },
+      "btn_bgm_on": {
+        "$ref": 8
+      },
+      "btn_bgm_off": {
+        "$ref": 9
+      },
+      "title": {
+        "$ref": 26
+      },
+      "btn_close": {
+        "$ref": 16
+      },
+      "contentNode": {
+        "$ref": 2
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828a89/o+lD2o7BDeEFbGzx",
+      "ttffont": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "064b096c-8c9b-4b5e-acc1-fc141e7db6fc"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "a1F/L49MtIDqpvrI0gZtRx",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Layout",
+      "_resize": 1,
+      "_N$layoutType": 1,
+      "_layoutSize": {
+        "__type__": "cc.Size",
+        "values": [
+          172,
+          100
+        ]
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "22MwGyuV5CBKg8YXBWFyrF",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_type": 1,
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "fee62731-326a-4232-b718-01c6e63fb668"
+      },
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "_left": -1125,
+      "_right": -1125,
+      "_top": -688,
+      "_bottom": -688,
+      "_originalWidth": 100,
+      "_originalHeight": 100,
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "abJif5Wa9BKrOTv3zKdRuu",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "10eaa0eb-425e-4412-ac89-9a33627db09e"
+      },
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "8feRys0S5GCqrclRE7aOo9",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "a9iHl5UG1Ji6YvvHTFqR5R",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "a7Rxisb6ZGrKHbkMwdHaby",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "13hmw9CzJK7K3yLTeV9N4H",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c6fFIMu2BHFLuHnDNx6+4h",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "10eaa0eb-425e-4412-ac89-9a33627db09e"
+      },
+      "node": {
+        "$ref": 10
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "92xqcBKDZHp7ev9gQe10Zq",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "7dL1NfUo5EZYBL8Tf7+edk",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "6doxUs4AdHX6B55oIatbOA",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "27hkXh1UBMm6U2wFscAlTy",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "6eMmPqImdOs5BIlwo/Xa2r",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 4,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4287319337
+        ]
+      },
+      "node": {
+        "$ref": 15
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e6wqTXurJAc4oJT0dDa/O7",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "4c7gFynWVDN7aGgeiMkNwg",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "fcNguUNc1KSLZXXlMIh0r4",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dc0ZEkhktCPapzOW90z0+S",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "63631bd7-1153-4568-921c-0b3e284aae9b"
+      },
+      "node": {
+        "$ref": 19
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e8nJMvtrRPd701WoFeroJz",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "30e3fb57-65d1-4062-82e2-d96d28f6029e"
+      },
+      "node": {
+        "$ref": 20
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "95HJBQdqVJzal7LMFLAKVa",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "63631bd7-1153-4568-921c-0b3e284aae9b"
+      },
+      "node": {
+        "$ref": 22
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "43ZgzRP69FS7++6UzA7WQZ",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "30e3fb57-65d1-4062-82e2-d96d28f6029e"
+      },
+      "node": {
+        "$ref": 23
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e1Dgoty1ZPjat4GiielHYh",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "2b0cdc24-42ad-4d0a-baa8-c394059d3adf"
+      },
+      "node": {
+        "$ref": 25
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dcfFhJ7mNGjI0Lc9RD2TK/",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "27240b2f-85fa-4233-802e-c639da2c5f4b"
+      },
+      "node": {
+        "$ref": 27
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "fb5A+xSEtEHJ5aiB+sNTX/",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "用户协议",
+      "_fontSize": 35,
+      "_lineHeight": 60,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 28
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "10Tdk3IBhB5qOVN31w62mY",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "隐私政策",
+      "_fontSize": 35,
+      "_lineHeight": 60,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 2,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "_N$cacheMode": 1,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 29
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "8bjNmGVEBDLYRBrKC5i/gB",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "4a56a513-c422-4918-8cbc-98f77fe4b571",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/4a/4a56a513-c422-4918-8cbc-98f77fe4b571.c5d02.json",
+  "paths": [
+    "GameDialog/SettingDialog"
+  ]
+}

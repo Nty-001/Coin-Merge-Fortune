@@ -1,0 +1,737 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "GameFakeWDItem",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "GameFakeWDItem",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 17
+        },
+        {
+          "$ref": 18
+        },
+        {
+          "$ref": 19
+        }
+      ],
+      "_prefab": {
+        "$ref": 20
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          722,
+          319
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "content",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 7
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 11
+        },
+        {
+          "$ref": 13
+        },
+        {
+          "$ref": 15
+        }
+      ],
+      "_prefab": {
+        "$ref": 21
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          722,
+          319
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "selectBg",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 6
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 22
+        }
+      ],
+      "_prefab": {
+        "$ref": 23
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          722,
+          319
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "ProgressBar",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 8
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 24
+        },
+        {
+          "$ref": 10
+        }
+      ],
+      "_prefab": {
+        "$ref": 25
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          646,
+          44
+        ]
+      },
+      "_trs": [
+        0.056,
+        -101.07,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "unselectBg",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 26
+        }
+      ],
+      "_prefab": {
+        "$ref": 27
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          722,
+          319
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon_select",
+      "_parent": {
+        "$ref": 3
+      },
+      "_components": [
+        {
+          "$ref": 28
+        }
+      ],
+      "_prefab": {
+        "$ref": 29
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          61,
+          61
+        ]
+      },
+      "_trs": [
+        325.322,
+        123.79,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "line",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 30
+        }
+      ],
+      "_prefab": {
+        "$ref": 31
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          654,
+          3
+        ]
+      },
+      "_trs": [
+        -5.91,
+        31.148,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bar",
+      "_parent": {
+        "$ref": 4
+      },
+      "_components": [
+        {
+          "$ref": 9
+        }
+      ],
+      "_prefab": {
+        "$ref": 32
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          634,
+          32
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -316.579,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_type": 3,
+      "node": {
+        "$ref": 8
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "e2fe8ed7-9021-4a83-955c-8d4eb29e2308"
+      }
+    },
+    {
+      "__type__": "cc.ProgressBar",
+      "_N$mode": 2,
+      "_N$progress": 0,
+      "node": {
+        "$ref": 4
+      },
+      "_N$barSprite": {
+        "$ref": 9
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "moneyTxt",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 12
+        }
+      ],
+      "_prefab": {
+        "$ref": 33
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4280229887
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          650,
+          81.9
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -323.889,
+        89.788,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "9999",
+      "_fontSize": 65,
+      "_lineHeight": 65,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 11
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "contiditionTxt1",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 14
+        }
+      ],
+      "_prefab": {
+        "$ref": 34
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4291782679
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          500,
+          45
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -325.698,
+        -0.377,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "余额达到999999",
+      "_fontSize": 30,
+      "_lineHeight": 30,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 13
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "contiditionTxt2",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 16
+        }
+      ],
+      "_prefab": {
+        "$ref": 35
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4291782679
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          500,
+          45
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -325.698,
+        -38.969,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "余额达到999999",
+      "_fontSize": 30,
+      "_lineHeight": 30,
+      "_enableWrapText": false,
+      "_isSystemFontUsed": false,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 15
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828a89/o+lD2o7BDeEFbGzx",
+      "ttffont": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "828fa1heI1JZrDtwrOIJ5qr",
+      "progressBar": {
+        "$ref": 10
+      },
+      "contiditionTxt2": {
+        "$ref": 16
+      },
+      "contiditionTxt1": {
+        "$ref": 14
+      },
+      "moneyTxt": {
+        "$ref": 12
+      },
+      "unselectBg": {
+        "$ref": 5
+      },
+      "selectBg": {
+        "$ref": 3
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "40/0T/9GBCMrtYKK7plyEL",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "f3eb0e56-3a56-4bd1-ae03-dfcfd8e97397"
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "7e2vwnASdGXaEH3F6Zs6I8",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_type": 1,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "affbf61e-d43e-4a9a-8f89-10bf4c91f5a2"
+      },
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "a9zA5nuxFNGKZ2Og7Jyy85",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "a2910a3a-e1b9-4e09-8a90-f501a6a2fc3c"
+      },
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "66BYKYAaBG2o97Uks8XhRD",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "c5831991-e883-4a52-b061-24df89456041"
+      },
+      "node": {
+        "$ref": 6
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "ccHIheFZdK+YRb9tR2AvK5",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "f9e648dc-650f-4179-b379-75975cc4f00b"
+      },
+      "node": {
+        "$ref": 7
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c3tb5+ZGhMcYJ76+G4K7lh",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "642f2EDBBEj5Nf80Q4zB9l",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c7ZEsJ4bJJt54Y7wgPir9i",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "9fMFQjFMNPYZb24g8vy9lD",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "3d2Sud+PNNp5tDzicg0tfl",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "011837fb-9bae-415d-b151-f070999b8263",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/01/011837fb-9bae-415d-b151-f070999b8263.01831.json",
+  "paths": [
+    "GameDialog/GameFakeWDItem"
+  ]
+}

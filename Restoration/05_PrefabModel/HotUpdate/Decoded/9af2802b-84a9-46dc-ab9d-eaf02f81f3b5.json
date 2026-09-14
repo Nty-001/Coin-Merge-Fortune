@@ -1,0 +1,70 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "flyicon",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "flyicon",
+      "_components": [
+        {
+          "$ref": 2
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_prefab": {
+        "$ref": 4
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          94,
+          84
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "9a3e5b4a-9a94-419c-b540-d5c9be2099e8"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "d69e3xwokpN0oBzR++PtqB1",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    }
+  ],
+  "uuid": "9af2802b-84a9-46dc-ab9d-eaf02f81f3b5",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/9a/9af2802b-84a9-46dc-ab9d-eaf02f81f3b5.0c3d4.json",
+  "paths": [
+    "CommonPrefab/flyicon"
+  ]
+}

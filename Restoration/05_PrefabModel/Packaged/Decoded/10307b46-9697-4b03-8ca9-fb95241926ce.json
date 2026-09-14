@@ -1,0 +1,199 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "ToastView",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "ToastView",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 6
+        }
+      ],
+      "_prefab": {
+        "$ref": 7
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      },
+      "_trs": [
+        375,
+        812,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 8
+        }
+      ],
+      "_prefab": {
+        "$ref": 9
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          726,
+          66
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "txt_btn",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 10
+        }
+      ],
+      "_prefab": {
+        "$ref": 11
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          112.74,
+          71.52
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "Agree",
+      "_lineHeight": 52,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 3
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ]
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "5f656hmSV5AHYoVlEH1lyrI",
+      "lbl_txt": {
+        "$ref": 4
+      },
+      "bg": {
+        "$ref": 2
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "fd813198-8546-4563-8bf6-8ae64257d926"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c9vKW9IFhP4r6spg15h/MI",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 3,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4286210137
+        ]
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "81WzJooAFE5preBXmnF/o1",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "10307b46-9697-4b03-8ca9-fb95241926ce",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/10/10307b46-9697-4b03-8ca9-fb95241926ce.f81b1.json",
+  "paths": [
+    "prefab/ToastView"
+  ]
+}

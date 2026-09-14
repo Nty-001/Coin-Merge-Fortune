@@ -1,0 +1,217 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_2",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_2",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          64,
+          67
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          64,
+          67
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -6,
+            33.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -22,
+            25.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -30,
+            13.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -32,
+            -7.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -25,
+            -22.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -10,
+            -32.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            7,
+            -33.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            19,
+            -28.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            32,
+            -8.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            32,
+            7.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            26,
+            21.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            11,
+            32.5
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "2c8d859a-d6b6-41e7-8c15-4ca06056dc00"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "2c8d859a-d6b6-41e7-8c15-4ca06056dc00"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "9c840dc8-9b34-44ab-9a84-9307c375d60e",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/9c/9c840dc8-9b34-44ab-9a84-9307c375d60e.fc0e4.json",
+  "paths": [
+    "Block/block_2"
+  ]
+}

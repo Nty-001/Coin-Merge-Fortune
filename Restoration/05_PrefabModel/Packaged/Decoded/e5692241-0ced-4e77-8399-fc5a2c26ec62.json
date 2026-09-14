@@ -1,0 +1,281 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_12",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_12",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          322,
+          429
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          322,
+          429
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -7,
+            214.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -57,
+            186.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -44,
+            145.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -87,
+            150.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -87,
+            125.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -127,
+            82.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -123,
+            -27.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -161,
+            -50.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -131,
+            -127.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -140,
+            -191.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -67,
+            -214.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            120,
+            -205.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142,
+            -171.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            130,
+            -125.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            161,
+            -65.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            119,
+            -26.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            89,
+            58.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            116,
+            110.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            86,
+            126.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            86,
+            152.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            39,
+            147.5
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            52,
+            185.5
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "e5692241-0ced-4e77-8399-fc5a2c26ec62",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/e5/e5692241-0ced-4e77-8399-fc5a2c26ec62.495ef.json",
+  "paths": [
+    "Block/block_12"
+  ]
+}

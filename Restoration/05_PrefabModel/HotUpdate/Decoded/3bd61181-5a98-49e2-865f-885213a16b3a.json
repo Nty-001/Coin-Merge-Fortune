@@ -1,0 +1,807 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "HtmlItem",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "HtmlItem",
+      "_children": [
+        {
+          "$ref": 10
+        },
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 11
+        },
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 19
+        },
+        {
+          "$ref": 20
+        }
+      ],
+      "_prefab": {
+        "$ref": 21
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          552,
+          172
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btns",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 6
+        },
+        {
+          "$ref": 8
+        }
+      ],
+      "_prefab": {
+        "$ref": 22
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          150,
+          100
+        ]
+      },
+      "_trs": [
+        180,
+        -28.397,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "coinspr",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 23
+        },
+        {
+          "$ref": 24
+        }
+      ],
+      "_prefab": {
+        "$ref": 25
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          120,
+          73
+        ]
+      },
+      "_trs": [
+        183.684,
+        34.284,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0.8,
+        0.8,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "0",
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 13
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 26
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          150,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnLabel1",
+      "_parent": {
+        "$ref": 4
+      },
+      "_components": [
+        {
+          "$ref": 14
+        },
+        {
+          "$ref": 27
+        }
+      ],
+      "_prefab": {
+        "$ref": 28
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          101.87,
+          50
+        ]
+      },
+      "_trs": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "1",
+      "_active": false,
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 15
+        },
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 29
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          150,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnLabel2",
+      "_parent": {
+        "$ref": 6
+      },
+      "_components": [
+        {
+          "$ref": 16
+        },
+        {
+          "$ref": 30
+        }
+      ],
+      "_prefab": {
+        "$ref": 31
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          101.87,
+          50
+        ]
+      },
+      "_trs": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "2",
+      "_active": false,
+      "_parent": {
+        "$ref": 2
+      },
+      "_children": [
+        {
+          "$ref": 17
+        },
+        {
+          "$ref": 9
+        }
+      ],
+      "_prefab": {
+        "$ref": 32
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          150,
+          100
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnLabel3",
+      "_parent": {
+        "$ref": 8
+      },
+      "_components": [
+        {
+          "$ref": 18
+        },
+        {
+          "$ref": 33
+        }
+      ],
+      "_prefab": {
+        "$ref": 34
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          101.87,
+          50
+        ]
+      },
+      "_trs": [
+        0,
+        3.21,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bg",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 35
+        }
+      ],
+      "_prefab": {
+        "$ref": 36
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          529,
+          149
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "taskLabel",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 12
+        }
+      ],
+      "_prefab": {
+        "$ref": 37
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278469800
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          200,
+          100
+        ]
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "values": [
+          0,
+          0.5
+        ]
+      },
+      "_trs": [
+        -123.807,
+        -0.647,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "填写信息填写信息",
+      "_fontSize": 30,
+      "_lineHeight": 45,
+      "_isSystemFontUsed": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 11
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_N$file": {
+        "$asset": "64b2f1d4-4b0a-485e-a37a-0256a65ef785"
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btn",
+      "_parent": {
+        "$ref": 4
+      },
+      "_components": [
+        {
+          "$ref": 38
+        }
+      ],
+      "_prefab": {
+        "$ref": 39
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          120,
+          66
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "Label",
+      "_fontSize": 28,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 5
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnGreen",
+      "_parent": {
+        "$ref": 6
+      },
+      "_components": [
+        {
+          "$ref": 40
+        }
+      ],
+      "_prefab": {
+        "$ref": 41
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          120,
+          66
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "Label",
+      "_fontSize": 28,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 7
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "btnGray",
+      "_parent": {
+        "$ref": 8
+      },
+      "_components": [
+        {
+          "$ref": 42
+        }
+      ],
+      "_prefab": {
+        "$ref": 43
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          120,
+          66
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "Label",
+      "_fontSize": 28,
+      "_enableWrapText": false,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "_N$overflow": 2,
+      "node": {
+        "$ref": 9
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ]
+    },
+    {
+      "__type__": "cc.BlockInputEvents",
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "10541TTvkdNCYC011er+44E",
+      "taskLabel": {
+        "$ref": 12
+      },
+      "btns": {
+        "$ref": 2
+      },
+      "btn3": {
+        "$ref": 18
+      },
+      "btn2": {
+        "$ref": 16
+      },
+      "btn1": {
+        "$ref": 14
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "36KcqBl41D14wDOCUxbkoa",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "c720cde9-6f01-416e-a022-a1610ec0755a"
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "d69e3xwokpN0oBzR++PtqB1",
+      "coin_type": 2,
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "e9rm9/wcJAK6hhJf42/Tc5",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "5dsicxS5hM0p+ERwcf80sI",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 2,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278201719
+        ]
+      },
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c7eB3lxvxBBJwW6s4HZrj0",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "81U0J3V3tJ3aQM54MZSJ4+",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 2,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278286860
+        ]
+      },
+      "node": {
+        "$ref": 7
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "41rAWWvwBP/r6QLzlnPiLl",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "48LUBMaJZGEJtQWLbyTU1u",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 2,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4284769380
+        ]
+      },
+      "node": {
+        "$ref": 9
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "29vJLmBIZBabe4hwrpUwF9",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "a3b71b22-7fa9-4e57-9b0a-955bfef76581"
+      },
+      "node": {
+        "$ref": 10
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "4cwhKK4g5OP7/WxzcGlwvK",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "86B/MFqqdM+ZLFrEv6b0At",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "756a3507-a317-43b7-a850-5d1cd477e810"
+      },
+      "node": {
+        "$ref": 13
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "045FjSsVhFK7OGpwMR+7zn",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "876d69d0-8302-4aae-998a-ab6c90c918de"
+      },
+      "node": {
+        "$ref": 15
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "580nJz219Ecbhtw5V797Zf",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "aa1a4abe-761f-4a7b-9ea2-30c75b9b6c93"
+      },
+      "node": {
+        "$ref": 17
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "27GfTVD2tBRrhdHnGhC/+k",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "3bd61181-5a98-49e2-865f-885213a16b3a",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/3b/3bd61181-5a98-49e2-865f-885213a16b3a.808bd.json",
+  "paths": [
+    "GameDialog/HtmlItem"
+  ]
+}

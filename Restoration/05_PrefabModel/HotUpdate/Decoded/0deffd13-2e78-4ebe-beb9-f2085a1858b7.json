@@ -1,0 +1,377 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "RewardToast",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "RewardToast",
+      "_children": [
+        {
+          "$ref": 4
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 7
+        },
+        {
+          "$ref": 8
+        }
+      ],
+      "_prefab": {
+        "$ref": 9
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1364
+        ]
+      },
+      "_trs": [
+        375,
+        652,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_bg",
+      "_children": [
+        {
+          "$ref": 5
+        },
+        {
+          "$ref": 3
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 10
+        }
+      ],
+      "_prefab": {
+        "$ref": 11
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4278190080
+        ]
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          177.52999999999997,
+          60
+        ]
+      },
+      "_parent": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label_value",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 6
+        },
+        {
+          "$ref": 12
+        },
+        {
+          "$ref": 13
+        }
+      ],
+      "_prefab": {
+        "$ref": 14
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          67.00999999999999,
+          100.72
+        ]
+      },
+      "_trs": [
+        35.260000000000005,
+        2.297,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "layout_content",
+      "_parent": {
+        "$ref": 1
+      },
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 15
+        }
+      ],
+      "_prefab": {
+        "$ref": 16
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          200,
+          60
+        ]
+      },
+      "_trs": [
+        -175,
+        602,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_icon",
+      "_parent": {
+        "$ref": 2
+      },
+      "_components": [
+        {
+          "$ref": 17
+        },
+        {
+          "$ref": 18
+        }
+      ],
+      "_prefab": {
+        "$ref": 19
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          65.52,
+          53.76
+        ]
+      },
+      "_trs": [
+        -36.00499999999999,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "__type__": "cc.Label",
+      "_string": "+1",
+      "_fontSize": 50,
+      "_lineHeight": 72,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1,
+      "node": {
+        "$ref": 3
+      },
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ]
+    },
+    {
+      "__type__": "a4dd6MfrmxPJpV/JSYVP+oP",
+      "label_value": {
+        "$ref": 6
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 45,
+      "_bottom": -30,
+      "_originalWidth": 200,
+      "_originalHeight": 60,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Layout",
+      "_resize": 1,
+      "_N$layoutType": 1,
+      "_N$paddingLeft": 20,
+      "_N$paddingRight": 20,
+      "_N$paddingTop": 10,
+      "_N$paddingBottom": 10,
+      "_N$spacingX": 5,
+      "_N$spacingY": 15,
+      "_N$affectedByScale": true,
+      "_layoutSize": {
+        "__type__": "cc.Size",
+        "values": [
+          177.52999999999997,
+          60
+        ]
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "81m2IYJ6ZLMYR6d4YI1/RR",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.LabelOutline",
+      "_width": 5,
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4286666577
+        ]
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.LabelShadow",
+      "_color": {
+        "__type__": "cc.Color",
+        "values": [
+          4286666577
+        ]
+      },
+      "_offset": {
+        "__type__": "cc.Vec2",
+        "values": [
+          2,
+          -3
+        ]
+      },
+      "node": {
+        "$ref": 3
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "bbeH13sWVHWoPpE8nytUOI",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Widget",
+      "_alignFlags": 9,
+      "_left": 100,
+      "_top": 50,
+      "node": {
+        "$ref": 4
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "c9ZPSfEMJMY5p6QKiqpay5",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_sizeMode": 0,
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "9a3e5b4a-9a94-419c-b540-d5c9be2099e8"
+      },
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "d69e3xwokpN0oBzR++PtqB1",
+      "node": {
+        "$ref": 5
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "85qqOs7R5AYa15U3OIGaSH",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "0deffd13-2e78-4ebe-beb9-f2085a1858b7",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/0d/0deffd13-2e78-4ebe-beb9-f2085a1858b7.0adb1.json",
+  "paths": [
+    "CommonPrefab/RewardToast"
+  ]
+}

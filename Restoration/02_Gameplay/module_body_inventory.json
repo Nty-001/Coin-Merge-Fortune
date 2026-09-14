@@ -1,0 +1,2784 @@
+[
+  {
+    "name": "AddHeartView",
+    "file": "Modules/AddHeartView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../Game/Utils": "Utils",
+      "../GameScene": "GameScene"
+    },
+    "classId": "7e3a3gRQiJLrrLy9944vKcH",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2367,
+    "sha256": "7ed419d6170940767fe0d706bcc7248714f355f7611d084828a4797a73bad97d",
+    "variant": "Packaged"
+  },
+  {
+    "name": "AudioManager",
+    "file": "Modules/AudioManager.js",
+    "dependencies": {},
+    "classId": "6ef6bD61yxLu6p/WIbT++ep",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 644,
+    "sha256": "71fea8cce6736c5916367212ca194ba3f923b6dc721ab3b55f4a8730a27140c7",
+    "variant": "Packaged"
+  },
+  {
+    "name": "BaseRecord",
+    "file": "Modules/BaseRecord.js",
+    "dependencies": {},
+    "classId": "bdca0Q0Dt5Hq4wKs//14qrm",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 390,
+    "sha256": "1b2dc86fb8eac8d94d5e744c838cf022d04f03fe8fdb254617add0143aef8e1c",
+    "variant": "Packaged"
+  },
+  {
+    "name": "BaseUI",
+    "file": "Modules/BaseUI.js",
+    "dependencies": {
+      "./UIManager": "UIManager"
+    },
+    "classId": "35d03Mv0U9FQJTwc/zvyIV4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1778,
+    "sha256": "b63f60cfc44258b7cc4ce3159a028a3505ec273d7035824dbff9fc72a0a8d5bf",
+    "variant": "Packaged"
+  },
+  {
+    "name": "BlockUtils",
+    "file": "Modules/BlockUtils.js",
+    "dependencies": {
+      "./Block": "Block",
+      "./PoolManager": "PoolManager",
+      "./Utils": "Utils"
+    },
+    "classId": "bf6cfka9uBPAZcvwmqaqzHM",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1908,
+    "sha256": "3b72a48b5f59cfb3d32dc52a21ca9bb012c8fb80dd334e3593742f6d3ed8fa28",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Block",
+    "file": "Modules/Block.js",
+    "dependencies": {
+      "../ATools/SoundManager": "SoundManager",
+      "./BlockUtils": "BlockUtils",
+      "./LevelManager": "LevelManager",
+      "./PoolManager": "PoolManager",
+      "./Wall": "Wall"
+    },
+    "classId": "4bdd29QO2lBM5i94uj0TE4V",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 7519,
+    "sha256": "24020751f556a588d5160e256f4cfa020bcaec07d34b5ab2d7d87860fdb95b8e",
+    "variant": "Packaged"
+  },
+  {
+    "name": "EventCenter",
+    "file": "Modules/EventCenter.js",
+    "dependencies": {},
+    "classId": "11aa0/IGkZLs4CYvJaMzLaE",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1478,
+    "sha256": "3c21a8f88360e7c12bbf33318307b8ae0ca3b4d3047f5bf56b2376bc985b1b38",
+    "variant": "Packaged"
+  },
+  {
+    "name": "FailureView",
+    "file": "Modules/FailureView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../Game/LevelManager": "LevelManager",
+      "../GameScene": "GameScene"
+    },
+    "classId": "11c9fWNcqhH4JiE3t6Zxg9C",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2117,
+    "sha256": "b6e4cd9e5eaa3f6b62970d6eb6dc57f4e95bb418b1833868a693b299ed1f591f",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameEventConsts",
+    "file": "Modules/GameEventConsts.js",
+    "dependencies": {},
+    "classId": "f6949VAkcJFg5tLYeuNBIfv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 591,
+    "sha256": "6c87560d88d862b18bc85a4ecc151dc2db70ddbbe344234cf19c45c8319a11ec",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameMapLayer",
+    "file": "Modules/GameMapLayer.js",
+    "dependencies": {
+      "../ATools/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "./LevelManager": "LevelManager",
+      "./PhysicsManager": "PhysicsManager",
+      "./Wall": "Wall"
+    },
+    "classId": "df800HSMZFIUIexUBkafTz+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 4257,
+    "sha256": "84abd9b8d58cc0a2b07066707dfe368ace80501ba64f344fbdf7331610d9b6c0",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameMapTouch",
+    "file": "Modules/GameMapTouch.js",
+    "dependencies": {},
+    "classId": "5a8d2hF7GJO2apv5N2IPeY6",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1501,
+    "sha256": "7661131d41b9e181082d0dc2fb7bdbf24059b6a41754ac43fcc659437d64c1c4",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameMenu",
+    "file": "Modules/GameMenu.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "2d3c6iRBbRFqLCuf/c5oAjR",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2102,
+    "sha256": "49b09f5bfe9dbcd0db45c9e8059b5f78accf267393e561c27ce5b544c5310b35",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameModel",
+    "file": "Modules/GameModel.js",
+    "dependencies": {
+      "./BaseRecord": "BaseRecord",
+      "./EventCenter": "EventCenter",
+      "./GameEventConsts": "GameEventConsts",
+      "./LocalDataManager": "LocalDataManager"
+    },
+    "classId": "3256aK6RsBBibgOsFHktWKM",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2806,
+    "sha256": "40bebad6010fc579f00e3b9792c24d94ebc51d6b906fbdd75565d2b4995603a4",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GameScene",
+    "file": "Modules/GameScene.js",
+    "dependencies": {
+      "./ATools/BaseUI": "BaseUI",
+      "./ATools/EventCenter": "EventCenter",
+      "./ATools/GameEventConsts": "GameEventConsts",
+      "./ATools/LocalDataManager": "LocalDataManager",
+      "./ATools/SoundManager": "SoundManager",
+      "./ATools/UIManager": "UIManager",
+      "./Game/LevelManager": "LevelManager"
+    },
+    "classId": "1e715AvPr9LvLFJE2giP6tP",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1782,
+    "sha256": "bf3aa522a818dec8f9418481ef913b4e0774f0778abd7626d143c6fa941c07ec",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Game",
+    "file": "Modules/Game.js",
+    "dependencies": {},
+    "classId": "1b8e3j3XAZFgInFqs08Dbrj",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 721,
+    "sha256": "7e293a62441f5117fe748dca17199be9929756811e04a3b3c542ad49a302a29e",
+    "variant": "Packaged"
+  },
+  {
+    "name": "GuideView",
+    "file": "Modules/GuideView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "a8fb6EdUJROLYRpOqrP19Dk",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2162,
+    "sha256": "495403f1ecef9ad6d1e57c92ca6bca94f9bf73ac0bd91e4d50cad0ffe24b07fd",
+    "variant": "Packaged"
+  },
+  {
+    "name": "HomeView",
+    "file": "Modules/HomeView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "./Item": "Item"
+    },
+    "classId": "4f92d79EGJA8YYHtb2CA/I4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1466,
+    "sha256": "173a3eeda8d50c06b9098a89aeceddc9e4f4b7d408e5c8a4edff7ec3da315ec9",
+    "variant": "Packaged"
+  },
+  {
+    "name": "HonorItem",
+    "file": "Modules/HonorItem.js",
+    "dependencies": {
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "0f25en2YsBIZoq2fqgOzq/4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1684,
+    "sha256": "e93975bc2dfb490dce2ee95f3f34422afc9cacd8d4589fb7c2a7f0cc4d5bf21b",
+    "variant": "Packaged"
+  },
+  {
+    "name": "HonorView",
+    "file": "Modules/HonorView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/TouchButton": "TouchButton",
+      "./HonorItem": "HonorItem"
+    },
+    "classId": "dd561EEDP1GwqDmL4q+ZZB0",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1274,
+    "sha256": "5c2334ef225fe572ccc9fa0c86901699c476e15e430924ace0afa31dca810090",
+    "variant": "Packaged"
+  },
+  {
+    "name": "ImagesPanel",
+    "file": "Modules/ImagesPanel.js",
+    "dependencies": {},
+    "classId": "2abafFeuJ9IFJ3ZaMFMMZS8",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1404,
+    "sha256": "45e943ed7745013a9bafe412d054e0bee0482cc964a8c460afdec3f656de2515",
+    "variant": "Packaged"
+  },
+  {
+    "name": "InfoView",
+    "file": "Modules/InfoView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton"
+    },
+    "classId": "6588a8jrHlGGpv+C6PU8vWS",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1502,
+    "sha256": "8c860d8c7749307d9d2def4b0516629ade54bc0bf4bdd453958a7596d15a4df9",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Item",
+    "file": "Modules/Item.js",
+    "dependencies": {
+      "../ATools/ImagesPanel": "ImagesPanel",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../GameScene": "GameScene"
+    },
+    "classId": "429bcD8CB5NX67rv+zufyNz",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1869,
+    "sha256": "d873bf2f0a51082667df6b3688e764b7b15d27f3483cb2f99b3729f54f858f70",
+    "variant": "Packaged"
+  },
+  {
+    "name": "LevelManager",
+    "file": "Modules/LevelManager.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/UIManager": "UIManager",
+      "./Block": "Block",
+      "./BlockUtils": "BlockUtils",
+      "./GameMapLayer": "GameMapLayer",
+      "./GameMapTouch": "GameMapTouch",
+      "./LevelUtils": "LevelUtils"
+    },
+    "classId": "10598zefMRKSZPB+CzpSGY7",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 12864,
+    "sha256": "a0fbbfb94ae7e6a10555f0bf87f68b6a80352b144a55a27fc691b6dc7db8d2bd",
+    "variant": "Packaged"
+  },
+  {
+    "name": "LevelUtils",
+    "file": "Modules/LevelUtils.js",
+    "dependencies": {
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "./Block": "Block",
+      "./LevelManager": "LevelManager",
+      "./Utils": "Utils"
+    },
+    "classId": "9023fVBmiVE1ppEak4XsY9y",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 873,
+    "sha256": "1fd0f52527e319647ada1d5f2860927935f4098aefc2f01fb27e1dba640abc00",
+    "variant": "Packaged"
+  },
+  {
+    "name": "LoadAllResources",
+    "file": "Modules/LoadAllResources.js",
+    "dependencies": {
+      "./ResManager": "ResManager",
+      "./Singleton": "Singleton"
+    },
+    "classId": "15e3bx54YBHTruhq5JcoC63",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2602,
+    "sha256": "2313ad873d93034d8aa80343d462e815569a52ec7f4427fd2eb5c9b822ea7ffe",
+    "variant": "Packaged"
+  },
+  {
+    "name": "LoadScene",
+    "file": "Modules/LoadScene.js",
+    "dependencies": {
+      "./ATools/BaseUI": "BaseUI",
+      "./ATools/EventCenter": "EventCenter",
+      "./ATools/GameEventConsts": "GameEventConsts",
+      "./ATools/LoadAllResources": "LoadAllResources",
+      "./ATools/LocalDataManager": "LocalDataManager",
+      "./ATools/UIManager": "UIManager",
+      "./Game/BlockUtils": "BlockUtils"
+    },
+    "classId": "e1b90/rohdEk4SdmmEZANaD",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2326,
+    "sha256": "e51f4d20bb58b0f7d325a0de1cc646a143b512c1d8fde14df0072f184b71d3a8",
+    "variant": "Packaged"
+  },
+  {
+    "name": "LocalDataManager",
+    "file": "Modules/LocalDataManager.js",
+    "dependencies": {
+      "../Game/Utils": "Utils",
+      "./GameModel": "GameModel",
+      "./Singleton": "Singleton",
+      "./UserDefault": "UserDefault"
+    },
+    "classId": "61871KIZ6hGiLMw60ceFHdv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2628,
+    "sha256": "747f6c5f731b9b940894832e53490cbd9f137bbb957df8d8669f2ea0cda6532b",
+    "variant": "Packaged"
+  },
+  {
+    "name": "PhysicsManager",
+    "file": "Modules/PhysicsManager.js",
+    "dependencies": {},
+    "classId": "6a031eNbvdBKaI+MVYdsCKg",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1194,
+    "sha256": "8474b466fc6bc91d29e9a300b2717d7597530f907ab5dee51c91d9c68ca3cab5",
+    "variant": "Packaged"
+  },
+  {
+    "name": "PolicyView",
+    "file": "Modules/PolicyView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/ImagesPanel": "ImagesPanel",
+      "../ATools/TouchButton": "TouchButton"
+    },
+    "classId": "4d666NjoM9JP4EQnlwcjJOH",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1409,
+    "sha256": "5ac4f6e2719a92b4298162ff22e1e51c9052af6d0b63293e8ad10ab94b49da2e",
+    "variant": "Packaged"
+  },
+  {
+    "name": "PoolManager",
+    "file": "Modules/PoolManager.js",
+    "dependencies": {
+      "./Utils": "Utils"
+    },
+    "classId": "ac8cbJErGBNmYY8nqQpR7Dy",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 893,
+    "sha256": "bdd2d10a0d51063d89643f495bf665142123b5a23ed7e8d2480affdd8524c938",
+    "variant": "Packaged"
+  },
+  {
+    "name": "ResManager",
+    "file": "Modules/ResManager.js",
+    "dependencies": {},
+    "classId": "901b4y1sCZPBoSaqHlRpfGK",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1540,
+    "sha256": "851c0252b5afa8025f7c36f24e2ee6394d6001f960dd193e7114641de3480958",
+    "variant": "Packaged"
+  },
+  {
+    "name": "SettingView",
+    "file": "Modules/SettingView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "f0005Qb+LhLNI6PLGn4oqcb",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2389,
+    "sha256": "9ddbceda9d24508dc3c672698318f9ee687cce2ce6468c38b1233c02a769ab4c",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Singleton",
+    "file": "Modules/Singleton.js",
+    "dependencies": {},
+    "classId": "3cc2aAhDbtFAa0I6sjZYhyv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 328,
+    "sha256": "8de741fe31ce687dc19c25be0ca23058c674fb53b7043e136ef026f0ee794751",
+    "variant": "Packaged"
+  },
+  {
+    "name": "SoundManager",
+    "file": "Modules/SoundManager.js",
+    "dependencies": {
+      "./AudioManager": "AudioManager",
+      "./LoadAllResources": "LoadAllResources",
+      "./LocalDataManager": "LocalDataManager"
+    },
+    "classId": "38a53fhmFBA+6OZ2GtnENh4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1777,
+    "sha256": "3b606976070c9dfbf73814485691f65a85345463f877df3f8e5ece21e0ce0f8f",
+    "variant": "Packaged"
+  },
+  {
+    "name": "ToastView",
+    "file": "Modules/ToastView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI"
+    },
+    "classId": "5f656hmSV5AHYoVlEH1lyrI",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1250,
+    "sha256": "ade16e29e0518b1110005dde6525622f3193c0b4562ece7119c3edaf5c1c6a52",
+    "variant": "Packaged"
+  },
+  {
+    "name": "TouchButton",
+    "file": "Modules/TouchButton.js",
+    "dependencies": {
+      "./SoundManager": "SoundManager"
+    },
+    "classId": "ecb28PDzb5FurFtrc2g30jQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2368,
+    "sha256": "d1b37cd7a377dda9bde8b66b2fa813c177ea261d12914ce5c0968813c2ffdc64",
+    "variant": "Packaged"
+  },
+  {
+    "name": "UIManager",
+    "file": "Modules/UIManager.js",
+    "dependencies": {
+      "./BaseUI": "BaseUI"
+    },
+    "classId": "9e0af7F7JNO6INe6cvPEm7f",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1767,
+    "sha256": "ee27a7f49757ce1ab4693a657203722f8798bec10630d068ad81c78ef9602c67",
+    "variant": "Packaged"
+  },
+  {
+    "name": "UserDefault",
+    "file": "Modules/UserDefault.js",
+    "dependencies": {},
+    "classId": "c2c67woB0VP0aok5g5GCefq",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 536,
+    "sha256": "91211b6e9e1284bb252afe3fc8c2bb8607b7a6a6f3e1db923cb0a53066006b0b",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Utils",
+    "file": "Modules/Utils.js",
+    "dependencies": {
+      "../ATools/SoundManager": "SoundManager"
+    },
+    "classId": "7213787GeJADbSUL5kZh4mQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1244,
+    "sha256": "0b844aac6a7a5c1ec13353dcf756cfde042b16b0a24b0490ff626ed6b7afd65e",
+    "variant": "Packaged"
+  },
+  {
+    "name": "Wall",
+    "file": "Modules/Wall.js",
+    "dependencies": {},
+    "classId": "8b11fQHu7tNqqyV5i1XPhwy",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1340,
+    "sha256": "22cb526f194df3f6950bc373f2f18cec2f20460b32ef1f76f5035217d3fa0fbf",
+    "variant": "Packaged"
+  },
+  {
+    "name": "1",
+    "file": "AlgorithmDependencies/1.js",
+    "dependencies": {},
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 13,
+    "sha256": "e48cb0694992f5f553ff9d435d8a7f0e5d719952e6faa888b71460b8011b2c57",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "2",
+    "file": "AlgorithmDependencies/2.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3280,
+    "sha256": "e9abec3cba927316892ecc70b7c865bf53d2b2e8fde9b5efd224b73248e4254b",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "3",
+    "file": "AlgorithmDependencies/3.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 14296,
+    "sha256": "135b1321d9d8bf22125e8829ed79ee21de2b028cb392488400838d7c8e9367cd",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "4",
+    "file": "AlgorithmDependencies/4.js",
+    "dependencies": {
+      "./core": 5,
+      "./evpkdf": 9
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5160,
+    "sha256": "fbb8f7c8e65f5ca20d560fdf71ad759a453b24cb8a220bf5a4d7121436617c9b",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "5",
+    "file": "AlgorithmDependencies/5.js",
+    "dependencies": {
+      "crypto": 1
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5002,
+    "sha256": "4300baf662854c30351a9ba1bad6db7e06042765b6e63caa739596e811c006c7",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "6",
+    "file": "AlgorithmDependencies/6.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1315,
+    "sha256": "37928b032bb7254fd576294a065a8bd2f8fd5fd9cf51cc1bb6ccff1b13acea51",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "7",
+    "file": "AlgorithmDependencies/7.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1500,
+    "sha256": "ea455f827d7107cd9dce5a59b2fa093d26d3c918defdf4a16e18c2211160a902",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "8",
+    "file": "AlgorithmDependencies/8.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1095,
+    "sha256": "44756d174098194c5a7379adf5468d7ea34b34b1f86896a5b88bcb112701ac3b",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "9",
+    "file": "AlgorithmDependencies/9.js",
+    "dependencies": {
+      "./core": 5,
+      "./hmac": 11,
+      "./sha1": 30
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 885,
+    "sha256": "ebebfdaf76bfabc172c9c02e5a868eb402bbd5b11c53420777345bacadb18dd6",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "10",
+    "file": "AlgorithmDependencies/10.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 475,
+    "sha256": "0f7e58449b25fd005bf9a33e66f2f56ae690031c56ce56b49c8b9331e39708c4",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "11",
+    "file": "AlgorithmDependencies/11.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 925,
+    "sha256": "df59529b8fdaeeab61aa853f92ddaefafb7179cc8b2505665ec82b741471a09c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "12",
+    "file": "AlgorithmDependencies/12.js",
+    "dependencies": {
+      "./aes": 2,
+      "./blowfish": 3,
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./enc-base64url": 7,
+      "./enc-utf16": 8,
+      "./evpkdf": 9,
+      "./format-hex": 10,
+      "./hmac": 11,
+      "./lib-typedarrays": 13,
+      "./md5": 14,
+      "./mode-cfb": 15,
+      "./mode-ctr": 17,
+      "./mode-ctr-gladman": 16,
+      "./mode-ecb": 18,
+      "./mode-ofb": 19,
+      "./pad-ansix923": 20,
+      "./pad-iso10126": 21,
+      "./pad-iso97971": 22,
+      "./pad-nopadding": 23,
+      "./pad-zeropadding": 24,
+      "./pbkdf2": 25,
+      "./rabbit": 27,
+      "./rabbit-legacy": 26,
+      "./rc4": 28,
+      "./ripemd160": 29,
+      "./sha1": 30,
+      "./sha224": 31,
+      "./sha256": 32,
+      "./sha3": 33,
+      "./sha384": 34,
+      "./sha512": 35,
+      "./tripledes": 36,
+      "./x64-core": 37
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1315,
+    "sha256": "aafa6f9df37003160f29b512da82e0dc84eaff4e03c1796510f7693fc72e2235",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "13",
+    "file": "AlgorithmDependencies/13.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 926,
+    "sha256": "a1479923736d3aa07aa740acbf4d7fecd473840a9652a432ee02df1b1c2a3c81",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "14",
+    "file": "AlgorithmDependencies/14.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4332,
+    "sha256": "6c5db38f84b6b36e42a343a1c9981deac1fbd063c3be48d9ffaf53e9d41cd3e4",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "15",
+    "file": "AlgorithmDependencies/15.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 859,
+    "sha256": "54b338b5c61f2dabd97877827f1ea2f364e8d70cc3624af36f83dcec0a2b305b",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "16",
+    "file": "AlgorithmDependencies/16.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1009,
+    "sha256": "7876df0b5c9c9ebd3e88a1ea02d2b221e7175282cda6e6ce014a738230f3f609",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "17",
+    "file": "AlgorithmDependencies/17.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 670,
+    "sha256": "607108498f8cc40fab3423282ad2f4799f80ecc2f283ab162df7b9dee0e0af11",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "18",
+    "file": "AlgorithmDependencies/18.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 526,
+    "sha256": "9ad5c9339486d93b2c8158aa21ed41544b9df0a7012c5cf20f3195a3b21bed80",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "19",
+    "file": "AlgorithmDependencies/19.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 625,
+    "sha256": "7c7ff4a80093461a068989f06910be2a922a50b61dc65c809c830d5553431ca9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "20",
+    "file": "AlgorithmDependencies/20.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 521,
+    "sha256": "c295e67644807e9bd4266f5072a3274eba1f654dcd78f232214375e77e9831a7",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "21",
+    "file": "AlgorithmDependencies/21.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 518,
+    "sha256": "eabdae3e15a05749c70c2d577659e0594b4e3e9c41a98ba22b4209d6502d7e4f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "22",
+    "file": "AlgorithmDependencies/22.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 453,
+    "sha256": "49404456a3b7a54c55df3c46d4910356c8ba46d01adf9dbaaedef8d0d7f684b0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "23",
+    "file": "AlgorithmDependencies/23.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 324,
+    "sha256": "262b29427d8ab6faa0dabf4df2a1e55ddec6fb5d7709c6a0a900177901643cfb",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "24",
+    "file": "AlgorithmDependencies/24.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 549,
+    "sha256": "96ec23cd47d44f1469e04041ec02a2dfc7afe4f2192a8044d360bcc75d582b65",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "25",
+    "file": "AlgorithmDependencies/25.js",
+    "dependencies": {
+      "./core": 5,
+      "./hmac": 11,
+      "./sha256": 32
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1029,
+    "sha256": "0a75fd262421b116d691873838906ad9febcf8a4ab94607ed4154e98470e13db",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "26",
+    "file": "AlgorithmDependencies/26.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3167,
+    "sha256": "df5d339738449fe53c2d3b4446f6bd2f0962bcc7cdc5ef8adb411f44724c8d78",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "27",
+    "file": "AlgorithmDependencies/27.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3259,
+    "sha256": "53ce03ea0f1eef86f693f66db961785981ac31dfc0a96eb2a627db120cc3ea21",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "28",
+    "file": "AlgorithmDependencies/28.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1299,
+    "sha256": "39a570cb2acd81809a2637b1955aaff669edd79828662afc72162942711dc5a6",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "29",
+    "file": "AlgorithmDependencies/29.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3678,
+    "sha256": "c9ab98d47ec6072921ad57ac0e09f0aa4f37ebe47ee45b42aa4871d13326893e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "30",
+    "file": "AlgorithmDependencies/30.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1515,
+    "sha256": "d5d3ceb39ab72c43aaf91703ce979ebecf41be8ffd6701a1696ec8dba5858eb2",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "31",
+    "file": "AlgorithmDependencies/31.js",
+    "dependencies": {
+      "./core": 5,
+      "./sha256": 32
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 659,
+    "sha256": "278d88951a739448a2a493f8cf74fcca40d95c531fb38e7259f4ad39475d52e2",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "32",
+    "file": "AlgorithmDependencies/32.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2037,
+    "sha256": "07ba50775f3a1ba14f0c3d3c2d6c51b4d6890f28513370d62e62f34baea52e2f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "33",
+    "file": "AlgorithmDependencies/33.js",
+    "dependencies": {
+      "./core": 5,
+      "./x64-core": 37
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3283,
+    "sha256": "c3e49e7c8af8d694ff8a59a8b801caedf380438a12d4526b7348f962c5f8a4ec",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "34",
+    "file": "AlgorithmDependencies/34.js",
+    "dependencies": {
+      "./core": 5,
+      "./sha512": 35,
+      "./x64-core": 37
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 901,
+    "sha256": "6bf5cb03b2b96b26cdf7b02b3b9f479e4df110453305b308fb62b317a61ff672",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "35",
+    "file": "AlgorithmDependencies/35.js",
+    "dependencies": {
+      "./core": 5,
+      "./x64-core": 37
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 6070,
+    "sha256": "9b8ede62e8e48a5fd3166ed46e667175711642ee306cfba419a7d2e9c52a4063",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "36",
+    "file": "AlgorithmDependencies/36.js",
+    "dependencies": {
+      "./cipher-core": 4,
+      "./core": 5,
+      "./enc-base64": 6,
+      "./evpkdf": 9,
+      "./md5": 14
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 12203,
+    "sha256": "30e2cf0323c5f3435f9720e6b4de264432041aa27cf7211d2a250b9a95e19be1",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "37",
+    "file": "AlgorithmDependencies/37.js",
+    "dependencies": {
+      "./core": 5
+    },
+    "classId": null,
+    "category": "bundled algorithm dependency",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 821,
+    "sha256": "2d65fe1e343123ff84586fc2b764fa699fb93e80c33dcfaf53b6453a6d0b6f4d",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "AccountCheckManager",
+    "file": "Modules/AccountCheckManager.js",
+    "dependencies": {},
+    "classId": "9d70eHlTp9MaK819yq7qs25",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1849,
+    "sha256": "38c49142da6847ef6586ca5498f8ed3e811dd45e89d7665cbf23fc01fcb1a2cb",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "AccountDetailsView",
+    "file": "Modules/AccountDetailsView.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "4da49ae6f1KfoMUK2WeXyG2",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5756,
+    "sha256": "3f1344cae258cc159a6ea79a9197539c0e9fa5c84dee551140480bddafa9e36c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "AdaptNotchScreen",
+    "file": "Modules/AdaptNotchScreen.js",
+    "dependencies": {},
+    "classId": "b263fmlKzNLN7Xsg2QNBAEG",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1769,
+    "sha256": "f86b420ac34b2e9904b18375584a8d818f2d690fc405d5dc85431d384c369f3e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "AudioManager",
+    "file": "Modules/AudioManager.js",
+    "dependencies": {},
+    "classId": "e6f16jqz9FMLpibKLER5yx8",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 790,
+    "sha256": "131c4d240f819687889744d5a6b1aee1b96cf00ee1b6cef5229d8f796f358282",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaoXiangFly",
+    "file": "Modules/BaoXiangFly.js",
+    "dependencies": {
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/GameManagement": "GameManagement"
+    },
+    "classId": "12f07SCnXhGUbN8cfcihv0u",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2293,
+    "sha256": "7501e8a356fd5fb0b733f48631b218d67dec16998b0e447757dd518b9a554e70",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaoXiangOkSpin",
+    "file": "Modules/BaoXiangOkSpin.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../Report/NativeCall": "NativeCall"
+    },
+    "classId": "11ec6tQOrFHlYdx80pSVTST",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2274,
+    "sha256": "c6652bb7afe6a09833066cf2534749e89f234ba6903183144fba0810189fba66",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaseRecord",
+    "file": "Modules/BaseRecord.js",
+    "dependencies": {},
+    "classId": "bb262Cqo3xCvJ+9mTWDWLR1",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 412,
+    "sha256": "270adac3b7b7cf738a172caf4efe81e747d1fe9f3e826262b5052080cef84a56",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaseScene",
+    "file": "Modules/BaseScene.js",
+    "dependencies": {},
+    "classId": "a43fbLHQ+hH1ZwtpkBSnQzb",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 389,
+    "sha256": "db5a5b3076f6d7f8b5ee769bffbf6937acbf6fde7ee0de1f192d436dd86f44a4",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaseTodayDataRecord",
+    "file": "Modules/BaseTodayDataRecord.js",
+    "dependencies": {
+      "../../Report/DateUtils": "DateUtils",
+      "./GameLocalData": "GameLocalData",
+      "./NewGamePlayData": "NewGamePlayData"
+    },
+    "classId": "120c5CxUJ9HBZ/LrM2SSwOE",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5349,
+    "sha256": "438f698f89f39e265f40b078dae898e3aa3dfdfff573f6036619cff3706971ac",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "BaseUI",
+    "file": "Modules/BaseUI.js",
+    "dependencies": {
+      "./EventListener/EventManager": "EventManager",
+      "./EventListener/LinkScript": "LinkScript",
+      "./UIConfig": "UIConfig",
+      "./UIManagerNew": "UIManagerNew"
+    },
+    "classId": "1d695x/0PtFTrOwiZHv/H6J",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4477,
+    "sha256": "259a19d9e68d445162722e74bfc4e8570cdc10774ce8ff73c65772f9f076d030",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CashTimeDialog",
+    "file": "Modules/CashTimeDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "bb0436lvs5O3rmvlXcbjt+S",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3938,
+    "sha256": "710f1af60ae16ea785141bc75e668efc75169fb97fffa939481d534862bbf216",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ChinaDialog",
+    "file": "Modules/ChinaDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "7756cTKRphNKLIiavtyFJ3D",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1516,
+    "sha256": "be12ed497b0f421c625fcdeae1047882299c5bb47f6f1f47e18998b0cf1ce8c1",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CircleProgress",
+    "file": "Modules/CircleProgress.js",
+    "dependencies": {},
+    "classId": "3bb33v+xVpKg6zDYoqG9tZW",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1679,
+    "sha256": "63b3661756658028f019e1dc3cf97307ae6685702152c73805c5c7810d01f5f5",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CoinItem",
+    "file": "Modules/CoinItem.js",
+    "dependencies": {
+      "./BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "./BaseUIManager/Storage/PlayData": "PlayData",
+      "./HWL/ServerConfig": "ServerConfig"
+    },
+    "classId": "cdd4chPxjlBea7Xn2092bM9",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 13864,
+    "sha256": "524c1b6dc3ae1b5524aa46d42e4cb319d1fff5723886cdcc98c51fb3c44ae6d0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CollectDialog",
+    "file": "Modules/CollectDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "./CollectSuccessDialog": "CollectSuccessDialog"
+    },
+    "classId": "c7617LpMHRG+piwK+TUMgc+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4552,
+    "sha256": "53fecbe4d5b54b4dbe75bc475439e6fd3b2bdd53a40886f7731a51cd05284a19",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CollectSuccessDialog",
+    "file": "Modules/CollectSuccessDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "fa0ca5xAbxBy5jn39XS4EOG",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2892,
+    "sha256": "532d285d20ef86542e61f20ee583bb78a55b6a605fc6dff4898767c263b86b5d",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CommonInterface",
+    "file": "Modules/CommonInterface.js",
+    "dependencies": {},
+    "classId": "55a53gFvPJFN7+efXzwVnSB",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 166,
+    "sha256": "852df3b3f65af0bfef3ffca9a47835b110da2ebb2abba9a8f3ad19fd0aeb8cc9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "CongratulationsViewNew",
+    "file": "Modules/CongratulationsViewNew.js",
+    "dependencies": {},
+    "classId": "8144flhHaFPaqPTN7b2bMU6",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 115,
+    "sha256": "d93db32820fcf8e34658fae414cba529e67a8b19c6e9dc13d8e86478e076d879",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "Controller",
+    "file": "Modules/Controller.js",
+    "dependencies": {},
+    "classId": "58b56wQ+zFKw5vCrJPK9KxQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 246,
+    "sha256": "7b5844ae9a0049aa470e5c480576aac478b043a6a393613f14b7032b9c0fe06e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "DateUtils",
+    "file": "Modules/DateUtils.js",
+    "dependencies": {},
+    "classId": "d786eMsEFFEG4FKRYXNS8FX",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2207,
+    "sha256": "213f00657497ee9c17c5214f920372183fe9f026e09a31e742d8d985d831e85f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "DebugComponent",
+    "file": "Modules/DebugComponent.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew"
+    },
+    "classId": "82de4T1DGpEkKEAyZS6oc5K",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1981,
+    "sha256": "47ecb9708c280ed4999119b265be4a9f76c3fa14b23aa1cc94ccd07c033c7d90",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "DebugDialog",
+    "file": "Modules/DebugDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "6347ftpZZJA/bKJMiTqADeR",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 7153,
+    "sha256": "29eea4d23b4fb88a97f3980d281218bebc58c2608c4cab1b4095164bbd94660a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "EventCenter",
+    "file": "Modules/EventCenter.js",
+    "dependencies": {
+      "../Storage/Singleton": "Singleton",
+      "./MKNotice": "MKNotice"
+    },
+    "classId": "26ee7wg7/pOAKAkdXSq/9iI",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1627,
+    "sha256": "1edff3f51d0f37153b3c15db5e2c74853b532bf2d27815d92233e74364bc82c9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "EventManager",
+    "file": "Modules/EventManager.js",
+    "dependencies": {},
+    "classId": "e831aDxtCRN87KUq7bv2OQh",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1090,
+    "sha256": "cedb94f3991d33712ba13318e106c82f0a21f241462a13ce3b7be0696319796f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "FailDialog",
+    "file": "Modules/FailDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/Lab": "Lab",
+      "./RewardDialog": "RewardDialog"
+    },
+    "classId": "7d8dfcsiFtHHq6eTEbbJqMf",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4073,
+    "sha256": "e81e288b9c011c31e88a5371e0b92e2eadb07722cb0d848fa44e5093e5284ff9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "FlyAnimation",
+    "file": "Modules/FlyAnimation.js",
+    "dependencies": {
+      "../Report/NativeCall": "NativeCall",
+      "../game/UI_TopRewardLayer": "UI_TopRewardLayer",
+      "./EventListener/EventCenter": "EventCenter",
+      "./Storage/GameEventConsts": "GameEventConsts",
+      "./Storage/GameLocalData": "GameLocalData",
+      "./Storage/NewGamePlayData": "NewGamePlayData",
+      "./Storage/SoundManager": "SoundManager",
+      "./UIConfig": "UIConfig",
+      "./UIManagerNew": "UIManagerNew"
+    },
+    "classId": "ddc501F+pROSY5JIdP0Ep4D",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 6339,
+    "sha256": "fa060a9e58e6251525348d3d9020e0c0538acba09245e792a062c3d768e7314a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "FontView",
+    "file": "Modules/FontView.js",
+    "dependencies": {
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "828a89/o+lD2o7BDeEFbGzx",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1357,
+    "sha256": "c34ea4f26580f19d69b82f1818b7c0284bc70408fe9cc2b369d362dfef029998",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameClickManager",
+    "file": "Modules/GameClickManager.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/ResManager": "ResManager",
+      "../BaseUIManager/Storage/Singleton": "Singleton",
+      "./GameClickSpine": "GameClickSpine"
+    },
+    "classId": "67fb3/BdUtI5Il0EwYPjjXP",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1772,
+    "sha256": "2e56d4d09f2d3b1f9c868f7cff4099d2b1a3328752450f402a90beb6a3681c09",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameClickSpine",
+    "file": "Modules/GameClickSpine.js",
+    "dependencies": {
+      "../BaseUIManager/UIUtils": "UIUtils",
+      "./GameClickManager": "GameClickManager"
+    },
+    "classId": "28f1cmQSUJHQp6fgSDTaANH",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1076,
+    "sha256": "fff5476a2fe3b8d63f081462894d2d2b49356f9d62bcf5531f861dfbbb361f71",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameEventConsts",
+    "file": "Modules/GameEventConsts.js",
+    "dependencies": {},
+    "classId": "5cb7eggs15IZZF/ba1QJ41F",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 792,
+    "sha256": "7d79c4f89418ad887e8724e77231457a2aa05d20016c11feea60c675ea5061b6",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameFakeWDDialog",
+    "file": "Modules/GameFakeWDDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../WithDraw/GameRealWDActiveTips": "GameRealWDActiveTips",
+      "./GameFakeWDItem": "GameFakeWDItem"
+    },
+    "classId": "94bf9cFdKtMOpmEFi9uXZm7",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5912,
+    "sha256": "5cdfdc7c7ed1faadb3aa78f8aebecc52f4f4e78b17287d073f01b46504e30109",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameFakeWDItem",
+    "file": "Modules/GameFakeWDItem.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "828fa1heI1JZrDtwrOIJ5qr",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3113,
+    "sha256": "5eec40732fad2a3248279a73696b1a0836335237c7a41e9d917c7b6abe1d8985",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameLocalData",
+    "file": "Modules/GameLocalData.js",
+    "dependencies": {
+      "./PlayData": "PlayData",
+      "./Singleton": "Singleton",
+      "./UserDefaultManager": "UserDefaultManager"
+    },
+    "classId": "799007kX09IIp0mkDMgpcVG",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2949,
+    "sha256": "8f66590c9f77a0a5e8ccbc674118221c558182783c0c5b306d45c62e2f559b11",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameManagement",
+    "file": "Modules/GameManagement.js",
+    "dependencies": {
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../HWL/ServerConfig": "ServerConfig"
+    },
+    "classId": "bda10BvToFIobdRuKG5cJ4w",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 19400,
+    "sha256": "d899e5ffac3d1b8331315f51905161b9cc8e22c94b6d213aac941bd3637a399a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameObjectFlyTo",
+    "file": "Modules/GameObjectFlyTo.js",
+    "dependencies": {
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "b8a67IH6+1DmaaC4uENOrgt",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1013,
+    "sha256": "4f96a598e1418304d60e272430db18e9a8bb444666f09d2b2143e0c3431ec2fb",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealTXYZ",
+    "file": "Modules/GameRealTXYZ.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../game/UI_TopRewardLayer": "UI_TopRewardLayer",
+      "./GameRealWDActiveTips": "GameRealWDActiveTips",
+      "./GameRealWDDialog": "GameRealWDDialog"
+    },
+    "classId": "e44dcjlfIxFwozYs342510p",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 9521,
+    "sha256": "09c9ff000ce7649771c072443ae7ff3af0330e0edc43a00c2fc9ee4a2a4d86e1",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDADIDTips",
+    "file": "Modules/GameRealWDADIDTips.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/Lab": "Lab",
+      "../Report/NativeCall": "NativeCall"
+    },
+    "classId": "27c699oFrZEN5WZ4MB3PLhM",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1790,
+    "sha256": "0ad69b8f348b3e62300e493c4dce291b62c2309a7c9ed313c0d361cc0f9316c2",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDAccountBR",
+    "file": "Modules/GameRealWDAccountBR.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "./AccountCheckManager": "AccountCheckManager",
+      "./GameRealWDDialog": "GameRealWDDialog"
+    },
+    "classId": "6e7319A1XtHf6EpdaFmPjUO",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 7814,
+    "sha256": "e1995f582746a6275ea36def9de2f91c00dc5cf6f30fd5dacb133fb1d73c3364",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDAccountID",
+    "file": "Modules/GameRealWDAccountID.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "./AccountCheckManager": "AccountCheckManager",
+      "./GameRealWDDialog": "GameRealWDDialog"
+    },
+    "classId": "5747emnmN9BiKAry+SBYm0X",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 7167,
+    "sha256": "f2e5d2a14ce18320ba42b9989e1baf71e994859f075249c92f36fe42208a33ea",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDAccount",
+    "file": "Modules/GameRealWDAccount.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/Lab": "Lab",
+      "./AccountCheckManager": "AccountCheckManager"
+    },
+    "classId": "3d2a3YZqD5OLJ+ysE4b5Kjc",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3398,
+    "sha256": "886886011beb1bd69097554dc0d619147f06ddcef8251b969b235a7389a95b28",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDActiveTips",
+    "file": "Modules/GameRealWDActiveTips.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "ef5f7YVU0FAZYsPHrQuLxN0",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1922,
+    "sha256": "c19efd05ead6550bd30b89474c3d6a6a396bc04a13f284ea6c8986b7ed006b25",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDDialog",
+    "file": "Modules/GameRealWDDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../Report/NativeCall": "NativeCall",
+      "../game/GameWithdrawItem": "GameWithdrawItem"
+    },
+    "classId": "f1d67UEXnlPRqBzqbYfRDiw",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 9273,
+    "sha256": "19a05fddbdc3039911c9014bfdfbe9ac029e607f723cff7b6e615166dc27b42c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDEmailOccupy",
+    "file": "Modules/GameRealWDEmailOccupy.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "ffeb2BA+UxFqILsGIBcd29J",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1656,
+    "sha256": "0825a311193897bcc943c5e63d1d89a3ac2e8ec218f3c668fcbbc837cf084f0a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDHelp",
+    "file": "Modules/GameRealWDHelp.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "f142cGUKoNDQrxShxNR7/ok",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1272,
+    "sha256": "aaf18a124cf53071e4caf0417bd1f66db8f841e2fe04d2f36896f1c2f6728383",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDItem",
+    "file": "Modules/GameRealWDItem.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "5b337VhB7FDELcsMEsvurZX",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1851,
+    "sha256": "5f0861d84a6edeb0cfb7868242713407302be7aa44ddb4aea20c624bcde89992",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDRecordItem",
+    "file": "Modules/GameRealWDRecordItem.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "e0aa9cHA7JEWY95OrkY+hoK",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4503,
+    "sha256": "ac8d78ae186b611ca0731c256b9d2956a67d5824a493b69a8e739133e7efeedc",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDRecord",
+    "file": "Modules/GameRealWDRecord.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/Lab": "Lab",
+      "./GameRealWDRecordItem": "GameRealWDRecordItem"
+    },
+    "classId": "decb6Lh461CSLj5j9V9+BVS",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5188,
+    "sha256": "b70778ba24d8daf92084a1799d561e9a494e2d43999846de162e798bb5410406",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDTXSuccess",
+    "file": "Modules/GameRealWDTXSuccess.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "be3f6PF+ftIyrrgEGSn/u3f",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1823,
+    "sha256": "e58a091f314a3c5e40c6b1c3bf6e3f5a858e49d9f9fc97adc8d106ce08bdb599",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameRealWDTXTips",
+    "file": "Modules/GameRealWDTXTips.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "2319cvN5GdPbo9o0vIt5Dp9",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3977,
+    "sha256": "4b00d26fef74d0e6e4eb83ae5164bf31bd58c34790deff7cb693b40c777c09f9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameScene",
+    "file": "Modules/GameScene.js",
+    "dependencies": {
+      "./BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "./BaseUIManager/Storage/PlayData": "PlayData",
+      "./BaseUIManager/Storage/SoundManager": "SoundManager",
+      "./BaseUIManager/Storage/TouchButton": "TouchButton",
+      "./BaseUIManager/UIManagerNew": "UIManagerNew",
+      "./CoinItem": "CoinItem",
+      "./HWL/HWL_TStool": "HWL_TStool",
+      "./HWL/ServerConfig": "ServerConfig",
+      "./LanguageControl/DebugDialog": "DebugDialog",
+      "./LanguageControl/GameManagement": "GameManagement",
+      "./LanguageControl/Lab": "Lab",
+      "./WithDraw/GameRealWDDialog": "GameRealWDDialog",
+      "./common/GameUtils": "GameUtils",
+      "./game/FailDialog": "FailDialog",
+      "./game/GameFakeWDDialog": "GameFakeWDDialog",
+      "./game/GuideDialog": "GuideDialog",
+      "./game/HtmlDialog": "HtmlDialog",
+      "./game/LuckDrawDialog": "LuckDrawDialog",
+      "./game/RewardDialog": "RewardDialog",
+      "./game/ScoreDialog": "ScoreDialog",
+      "./game/SettingDialog": "SettingDialog",
+      "./game/mergeRuleDialog": "mergeRuleDialog"
+    },
+    "classId": "b29e7YqrYBOBY7dpeJAAkIx",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 73952,
+    "sha256": "935bbbdd84fb3dcd36f4f03bb5096210ccdfbe72ef748fecdfe81667c7fe7db9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameUtils",
+    "file": "Modules/GameUtils.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/Singleton": "Singleton",
+      "../LanguageControl/GameManagement": "GameManagement"
+    },
+    "classId": "3eac2BSwNxI8pireFFshRVn",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 7339,
+    "sha256": "829cb5c5dbb0c848c8e770fa64dee2a3cd9b73c0a886a78709db820f5eba3187",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameWDValidate1",
+    "file": "Modules/GameWDValidate1.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "c03bbXmoPNAM4u7nUMRzmH+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2233,
+    "sha256": "2450084d9caec9c880217a6743b231668fe107e24952211d61d7afe899f2196e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameWDValidate2",
+    "file": "Modules/GameWDValidate2.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../WithDraw/GameRealWDDialog": "GameRealWDDialog"
+    },
+    "classId": "41eccpsYg1MSoKGvxX4hiqo",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4561,
+    "sha256": "c07501d5323c855d9ca1e4c8734d9082e7d3dbb2f1feeff6c803978d57a0f325",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameWithdrawDialog",
+    "file": "Modules/GameWithdrawDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/ResManager": "ResManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "./GameWithdrawItem": "GameWithdrawItem"
+    },
+    "classId": "46c6dHgLvlId6wKAcEer0kW",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 9223,
+    "sha256": "e054c3673fbd8272ffc216b119a2185a9c6cda59307af11f9d72c107265991b0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GameWithdrawItem",
+    "file": "Modules/GameWithdrawItem.js",
+    "dependencies": {
+      "../LanguageControl/GameManagement": "GameManagement"
+    },
+    "classId": "4ec23dGqBZBAKQq6cEsBH5q",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1458,
+    "sha256": "db48618fa79bf83e7a034f7fd857c74a9be02b0a9bc267c6586ce0e4cddc5a24",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GuideDialog",
+    "file": "Modules/GuideDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "./RewardDialog": "RewardDialog"
+    },
+    "classId": "7e64e2X2spIOKP/OXDwaKMQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 9101,
+    "sha256": "e47488ec6be9c74450e7007ab53a63ee561827ac53a51121d5066cf8f4698f41",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "GuidePropsDialog",
+    "file": "Modules/GuidePropsDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "e8965QjwrVKdZTDiUYGuv0+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2020,
+    "sha256": "3129284ff6ef3ff2295a370caf7b019415927813a2df570ed93f976f44116cfa",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "HWL_TStool",
+    "file": "Modules/HWL_TStool.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/Lab": "Lab",
+      "./ServerConfig": "ServerConfig",
+      "crypto-js": 12
+    },
+    "classId": "e8045w7xxRBIrOiS6W9oXf9",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 14003,
+    "sha256": "23294b99b6ca721d40c81163f11b40da915b898f077effd1f61980a3cd4be05b",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "HtmlBtn",
+    "file": "Modules/HtmlBtn.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../HWL/ServerConfig": "ServerConfig"
+    },
+    "classId": "108fc2cdhJJNZGMIttjUfh+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3173,
+    "sha256": "1002703fecd4085d233077c3e06595f4790486f13074dba91129a5e8a761aae0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "HtmlDialog",
+    "file": "Modules/HtmlDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/Lab": "Lab",
+      "./HtmlItem": "HtmlItem"
+    },
+    "classId": "8f0dfVMes9ChpnVds/91H8a",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3264,
+    "sha256": "6e0066ce1e3016b4d40bec12fbb41ba2774ae113000405d2e5ea1204a29f28f2",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "HtmlItem",
+    "file": "Modules/HtmlItem.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../GameScene": "GameScene",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/Lab": "Lab",
+      "../Report/NativeCall": "NativeCall",
+      "../common/GameUtils": "GameUtils",
+      "./HtmlBtn": "HtmlBtn"
+    },
+    "classId": "10541TTvkdNCYC011er+44E",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 6868,
+    "sha256": "b093360e20524e324df954d20058abce80909b4a08eee4ba2d0ff775c17236d4",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ImagesPanel",
+    "file": "Modules/ImagesPanel.js",
+    "dependencies": {},
+    "classId": "658043FPBdJWpjjTasnP92n",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1534,
+    "sha256": "382cd2e408b00d9bc1f3b717573dcfe8a0bc071ef3de58cd55c1bb8642fe4bfb",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "JBlab",
+    "file": "Modules/JBlab.js",
+    "dependencies": {},
+    "classId": "c190buIb55Iz7YnrBO178fD",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1636,
+    "sha256": "9bd079f0f8c15626df1c2439c9e0cddfa1675ee150b5b33b09c1bd6a3fca55c0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "Lab",
+    "file": "Modules/Lab.js",
+    "dependencies": {
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "2958djucVhM1oVSYkoABSUD",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1587,
+    "sha256": "e6eada50b4d6fbd0aa1f8b5be6bb7c84fe0ae15e49dba6a453e1fe2ddf9de4f6",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LanguageDialog",
+    "file": "Modules/LanguageDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/EventListener/EventCenter": "EventCenter",
+      "../BaseUIManager/Storage/GameEventConsts": "GameEventConsts",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "5c78d5tq0dCbIRbz4aGnsHW",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2598,
+    "sha256": "4c3af44133415d530965fec080c48f666b9e743fbb11aac6ba1946474f0f8132",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LinkScript",
+    "file": "Modules/LinkScript.js",
+    "dependencies": {
+      "../UIConfig": "UIConfig"
+    },
+    "classId": "afef1tYdPhMjaODgRIJTJ1m",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 740,
+    "sha256": "362bf43d677d1f6577ffa86001196ce40c9633a9e78d3a4b41d59ce2538240ad",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LoadAllResources",
+    "file": "Modules/LoadAllResources.js",
+    "dependencies": {
+      "./ResManager": "ResManager",
+      "./Singleton": "Singleton"
+    },
+    "classId": "c6776SSNdROIboBy6ZhS1nO",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2880,
+    "sha256": "d9af1c149b4bf58c261848e24f4f4cd29927c875caaf11308d209a36cd15527e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LoaderCoinSprite",
+    "file": "Modules/LoaderCoinSprite.js",
+    "dependencies": {
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "d69e3xwokpN0oBzR++PtqB1",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1306,
+    "sha256": "f77ee153102c9d5e144588a7d10e36bcd860f7abb4a568c35fa5bd8c127167c3",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LoaderRealCoinSprite",
+    "file": "Modules/LoaderRealCoinSprite.js",
+    "dependencies": {
+      "./GameManagement": "GameManagement"
+    },
+    "classId": "06500OwCRlGAr7owZhvXZf/",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1451,
+    "sha256": "9dacbf2c05ff3420564e8fbeeb10c86a8312843ff6d7a97b18f8ffd5e23d2608",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LoadingScene",
+    "file": "Modules/LoadingScene.js",
+    "dependencies": {
+      "./BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "./BaseUIManager/Storage/LoadAllResources": "LoadAllResources",
+      "./BaseUIManager/UIConfig": "UIConfig",
+      "./BaseUIManager/UIManagerNew": "UIManagerNew",
+      "./HWL/ServerConfig": "ServerConfig",
+      "./LanguageControl/GameManagement": "GameManagement",
+      "./Report/NativeCall": "NativeCall"
+    },
+    "classId": "665ebp+/hVHM53pKfrQzbkl",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 10064,
+    "sha256": "11526933662724b93182cf68965b60b5049ee810892428f0d1bdf5fc608f0e7c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LogUtils",
+    "file": "Modules/LogUtils.js",
+    "dependencies": {},
+    "classId": "d39a0ZicgVJrIUwjndBpX1G",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 947,
+    "sha256": "77d8f2aa60ca2af223994259cbc7a7132a0757be72bb3a6d7c49c96585eab248",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LuckDrawDialog",
+    "file": "Modules/LuckDrawDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../GameScene": "GameScene",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../common/GameUtils": "GameUtils",
+      "./LuckyDrawRewardDialog": "LuckyDrawRewardDialog"
+    },
+    "classId": "f4f6fPXsgdDJoGWz/Z75qu/",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4884,
+    "sha256": "035a5eafef7391984b2ebdb56af9c673575e7ce4589ebf417a6ec7380004d9a8",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "LuckyDrawRewardDialog",
+    "file": "Modules/LuckyDrawRewardDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../common/GameUtils": "GameUtils"
+    },
+    "classId": "0012fFDtw1OsZHNzm3p9sC/",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 6392,
+    "sha256": "292feedde49748a15e42a7f268bd8afa6ffbde965835adc542d3e13efbd391b0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "MKNoticeConsts",
+    "file": "Modules/MKNoticeConsts.js",
+    "dependencies": {
+      "../EventListener/MKNotice": "MKNotice",
+      "./GameEventConsts": "GameEventConsts"
+    },
+    "classId": "d44e8dQm8dNbLmvL3qFYUEU",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 778,
+    "sha256": "354ac9b89761ef7e8bd1462935828407cab26f87cda47b6ba7f1b6be522152a3",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "MKNotice",
+    "file": "Modules/MKNotice.js",
+    "dependencies": {},
+    "classId": "52cd3fcTWREopeExOnKoZpS",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 677,
+    "sha256": "1f8bc695e7af4ede76c98bcb620d531e394b9be5612e802143e709c9791d9e1c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "NativeCall",
+    "file": "Modules/NativeCall.js",
+    "dependencies": {
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/GameManagement": "GameManagement"
+    },
+    "classId": "9ef572Cb05PfoTmsMDcLDTC",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2895,
+    "sha256": "32585636aa45b734a8e2e3d6f6e9895f6ffda43fde9ad8987b28d751e9ba5dbd",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "NewGamePlayData",
+    "file": "Modules/NewGamePlayData.js",
+    "dependencies": {
+      "../../HWL/ServerConfig": "ServerConfig",
+      "../../LanguageControl/GameManagement": "GameManagement",
+      "../../Report/NativeCall": "NativeCall",
+      "./GameLocalData": "GameLocalData"
+    },
+    "classId": "6c168kdq49BZbjpIRA5XkHG",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4245,
+    "sha256": "46aa4527c889832d93aed4c795ef1bdc437e578d487a2425c068ad6d13ce0481",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "PlatformLoader",
+    "file": "Modules/PlatformLoader.js",
+    "dependencies": {
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/GameManagement": "GameManagement"
+    },
+    "classId": "b85799V1dJC7ZpCaCv8cxzU",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1799,
+    "sha256": "a0613f2697ad8e55c810a87b0ca9dd414df8eab02878a9c649509e3409f73d65",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "PlayData",
+    "file": "Modules/PlayData.js",
+    "dependencies": {
+      "./GameLocalData": "GameLocalData"
+    },
+    "classId": "22ec2+TAoJGtpf7g6liXvKr",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2471,
+    "sha256": "9ef92b6c7f945044a28fbc5e15f38f9fec34bd5ec66e394e9548be338481bcd4",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "PreviewSpine",
+    "file": "Modules/PreviewSpine.js",
+    "dependencies": {},
+    "classId": "28d8d6/vcBKQrzJRpS4YaAw",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 105,
+    "sha256": "eb5e46e62e55aaad1163e1aa60a56d60cd4092805f798717dc30980a88b6d4d1",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "PrivacyPolicyView",
+    "file": "Modules/PrivacyPolicyView.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "4aae9XNfglH+IBktNP67JiA",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1660,
+    "sha256": "126787838ec15b853f9618b012a789ade59dddb70166f3ba2e7f3def756112b0",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ResManager",
+    "file": "Modules/ResManager.js",
+    "dependencies": {},
+    "classId": "1560egr9bNGO6j+Ixp3cBFk",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2307,
+    "sha256": "3b59b8321c83ab9b14d554a9ece0967cf937ae22132a49cab2e05c38ed9d522f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "RewardDialog",
+    "file": "Modules/RewardDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../common/GameUtils": "GameUtils",
+      "./GuideDialog": "GuideDialog",
+      "./ScoreDialog": "ScoreDialog"
+    },
+    "classId": "820d7wko5lHeazUlAuIrJ/y",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 7150,
+    "sha256": "aacb111bd494afcc6f91b971e4c8a17b5d3ed39b95a940b10932525513287331",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "RewardRealToast",
+    "file": "Modules/RewardRealToast.js",
+    "dependencies": {
+      "./BaseUI": "BaseUI",
+      "./Storage/GameLocalData": "GameLocalData",
+      "./Storage/PlayData": "PlayData"
+    },
+    "classId": "e7a9bOSpDhLoq/1qzpLgsqm",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1599,
+    "sha256": "1dead30a7ec50abd7da8cd709e9aacd45c36ace388524ec5e2938619b7b62350",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "RewardToast",
+    "file": "Modules/RewardToast.js",
+    "dependencies": {
+      "../LanguageControl/GameManagement": "GameManagement",
+      "./BaseUI": "BaseUI"
+    },
+    "classId": "a4dd6MfrmxPJpV/JSYVP+oP",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1479,
+    "sha256": "30a326ea31c8bbb32c8e878e2ae3bd37c35deb7855f2c5ab529598bce3dea4e9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ScoreDialog",
+    "file": "Modules/ScoreDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/ServerConfig": "ServerConfig",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "b5537mriERGJIi6Jl8l6NYV",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2725,
+    "sha256": "7dbaf0664df8651e354e22de8e3840b957b50c8160dbb37e134991ae48fca865",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ServerConfig",
+    "file": "Modules/ServerConfig.js",
+    "dependencies": {
+      "../LanguageControl/GameManagement": "GameManagement",
+      "./HWL_TStool": "HWL_TStool"
+    },
+    "classId": "9f95eg5l6tASIGjwYy3lkbf",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 15621,
+    "sha256": "d5b449289ead936610dd9b08ae7840cfa3f2890d4cd173fec1a455da781ad9d9",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "SettingDialog",
+    "file": "Modules/SettingDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/PlayData": "PlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "b9246PTLYdOu6sfrLjwvVTL",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4470,
+    "sha256": "316f3ca7d2986dce7041292e31406e27d06811739479456a1b658a0fa877310a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "Singleton",
+    "file": "Modules/Singleton.js",
+    "dependencies": {},
+    "classId": "38f56XeLxdE8ZUbItEE2//d",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 328,
+    "sha256": "256e758f90da37d15961b0ce38da32d510c66a376bb1f67416eb3cb83ce07338",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "SoundManager",
+    "file": "Modules/SoundManager.js",
+    "dependencies": {
+      "./AudioManager": "AudioManager",
+      "./GameLocalData": "GameLocalData",
+      "./LoadAllResources": "LoadAllResources",
+      "./PlayData": "PlayData"
+    },
+    "classId": "592fb/d/ZFAqZQD5HqYZiEm",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3082,
+    "sha256": "167608bac941c8e56d700ed1f3d235ff7f6053af3fb9d351d6fb72be9c20e156",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "SuccessDialog",
+    "file": "Modules/SuccessDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../HWL/HWL_TStool": "HWL_TStool",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "d80e5LJRVVGca2w2dCYt3ZJ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 5160,
+    "sha256": "87b16c664add9429638793f9be74a001f8fd42783e8c90356833f6bfb902d928",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "Toast",
+    "file": "Modules/Toast.js",
+    "dependencies": {
+      "./BaseUI": "BaseUI"
+    },
+    "classId": "e7d550eQPFDEZrFWauHgtlE",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2134,
+    "sha256": "0a0fa61d70299fa4c52900a334f7344e32a681f791240fd3d45d66ed147eda4a",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "TouchButton",
+    "file": "Modules/TouchButton.js",
+    "dependencies": {
+      "./SoundManager": "SoundManager"
+    },
+    "classId": "878c1RoNyJLx5zOQYZsegWz",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 2368,
+    "sha256": "b1d088e2a6b09442bb591335f08458ef2d8493f57b4f8be361443ee2a3d1275f",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UIConfig",
+    "file": "Modules/UIConfig.js",
+    "dependencies": {},
+    "classId": "b616co+ObBJVLKlYsA78Ltk",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 292,
+    "sha256": "120d5563f50d35e1c06d78191d3b1230eabc4e9b29c023e570ee140ea24d321e",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UIManagerNew",
+    "file": "Modules/UIManagerNew.js",
+    "dependencies": {
+      "./UIConfig": "UIConfig"
+    },
+    "classId": "df2d0wgwvRPRq85p47v+kIp",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 4185,
+    "sha256": "b5fef0d8e8976297d10faeccdc1f3ddece3e732e7302a038d1891bbb9eacf0b1",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UIUtils",
+    "file": "Modules/UIUtils.js",
+    "dependencies": {
+      "./LogUtils": "LogUtils",
+      "./Storage/ResManager": "ResManager",
+      "./Storage/Singleton": "Singleton"
+    },
+    "classId": "006bfER66ZP/6NYjTlUxAiS",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1619,
+    "sha256": "e4dee4e2a066d6800742171f1c1df6fd7e0eda40bc81bc4ab6eaa5d87ed2d84c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UI_TopRewardLayer",
+    "file": "Modules/UI_TopRewardLayer.js",
+    "dependencies": {
+      "../BaseUIManager/EventListener/EventCenter": "EventCenter",
+      "../BaseUIManager/Storage/GameEventConsts": "GameEventConsts",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../BaseUIManager/UIConfig": "UIConfig",
+      "../BaseUIManager/UIManagerNew": "UIManagerNew",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab",
+      "../Report/NativeCall": "NativeCall",
+      "./SettingDialog": "SettingDialog"
+    },
+    "classId": "d84d5A/JnZAHrbpYzfXJpGb",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 12181,
+    "sha256": "072fe55c2ee737aa1a8f9f556ac21af0aac0b628501c8b672fb92c0f714ca472",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UpdateDialog",
+    "file": "Modules/UpdateDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab",
+      "../Report/NativeCall": "NativeCall"
+    },
+    "classId": "93169cRaBBO2Jmn/2NmnozC",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1913,
+    "sha256": "2fea1a38eba31d9bd928f0fedb12a7b6d0621a3bbb208eb58cf06cbd160e8975",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "UserDefaultManager",
+    "file": "Modules/UserDefaultManager.js",
+    "dependencies": {},
+    "classId": "95cedyMfelLWZ+CwYb46W8K",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 543,
+    "sha256": "a832444b1bed086d473f5faef381453857e579cf226e435373fdb2af8e48d5d5",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "WinRewardView",
+    "file": "Modules/WinRewardView.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/FlyAnimation": "FlyAnimation",
+      "../BaseUIManager/Storage/GameLocalData": "GameLocalData",
+      "../BaseUIManager/Storage/NewGamePlayData": "NewGamePlayData",
+      "../BaseUIManager/Storage/SoundManager": "SoundManager",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/GameManagement": "GameManagement",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "26625Y3ZHFMGpirsxPrKa3H",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 3151,
+    "sha256": "141731e696060cb5f8e24d1c846ec1ba8b2a0ff0a4d7b27ca5d3de3275b3dfee",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "WithDrawPlatfrom",
+    "file": "Modules/WithDrawPlatfrom.js",
+    "dependencies": {},
+    "classId": "db0fe5Z66VGuJmmVrVjjEXl",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 10389,
+    "sha256": "c22ab6fe49c26f73baa3a36bb8654a2ddc38b6dcb37a870aa890bfa884be1195",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "mergeRuleDialog",
+    "file": "Modules/mergeRuleDialog.js",
+    "dependencies": {
+      "../BaseUIManager/BaseUI": "BaseUI",
+      "../BaseUIManager/Storage/TouchButton": "TouchButton",
+      "../LanguageControl/Lab": "Lab"
+    },
+    "classId": "7a2fcJdLwFDHrK53O8wMUcC",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1913,
+    "sha256": "30f68240d3e5db38c7adef15106bbd1ac1a885d27adeb60f525cc521ca73919c",
+    "variant": "HotUpdate"
+  },
+  {
+    "name": "ts",
+    "file": "Modules/ts.js",
+    "dependencies": {},
+    "classId": "22828ZTS79Cvo2sSgaS4Myv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/runtime_adaljkjf/assets/main/index.9a050.js",
+    "bodyBytes": 1832,
+    "sha256": "52cf9dc76f4235baef5b74857b136b9da3ac644c4cb8f7e4c330e129d77beaa2",
+    "variant": "HotUpdate"
+  }
+]

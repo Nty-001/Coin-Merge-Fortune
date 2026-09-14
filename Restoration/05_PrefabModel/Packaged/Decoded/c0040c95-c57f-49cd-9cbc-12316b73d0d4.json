@@ -1,0 +1,62 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.EffectAsset",
+      "_name": "builtin-clear-stencil",
+      "shaders": [
+        {
+          "hash": 2075641479,
+          "record": null,
+          "name": "builtin-clear-stencil|vs|fs",
+          "glsl3": {
+            "vert": "\nprecision highp float;\nin vec3 a_position;\nvoid main () {\n  gl_Position = vec4(a_position, 1);\n}",
+            "frag": "\nprecision highp float;\nvoid main () {\n  gl_FragColor = vec4(1.0);\n}"
+          },
+          "glsl1": {
+            "vert": "\nprecision highp float;\nattribute vec3 a_position;\nvoid main () {\n  gl_Position = vec4(a_position, 1);\n}",
+            "frag": "\nprecision highp float;\nvoid main () {\n  gl_FragColor = vec4(1.0);\n}"
+          },
+          "builtins": {
+            "globals": {
+              "blocks": [],
+              "samplers": []
+            },
+            "locals": {
+              "blocks": [],
+              "samplers": []
+            }
+          },
+          "defines": [],
+          "blocks": [],
+          "samplers": []
+        }
+      ],
+      "techniques": [
+        {
+          "passes": [
+            {
+              "program": "builtin-clear-stencil|vs|fs",
+              "blendState": {
+                "targets": [
+                  {
+                    "blend": true
+                  }
+                ]
+              },
+              "rasterizerState": {
+                "cullMode": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "uuid": "c0040c95-c57f-49cd-9cbc-12316b73d0d4",
+  "source": "export_20260914/unpacked/base/assets/assets/internal/import/0b/0b6c4470e.9537f.json",
+  "paths": [
+    "effects/builtin-clear-stencil"
+  ]
+}

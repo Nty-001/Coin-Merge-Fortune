@@ -1,0 +1,504 @@
+[
+  {
+    "name": "AddHeartView",
+    "file": "Modules/AddHeartView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../Game/Utils": "Utils",
+      "../GameScene": "GameScene"
+    },
+    "classId": "7e3a3gRQiJLrrLy9944vKcH",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2367
+  },
+  {
+    "name": "AudioManager",
+    "file": "Modules/AudioManager.js",
+    "dependencies": {},
+    "classId": "6ef6bD61yxLu6p/WIbT++ep",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 644
+  },
+  {
+    "name": "BaseRecord",
+    "file": "Modules/BaseRecord.js",
+    "dependencies": {},
+    "classId": "bdca0Q0Dt5Hq4wKs//14qrm",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 390
+  },
+  {
+    "name": "BaseUI",
+    "file": "Modules/BaseUI.js",
+    "dependencies": {
+      "./UIManager": "UIManager"
+    },
+    "classId": "35d03Mv0U9FQJTwc/zvyIV4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1778
+  },
+  {
+    "name": "BlockUtils",
+    "file": "Modules/BlockUtils.js",
+    "dependencies": {
+      "./Block": "Block",
+      "./PoolManager": "PoolManager",
+      "./Utils": "Utils"
+    },
+    "classId": "bf6cfka9uBPAZcvwmqaqzHM",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1908
+  },
+  {
+    "name": "Block",
+    "file": "Modules/Block.js",
+    "dependencies": {
+      "../ATools/SoundManager": "SoundManager",
+      "./BlockUtils": "BlockUtils",
+      "./LevelManager": "LevelManager",
+      "./PoolManager": "PoolManager",
+      "./Wall": "Wall"
+    },
+    "classId": "4bdd29QO2lBM5i94uj0TE4V",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 7519
+  },
+  {
+    "name": "EventCenter",
+    "file": "Modules/EventCenter.js",
+    "dependencies": {},
+    "classId": "11aa0/IGkZLs4CYvJaMzLaE",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1478
+  },
+  {
+    "name": "FailureView",
+    "file": "Modules/FailureView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../Game/LevelManager": "LevelManager",
+      "../GameScene": "GameScene"
+    },
+    "classId": "11c9fWNcqhH4JiE3t6Zxg9C",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2117
+  },
+  {
+    "name": "GameEventConsts",
+    "file": "Modules/GameEventConsts.js",
+    "dependencies": {},
+    "classId": "f6949VAkcJFg5tLYeuNBIfv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 591
+  },
+  {
+    "name": "GameMapLayer",
+    "file": "Modules/GameMapLayer.js",
+    "dependencies": {
+      "../ATools/TouchButton": "TouchButton",
+      "../GameScene": "GameScene",
+      "./LevelManager": "LevelManager",
+      "./PhysicsManager": "PhysicsManager",
+      "./Wall": "Wall"
+    },
+    "classId": "df800HSMZFIUIexUBkafTz+",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 4257
+  },
+  {
+    "name": "GameMapTouch",
+    "file": "Modules/GameMapTouch.js",
+    "dependencies": {},
+    "classId": "5a8d2hF7GJO2apv5N2IPeY6",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1501
+  },
+  {
+    "name": "GameMenu",
+    "file": "Modules/GameMenu.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "2d3c6iRBbRFqLCuf/c5oAjR",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2102
+  },
+  {
+    "name": "GameModel",
+    "file": "Modules/GameModel.js",
+    "dependencies": {
+      "./BaseRecord": "BaseRecord",
+      "./EventCenter": "EventCenter",
+      "./GameEventConsts": "GameEventConsts",
+      "./LocalDataManager": "LocalDataManager"
+    },
+    "classId": "3256aK6RsBBibgOsFHktWKM",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2806
+  },
+  {
+    "name": "GameScene",
+    "file": "Modules/GameScene.js",
+    "dependencies": {
+      "./ATools/BaseUI": "BaseUI",
+      "./ATools/EventCenter": "EventCenter",
+      "./ATools/GameEventConsts": "GameEventConsts",
+      "./ATools/LocalDataManager": "LocalDataManager",
+      "./ATools/SoundManager": "SoundManager",
+      "./ATools/UIManager": "UIManager",
+      "./Game/LevelManager": "LevelManager"
+    },
+    "classId": "1e715AvPr9LvLFJE2giP6tP",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1782
+  },
+  {
+    "name": "Game",
+    "file": "Modules/Game.js",
+    "dependencies": {},
+    "classId": "1b8e3j3XAZFgInFqs08Dbrj",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 721
+  },
+  {
+    "name": "GuideView",
+    "file": "Modules/GuideView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "a8fb6EdUJROLYRpOqrP19Dk",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2162
+  },
+  {
+    "name": "HomeView",
+    "file": "Modules/HomeView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "./Item": "Item"
+    },
+    "classId": "4f92d79EGJA8YYHtb2CA/I4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1466
+  },
+  {
+    "name": "HonorItem",
+    "file": "Modules/HonorItem.js",
+    "dependencies": {
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "0f25en2YsBIZoq2fqgOzq/4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1684
+  },
+  {
+    "name": "HonorView",
+    "file": "Modules/HonorView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/TouchButton": "TouchButton",
+      "./HonorItem": "HonorItem"
+    },
+    "classId": "dd561EEDP1GwqDmL4q+ZZB0",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1274
+  },
+  {
+    "name": "ImagesPanel",
+    "file": "Modules/ImagesPanel.js",
+    "dependencies": {},
+    "classId": "2abafFeuJ9IFJ3ZaMFMMZS8",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1404
+  },
+  {
+    "name": "InfoView",
+    "file": "Modules/InfoView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton"
+    },
+    "classId": "6588a8jrHlGGpv+C6PU8vWS",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1502
+  },
+  {
+    "name": "Item",
+    "file": "Modules/Item.js",
+    "dependencies": {
+      "../ATools/ImagesPanel": "ImagesPanel",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager",
+      "../GameScene": "GameScene"
+    },
+    "classId": "429bcD8CB5NX67rv+zufyNz",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1869
+  },
+  {
+    "name": "LevelManager",
+    "file": "Modules/LevelManager.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/EventCenter": "EventCenter",
+      "../ATools/GameEventConsts": "GameEventConsts",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/UIManager": "UIManager",
+      "./Block": "Block",
+      "./BlockUtils": "BlockUtils",
+      "./GameMapLayer": "GameMapLayer",
+      "./GameMapTouch": "GameMapTouch",
+      "./LevelUtils": "LevelUtils"
+    },
+    "classId": "10598zefMRKSZPB+CzpSGY7",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 12864
+  },
+  {
+    "name": "LevelUtils",
+    "file": "Modules/LevelUtils.js",
+    "dependencies": {
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "./Block": "Block",
+      "./LevelManager": "LevelManager",
+      "./Utils": "Utils"
+    },
+    "classId": "9023fVBmiVE1ppEak4XsY9y",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 873
+  },
+  {
+    "name": "LoadAllResources",
+    "file": "Modules/LoadAllResources.js",
+    "dependencies": {
+      "./ResManager": "ResManager",
+      "./Singleton": "Singleton"
+    },
+    "classId": "15e3bx54YBHTruhq5JcoC63",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2602
+  },
+  {
+    "name": "LoadScene",
+    "file": "Modules/LoadScene.js",
+    "dependencies": {
+      "./ATools/BaseUI": "BaseUI",
+      "./ATools/EventCenter": "EventCenter",
+      "./ATools/GameEventConsts": "GameEventConsts",
+      "./ATools/LoadAllResources": "LoadAllResources",
+      "./ATools/LocalDataManager": "LocalDataManager",
+      "./ATools/UIManager": "UIManager",
+      "./Game/BlockUtils": "BlockUtils"
+    },
+    "classId": "e1b90/rohdEk4SdmmEZANaD",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2326
+  },
+  {
+    "name": "LocalDataManager",
+    "file": "Modules/LocalDataManager.js",
+    "dependencies": {
+      "../Game/Utils": "Utils",
+      "./GameModel": "GameModel",
+      "./Singleton": "Singleton",
+      "./UserDefault": "UserDefault"
+    },
+    "classId": "61871KIZ6hGiLMw60ceFHdv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2628
+  },
+  {
+    "name": "PhysicsManager",
+    "file": "Modules/PhysicsManager.js",
+    "dependencies": {},
+    "classId": "6a031eNbvdBKaI+MVYdsCKg",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1194
+  },
+  {
+    "name": "PolicyView",
+    "file": "Modules/PolicyView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/ImagesPanel": "ImagesPanel",
+      "../ATools/TouchButton": "TouchButton"
+    },
+    "classId": "4d666NjoM9JP4EQnlwcjJOH",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1409
+  },
+  {
+    "name": "PoolManager",
+    "file": "Modules/PoolManager.js",
+    "dependencies": {
+      "./Utils": "Utils"
+    },
+    "classId": "ac8cbJErGBNmYY8nqQpR7Dy",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 893
+  },
+  {
+    "name": "ResManager",
+    "file": "Modules/ResManager.js",
+    "dependencies": {},
+    "classId": "901b4y1sCZPBoSaqHlRpfGK",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1540
+  },
+  {
+    "name": "SettingView",
+    "file": "Modules/SettingView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI",
+      "../ATools/LocalDataManager": "LocalDataManager",
+      "../ATools/SoundManager": "SoundManager",
+      "../ATools/TouchButton": "TouchButton",
+      "../ATools/UIManager": "UIManager"
+    },
+    "classId": "f0005Qb+LhLNI6PLGn4oqcb",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2389
+  },
+  {
+    "name": "Singleton",
+    "file": "Modules/Singleton.js",
+    "dependencies": {},
+    "classId": "3cc2aAhDbtFAa0I6sjZYhyv",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 328
+  },
+  {
+    "name": "SoundManager",
+    "file": "Modules/SoundManager.js",
+    "dependencies": {
+      "./AudioManager": "AudioManager",
+      "./LoadAllResources": "LoadAllResources",
+      "./LocalDataManager": "LocalDataManager"
+    },
+    "classId": "38a53fhmFBA+6OZ2GtnENh4",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1777
+  },
+  {
+    "name": "ToastView",
+    "file": "Modules/ToastView.js",
+    "dependencies": {
+      "../ATools/BaseUI": "BaseUI"
+    },
+    "classId": "5f656hmSV5AHYoVlEH1lyrI",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1250
+  },
+  {
+    "name": "TouchButton",
+    "file": "Modules/TouchButton.js",
+    "dependencies": {
+      "./SoundManager": "SoundManager"
+    },
+    "classId": "ecb28PDzb5FurFtrc2g30jQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 2368
+  },
+  {
+    "name": "UIManager",
+    "file": "Modules/UIManager.js",
+    "dependencies": {
+      "./BaseUI": "BaseUI"
+    },
+    "classId": "9e0af7F7JNO6INe6cvPEm7f",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1767
+  },
+  {
+    "name": "UserDefault",
+    "file": "Modules/UserDefault.js",
+    "dependencies": {},
+    "classId": "c2c67woB0VP0aok5g5GCefq",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 536
+  },
+  {
+    "name": "Utils",
+    "file": "Modules/Utils.js",
+    "dependencies": {
+      "../ATools/SoundManager": "SoundManager"
+    },
+    "classId": "7213787GeJADbSUL5kZh4mQ",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1244
+  },
+  {
+    "name": "Wall",
+    "file": "Modules/Wall.js",
+    "dependencies": {},
+    "classId": "8b11fQHu7tNqqyV5i1XPhwy",
+    "category": "gameplay/application module",
+    "source": "export_20260914/unpacked/base/assets/assets/main/index.ba75b.js",
+    "bodyBytes": 1340
+  }
+]

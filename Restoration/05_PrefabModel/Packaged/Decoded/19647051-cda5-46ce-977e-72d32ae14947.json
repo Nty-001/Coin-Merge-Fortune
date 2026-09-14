@@ -1,0 +1,1379 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "block_11",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "block_11",
+      "_children": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_components": [
+        {
+          "$ref": 3
+        },
+        {
+          "$ref": 4
+        },
+        {
+          "$ref": 5
+        }
+      ],
+      "_prefab": {
+        "$ref": 6
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          387,
+          406
+        ]
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "sprite_block",
+      "_parent": {
+        "$ref": 1
+      },
+      "_components": [
+        {
+          "$ref": 7
+        }
+      ],
+      "_prefab": {
+        "$ref": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          387,
+          406
+        ]
+      }
+    },
+    {
+      "__type__": "cc.RigidBody",
+      "_gravityScale": 5,
+      "enabledContactListener": true,
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PhysicsPolygonCollider",
+      "points": [
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -11.5,
+            203
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -42.5,
+            198
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -45.5,
+            196
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -55.5,
+            194
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -57.5,
+            192
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -64.5,
+            191
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -68.5,
+            188
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -74.5,
+            187
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -75.5,
+            185
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -82.5,
+            184
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -82.5,
+            182
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -95.5,
+            176
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -103.5,
+            169
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -106.5,
+            169
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -106.5,
+            167
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -108.5,
+            167
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -111.5,
+            163
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -121.5,
+            158
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -121.5,
+            156
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -123.5,
+            156
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -139.5,
+            140
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -139.5,
+            138
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -145.5,
+            133
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -148.5,
+            127
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -155.5,
+            120
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -156.5,
+            116
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -159.5,
+            114
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -160.5,
+            110
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -163.5,
+            108
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -163.5,
+            105
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -167.5,
+            101
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -167.5,
+            98
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -169.5,
+            97
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -170.5,
+            92
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -172.5,
+            91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -174.5,
+            84
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -177.5,
+            80
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -178.5,
+            74
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -180.5,
+            73
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -185.5,
+            53
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -187.5,
+            51
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -192.5,
+            21
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -193.5,
+            -10
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -191.5,
+            -37
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -184.5,
+            -67
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -181.5,
+            -72
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -180.5,
+            -79
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -177.5,
+            -83
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -176.5,
+            -90
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -174.5,
+            -91
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -172.5,
+            -97
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -170.5,
+            -98
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -170.5,
+            -101
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -166.5,
+            -109
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -160.5,
+            -116
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -159.5,
+            -120
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -157.5,
+            -121
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -157.5,
+            -123
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -155.5,
+            -123
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -153.5,
+            -128
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -145.5,
+            -136
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -144.5,
+            -140
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -142.5,
+            -140
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -134.5,
+            -149
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -132.5,
+            -149
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -119.5,
+            -163
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -116.5,
+            -163
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -115.5,
+            -166
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -107.5,
+            -170
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -105.5,
+            -173
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -100.5,
+            -174
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -98.5,
+            -177
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -95.5,
+            -177
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -94.5,
+            -179
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -76.5,
+            -188
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -73.5,
+            -188
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -69.5,
+            -191
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -65.5,
+            -191
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -58.5,
+            -195
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -53.5,
+            -195
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -52.5,
+            -197
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -42.5,
+            -198
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -42.5,
+            -200
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -38.5,
+            -199
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -34.5,
+            -201
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            -19.5,
+            -203
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            21.5,
+            -203
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            38.5,
+            -201
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            44.5,
+            -198
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            50.5,
+            -198
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            54.5,
+            -197
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            55.5,
+            -195
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            63.5,
+            -194
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            67.5,
+            -191
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            73.5,
+            -190
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            74.5,
+            -188
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            78.5,
+            -188
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            86.5,
+            -183
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            89.5,
+            -183
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            96.5,
+            -177
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            99.5,
+            -177
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            103.5,
+            -173
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            106.5,
+            -173
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            112.5,
+            -167
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            117.5,
+            -165
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            117.5,
+            -163
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            121.5,
+            -162
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            129.5,
+            -153
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            131.5,
+            -153
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            140.5,
+            -144
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            140.5,
+            -142
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142.5,
+            -142
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142.5,
+            -140
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            151.5,
+            -131
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            153.5,
+            -126
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            157.5,
+            -123
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            158.5,
+            -119
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            160.5,
+            -119
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            160.5,
+            -116
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            164.5,
+            -112
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            164.5,
+            -109
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            168.5,
+            -105
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            168.5,
+            -102
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            170.5,
+            -101
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            171.5,
+            -96
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            174.5,
+            -93
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            175.5,
+            -87
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            177.5,
+            -86
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            178.5,
+            -80
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            181.5,
+            -76
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            182.5,
+            -68
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            184.5,
+            -67
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            185.5,
+            -58
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            187.5,
+            -56
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            189.5,
+            -47
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            189.5,
+            -40
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            191.5,
+            -39
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            193.5,
+            -19
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            192.5,
+            30
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            191.5,
+            38
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            189.5,
+            39
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            188.5,
+            52
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            185.5,
+            57
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            185.5,
+            62
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            184.5,
+            65
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            182.5,
+            66
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            181.5,
+            74
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            179.5,
+            75
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            177.5,
+            83
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            175.5,
+            84
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            170.5,
+            99
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            168.5,
+            100
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            164.5,
+            109
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            161.5,
+            111
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            156.5,
+            122
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            153.5,
+            123
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            153.5,
+            126
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            142.5,
+            137
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            139.5,
+            143
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            136.5,
+            144
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            135.5,
+            147
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            132.5,
+            148
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            131.5,
+            151
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            129.5,
+            151
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            122.5,
+            159
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            120.5,
+            159
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            109.5,
+            169
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            101.5,
+            173
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            99.5,
+            176
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            69.5,
+            191
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            63.5,
+            192
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            58.5,
+            195
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            50.5,
+            196
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            48.5,
+            198
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            32.5,
+            200
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            28.5,
+            202
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            25.5,
+            201
+          ]
+        },
+        {
+          "__type__": "cc.Vec2",
+          "values": [
+            17.5,
+            203
+          ]
+        }
+      ],
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "33f50ac0-e955-43f9-aca3-07dd23c91f83"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "_materials": [
+        {
+          "$asset": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+        }
+      ],
+      "_spriteFrame": {
+        "$asset": "33f50ac0-e955-43f9-aca3-07dd23c91f83"
+      },
+      "node": {
+        "$ref": 2
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "fileId": "dfr61Uv+pJPb0lyE34LamC",
+      "root": {
+        "$ref": 1
+      },
+      "asset": {
+        "$ref": 0
+      }
+    }
+  ],
+  "uuid": "19647051-cda5-46ce-977e-72d32ae14947",
+  "source": "export_20260914/unpacked/base/assets/assets/resources/import/19/19647051-cda5-46ce-977e-72d32ae14947.33aca.json",
+  "paths": [
+    "Block/block_11"
+  ]
+}

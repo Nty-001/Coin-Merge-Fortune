@@ -1,0 +1,77 @@
+{
+  "root": 0,
+  "nativeDependency": false,
+  "objects": [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "mergeSpine",
+      "data": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "PZ_TX",
+      "_components": [
+        {
+          "$ref": 2
+        }
+      ],
+      "_prefab": {
+        "$ref": 3
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "values": [
+          750,
+          1624
+        ]
+      },
+      "_trs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1.5,
+        1.5,
+        1
+      ]
+    },
+    {
+      "__type__": "sp.Skeleton",
+      "defaultSkin": "default",
+      "defaultAnimation": "idle1",
+      "_preCacheMode": 0,
+      "premultipliedAlpha": false,
+      "_animationName": "idle1",
+      "_materials": [
+        {
+          "$asset": "7afd064b-113f-480e-b793-8817d19f63c3"
+        }
+      ],
+      "_N$skeletonData": {
+        "$asset": "c80b42c1-1e4d-4ece-a55c-7c6a5616b57c"
+      },
+      "node": {
+        "$ref": 1
+      }
+    },
+    {
+      "__type__": "cc.PrefabInfo",
+      "asset": {
+        "$ref": 0
+      },
+      "root": {
+        "$ref": 1
+      }
+    }
+  ],
+  "uuid": "596df372-0dd7-499c-8ad4-a091bf78eec6",
+  "source": "export_20260914/unpacked/runtime_adaljkjf/assets/resources/import/59/596df372-0dd7-499c-8ad4-a091bf78eec6.47996.json",
+  "paths": [
+    "prefab/mergeSpine"
+  ]
+}
