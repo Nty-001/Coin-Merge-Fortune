@@ -1,0 +1,3079 @@
+{
+  "scope": "Original NativeCall.checkClientEndingWith and LevelUtils.genNextBlockType bodies; synthetic identifiers only",
+  "abBodySha256": "a7660f8946c883e7c651577429c086da72a617072faa76d462f1fb8cc7978676",
+  "dropBodySha256": "50e3d15e5aa16684601e50ffeffc5b67847ff7d042833313200bebb5cfeeb310",
+  "tails": [
+    {
+      "input": "",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-0",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-1",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-2",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-3",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-4",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-5",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-6",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-7",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-8",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-9",
+      "cohort": "B"
+    },
+    {
+      "input": "synthetic-test-a",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-b",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-c",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-d",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-e",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-f",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-A",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-B",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-C",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-D",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-E",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-F",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test--",
+      "cohort": "A"
+    },
+    {
+      "input": "synthetic-test-_",
+      "cohort": "A"
+    }
+  ],
+  "drops": [
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 0,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 1,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 9999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 99999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 199999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 249999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 250000,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 349999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 399999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 499999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 500000,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 749999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 750000,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 999998,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 1,
+      "draw": 999999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 0,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 1,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 9999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 99999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 199999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 249999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 250000,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 349999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 399999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 499999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 500000,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 749999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 750000,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 999998,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 2,
+      "draw": 999999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 0,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 1,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 9999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 99999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 199999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 249999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 250000,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 349999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 399999,
+      "type": 1
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 499999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 500000,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 749999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 750000,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 999998,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 3,
+      "draw": 999999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 0,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 1,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 9999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 99999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 199999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 249999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 250000,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 349999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 399999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 499999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 500000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 749999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 750000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 999998,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 4,
+      "draw": 999999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 0,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 1,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 9999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 99999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 199999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 249999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 250000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 349999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 399999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 499999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 500000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 749999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 750000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 999998,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 5,
+      "draw": 999999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 0,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 1,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 9999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 99999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 199999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 249999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 250000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 349999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 399999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 499999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 500000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 749999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 750000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 999998,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 6,
+      "draw": 999999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 750000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 7,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 0,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 1,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 9999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 99999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 199999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 249999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 250000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 349999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 399999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 499999,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 500000,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 749999,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 999998,
+      "type": 7
+    },
+    {
+      "pass": 0,
+      "max": 8,
+      "draw": 999999,
+      "type": 7
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 0,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 1,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 9999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 99999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 199999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 249999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 250000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 349999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 399999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 499999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 500000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 750000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 9,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 0,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 1,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 9999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 99999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 199999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 249999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 250000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 349999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 399999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 499999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 500000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 750000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 10,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 0,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 1,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 9999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 99999,
+      "type": 2
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 199999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 249999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 250000,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 349999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 399999,
+      "type": 3
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 499999,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 500000,
+      "type": 4
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 750000,
+      "type": 5
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 0,
+      "max": 11,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 1,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 2,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 3,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 4,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 5,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 6,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 7,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 8,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 9,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 10,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 1,
+      "max": 11,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 1,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 2,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 3,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 4,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 5,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 6,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 7,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 8,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 9,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 10,
+      "draw": 999999,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 0,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 1,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 9999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 99999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 199999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 249999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 250000,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 349999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 399999,
+      "type": 4
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 499999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 500000,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 749999,
+      "type": 5
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 750000,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 999998,
+      "type": 6
+    },
+    {
+      "pass": 3,
+      "max": 11,
+      "draw": 999999,
+      "type": 6
+    }
+  ]
+}

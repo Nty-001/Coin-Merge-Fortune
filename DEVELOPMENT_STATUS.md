@@ -35,3 +35,9 @@ GM 版本存储与玩家存档分开，清玩家存档保留地区/AB选择；�
 奖励文字的原始骨骼挂点随骨骼移动。工程中没有加入商业骨骼运行库，仍使用 Unity 官方程序集和原生 API。
 接入后的 29 项 Play Mode 回归通过。GPU 非空检查不是与 MuMu 原画面的逐帧像素一致性证明，完整页面与视觉审计仍待完成。
 231 MB 原生汇编通过 `Restoration/02_Gameplay/NativeCocosAssembly/text.asm.gz` 无损备份，解压 SHA-256 与原文相同。
+
+第六轮进展：核实“基础内置内容 / 收益热更新内容”与 RandomAB 是不同机制，尚无证据把它们直接等同自然量/买量。
+新增可玩的原生基础版场景 RecoveredPackaged，接入六模式、体力、出币、金币合成、计分及原包外围弹窗。
+两场景都有中文非全屏 GM 弹窗，可独立切换内容、AB 和地区；默认 US 收益版/B，支持明确标为本地测试的稳定比例分流。
+两版玩家存档及分流 profile 独立，清档保留版本选择。77 项实际 Play Mode 检查及 25+495 组原 JS 规则对照通过。
+详细证据、运行入口、截图与未完成差异见 `Restoration/07_Verification/VERSION_ROUTING_FINDINGS.md`。MuMu 原应用未修改；不能据此声称全游戏已 100% 复刻。

@@ -6,6 +6,7 @@ namespace CoinMerge.Recovery
     {
         public string country,cohort;
         public bool rewardedVariant;
+        public int routingSchema,contentMode,cohortMode,localBucket,localTail,rewardedShare;
     }
     [Serializable] public sealed class PlayerSaveEnvelope
     {

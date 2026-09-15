@@ -142,6 +142,7 @@ namespace CoinMerge.Recovery.Editor
             EditorSceneManager.SaveScene(scene,"Assets/Scenes/RecoveredMain.unity");
             EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/RecoveredMain.unity",true),new EditorBuildSettingsScene("Assets/Scenes/MockFlow.unity",false)};
             AssetDatabase.SaveAssets();
+            VersionVariantsBuilder.Run();
             Debug.Log("NATIVE_GAMEPLAY_ASSETS_AUTHORED; play validation remains required");
         }
         static PhysicsMaterial2D Material(string name,float friction,float bounce)

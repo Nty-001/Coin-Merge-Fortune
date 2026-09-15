@@ -8,6 +8,7 @@ namespace CoinMerge.Recovery
     public sealed class RecoveredGameSession : MonoBehaviour
     {
         public NativeMergeBoard board;
+        public VersionGmPanel gm;
         public Camera worldCamera;
         public Text moneyText,bubbleText,progressText,remainingText,highestText;
         public Image progressFill,nextImage;
@@ -52,6 +53,7 @@ namespace CoinMerge.Recovery
         void Update()
         {
             if(!initialized)return;
+            if(gm&&gm.IsOpen){board.InputBlocked=true;inputStarted=false;return;}
             board.InputBlocked=rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
             if(automaticInput)ReadBoardInput();
             board.Tick(Time.deltaTime);
@@ -174,7 +176,7 @@ namespace CoinMerge.Recovery
         public void ChangeProfile(string country,string cohort,bool rewarded)
         {
             Profile.country=RecoveredGameRules.NormalizeCountry(country,board.Config.rules.supportedCountries);
-            Profile.cohort=cohort=="A"?"A":"B";Profile.rewardedVariant=rewarded;store.SaveProfile(Profile);ApplyLocale();Refresh();
+            Profile.cohort=cohort=="A"?"A":"B";Profile.rewardedVariant=rewarded;Profile.contentMode=rewarded?2:1;Profile.cohortMode=cohort=="A"?1:2;store.SaveProfile(Profile);ApplyLocale();Refresh();
         }
         public void ResetPlayerKeepingProfile()
         {
