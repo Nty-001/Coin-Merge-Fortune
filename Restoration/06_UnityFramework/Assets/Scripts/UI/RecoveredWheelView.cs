@@ -19,12 +19,14 @@ namespace CoinMerge.Recovery
         public Text drawLabel,countLabel,nextScoreLabel;
         public RecoveredWheelSlot[] slots;
         public GameBalanceConfig config;
+        public NativeSkeletonPlayer backgroundAnimation;
         public event Action DrawRequested;
         public event Action<int> DrawCompleted;
         public bool IsSpinning {get;private set;}
         int result,step,totalSteps,phase;
         float wait;
-        void Awake(){draw.onClick.AddListener(Request);}
+        void Awake(){draw.onClick.AddListener(Request);backgroundAnimation.Completed+=OnIntroCompleted;}
+        void OnIntroCompleted(){if(IsSpinning&&phase==0){phase=1;wait=0;}}
         void Request(){if(!IsSpinning)DrawRequested?.Invoke();}
         public void Show(PlayerProgress player,RecoveredLocalization locale)
         {
@@ -45,12 +47,13 @@ namespace CoinMerge.Recovery
         public void Begin(int index)
         {
             if(IsSpinning)return;IsSpinning=true;result=index;step=0;phase=0;
-            totalSteps=config.wheel.revolutions*slots.Length+index+1;wait=config.wheel.introDuration;
+            totalSteps=config.wheel.revolutions*slots.Length+index+1;wait=0;
             draw.gameObject.SetActive(false);nextScoreLabel.gameObject.SetActive(false);
+            backgroundAnimation.Play("idle",false);
         }
         void Update()
         {
-            if(!IsSpinning)return;wait-=Time.deltaTime;if(wait>0)return;
+            if(!IsSpinning||phase==0)return;wait-=Time.deltaTime;if(wait>0)return;
             if(phase==2){IsSpinning=false;DrawCompleted?.Invoke(result);return;}
             phase=1;
             for(int i=0;i<slots.Length;i++)slots[i].selected.SetActive(i==step%slots.Length);
@@ -59,6 +62,6 @@ namespace CoinMerge.Recovery
             float fraction=(float)step/totalSteps;var t=config.wheel;
             wait=fraction<t.fastBoundary?t.fastDelay:fraction<t.slowBoundary?t.middleDelay:t.slowDelay+(fraction-t.slowBoundary)/(1-t.slowBoundary)*t.slowExtra;
         }
-        void OnDestroy(){draw.onClick.RemoveListener(Request);}
+        void OnDestroy(){draw.onClick.RemoveListener(Request);backgroundAnimation.Completed-=OnIntroCompleted;}
     }
 }

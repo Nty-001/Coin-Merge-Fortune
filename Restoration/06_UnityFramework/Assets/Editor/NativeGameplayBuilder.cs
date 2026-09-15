@@ -60,13 +60,14 @@ namespace CoinMerge.Recovery.Editor
                         if(text.font&&text.font.lineHeight>0)text.lineSpacing=(float)component.lineHeight/component.fontSize*text.font.fontSize/text.font.lineHeight;
                     }
                 }
+            NativeSkeletonBinding.Bind(root);
             return root;
         }
         static Dictionary<int,GameObject> Dialog(string name,Transform parent,out GameObject root)
         {
             root=Source("GameDialog/"+name,parent);
             var rect=(RectTransform)root.transform;rect.anchorMin=Vector2.zero;rect.anchorMax=Vector2.one;rect.offsetMin=rect.offsetMax=Vector2.zero;
-            var layer=root.AddComponent<Canvas>();layer.overrideSorting=true;layer.sortingOrder=100;
+            var layer=root.AddComponent<Canvas>();layer.overrideSorting=true;layer.sortingOrder=100;layer.additionalShaderChannels=AdditionalCanvasShaderChannels.TexCoord1;
             root.AddComponent<GraphicRaycaster>();
             return Nodes(root);
         }
@@ -188,6 +189,7 @@ namespace CoinMerge.Recovery.Editor
         {
             var n=Dialog("LuckDrawDialog",parent,out var root);var view=root.AddComponent<RecoveredWheelView>();session.wheelView=view;
             view.config=session.board.Config;view.draw=Button(n[12]);view.drawLabel=Component<Text>(n,25);view.countLabel=Component<Text>(n,64);view.nextScoreLabel=Component<Text>(n,66);
+            view.backgroundAnimation=n[28].GetComponentInChildren<NativeSkeletonPlayer>(true);
             view.slots=new RecoveredWheelSlot[8];
             for(int i=0;i<8;i++)view.slots[i]=new RecoveredWheelSlot {selected=n[33+4*i],coin=n[16+i],money=Component<Image>(n,35+4*i),coinAmount=Component<Text>(n,34+4*i)};
             root.SetActive(false);
