@@ -44,3 +44,7 @@ UGUI 默认 Outline 在四个对角方向复制文字，原 6 单位描边会扩
 外部同步资产后，需要在用户已打开的正式编辑器重新载入场景并实际运行，不能只以验证副本成功作为正式窗口已经更新的证据。
 
 正式窗口补验：用户手动停止旧 Play 并运行加载入口后，已观察到 `06_UnityFramework` 进入 `RecoveredPackaged` 的分数/爱心界面；加载日志确认进入该场景。当前正式存档的 GM 选择为 US、基础版 A，所以此结果符合已保存选择。没有清除或改写用户的版本选择、玩家进度。自动窗口控制在激活阶段返回 `failed to activate captured window`，因此正式窗口的收益版播报和规则弹窗尚未完成鼠标复验；其运行结果以上述独立 Play Mode 检查及截图为依据。
+
+## 奖励金额居中修复（2026-09-15）
+
+`Double Rewards` 金额节点使用固定的 77.44 宽文本框，UGUI 左对齐溢出使较长金额向右偏移。已将双倍/复活、普通奖励和最高金币奖励的金额改为 `MiddleCenter`，引导奖励原本已居中；保留原坐标、字号、颜色、金额值及奖励逻辑。同步修改 `RecoveredMain` 场景、运行预制体和 `NativeGameplayBuilder`，避免重建后回退。独立 Unity Play Mode 渲染了 `$6.72` 和 `$1,234.56`，已逐图确认居中，日志无编译或运行异常。截图为本目录 `reward_amount_centered.png` 和 `reward_amount_centered_long.png`，使用独立测试存档；没有操作用户正在运行的场景。

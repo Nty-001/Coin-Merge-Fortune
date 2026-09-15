@@ -165,6 +165,8 @@ namespace CoinMerge.Recovery.Editor
             var n=Dialog("RewardDialog",parent,out var root);var view=root.AddComponent<RecoveredRewardView>();session.rewardView=view;
             view.highestGroup=n[5];view.normalGroup=n[6];view.guideGroup=n[7];view.doubleGroup=n[9];
             view.highestAmount=Component<Text>(n,37);view.normalAmount=Component<Text>(n,47);view.guideAmount=Component<Text>(n,52);view.doubleAmount=Component<Text>(n,43);
+            // The source label resizes around its center; UGUI overflow must also center variable-length amounts.
+            view.highestAmount.alignment=view.normalAmount.alignment=view.guideAmount.alignment=view.doubleAmount.alignment=TextAnchor.MiddleCenter;
             view.mask=Button(n[10]);view.highestClose=Button(n[16]);view.guideClose=Button(n[11]);
             Component<Text>(n,17).text="Collect";Component<Text>(n,29).text="Collect";
             Label(n,17,"37");Label(n,29,"37");Label(n,15,"36");Label(n,20,"35");Label(n,23,"36");Label(n,27,"44");
