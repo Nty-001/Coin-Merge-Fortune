@@ -12,7 +12,7 @@ namespace CoinMerge.Recovery
         void OnRevive(){ReviveRequested?.Invoke();}
         void OnRestart(){gameObject.SetActive(false);RestartRequested?.Invoke();}
         public void Show(PlayerProgress player)
-        {scoreText.text=player.roundScore.ToString();mergesText.text=player.currentRoundCoin1024Number.ToString();bestText.text=player.histroyMaxScore.ToString();revive.interactable=true;gameObject.SetActive(true);}
+        {scoreText.text=player.roundScore.ToString();mergesText.text="×"+player.coin1024Number;bestText.text=player.histroyMaxScore.ToString();revive.interactable=true;gameObject.SetActive(true);}
         void OnDestroy(){revive.onClick.RemoveListener(OnRevive);close.onClick.RemoveListener(OnRestart);restart.onClick.RemoveListener(OnRestart);}
     }
 }

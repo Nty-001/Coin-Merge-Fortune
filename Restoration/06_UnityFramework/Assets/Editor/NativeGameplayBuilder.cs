@@ -175,10 +175,11 @@ namespace CoinMerge.Recovery.Editor
         static void BindFail(RecoveredGameSession session,Transform parent)
         {
             var n=Dialog("FailDialog",parent,out var root);var view=root.AddComponent<RecoveredFailView>();session.failView=view;
-            view.revive=Button(n[6]);view.close=Button(n[7]);view.restart=Button(n[44]);
+            // The active layout is bgNode. anim/videobtn is an unused legacy layout.
+            view.revive=Button(n[7]);view.close=Button(n[37]);view.restart=Button(n[44]);
             view.scoreText=Component<Text>(n,24);view.mergesText=Component<Text>(n,33);view.bestText=Component<Text>(n,30);
-            Component<Text>(n,18).text="Revive";Component<Text>(n,44).text="Restart";Component<Text>(n,12).text="Game over";
-            Label(n,18,"33");Label(n,12,"29");
+            Component<Text>(n,13).text="Revive";Component<Text>(n,44).text="Restart";Component<Text>(n,12).text="Game over";
+            Label(n,13,"33");Label(n,12,"29");Label(n,22,"30");Label(n,26,"31");Label(n,28,"32");
             root.SetActive(false);
         }
         static void BindGuide(RecoveredGameSession session,Transform parent)

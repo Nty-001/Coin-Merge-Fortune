@@ -41,7 +41,7 @@ namespace CoinMerge.Recovery
             if(initialized)return;
             store=playerStore;Player=store.LoadPlayer();Profile=store.LoadProfile(board.Config);
             ApplyLocale();
-            Player.RecordLoginDay(DateTime.Now.ToString("yyyy-MM-dd"),board.Config.rules.flow.validLoginMergeCount);
+            Player.RecordLoginDay(PlayerClock.Today(Player),board.Config.rules.flow.validLoginMergeCount);
             board.Changed+=Refresh;board.Dropped+=OnDrop;board.Merged+=OnMerged;board.Failed+=OnFailed;board.HighestCoinCreated+=OnHighest;
             rewardView.Closed+=OnRewardClosed;failView.ReviveRequested+=OnRevive;failView.RestartRequested+=OnRestart;guideView.Advanced+=OnGuideAdvanced;
             wheelButton.onClick.AddListener(OnWheelButton);wheelView.DrawRequested+=OnWheelDraw;wheelView.DrawCompleted+=OnWheelCompleted;wheelRewardView.ClaimRequested+=OnWheelClaim;
@@ -158,7 +158,8 @@ namespace CoinMerge.Recovery
         void OnWheelDraw()
         {
             if(board.GameOver||Player.gameTotalScore<RecoveredGameRules.RequiredScore(board.Config.rules.lotteryScores,Player.currentLotteryCount))return;
-            wheelView.Begin(RecoveredGameRules.PickLottery(board.Config.rules.lotteryRewards,NativeMergeBoard.Sample()));
+            int result=gmNextWheelIndex>=0?gmNextWheelIndex:RecoveredGameRules.PickLottery(board.Config.rules.lotteryRewards,NativeMergeBoard.Sample());
+            gmNextWheelIndex=-1;wheelView.Begin(result);
         }
         void OnWheelCompleted(int index)
         {
@@ -203,6 +204,12 @@ namespace CoinMerge.Recovery
             if(notice)notice.Restart();
         }
         public void Save(){if(!initialized)return;board.Capture();store.Save(Player);}
+        int gmNextWheelIndex=-1;
+        public void GmSetNextWheel(int index){gmNextWheelIndex=Mathf.Clamp(index,0,board.Config.rules.lotteryRewards.Length-1);}
+        public void GmRefresh(){Refresh();if(menus)menus.Refresh();Save();}
+        public bool GmCanTrigger=>initialized&&!board.GameOver&&!(menus&&menus.IsOpen)&&!rewardView.gameObject.activeSelf&&!wheelView.gameObject.activeSelf&&!wheelRewardView.gameObject.activeSelf&&!guideView.gameObject.activeSelf;
+        public void GmPrepareDrop(int count)
+        {Player.guideStep=9999;guideView.gameObject.SetActive(false);Player.windowsCointimes=Math.Max(0,count-1);Player.dropCointimes=Math.Max(Player.dropCointimes,count-1);rewardDelay=-1;GmRefresh();}
         void ApplyLocale()
         {
             Locale=new RecoveredLocalization(Profile.country);displayedMoney=double.NaN;

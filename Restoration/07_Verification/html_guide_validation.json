@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scope": "Offline HTML structure, JavaScript syntax, embedded-data freshness and pure task/simulator logic; no browser rendering verification",
+  "checks": [
+    "All inline JavaScript parses without syntax errors",
+    "Embedded Unity workflow result is passed",
+    "Embedded result matches the latest verification JSON",
+    "Static and generated HTML IDs are unique",
+    "All literal element references have authored targets",
+    "No remote JavaScript or stylesheet dependencies",
+    "Unity screenshots are embedded PNG data",
+    "Task graph values match recovered configuration for 72 region-group/product/route combinations",
+    "Every offered country maps to a recovered cash group",
+    "Calendar simulator does not award a day merely for +24h",
+    "Calendar simulator keeps the threshold blocked after four merges",
+    "Fifth merge completes the day and extra same-day merges do not double count",
+    "A later date with five merges adds exactly one day",
+    "Checklist contains 36 distinct manual cases",
+    "Every original-module source link resolves"
+  ],
+  "taskCombinations": 72,
+  "manualCases": 36
+}

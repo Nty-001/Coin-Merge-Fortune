@@ -5,6 +5,7 @@ namespace CoinMerge.Recovery
     public sealed class VersionGmPanel : MonoBehaviour
     {
         public GameVersionRouter router;
+        public GameplayGmPanel gameplay;
         public GameObject popup;
         public Button open,close,backdrop,apply,content,baseVersion,rewardedVersion,regionPrevious,regionNext,shareDown,shareUp,reset;
         public Text contentValue,baseValue,rewardedValue,cohortValue,regionValue,shareValue,status;
@@ -18,7 +19,7 @@ namespace CoinMerge.Recovery
             regionPrevious.onClick.AddListener(PreviousRegion);regionNext.onClick.AddListener(NextRegion);
             shareDown.onClick.AddListener(LessShare);shareUp.onClick.AddListener(MoreShare);reset.onClick.AddListener(ResetCurrent);
         }
-        public void Show(){Draft=VersionRouting.Copy(router.Profile);popup.SetActive(true);Refresh();}
+        public void Show(){Draft=VersionRouting.Copy(router.Profile);popup.SetActive(true);if(gameplay)gameplay.OpenVersions();Refresh();}
         public void Hide(){popup.SetActive(false);}
         void Apply(){router.Apply(Draft);}
         // A/B are explicit LOCAL content test names. Original cohort metadata stays independent.

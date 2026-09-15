@@ -1,5 +1,7 @@
 # 当前开发状态
 
+最新进展（2026-09-15）：交付 `Restoration/09_TestGuide/index.html` 离线商业化测试指南与 36 项可记录执行结果的用例；新增 GM 提现五项任务准备、时间快进、广告结果、真实合成/复活和一次性指定转盘。57 项实际按钮命中与流程检查通过，HTML 的72组配置组合及15项离线源代码检查通过。修正原 FailDialog 可见复活/关闭按钮误绑，详细范围及已知差异见 `Restoration/07_Verification/GM_TEST_GUIDE.md`。商业 SDK 继续 Mock；未宣称所有原包差异已消除。
+
 初始资料和 Unity 框架已备份到用户指定 GitHub 仓库：
 `31ae71f36dd0a9ed0dd7925d6621ce5fb7ec4600`（main）。本地与远端提交号核验一致。
 

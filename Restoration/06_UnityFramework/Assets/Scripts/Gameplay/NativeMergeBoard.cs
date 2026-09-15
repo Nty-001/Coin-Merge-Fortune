@@ -170,7 +170,7 @@ namespace CoinMerge.Recovery
             if(pendingHighest&&!pendingHighest.SpawnLocked&&!pendingHighest.IsMerging)
             {
                 pendingHighest.IsMerging=true;previewWait=-1;
-                player.AddHighestCoinMerge(DateTime.Now.ToString("yyyy-MM-dd"),config.rules.flow.validLoginMergeCount);
+                player.AddHighestCoinMerge(PlayerClock.Today(player),config.rules.flow.validLoginMergeCount);
                 HighestCoinCreated?.Invoke(pendingHighest);Changed?.Invoke();
             }
             if(InputBlocked)return;

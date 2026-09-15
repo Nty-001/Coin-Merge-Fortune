@@ -214,6 +214,7 @@ namespace CoinMerge.Recovery.Editor
             panel.status=Label("Status",card.transform,"",new Vector2(590,145),new Vector2(0,-215),23);
             panel.reset=Control("ResetCurrentSave",card.transform,"清除当前版本的玩家存档",new Vector2(580,50),new Vector2(0,-320),out unused);
             panel.apply=Control("Apply",card.transform,"应用并重新进入",new Vector2(580,65),new Vector2(0,-400),out unused);
+            GameplayGmBuilder.Author(panel,card,font);
             popup.SetActive(false);
             // Standalone reusable UI asset; scene-specific router is wired in the scene, never through reflection.
             var saved=panel.router;panel.router=null;PrefabUtility.SaveAsPrefabAsset(root,Runtime+"VersionGM.prefab");panel.router=saved;

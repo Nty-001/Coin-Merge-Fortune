@@ -11,6 +11,7 @@ namespace CoinMerge.Recovery
     {
         public string base_name="PlayData";
         public double money,UseRevenue,fakeMoney;
+        public double gmTimeOffsetSeconds;
         public int addVodeoshowCoin=1,gold=100,ecmp=10;
         public int watch_video_count,coin1024Number,today1024NumberCoin,histroyMaxScore,gameTotalScore,roundScore,loginDays;
         public string today1024NumberCoinDate="",lastLoginDate="";
