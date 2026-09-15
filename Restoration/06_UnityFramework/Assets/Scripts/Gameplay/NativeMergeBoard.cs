@@ -6,6 +6,9 @@ namespace CoinMerge.Recovery
     public sealed class NativeMergeBoard : MonoBehaviour
     {
         public GameBalanceConfig config;
+        public LifecycleVisualConfig visualConfig;
+        public bool HighestFlowActive {get;private set;}
+        public event Action<NativeMergeCoin> FailureStarted;
         public NativeMergeCoin coinPrefab;
         public Transform coinContainer,ground,previewLine,deadLine;
         public Collider2D leftWall,rightWall;
@@ -46,7 +49,7 @@ namespace CoinMerge.Recovery
                 for(int i=0;i<config.initialCoinPoolCapacity;i++)pool.Push(CreatePooled());
                 initialized=true;
             }
-            ClearBoard();player=state;GameOver=false;InputBlocked=false;
+            ClearBoard();player=state;GameOver=false;InputBlocked=false;HighestFlowActive=false;
             previewWait=checkWait=failWait=-1;pendingDrop=false;pendingFail=pendingHighest=null;
             if(player.hasSavedGameScene)
             {
@@ -101,7 +104,7 @@ namespace CoinMerge.Recovery
         void NewQueue(){player.savedCurrentCoinValue=RandomDrop();player.savedNextCoinValue=RandomDrop();player.savedPreviewX=0;}
         void CreatePreview()
         {
-            if(GameOver||pendingFail||pendingHighest)return;
+            if(GameOver||pendingFail||HighestFlowActive||pendingHighest)return;
             if(preview)Remove(preview);
             preview=Spawn(player.savedCurrentCoinValue,new Vector2(transform.position.x+player.savedPreviewX/Units,previewLine.position.y),true,true,false);
             MovePreview(preview.Position.x);previewWait=-1;Changed?.Invoke();
@@ -117,7 +120,7 @@ namespace CoinMerge.Recovery
         }
         public bool RequestDrop()
         {
-            if(GameOver||InputBlocked||pendingFail||pendingHighest||!preview)return false;
+            if(GameOver||InputBlocked||pendingFail||HighestFlowActive||pendingHighest||!preview)return false;
             if(preview.SpawnLocked){pendingDrop=true;return true;}
             float bottom=preview.Position.y-preview.Radius,hit=ground.position.y;
             for(int i=0;i<active.Count;i++)
@@ -171,9 +174,10 @@ namespace CoinMerge.Recovery
             for(int i=0;i<active.Count;i++)active[i].Tick(dt);
             if(pendingHighest&&!pendingHighest.SpawnLocked&&!pendingHighest.IsMerging)
             {
-                pendingHighest.IsMerging=true;previewWait=-1;
+                pendingHighest.IsMerging=true;HighestFlowActive=true;previewWait=-1;
                 player.AddHighestCoinMerge(PlayerClock.Today(player),config.rules.flow.validLoginMergeCount);
-                HighestCoinCreated?.Invoke(pendingHighest);Changed?.Invoke();
+                var completedHighest=pendingHighest;pendingHighest=null;
+                HighestCoinCreated?.Invoke(completedHighest);Changed?.Invoke();
             }
             if(InputBlocked)return;
             if(pendingDrop&&preview&&!preview.SpawnLocked)RequestDrop();
@@ -182,14 +186,14 @@ namespace CoinMerge.Recovery
             UpdatePendingFailure(dt);
         }
         public void FinishHighestCoinFlow()
-        {if(pendingHighest)Remove(pendingHighest);pendingHighest=null;if(!preview)previewWait=config.rules.flow.previewDelay;Capture();Changed?.Invoke();}
+        {HighestFlowActive=false;if(!preview&&!pendingHighest)previewWait=config.rules.flow.previewDelay;Capture();Changed?.Invoke();}
         public void CheckGameOver()
         {
             if(GameOver||InputBlocked)return;
             for(int i=0;i<active.Count;i++)
             {
                 var c=active[i];if(c.IsPreview||c.IsMerging||c.Position.y<deadLine.position.y)continue;
-                if(c.IsStill(config.rules.flow.failStillVelocity,config.rules.flow.failStillAngularVelocity)){TriggerFailure();return;}
+                if(c.IsStill(config.rules.flow.failStillVelocity,config.rules.flow.failStillAngularVelocity)){TriggerFailure(c);return;}
                 if(!pendingFail){pendingFail=c;pendingElapsed=pendingStill=0;pendingDrop=false;previewWait=-1;}
             }
         }
@@ -200,20 +204,20 @@ namespace CoinMerge.Recovery
             {pendingFail=null;CheckGameOver();if(!pendingFail&&!preview)previewWait=config.rules.flow.previewDelay;return;}
             pendingElapsed+=dt;
             pendingStill=pendingFail.IsStill(config.rules.flow.failStillVelocity,config.rules.flow.failStillAngularVelocity)?pendingStill+dt:0;
-            if(pendingElapsed>=config.rules.flow.failMaxWait||pendingStill>=config.rules.flow.failStillDuration)TriggerFailure();
+            if(pendingElapsed>=config.rules.flow.failMaxWait||pendingStill>=config.rules.flow.failStillDuration)TriggerFailure(pendingFail);
         }
-        public void TriggerFailure()
+        public void TriggerFailure(NativeMergeCoin cause=null)
         {
             if(GameOver)return;GameOver=true;pendingFail=null;pendingDrop=false;merges.Clear();
             if(preview)Remove(preview);
             for(int i=0;i<active.Count;i++)active[i].Freeze();
             player.histroyMaxScore=Mathf.Max(player.histroyMaxScore,player.roundScore);
-            failWait=config.rules.flow.failAnimationDuration;Capture();Changed?.Invoke();
+            failWait=visualConfig.FailureDuration(active.Count);FailureStarted?.Invoke(cause);Capture();Changed?.Invoke();
         }
         public void ResetAfterFailure()
         {
             ClearBoard();player.ResetBoardAfterFailure();NewQueue();pendingFail=pendingHighest=null;
-            GameOver=InputBlocked=false;previewWait=checkWait=failWait=-1;CreatePreview();Capture();Changed?.Invoke();
+            GameOver=InputBlocked=HighestFlowActive=false;previewWait=checkWait=failWait=-1;CreatePreview();Capture();Changed?.Invoke();
         }
         public int Revive()
         {
@@ -222,8 +226,8 @@ namespace CoinMerge.Recovery
             reviveOrder.Sort(TopFirst);
             int target=Mathf.Max(1,Mathf.CeilToInt(reviveOrder.Count/3f)),removed=0;
             for(int i=0;i<reviveOrder.Count&&removed<target;i++)if(reviveOrder[i].value<highest){Remove(reviveOrder[i]);removed++;}
-            GameOver=InputBlocked=false;pendingFail=pendingHighest=null;failWait=checkWait=-1;
-            for(int i=0;i<active.Count;i++){active[i].IsMerging=false;active[i].SetupPhysics(false);}
+            GameOver=InputBlocked=HighestFlowActive=false;pendingFail=pendingHighest=null;failWait=checkWait=-1;
+            for(int i=0;i<active.Count;i++){active[i].IsMerging=false;active[i].visual.color=Color.white;active[i].visual.transform.localScale=Vector3.one;active[i].transform.localScale=Vector3.one;active[i].SetupPhysics(false);}
             if(!preview)CreatePreview();Capture();Changed?.Invoke();return removed;
         }
         static int TopFirst(NativeMergeCoin a,NativeMergeCoin b)=>(b.Position.y+b.HalfHeight).CompareTo(a.Position.y+a.HalfHeight);

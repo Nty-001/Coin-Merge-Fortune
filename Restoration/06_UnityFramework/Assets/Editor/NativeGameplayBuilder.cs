@@ -148,6 +148,7 @@ namespace CoinMerge.Recovery.Editor
             RecoveredMainMenusBuilder.Run();
             RecoveredVisualsBuilder.Run();
             MergeFeedbackBuilder.Run();
+            LifecycleParityBuilder.Run();
             Debug.Log("NATIVE_GAMEPLAY_ASSETS_AUTHORED; play validation remains required");
         }
         static PhysicsMaterial2D Material(string name,float friction,float bounce)

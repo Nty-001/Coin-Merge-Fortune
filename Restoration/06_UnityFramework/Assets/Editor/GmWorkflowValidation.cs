@@ -38,7 +38,7 @@ namespace CoinMerge.Recovery.Editor
             var pointer=new PointerEventData(EventSystem.current){button=PointerEventData.InputButton.Left,position=RectTransformUtility.WorldToScreenPoint(camera,rect.TransformPoint(rect.rect.center))};
             var hits=new List<RaycastResult>();EventSystem.current.RaycastAll(pointer,hits);
             var actual=hits.Count>0?ExecuteEvents.GetEventHandler<IPointerClickHandler>(hits[0].gameObject):null;
-            if(actual!=button.gameObject)throw new Exception("Pointer blocked: "+button.name+" by "+(hits.Count>0?hits[0].gameObject.name:"none"));
+            if(actual!=button.gameObject)throw new Exception("Pointer blocked: "+button.name+" by "+(hits.Count>0?hits[0].gameObject.name:"none")+" pointer="+pointer.position+" world="+rect.position+" local="+rect.localPosition+" canvasRect="+((RectTransform)button.targetGraphic.canvas.transform).rect+" canvasScale="+button.targetGraphic.canvas.transform.lossyScale+" cameraRect="+camera.pixelRect+" cameraSize="+camera.orthographicSize+" depth="+button.targetGraphic.depth);
             ExecuteEvents.Execute(actual,pointer,ExecuteEvents.pointerClickHandler);
         }
         static void Gm(int code){foreach(var b in gm.actions)if(b.action==code){Click(b.button);return;}throw new Exception("Missing GM "+code);}
@@ -87,7 +87,7 @@ namespace CoinMerge.Recovery.Editor
                         Open(2);Gm(30+outcome);Gm(36);cash=session.Player.fakeMoney;watched=session.Player.watch_video_count;
                         if(outcome==0)Capture("gm_event_tools.png");Gm(37);next=EditorApplication.timeSinceStartup+3;phase=5;break;
                     case 5:
-                        Require(session.Player.windowsCointimes==0,"1_A outcome "+outcome+" resets the current Unity drop window");
+                        Require(session.Player.windowsCointimes==(outcome==2?session.board.Config.rules.flow.adRewardDrop:0),"1_A outcome "+outcome+" preserves an unstarted request or resets after an actual callback");
                         Require(session.Player.watch_video_count==watched+(outcome==0?1:0),"1_A outcome "+outcome+" counts only completed ads");
                         Require(outcome==0?session.Player.fakeMoney>cash:session.Player.fakeMoney==cash,"1_A outcome "+outcome+" applies correct reward settlement");
                         outcome++;phase=outcome<4?4:6;break;
@@ -105,9 +105,9 @@ namespace CoinMerge.Recovery.Editor
                         Require(new PlayerStore(Prefix).LoadProfile(session.board.Config).rewardedVariant,"GM workflow keeps the chosen content version");
                         Open(2);coins=session.Player.coin1024Number;Gm(39);phase=9;break;
                     case 9:
-                        if(!session.rewardView.gameObject.activeSelf)break;
-                        Require(session.rewardView.Kind==4&&session.Player.coin1024Number==coins+1,"GM real 1000+1000 merge reaches highest-coin reward and counting event");
-                        Click(session.rewardView.highestClose);Open(2);Gm(38);phase=10;break;
+                        if(session.Player.coin1024Number!=coins+1||session.board.HighestFlowActive)break;
+                        Require(!session.rewardView.gameObject.activeSelf,"GM real 1000+1000 completes original fly-to-counter flow without an extra reward popup");
+                        Open(2);Gm(38);phase=10;break;
                     case 10:
                         if(!session.failView.gameObject.activeSelf)break;
                         Capture("gm_revive_binding.png");

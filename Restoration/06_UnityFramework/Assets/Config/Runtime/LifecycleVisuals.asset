@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54a863cd274b279dab350442cc4cd5, type: 3}
+  m_Name: LifecycleVisuals
+  m_EditorClassIdentifier:
+  highestRiseTime: 0.22
+  highestGatherTime: 0.28
+  highestFlyTime: 0.55
+  highestRiseFraction: 0.35
+  highestLift: 120
+  highestGrow: 1.08
+  highestGatherScale: 0.72
+  highestArc: {x: 180, y: 110}
+  highestFinalScale: 0.35
+  highestPulseScale: 1.12
+  highestPulseUp: 0.12
+  highestPulseDown: 0.1
+  highestAnimation: idle1
+  moneyAppear: 0.12
+  moneyGrow: 0.1
+  moneyHold: 0.35
+  moneyStagger: 0.16
+  moneyStartScale: 0.504
+  moneyAppearScale: 0.616
+  moneyScale: 0.7
+  moneyEndRatio: 0.35
+  moneyStarts:
+  - {x: 0, y: 14}
+  - {x: -26, y: -10}
+  - {x: 26, y: -12}
+  moneyTargets:
+  - {x: 0, y: 4}
+  - {x: -12, y: 8}
+  - {x: 12, y: 6}
+  moneyLifts:
+  - 170
+  - 145
+  - 150
+  moneyMinFlight: 0.48
+  moneyMaxFlight: 0.72
+  moneySpeed: 760
+  moneyPulseUp: 0.16
+  moneyPulseDown: 0.12
+  moneyPulseScale: 1.08
+  plusMove: 70
+  plusDuration: 1.8
+  rewardAutoClose: 1.5
+  ratingDelay: 1.5
+  glowSpeed: -90
+  failureStagger: 0.04
+  failureWarningInterval: 0.2
+  warningMovingLimit: 40
+  failureStaggerModulo: 6
+  failureTimes:
+  - 0.14
+  - 0.14
+  - 0.12
+  - 0.12
+  - 0.12
+  - 0.18
+  failureScales:
+  - {x: 1.16, y: 0.8}
+  - {x: 0.9, y: 1.14}
+  - {x: 1.1, y: 0.88}
+  - {x: 0.94, y: 1.08}
+  - {x: 1.04, y: 0.96}
+  - {x: 1, y: 1}
+  failureTint: {r: 1, g: 0.29411766, b: 0.29411766, a: 1}
+  warningStep: 0.18
+  revivePulseTime: 1
+  revivePulseScale: 1.05
+  sounds:
+  - Lifecycle/Audio/fly_red_bag
+  - Lifecycle/Audio/redbag_show
+  - Lifecycle/Audio/reward
+  - Lifecycle/Audio/guide_redbag_show
+  - Lifecycle/Audio/collect
+  - Lifecycle/Audio/fail

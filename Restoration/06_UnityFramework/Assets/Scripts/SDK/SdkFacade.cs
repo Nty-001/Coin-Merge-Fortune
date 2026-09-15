@@ -25,6 +25,7 @@ namespace CoinMerge.Recovery
         readonly List<WithdrawalResult> history = new List<WithdrawalResult>();
         readonly Dictionary<string, WithdrawalResult> completed = new Dictionary<string, WithdrawalResult>();
         public IReadOnlyList<WithdrawalResult> History => history;
+        public void OpenMarket(){Trace.Add("market.request:mock");}
         public Task<AdOutcome> ShowRewarded(string placement)
         { Trace.Add("ad.request:" + placement); Trace.Add("ad.result:" + NextAdOutcome); return Task.FromResult(NextAdOutcome); }
         public Task<AdOutcome> ShowInterstitial(string placement)

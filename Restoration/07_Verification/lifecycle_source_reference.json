@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "scope": "Complete recovered JS modules executed offline; scene/SDK stand-ins do not assert pixel-identical rendering",
+  "checks": [
+    "Original highest coin immediately increments total / round / daily counters",
+    "Original highest rise / gather times and arc control point",
+    "Original highest gathers to 72 percent scale and fades out",
+    "Original highest finish resumes preview without opening RewardDialog",
+    "Stale highest-flow token cannot complete current flow",
+    "Original fail coins stagger by 0.04 seconds modulo six",
+    "Original failure completes after six squash phases, not a fixed 1.15-second sleep",
+    "Original failure stretches and restores coin scale",
+    "Original rating stores zero-based selection / market gate for 1 stars",
+    "Original rating stores zero-based selection / market gate for 2 stars",
+    "Original rating stores zero-based selection / market gate for 3 stars",
+    "Original rating stores zero-based selection / market gate for 4 stars",
+    "Original rating stores zero-based selection / market gate for 5 stars",
+    "Original timed reward 2 ignores mask input",
+    "Original timed reward 3 ignores mask input",
+    "Original manual reward 1 accepts mask input",
+    "Original manual reward 4 accepts mask input",
+    "Original unstarted 1_A request keeps the window at 22 instead of resetting it"
+  ],
+  "highestRise": [
+    {
+      "time": 0.22,
+      "values": {
+        "position": {
+          "x": 35,
+          "y": 420,
+          "z": 0
+        },
+        "scale": 1.08
+      },
+      "ease": {
+        "easing": "sineOut"
+      }
+    },
+    {
+      "time": 0.28,
+      "values": {
+        "position": {
+          "x": 100,
+          "y": 300,
+          "z": 0
+        },
+        "scale": 0.72,
+        "opacity": 0
+      },
+      "ease": {
+        "easing": "sineInOut"
+      }
+    }
+  ],
+  "failure": [
+    {
+      "time": 0.14,
+      "scaleX": 1.16,
+      "scaleY": 0.8
+    },
+    {
+      "time": 0.14,
+      "scaleX": 0.9,
+      "scaleY": 1.14
+    },
+    {
+      "time": 0.12,
+      "scaleX": 1.1,
+      "scaleY": 0.88
+    },
+    {
+      "time": 0.12,
+      "scaleX": 0.94,
+      "scaleY": 1.08
+    },
+    {
+      "time": 0.12,
+      "scaleX": 1.04,
+      "scaleY": 0.96
+    },
+    {
+      "time": 0.18,
+      "scaleX": 1,
+      "scaleY": 1
+    }
+  ],
+  "bodyHashes": {
+    "GameScene": "17022d317fa8618e1680f95fea97248ec660352d66fe5b12c762ba5eb2c61f26",
+    "FailAnimation": "bd7cbe91b56c96182c8a026d35ac38076d4f8f8edd13191e6039c0d726a707f9",
+    "RewardCashFlight": "8b97da998acee2433de311e641874b3a9a7ecd498972348a7041eccbcb545426",
+    "Rating": "f1bd85745728635c9999285c9c241984a915c98180c3ece98d6243635f4a4666"
+  }
+}

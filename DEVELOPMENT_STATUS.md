@@ -1,8 +1,10 @@
 # 当前开发状态
 
+2026-09-15 本轮差异核对：恢复最高级金币上升/汇聚/原光环/飞向入口、现金飞行及顶部金额、两处原评分触发、奖励标题/遮罩/旋转光、失败染色与整盘挤压、危险线、长短屏适配，并对齐 1_A 未启动广告的计数保留。图文报告 `Restoration/09_TestGuide/parity.html`，来源、验证结果和未验证范围见 `Restoration/07_Verification/LIFECYCLE_PARITY_AUDIT.md`。正式 Unity 工程仍为 `Restoration/06_UnityFramework`，停止 Play 后重新打开加载场景，不需要清存档。商业 SDK 继续 Mock；不宣称全游戏已经100%一致。
+
 2026-09-15：恢复同值金币合成的原 XX_TX 爆光、12颗飞星、连击英文/倍数与音效，转盘显示积分改为首颗星星到达后更新。补齐主界面15秒闲置小手、原3.016667秒循环动画、触摸/弹窗/失败的隐藏规则。原 JS 27 项对照、GM 57 项和主玩法31项回归通过；本轮专用渲染检查见 `Restoration/07_Verification/merge_feedback_validation.json`，来源与边界见 `MERGE_FEEDBACK_AND_IDLE_GUIDE.md`。
 
-最新进展（2026-09-15）：交付 `Restoration/09_TestGuide/index.html` 离线商业化测试指南与 36 项可记录执行结果的用例；新增 GM 提现五项任务准备、时间快进、广告结果、真实合成/复活和一次性指定转盘。57 项实际按钮命中与流程检查通过，HTML 的72组配置组合及15项离线源代码检查通过。修正原 FailDialog 可见复活/关闭按钮误绑，详细范围及已知差异见 `Restoration/07_Verification/GM_TEST_GUIDE.md`。商业 SDK 继续 Mock；未宣称所有原包差异已消除。
+最新进展（2026-09-15）：交付 `Restoration/09_TestGuide/index.html` 离线商业化测试指南（现已扩展为42项可记录执行结果的用例）；新增 GM 提现五项任务准备、时间快进、广告结果、真实合成/复活和一次性指定转盘。57 项实际按钮命中与流程检查通过，HTML 的72组配置组合及15项离线源代码检查通过。修正原 FailDialog 可见复活/关闭按钮误绑，详细范围及已知差异见 `Restoration/07_Verification/GM_TEST_GUIDE.md`。商业 SDK 继续 Mock；未宣称所有原包差异已消除。
 
 初始资料和 Unity 框架已备份到用户指定 GitHub 仓库：
 `31ae71f36dd0a9ed0dd7925d6621ce5fb7ec4600`（main）。本地与远端提交号核验一致。
