@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ namespace CoinMerge.Recovery
     {
         public NativeMergeBoard board;
         public VersionGmPanel gm;
+        public RecoveredMainMenus menus;
         public Camera worldCamera;
         public Text moneyText,bubbleText,progressText,remainingText,highestText;
         public Image progressFill,nextImage;
@@ -54,7 +56,7 @@ namespace CoinMerge.Recovery
         {
             if(!initialized)return;
             if(gm&&gm.IsOpen){board.InputBlocked=true;inputStarted=false;return;}
-            board.InputBlocked=rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
+            board.InputBlocked=(menus&&menus.IsOpen)||rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
             if(automaticInput)ReadBoardInput();
             board.Tick(Time.deltaTime);
             if(!board.GameOver)Physics2D.Simulate(Time.deltaTime);
@@ -105,7 +107,7 @@ namespace CoinMerge.Recovery
             if(pendingReward==2)
             {
                 board.InputBlocked=true;
-                var outcome=await Sdk.ShowRewarded("1_A");Player.windowsCointimes=0;
+                var outcome=await ShowGameplayAd("1_A");Player.windowsCointimes=0;
                 if(outcome==AdOutcome.Completed)ShowReward(2);else board.InputBlocked=false;
             }
             else ShowReward(3);
@@ -137,7 +139,7 @@ namespace CoinMerge.Recovery
         async void OnRevive()
         {
             failView.revive.interactable=false;
-            var outcome=await Sdk.ShowRewarded("3_A");
+            var outcome=await ShowGameplayAd("3_A");
             if(outcome==AdOutcome.Completed){failView.gameObject.SetActive(false);ShowReward(1);}
             else failView.revive.interactable=true;
         }
@@ -146,7 +148,11 @@ namespace CoinMerge.Recovery
         {
             // Original GameScene's canLottery branch is empty; progress refresh schedules the popup.
             int required=RecoveredGameRules.RequiredScore(board.Config.rules.lotteryScores,Player.currentLotteryCount);
-            if(Player.gameTotalScore<required)remainingText.text=Locale.Label("45").Replace("%{0}",(required-Player.gameTotalScore).ToString());
+            if(Player.gameTotalScore<required)
+            {
+                string message=Locale.Label("45").Replace("%{0}",(required-Player.gameTotalScore).ToString());
+                if(menus)menus.ShowToast(message);else remainingText.text=message;
+            }
         }
         void OnWheelDraw()
         {
@@ -164,7 +170,7 @@ namespace CoinMerge.Recovery
             if(wheelRewardView.Settled||wheelRewardView.WatchingAd)return;
             if(wheelRewardView.RequiresAd)
             {
-                wheelRewardView.WatchingAd=true;var outcome=await Sdk.ShowRewarded("2_A");wheelRewardView.WatchingAd=false;
+                wheelRewardView.WatchingAd=true;var outcome=await ShowGameplayAd("2_A");wheelRewardView.WatchingAd=false;
                 // Both original success and error callbacks settle; a request that never starts does not.
                 if(outcome==AdOutcome.Unavailable)return;
             }
@@ -173,6 +179,13 @@ namespace CoinMerge.Recovery
             Player.fakeMoney+=wheelRewardView.Cash;Player.coin1024Number+=wheelRewardView.Coins;
             Refresh();Save();
         }
+        async Task<AdOutcome> ShowGameplayAd(string placement)
+        {
+            var outcome=await Sdk.ShowRewarded(placement);
+            // HWL.addadnum -> PlayData.add_show_video, on the successful mock callback.
+            if(outcome==AdOutcome.Completed){Player.watch_video_count++;Save();}
+            return outcome;
+        }
         public void ChangeProfile(string country,string cohort,bool rewarded)
         {
             Profile.country=RecoveredGameRules.NormalizeCountry(country,board.Config.rules.supportedCountries);
@@ -180,10 +193,12 @@ namespace CoinMerge.Recovery
         }
         public void ResetPlayerKeepingProfile()
         {
+            if(menus)menus.CloseAll();
             store.ResetPlayer();Player=store.LoadPlayer();rewardDelay=guideDelay=wheelDelay=-1;
             rewardView.gameObject.SetActive(false);failView.gameObject.SetActive(false);
             wheelView.gameObject.SetActive(false);wheelRewardView.gameObject.SetActive(false);
             board.Initialize(Player);guideView.Show(Player.guideStep,Player.fakeMoney);Save();Refresh();
+            if(menus)menus.audioCues.SetMusic(Player.open_bgm);
         }
         public void Save(){if(!initialized)return;board.Capture();store.Save(Player);}
         void ApplyLocale()

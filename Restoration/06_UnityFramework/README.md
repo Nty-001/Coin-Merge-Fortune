@@ -31,4 +31,15 @@ RecoveredNode.originalComponents 保留所有原字段，但它不是原玩法�
 4. 按 module_body_inventory、field_values 和 component_migration 的映射逐项移植真实玩法；不要把框架的 mock 规则当作服务器真规则。
 5. 对照原 MuMu 画面执行逐控件、动画和物理轨迹测试。当前未声称达到 1:1。
 
-完整差异清单见 ../07_Verification/native_gameplay_scope.md。地区/版本的独立持久化已实现，但完整 GM 界面和自然量/收益场景切换尚未接通，也未修改 MuMu 原应用。
+较早阶段差异清单见 ../07_Verification/native_gameplay_scope.md；后续状态以下方更新及根目录 DEVELOPMENT_STATUS.md 为准。MuMu 原应用未修改。
+
+## 当前可运行入口（2026-09-15 更新）
+
+Unity Hub 添加本目录后，打开 `Assets/Scenes/RecoveredMain.unity`。右下 GM 弹窗可切换 A 基础版 / B 收益版及国家；应用会加载实际场景，清玩家存档保留版本选择。A/B 是本地测试名称，不等于已经证实原游戏的买量/自然量规则。
+
+收益版主界面的设置、规则、顶部 Withdraw、2000 金币按钮及 11 个关联页面已接入；支持原金额/合成/视频/有效登录条件、账户输入、验证动画、阶段存档及关闭返回。Wheel 积分不足显示原提示。所有广告继续使用本地 mock，成功回调会累计观看次数；不执行真实提现。
+
+主界面修复记录与剩余差异见 `../07_Verification/MAIN_MENU_RESTORATION.md`；分流证据见 `../07_Verification/VERSION_ROUTING_FINDINGS.md`。
+130 项菜单 Play Mode、952 组原函数差分、31 项主玩法回归和 74 项版本回归通过。不能据此宣称全部视觉及生命周期已 100% 一致。
+
+如果编辑器仍显示旧运行实例，停止 Play 后重新打开 `Assets/Scenes/RecoveredMain.unity`。不需要清玩家存档。

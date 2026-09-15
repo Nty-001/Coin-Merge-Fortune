@@ -20,7 +20,7 @@ namespace CoinMerge.Recovery.Editor
             var text=Component<Text>(nodes,id);Labels.Add(new LocalizedLabelBinding {label=text,key=key});
             text.text=new RecoveredLocalization("US").Label(key);
         }
-        static Dictionary<int,GameObject> Nodes(GameObject root)
+        internal static Dictionary<int,GameObject> Nodes(GameObject root)
         {
             var nodes=new Dictionary<int,GameObject>();
             foreach(var n in root.GetComponentsInChildren<RecoveredNode>(true))nodes.Add(n.sourceObjectId,n.gameObject);
@@ -40,7 +40,7 @@ namespace CoinMerge.Recovery.Editor
             var button=node.GetComponent<Button>()??node.AddComponent<Button>();button.targetGraphic=graphic;
             button.transition=Selectable.Transition.None;return button;
         }
-        static GameObject Source(string path,Transform parent)
+        internal static GameObject Source(string path,Transform parent)
         {
             var source=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/HotUpdate/"+path+".prefab");
             if(!source)throw new InvalidOperationException("Missing original prefab: "+path);
@@ -50,6 +50,8 @@ namespace CoinMerge.Recovery.Editor
                 foreach(var component in node.originalComponents)
                 {
                     if(component.type=="cc.Sprite")node.GetComponent<Image>().enabled=component.enabled;
+                    if(component.type=="cc.LabelOutline")node.GetComponent<Outline>().enabled=component.enabled;
+                    if(component.type=="cc.LabelShadow")foreach(var shadow in node.GetComponents<Shadow>())if(!(shadow is Outline))shadow.enabled=component.enabled;
                     if(component.type=="cc.Label"||component.type=="cc.RichText")
                     {
                         var text=node.GetComponent<Text>();text.enabled=component.enabled;
@@ -143,6 +145,7 @@ namespace CoinMerge.Recovery.Editor
             EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/RecoveredMain.unity",true),new EditorBuildSettingsScene("Assets/Scenes/MockFlow.unity",false)};
             AssetDatabase.SaveAssets();
             VersionVariantsBuilder.Run();
+            RecoveredMainMenusBuilder.Run();
             Debug.Log("NATIVE_GAMEPLAY_ASSETS_AUTHORED; play validation remains required");
         }
         static PhysicsMaterial2D Material(string name,float friction,float bounce)

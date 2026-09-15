@@ -37,6 +37,8 @@ namespace CoinMerge.Recovery.Editor
                     if(!prefabs.TryGetValue(settings.skeletonData.asset,out var prefab))
                         throw new InvalidOperationException("No native skeleton for source node "+node.sourceObjectId);
                     var child=(GameObject)PrefabUtility.InstantiatePrefab(prefab,node.transform);
+                    // Save the authored source settings as real prefab data, including hit testing and playback flags.
+                    PrefabUtility.UnpackPrefabInstance(child,PrefabUnpackMode.Completely,InteractionMode.AutomatedAction);
                     child.name="NativeAnimation";
                     child.transform.SetAsFirstSibling();
                     var rect=(RectTransform)child.transform;rect.anchoredPosition=Vector2.zero;

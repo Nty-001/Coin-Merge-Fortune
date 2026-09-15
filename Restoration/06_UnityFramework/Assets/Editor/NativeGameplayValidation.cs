@@ -133,10 +133,13 @@ namespace CoinMerge.Recovery.Editor
                         board.InputBlocked=false;board.TriggerFailure();next=EditorApplication.timeSinceStartup+1.4;break;
                     case 3:
                         Require(session.failView.gameObject.activeSelf&&board.GameOver,"Failure delay opens original fail prefab");
+                        int beforeAds=player.watch_video_count;
                         session.Sdk.NextAdOutcome=AdOutcome.Failed;session.failView.revive.onClick.Invoke();
                         Require(session.failView.gameObject.activeSelf&&session.failView.revive.interactable,"Failed revive ad leaves failure dialog usable");
+                        Require(player.watch_video_count==beforeAds,"Failed ad does not count as a completed video");
                         beforeReward=player.fakeMoney;session.Sdk.NextAdOutcome=AdOutcome.Completed;session.failView.revive.onClick.Invoke();
                         Require(session.rewardView.Kind==1&&session.rewardView.gameObject.activeSelf,"Completed 3_A ad opens revive reward");
+                        Require(player.watch_video_count==beforeAds+1&&new PlayerStore(session.saveNamespace).LoadPlayer().watch_video_count==beforeAds+1,"Completed mock ad persists the original withdrawal video counter");
                         session.rewardView.mask.onClick.Invoke();
                         Require(!board.GameOver&&player.fakeMoney>beforeReward,"Revive reward closes, grants cash, resumes physics");
                         Require(board.Coins.Count==4,"Revive removes ceil(5/3) lower coins and restores one preview");

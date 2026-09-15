@@ -36,6 +36,15 @@ namespace CoinMerge.Recovery
             return icons[index];
         }
         public string Money(double amount)=>FormatMoney(amount,Data.id,Data.currency);
+        // GameManagement.getRealMonstr differs from the main balance formatter in several countries.
+        public string RealMoney(double amount)
+        {
+            int id=Data.id;string symbol=Data.currency;
+            if(id==2){string three=EcmaFixed(amount,3);return symbol+TrimZeros(three.Substring(0,three.Length-1));}
+            string value=TrimZeros(EcmaFixed(Math.Floor(amount*100)/100,id==1||id==16?0:2));
+            if(id==3)return Group(value.Replace('.',','),','," ")+symbol;
+            value=Group(value,'.',",");return id==5||id==16?value+symbol:symbol+value;
+        }
         public static string FormatMoney(double amount,int countryId,string symbol)
         {
             // GameManagement.getmonstr, including its truncation before decimal rounding.
