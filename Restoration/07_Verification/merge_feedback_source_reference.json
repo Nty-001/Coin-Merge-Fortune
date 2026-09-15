@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "checks": [
+    "Original single merge suppresses combo praise",
+    "Original rating and multiplier selection for 2 merges",
+    "Original rating and multiplier selection for 3 merges",
+    "Original rating and multiplier selection for 4 merges",
+    "Original rating and multiplier selection for 5 merges",
+    "Original rating and multiplier selection for 6 merges",
+    "Original rating and multiplier selection for 7 merges",
+    "Original rating and multiplier selection for 8 merges",
+    "Original rating and multiplier selection for 9 merges",
+    "Original rating and multiplier selection for 15 merges",
+    "Original hand is hidden before 15 seconds",
+    "Original hand appears after 15 seconds",
+    "Original ad resets and suppresses hand",
+    "Original pending reward resets and suppresses hand",
+    "Original pending wheel resets and suppresses hand",
+    "Original open UI resets and suppresses hand",
+    "Original loading UI resets and suppresses hand",
+    "Original game over resets and suppresses hand",
+    "Original capture-phase touch-start hides hand",
+    "Unity chainDelay equals recovered original value",
+    "Unity starCount equals recovered original value",
+    "Unity starDelay equals recovered original value",
+    "Unity scatterRadius equals recovered original value",
+    "Unity flightDuration equals recovered original value",
+    "Unity targetSpread equals recovered original value",
+    "Unity comboGapY equals recovered original value",
+    "Original requested idel1 differs from actual idle1; prefab default remains the explicit playback source"
+  ],
+  "ratings": [
+    {
+      "count": 2,
+      "praise": "Good",
+      "multiplier": 2,
+      "audio": "sfx_combo_2"
+    },
+    {
+      "count": 3,
+      "praise": "Great",
+      "multiplier": 3,
+      "audio": "sfx_combo_3"
+    },
+    {
+      "count": 4,
+      "praise": "Amazing",
+      "multiplier": 4,
+      "audio": "sfx_combo_4"
+    },
+    {
+      "count": 5,
+      "praise": "Unbelievable",
+      "multiplier": 5,
+      "audio": "sfx_combo_5"
+    },
+    {
+      "count": 6,
+      "praise": "Unbelievable",
+      "multiplier": 6,
+      "audio": "sfx_combo_5"
+    },
+    {
+      "count": 7,
+      "praise": "Unbelievable",
+      "multiplier": 7,
+      "audio": "sfx_combo_5"
+    },
+    {
+      "count": 8,
+      "praise": "Unbelievable",
+      "multiplier": 8,
+      "audio": "sfx_combo_5"
+    },
+    {
+      "count": 9,
+      "praise": "Unbelievable",
+      "multiplier": 8,
+      "audio": "sfx_combo_5"
+    },
+    {
+      "count": 15,
+      "praise": "Unbelievable",
+      "multiplier": 8,
+      "audio": "sfx_combo_5"
+    }
+  ],
+  "handDelay": 15,
+  "handClip": {
+    "__type__": "cc.AnimationClip",
+    "_name": "handslip",
+    "_duration": 3.0166666666666666,
+    "wrapMode": 2,
+    "curveData": {
+      "props": {
+        "position": [
+          {
+            "frame": 0,
+            "value": [
+              -81.65177665525071,
+              270,
+              0
+            ]
+          },
+          {
+            "frame": 1.5,
+            "value": [
+              132.281,
+              270,
+              0
+            ]
+          },
+          {
+            "frame": 3,
+            "value": [
+              -88.97163736263741,
+              270,
+              0
+            ]
+          },
+          {
+            "frame": 3.0166666666666666,
+            "value": [
+              -91.43,
+              270,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "mergeSkeleton": {
+    "uuid": "c80b42c1-1e4d-4ece-a55c-7c6a5616b57c",
+    "name": "XX_TX",
+    "animations": [
+      "idle",
+      "idle1"
+    ],
+    "defaultPlayback": "idle1",
+    "requestedNames": {
+      "1": "idel",
+      "2": "idel",
+      "5": "idel",
+      "10": "idel",
+      "20": "idel1",
+      "50": "idel1",
+      "100": "idel1",
+      "200": "idel1",
+      "500": "idel1",
+      "1000": "idel1",
+      "2000": "idel1"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Unity 2022.3.62f3c1 基础框架
 
+已补齐合成爆光、12颗飞星、Good/Great/Amazing/Unbelievable 与 Combo 倍数，以及15秒闲置小手和原左右滑动动画。[规则、截图与验证记录](../07_Verification/MERGE_FEEDBACK_AND_IDLE_GUIDE.md)。重新打开加载场景后生效，无需清存档。
+
 最新测试入口：[商业化 HTML 指南](../09_TestGuide/index.html)。GM 已增加提现任务边界、游戏时间 +12h/+24h、广告异常、真实合成/复活和下一次转盘指定工具；[本轮验证与使用说明](../07_Verification/GM_TEST_GUIDE.md)。停止 Play 并重新打开加载场景后使用更新后的 GM。
 
 目录可交给 Unity Hub 作为基础工程打开。它是后续移植框架，不是完成了 1:1 行为和画面验证的游戏。

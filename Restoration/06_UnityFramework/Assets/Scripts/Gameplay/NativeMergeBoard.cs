@@ -20,6 +20,7 @@ namespace CoinMerge.Recovery
         public PlayerProgress Player=>player;
         public event Action Changed,Dropped,Failed;
         public event Action<int> Merged;
+        public event Action<int,Vector2,int> MergePresented;
         public event Action<NativeMergeCoin> HighestCoinCreated;
         readonly List<NativeMergeCoin> active=new List<NativeMergeCoin>(128);
         readonly Stack<NativeMergeCoin> pool=new Stack<NativeMergeCoin>(128);
@@ -159,6 +160,7 @@ namespace CoinMerge.Recovery
             player.roundScore+=next.mergeScore;player.gameTotalScore+=next.mergeScore;
             player.savedCoinsScore=player.roundScore;player.savedDrawScore=player.gameTotalScore;
             if(next.upgrade==next.value)pendingHighest=result;
+            MergePresented?.Invoke(next.value,point-Vector2.up*config.rules.flow.mergeSpawnLiftPixels/Units,player.gameTotalScore);
             Merged?.Invoke(next.value);Changed?.Invoke();
         }
         public void Tick(float dt)

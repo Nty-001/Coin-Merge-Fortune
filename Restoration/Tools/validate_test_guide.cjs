@@ -38,7 +38,7 @@ check(vm.runInContext('sim.days===16',simulator),'A later date with five merges 
 const lists=vm.createContext({});
 vm.runInContext(source.slice(source.indexOf('const C=['),source.indexOf('let saved=')),lists);
 const cases=vm.runInContext('C',lists);
-check(cases.length===36&&new Set(cases.map(c=>c[0])).size===36,'Checklist contains 36 distinct manual cases');
+check(cases.length===38&&new Set(cases.map(c=>c[0])).size===38,'Checklist contains 38 distinct manual cases');
 vm.runInContext(source.slice(source.indexOf('const S=['),source.indexOf("$('sources').innerHTML")),lists);
 check(vm.runInContext('S',lists).every(s=>fs.existsSync(path.join(root,'02_Gameplay/HotUpdate/Modules',s[0]))),'Every original-module source link resolves');
 const result={passed:true,scope:'Offline HTML structure, JavaScript syntax, embedded-data freshness and pure task/simulator logic; no browser rendering verification',checks,taskCombinations:combinations,manualCases:cases.length};

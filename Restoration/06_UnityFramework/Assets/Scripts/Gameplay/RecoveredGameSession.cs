@@ -12,6 +12,8 @@ namespace CoinMerge.Recovery
         public VersionGmPanel gm;
         public RecoveredMainMenus menus;
         public RecoveredNoticeTicker notice;
+        public RecoveredMergeFeedback mergeFeedback;
+        public RecoveredIdleGuide idleGuide;
         public Camera worldCamera;
         public Text moneyText,bubbleText,progressText,remainingText,highestText;
         public Image progressFill,nextImage;
@@ -28,6 +30,8 @@ namespace CoinMerge.Recovery
         public VersionProfile Profile {get;private set;}
         public PlayerProgress Player {get;private set;}
         public MockSdkFacade Sdk {get;}=new MockSdkFacade();
+        public bool AdShowing {get;private set;}
+        public bool CanShowIdleGuide=>initialized&&!board.GameOver&&!AdShowing&&rewardDelay<0&&wheelDelay<0&&!(gm&&gm.IsOpen)&&!(menus&&menus.IsOpen)&&!rewardView.gameObject.activeSelf&&!failView.gameObject.activeSelf&&!wheelView.gameObject.activeSelf&&!wheelRewardView.gameObject.activeSelf&&!guideView.gameObject.activeSelf;
         PlayerStore store;
         float saveElapsed,rewardDelay=-1,guideDelay=-1,wheelDelay=-1;
         int pendingReward;
@@ -48,6 +52,7 @@ namespace CoinMerge.Recovery
             Physics2D.gravity=new Vector2(0,board.Config.rules.physics.gravityPixels/board.Units);
             Physics2D.velocityIterations=board.Config.velocityIterations;Physics2D.positionIterations=board.Config.positionIterations;
             Physics2D.simulationMode=SimulationMode2D.Script;Physics2D.reuseCollisionCallbacks=true;
+            if(mergeFeedback)mergeFeedback.Initialize(this);
             board.Initialize(Player);initialized=true;guideView.Show(Player.guideStep,Player.fakeMoney);
             // Step 1 opens only after the first merge, as GameScene does.
             if(Player.guideStep==1)guideView.gameObject.SetActive(false);
@@ -93,6 +98,7 @@ namespace CoinMerge.Recovery
         }
         void OnDrop()
         {
+            if(idleGuide)idleGuide.ResetIdle();
             if(Player.guideStep==0){Player.guideStep=1;guideView.gameObject.SetActive(false);}
             int stage=RecoveredGameRules.RewardDropStage(Player,board.Config.rules.flow);
             if(stage>0&&rewardDelay<0){pendingReward=stage;rewardDelay=board.Config.rules.flow.popupDelay;}
@@ -144,7 +150,7 @@ namespace CoinMerge.Recovery
             if(outcome==AdOutcome.Completed){failView.gameObject.SetActive(false);ShowReward(1);}
             else failView.revive.interactable=true;
         }
-        void OnRestart(){board.ResetAfterFailure();if(notice)notice.Restart();Save();}
+        void OnRestart(){board.ResetAfterFailure();if(mergeFeedback)mergeFeedback.ResetScore();if(idleGuide)idleGuide.ResetIdle();if(notice)notice.Restart();Save();}
         void OnWheelButton()
         {
             // Original GameScene's canLottery branch is empty; progress refresh schedules the popup.
@@ -183,7 +189,8 @@ namespace CoinMerge.Recovery
         }
         async Task<AdOutcome> ShowGameplayAd(string placement)
         {
-            var outcome=await Sdk.ShowRewarded(placement);
+            AdOutcome outcome;AdShowing=true;
+            try{outcome=await Sdk.ShowRewarded(placement);}finally{AdShowing=false;}
             // HWL.addadnum -> PlayData.add_show_video, on the successful mock callback.
             if(outcome==AdOutcome.Completed){Player.watch_video_count++;Save();}
             return outcome;
@@ -200,6 +207,7 @@ namespace CoinMerge.Recovery
             rewardView.gameObject.SetActive(false);failView.gameObject.SetActive(false);
             wheelView.gameObject.SetActive(false);wheelRewardView.gameObject.SetActive(false);
             board.Initialize(Player);guideView.Show(Player.guideStep,Player.fakeMoney);Save();Refresh();
+            if(mergeFeedback)mergeFeedback.ResetScore();if(idleGuide)idleGuide.ResetIdle();
             if(menus)menus.audioCues.SetMusic(Player.open_bgm);
             if(notice)notice.Restart();
         }
@@ -207,6 +215,7 @@ namespace CoinMerge.Recovery
         int gmNextWheelIndex=-1;
         public void GmSetNextWheel(int index){gmNextWheelIndex=Mathf.Clamp(index,0,board.Config.rules.lotteryRewards.Length-1);}
         public void GmRefresh(){Refresh();if(menus)menus.Refresh();Save();}
+        public void RefreshPresentation(){Refresh();}
         public bool GmCanTrigger=>initialized&&!board.GameOver&&!(menus&&menus.IsOpen)&&!rewardView.gameObject.activeSelf&&!wheelView.gameObject.activeSelf&&!wheelRewardView.gameObject.activeSelf&&!guideView.gameObject.activeSelf;
         public void GmPrepareDrop(int count)
         {Player.guideStep=9999;guideView.gameObject.SetActive(false);Player.windowsCointimes=Math.Max(0,count-1);Player.dropCointimes=Math.Max(Player.dropCointimes,count-1);rewardDelay=-1;GmRefresh();}
@@ -229,13 +238,13 @@ namespace CoinMerge.Recovery
                 bubble.SetActive(remaining>0);bubbleText.text=Locale.Label("56").Replace("%{0}",Locale.Money(remaining));
             }
             int required=RecoveredGameRules.RequiredScore(board.Config.rules.lotteryScores,Player.currentLotteryCount);
-            progressText.text=Player.gameTotalScore+"/"+required;
-            progressFill.fillAmount=Mathf.Clamp01((float)Player.gameTotalScore/required);
-            int spins=RecoveredGameRules.AvailableSpins(board.Config.rules.lotteryScores,Player.gameTotalScore,Player.currentLotteryCount);
+            int displayScore=mergeFeedback?mergeFeedback.ScoreForDisplay(Player.gameTotalScore):Player.gameTotalScore;
+            progressText.text=displayScore+"/"+required;
+            progressFill.fillAmount=Mathf.Clamp01((float)displayScore/required);
+            int spins=RecoveredGameRules.AvailableSpins(board.Config.rules.lotteryScores,displayScore,Player.currentLotteryCount);
             if(spins>0&&!board.GameOver&&wheelDelay<0&&!wheelView.gameObject.activeSelf)wheelDelay=board.Config.rules.flow.popupDelay;
-            remainingText.text=Locale.Label("45").Replace("%{0}",Math.Max(0,required-Player.gameTotalScore).ToString());
+            remainingText.text=Locale.Label("45").Replace("%{0}",Math.Max(0,required-displayScore).ToString());
             highestText.text=Player.coin1024Number.ToString();nextImage.sprite=board.SpriteFor(Player.savedNextCoinValue);
-            dropGuide.SetActive(Player.guideStep==0&&!guideView.gameObject.activeSelf);
         }
         void OnApplicationPause(bool paused){if(paused&&initialized){Player.windowsCointimes=0;Save();}}
         void OnApplicationQuit(){Save();}

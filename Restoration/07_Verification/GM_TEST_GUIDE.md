@@ -1,6 +1,6 @@
 # 商业化测试指南与 GM（2026-09-15）
 
-交付入口：[离线 HTML 测试指南](../09_TestGuide/index.html)。包含奖励时间轴、广告回调矩阵、按国家/档位切换的提现任务图、活跃日模拟、GM 截图和 36 项可记录结果的人工用例。无需服务器或安装依赖。
+交付入口：[离线 HTML 测试指南](../09_TestGuide/index.html)。包含奖励时间轴、广告回调矩阵、按国家/档位切换的提现任务图、活跃日模拟、GM 截图和 38 项可记录结果的人工用例。无需服务器或安装依赖。
 
 ## Unity 使用
 
@@ -20,7 +20,7 @@ GM 保持非全屏弹窗，三个页签为版本、提现/时间、事件/广告
 
 - [gm_workflow_validation.json](gm_workflow_validation.json)：57 项 Unity Play Mode 检查通过，包括五项任务的差 1 → 达标 → 账户验证 → 下一阶段、跨日第五次合成、保存重载、1_A 四种结果、2_A 无填充/错误回调、3_A 失败重试和成功复活、真实最高币合成及转盘覆盖只生效一次。
 - 检查实际 EventSystem 指针命中的标准 Button，不以单独调用 onClick 代替可点击性验证。测试发现 FailDialog 误绑停用的 anim/videobtn，并将可见复活按钮误当关闭按钮；已按源节点 7/13/37 修复，同时恢复活动布局的文字和最高币累计显示。
-- [html_guide_validation.json](html_guide_validation.json)：15 项离线源代码检查通过，含完整脚本语法、内嵌报告新鲜度、36 个用例、72 组地区组/档位/路线配置和活跃日模拟逻辑。
+- [html_guide_validation.json](html_guide_validation.json)：15 项离线源代码检查通过，含完整脚本语法、内嵌报告新鲜度、38 个用例、72 组地区组/档位/路线配置和活跃日模拟逻辑。
 - HTML 的本地浏览器打开操作被浏览器安全策略阻止；没有绕过策略，也没有声称完成浏览器渲染验收。GM 和复活截图来自 Unity 实际渲染。
 - 使用独立 `08_ValidationUnity` 工程与 `coinmerge.gm.workflow.disposable` 存档；测试后清除测试命名空间。正式场景继续保留 `coinmerge.recovered.v1`，未运行自动测试修改用户玩家状态。
 
