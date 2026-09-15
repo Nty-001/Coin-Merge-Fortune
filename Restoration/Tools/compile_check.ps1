@@ -12,6 +12,7 @@ $taskResponse = @('/nologo','/target:library','/langversion:latest',('/out:"' + 
 $taskResponse += $taskRefs | ForEach-Object { '/reference:"' + $_.FullName + '"' }
 $taskResponse += '/reference:"' + $taskUi + '"'
 $taskResponse += '/reference:"' + (Join-Path $taskEditorData 'UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll') + '"'
+$taskResponse += '/reference:"' + (Join-Path $taskEditorData 'UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll') + '"'
 $taskResponse += Get-ChildItem (Join-Path $taskProject 'Assets') -Recurse -Filter '*.cs' | ForEach-Object { '"' + $_.FullName + '"' }
 $taskRsp = Join-Path $taskOut 'compile.rsp'
 [System.IO.File]::WriteAllLines($taskRsp,$taskResponse,[System.Text.UTF8Encoding]::new($false))

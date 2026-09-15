@@ -108,7 +108,7 @@ namespace CoinMerge.Recovery.Editor
             nodes[10].SetActive(false);nodes[11].SetActive(false);
             Component<Text>(nodes,25).text="Withdraw";Component<Text>(nodes,34).text="Wheel";Component<Text>(nodes,56).text="Next";
             Label(nodes,25,"8");Label(nodes,34,"91");Label(nodes,56,"43");
-            // Retain source placeholder for rolling notice; actual random notice formatter is pending.
+            // RecoveredVisualsBuilder wires the original localized ticker after menu/variant authoring.
             Component<Text>(nodes,39).text="";
             var progress=Component<Image>(nodes,69);progress.type=Image.Type.Filled;progress.fillMethod=Image.FillMethod.Horizontal;progress.fillOrigin=0;
             var obsoleteSlider=nodes[14].GetComponent<Slider>();if(obsoleteSlider)UnityEngine.Object.DestroyImmediate(obsoleteSlider);
@@ -146,6 +146,7 @@ namespace CoinMerge.Recovery.Editor
             AssetDatabase.SaveAssets();
             VersionVariantsBuilder.Run();
             RecoveredMainMenusBuilder.Run();
+            RecoveredVisualsBuilder.Run();
             Debug.Log("NATIVE_GAMEPLAY_ASSETS_AUTHORED; play validation remains required");
         }
         static PhysicsMaterial2D Material(string name,float friction,float bounce)

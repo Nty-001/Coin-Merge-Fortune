@@ -5,7 +5,7 @@
 ## 已提供
 
 - Assets/Prefabs：63 个源场景/预制体对应的 Unity YAML 预制体，节点坐标、层级、尺寸、锚点、旋转和资源引用来自原数据。
-- Assets/Scenes：原始两套玩法的 4 个静态场景图、MockFlow.unity，以及当前原生主玩法入口 RecoveredMain.unity。
+- Assets/Scenes：原始两套玩法的 4 个静态场景图、MockFlow.unity、完整启动入口 RecoveredLoading.unity，以及收益版 RecoveredMain.unity 和基础版 RecoveredPackaged.unity。
 - Assets/Art：源纹理、432 张独立图片、字体、音频和骨骼原始数据/独立 region。
 - Assets/Config：默认配置、实际缓存归一化配置、代码默认值和硬币参数。
 - Assets/Scripts/Core：数据 DTO 与 RecoveredNode 原始属性保留组件。
@@ -26,7 +26,7 @@ RecoveredNode.originalComponents 保留所有原字段，但它不是原玩法�
 ## 后续使用
 
 1. 在指定版本 Unity 中打开此目录。
-2. 打开 Assets/Scenes/RecoveredMain.unity 运行当前已接通的金币、引导与复活链路；完整广告/提现 mock 演示仍在 MockFlow.unity。
+2. 打开 Assets/Scenes/RecoveredLoading.unity 后点 Play，按已保存版本进入对应加载页和玩法。RecoveredMain.unity / RecoveredPackaged.unity 可直接调试玩法；主游戏的设置、规则、广告和提现分支已接通，商业 SDK 使用本地 mock。
 3. 新原生资产制作入口为 Coin Merge > Author native main gameplay assets；Play Mode 校验入口为 Validate native gameplay in Play Mode。制作操作会重写 Runtime 预制体及 RecoveredMain 场景，手工修改需先提交。旧基线生成器也会重写其目标，不要直接覆盖后续开发。
 4. 按 module_body_inventory、field_values 和 component_migration 的映射逐项移植真实玩法；不要把框架的 mock 规则当作服务器真规则。
 5. 对照原 MuMu 画面执行逐控件、动画和物理轨迹测试。当前未声称达到 1:1。
@@ -35,11 +35,12 @@ RecoveredNode.originalComponents 保留所有原字段，但它不是原玩法�
 
 ## 当前可运行入口（2026-09-15 更新）
 
-Unity Hub 添加本目录后，打开 `Assets/Scenes/RecoveredMain.unity`。右下 GM 弹窗可切换 A 基础版 / B 收益版及国家；应用会加载实际场景，清玩家存档保留版本选择。A/B 是本地测试名称，不等于已经证实原游戏的买量/自然量规则。
+Unity Hub 添加本目录后，打开 `Assets/Scenes/RecoveredLoading.unity`，从原加载页进入当前选择的玩法版本。`RecoveredMain.unity` 仍可直接运行以调试主玩法。右下 GM 弹窗可切换 A 基础版 / B 收益版及国家；应用会加载实际场景，清玩家存档保留版本选择。A/B 是本地测试名称，不等于已经证实原游戏的买量/自然量规则。
 
 收益版主界面的设置、规则、顶部 Withdraw、2000 金币按钮及 11 个关联页面已接入；支持原金额/合成/视频/有效登录条件、账户输入、验证动画、阶段存档及关闭返回。Wheel 积分不足显示原提示。所有广告继续使用本地 mock，成功回调会累计观看次数；不执行真实提现。
 
 主界面修复记录与剩余差异见 `../07_Verification/MAIN_MENU_RESTORATION.md`；分流证据见 `../07_Verification/VERSION_ROUTING_FINDINGS.md`。
+本轮恢复了铃铛旁原随机滚动播报、统一修正文字圆周描边，并接入 A/B 原加载页。Withdraw 旁提示依原规则在达到首档门槛后隐藏。来源、时序、性能与测试边界见 `../07_Verification/HOME_VISUALS_AND_STARTUP.md`。
 130 项菜单 Play Mode、952 组原函数差分、31 项主玩法回归和 74 项版本回归通过。不能据此宣称全部视觉及生命周期已 100% 一致。
 
 如果编辑器仍显示旧运行实例，停止 Play 后重新打开 `Assets/Scenes/RecoveredMain.unity`。不需要清玩家存档。

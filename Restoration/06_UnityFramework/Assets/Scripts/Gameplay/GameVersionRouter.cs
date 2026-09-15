@@ -14,6 +14,7 @@ namespace CoinMerge.Recovery
         public bool Changing {get;private set;}
         PlayerStore store;
         static string pendingNamespace;
+        public static void SetPendingNamespace(string value){pendingNamespace=value;}
         void Awake()
         {
             if(pendingNamespace!=null){if(rewarded)rewarded.saveNamespace=pendingNamespace;if(packaged)packaged.saveNamespace=pendingNamespace;pendingNamespace=null;}

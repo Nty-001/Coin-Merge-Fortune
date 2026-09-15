@@ -19,7 +19,7 @@ namespace CoinMerge.Recovery.Editor
         [Serializable] sealed class LabelSettings {public bool _enableWrapText=true;public int overflow;}
         static Dictionary<int,GameObject> Nodes(GameObject root)
         {var map=new Dictionary<int,GameObject>();foreach(var n in root.GetComponentsInChildren<RecoveredNode>(true))map.Add(n.sourceObjectId,n.gameObject);return map;}
-        static GameObject Source(string name,Transform parent)
+        internal static GameObject Source(string name,Transform parent)
         {
             var root=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Packaged/"+name+".prefab"),parent);
             PrefabUtility.UnpackPrefabInstance(root,PrefabUnpackMode.Completely,InteractionMode.AutomatedAction);root.SetActive(true);
@@ -139,7 +139,10 @@ namespace CoinMerge.Recovery.Editor
             router=hot.GetComponent<GameVersionRouter>()??hot.gameObject.AddComponent<GameVersionRouter>();router.rewarded=hot;router.balance=hot.board.Config;router.isRewarded=true;
             hot.gm=AuthorGm(hot.transform,hot.worldCamera,router);
             PrefabUtility.SaveAsPrefabAsset(hot.gameObject,Runtime+"RecoveredMain.prefab");EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
-            EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/RecoveredMain.unity",true),new EditorBuildSettingsScene("Assets/Scenes/RecoveredPackaged.unity",true)};
+            var buildScenes=new List<EditorBuildSettingsScene>();
+            if(File.Exists("Assets/Scenes/RecoveredLoading.unity"))buildScenes.Add(new EditorBuildSettingsScene("Assets/Scenes/RecoveredLoading.unity",true));
+            buildScenes.Add(new EditorBuildSettingsScene("Assets/Scenes/RecoveredMain.unity",true));buildScenes.Add(new EditorBuildSettingsScene("Assets/Scenes/RecoveredPackaged.unity",true));
+            EditorBuildSettings.scenes=buildScenes.ToArray();
             AssetDatabase.SaveAssets();Debug.Log("VERSION_VARIANTS_AUTHORED");
         }
         [Serializable] sealed class Reference {public int reference;}

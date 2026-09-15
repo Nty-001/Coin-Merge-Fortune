@@ -11,6 +11,7 @@ namespace CoinMerge.Recovery
         public NativeMergeBoard board;
         public VersionGmPanel gm;
         public RecoveredMainMenus menus;
+        public RecoveredNoticeTicker notice;
         public Camera worldCamera;
         public Text moneyText,bubbleText,progressText,remainingText,highestText;
         public Image progressFill,nextImage;
@@ -143,7 +144,7 @@ namespace CoinMerge.Recovery
             if(outcome==AdOutcome.Completed){failView.gameObject.SetActive(false);ShowReward(1);}
             else failView.revive.interactable=true;
         }
-        void OnRestart(){board.ResetAfterFailure();Save();}
+        void OnRestart(){board.ResetAfterFailure();if(notice)notice.Restart();Save();}
         void OnWheelButton()
         {
             // Original GameScene's canLottery branch is empty; progress refresh schedules the popup.
@@ -199,6 +200,7 @@ namespace CoinMerge.Recovery
             wheelView.gameObject.SetActive(false);wheelRewardView.gameObject.SetActive(false);
             board.Initialize(Player);guideView.Show(Player.guideStep,Player.fakeMoney);Save();Refresh();
             if(menus)menus.audioCues.SetMusic(Player.open_bgm);
+            if(notice)notice.Restart();
         }
         public void Save(){if(!initialized)return;board.Capture();store.Save(Player);}
         void ApplyLocale()
@@ -207,6 +209,7 @@ namespace CoinMerge.Recovery
             foreach(var binding in localizedLabels)binding.label.text=Locale.Label(binding.key);
             foreach(var binding in currencyIcons)binding.image.sprite=Locale.Icon(binding.type);
             rewardView.Locale=Locale;guideView.Locale=Locale;
+            if(notice)notice.Configure(Locale,RecoveredGameRules.CashConfiguration(board.Config.rules,Profile.country).new_Fake_products);
         }
         void Refresh()
         {

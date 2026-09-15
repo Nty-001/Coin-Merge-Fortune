@@ -27,8 +27,9 @@ namespace CoinMerge.Recovery.Editor
         public static void Run()
         {
             var report=new Report {unityVersion=Application.unityVersion,checkedAtUtc=DateTime.UtcNow.ToString("O"),structurePassed=true};
-            var prefabs=Directory.GetFiles("Assets/Prefabs","*.prefab",SearchOption.AllDirectories);
-            Array.Sort(prefabs,StringComparer.Ordinal);
+            var prefabs=new List<string>(Directory.GetFiles("Assets/Prefabs","*.prefab",SearchOption.AllDirectories));
+            if(Directory.Exists("Assets/Resources/Startup"))prefabs.AddRange(Directory.GetFiles("Assets/Resources/Startup","*.prefab"));
+            prefabs.Sort(StringComparer.Ordinal);
             foreach(var path in prefabs)
             {
                 var item=new Entry {path=path.Replace('\\','/')};

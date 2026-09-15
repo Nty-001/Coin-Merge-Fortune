@@ -6948,6 +6948,7 @@ MonoBehaviour:
   board: {fileID: 1260584351}
   gm: {fileID: 2029393949}
   menus: {fileID: 1530739982}
+  notice: {fileID: 1903083490}
   worldCamera: {fileID: 1801779857}
   moneyText: {fileID: 6984616429900557858}
   bubbleText: {fileID: 6984616429900557869}
@@ -8620,6 +8621,26 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
+--- !u!114 &1903083490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984616429900558069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df464f8351642aca9593f0b9c915218, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  label: {fileID: 6984616429900557857}
+  content: {fileID: 6984616429900558068}
+  interval: 4
+  moveDuration: 0.9
+  distance: 110
+  minimumDays: 2
+  maximumDays: 10
+  localeKey: 109
 --- !u!114 &1915231154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11022,12 +11043,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.39215687, g: 0.42745098, b: 0.54509807, a: 1}
   m_EffectDistance: {x: 7, y: -7}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11136,12 +11158,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 7, y: -7}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13537,12 +13560,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.49411765, g: 0, b: 0.88235295, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13692,12 +13716,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.49411765, g: 0, b: 0.88235295, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13915,12 +13940,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.49411765, g: 0, b: 0.88235295, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14169,12 +14195,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847419838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.49411765, g: 0, b: 0.88235295, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14437,12 +14464,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847420996}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.56078434, g: 0.12941177, b: 0.1764706, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14850,12 +14878,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 148115204847421004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.2901961, g: 0.23921569, b: 0.77254903, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &148115204847419889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18974,12 +19003,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 516810455508476767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &516810455508476721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22907,12 +22937,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 572876486812365142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.23529412, g: 0.50980395, b: 0.13333334, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &572876486812365057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23216,12 +23247,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 572876486812365146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.37254903, g: 0.37254903, b: 0.37254903, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &572876486812365066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23614,12 +23646,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 572876486812365148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &572876486812365076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23766,12 +23799,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 572876486812366498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.34901962, g: 0.3764706, b: 0.47843137, a: 1}
   m_EffectDistance: {x: 8, y: -8}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &572876486812365080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32287,12 +32321,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 872169641426883708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!222 &872169641426883496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32344,12 +32379,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 872169641426883460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &872169641426883499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34683,12 +34719,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 956705005179947497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &956705005179948567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34834,12 +34871,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 956705005179947503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &956705005179948571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34986,12 +35024,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 956705005179947501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &956705005179948575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35412,12 +35451,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1184328433178978525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &1184328433178978438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38095,12 +38135,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1184328433178980137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &1184328433178978535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43651,12 +43692,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928007260063636594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &1928007260063636532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44502,12 +44544,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928007260063636366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &1928007260063636557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49135,12 +49178,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2091351551286697686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2091351551286697556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55370,12 +55414,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128714793850317213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16078432, g: 0.3019608, b: 0.54509807, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2128714793850317229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58003,12 +58048,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2358705755067952361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2358705755067951886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59365,12 +59411,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2358705755067952355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2358705755067951932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59511,12 +59558,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2358705755067952353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!224 &2358705755067952352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60189,12 +60237,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2392379486693195517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2392379486693193987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60341,12 +60390,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2392379486693195513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2392379486693193995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60492,12 +60542,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2392379486693195515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2392379486693193999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63345,12 +63396,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2961644715926181006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2961644715926180711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63611,12 +63663,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2961644715926181012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &2961644715926180719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66775,12 +66828,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3246709548759496922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &3246709548759498552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66927,12 +66981,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3246709548759496920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.627451, g: 0.05490196, b: 0.09803922, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &3246709548759498556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67424,12 +67479,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3680849620535074595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &3680849620535072977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67576,12 +67632,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3680849620535074593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &3680849620535072981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67727,12 +67784,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3680849620535074599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &3680849620535072985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69455,12 +69513,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4714375801652915250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &4714375801652915138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69607,12 +69666,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4714375801652915248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &4714375801652915142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69758,12 +69818,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4714375801652915254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &4714375801652915146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78646,12 +78707,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6223755231888559814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78820,12 +78882,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.627451, g: 0.05490196, b: 0.09803922, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6223755231888559821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78972,12 +79035,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.627451, g: 0.05490196, b: 0.09803922, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6223755231888559825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79477,12 +79541,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.627451, g: 0.05490196, b: 0.09803922, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!95 &6223755231888559836
 Animator:
   serializedVersion: 5
@@ -80085,12 +80150,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.627451, g: 0.05490196, b: 0.09803922, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6223755231888559852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80100,12 +80166,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6223755231888559731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6223755231888559853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82237,12 +82304,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6449784464728804365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 7, y: -7}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6449784464728804316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82252,12 +82320,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6449784464728804337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.39215687, g: 0.42745098, b: 0.54509807, a: 1}
   m_EffectDistance: {x: 7, y: -7}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6449784464728804317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85663,12 +85732,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6518021081622698220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.25490198, g: 0.17254902, b: 0.62352943, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6518021081622699818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86682,12 +86752,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6518021081622699804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.023529412, g: 0.44313726, b: 0.19607843, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6518021081622699841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90522,12 +90593,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6826287584428934511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16078432, g: 0.3019608, b: 0.54509807, a: 1}
   m_EffectDistance: {x: 4, y: -4}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6826287584428934483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93415,17 +93487,17 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bc9479dc5efc7c9d4e3a599e1056012a, type: 3}
-    m_FontSize: 40
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 0.81632656
+    m_LineSpacing: 0.8746356
   m_Text: 
 --- !u!114 &6984616429900557858
 MonoBehaviour:
@@ -94496,12 +94568,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6984616429900558079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.9137255, g: 0.023529412, b: 0.023529412, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!222 &6984616429900557892
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -94990,12 +95063,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6984616429900558025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.12941177, g: 0.41960785, b: 0.019607844, a: 1}
   m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6984616429900557905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95142,12 +95216,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6984616429900558027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6984616429900557909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96544,12 +96619,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6984616429900558073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &6984616429900557946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99931,6 +100007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6984616429900558068}
   - component: {fileID: 6984616429900557936}
+  - component: {fileID: 1903083490}
   m_Layer: 5
   m_Name: iconContent
   m_TagString: Untagged
@@ -102019,12 +102096,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7221373871140724352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &7221373871140723060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102170,12 +102248,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7221373871140724354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &7221373871140723064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102321,12 +102400,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7221373871140724356}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!1 &7221373871140724352
 GameObject:
   m_ObjectHideFlags: 0
@@ -104636,12 +104716,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7896409519968824033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.7372549, g: 0.31764707, b: 0.15686275, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &7896409519968824595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104787,12 +104868,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7896409519968824035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.003921569, g: 0.54509807, b: 0, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &7896409519968824599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104938,12 +105020,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7896409519968824037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.654902, g: 0.654902, b: 0.654902, a: 1}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &7896409519968824603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105841,12 +105924,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8543679326186817178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.3019608, b: 0.54509807, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &8543679326186815846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106726,12 +106810,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8543679326186817180}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Script: {fileID: 11500000, guid: c43b00ff559e4916b7db1acc0681541c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.16470589, g: 0.44313726, b: 0.13725491, a: 1}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+  samples: 16
 --- !u!114 &8543679326186815870
 MonoBehaviour:
   m_ObjectHideFlags: 0
