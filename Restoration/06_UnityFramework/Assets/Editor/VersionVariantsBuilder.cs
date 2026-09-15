@@ -190,28 +190,52 @@ namespace CoinMerge.Recovery.Editor
             var popup=Rect("Popup",root.transform,new Vector2(750,1624),Vector2.zero);panel.popup=popup;
             var backdrop=Rect("Backdrop",popup.transform,new Vector2(750,1624),Vector2.zero);var br=(RectTransform)backdrop.transform;br.anchorMin=Vector2.zero;br.anchorMax=Vector2.one;br.offsetMin=br.offsetMax=Vector2.zero;
             backdrop.AddComponent<Image>().color=new Color(0,0,0,.62f);panel.backdrop=Button(backdrop);
-            var card=Rect("Card",popup.transform,new Vector2(650,890),Vector2.zero);card.AddComponent<Image>().color=new Color(.085f,.12f,.21f);Button(card);
+            var card=Rect("Card",popup.transform,new Vector2(650,920),Vector2.zero);card.AddComponent<Image>().color=new Color(.085f,.12f,.21f);Button(card);
             Label("Title",card.transform,"GM / 版本测试",new Vector2(480,65),new Vector2(-35,390),34);
             panel.close=Control("Close",card.transform,"X",new Vector2(55,55),new Vector2(275,390),out unused);
-            Label("ContentTitle",card.transform,"内容版本",new Vector2(590,35),new Vector2(0,315));
-            panel.content=Control("Content",card.transform,"",new Vector2(580,58),new Vector2(0,262),out panel.contentValue);
-            Label("CohortTitle",card.transform,"原包 AB 分组",new Vector2(280,35),new Vector2(-150,200));
-            Label("RegionTitle",card.transform,"国家 / 地区",new Vector2(280,35),new Vector2(150,200));
-            panel.cohort=Control("Cohort",card.transform,"",new Vector2(265,58),new Vector2(-150,146),out panel.cohortValue);
-            panel.regionPrevious=Control("PreviousCountry",card.transform,"<",new Vector2(58,58),new Vector2(50,146),out unused);
-            panel.regionValue=Label("国家 / 地区",card.transform,"US",new Vector2(100,58),new Vector2(150,146));
-            panel.regionNext=Control("NextCountry",card.transform,">",new Vector2(58,58),new Vector2(250,146),out unused);
-            Label("ShareTitle",card.transform,"自动分流：本地测试比例",new Vector2(580,38),new Vector2(0,78));
-            panel.shareDown=Control("LessRewards",card.transform,"-",new Vector2(65,58),new Vector2(-250,20),out unused);
-            panel.shareUp=Control("MoreRewards",card.transform,"+",new Vector2(65,58),new Vector2(250,20),out unused);
-            panel.shareValue=Label("Share",card.transform,"",new Vector2(360,58),new Vector2(0,20));
-            panel.status=Label("Status",card.transform,"",new Vector2(590,190),new Vector2(0,-125),22);
-            panel.reset=Control("ResetCurrentSave",card.transform,"清除当前版本的玩家存档",new Vector2(580,58),new Vector2(0,-275),out unused);
-            panel.apply=Control("Apply",card.transform,"应用并重新进入",new Vector2(580,68),new Vector2(0,-365),out unused);
+            Label("ContentTitle",card.transform,"玩法版本（切换实际场景）",new Vector2(590,35),new Vector2(0,315));
+            panel.baseVersion=Control("VersionA_Base",card.transform,"",new Vector2(280,58),new Vector2(-150,260),out panel.baseValue);
+            panel.rewardedVersion=Control("VersionB_Rewards",card.transform,"",new Vector2(280,58),new Vector2(150,260),out panel.rewardedValue);
+            Label("LocalVersionNames",card.transform,"A/B 为本地测试名，不代表原包买量归因",new Vector2(590,32),new Vector2(0,210),22);
+            panel.content=Control("AutomaticRouting",card.transform,"",new Vector2(580,50),new Vector2(0,155),out panel.contentValue);
+            Label("CohortTitle",card.transform,"原包 AB 标记（只读）",new Vector2(285,35),new Vector2(-150,85),23);
+            Label("RegionTitle",card.transform,"国家 / 地区",new Vector2(280,35),new Vector2(150,85));
+            panel.cohortValue=Label("OriginalCohortRecord",card.transform,"",new Vector2(295,58),new Vector2(-150,30),20);
+            panel.regionPrevious=Control("PreviousCountry",card.transform,"<",new Vector2(58,58),new Vector2(50,30),out unused);
+            panel.regionValue=Label("国家 / 地区",card.transform,"US",new Vector2(100,58),new Vector2(150,30));
+            panel.regionNext=Control("NextCountry",card.transform,">",new Vector2(58,58),new Vector2(250,30),out unused);
+            Label("ShareTitle",card.transform,"自动分流：本地测试比例",new Vector2(580,38),new Vector2(0,-40));
+            panel.shareDown=Control("LessRewards",card.transform,"-",new Vector2(65,58),new Vector2(-250,-100),out unused);
+            panel.shareUp=Control("MoreRewards",card.transform,"+",new Vector2(65,58),new Vector2(250,-100),out unused);
+            panel.shareValue=Label("Share",card.transform,"",new Vector2(360,58),new Vector2(0,-100),23);
+            panel.status=Label("Status",card.transform,"",new Vector2(590,145),new Vector2(0,-215),23);
+            panel.reset=Control("ResetCurrentSave",card.transform,"清除当前版本的玩家存档",new Vector2(580,50),new Vector2(0,-320),out unused);
+            panel.apply=Control("Apply",card.transform,"应用并重新进入",new Vector2(580,65),new Vector2(0,-400),out unused);
             popup.SetActive(false);
             // Standalone reusable UI asset; scene-specific router is wired in the scene, never through reflection.
             var saved=panel.router;panel.router=null;PrefabUtility.SaveAsPrefabAsset(root,Runtime+"VersionGM.prefab");panel.router=saved;
             return panel;
+        }
+        [MenuItem("Coin Merge/Update GM version selection only")]
+        public static void RebuildGmOnly()
+        {
+            font=AssetDatabase.LoadAssetAtPath<Font>("Assets/Art/HotUpdate/Fonts/FZY4JW.ttf");
+            foreach(string name in new[]{"RecoveredMain","RecoveredPackaged"})
+            {
+                string path=Runtime+name+".prefab";var prefab=PrefabUtility.LoadPrefabContents(path);
+                try{ReplaceGm(prefab);PrefabUtility.SaveAsPrefabAsset(prefab,path);}finally{PrefabUtility.UnloadPrefabContents(prefab);}
+                var scene=EditorSceneManager.OpenScene("Assets/Scenes/"+name+".unity");
+                foreach(var root in scene.GetRootGameObjects())if(root.GetComponent<GameVersionRouter>())ReplaceGm(root);
+                EditorSceneManager.SaveScene(scene);
+            }
+            AssetDatabase.SaveAssets();Debug.Log("GM_VERSION_SELECTION_UPDATED");
+        }
+        static void ReplaceGm(GameObject root)
+        {
+            var router=root.GetComponent<GameVersionRouter>();var previous=router.isRewarded?router.rewarded.gm:router.packaged.gm;
+            if(previous)UnityEngine.Object.DestroyImmediate(previous.gameObject);
+            var panel=AuthorGm(root.transform,router.isRewarded?router.rewarded.worldCamera:router.packaged.worldCamera,router);
+            if(router.isRewarded)router.rewarded.gm=panel;else router.packaged.gm=panel;
         }
     }
 }
