@@ -177,10 +177,7 @@ namespace CoinMerge.Recovery.Editor
         {
             var n=Dialog("GuideDialog",parent,out var root);var view=root.AddComponent<RecoveredGuideView>();session.guideView=view;
             view.stepZero=n[3];view.stepOne=n[9];view.stepThree=n[10];view.stepFour=n[12];view.mask=n[7];
-            // Original clickArea has no visible graphic. Bind actual visual cards with standard Buttons.
-            view.oneButton=Button(n[27]);view.threeButton=Button(n[18]);view.fourButton=Button(n[14]);view.balance=Component<Text>(n,35);
-            foreach(var image in root.GetComponentsInChildren<Image>(true))image.raycastTarget=false;
-            view.oneButton.targetGraphic.raycastTarget=true;view.threeButton.targetGraphic.raycastTarget=true;view.fourButton.targetGraphic.raycastTarget=true;
+            view.balance=Component<Text>(n,35);GuideClickRepair.Configure(view);
             Component<Text>(n,26).text="Drag left or right to drop coins";
             Component<Text>(n,29).text="Merge matching coins";Component<Text>(n,30).text="Collect rewards";
             Component<Text>(n,19).text="Withdraw";Component<Text>(n,34).text="Collect your reward";

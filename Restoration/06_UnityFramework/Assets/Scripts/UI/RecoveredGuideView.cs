@@ -6,11 +6,11 @@ namespace CoinMerge.Recovery
     public sealed class RecoveredGuideView : MonoBehaviour
     {
         public GameObject stepZero,stepOne,stepThree,stepFour,mask;
-        public Button oneButton,threeButton,fourButton;
+        public Button oneButton,threeButton,fourButton,backdropButton;
         public Text balance;
         public RecoveredLocalization Locale {get;set;}
         public event Action Advanced;
-        void Awake(){oneButton.onClick.AddListener(Advance);threeButton.onClick.AddListener(Advance);fourButton.onClick.AddListener(Advance);}
+        void Awake(){oneButton.onClick.AddListener(Advance);threeButton.onClick.AddListener(Advance);fourButton.onClick.AddListener(Advance);backdropButton.onClick.AddListener(Advance);}
         void Advance(){Advanced?.Invoke();}
         public void Show(int step,double money)
         {
@@ -18,6 +18,6 @@ namespace CoinMerge.Recovery
             mask.SetActive(step!=0);balance.text=Locale.Money(money);
             gameObject.SetActive(step==0||step==1||step==3||step==4);
         }
-        void OnDestroy(){oneButton.onClick.RemoveListener(Advance);threeButton.onClick.RemoveListener(Advance);fourButton.onClick.RemoveListener(Advance);}
+        void OnDestroy(){oneButton.onClick.RemoveListener(Advance);threeButton.onClick.RemoveListener(Advance);fourButton.onClick.RemoveListener(Advance);backdropButton.onClick.RemoveListener(Advance);}
     }
 }

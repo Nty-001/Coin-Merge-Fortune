@@ -4,6 +4,8 @@ using System.IO;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 namespace CoinMerge.Recovery.Editor
 {
     // Runs the authored scene in actual Play Mode and invokes standard Button.onClick events.
@@ -14,6 +16,7 @@ namespace CoinMerge.Recovery.Editor
         const string StorePrefix="coinmerge.validation.disposable";
         static readonly List<string> checks=new List<string>();
         static RecoveredGameSession session;
+        static RenderTexture pointerSurface;
         static double next;
         static int phase;
         static double beforeReward;
@@ -38,6 +41,8 @@ namespace CoinMerge.Recovery.Editor
                 try
                 {
                     session=UnityEngine.Object.FindObjectOfType<RecoveredGameSession>();
+                    // Keep render and pointer projection in the original portrait viewport for the whole run.
+                    pointerSurface=new RenderTexture(750,1624,24);session.worldCamera.targetTexture=pointerSurface;
                     session.automaticInput=false;session.Initialize(new PlayerStore(StorePrefix));
                     Application.logMessageReceived+=Log;
                     phase=0;next=EditorApplication.timeSinceStartup+1;EditorApplication.update+=Tick;
@@ -53,6 +58,31 @@ namespace CoinMerge.Recovery.Editor
         }
         static void Log(string condition,string stack,LogType type)
         {if(type==LogType.Exception||type==LogType.Error)SessionState.SetString(Key+".error",condition+"\n"+stack);}
+        static void ClickGraphic(Button button)
+        {
+            if(!button.gameObject.activeInHierarchy||!button.targetGraphic.enabled||!button.IsInteractable())
+                throw new Exception("Pointer target is hidden or disabled: "+button.name);
+            Canvas.ForceUpdateCanvases();
+            // A dialog activated in this test tick has not rendered yet; UGUI ignores depth -1 graphics.
+            session.worldCamera.Render();
+            var rect=button.targetGraphic.rectTransform;
+            var pointer=new PointerEventData(EventSystem.current) {button=PointerEventData.InputButton.Left,
+                position=RectTransformUtility.WorldToScreenPoint(session.worldCamera,rect.TransformPoint(rect.rect.center))};
+            var hits=new List<RaycastResult>();EventSystem.current.RaycastAll(pointer,hits);
+            if(hits.Count==0)
+            {
+                var canvas=button.targetGraphic.canvas;var raycaster=canvas.GetComponent<GraphicRaycaster>();
+                throw new Exception("Pointer missed all graphics: "+button.name+" position="+pointer.position+" screen="+Screen.width+"x"+Screen.height+
+                    " depth="+button.targetGraphic.depth+" culled="+button.targetGraphic.canvasRenderer.cull+" canvasMode="+canvas.renderMode+
+                    " eventCamera="+(raycaster.eventCamera?raycaster.eventCamera.name:"null")+" graphicWorld="+rect.position+
+                    " contains="+RectTransformUtility.RectangleContainsScreenPoint(rect,pointer.position,raycaster.eventCamera));
+            }
+            var target=ExecuteEvents.GetEventHandler<IPointerClickHandler>(hits[0].gameObject);
+            if(target!=button.gameObject)throw new Exception("Pointer intercepted before "+button.name+" by "+hits[0].gameObject.name);
+            ExecuteEvents.Execute(target,pointer,ExecuteEvents.pointerDownHandler);
+            ExecuteEvents.Execute(target,pointer,ExecuteEvents.pointerUpHandler);
+            ExecuteEvents.Execute(target,pointer,ExecuteEvents.pointerClickHandler);
+        }
         static void Tick()
         {
             if(EditorApplication.timeSinceStartup<next)return;
@@ -85,12 +115,20 @@ namespace CoinMerge.Recovery.Editor
                         Require(session.Profile.country=="JP"&&session.Profile.cohort=="A"&&!session.Profile.rewardedVariant,"Player reset retains separate GM profile");
                         session.ChangeProfile("US","B",true);
                         player=session.Player;player.guideStep=1;session.guideView.Show(1,player.fakeMoney);
-                        session.guideView.oneButton.onClick.Invoke();
+                        ClickGraphic(session.guideView.oneButton);
                         Require(player.guideStep==2&&session.rewardView.gameObject.activeSelf&&session.rewardView.Kind==5,"Guide Button opens initial cash reward");
                         double guide=RecoveredGameRules.CashConfiguration(board.Config.rules,"US").guideMoney;
                         session.rewardView.guideClose.onClick.Invoke();
                         Require(player.fakeMoney==guide&&player.guideStep==3,"Guide reward settles real cached guideMoney once");
-                        session.guideView.threeButton.onClick.Invoke();session.guideView.fourButton.onClick.Invoke();
+                        Capture("native_guide_step3.png");
+                        ClickGraphic(session.guideView.threeButton);
+                        Require(player.guideStep==4,"Visible guide card receives EventSystem pointer hit and advances step 3");
+                        Capture("native_guide_step4.png");
+                        ClickGraphic(session.guideView.backdropButton);
+                        Require(player.guideStep==9999,"Visible dimmer receives pointer hit and advances step 4");
+                        player.guideStep=3;session.guideView.Show(3,player.fakeMoney);ClickGraphic(session.guideView.backdropButton);
+                        Require(player.guideStep==4,"Step 3 also accepts viewport backdrop pointer hit");
+                        ClickGraphic(session.guideView.fourButton);
                         Require(player.guideStep==9999&&!session.guideView.gameObject.activeSelf,"Remaining guide Buttons reach original terminal step");
                         board.InputBlocked=false;board.TriggerFailure();next=EditorApplication.timeSinceStartup+1.4;break;
                     case 3:
@@ -142,6 +180,8 @@ namespace CoinMerge.Recovery.Editor
         static void Finish(string error)
         {
             EditorApplication.update-=Tick;Application.logMessageReceived-=Log;
+            if(session)session.worldCamera.targetTexture=null;
+            if(pointerSurface)UnityEngine.Object.DestroyImmediate(pointerSurface);
             SessionState.SetString(Key+".error",error??"");
             var report=new Report {passed=error==null,unityVersion=Application.unityVersion,error=error,checks=checks.ToArray(),scope="Actual Unity Play Mode: physical merge, queue, save, guide cash, fail/revive mock branches. Does not certify visual/whole-lifecycle parity."};
             File.WriteAllText("../07_Verification/native_gameplay_validation.json",JsonUtility.ToJson(report,true));
