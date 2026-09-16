@@ -10,16 +10,20 @@ namespace CoinMerge.Recovery.Editor
         static RulesReskinEditorRequest(){EditorApplication.update+=Poll;}
         static void Poll()
         {
-            bool cash=File.Exists("Temp/CashReskin.request");
+            bool unified=File.Exists("Temp/UnifiedReskin.request");
+            bool cash=!unified&&File.Exists("Temp/CashReskin.request");
             bool settings=!cash&&!File.Exists("Temp/RulesReskin.request")&&File.Exists("Temp/SettingsReskin.request");
-            string request=cash?"Temp/CashReskin.request":settings?"Temp/SettingsReskin.request":"Temp/RulesReskin.request";
+            string request=unified?"Temp/UnifiedReskin.request":cash?"Temp/CashReskin.request":settings?"Temp/SettingsReskin.request":"Temp/RulesReskin.request";
             if(EditorApplication.isCompiling||EditorApplication.isUpdating||!File.Exists(request))return;
-            if(SessionState.GetBool("CoinMerge.CashReskin.Validation",false)||SessionState.GetBool("CoinMerge.RulesReskin.Validation",false)||SessionState.GetBool("CoinMerge.SettingsReskin.Validation",false))return;
+            if(SessionState.GetBool("CoinMerge.UnifiedReskin.Validation",false)||SessionState.GetBool("CoinMerge.CashReskin.Validation",false)||SessionState.GetBool("CoinMerge.RulesReskin.Validation",false)||SessionState.GetBool("CoinMerge.SettingsReskin.Validation",false))return;
             if(EditorApplication.isPlaying){EditorApplication.ExitPlaymode();return;}
             if(EditorApplication.isPlayingOrWillChangePlaymode)return;
+            // Import modified authoring scripts before consuming the request. A domain reload must not run stale authoring code.
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            if(EditorApplication.isCompiling||EditorApplication.isUpdating)return;
             File.Delete(request);
-            try{if(cash){CashReskinAuthor.Run();CashReskinValidation.Run();}else if(settings){SettingsReskinAuthor.Run();SettingsReskinValidation.Run();}else{RulesReskinAuthor.Run();RulesReskinValidation.Run();}}
-            catch(Exception e){string dir=cash?"Design/CashR1/Verification":settings?"Design/SettingsR1/Verification":"Design/RulesR1/Verification";Directory.CreateDirectory(dir);File.WriteAllText(dir+"/author_error.txt",e.ToString());Debug.LogException(e);}
+            try{if(unified){UnifiedPopupReskinAuthor.Run();UnifiedReskinValidation.Run();}else if(cash){CashReskinAuthor.Run();CashReskinValidation.Run();}else if(settings){SettingsReskinAuthor.Run();SettingsReskinValidation.Run();}else{RulesReskinAuthor.Run();RulesReskinValidation.Run();}}
+            catch(Exception e){string dir=unified?"Design/UnifiedR1/Verification":cash?"Design/CashR1/Verification":settings?"Design/SettingsR1/Verification":"Design/RulesR1/Verification";Directory.CreateDirectory(dir);File.WriteAllText(dir+"/author_error.txt",e.ToString());Debug.LogException(e);}
         }
     }
 }
