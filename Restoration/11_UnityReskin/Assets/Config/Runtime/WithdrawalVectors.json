@@ -1,0 +1,8065 @@
+{
+  "hashes": {
+    "AccountCheckManager": "38c49142da6847ef6586ca5498f8ed3e811dd45e89d7665cbf23fc01fcb1a2cb",
+    "GameManagement.static roundToDecimal(e, t)": "f8955975c1660b0f089164da50f7ced71dcdf8e458d8ef7e93f80c0717d07149",
+    "GameManagement.static toFixed(e, t)": "5bbd9aa47fef4b9223b5ce7755f51d9d878a35b1fec517329b573cff8550731f",
+    "GameManagement.static getRealMonstr(e)": "a832354b92e10042961790026252320d04b66502565923bf6cf4d210cdecca21",
+    "GameRealTXYZ.getWithdrawConditionCount()": "530d8d1ffa5107d9eb884c533e3e18c06792a48ef7a73813072845b895b6354c",
+    "GameRealTXYZ.getNumber(e)": "fff55c3f198c70f99b22e1cfac62f3922698c9c9370159860aaa6bf34829340f",
+    "GameRealTXYZ.isWithdrawConditionMet(e, t)": "b67a92365884a142cc7ab54c55f072a5170c8f098d10717013519a3e49c5a6f1",
+    "GameRealTXYZ.findFirstUnmetWithdrawStep(e, t)": "b6a49f20aa36ea6878fd57623e322ab958ba07363c88ffbac5f2f07a9b89cc98",
+    "GameRealTXYZ.ensureWithdrawStepData(e)": "c9ab39dd8d3da31c832299a7425d318780ea9f69b5a931e1230f411f94f3bf9e",
+    "GameRealTXYZ.showNextWithdrawResult()": "11e2dd0f95f3fe1fc757d312e86fc2ab9ff4e3d327d1642d88b02ddf44f1ff8c",
+    "GameRealWDDialog.setProgress(e)": "71df75c102bd7e322e9fd01ee38895ba7c9202230f97a86cbc736e7bfb8a0f81"
+  },
+  "validators": [
+    {
+      "method": "validateEmail",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "a@b.co",
+      "valid": true,
+      "normalized": "a@b.co"
+    },
+    {
+      "method": "validateEmail",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "Fixture@Example.Test",
+      "valid": true,
+      "normalized": "fixture@example.test"
+    },
+    {
+      "method": "validateEmail",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": true,
+      "normalized": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test"
+    },
+    {
+      "method": "validateEmail",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateEmail",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "Test Player",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "08123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "08-1234-56789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "0012345678",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "01234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "84123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "09123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "00000000000",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": " x ",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateAccount",
+      "input": "abc\n",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "08123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "08-1234-56789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone08",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "0012345678",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "08123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "0012345678",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "01234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "84123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "09123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "00000000000",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone10Or11",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "84123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone84",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "09123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone09",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "+551234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePhone55",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "08123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "01234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "84123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "09123456789",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "00000000000",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validateCPFJ",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "x",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "Test Player",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "汉字用户",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "a@b.co",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": " Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "Fixture@Example.Test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "a..b@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": ".abc@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "abc.@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@example.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "a@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.test",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "a@example.test\n",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "a@example.test ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "08123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "08-1234-56789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "0012345678",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "01234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "84123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "09123456789",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "+551234567890",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "00000000000",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "１２３４５６７８９０１",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "abcdefghijklmnopqrstuvwxyz1234567890",
+      "valid": true,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": " x ",
+      "valid": false,
+      "normalized": ""
+    },
+    {
+      "method": "validatePix",
+      "input": "abc\n",
+      "valid": false,
+      "normalized": ""
+    }
+  ],
+  "money": [
+    {
+      "country": "AR",
+      "amount": 0,
+      "expected": "ARS$0"
+    },
+    {
+      "country": "AR",
+      "amount": 0.005,
+      "expected": "ARS$0"
+    },
+    {
+      "country": "AR",
+      "amount": 0.999,
+      "expected": "ARS$0.99"
+    },
+    {
+      "country": "AR",
+      "amount": 1.005,
+      "expected": "ARS$1"
+    },
+    {
+      "country": "AR",
+      "amount": 234.28,
+      "expected": "ARS$234.28"
+    },
+    {
+      "country": "AR",
+      "amount": 499.99,
+      "expected": "ARS$499.99"
+    },
+    {
+      "country": "AR",
+      "amount": 500,
+      "expected": "ARS$500"
+    },
+    {
+      "country": "AR",
+      "amount": 999.999,
+      "expected": "ARS$999.99"
+    },
+    {
+      "country": "AR",
+      "amount": 12345.675,
+      "expected": "ARS$12,345.67"
+    },
+    {
+      "country": "AR",
+      "amount": 10000000,
+      "expected": "ARS$10,000,000"
+    },
+    {
+      "country": "AU",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "AU",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "AU",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "AU",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "AU",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "AU",
+      "amount": 499.99,
+      "expected": "$499.99"
+    },
+    {
+      "country": "AU",
+      "amount": 500,
+      "expected": "$500"
+    },
+    {
+      "country": "AU",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "AU",
+      "amount": 12345.675,
+      "expected": "$12,345.67"
+    },
+    {
+      "country": "AU",
+      "amount": 10000000,
+      "expected": "$10,000,000"
+    },
+    {
+      "country": "BD",
+      "amount": 0,
+      "expected": "৳0"
+    },
+    {
+      "country": "BD",
+      "amount": 0.005,
+      "expected": "৳0"
+    },
+    {
+      "country": "BD",
+      "amount": 0.999,
+      "expected": "৳0.99"
+    },
+    {
+      "country": "BD",
+      "amount": 1.005,
+      "expected": "৳1"
+    },
+    {
+      "country": "BD",
+      "amount": 234.28,
+      "expected": "৳234.28"
+    },
+    {
+      "country": "BD",
+      "amount": 499.99,
+      "expected": "৳499.99"
+    },
+    {
+      "country": "BD",
+      "amount": 500,
+      "expected": "৳500"
+    },
+    {
+      "country": "BD",
+      "amount": 999.999,
+      "expected": "৳999.99"
+    },
+    {
+      "country": "BD",
+      "amount": 12345.675,
+      "expected": "৳12,345.67"
+    },
+    {
+      "country": "BD",
+      "amount": 10000000,
+      "expected": "৳10,000,000"
+    },
+    {
+      "country": "BR",
+      "amount": 0,
+      "expected": "R$0"
+    },
+    {
+      "country": "BR",
+      "amount": 0.005,
+      "expected": "R$0"
+    },
+    {
+      "country": "BR",
+      "amount": 0.999,
+      "expected": "R$0.99"
+    },
+    {
+      "country": "BR",
+      "amount": 1.005,
+      "expected": "R$1"
+    },
+    {
+      "country": "BR",
+      "amount": 234.28,
+      "expected": "R$234.28"
+    },
+    {
+      "country": "BR",
+      "amount": 499.99,
+      "expected": "R$499.99"
+    },
+    {
+      "country": "BR",
+      "amount": 500,
+      "expected": "R$500"
+    },
+    {
+      "country": "BR",
+      "amount": 999.999,
+      "expected": "R$999.99"
+    },
+    {
+      "country": "BR",
+      "amount": 12345.675,
+      "expected": "R$12345.67"
+    },
+    {
+      "country": "BR",
+      "amount": 10000000,
+      "expected": "R$10000000"
+    },
+    {
+      "country": "CA",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "CA",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "CA",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "CA",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "CA",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "CA",
+      "amount": 499.99,
+      "expected": "$499.99"
+    },
+    {
+      "country": "CA",
+      "amount": 500,
+      "expected": "$500"
+    },
+    {
+      "country": "CA",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "CA",
+      "amount": 12345.675,
+      "expected": "$12,345.67"
+    },
+    {
+      "country": "CA",
+      "amount": 10000000,
+      "expected": "$10,000,000"
+    },
+    {
+      "country": "CO",
+      "amount": 0,
+      "expected": "Col$0"
+    },
+    {
+      "country": "CO",
+      "amount": 0.005,
+      "expected": "Col$0"
+    },
+    {
+      "country": "CO",
+      "amount": 0.999,
+      "expected": "Col$0.99"
+    },
+    {
+      "country": "CO",
+      "amount": 1.005,
+      "expected": "Col$1"
+    },
+    {
+      "country": "CO",
+      "amount": 234.28,
+      "expected": "Col$234.28"
+    },
+    {
+      "country": "CO",
+      "amount": 499.99,
+      "expected": "Col$499.99"
+    },
+    {
+      "country": "CO",
+      "amount": 500,
+      "expected": "Col$500"
+    },
+    {
+      "country": "CO",
+      "amount": 999.999,
+      "expected": "Col$999.99"
+    },
+    {
+      "country": "CO",
+      "amount": 12345.675,
+      "expected": "Col$12,345.67"
+    },
+    {
+      "country": "CO",
+      "amount": 10000000,
+      "expected": "Col$10,000,000"
+    },
+    {
+      "country": "DE",
+      "amount": 0,
+      "expected": "€0"
+    },
+    {
+      "country": "DE",
+      "amount": 0.005,
+      "expected": "€0"
+    },
+    {
+      "country": "DE",
+      "amount": 0.999,
+      "expected": "€0.99"
+    },
+    {
+      "country": "DE",
+      "amount": 1.005,
+      "expected": "€1"
+    },
+    {
+      "country": "DE",
+      "amount": 234.28,
+      "expected": "€234.28"
+    },
+    {
+      "country": "DE",
+      "amount": 499.99,
+      "expected": "€499.99"
+    },
+    {
+      "country": "DE",
+      "amount": 500,
+      "expected": "€500"
+    },
+    {
+      "country": "DE",
+      "amount": 999.999,
+      "expected": "€999.99"
+    },
+    {
+      "country": "DE",
+      "amount": 12345.675,
+      "expected": "€12,345.67"
+    },
+    {
+      "country": "DE",
+      "amount": 10000000,
+      "expected": "€10,000,000"
+    },
+    {
+      "country": "EG",
+      "amount": 0,
+      "expected": "E£0"
+    },
+    {
+      "country": "EG",
+      "amount": 0.005,
+      "expected": "E£0"
+    },
+    {
+      "country": "EG",
+      "amount": 0.999,
+      "expected": "E£0.99"
+    },
+    {
+      "country": "EG",
+      "amount": 1.005,
+      "expected": "E£1"
+    },
+    {
+      "country": "EG",
+      "amount": 234.28,
+      "expected": "E£234.28"
+    },
+    {
+      "country": "EG",
+      "amount": 499.99,
+      "expected": "E£499.99"
+    },
+    {
+      "country": "EG",
+      "amount": 500,
+      "expected": "E£500"
+    },
+    {
+      "country": "EG",
+      "amount": 999.999,
+      "expected": "E£999.99"
+    },
+    {
+      "country": "EG",
+      "amount": 12345.675,
+      "expected": "E£12,345.67"
+    },
+    {
+      "country": "EG",
+      "amount": 10000000,
+      "expected": "E£10,000,000"
+    },
+    {
+      "country": "FR",
+      "amount": 0,
+      "expected": "€0"
+    },
+    {
+      "country": "FR",
+      "amount": 0.005,
+      "expected": "€0"
+    },
+    {
+      "country": "FR",
+      "amount": 0.999,
+      "expected": "€0.99"
+    },
+    {
+      "country": "FR",
+      "amount": 1.005,
+      "expected": "€1"
+    },
+    {
+      "country": "FR",
+      "amount": 234.28,
+      "expected": "€234.28"
+    },
+    {
+      "country": "FR",
+      "amount": 499.99,
+      "expected": "€499.99"
+    },
+    {
+      "country": "FR",
+      "amount": 500,
+      "expected": "€500"
+    },
+    {
+      "country": "FR",
+      "amount": 999.999,
+      "expected": "€999.99"
+    },
+    {
+      "country": "FR",
+      "amount": 12345.675,
+      "expected": "€12,345.67"
+    },
+    {
+      "country": "FR",
+      "amount": 10000000,
+      "expected": "€10,000,000"
+    },
+    {
+      "country": "GB",
+      "amount": 0,
+      "expected": "£0"
+    },
+    {
+      "country": "GB",
+      "amount": 0.005,
+      "expected": "£0"
+    },
+    {
+      "country": "GB",
+      "amount": 0.999,
+      "expected": "£0.99"
+    },
+    {
+      "country": "GB",
+      "amount": 1.005,
+      "expected": "£1"
+    },
+    {
+      "country": "GB",
+      "amount": 234.28,
+      "expected": "£234.28"
+    },
+    {
+      "country": "GB",
+      "amount": 499.99,
+      "expected": "£499.99"
+    },
+    {
+      "country": "GB",
+      "amount": 500,
+      "expected": "£500"
+    },
+    {
+      "country": "GB",
+      "amount": 999.999,
+      "expected": "£999.99"
+    },
+    {
+      "country": "GB",
+      "amount": 12345.675,
+      "expected": "£12,345.67"
+    },
+    {
+      "country": "GB",
+      "amount": 10000000,
+      "expected": "£10,000,000"
+    },
+    {
+      "country": "ID",
+      "amount": 0,
+      "expected": "Rp0"
+    },
+    {
+      "country": "ID",
+      "amount": 0.005,
+      "expected": "Rp0"
+    },
+    {
+      "country": "ID",
+      "amount": 0.999,
+      "expected": "Rp1"
+    },
+    {
+      "country": "ID",
+      "amount": 1.005,
+      "expected": "Rp1"
+    },
+    {
+      "country": "ID",
+      "amount": 234.28,
+      "expected": "Rp234"
+    },
+    {
+      "country": "ID",
+      "amount": 499.99,
+      "expected": "Rp500"
+    },
+    {
+      "country": "ID",
+      "amount": 500,
+      "expected": "Rp500"
+    },
+    {
+      "country": "ID",
+      "amount": 999.999,
+      "expected": "Rp1,000"
+    },
+    {
+      "country": "ID",
+      "amount": 12345.675,
+      "expected": "Rp12,346"
+    },
+    {
+      "country": "ID",
+      "amount": 10000000,
+      "expected": "Rp10,000,000"
+    },
+    {
+      "country": "IN",
+      "amount": 0,
+      "expected": "₹0"
+    },
+    {
+      "country": "IN",
+      "amount": 0.005,
+      "expected": "₹0"
+    },
+    {
+      "country": "IN",
+      "amount": 0.999,
+      "expected": "₹0.99"
+    },
+    {
+      "country": "IN",
+      "amount": 1.005,
+      "expected": "₹1"
+    },
+    {
+      "country": "IN",
+      "amount": 234.28,
+      "expected": "₹234.28"
+    },
+    {
+      "country": "IN",
+      "amount": 499.99,
+      "expected": "₹499.99"
+    },
+    {
+      "country": "IN",
+      "amount": 500,
+      "expected": "₹500"
+    },
+    {
+      "country": "IN",
+      "amount": 999.999,
+      "expected": "₹999.99"
+    },
+    {
+      "country": "IN",
+      "amount": 12345.675,
+      "expected": "₹12,345.67"
+    },
+    {
+      "country": "IN",
+      "amount": 10000000,
+      "expected": "₹10,000,000"
+    },
+    {
+      "country": "JP",
+      "amount": 0,
+      "expected": "円0"
+    },
+    {
+      "country": "JP",
+      "amount": 0.005,
+      "expected": "円0"
+    },
+    {
+      "country": "JP",
+      "amount": 0.999,
+      "expected": "円0.99"
+    },
+    {
+      "country": "JP",
+      "amount": 1.005,
+      "expected": "円1"
+    },
+    {
+      "country": "JP",
+      "amount": 234.28,
+      "expected": "円234.28"
+    },
+    {
+      "country": "JP",
+      "amount": 499.99,
+      "expected": "円499.99"
+    },
+    {
+      "country": "JP",
+      "amount": 500,
+      "expected": "円500"
+    },
+    {
+      "country": "JP",
+      "amount": 999.999,
+      "expected": "円999.99"
+    },
+    {
+      "country": "JP",
+      "amount": 12345.675,
+      "expected": "円12,345.67"
+    },
+    {
+      "country": "JP",
+      "amount": 10000000,
+      "expected": "円10,000,000"
+    },
+    {
+      "country": "KR",
+      "amount": 0,
+      "expected": "₩0"
+    },
+    {
+      "country": "KR",
+      "amount": 0.005,
+      "expected": "₩0"
+    },
+    {
+      "country": "KR",
+      "amount": 0.999,
+      "expected": "₩0.99"
+    },
+    {
+      "country": "KR",
+      "amount": 1.005,
+      "expected": "₩1"
+    },
+    {
+      "country": "KR",
+      "amount": 234.28,
+      "expected": "₩234.28"
+    },
+    {
+      "country": "KR",
+      "amount": 499.99,
+      "expected": "₩499.99"
+    },
+    {
+      "country": "KR",
+      "amount": 500,
+      "expected": "₩500"
+    },
+    {
+      "country": "KR",
+      "amount": 999.999,
+      "expected": "₩999.99"
+    },
+    {
+      "country": "KR",
+      "amount": 12345.675,
+      "expected": "₩12,345.67"
+    },
+    {
+      "country": "KR",
+      "amount": 10000000,
+      "expected": "₩10,000,000"
+    },
+    {
+      "country": "KZ",
+      "amount": 0,
+      "expected": "₸0"
+    },
+    {
+      "country": "KZ",
+      "amount": 0.005,
+      "expected": "₸0"
+    },
+    {
+      "country": "KZ",
+      "amount": 0.999,
+      "expected": "₸0.99"
+    },
+    {
+      "country": "KZ",
+      "amount": 1.005,
+      "expected": "₸1"
+    },
+    {
+      "country": "KZ",
+      "amount": 234.28,
+      "expected": "₸234.28"
+    },
+    {
+      "country": "KZ",
+      "amount": 499.99,
+      "expected": "₸499.99"
+    },
+    {
+      "country": "KZ",
+      "amount": 500,
+      "expected": "₸500"
+    },
+    {
+      "country": "KZ",
+      "amount": 999.999,
+      "expected": "₸999.99"
+    },
+    {
+      "country": "KZ",
+      "amount": 12345.675,
+      "expected": "₸12,345.67"
+    },
+    {
+      "country": "KZ",
+      "amount": 10000000,
+      "expected": "₸10,000,000"
+    },
+    {
+      "country": "MX",
+      "amount": 0,
+      "expected": "Mex$0"
+    },
+    {
+      "country": "MX",
+      "amount": 0.005,
+      "expected": "Mex$0"
+    },
+    {
+      "country": "MX",
+      "amount": 0.999,
+      "expected": "Mex$0.99"
+    },
+    {
+      "country": "MX",
+      "amount": 1.005,
+      "expected": "Mex$1"
+    },
+    {
+      "country": "MX",
+      "amount": 234.28,
+      "expected": "Mex$234.28"
+    },
+    {
+      "country": "MX",
+      "amount": 499.99,
+      "expected": "Mex$499.99"
+    },
+    {
+      "country": "MX",
+      "amount": 500,
+      "expected": "Mex$500"
+    },
+    {
+      "country": "MX",
+      "amount": 999.999,
+      "expected": "Mex$999.99"
+    },
+    {
+      "country": "MX",
+      "amount": 12345.675,
+      "expected": "Mex$12,345.67"
+    },
+    {
+      "country": "MX",
+      "amount": 10000000,
+      "expected": "Mex$10,000,000"
+    },
+    {
+      "country": "MY",
+      "amount": 0,
+      "expected": "0RM"
+    },
+    {
+      "country": "MY",
+      "amount": 0.005,
+      "expected": "0RM"
+    },
+    {
+      "country": "MY",
+      "amount": 0.999,
+      "expected": "0.99RM"
+    },
+    {
+      "country": "MY",
+      "amount": 1.005,
+      "expected": "1RM"
+    },
+    {
+      "country": "MY",
+      "amount": 234.28,
+      "expected": "234.28RM"
+    },
+    {
+      "country": "MY",
+      "amount": 499.99,
+      "expected": "499.99RM"
+    },
+    {
+      "country": "MY",
+      "amount": 500,
+      "expected": "500RM"
+    },
+    {
+      "country": "MY",
+      "amount": 999.999,
+      "expected": "999.99RM"
+    },
+    {
+      "country": "MY",
+      "amount": 12345.675,
+      "expected": "12,345.67RM"
+    },
+    {
+      "country": "MY",
+      "amount": 10000000,
+      "expected": "10,000,000RM"
+    },
+    {
+      "country": "NG",
+      "amount": 0,
+      "expected": "₦0"
+    },
+    {
+      "country": "NG",
+      "amount": 0.005,
+      "expected": "₦0"
+    },
+    {
+      "country": "NG",
+      "amount": 0.999,
+      "expected": "₦0.99"
+    },
+    {
+      "country": "NG",
+      "amount": 1.005,
+      "expected": "₦1"
+    },
+    {
+      "country": "NG",
+      "amount": 234.28,
+      "expected": "₦234.28"
+    },
+    {
+      "country": "NG",
+      "amount": 499.99,
+      "expected": "₦499.99"
+    },
+    {
+      "country": "NG",
+      "amount": 500,
+      "expected": "₦500"
+    },
+    {
+      "country": "NG",
+      "amount": 999.999,
+      "expected": "₦999.99"
+    },
+    {
+      "country": "NG",
+      "amount": 12345.675,
+      "expected": "₦12,345.67"
+    },
+    {
+      "country": "NG",
+      "amount": 10000000,
+      "expected": "₦10,000,000"
+    },
+    {
+      "country": "PH",
+      "amount": 0,
+      "expected": "0₱"
+    },
+    {
+      "country": "PH",
+      "amount": 0.005,
+      "expected": "0₱"
+    },
+    {
+      "country": "PH",
+      "amount": 0.999,
+      "expected": "0,99₱"
+    },
+    {
+      "country": "PH",
+      "amount": 1.005,
+      "expected": "1₱"
+    },
+    {
+      "country": "PH",
+      "amount": 234.28,
+      "expected": "234,28₱"
+    },
+    {
+      "country": "PH",
+      "amount": 499.99,
+      "expected": "499,99₱"
+    },
+    {
+      "country": "PH",
+      "amount": 500,
+      "expected": "500₱"
+    },
+    {
+      "country": "PH",
+      "amount": 999.999,
+      "expected": "999,99₱"
+    },
+    {
+      "country": "PH",
+      "amount": 12345.675,
+      "expected": "12 345,67₱"
+    },
+    {
+      "country": "PH",
+      "amount": 10000000,
+      "expected": "10 000 000₱"
+    },
+    {
+      "country": "PK",
+      "amount": 0,
+      "expected": "Rs0"
+    },
+    {
+      "country": "PK",
+      "amount": 0.005,
+      "expected": "Rs0"
+    },
+    {
+      "country": "PK",
+      "amount": 0.999,
+      "expected": "Rs0.99"
+    },
+    {
+      "country": "PK",
+      "amount": 1.005,
+      "expected": "Rs1"
+    },
+    {
+      "country": "PK",
+      "amount": 234.28,
+      "expected": "Rs234.28"
+    },
+    {
+      "country": "PK",
+      "amount": 499.99,
+      "expected": "Rs499.99"
+    },
+    {
+      "country": "PK",
+      "amount": 500,
+      "expected": "Rs500"
+    },
+    {
+      "country": "PK",
+      "amount": 999.999,
+      "expected": "Rs999.99"
+    },
+    {
+      "country": "PK",
+      "amount": 12345.675,
+      "expected": "Rs12,345.67"
+    },
+    {
+      "country": "PK",
+      "amount": 10000000,
+      "expected": "Rs10,000,000"
+    },
+    {
+      "country": "RU",
+      "amount": 0,
+      "expected": "₽0"
+    },
+    {
+      "country": "RU",
+      "amount": 0.005,
+      "expected": "₽0"
+    },
+    {
+      "country": "RU",
+      "amount": 0.999,
+      "expected": "₽0.99"
+    },
+    {
+      "country": "RU",
+      "amount": 1.005,
+      "expected": "₽1"
+    },
+    {
+      "country": "RU",
+      "amount": 234.28,
+      "expected": "₽234.28"
+    },
+    {
+      "country": "RU",
+      "amount": 499.99,
+      "expected": "₽499.99"
+    },
+    {
+      "country": "RU",
+      "amount": 500,
+      "expected": "₽500"
+    },
+    {
+      "country": "RU",
+      "amount": 999.999,
+      "expected": "₽999.99"
+    },
+    {
+      "country": "RU",
+      "amount": 12345.675,
+      "expected": "₽12,345.67"
+    },
+    {
+      "country": "RU",
+      "amount": 10000000,
+      "expected": "₽10,000,000"
+    },
+    {
+      "country": "TH",
+      "amount": 0,
+      "expected": "฿0"
+    },
+    {
+      "country": "TH",
+      "amount": 0.005,
+      "expected": "฿0"
+    },
+    {
+      "country": "TH",
+      "amount": 0.999,
+      "expected": "฿0.99"
+    },
+    {
+      "country": "TH",
+      "amount": 1.005,
+      "expected": "฿1"
+    },
+    {
+      "country": "TH",
+      "amount": 234.28,
+      "expected": "฿234.28"
+    },
+    {
+      "country": "TH",
+      "amount": 499.99,
+      "expected": "฿499.99"
+    },
+    {
+      "country": "TH",
+      "amount": 500,
+      "expected": "฿500"
+    },
+    {
+      "country": "TH",
+      "amount": 999.999,
+      "expected": "฿999.99"
+    },
+    {
+      "country": "TH",
+      "amount": 12345.675,
+      "expected": "฿12,345.67"
+    },
+    {
+      "country": "TH",
+      "amount": 10000000,
+      "expected": "฿10,000,000"
+    },
+    {
+      "country": "TR",
+      "amount": 0,
+      "expected": "₺0"
+    },
+    {
+      "country": "TR",
+      "amount": 0.005,
+      "expected": "₺0"
+    },
+    {
+      "country": "TR",
+      "amount": 0.999,
+      "expected": "₺0.99"
+    },
+    {
+      "country": "TR",
+      "amount": 1.005,
+      "expected": "₺1"
+    },
+    {
+      "country": "TR",
+      "amount": 234.28,
+      "expected": "₺234.28"
+    },
+    {
+      "country": "TR",
+      "amount": 499.99,
+      "expected": "₺499.99"
+    },
+    {
+      "country": "TR",
+      "amount": 500,
+      "expected": "₺500"
+    },
+    {
+      "country": "TR",
+      "amount": 999.999,
+      "expected": "₺999.99"
+    },
+    {
+      "country": "TR",
+      "amount": 12345.675,
+      "expected": "₺12,345.67"
+    },
+    {
+      "country": "TR",
+      "amount": 10000000,
+      "expected": "₺10,000,000"
+    },
+    {
+      "country": "US",
+      "amount": 0,
+      "expected": "$0"
+    },
+    {
+      "country": "US",
+      "amount": 0.005,
+      "expected": "$0"
+    },
+    {
+      "country": "US",
+      "amount": 0.999,
+      "expected": "$0.99"
+    },
+    {
+      "country": "US",
+      "amount": 1.005,
+      "expected": "$1"
+    },
+    {
+      "country": "US",
+      "amount": 234.28,
+      "expected": "$234.28"
+    },
+    {
+      "country": "US",
+      "amount": 499.99,
+      "expected": "$499.99"
+    },
+    {
+      "country": "US",
+      "amount": 500,
+      "expected": "$500"
+    },
+    {
+      "country": "US",
+      "amount": 999.999,
+      "expected": "$999.99"
+    },
+    {
+      "country": "US",
+      "amount": 12345.675,
+      "expected": "$12,345.67"
+    },
+    {
+      "country": "US",
+      "amount": 10000000,
+      "expected": "$10,000,000"
+    },
+    {
+      "country": "VN",
+      "amount": 0,
+      "expected": "0₫"
+    },
+    {
+      "country": "VN",
+      "amount": 0.005,
+      "expected": "0₫"
+    },
+    {
+      "country": "VN",
+      "amount": 0.999,
+      "expected": "1₫"
+    },
+    {
+      "country": "VN",
+      "amount": 1.005,
+      "expected": "1₫"
+    },
+    {
+      "country": "VN",
+      "amount": 234.28,
+      "expected": "234₫"
+    },
+    {
+      "country": "VN",
+      "amount": 499.99,
+      "expected": "500₫"
+    },
+    {
+      "country": "VN",
+      "amount": 500,
+      "expected": "500₫"
+    },
+    {
+      "country": "VN",
+      "amount": 999.999,
+      "expected": "1,000₫"
+    },
+    {
+      "country": "VN",
+      "amount": 12345.675,
+      "expected": "12,346₫"
+    },
+    {
+      "country": "VN",
+      "amount": 10000000,
+      "expected": "10,000,000₫"
+    },
+    {
+      "country": "ZA",
+      "amount": 0,
+      "expected": "R.0"
+    },
+    {
+      "country": "ZA",
+      "amount": 0.005,
+      "expected": "R.0"
+    },
+    {
+      "country": "ZA",
+      "amount": 0.999,
+      "expected": "R.0.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 1.005,
+      "expected": "R.1"
+    },
+    {
+      "country": "ZA",
+      "amount": 234.28,
+      "expected": "R.234.28"
+    },
+    {
+      "country": "ZA",
+      "amount": 499.99,
+      "expected": "R.499.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 500,
+      "expected": "R.500"
+    },
+    {
+      "country": "ZA",
+      "amount": 999.999,
+      "expected": "R.999.99"
+    },
+    {
+      "country": "ZA",
+      "amount": 12345.675,
+      "expected": "R.12,345.67"
+    },
+    {
+      "country": "ZA",
+      "amount": 10000000,
+      "expected": "R.10,000,000"
+    }
+  ],
+  "stages": [
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Merge a total of 50 coins to withdraw, 1 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Merge a total of 50 coins to withdraw, 0 remaining"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch 50 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch 50 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch 50 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch 50 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch 0 more ads"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99998",
+      "ready": false,
+      "hint": "Still 0.009999999999990905 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 remaining to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Still 15 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Still 0 days left and merge 5 coins every day"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch a total of 200000 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch a total of 200000 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Watch a total of 199950 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Watch a total of 199950 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch a total of 0 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch a total of 0 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch a total of 200000 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Watch a total of 200000 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Watch a total of 199950 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Watch a total of 199950 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch a total of 0 videos"
+    },
+    {
+      "country": "US",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Watch a total of 0 videos"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 499.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "US",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 500,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Click to withdraw"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999995",
+      "ready": false,
+      "hint": "Faltan 0.009999999999990905 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "MX",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 1999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "MX",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 2000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 1"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "รวมเหรียญ 50 เหรียญเพื่อถอนเงิน เหลืออีก 0"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "ดูโฆษณาอีก 50 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "ดูโฆษณาอีก 50 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "ดูโฆษณาอีก 50 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "ดูโฆษณาอีก 50 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "ดูโฆษณาอีก 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999979999999999",
+      "ready": false,
+      "hint": "เหลือ 0.010000000000218279 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลือ 0 เพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "เหลืออีก 15 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "เหลืออีก 0 วัน และรวมเหรียญ 5 เหรียญทุกวัน"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 200000 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 200000 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 199950 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 199950 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "รับชมวิดีโอสะสม 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "รับชมวิดีโอสะสม 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 200000 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 200000 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 199950 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "รับชมวิดีโอสะสม 199950 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "รับชมวิดีโอสะสม 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "รับชมวิดีโอสะสม 0 รายการ"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 4999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "TH",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 5000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "คลิกเพื่อถอนเงิน"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "コインを累計50個合成すると出金可能、あと1個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "コインを累計50個合成すると出金可能、あと0個"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "広告をあと50本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "広告をあと50本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "広告をあと50本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "広告をあと50本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "広告をあと0本見る"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.9999998",
+      "ready": false,
+      "hint": "出金まであと0.010000000002037268"
+    },
+    {
+      "country": "JP",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金まであと0"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "あと15日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "あと0日、毎日コインを5個合成してください"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "累計200000本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "累計200000本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "累計199950本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "累計199950本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "累計0本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "累計0本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "累計200000本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "累計200000本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "累計199950本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "累計199950本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "累計0本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "累計0本の動画を視聴"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 49999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "JP",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 50000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "出金するにはクリックしてください"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 1"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Fusiona un total de 50 monedas para retirar, faltan 0"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Mira 50 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Mira 0 anuncios más"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.99999995",
+      "ready": false,
+      "hint": "Faltan 0.010000000009313226 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Faltan 0 para poder retirar"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Quedan 15 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Quedan 0 días y fusiona 5 monedas cada día"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Ver un total de 200000 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Ver un total de 199950 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "CO",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Ver un total de 0 videos"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 199999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "CO",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 200000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Hacer clic para retirar"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 0,
+      "progress": "0.98",
+      "ready": false,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 1"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 1,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 0,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Gabungkan total 50 koin untuk dapat ditarik, masih kurang 0"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton 50 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton 50 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton 50 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 1,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton 50 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 1,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton 0 iklan lagi"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 2,
+      "progress": "0.999999999",
+      "ready": false,
+      "hint": "Masih kurang 0.009999999776482582 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 2,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih kurang 0 untuk dapat ditarik"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 3,
+      "progress": "0",
+      "ready": false,
+      "hint": "Masih 15 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 3,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Masih 0 hari lagi dan gabungkan 5 koin setiap hari"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton total 200000 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton total 200000 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Tonton total 199950 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Tonton total 199950 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton total 0 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton total 0 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton total 200000 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "0",
+      "ready": false,
+      "hint": "Tonton total 200000 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Tonton total 199950 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 4,
+      "progress": "0.00025",
+      "ready": false,
+      "hint": "Tonton total 199950 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton total 0 video"
+    },
+    {
+      "country": "ID",
+      "current": 4,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Tonton total 0 video"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 49,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 0,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 50,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 9999999.99,
+      "days": 0,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    },
+    {
+      "country": "ID",
+      "current": 5,
+      "coin": 50,
+      "videos": 200000,
+      "money": 10000000,
+      "days": 15,
+      "next": 5,
+      "progress": "1",
+      "ready": true,
+      "hint": "Klik untuk menarik dana"
+    }
+  ]
+}

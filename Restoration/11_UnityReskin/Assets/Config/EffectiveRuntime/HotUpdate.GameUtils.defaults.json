@@ -1,0 +1,95 @@
+{
+  "videoRewardConfig": [
+    {
+      "min": 0,
+      "max": 30,
+      "qMin": 0.16,
+      "qMax": 0.25
+    },
+    {
+      "min": 31,
+      "max": 50,
+      "qMin": 0.14,
+      "qMax": 0.22
+    },
+    {
+      "min": 51,
+      "max": 100,
+      "qMin": 0.12,
+      "qMax": 0.18
+    },
+    {
+      "min": 101,
+      "max": 200,
+      "qMin": 0.09,
+      "qMax": 0.15
+    },
+    {
+      "min": 201,
+      "max": 999999,
+      "qMin": 0.08,
+      "qMax": 0.13
+    }
+  ],
+  "defaultLotteryScoreConfig": [
+    {
+      "lotteryCount": 0,
+      "requiredScore": 50
+    }
+  ],
+  "realProducts": {
+    "real_products": [
+      {
+        "withdrawAmount": 500
+      },
+      {
+        "withdrawAmount": 800
+      },
+      {
+        "withdrawAmount": 1000
+      },
+      {
+        "withdrawAmount": 2000
+      },
+      {
+        "withdrawAmount": 3000
+      },
+      {
+        "withdrawAmount": 5000
+      }
+    ],
+    "ranges": [
+      {
+        "le": 0,
+        "lh": 200,
+        "ratio": 20
+      },
+      {
+        "le": 200,
+        "lh": 300,
+        "ratio": 20
+      },
+      {
+        "le": 300,
+        "lh": 490,
+        "ratio": 20
+      },
+      {
+        "le": 490,
+        "lh": 500,
+        "ratio": 250
+      },
+      {
+        "le": 500,
+        "lh": 999999999999,
+        "ratio": 40
+      }
+    ],
+    "fluctuation": {
+      "min": 0.8,
+      "max": 1.2
+    },
+    "baseMinReward": 0.01,
+    "newGuideReward": 220
+  }
+}

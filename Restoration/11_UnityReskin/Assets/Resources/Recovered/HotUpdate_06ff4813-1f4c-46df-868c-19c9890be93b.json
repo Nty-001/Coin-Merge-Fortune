@@ -1,0 +1,406 @@
+{
+  "variant": "HotUpdate",
+  "uuid": "06ff4813-1f4c-46df-868c-19c9890be93b",
+  "name": "CommonPrefab/Toast",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Toast",
+      "parent": -1,
+      "children": [
+        2
+      ],
+      "active": true,
+      "position": [
+        375,
+        667,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        750,
+        200
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"Toast\", \"_children\": [{\"$ref\": 2}], \"_components\": [{\"$ref\": 6}, {\"$ref\": 7}, {\"$ref\": 8}], \"_prefab\": {\"$ref\": 9}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 200]}, \"_trs\": [375, 667, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Widget",
+          "className": "cc.Widget",
+          "sourceId": 6,
+          "rawJson": "{\"__type__\": \"cc.Widget\", \"_enabled\": false, \"_alignFlags\": 45, \"_originalWidth\": 750, \"_originalHeight\": 1334, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "e7d550eQPFDEZrFWauHgtlE",
+          "className": "Toast",
+          "sourceId": 7,
+          "rawJson": "{\"__type__\": \"e7d550eQPFDEZrFWauHgtlE\", \"bottom_sprite\": {\"$ref\": 5}, \"text_label\": {\"$ref\": 4}, \"contentNode\": {\"$ref\": 2}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        },
+        {
+          "type": "828a89/o+lD2o7BDeEFbGzx",
+          "className": "FontView",
+          "sourceId": 8,
+          "rawJson": "{\"__type__\": \"828a89/o+lD2o7BDeEFbGzx\", \"ttffont\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "bottom_sprite",
+      "parent": 1,
+      "children": [
+        3
+      ],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        750,
+        123
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.12941176470588237,
+        0.11764705882352941,
+        0.11764705882352941,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"bottom_sprite\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 3}], \"_components\": [{\"$ref\": 5}, {\"$ref\": 10}, {\"$ref\": 11}], \"_prefab\": {\"$ref\": 12}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4280163873]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 123]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 5,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"node\": {\"$ref\": 2}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"fee62731-326a-4232-b718-01c6e63fb668\"}}",
+          "sprite": "fee62731-326a-4232-b718-01c6e63fb668",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Animation",
+          "className": "cc.Animation",
+          "sourceId": 10,
+          "rawJson": "{\"__type__\": \"cc.Animation\", \"_clips\": [null], \"node\": {\"$ref\": 2}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Layout",
+          "className": "cc.Layout",
+          "sourceId": 11,
+          "rawJson": "{\"__type__\": \"cc.Layout\", \"_resize\": 1, \"_N$layoutType\": 2, \"_N$paddingTop\": 30, \"_N$paddingBottom\": 30, \"_layoutSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 123]}, \"node\": {\"$ref\": 2}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "label_tips",
+      "parent": 2,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        650,
+        63
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"label_tips\", \"_parent\": {\"$ref\": 2}, \"_components\": [{\"$ref\": 4}], \"_prefab\": {\"$ref\": 13}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [650, 63]}}",
+      "components": [
+        {
+          "type": "cc.RichText",
+          "className": "cc.RichText",
+          "sourceId": 4,
+          "rawJson": "{\"__type__\": \"cc.RichText\", \"_N$string\": \"还差<color=#EB3131>%{num1}</color>可提现\", \"_N$horizontalAlign\": 1, \"_N$maxWidth\": 650, \"_N$lineHeight\": 50, \"node\": {\"$ref\": 3}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 1,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 14
+}

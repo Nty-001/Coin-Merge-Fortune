@@ -1,0 +1,656 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5599744b6ad55b7409c75d913ea22cf1, type: 3}
+  m_Name: loading_4
+  m_EditorClassIdentifier: 
+  sourceUuid: ad1af1ca-c838-4eb6-8ed6-0928063481fb
+  texturePath: Skeletal/Atlases/loading_4
+  bones:
+  - name: root
+    parent: -1
+    x: 0
+    y: 0
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: gray
+    parent: 0
+    x: 0
+    y: 0
+    rotation: 88.5481
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: orange
+    parent: 0
+    x: 0
+    y: 0
+    rotation: 88.9415
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: green
+    parent: 0
+    x: 0
+    y: 0
+    rotation: 89.8724
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  slots:
+  - name: line
+    bone: 0
+    initialAttachment: 0
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: line1
+    bone: 0
+    initialAttachment: 1
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: line2
+    bone: 0
+    initialAttachment: 2
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: line21
+    bone: 0
+    initialAttachment: 3
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: line3
+    bone: 0
+    initialAttachment: 4
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: green
+    bone: 3
+    initialAttachment: 5
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: gray
+    bone: 1
+    initialAttachment: 6
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: orange
+    bone: 2
+    initialAttachment: 7
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: 4
+    bone: 0
+    initialAttachment: 8
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: 5
+    bone: 0
+    initialAttachment: 9
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: 6
+    bone: 0
+    initialAttachment: 10
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: 7
+    bone: 0
+    initialAttachment: 11
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  attachments:
+  - name: line
+    skin: default
+    slot: 0
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -27.59
+    - -1
+    - -23.59
+    - 1
+    - -23.59
+    - 1
+    - -27.59
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 1
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -34.38
+    - -1
+    - -30.38
+    - 1
+    - -30.38
+    - 1
+    - -34.38
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 2
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -41.22
+    - -1
+    - -37.22
+    - 1
+    - -37.22
+    - 1
+    - -41.22
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 3
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -47.68
+    - -1
+    - -43.68
+    - 1
+    - -43.68
+    - 1
+    - -47.68
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 4
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -53.59
+    - -1
+    - -49.59
+    - 1
+    - -49.59
+    - 1
+    - -53.59
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: green
+    skin: default
+    slot: 5
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -22.04986
+    - 21.950027
+    - 21.950027
+    - 22.04986
+    - 22.04986
+    - -21.950027
+    - -21.950027
+    - -22.04986
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2890625
+    - 0.0078125
+    - 0.6328125
+    - 0.3515625
+    - 0.6328125
+    - 0.3515625
+    - 0.2890625
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 03000000030000000300000003000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: gray
+    skin: default
+    slot: 6
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -22.549656
+    - 21.436255
+    - 21.436255
+    - 22.549656
+    - 22.549656
+    - -21.436255
+    - -21.436255
+    - -22.549656
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.3671875
+    - 0.6484375
+    - 0.3671875
+    - 0.9921875
+    - 0.7109375
+    - 0.9921875
+    - 0.7109375
+    - 0.6484375
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 01000000010000000100000001000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: orange
+    skin: default
+    slot: 7
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -22.403223
+    - 21.589247
+    - 21.589247
+    - 22.403223
+    - 22.403223
+    - -21.589247
+    - -21.589247
+    - -22.403223
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.6484375
+    - 0.0078125
+    - 0.9921875
+    - 0.3515625
+    - 0.9921875
+    - 0.3515625
+    - 0.6484375
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 02000000020000000200000002000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 8
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -59.59
+    - -1
+    - -55.59
+    - 1
+    - -55.59
+    - 1
+    - -59.59
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 9
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -66.09
+    - -1
+    - -62.09
+    - 1
+    - -62.09
+    - 1
+    - -66.09
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 10
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -72.09
+    - -1
+    - -68.09
+    - 1
+    - -68.09
+    - 1
+    - -72.09
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: line
+    skin: default
+    slot: 11
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -1
+    - -78.59
+    - -1
+    - -74.59
+    - 1
+    - -74.59
+    - 1
+    - -78.59
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.0078125
+    - 0.2421875
+    - 0.0078125
+    - 0.2734375
+    - 0.0234375
+    - 0.2734375
+    - 0.0234375
+    - 0.2421875
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 00000000000000000000000000000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  animations:
+  - name: 1
+    resourcePath: Skeletal/Clips/loading_4/1
+    duration: 1.875
+    deforms: []
+  - name: 2
+    resourcePath: Skeletal/Clips/loading_4/2
+    duration: 4.5002
+    deforms: []
+  - name: 3
+    resourcePath: Skeletal/Clips/loading_4/3
+    duration: 0.5834
+    deforms: []

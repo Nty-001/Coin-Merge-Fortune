@@ -1,0 +1,4020 @@
+{
+  "variant": "HotUpdate",
+  "uuid": "b5283144-3076-4492-bd9a-d2d7759ac59e",
+  "name": "GameDialog/GameRealWDRecordItem",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "GameRealWDRecordItem",
+      "parent": -1,
+      "children": [
+        12,
+        2
+      ],
+      "active": true,
+      "position": [
+        0,
+        -400.62,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        722,
+        690
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"GameRealWDRecordItem\", \"_children\": [{\"$ref\": 12}, {\"$ref\": 2}], \"_components\": [{\"$ref\": 52}, {\"$ref\": 53}, {\"$ref\": 54}, {\"$ref\": 55}], \"_prefab\": {\"$ref\": 56}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 690]}, \"_trs\": [0, -400.62, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Layout",
+          "className": "cc.Layout",
+          "sourceId": 52,
+          "rawJson": "{\"__type__\": \"cc.Layout\", \"_resize\": 1, \"_N$layoutType\": 2, \"_N$paddingBottom\": 20, \"_N$spacingY\": 10, \"_layoutSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 690]}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "e0aa9cHA7JEWY95OrkY+hoK",
+          "className": "GameRealWDRecordItem",
+          "sourceId": 53,
+          "rawJson": "{\"__type__\": \"e0aa9cHA7JEWY95OrkY+hoK\", \"faildTips\": {\"$ref\": 51}, \"faildNode\": {\"$ref\": 23}, \"tips8_1\": {\"$ref\": 47}, \"tips8\": {\"$ref\": 48}, \"tips7_1\": {\"$ref\": 45}, \"tips7\": {\"$ref\": 46}, \"tips6_1\": {\"$ref\": 43}, \"tips6\": {\"$ref\": 44}, \"tips5_1\": {\"$ref\": 41}, \"tips5\": {\"$ref\": 42}, \"tips4_1\": {\"$ref\": 39}, \"tips4\": {\"$ref\": 40}, \"tips3_1\": {\"$ref\": 37}, \"tips3\": {\"$ref\": 38}, \"tips2_1\": {\"$ref\": 35}, \"tips2\": {\"$ref\": 36}, \"tips1_1\": {\"$ref\": 33}, \"tips1\": {\"$ref\": 34}, \"nodeShow\": {\"$ref\": 2}, \"jiantouNode\": {\"$ref\": 25}, \"successLabel\": {\"$ref\": 28}, \"coinLabel\": {\"$ref\": 27}, \"timeLabel\": {\"$ref\": 30}, \"tibg\": {\"$ref\": 12}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        },
+        {
+          "type": "cc.BlockInputEvents",
+          "className": "cc.BlockInputEvents",
+          "sourceId": 54,
+          "rawJson": "{\"__type__\": \"cc.BlockInputEvents\", \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 55,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_type\": 1, \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"e743ec86-44c4-4a4e-ab89-be3ef60eb3a0\"}, \"node\": {\"$ref\": 1}}",
+          "sprite": "e743ec86-44c4-4a4e-ab89-be3ef60eb3a0",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 1,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 1,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "node",
+      "parent": 1,
+      "children": [
+        31,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        23
+      ],
+      "active": true,
+      "position": [
+        0,
+        250,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        722,
+        575
+      ],
+      "pivot": [
+        0.5,
+        1
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"node\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 31}, {\"$ref\": 4}, {\"$ref\": 5}, {\"$ref\": 6}, {\"$ref\": 7}, {\"$ref\": 8}, {\"$ref\": 9}, {\"$ref\": 10}, {\"$ref\": 11}, {\"$ref\": 23}], \"_components\": [{\"$ref\": 57}, {\"$ref\": 58}], \"_prefab\": {\"$ref\": 59}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 575]}, \"_anchorPoint\": {\"__type__\": \"cc.Vec2\", \"values\": [0.5, 1]}, \"_trs\": [0, 250, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Layout",
+          "className": "cc.Layout",
+          "sourceId": 57,
+          "rawJson": "{\"__type__\": \"cc.Layout\", \"_resize\": 1, \"_N$layoutType\": 2, \"_N$spacingY\": 5, \"_layoutSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 575]}, \"node\": {\"$ref\": 2}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 58,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_enabled\": false, \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"e743ec86-44c4-4a4e-ab89-be3ef60eb3a0\"}, \"node\": {\"$ref\": 2}}",
+          "sprite": "e743ec86-44c4-4a4e-ab89-be3ef60eb3a0",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "timeLabel",
+      "parent": 12,
+      "children": [
+        13,
+        14,
+        25
+      ],
+      "active": true,
+      "position": [
+        -224.298,
+        -8.794,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        200,
+        67
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"timeLabel\", \"_children\": [{\"$ref\": 13}, {\"$ref\": 14}, {\"$ref\": 25}], \"_components\": [{\"$ref\": 30}, {\"$ref\": 60}, {\"$ref\": 61}], \"_prefab\": {\"$ref\": 62}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [200, 67]}, \"_trs\": [-224.298, -8.794, 0, 0, 0, 0, 1, 1, 1, 1], \"_parent\": {\"$ref\": 12}}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 30,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"4444444\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 3}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "4444444",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 60,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 3}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 61,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 3}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "tips1",
+      "parent": 2,
+      "children": [
+        15
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -40,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips1\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 15}], \"_components\": [{\"$ref\": 34}, {\"$ref\": 63}, {\"$ref\": 64}], \"_prefab\": {\"$ref\": 65}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -40, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 34,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"订单时间\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 4}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "订单时间",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 63,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 4}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 64,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 4}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "tips2",
+      "parent": 2,
+      "children": [
+        16
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -95,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips2\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 16}], \"_components\": [{\"$ref\": 36}, {\"$ref\": 66}, {\"$ref\": 67}], \"_prefab\": {\"$ref\": 68}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -95, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 36,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 5}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 66,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 5}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 67,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 5}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "tips3",
+      "parent": 2,
+      "children": [
+        17
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -150,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips3\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 17}], \"_components\": [{\"$ref\": 38}, {\"$ref\": 69}, {\"$ref\": 70}], \"_prefab\": {\"$ref\": 71}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -150, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 38,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 6}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 69,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 6}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 70,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 6}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "tips4",
+      "parent": 2,
+      "children": [
+        18
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -205,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips4\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 18}], \"_components\": [{\"$ref\": 40}, {\"$ref\": 72}, {\"$ref\": 73}], \"_prefab\": {\"$ref\": 74}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -205, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 40,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 7}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 72,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 7}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 73,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 7}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "tips5",
+      "parent": 2,
+      "children": [
+        19
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -260,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips5\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 19}], \"_components\": [{\"$ref\": 42}, {\"$ref\": 75}, {\"$ref\": 76}], \"_prefab\": {\"$ref\": 77}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -260, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 42,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 8}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 75,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 8}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 76,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 8}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "tips6",
+      "parent": 2,
+      "children": [
+        20
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -315,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips6\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 20}], \"_components\": [{\"$ref\": 44}, {\"$ref\": 78}, {\"$ref\": 79}], \"_prefab\": {\"$ref\": 80}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -315, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 44,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 9}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 78,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 9}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 79,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 9}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "tips7",
+      "parent": 2,
+      "children": [
+        21
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -370,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips7\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 21}], \"_components\": [{\"$ref\": 46}, {\"$ref\": 81}, {\"$ref\": 82}], \"_prefab\": {\"$ref\": 83}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -370, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 46,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 10}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 81,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 10}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 82,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 10}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "tips8",
+      "parent": 2,
+      "children": [
+        22
+      ],
+      "active": true,
+      "position": [
+        -165,
+        -425,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips8\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 22}], \"_components\": [{\"$ref\": 48}, {\"$ref\": 84}, {\"$ref\": 85}], \"_prefab\": {\"$ref\": 86}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [-165, -425, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 48,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"邮箱\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 11}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "邮箱",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 0,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 84,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 11}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 85,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 11}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "tibg",
+      "parent": 1,
+      "children": [
+        26,
+        3
+      ],
+      "active": true,
+      "position": [
+        0,
+        302.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        722,
+        85
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tibg\", \"_parent\": {\"$ref\": 1}, \"_children\": [{\"$ref\": 26}, {\"$ref\": 3}], \"_prefab\": {\"$ref\": 87}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 85]}, \"_trs\": [0, 302.5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 13,
+      "name": "coinLabel",
+      "parent": 3,
+      "children": [],
+      "active": true,
+      "position": [
+        228.552,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        170,
+        67
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"coinLabel\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 27}, {\"$ref\": 88}, {\"$ref\": 89}], \"_prefab\": {\"$ref\": 90}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [170, 67]}, \"_trs\": [228.552, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 27,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"2\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 13}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "2",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 88,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 13}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 89,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 13}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "successLabel",
+      "parent": 3,
+      "children": [],
+      "active": true,
+      "position": [
+        420,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        200,
+        67
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.4627450980392157,
+        0.23921568627450981,
+        0.7725490196078432,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"successLabel\", \"_parent\": {\"$ref\": 3}, \"_components\": [{\"$ref\": 28}, {\"$ref\": 91}, {\"$ref\": 92}], \"_prefab\": {\"$ref\": 93}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4291116406]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [200, 67]}, \"_trs\": [420, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 28,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"2\", \"_fontSize\": 70, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 14}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}",
+          "sprite": "",
+          "text": "2",
+          "fontSize": 70,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 91,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 14}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 92,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 14}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "tips1_1",
+      "parent": 4,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips1_1\", \"_parent\": {\"$ref\": 4}, \"_components\": [{\"$ref\": 33}, {\"$ref\": 94}, {\"$ref\": 95}], \"_prefab\": {\"$ref\": 96}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 33,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 15}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 94,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 15}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 95,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 15}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "tips2_1",
+      "parent": 5,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips2_1\", \"_parent\": {\"$ref\": 5}, \"_components\": [{\"$ref\": 35}, {\"$ref\": 97}, {\"$ref\": 98}], \"_prefab\": {\"$ref\": 99}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 35,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 16}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 97,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 16}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 98,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 16}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "tips3_1",
+      "parent": 6,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips3_1\", \"_parent\": {\"$ref\": 6}, \"_components\": [{\"$ref\": 37}, {\"$ref\": 100}, {\"$ref\": 101}], \"_prefab\": {\"$ref\": 102}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 37,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 17}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 100,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 17}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 101,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 17}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "tips4_1",
+      "parent": 7,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips4_1\", \"_parent\": {\"$ref\": 7}, \"_components\": [{\"$ref\": 39}, {\"$ref\": 103}, {\"$ref\": 104}], \"_prefab\": {\"$ref\": 105}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 39,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 18}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 103,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 18}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 104,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 18}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "tips5_1",
+      "parent": 8,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips5_1\", \"_parent\": {\"$ref\": 8}, \"_components\": [{\"$ref\": 41}, {\"$ref\": 106}, {\"$ref\": 107}], \"_prefab\": {\"$ref\": 108}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 41,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"222\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 19}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "222",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 106,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 19}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 107,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 19}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "tips6_1",
+      "parent": 9,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips6_1\", \"_parent\": {\"$ref\": 9}, \"_components\": [{\"$ref\": 43}, {\"$ref\": 109}, {\"$ref\": 110}], \"_prefab\": {\"$ref\": 111}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 43,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 20}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 109,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 20}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 110,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 20}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "tips7_1",
+      "parent": 10,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips7_1\", \"_parent\": {\"$ref\": 10}, \"_components\": [{\"$ref\": 45}, {\"$ref\": 112}, {\"$ref\": 113}], \"_prefab\": {\"$ref\": 114}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 45,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"222\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 21}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "222",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 112,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 21}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 113,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 21}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "tips8_1",
+      "parent": 11,
+      "children": [],
+      "active": true,
+      "position": [
+        340,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        300,
+        50
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.16862745098039217,
+        0.3333333333333333,
+        0.4745098039215686,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"tips8_1\", \"_parent\": {\"$ref\": 11}, \"_components\": [{\"$ref\": 47}, {\"$ref\": 115}, {\"$ref\": 116}], \"_prefab\": {\"$ref\": 117}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4286141739]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [300, 50]}, \"_trs\": [340, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 47,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 75, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 2, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 22}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_N$file\": {\"$asset\": \"64b2f1d4-4b0a-485e-a37a-0256a65ef785\"}}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 75,
+          "lineHeight": 115,
+          "horizontalAlign": 2,
+          "verticalAlign": 1,
+          "font": "64b2f1d4-4b0a-485e-a37a-0256a65ef785",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 115,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 22}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 116,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 22}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "faildNode",
+      "parent": 2,
+      "children": [
+        49,
+        24
+      ],
+      "active": true,
+      "position": [
+        0,
+        -455,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        750,
+        120
+      ],
+      "pivot": [
+        0.5,
+        1
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"faildNode\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 49}, {\"$ref\": 24}], \"_prefab\": {\"$ref\": 118}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [750, 120]}, \"_anchorPoint\": {\"__type__\": \"cc.Vec2\", \"values\": [0.5, 1]}, \"_trs\": [0, -455, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 24,
+      "name": "faildTips",
+      "parent": 23,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        -64.26,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        600,
+        120
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        0.9254901960784314,
+        0.23137254901960785,
+        0.23137254901960785,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"faildTips\", \"_parent\": {\"$ref\": 23}, \"_components\": [{\"$ref\": 51}, {\"$ref\": 119}, {\"$ref\": 120}], \"_prefab\": {\"$ref\": 121}, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4282072044]}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [600, 120]}, \"_trs\": [0, -64.26, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Label",
+          "className": "cc.Label",
+          "sourceId": 51,
+          "rawJson": "{\"__type__\": \"cc.Label\", \"_string\": \"111\", \"_fontSize\": 32, \"_lineHeight\": 115, \"_enableWrapText\": false, \"_isSystemFontUsed\": false, \"_N$horizontalAlign\": 1, \"_N$verticalAlign\": 1, \"_N$overflow\": 2, \"node\": {\"$ref\": 24}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}",
+          "sprite": "",
+          "text": "111",
+          "fontSize": 32,
+          "lineHeight": 115,
+          "horizontalAlign": 1,
+          "verticalAlign": 1,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelOutline",
+          "className": "cc.LabelOutline",
+          "sourceId": 119,
+          "rawJson": "{\"__type__\": \"cc.LabelOutline\", \"_enabled\": false, \"_width\": 4, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"node\": {\"$ref\": 24}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        },
+        {
+          "type": "cc.LabelShadow",
+          "className": "cc.LabelShadow",
+          "sourceId": 120,
+          "rawJson": "{\"__type__\": \"cc.LabelShadow\", \"_enabled\": false, \"_blur\": 0, \"_color\": {\"__type__\": \"cc.Color\", \"values\": [4278190080]}, \"_offset\": {\"__type__\": \"cc.Vec2\", \"values\": [0, -4]}, \"node\": {\"$ref\": 24}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": false,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            -4
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "jiantouNode",
+      "parent": 3,
+      "children": [
+        29
+      ],
+      "active": true,
+      "position": [
+        540.438,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        200,
+        100
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"jiantouNode\", \"_parent\": {\"$ref\": 3}, \"_children\": [{\"$ref\": 29}], \"_prefab\": {\"$ref\": 122}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [200, 100]}, \"_trs\": [540.438, 0, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 26,
+      "name": "smallBg",
+      "parent": 12,
+      "children": [],
+      "active": false,
+      "position": [
+        0,
+        -5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        722,
+        100
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"smallBg\", \"_active\": false, \"_parent\": {\"$ref\": 12}, \"_components\": [{\"$ref\": 123}], \"_prefab\": {\"$ref\": 124}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [722, 100]}, \"_trs\": [0, -5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 123,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_sizeMode\": 0, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"89bd8b10-0e26-4443-9043-a962a41488c5\"}, \"node\": {\"$ref\": 26}}",
+          "sprite": "89bd8b10-0e26-4443-9043-a962a41488c5",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "jiantou",
+      "parent": 25,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        18,
+        14
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"jiantou\", \"_parent\": {\"$ref\": 25}, \"_components\": [{\"$ref\": 125}], \"_prefab\": {\"$ref\": 126}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [18, 14]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 125,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"cad0c95e-914b-4185-9554-174e7cf16d05\"}, \"node\": {\"$ref\": 29}}",
+          "sprite": "cad0c95e-914b-4185-9554-174e7cf16d05",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "lineNode",
+      "parent": 2,
+      "children": [
+        32
+      ],
+      "active": true,
+      "position": [
+        0,
+        -5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        0,
+        10
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"lineNode\", \"_parent\": {\"$ref\": 2}, \"_children\": [{\"$ref\": 32}], \"_prefab\": {\"$ref\": 127}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [0, 10]}, \"_trs\": [0, -5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 32,
+      "name": "line",
+      "parent": 31,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        4.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        654,
+        3
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"line\", \"_parent\": {\"$ref\": 31}, \"_components\": [{\"$ref\": 128}], \"_prefab\": {\"$ref\": 129}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [654, 3]}, \"_trs\": [0, 4.5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 128,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"f9e648dc-650f-4179-b379-75975cc4f00b\"}, \"node\": {\"$ref\": 32}}",
+          "sprite": "f9e648dc-650f-4179-b379-75975cc4f00b",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "lineNode",
+      "parent": 23,
+      "children": [
+        50
+      ],
+      "active": true,
+      "position": [
+        0,
+        -9.082,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        0,
+        10
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"lineNode\", \"_parent\": {\"$ref\": 23}, \"_children\": [{\"$ref\": 50}], \"_prefab\": {\"$ref\": 130}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [0, 10]}, \"_trs\": [0, -9.082, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": []
+    },
+    {
+      "id": 50,
+      "name": "line",
+      "parent": 49,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        4.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        654,
+        3
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"line\", \"_parent\": {\"$ref\": 49}, \"_components\": [{\"$ref\": 131}], \"_prefab\": {\"$ref\": 132}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [654, 3]}, \"_trs\": [0, 4.5, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 131,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}], \"_spriteFrame\": {\"$asset\": \"f9e648dc-650f-4179-b379-75975cc4f00b\"}, \"node\": {\"$ref\": 50}}",
+          "sprite": "f9e648dc-650f-4179-b379-75975cc4f00b",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 133
+}

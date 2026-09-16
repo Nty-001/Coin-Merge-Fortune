@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9639e3d60bc4b08b350065a4b46b818, type: 3}
+  m_Name: MergeFeedback
+  m_EditorClassIdentifier:
+  chainDelay: 0.5
+  comboGapY: 105
+  appearGrow: 0.08
+  appearSettle: 0.02
+  timesDelay: 0.1
+  hold: 0.5
+  shrink: 0.2
+  praiseFade: 0.5
+  starCount: 12
+  initialStarCapacity: 48
+  initialBurstCapacity: 4
+  starDelay: 0.06
+  scatterRadius: 56
+  flightDuration: 1.12
+  targetSpread: 20
+  scatterDuration: 0.14
+  durationJitter: {x: -0.08, y: 0.16}
+  starScale: {x: 0.5, y: 0.68}
+  peakMultiplier: {x: 1.18, y: 1.38}
+  normalAlpha: {x: 125, y: 190}
+  brightAlpha: {x: 205, y: 255}
+  glowAlpha: {x: 170, y: 225}
+  curveSway: {x: 55, y: 110}
+  nearHeight: {x: 120, y: 180}
+  farHeight: {x: 80, y: 145}
+  spinDegrees: {x: 160, y: 300}
+  glowChance: 0.3
+  normalChance: 0.7
+  glowScale: 1.28
+  fadeStart: 0.72
+  finalScale: 0.38
+  glowFinalScale: 0.5
+  glowTint: {r: 1, g: 0.9647059, b: 0.68235296, a: 1}
+  coinValues: 0100000002000000050000000a000000140000003200000064000000c8000000f4010000e8030000d0070000
+  burstScales:
+  - 0.5
+  - 0.5
+  - 0.7
+  - 1
+  - 1
+  - 1
+  - 1.1
+  - 1.1
+  - 1.1
+  - 1.25
+  - 1.25
+  burstAnimation: idle1
+  praisePaths:
+  - MergeFeedback/Sprites/Praise_0
+  - MergeFeedback/Sprites/Praise_1
+  - MergeFeedback/Sprites/Praise_2
+  - MergeFeedback/Sprites/Praise_3
+  timesPaths:
+  - MergeFeedback/Sprites/Times_2
+  - MergeFeedback/Sprites/Times_3
+  - MergeFeedback/Sprites/Times_4
+  - MergeFeedback/Sprites/Times_5
+  - MergeFeedback/Sprites/Times_6
+  - MergeFeedback/Sprites/Times_7
+  - MergeFeedback/Sprites/Times_8
+  mergeAudioPaths:
+  - MergeFeedback/Audio/sfx_merge
+  - MergeFeedback/Audio/sfx_merge_2
+  - MergeFeedback/Audio/sfx_merge_3
+  - MergeFeedback/Audio/sfx_merge_4
+  - MergeFeedback/Audio/sfx_merge_5
+  - MergeFeedback/Audio/sfx_merge_6
+  - MergeFeedback/Audio/sfx_merge_7
+  - MergeFeedback/Audio/sfx_merge_8
+  comboAudioPaths:
+  - MergeFeedback/Audio/sfx_combo_2
+  - MergeFeedback/Audio/sfx_combo_3
+  - MergeFeedback/Audio/sfx_combo_4
+  - MergeFeedback/Audio/sfx_combo_5
+  comboPath: MergeFeedback/Sprites/Combo
+  starPath: MergeFeedback/Sprites/Star
