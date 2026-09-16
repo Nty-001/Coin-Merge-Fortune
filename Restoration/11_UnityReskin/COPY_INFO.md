@@ -11,3 +11,5 @@
 Unity 2022.3.62f3c1 导入、编译和 Play Mode 43 项检查通过；验证了正常加载进入主界面、设置、规则、两类提现、Wheel 条件提示和 GM 弹窗按钮。真实渲染截图及检查记录位于 `Design/HomeR1/Verification`，测试金额和硬币摆放仅为隔离测试数据，不写入正式存档。原工程 4167 个文件的 SHA-256 仍与复制时一致。
 
 后续换皮请只修改本目录；原工程仍保留在 `../06_UnityFramework`。复制记录见 COPY_MANIFEST.json。
+
+2026-09-16 后续已按用户提供的参考图替换 Merge rules 和 Settings 两个弹窗。新增透明面板、独立按钮和开关；规则页使用指定 11 级筹码。仅这两个弹窗调整布局和字体，并修正弹窗与 GM 的 Canvas 排序；主界面 R2 保持不变。制作和验证说明见 `Design/POPUPS_README.md`，画面对照见 `Design/POPUPS_REVIEW.html`。
