@@ -1,4 +1,4 @@
-# Remaining UI style review R1 — pending user review
+# Remaining UI style review R1 — approved
 
 The user requested visual concepts for the remaining unskinned game screens, with approval before replacement. Fourteen AI-generated review boards have been saved locally under `paid_ui_work/reskin_20260916/RemainingUI_Review_R1/`. Open `index.html` for the numbered gallery or `RemainingUI_Review_R1.zip` for the complete review package.
 
@@ -25,4 +25,4 @@ These are **style proposals**, not runtime screenshots or import-ready sprites. 
 
 The built-in image generation tool produced the concepts; the complete prompt set and final source locations are in the local `review_manifest.json`. Board 01 received a text-only correction to match US product values: 500, 800, 1000, 2000, 3000, 5000.
 
-Approval status: **not approved; waiting for the user's numbered feedback.** Do not apply these concepts to Unity until that feedback authorizes replacement.
+Approval status: **the user replied “全部通过” and authorized implementation.** The implementation and verification are recorded in `REMAINING_UI_DELIVERY.md`. The no-change hash count above records the review round only, before approval.

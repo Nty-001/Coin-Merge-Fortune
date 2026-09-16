@@ -1,5 +1,7 @@
 # Five-page Unity reskin — 2026-09-16
 
+**Update:** All remaining approved UI concepts have now been implemented. The current delivered project is `paid_ui_work/reskin_20260916/UnityRemainingWorkingCopy`; see [remaining UI delivery](REMAINING_UI_DELIVERY.md). The cumulative patch now contains **171 files**, and **253 PlayMode checks** passed. The original five-page implementation history below is retained for context.
+
 The main game, draw machine, withdrawal page, settings and merge-rules page now use the supplied blue-sky / glossy UI art direction. All 11 denominations (1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000) use the coin family from reference 5. Assets were AI-authored from the supplied references, then cut into independent sprites and existing skeletal atlas regions.
 
 The ready-to-open local project is `paid_ui_work/reskin_20260916/UnityWorkingCopy`. Open `Assets/Scenes/RecoveredMain.unity` using Unity **2022.3.62f3c1**. The local side-by-side review is `paid_ui_work/reskin_20260916/review_final.html`; full-resolution actual PlayMode captures are in `paid_ui_work/reskin_20260916/07_Verification/ReskinRuntime`.
