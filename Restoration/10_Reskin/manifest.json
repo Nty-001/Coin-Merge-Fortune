@@ -1,0 +1,598 @@
+{
+  "originalFilesVerified": 4166,
+  "originalChanges": [],
+  "runtimeCodeChanged": false,
+  "tests": {
+    "menus": {
+      "passed": true,
+      "checks": 130
+    },
+    "gameplay": {
+      "passed": true,
+      "checks": 31
+    },
+    "reskin": {
+      "passed": true,
+      "checks": 19
+    }
+  },
+  "patchFileCount": 96,
+  "files": [
+    {
+      "path": "Assets/Prefabs/Runtime/RecoveredMain.prefab",
+      "before": "82ea87200983931cbc0b120545ba1533670fa549f2fa08657c7220323367a10f",
+      "after": "2524bc1de36fdc6fa0ee0614ffb0439f422f61f675f6a22a7ae63b4760579659",
+      "bytes": 3507125
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/1.png",
+      "before": "74acb77a8f3880790b855fd2bed0a79fed8708a81d1d3d34b2eeebd8a22bad82",
+      "after": "ad6a80ae3aab2008c27123175c73bf4a9f7523841517212a6a6f903b25b61d20",
+      "bytes": 6649
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/10.png",
+      "before": "8a0bf67c6858d66933ad8737dccd6dc117b96f59e40608e85733771ea253fbca",
+      "after": "e2b83677429bf97b5c2e6841007d298ec309317a9ba4f782e80e436e991c70dc",
+      "bytes": 24341
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/100.png",
+      "before": "6d77246c63f63064fd5ffbf7c9bd5464fc6b9316f502d787617b2239d61179ca",
+      "after": "d460355a8c49c60abb9589272f5107914f5ff95ec68486f5aae03d47d2e0cd9f",
+      "bytes": 68437
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/1000.png",
+      "before": "65a017f5e13ec409447102a28c24c12ec0888485a8f1b02e3aec17742fa77d98",
+      "after": "f78da989385a2b35cafba8b9742754abec7fa85a87c151771625047b6c584227",
+      "bytes": 133344
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/2.png",
+      "before": "5a0d01c0999491d99c320d32d30ffc7edd8038f87534d98959e0212849aabfd1",
+      "after": "de827a1a0ee23c7c50cd8a27097eb93c2adf9191d040e67486fa36f1e7e46741",
+      "bytes": 9271
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/20.png",
+      "before": "869218b3863138bb1362a191835e6776924d8f1679e04453ed7b79e8d9db2296",
+      "after": "75ebd43dc7352bb347abd5fe2b09b9dc5627497629fefde8cf6d0e787f626faf",
+      "bytes": 39678
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/200.png",
+      "before": "dab606066000a0e46b4f9d1381da5fce90a99629e99189887904c2f4e225b1db",
+      "after": "cd8121d89458cfc50e6cca746ed4ec37ae7412989b995d7c937f37b63a2b75e7",
+      "bytes": 97578
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/2000.png",
+      "before": "27866770f0836e80075fed62664f602079437215f1e1f6f9bc2e7d953ee99fe5",
+      "after": "a28ce2171d18864f3b797194cd4f9510924f95d4aa761d284148b9f65934a911",
+      "bytes": 232188
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/5.png",
+      "before": "dee6be1ea33c3d609cd02f0420744b3cb1e4f2544e7f86737f52ce12f6a06edb",
+      "after": "c80785ec356592dd7d803717d0e4f61f5bca5ebca8f6757b54296a2732c7975a",
+      "bytes": 23022
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/50.png",
+      "before": "ae303f73c99123510522f592aacbd95ac28d79b69a1c7504cb88143924a6e572",
+      "after": "3c9b9e03d6ddb17f8ca62248de5aa9c123d2bad26302161bb33543bceee4e4ae",
+      "bytes": 50162
+    },
+    {
+      "path": "Assets/Resources/Gameplay/Coins/500.png",
+      "before": "4f7be9af31c3e835e43986763b9dc0af02d3234541f18d22087bf5884291b1ec",
+      "after": "8c5c8bc9c07e439769877906b72579d4813585787a2e9bf719cc47151a3335ef",
+      "bytes": 119298
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCard.png",
+      "before": null,
+      "after": "a1634b13c484b693e85f5d9cd98b8eb34924c3dff22c3b62a88ce4dd41c1baa2",
+      "bytes": 53714
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCard.png.meta",
+      "before": null,
+      "after": "4d9df17894496f960dbe228cbd4b102f3a0508499a9332f4b0596ec65193a317",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCardSelected.png",
+      "before": null,
+      "after": "8876a3ed5a9a7be5100cd6cc37cbe59290fc188fc12854518b8aeb95913726ff",
+      "bytes": 44102
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCardSelected.png.meta",
+      "before": null,
+      "after": "7b10ca5f2e5f42ed84ddb5d4753a607f068fd8591742a0b60d336b6e53ee7b7e",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCoins.png",
+      "before": null,
+      "after": "6d9326088dc580f1fe0946aa570a0ed89fc8098a7d41b4b3e737d603372477d5",
+      "bytes": 392869
+    },
+    {
+      "path": "Assets/Resources/Reskin/CashCoins.png.meta",
+      "before": null,
+      "after": "a8b813c295fc0bdb002eb56489d509587f263e3d0f8b69c502d08474927080cf",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin1.png",
+      "before": null,
+      "after": "e3e45aba220b3aee520f29b9e4282dd712bbf027c4725dd88e6609c0c77de483",
+      "bytes": 124444
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin1.png.meta",
+      "before": null,
+      "after": "d9e74d26e30a6aef03e1804e59ffa94f4b70d7eb8a4a6a330e47e00241e33331",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin10.png",
+      "before": null,
+      "after": "5ce45e80559b74d7f45a35e7e6992787f11d33778bca3e81d3553c463ce6ff33",
+      "bytes": 139235
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin10.png.meta",
+      "before": null,
+      "after": "17e5d31d9e6400a563fa3ec9376ab60db4618960a1128281e315c063e8ac7c5b",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin100.png",
+      "before": null,
+      "after": "ee9bbc2488b094b9b0960540c6991ed1bf47684fbde51e8db8d4fde2b851744b",
+      "bytes": 163523
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin100.png.meta",
+      "before": null,
+      "after": "aab6e02aa87d929527a2334c166c1665ef012f261446793b0505a7b71b2bfbb9",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin1000.png",
+      "before": null,
+      "after": "b5df4c36569bdc6dcf2d562ff93f9480307d5f0ed659b438b776bb6b7e28c3cd",
+      "bytes": 192481
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin1000.png.meta",
+      "before": null,
+      "after": "6a22090e9e73f0b3cf23c965e22ba235901f4233d8ad827d738c0595718c54f6",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin2.png",
+      "before": null,
+      "after": "681a70d1eece2288c00acab15efcb77c7f42e49746629844ac4262ac9bbd4740",
+      "bytes": 143410
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin2.png.meta",
+      "before": null,
+      "after": "ebda6eab7c168c655704e6efdd18e2e87082ac257b5ef735a16f6d46c85242a3",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin20.png",
+      "before": null,
+      "after": "f4d22a866fa5c78604be65ab49a2137504bb0f928997fcda9dbda04d50a02d43",
+      "bytes": 163077
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin20.png.meta",
+      "before": null,
+      "after": "fe9d194abcb369006b6ebc7016a48b1e918c06a7e2a6fb31f41cd26e854f40bb",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin200.png",
+      "before": null,
+      "after": "d165030b493d7e10da130fcc14661e9c82edcb458f11ff5b23ad73f67ad8587e",
+      "bytes": 169869
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin200.png.meta",
+      "before": null,
+      "after": "e1d886ac1a1b790da8238282979cb103c73d90e1884c0af7c20f6d5b48608162",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin2000.png",
+      "before": null,
+      "after": "10037a37a38865c4393cc731b3dfcc667417a75b68b8e709f9d75f342b0299a5",
+      "bytes": 201883
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin2000.png.meta",
+      "before": null,
+      "after": "202385eb34e6f0ee481dfc6c670314dbaf0f171030c24439c18397096f1609d7",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin5.png",
+      "before": null,
+      "after": "936428f431f9e78f5c4f13ac4671e93fcff94ddca421b37efdcd0e4825f09e74",
+      "bytes": 144122
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin5.png.meta",
+      "before": null,
+      "after": "c1c09abd0bedfc0d118f62fc0d3b739f88fab94074b8b311fc7018e9a2fd6e8d",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin50.png",
+      "before": null,
+      "after": "efd9309973726fc3cadebe8f5dca424e3620d2cc9bd83401a9461426afc973da",
+      "bytes": 153030
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin50.png.meta",
+      "before": null,
+      "after": "fee839ee927649fa1b81ddf22c800dd325875146582e1fcf01e0e6811810c1ea",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin500.png",
+      "before": null,
+      "after": "989363a2c49b1b5cf7ca4cd13ced748a3a6857d6522be4ea2a158c3f53b9684c",
+      "bytes": 188282
+    },
+    {
+      "path": "Assets/Resources/Reskin/Coin500.png.meta",
+      "before": null,
+      "after": "0b18af9296c58946593564b56b251606de73ad9bb7697ea828377538cc5ac050",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Header.png",
+      "before": null,
+      "after": "338b606c04fa46c3751d50ee3c7a057d4c75917248d0013b3f7ce355e5e673db",
+      "bytes": 65497
+    },
+    {
+      "path": "Assets/Resources/Reskin/Header.png.meta",
+      "before": null,
+      "after": "687f0c7c94317c1dde735843f2f1d7fe159b68c765ecfa4becbbb4cd62e55e91",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Notice.png",
+      "before": null,
+      "after": "d0be67a682a0b20859fde6bc8064f63266e45b33728524bb67aaf4eff58ec9fe",
+      "bytes": 29994
+    },
+    {
+      "path": "Assets/Resources/Reskin/Notice.png.meta",
+      "before": null,
+      "after": "d9c46406ce7af6c26db4918ee9e8eab774827212151d5e8653e03bc09cc43476",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/ProgressFill.png",
+      "before": null,
+      "after": "8ca39e3f74510516ba8451d442728e203ee868589a77a25e0d3b9ab4c980bf7f",
+      "bytes": 20718
+    },
+    {
+      "path": "Assets/Resources/Reskin/ProgressFill.png.meta",
+      "before": null,
+      "after": "22c4b99da3e7a60c3e7ccc3927d4bfc4bd7adc6d01ee3d5ec2c3a1f2737fe5de",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/ProgressTrack.png",
+      "before": null,
+      "after": "cd320f34283c2e52cc67fde88b36ead3fb6cae505831011c3c526da950aca639",
+      "bytes": 29423
+    },
+    {
+      "path": "Assets/Resources/Reskin/ProgressTrack.png.meta",
+      "before": null,
+      "after": "68a46712654fed4585ab392597db333ca4c5aeb8ae6731acfe3255ee146cdcc1",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/RuleClose.png",
+      "before": null,
+      "after": "fae009091487be425e5163077e01006762eaaeaedaf1781f0275569ea3a98e91",
+      "bytes": 16874
+    },
+    {
+      "path": "Assets/Resources/Reskin/RuleClose.png.meta",
+      "before": null,
+      "after": "332e89f01aa2c8284b4123635071b22803b2d207561f5b03836c89e2bc06b745",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/RuleCoins.png",
+      "before": null,
+      "after": "b4abcea1e4db80e3d7d7a36f040b827654ad1ab46426a7b622aa7a97c5ac4bb9",
+      "bytes": 579303
+    },
+    {
+      "path": "Assets/Resources/Reskin/RuleCoins.png.meta",
+      "before": null,
+      "after": "8ab04c98729c920f115befa1c00a2c401c9be4c40fd3e9babcb3ad041853f00e",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/RulesPanel.png",
+      "before": null,
+      "after": "4c738a2b85bb6cc3bff922cf22681c87eae9d24c6ccc3f9e3b4d0c3f26adfd20",
+      "bytes": 108749
+    },
+    {
+      "path": "Assets/Resources/Reskin/RulesPanel.png.meta",
+      "before": null,
+      "after": "82e86637fa4fc9d4da9f1d755669a4948f4ea2d153594005b37a9cc776ba2354",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/SettingsPanel.png",
+      "before": null,
+      "after": "4f4258e42d0b92514f9f258b67b748823d174e21fdc1474d510c1bbd9ac1e5d1",
+      "bytes": 100568
+    },
+    {
+      "path": "Assets/Resources/Reskin/SettingsPanel.png.meta",
+      "before": null,
+      "after": "4146784d17baf44a08e346d6e16415d1e565c92640e15f8e65a904946641557b",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/Sky.png",
+      "before": null,
+      "after": "eaf37f9ab4c3b6ccb2ce24e7003eafbacfab834ffa950eb6d57a75769abb4753",
+      "bytes": 1256669
+    },
+    {
+      "path": "Assets/Resources/Reskin/Sky.png.meta",
+      "before": null,
+      "after": "4ad66a15ac6718e8c5bfaad58bf4147a77bfb200540ca3b3e22d0923fcf88fd3",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI0.png",
+      "before": null,
+      "after": "277e9234d7d48b51159933c3c9b618f6f46af7e9f915658ff22ca7459202b1b0",
+      "bytes": 52493
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI0.png.meta",
+      "before": null,
+      "after": "618ac7b9cd1fa3ddba2a2d25fdff8cb0daa0d88d90e9857ca3aa1c33b88b6fb1",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI1.png",
+      "before": null,
+      "after": "35bf6bae3d49f82eb0525e2e0b4da9596bfd7e7ac6b4819f26af01ef6776c0d9",
+      "bytes": 37728
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI1.png.meta",
+      "before": null,
+      "after": "0a9ae6a848fa9124be70e6acf951ffb5cb34345f7872b6bcd617c21fccfa9a79",
+      "bytes": 2627
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI10.png",
+      "before": null,
+      "after": "9939d73e1159255d49c163c405b097ace3ad19acbfc36001423c10fe971de2be",
+      "bytes": 23780
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI10.png.meta",
+      "before": null,
+      "after": "0eb09681d34b144ceabf012d138695cbabfc7c88641368313041424218d8dfb8",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI11.png",
+      "before": null,
+      "after": "202a6c57976914a167e08dafe5b8020c6f9205a4da7f5ac31b287a45084fe5c5",
+      "bytes": 25643
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI11.png.meta",
+      "before": null,
+      "after": "01470981e428aa1ffdceae2b11b643e556992a2ed2588b08ea79b73fe39fc346",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI12.png",
+      "before": null,
+      "after": "554a64ff084ecfa32bd1e29bfef65687d7c2afbc195755a78f352387564672e1",
+      "bytes": 54220
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI12.png.meta",
+      "before": null,
+      "after": "1578452d4323782455790c770d688b6cf40160f1d774ef9a0760ea16d39d70ae",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI13.png",
+      "before": null,
+      "after": "7472e342d9e7c443577cfe408cc38b3ec1e482aad8bcadb9219aa2632f8f610d",
+      "bytes": 66411
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI13.png.meta",
+      "before": null,
+      "after": "f1de2bf1ea3f306fdc9e4a2e566d98f8f6570a4b35f1410227c544d6c0856961",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI14.png",
+      "before": null,
+      "after": "66011edd7274854055b81373a471099b72ef25d6b4a2906b83e9755ed5f89b33",
+      "bytes": 74900
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI14.png.meta",
+      "before": null,
+      "after": "18ff9a018906fbc180b766e45826342c279e0052bf5bbc1dab1912ad05aa57c9",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI15.png",
+      "before": null,
+      "after": "4f6ba0e4189e414fccd35e7b964f63ca368ebd2be71a73046a994781cabdc220",
+      "bytes": 77671
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI15.png.meta",
+      "before": null,
+      "after": "874d9b9dae1e0ca7d1129593de2532c19988581b80b3365fdd403a700ba0eb2e",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI2.png",
+      "before": null,
+      "after": "b8f7f75f11496fdbd81a7357f658c6c9d4a589643a4ba9ef948c4da5ffc90e70",
+      "bytes": 44827
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI2.png.meta",
+      "before": null,
+      "after": "f59fd5d6b6587ac9738243e077736441107bd67425c144f65bec5924d658ed22",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI3.png",
+      "before": null,
+      "after": "7fff7c0bb73869021c0766f8c2141fb159a8922a545e83c31239675089998d01",
+      "bytes": 37337
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI3.png.meta",
+      "before": null,
+      "after": "3120889c4800b679bffcee48132688b1c0c4b157dafc01b4920b588b00e0b10d",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI4.png",
+      "before": null,
+      "after": "0e2a6d0892f469fdae5d8e16747073f8a3f364936ea3cb7a618ccde399bd10e8",
+      "bytes": 59694
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI4.png.meta",
+      "before": null,
+      "after": "ef98659134247f2833a93f8d82ef382ac8d567618f7b120e2fe028204bbf296e",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI5.png",
+      "before": null,
+      "after": "c6040ba5a2ee5c265feabc7cf3383c632b485b8dd8c93d0747a5ed2654b3f86b",
+      "bytes": 52802
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI5.png.meta",
+      "before": null,
+      "after": "b23b1bba4f2b547a259bc42a3af7239dea5135a06b03dcca4e9f58ee5c049ebd",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI6.png",
+      "before": null,
+      "after": "b975565398d9859eb4a0c6ad51696870b9483e68be9a8e6778da0f97f48c7c6b",
+      "bytes": 82641
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI6.png.meta",
+      "before": null,
+      "after": "3d98cc4f3d48c9db8325fa575a2d41e75b42aee0380de66121af41b0b029d58a",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI7.png",
+      "before": null,
+      "after": "daf6cf08d2b34a838e9c1dfa77f5e737566f4c28430df905d231e03224dd2104",
+      "bytes": 86737
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI7.png.meta",
+      "before": null,
+      "after": "4b2afd3f7f13c5189651db566e0dd0d66457b30c4d202fa6d1c709b5e6733ab6",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI8.png",
+      "before": null,
+      "after": "2cea6f3c5a5fdaa54d90d24370cffe30534b16e4559906134ec1efb9bee55a3f",
+      "bytes": 56138
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI8.png.meta",
+      "before": null,
+      "after": "c26145397c88ccf29ffeb0e6045ab394bfed51965f3eb671376ff9127fb5cc33",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI9.png",
+      "before": null,
+      "after": "3489f5e42dd6ba99ee964e369335a53ba3e3359ef219ad7ddaa131f3f1eacb12",
+      "bytes": 55084
+    },
+    {
+      "path": "Assets/Resources/Reskin/UI9.png.meta",
+      "before": null,
+      "after": "ae04786a1090543da95c4449b5761ef579caebf8e2916a64635e04bb97b9adde",
+      "bytes": 2623
+    },
+    {
+      "path": "Assets/Resources/Reskin.meta",
+      "before": null,
+      "after": "f536a327748ba08d17396c885cdf8c2f514da66a4f01d9a14d8dad6cb37713aa",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Resources/Skeletal/Atlases/AnNiu_TX.png",
+      "before": "473c577208304d2435b0a34a53132af332d0e43e950308aaf7684592a51b1f76",
+      "after": "c8baaa4a8d809ee5f94f758fd56f18d4a0492b7a9756c930c2a992d100689ed6",
+      "bytes": 93119
+    },
+    {
+      "path": "Assets/Resources/Skeletal/Atlases/DJB_TX.png",
+      "before": "c9acb26f7c431fdadcd901433af24ed28bbd0ae972d768111771845756b4ef1f",
+      "after": "7f703659ad72cf7cc5d519d528dcb89ceeb8f748db52505d1f0326e83df93379",
+      "bytes": 174950
+    },
+    {
+      "path": "Assets/Resources/Skeletal/Atlases/HeChengSM_TX.png",
+      "before": "78e77616a1203f3da666ee2acf1312ee7155b8221b73af9b4c500911b2c0427f",
+      "after": "1f717d20a6c10f855506c4a51d7137c13d15c42b93b129b9fc9061fbb03c25e2",
+      "bytes": 164853
+    },
+    {
+      "path": "Assets/Resources/Skeletal/Atlases/LaoHuJ_TX.png",
+      "before": "860b28fbbcfa0c6d94b0617edd6c74da071d3b2c74410eaef83ff841d4c7ad97",
+      "after": "d433bcf2e9c71589d79547fcf7db2403fe15e8fb53201f57b5a6d590273e8f21",
+      "bytes": 351696
+    },
+    {
+      "path": "Assets/Scenes/RecoveredMain.unity",
+      "before": "2825997ba0d9309e9955f697fb22b381130280a7e19a4cf5c15a8a26a3237bb9",
+      "after": "a69b2301d185adedabc72675c3688bfa004177336181042926bed9596a12e3a5",
+      "bytes": 3487077
+    }
+  ]
+}
