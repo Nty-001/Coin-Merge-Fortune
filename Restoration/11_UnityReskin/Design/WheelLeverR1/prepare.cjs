@@ -20,8 +20,8 @@ async function clean(file,dest,rect){
  await clean(path.join(__dirname,'GeneratedBody.png'),'Body.png');
  const parts=path.join(__dirname,'GeneratedParts.png'),m=await sharp(parts).metadata();
  await clean(parts,'Shaft.png',{left:Math.floor(m.width/2),top:0,width:m.width-Math.floor(m.width/2),height:m.height});
- // Reuse the exact approved knob pixels rather than change its highlight with a generated variant.
- await sharp(path.join(project,'Assets/Resources/UnifiedReskin/Machine.png')).extract({left:992,top:290,width:144,height:145}).png().toFile(path.join(out,'Knob.png'));
+ // R2 removes the silver stump carried by the original crop. Do not reintroduce that overlapping shaft.
+ fs.copyFileSync(path.join(__dirname,'../WheelJointR2/ApprovedKnob.png'),path.join(out,'Knob.png'));
  const manifest={};for(const file of fs.readdirSync(out).filter(f=>f.endsWith('.png'))){const b=fs.readFileSync(path.join(out,file)),m=await sharp(b).metadata();manifest[file]={width:m.width,height:m.height,alpha:m.hasAlpha,sha256:crypto.createHash('sha256').update(b).digest('hex')};}
  fs.writeFileSync(path.join(__dirname,'assets.json'),JSON.stringify(manifest,null,2));console.log(manifest);
 })();

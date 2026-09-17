@@ -8,14 +8,16 @@ namespace CoinMerge.Recovery.Editor
 {
     [InitializeOnLoad] public static class PrizeAnimationReskinValidation
     {
-        const string Key="CoinMerge.PrizeAnimation.Validation",Prefix="coinmerge.prizeanimation.disposable",Output="Design/WheelLeverR1/Verification";
+        const string Key="CoinMerge.PrizeAnimation.Validation",Prefix="coinmerge.prizeanimation.disposable";
+        static string Output=>SessionState.GetString(Key+".output","Design/WheelLeverR1/Verification");
         static RecoveredGameSession session;static RecoveredWheelLever lever;static Camera camera;static RenderTexture target;
         static int step,checks,completions,lastHighest,chosen;static float start,peak;static double next;
         static bool sawRise,sawEffect,sawFlight;static readonly List<string> passed=new List<string>();
         [Serializable] sealed class Report{public bool passed;public string error,unityVersion;public int checks;public string[] scenarios;public float leverTravel,sourceSeconds,gameSeconds;}
         static PrizeAnimationReskinValidation(){EditorApplication.playModeStateChanged+=State;}
-        public static void Run()
+        public static void Run(string output="Design/WheelLeverR1/Verification")
         {
+            SessionState.SetString(Key+".output",output);
             Directory.CreateDirectory(Output);SessionState.SetBool(Key,true);SessionState.SetString(Key+".error","");
             var store=new PlayerStore(Prefix);store.ResetPlayer();store.ResetProfile();store.Save(new PlayerProgress{guideStep=9999,fakeMoney=488.49,coin1024Number=50,gameTotalScore=0});
             store.SaveProfile(new VersionProfile{country="US",cohort="B",rewardedVariant=true});
@@ -140,7 +142,12 @@ namespace CoinMerge.Recovery.Editor
         static void Capture(string filename)
         {
             Canvas.ForceUpdateCanvases();camera.Render();var previous=RenderTexture.active;RenderTexture.active=target;
-            var image=new Texture2D(target.width,target.height,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,target.width,target.height),0,0);image.Apply();File.WriteAllBytes(Output+"/"+filename,image.EncodeToPNG());RenderTexture.active=previous;UnityEngine.Object.DestroyImmediate(image);
+            var image=new Texture2D(target.width,target.height,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,target.width,target.height),0,0);image.Apply();File.WriteAllBytes(Output+"/"+filename,image.EncodeToPNG());
+            if(filename.StartsWith("lever_pose_",StringComparison.Ordinal))
+            {
+                var detail=new Texture2D(210,390,TextureFormat.RGB24,false);detail.ReadPixels(new Rect(870,target.height-1040,210,390),0,0);detail.Apply();File.WriteAllBytes(Output+"/joint_"+filename,detail.EncodeToPNG());UnityEngine.Object.DestroyImmediate(detail);
+            }
+            RenderTexture.active=previous;UnityEngine.Object.DestroyImmediate(image);
         }
         static void Finish(string error)
         {

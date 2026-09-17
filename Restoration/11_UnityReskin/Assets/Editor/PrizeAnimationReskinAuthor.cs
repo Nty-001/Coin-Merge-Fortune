@@ -12,12 +12,13 @@ namespace CoinMerge.Recovery.Editor
         static PrizeAnimationReskinAuthor(){EditorApplication.update+=Poll;}
         static void Poll()
         {
-            const string request="Temp/PrizeAnimationReskin.request";
+            string request=File.Exists("Temp/PrizeAnimationReskinValidate.request")?"Temp/PrizeAnimationReskinValidate.request":"Temp/PrizeAnimationReskin.request";
             if(!File.Exists(request)||EditorApplication.isCompiling||EditorApplication.isUpdating)return;
             if(EditorApplication.isPlaying){EditorApplication.ExitPlaymode();return;}
             if(EditorApplication.isPlayingOrWillChangePlaymode)return;
             File.Delete(request);
-            try{Run();PrizeAnimationReskinValidation.Run();}
+            bool validateOnly=request.Contains("Validate");
+            try{if(!validateOnly)Run();PrizeAnimationReskinValidation.Run(validateOnly?"Design/WheelJointR2/Verification":Output);}
             catch(Exception e){Directory.CreateDirectory(Output);File.WriteAllText(Output+"/author_error.txt",e.ToString());Debug.LogException(e);}
         }
         [MenuItem("Coin Merge/Reskin/Restore prize machine lever and highest chip")]

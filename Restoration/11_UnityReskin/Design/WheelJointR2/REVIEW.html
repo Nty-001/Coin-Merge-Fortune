@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>摇杆球头接缝修复</title>
+<style>body{margin:0;background:#eaf7ff;color:#15334b;font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:30px}h1{margin:0 0 12px;font-size:30px}.tag{display:inline-block;background:#cbf2dc;color:#12552f;padding:4px 14px;border-radius:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:16px;margin:22px 0}figure{margin:0;padding:16px;background:white;border-radius:16px;text-align:center;box-shadow:0 3px 14px #224c7310}figure img{display:block;width:100%;max-width:210px;height:auto;margin:auto}.before img{background:repeating-conic-gradient(#cdd6dd 0% 25%,#edf1f4 0% 50%) 0 0/20px 20px;max-width:144px}figcaption{padding-top:10px}a{color:#0065ae}.note{color:#45647a;font-size:14px}</style>
+<main><h1>摇杆球头接缝已修复</h1><span class="tag">Unity Play 验证通过</span><p>清除球头底部残留的旧金属短杆，保留独立杆身、透明边缘与现有动画时序。</p>
+<div class="grid before"><figure><img src="BeforeKnob.png" alt="清理前球头底部有银色短杆"><figcaption>清理前 · 底部金属残留</figcaption></figure><figure><img src="ApprovedKnob.png" alt="完整绿色球头透明切图"><figcaption>清理后 · 完整绿色弧线</figcaption></figure></div>
+<h2>动画接缝特写</h2><p class="note">Unity 渲染原始截图；时间为游戏内时间。点击查看完整画面。</p><div class="grid">
+<figure><a href="Verification/lever_pose_0.png"><img src="Verification/joint_lever_pose_0.png" alt="初始姿势接缝"></a><figcaption>0.000 s · 初始</figcaption></figure>
+<figure><a href="Verification/lever_pose_1.png"><img src="Verification/joint_lever_pose_1.png" alt="下压开始接缝"></a><figcaption>0.167 s · 开始下压</figcaption></figure>
+<figure><a href="Verification/lever_pose_2.png"><img src="Verification/joint_lever_pose_2.png" alt="压下后接缝"></a><figcaption>0.333 s · 压下</figcaption></figure>
+<figure><a href="Verification/lever_pose_3.png"><img src="Verification/joint_lever_pose_3.png" alt="保持时接缝"></a><figcaption>0.500 s · 保持结束</figcaption></figure>
+<figure><a href="Verification/lever_pose_4.png"><img src="Verification/joint_lever_pose_4.png" alt="回弹中接缝"></a><figcaption>0.667 s · 回弹</figcaption></figure>
+<figure><a href="Verification/lever_pose_5.png"><img src="Verification/joint_lever_pose_5.png" alt="复位接缝"></a><figcaption>0.833 s · 复位</figcaption></figure></div>
+<p>验证覆盖：101 个动画采样点、积分不足与空闲、重复点击、两次抽奖与领奖、合成 2000 筹码庆祝与恢复玩法。<a href="Verification/play_mode.json">查看验证结果</a></p><p class="note">验证环境：Unity 2022.3.62f3c1，独立测试存档；本次未进行 Android 设备安装验证。</p></main></html>
