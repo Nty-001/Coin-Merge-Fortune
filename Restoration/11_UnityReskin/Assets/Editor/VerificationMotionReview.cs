@@ -12,7 +12,7 @@ namespace CoinMerge.Recovery.Editor
     public static class VerificationMotionReview
     {
         const string Request="Temp/VerificationMotion.request",Key="VerificationMotion.running",Prefix="coinmerge.motion.disposable";
-        const string Output="Design/VerificationMotion20260917";
+        const string Output="Design/BadgeSeparation20260917";
         static RecoveredGameSession session;
         static RecoveredVerificationView view;
         static RecoveredMenuPopup popup;
@@ -25,6 +25,7 @@ namespace CoinMerge.Recovery.Editor
         static float started,deadline,previousAlpha;
         static readonly List<string> errors=new List<string>();
         static readonly List<float> durations=new List<float>();
+        static readonly Vector3[] corners=new Vector3[4];
         [Serializable] class Result {public bool passed;public List<string> errors;public List<float> completionSeconds;public int completedEvents;public string[] checks;}
         static VerificationMotionReview(){EditorApplication.update+=Poll;EditorApplication.playModeStateChanged+=State;}
         public static void Author()
@@ -43,7 +44,17 @@ namespace CoinMerge.Recovery.Editor
             for(int i=0;i<v.tips.Length;i++){var g=v.tips[i].GetComponent<CanvasGroup>();if(!g)g=v.tips[i].gameObject.AddComponent<CanvasGroup>();g.alpha=1;v.tipOpacity[i]=g;}
             var p=v.GetComponent<RecoveredMenuPopup>();p.smoothMotion=true;p.duration=.35f;p.startScale=.96f;
             p.opacity=p.content.GetComponent<CanvasGroup>();if(!p.opacity)p.opacity=p.content.gameObject.AddComponent<CanvasGroup>();p.opacity.alpha=1;
-            foreach(var b in v.GetComponentsInChildren<RecoveredVerificationBadge>(true)){b.smoothMotion=true;b.rotationSpeed=150;b.blendTime=.12f;b.completedStartScale=.94f;}
+            foreach(var b in v.GetComponentsInChildren<RecoveredVerificationBadge>(true))
+            {
+                b.smoothMotion=true;b.rotationSpeed=150;b.blendTime=.12f;b.completedStartScale=.94f;
+                // The recovered sp1/2/3 parents scale art by 1.4. Fit the new round badges to the row.
+                b.waiting.rectTransform.sizeDelta=b.complete.rectTransform.sizeDelta=new Vector2(76,76);
+            }
+            // Keep the third-row text/card fixed; give the rotating badge a safe gutter.
+            var processing=(RectTransform)v.stamp.transform.parent;
+            processing.anchoredPosition=new Vector2(processing.anchoredPosition.x,-42.556f);
+            var rowAnchor=(RectTransform)processing.parent;
+            rowAnchor.anchoredPosition=new Vector2(rowAnchor.anchoredPosition.x,50);
         }
         static void Poll()
         {
@@ -110,6 +121,16 @@ namespace CoinMerge.Recovery.Editor
                 }
                 if(run>0)
                 {
+                    foreach(var b in badges)if(b.waiting.color.a>0&&b.complete.color.a>0)throw new Exception("Waiting and check overlap during transition");
+                    var secondBadge=view.second.GetComponent<RecoveredVerificationBadge>();var lastBadge=view.stamp.GetComponent<RecoveredVerificationBadge>();
+                    if(secondBadge.complete.color.a>.1f&&lastBadge.waiting.color.a>.1f)
+                    {
+                        secondBadge.complete.rectTransform.GetWorldCorners(corners);float bottom=float.PositiveInfinity;
+                        foreach(var c in corners)bottom=Mathf.Min(bottom,view.transform.InverseTransformPoint(c).y);
+                        lastBadge.waiting.rectTransform.GetWorldCorners(corners);float top=float.NegativeInfinity;
+                        foreach(var c in corners)top=Mathf.Max(top,view.transform.InverseTransformPoint(c).y);
+                        if(bottom-top<12)throw new Exception("Adjacent status icons have insufficient clearance: "+(bottom-top));
+                    }
                     foreach(var tip in view.tips)if(tip.localScale!=Vector3.one)throw new Exception("Text was scaled");
                     if(opacity[0].alpha+.0001f<previousAlpha)throw new Exception("Tip opacity moved backwards");previousAlpha=opacity[0].alpha;
                     if(popup.content.localScale.x>1.0001f)throw new Exception("Popup overshot its frame");
@@ -130,7 +151,7 @@ namespace CoinMerge.Recovery.Editor
             if(view)view.Finished-=Done;if(session)session.worldCamera.targetTexture=null;
             if(target)UnityEngine.Object.DestroyImmediate(target);if(capture)UnityEngine.Object.DestroyImmediate(capture);
             File.WriteAllText(Output+"/validation.json",JsonUtility.ToJson(new Result{passed=errors.Count==0,errors=errors,completionSeconds=durations,completedEvents=finishedCount,
-                checks=new[]{"Before/after actual verification and next task","Timing unchanged within two 60fps frames","Text scale stays 1; opacity is monotonic","Popup never overshoots final size","Disable restores tip geometry and opacity","Commercial rules and callbacks unchanged"}},true));
+                checks=new[]{"Before/after actual verification and next task","Timing unchanged within two 60fps frames","Waiting and check never visible together","Adjacent rotated icon bounds retain at least 12 UI units clearance","Text scale stays 1; opacity is monotonic","Popup never overshoots final size","Disable restores tip geometry and opacity","Commercial rules and callbacks unchanged"}},true));
             EditorApplication.ExitPlaymode();
         }
     }

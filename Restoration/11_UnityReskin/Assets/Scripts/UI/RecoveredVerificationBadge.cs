@@ -11,10 +11,10 @@ namespace CoinMerge.Recovery
         public float rotationOffset=88.9415f;
         public bool smoothMotion;
         public float rotationSpeed=150,blendTime=.12f,completedStartScale=.94f;
-        float waitingAlpha,completeAlpha,waitingVelocity,completeVelocity,angle;
+        float visibility,blendVelocity,angle;
         void OnEnable()
         {
-            waitingAlpha=completeAlpha=waitingVelocity=completeVelocity=angle=0;
+            visibility=blendVelocity=angle=0;
             if(!smoothMotion)return;
             waiting.color=complete.color=new Color(1,1,1,0);
             waiting.rectTransform.localRotation=Quaternion.identity;
@@ -28,8 +28,11 @@ namespace CoinMerge.Recovery
             if(smoothMotion)
             {
                 float dt=Time.deltaTime;
-                completeAlpha=Mathf.SmoothDamp(completeAlpha,a,ref completeVelocity,blendTime,Mathf.Infinity,dt);
-                waitingAlpha=Mathf.SmoothDamp(waitingAlpha,Mathf.Clamp01(b)*(1-a),ref waitingVelocity,blendTime,Mathf.Infinity,dt);
+                // One signed transition keeps the two drawings mutually exclusive.
+                // Negative: waiting fades out. Positive: the check fades in.
+                float target=a>0 ? a : -Mathf.Clamp01(b);
+                visibility=Mathf.SmoothDamp(visibility,target,ref blendVelocity,blendTime,Mathf.Infinity,dt);
+                float completeAlpha=Mathf.Max(0,visibility),waitingAlpha=Mathf.Max(0,-visibility);
                 complete.color=new Color(1,1,1,completeAlpha);waiting.color=new Color(1,1,1,waitingAlpha);
                 complete.rectTransform.localScale=Vector3.one*Mathf.Lerp(completedStartScale,1,completeAlpha);
                 angle=Mathf.Repeat(angle-rotationSpeed*dt,360);waiting.rectTransform.localRotation=Quaternion.Euler(0,0,angle);
