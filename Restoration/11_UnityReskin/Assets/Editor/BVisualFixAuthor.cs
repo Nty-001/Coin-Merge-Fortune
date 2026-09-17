@@ -77,6 +77,7 @@ namespace CoinMerge.Recovery.Editor
             }
             foreach(var f in m.forms){f.enabledOutline=Blue;foreach(var t in f.confirm.GetComponentsInChildren<Text>(true))ButtonLabel(t);}
             Verification(root,m);Task(root,m);Policy(root,m);Rating(root,s.rating);
+            GuideTextLayoutRepair.Apply(root);
         }
         static void Verification(GameObject root,RecoveredMainMenus m)
         {
