@@ -1,0 +1,17 @@
+{
+    "passed": true,
+    "preparationCases": 2808,
+    "nativeButtonClicks": 116,
+    "checks": [
+        "26 countries x 6 tiers x (5 coin + 4 cash) x below/at target: 2808 cases",
+        "Cash route: all 4 conditions and final status screen",
+        "Coin route: 5 real verification sequences, rejected invalid account, cached account reuse, final status",
+        "+12h twice does not grant a day; 4/5 -> 5/5 grants one; same date never counts twice; clock restore",
+        "22nd-drop ad: all four outcomes, exact counter reset and balance behavior",
+        "Native machine spin + claim: no-ad retry, success, cancel, failure, no double award, lottery coins do not qualify an active day",
+        "Failure/revive: all four ad outcomes, retry button, reward and game resumes",
+        "New first-reward, first-500 and 2000-merge GM buttons execute real gameplay paths"
+    ],
+    "errors": [],
+    "unityVersion": "2022.3.62f3c1"
+}
