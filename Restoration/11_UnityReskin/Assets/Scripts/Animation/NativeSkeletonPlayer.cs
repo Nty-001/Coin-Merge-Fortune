@@ -57,6 +57,10 @@ namespace CoinMerge.Recovery
             // Same native clip sampling operation is also used by the numeric verifier.
             var clip=Clip(name);clip.SampleAnimation(gameObject,time);EvaluateDeforms(time);EvaluateMatrices();graphic.SetVerticesDirty();
         }
+        public void ResetPose(string name)
+        {
+            animationComponent.Stop();state=null;signalled=false;EvaluateAt(name,0);
+        }
         void LateUpdate()
         {
             if(state==null||current==null)return;

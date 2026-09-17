@@ -12329,6 +12329,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b226870e47127f444bb0f7174c86187c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &760228970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9210368703577515646, guid: a4e061bf7ff7d334a9026c21f1d03645, type: 3}
+  m_PrefabInstance: {fileID: 760228967}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897460fe209c3524fb9ef9eacdf3c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &762636384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12745,6 +12756,81 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &811617186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811617187}
+  - component: {fileID: 811617189}
+  - component: {fileID: 811617188}
+  m_Layer: 0
+  m_Name: LeverShaft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &811617187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811617186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1597873287}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 276.12457, y: 60.553635}
+  m_SizeDelta: {x: 47.231834, y: 110.81315}
+  m_Pivot: {x: 0.205, y: 0.025}
+--- !u!114 &811617188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811617186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &811617189
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811617186}
+  m_CullTransparentMesh: 1
 --- !u!1 &816027947
 GameObject:
   m_ObjectHideFlags: 0
@@ -15408,6 +15494,81 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1039445928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039445929}
+  - component: {fileID: 1039445931}
+  - component: {fileID: 1039445930}
+  m_Layer: 0
+  m_Name: LeverKnob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1039445929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039445928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1597873287}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 294.29065, y: 192.25778}
+  m_SizeDelta: {x: 87.197235, y: 87.80277}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1039445930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039445928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1039445931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039445928}
+  m_CullTransparentMesh: 1
 --- !u!1 &1050108354
 GameObject:
   m_ObjectHideFlags: 0
@@ -15894,7 +16055,7 @@ MonoBehaviour:
   - image: {fileID: 1760774563}
     resourcePath: RulesReskin/Chip100
   - image: {fileID: 149275443}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2007980255}
     resourcePath: RulesReskin/PathDot
   - image: {fileID: 166382558}
@@ -16098,7 +16259,7 @@ MonoBehaviour:
   - image: {fileID: 3246709548759498547}
     resourcePath: UnifiedReskin/Panel
   - image: {fileID: 3246709548759498510}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 3246709548759498534}
     resourcePath: UnifiedReskin/Button
 --- !u!114 &1109456479
@@ -17351,7 +17512,7 @@ MonoBehaviour:
   - image: {fileID: 6223755231888559805}
     resourcePath: UnifiedReskin/Panel
   - image: {fileID: 6223755231888559792}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 6223755231888559848}
     resourcePath: UnifiedReskin/Button
   - image: {fileID: 6223755231888559778}
@@ -17686,57 +17847,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   images:
   - image: {fileID: 1597873288}
-    resourcePath: UnifiedReskin/Machine
+    resourcePath: WheelReskin/Body
   - image: {fileID: 2091351551286697574}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697573}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697551}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697594}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697593}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697546}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697486}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697485}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697545}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697474}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697473}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697540}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697494}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697493}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697539}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697514}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697513}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697566}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697534}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697533}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697565}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697522}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697521}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 2091351551286697560}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 1935718263}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 2091351551286697655}
     resourcePath: UnifiedReskin/Button
 --- !u!1 &1219574010
@@ -23007,6 +23168,8 @@ GameObject:
   - component: {fileID: 1597873287}
   - component: {fileID: 1597873289}
   - component: {fileID: 1597873288}
+  - component: {fileID: 1597873291}
+  - component: {fileID: 1597873290}
   m_Layer: 0
   m_Name: SkyPrizeMachine
   m_TagString: Untagged
@@ -23025,7 +23188,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 811617187}
+  - {fileID: 1039445929}
   m_Father: {fileID: 2091351551286696227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -23071,6 +23236,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597873286}
   m_CullTransparentMesh: 1
+--- !u!114 &1597873290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597873286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d995445e42e224993ad1bb58b36551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceKnob: {fileID: 760228970}
+  knob: {fileID: 1039445929}
+  shaft: {fileID: 811617187}
+  knobRest: {x: 294.29065, y: 192.25778}
+  shaftRest: {x: 276.12457, y: 60.553635}
+  sourceRestY: 586.68
+  sourcePressedY: 502.22
+  travel: 64.89547
+  shaftCompressedScale: 0.41437033
+--- !u!114 &1597873291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597873286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa734eda0b66594eb4bd06d08d7de2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  images:
+  - image: {fileID: 811617188}
+    resourcePath: WheelReskin/Shaft
+  - image: {fileID: 1039445930}
+    resourcePath: WheelReskin/Knob
 --- !u!114 &1617163005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37029,9 +37232,9 @@ MonoBehaviour:
   - image: {fileID: 148115204847419874}
     resourcePath: CoinReskin/Balance
   - image: {fileID: 148115204847419678}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 148115204847419677}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 148115204847419892}
     resourcePath: CoinReskin/Amounts
   - image: {fileID: 148115204847419708}
@@ -43673,13 +43876,13 @@ MonoBehaviour:
   - image: {fileID: 516810455508476889}
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 516810455508476710}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 516810455508476717}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 516810455508476894}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 516810455508476869}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
 --- !u!4 &518648831095508484
 Transform:
   m_ObjectHideFlags: 0
@@ -62752,6 +62955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  hiddenSlots: 
 --- !u!4 &1354389169360925091
 Transform:
   m_ObjectHideFlags: 0
@@ -109114,7 +109318,7 @@ MonoBehaviour:
   - image: {fileID: 1997310888}
     resourcePath: RulesReskin/Chip500
   - image: {fileID: 1737293360}
-    resourcePath: RulesReskin/Chip2000
+    resourcePath: Gameplay/Coins/2000
   - image: {fileID: 816027949}
     resourcePath: CashReskin/HeroSky
 --- !u!114 &6449784464728804385
@@ -109230,6 +109434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  hiddenSlots: 
 --- !u!4 &6467420890726504007
 Transform:
   m_ObjectHideFlags: 0
@@ -127072,6 +127277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  hiddenSlots: 
 --- !u!4 &7167804709006001937
 Transform:
   m_ObjectHideFlags: 0
@@ -128432,6 +128638,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  hiddenSlots: 
 --- !u!1 &7311033046092093925
 GameObject:
   m_ObjectHideFlags: 0
@@ -133309,6 +133516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  hiddenSlots: 
 --- !u!114 &9153661298033844034
 MonoBehaviour:
   m_ObjectHideFlags: 0

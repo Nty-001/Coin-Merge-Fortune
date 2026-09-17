@@ -5,6 +5,8 @@ namespace CoinMerge.Recovery
     // Unity UGUI mesh surface for decorative skeletal UI. Gameplay coins remain world-space sprites.
     public sealed class NativeSkeletonGraphic : MaskableGraphic
     {
+        // Authored replacement layers can reuse the source animation without drawing its old artwork.
+        public int[] hiddenSlots=System.Array.Empty<int>();
         NativeSkeletonPlayer player;
         Texture2D atlas;
         Vector2[] world,clipPoints;
@@ -25,6 +27,8 @@ namespace CoinMerge.Recovery
             NativeAttachmentModel clipping=null;int clippingCount=0;
             for(int slotIndex=0;slotIndex<player.slots.Length;slotIndex++)
             {
+                bool hidden=false;foreach(int slotToHide in hiddenSlots)if(slotToHide==slotIndex){hidden=true;break;}
+                if(hidden)continue;
                 var slot=player.slots[slotIndex];int index=slot.AttachmentIndex;
                 if(index<0){if(clipping!=null&&slotIndex==clipping.endSlot)clipping=null;continue;}
                 var attachment=player.Data.attachments[index];

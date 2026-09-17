@@ -43,6 +43,7 @@ namespace CoinMerge.Recovery
                 if(money)locale.ApplyIcon(slot.money,reward.amount>5000?3:1);else slot.coinAmount.text="+"+reward.amount;
             }
             gameObject.SetActive(true);
+            backgroundAnimation.ResetPose("idle");
         }
         public void Begin(int index)
         {
