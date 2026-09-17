@@ -5318,6 +5318,8 @@ MonoBehaviour:
   content: {fileID: 6826287584428933760}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &248155743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8189,6 +8191,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407453911}
   m_CullTransparentMesh: 1
+--- !u!225 &410354906
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928007260063636588}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &421474783
 GameObject:
   m_ObjectHideFlags: 0
@@ -9681,6 +9695,8 @@ MonoBehaviour:
   content: {fileID: 3246709548759496903}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &498787023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11226,6 +11242,18 @@ MonoBehaviour:
   images:
   - image: {fileID: 1928007260063636546}
     resourcePath: UnifiedReskin/Body
+--- !u!225 &601027932
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928007260063636582}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &605380153
 GameObject:
   m_ObjectHideFlags: 0
@@ -12889,6 +12917,8 @@ MonoBehaviour:
   content: {fileID: 6223755231888558476}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &698992988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15258,6 +15288,8 @@ MonoBehaviour:
   content: {fileID: 4125826701917104220}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &866462333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17907,6 +17939,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!225 &1037803046
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928007260063636562}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1039445928
 GameObject:
   m_ObjectHideFlags: 0
@@ -18513,6 +18557,8 @@ MonoBehaviour:
   content: {fileID: 8543679326186817153}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &1084887367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19932,6 +19978,8 @@ MonoBehaviour:
   content: {fileID: 2091351551286696227}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!1 &1170401513
 GameObject:
   m_ObjectHideFlags: 0
@@ -21834,6 +21882,18 @@ MonoBehaviour:
   boundedRasterization: 1
   maximumLines: 0
   rasterFontSize: 40
+--- !u!225 &1281178980
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928007260063636354}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1289066174
 GameObject:
   m_ObjectHideFlags: 0
@@ -22552,6 +22612,12 @@ MonoBehaviour:
   tipDuration: 0.4
   stampDelay: 0.38
   resultDelay: 0.5
+  tipOpacity:
+  - {fileID: 601027932}
+  - {fileID: 410354906}
+  - {fileID: 1037803046}
+  - {fileID: 1367858414}
+  tipEnterOffset: {x: 0, y: -8}
 --- !u!114 &1344599341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22593,7 +22659,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 1928007260063636355}
   duration: 0.35
-  startScale: 0.5
+  startScale: 0.96
+  smoothMotion: 1
+  opacity: {fileID: 1281178980}
 --- !u!114 &1344599343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22899,6 +22967,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360105326}
   m_CullTransparentMesh: 1
+--- !u!225 &1367858414
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928007260063636564}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &1369914108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23034,6 +23114,8 @@ MonoBehaviour:
   content: {fileID: 1184328433178980130}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &1382255014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28855,6 +28937,8 @@ MonoBehaviour:
   content: {fileID: 872169641426883701}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &1779270928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53936,6 +54020,8 @@ MonoBehaviour:
   content: {fileID: 572876486812366519}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &572876486812366524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68843,6 +68929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928007260063636355}
   - component: {fileID: 1928007260063636575}
+  - component: {fileID: 1281178980}
   m_Layer: 5
   m_Name: content
   m_TagString: Untagged
@@ -71281,6 +71368,7 @@ GameObject:
   - component: {fileID: 1928007260063636499}
   - component: {fileID: 1928007260063636500}
   - component: {fileID: 1928007260063636501}
+  - component: {fileID: 1037803046}
   m_Layer: 5
   m_Name: stageTips3
   m_TagString: Untagged
@@ -71320,6 +71408,7 @@ GameObject:
   - component: {fileID: 1928007260063636502}
   - component: {fileID: 1928007260063636503}
   - component: {fileID: 1928007260063636504}
+  - component: {fileID: 1367858414}
   m_Layer: 5
   m_Name: stageTips4
   m_TagString: Untagged
@@ -71998,6 +72087,7 @@ GameObject:
   - component: {fileID: 1928007260063636521}
   - component: {fileID: 1928007260063636522}
   - component: {fileID: 1928007260063636523}
+  - component: {fileID: 601027932}
   m_Layer: 5
   m_Name: stageTips1
   m_TagString: Untagged
@@ -72111,6 +72201,7 @@ GameObject:
   - component: {fileID: 1928007260063636526}
   - component: {fileID: 1928007260063636527}
   - component: {fileID: 1928007260063636496}
+  - component: {fileID: 410354906}
   m_Layer: 5
   m_Name: stageTips2
   m_TagString: Untagged
@@ -84089,6 +84180,8 @@ MonoBehaviour:
   content: {fileID: 2128714793850318440}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &2128714793850318458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86804,6 +86897,8 @@ MonoBehaviour:
   content: {fileID: 2358705755067952372}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &2358705755067952378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91415,6 +91510,8 @@ MonoBehaviour:
   content: {fileID: 2961644715926181003}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &2961644715926181026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114499,6 +114596,8 @@ MonoBehaviour:
   content: {fileID: 6449784464728804376}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &6449784464728804387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114631,6 +114730,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!114 &6499388718666629413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138459,6 +138562,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!114 &8974475004204078704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138742,6 +138849,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!114 &9153661298033844034
 MonoBehaviour:
   m_ObjectHideFlags: 0

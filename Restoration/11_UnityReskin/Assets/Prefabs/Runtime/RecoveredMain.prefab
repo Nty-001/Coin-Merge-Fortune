@@ -4038,6 +4038,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!1 &423279619570648694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7562,6 +7566,8 @@ MonoBehaviour:
   content: {fileID: 571246544895943760}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &5254906614432292745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15192,6 +15198,8 @@ MonoBehaviour:
   content: {fileID: 1165689037049242579}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &876730466542704605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19128,6 +19136,8 @@ MonoBehaviour:
   content: {fileID: 1461435868345422191}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &5067116407960395244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22487,6 +22497,8 @@ MonoBehaviour:
   content: {fileID: 1208248470136210187}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &3571414069200884865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29063,6 +29075,8 @@ MonoBehaviour:
   content: {fileID: 1804412287313569879}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &5654104918778778138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36547,6 +36561,8 @@ MonoBehaviour:
   content: {fileID: 2380706553395293625}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &220400882146456272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41493,6 +41509,8 @@ MonoBehaviour:
   content: {fileID: 5187776751375966114}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &3289281515930715404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50191,6 +50209,8 @@ MonoBehaviour:
   content: {fileID: 3545512308580094506}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &3623632683892004928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55583,6 +55603,8 @@ MonoBehaviour:
   content: {fileID: 3611208499619292736}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &9124184730528368857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66285,6 +66307,8 @@ MonoBehaviour:
   content: {fileID: 4498770935124807629}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &246977164941226985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78953,6 +78977,8 @@ MonoBehaviour:
   content: {fileID: 2002938607243415260}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &7666959899653569643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83677,6 +83703,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!1 &6185873288778474018
 GameObject:
   m_ObjectHideFlags: 0
@@ -88817,6 +88847,8 @@ MonoBehaviour:
   content: {fileID: 4440203988380000014}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &2827913480180528748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112980,6 +113012,8 @@ MonoBehaviour:
   content: {fileID: 7542280105217713983}
   duration: 0.35
   startScale: 0.5
+  smoothMotion: 0
+  opacity: {fileID: 0}
 --- !u!114 &874756360486613569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115459,6 +115493,10 @@ MonoBehaviour:
   processingSlot: 7
   processingBone: 2
   rotationOffset: 88.9415
+  smoothMotion: 1
+  rotationSpeed: 150
+  blendTime: 0.12
+  completedStartScale: 0.94
 --- !u!1 &7643700918539859721
 GameObject:
   m_ObjectHideFlags: 0
@@ -126080,6 +126118,7 @@ GameObject:
   - component: {fileID: 8744366217767350943}
   - component: {fileID: 8744366217767350940}
   - component: {fileID: 8744366217767350941}
+  - component: {fileID: 9018998575771512202}
   m_Layer: 5
   m_Name: stageTips1
   m_TagString: Untagged
@@ -126224,6 +126263,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Received
+--- !u!225 &9018998575771512202
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744366217767350992}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8744366217767350994
 GameObject:
   m_ObjectHideFlags: 0
@@ -126604,6 +126655,7 @@ GameObject:
   - component: {fileID: 8744366217767350936}
   - component: {fileID: 8744366217767350937}
   - component: {fileID: 8744366217767350950}
+  - component: {fileID: 4888996251909497005}
   m_Layer: 5
   m_Name: stageTips2
   m_TagString: Untagged
@@ -126748,6 +126800,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Withdraw request
+--- !u!225 &4888996251909497005
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744366217767351002}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8744366217767351004
 GameObject:
   m_ObjectHideFlags: 0
@@ -126912,6 +126976,7 @@ GameObject:
   - component: {fileID: 8744366217767350944}
   - component: {fileID: 8744366217767350945}
   - component: {fileID: 8744366217767350958}
+  - component: {fileID: 8530636403326448565}
   m_Layer: 5
   m_Name: stageTips4
   m_TagString: Untagged
@@ -127056,6 +127121,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Withdrawal will arrive after approval
+--- !u!225 &8530636403326448565
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744366217767351010}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8744366217767351012
 GameObject:
   m_ObjectHideFlags: 0
@@ -127069,6 +127146,7 @@ GameObject:
   - component: {fileID: 8744366217767350949}
   - component: {fileID: 8744366217767350946}
   - component: {fileID: 8744366217767350947}
+  - component: {fileID: 1515713734877653898}
   m_Layer: 5
   m_Name: stageTips3
   m_TagString: Untagged
@@ -127213,6 +127291,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: In progress
+--- !u!225 &1515713734877653898
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744366217767351012}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8744366217767351014
 GameObject:
   m_ObjectHideFlags: 0
@@ -127869,7 +127959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 8744366217767351605}
   duration: 0.35
-  startScale: 0.5
+  startScale: 0.96
+  smoothMotion: 1
+  opacity: {fileID: 7396287337904050447}
 --- !u!114 &332528076796269847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127896,6 +127988,12 @@ MonoBehaviour:
   tipDuration: 0.4
   stampDelay: 0.38
   resultDelay: 0.5
+  tipOpacity:
+  - {fileID: 9018998575771512202}
+  - {fileID: 4888996251909497005}
+  - {fileID: 1515713734877653898}
+  - {fileID: 8530636403326448565}
+  tipEnterOffset: {x: 0, y: -8}
 --- !u!114 &2627588556552455020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128180,6 +128278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8744366217767351605}
   - component: {fileID: 8744366217767351017}
+  - component: {fileID: 7396287337904050447}
   m_Layer: 5
   m_Name: content
   m_TagString: Untagged
@@ -128227,6 +128326,18 @@ MonoBehaviour:
     1}, "_children": [{"$ref": 15}, {"$ref": 2}], "_prefab": {"$ref": 58}, "_contentSize":
     {"__type__": "cc.Size", "values": [1200, 1624]}}'
   originalComponents: []
+--- !u!225 &7396287337904050447
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744366217767351604}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8744366217767351606
 GameObject:
   m_ObjectHideFlags: 0
