@@ -1,0 +1,457 @@
+{
+  "date": "2026-09-17",
+  "project": "Restoration/11_UnityReskin",
+  "issues": [
+    {
+      "id": "01",
+      "priority": "P1",
+      "group": "A 自然量",
+      "title": "自然量入口和玩法场景仍是旧皮肤",
+      "observation": "入口仍显示 COIN MERGE FORTUNE、旧金币和纯深蓝底；玩法仍使用保险柜背景。新云朵弹窗打开后，内外像两套游戏。",
+      "basis": "当前启动页及已确认的主界面采用 MERGE STACK JOURNEY、天空和彩色筹码；A 版尚未同步。A/B 的功能区别应保留，美术语言需要一致。",
+      "action": "先补自然量入口、玩法背景、顶部状态条及装饰币；保留关卡、体力、解锁的原有逻辑。",
+      "shots": [
+        {
+          "file": "Current/A_home.png",
+          "label": "A 版入口",
+          "focus": null
+        },
+        {
+          "file": "Current/A_gameplay.png",
+          "label": "A 版玩法",
+          "focus": null
+        },
+        {
+          "file": "Current/US_home.png",
+          "label": "B 版新皮肤",
+          "focus": null
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "RecoveredPackaged.prefab / Home、map、顶部状态栏"
+    },
+    {
+      "id": "02",
+      "priority": "P1",
+      "group": "B 提现",
+      "title": "提现验证：状态标题与说明相互重叠",
+      "observation": "真实账户提交后的第三个节点中，In progress 与 Withdrawal will arrive after approval 上下挤在一起。",
+      "basis": "这是文本节点之间的碰撞。单独检查每个文本框是否溢出，无法发现此问题；本次 US 前台完整流程可见。",
+      "action": "在固定外框内重新分配第三行标题和说明的区域，设置间距与多语言最小字号，并检查两段文字的相交。",
+      "shots": [
+        {
+          "file": "Current/US_verification_flow.png",
+          "label": "实际验证流程 · 第三节点",
+          "focus": [
+            0.1,
+            0.6,
+            0.8,
+            0.16
+          ]
+        }
+      ],
+      "evidence": "通过真实按钮提交 → 原生验证动画取样",
+      "location": "GameRealTXYZ/content/bg/Layout/New3/stageTips3、stageTips4"
+    },
+    {
+      "id": "03",
+      "priority": "P1",
+      "group": "A 自然量",
+      "title": "荣誉页：Level 1 与 achieved 重叠",
+      "observation": "已完成的第一行同时显示 Level 1 和 achieved，位置几乎一致；绿色完成图标还在右侧。",
+      "basis": "A 版荣誉页运行截图与活跃文本清单均确认这两段文字同时出现。",
+      "action": "固定每行尺寸，拆分等级名和完成状态的文本区域；检查所有已完成、未完成行。",
+      "shots": [
+        {
+          "file": "Current/A_dialog_2.png",
+          "label": "荣誉页首行",
+          "focus": [
+            0.1,
+            0.25,
+            0.8,
+            0.12
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "RecoveredPackaged/HonorView/.../content/bg/level、ff"
+    },
+    {
+      "id": "04",
+      "priority": "P1",
+      "group": "B 抽奖",
+      "title": "抽奖机底部出现无意义的“146”",
+      "observation": "机身下方显示 146；这不是积分或奖金的正常排版。用户实机截图也曾出现同样数字。",
+      "basis": "当前代码把可抽次数与缺失的本地化 key 46 拼接。原 Cocos 预制体把 drawTimesTxt 放在默认隐藏的 redBg 下；复刻后却露出了它。",
+      "action": "按原版恢复计数节点的隐藏层级与显示条件；不要只改翻译来掩盖多出来的元素。",
+      "shots": [
+        {
+          "file": "Current/US_machine.png",
+          "label": "当前抽奖机 · 底部局部",
+          "focus": [
+            0.12,
+            0.53,
+            0.76,
+            0.26
+          ]
+        }
+      ],
+      "evidence": "当前截图 + 原 JS 完整方法 + 原预制体 active=false",
+      "location": "RecoveredWheelView.cs:35；原 LuckDrawDialog.js:setDrawLabel；f6fc17bd…json 对象 24 / 64"
+    },
+    {
+      "id": "05",
+      "priority": "P1",
+      "group": "全局",
+      "title": "连续切换国家时，动态字体贴图容量不足",
+      "observation": "本次连续遍历 26 个国家，完成 AR 后、继续检查时中断：Nunito-Black 的字形无法全部放入 4096 贴图。",
+      "basis": "这是连续多语言/多页面压力测试中的实际错误；单独的 US 完整流程通过。不能据此断言每个国家冷启动都会失败。",
+      "action": "优先检查重复字号、字形请求量和 fallback 策略；按语种拆分或采用官方字体资源方案，再复测连续切换。",
+      "shots": [],
+      "evidence": "multi_locale_stress.json · 6461 次文本节点检查后捕获错误",
+      "location": "Nunito-Black / RecoveredTextFit 与多语言字体加载"
+    },
+    {
+      "id": "06",
+      "priority": "P2",
+      "group": "B 主界面",
+      "title": "顶部提现提示被压成过小的一行",
+      "observation": "US 提示 Still $11.5 remaining to withdraw 被压成单行，文本框上下留白明显。此次运行字号为 17，框高 60。",
+      "basis": "原游戏及你确认的主界面效果图都是两行、易读的提示；当前虽然没有越框，阅读层级已经不同。",
+      "action": "保持气泡大小，允许两行显示，设置可读的最小字号与行距；金额变化及长语言一起验收。",
+      "shots": [
+        {
+          "file": "Current/US_home.png",
+          "label": "当前 · 提示过小",
+          "focus": [
+            0,
+            0,
+            1,
+            0.15
+          ]
+        },
+        {
+          "file": "Original/home.png",
+          "label": "原游戏 · 两行提示",
+          "focus": [
+            0,
+            0.04,
+            1,
+            0.1
+          ]
+        }
+      ],
+      "evidence": "当前与原游戏截图；US_home.json 的 bubbleLabel",
+      "location": "GameScene/up/bubble/bubbleLabel"
+    },
+    {
+      "id": "07",
+      "priority": "P2",
+      "group": "多语言",
+      "title": "通知栏的语言字重和断行不一致",
+      "observation": "英文为较粗的圆体；日文通知明显更细、更小，样本中末尾单字落到第三行。当前布局优先塞进框，未保持阅读质量。",
+      "basis": "同一通知条在 US、RU、JP 下应维持一致的信息层级。此次 JP 样本字号 19，US / RU 为 26。",
+      "action": "统一语种字体的视觉字重；在固定条高内控制两行及断行，避免孤字和过度缩小。",
+      "shots": [
+        {
+          "file": "Current/US_home.png",
+          "label": "英文通知",
+          "focus": [
+            0,
+            0.07,
+            1,
+            0.09
+          ]
+        },
+        {
+          "file": "Current/JP_home.png",
+          "label": "日文通知",
+          "focus": [
+            0,
+            0.07,
+            1,
+            0.09
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "NoticeViewport/iconContent/getMoneyTipLabel / 本地化字形与 RecoveredTextFit"
+    },
+    {
+      "id": "08",
+      "priority": "P2",
+      "group": "全局",
+      "title": "同类绿色按钮使用三种文字样式",
+      "observation": "主页按钮是白字蓝描边；奖励 Claim、规则 OK 等是白字绿描边；账户和任务 Confirm、A 版 Agree / Retry 为纯蓝字。",
+      "basis": "同样的亮绿玻璃按钮缺少统一的文字规范，造成页面切换时风格跳变。按钮背景本身已基本同属新风格。",
+      "action": "统一主按钮的字面颜色、描边颜色/厚度、字重与内边距；禁用态单列规则，保留现有按钮比例。",
+      "shots": [
+        {
+          "file": "Current/US_home.png",
+          "label": "白字蓝描边",
+          "focus": [
+            0.7,
+            0.91,
+            0.29,
+            0.07
+          ]
+        },
+        {
+          "file": "Current/US_reward_4.png",
+          "label": "白字绿描边",
+          "focus": [
+            0.17,
+            0.65,
+            0.65,
+            0.07
+          ]
+        },
+        {
+          "file": "Current/US_next_task_flow.png",
+          "label": "纯蓝字",
+          "focus": [
+            0.17,
+            0.6,
+            0.66,
+            0.11
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "主页 Withdraw / Wheel、RewardView、RecoveredMainMenus、PackagedGameSession 的按钮 Text"
+    },
+    {
+      "id": "09",
+      "priority": "P2",
+      "group": "B 提现",
+      "title": "验证和任务链仍夹着旧式内层控件",
+      "observation": "新云朵外框内仍保留灰紫色费用卡、扁平绿勾/橙色等待点、旧灰蓝进度槽。任务文本、进度条与底卡还显得挤靠。",
+      "basis": "这些元素和已确认的提现页玻璃卡片、发光进度条不是同一套材质。当前费用卡仍引用旧 MenuArt 资源。",
+      "action": "补齐验证节点、费用卡和任务进度条的小组件；按同一圆角、高光和间距规范配置，不改任务条件。",
+      "shots": [
+        {
+          "file": "Current/US_verification_flow.png",
+          "label": "验证内层",
+          "focus": [
+            0.1,
+            0.34,
+            0.8,
+            0.4
+          ]
+        },
+        {
+          "file": "Current/US_next_task_flow.png",
+          "label": "任务内层",
+          "focus": [
+            0.1,
+            0.42,
+            0.8,
+            0.13
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "GameRealTXYZ/Layout/bg；GameRealWDTXTips；MenuArt/d921927577ac55a1bd05eef37accc2ad.png"
+    },
+    {
+      "id": "10",
+      "priority": "P2",
+      "group": "A 自然量",
+      "title": "自然量弹窗只统一了外壳，内层还有旧元素",
+      "observation": "设置仍用小型扁平开关；My Info 两条灰紫底之间露出白矩形；体力倒计时仍是黄底棕边小标签，荣誉列表也有白底残留。",
+      "basis": "B 版设置已经是大玻璃开关与图标卡。A 版这些旧控件与新云朵弹窗并置，差异很明显。",
+      "action": "复用 B 版开关和基础卡样式，清除不必要白色背景；为体力标签补同系列样式。不要将 A 版通用金币误替换成 2000 筹码。",
+      "shots": [
+        {
+          "file": "Current/A_dialog_1.png",
+          "label": "A 设置 · 旧开关",
+          "focus": [
+            0.1,
+            0.46,
+            0.8,
+            0.17
+          ]
+        },
+        {
+          "file": "Current/A_dialog_3.png",
+          "label": "My Info · 白块",
+          "focus": [
+            0.15,
+            0.45,
+            0.7,
+            0.16
+          ]
+        },
+        {
+          "file": "Current/A_dialog_4.png",
+          "label": "旧倒计时标签",
+          "focus": [
+            0.57,
+            0.64,
+            0.36,
+            0.06
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "Packaged SettingView、InfoView、HeartView、HonorView"
+    },
+    {
+      "id": "11",
+      "priority": "P2",
+      "group": "全局",
+      "title": "协议内容仍是旧名称和整张文字图片",
+      "observation": "新启动页名为 MERGE STACK JOURNEY，但隐私内容仍写 Coin Merge Fortune。A 版正文带明显白底，B 版也沿用旧正文风格。",
+      "basis": "运行时仍按 policyPaths 加载正文 Sprite。这种文字图片不能像其他文本一样适配字体、字号和语言。此项只审核显示与名称一致性。",
+      "action": "确认产品名称后，统一正文呈现和可读字号；优先改为正常文本/滚动内容，文案内容另按最终版本确认。",
+      "shots": [
+        {
+          "file": "Current/US_page_2.png",
+          "label": "B 版协议正文",
+          "focus": [
+            0.12,
+            0.22,
+            0.76,
+            0.49
+          ]
+        },
+        {
+          "file": "Current/A_dialog_6.png",
+          "label": "A 版旧名称及白底",
+          "focus": [
+            0.12,
+            0.25,
+            0.76,
+            0.49
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "PrivacyPolicyView；PackagedGameSession.Policy / policyPaths"
+    },
+    {
+      "id": "12",
+      "priority": "P2",
+      "group": "B 提现",
+      "title": "提现标题和金额尚未达到确认图的立体字效果",
+      "observation": "当前标题/金额采用平面填色与较粗的均匀描边；确认图的字面高光、内阴影和投影层次更丰富。布局接近，字体质感仍有距离。",
+      "basis": "这是相对你批准的换皮图的差异，不是要求恢复原游戏旧配色。现金和筹码提现页都有同类现象。",
+      "action": "统一可本地化的标题、金额字材质；按确认图控制描边和阴影，避免靠加粗描边替代立体质感。",
+      "shots": [
+        {
+          "file": "Current/US_coin_blocked_reference.png",
+          "label": "当前 · 标题",
+          "focus": [
+            0,
+            0,
+            1,
+            0.11
+          ]
+        },
+        {
+          "file": "References/coin.png",
+          "label": "确认图 · 标题",
+          "focus": [
+            0,
+            0,
+            1,
+            0.11
+          ]
+        }
+      ],
+      "evidence": "当前渲染与用户确认图对比",
+      "location": "CoinReskin 提现页标题/金额 Text；现金页 Your cash / 金额 Text"
+    },
+    {
+      "id": "13",
+      "priority": "P2",
+      "group": "A 自然量",
+      "title": "难度入口图标压住了文字，玩法分数字号过小",
+      "observation": "beginner 的箭头盖住单词尾部，normal 的锁压住名称；玩法上方分数条很大，beginner Score0 却缩得很小。",
+      "basis": "实际 A 版入口/开始玩法截图可见。外框内适配通过，不代表与同一按钮上的图标互不遮挡。",
+      "action": "为名称、价格、解锁图标划定独立区域；为分数条设置合适的文本区域和字号。按钮外框不变。",
+      "shots": [
+        {
+          "file": "Current/A_home.png",
+          "label": "箭头 / 锁压字",
+          "focus": [
+            0,
+            0.53,
+            1,
+            0.24
+          ]
+        },
+        {
+          "file": "Current/A_gameplay.png",
+          "label": "分数条字号",
+          "focus": [
+            0.1,
+            0.11,
+            0.8,
+            0.09
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "Packaged Home 的 modes；map 的 scoreText"
+    },
+    {
+      "id": "14",
+      "priority": "P2",
+      "group": "B 其他",
+      "title": "评分星星仍是扁平旧图标",
+      "observation": "评分弹窗已是云朵玻璃外框，但未选中的星星仍是平灰色旧图标，与新按钮和标题材质不一致。",
+      "basis": "这是小组件换皮遗漏；本轮点击星星、关闭按钮均通过，未发现交互阻塞。",
+      "action": "补齐同系列的未选中/选中星星，两态保持相同尺寸与中心点。",
+      "shots": [
+        {
+          "file": "Current/US_rating.png",
+          "label": "评分弹窗",
+          "focus": [
+            0.08,
+            0.27,
+            0.84,
+            0.43
+          ]
+        }
+      ],
+      "evidence": "当前运行截图",
+      "location": "ScoreDialog / RecoveredRatingView.stars"
+    }
+  ],
+  "startup": [
+    {
+      "name": "Rewarded Play 1",
+      "passed": true,
+      "error": "",
+      "firstProgress": 0.0,
+      "zeroVisibleSeconds": 0.6028594970703125,
+      "maximumJump": 0.027777791023254395,
+      "totalSeconds": 2.8369250297546387
+    },
+    {
+      "name": "Rewarded Play 2",
+      "passed": true,
+      "error": "",
+      "firstProgress": 0.0,
+      "zeroVisibleSeconds": 0.4939272403717041,
+      "maximumJump": 0.027777791023254395,
+      "totalSeconds": 2.741179943084717
+    },
+    {
+      "name": "Packaged Play",
+      "passed": true,
+      "error": "",
+      "firstProgress": 0.0,
+      "zeroVisibleSeconds": 0.45543789863586426,
+      "maximumJump": 0.027777791023254395,
+      "totalSeconds": 2.7022526264190674
+    }
+  ],
+  "current_flow_passed": true,
+  "text_checks": 725,
+  "effects_passed": true,
+  "effect_checks": 40,
+  "all_locale_passed": false,
+  "scope": "视觉审计；页面状态取样与部分真实事件链；未覆盖原机全部长周期提现任务、广告 SDK 和所有动画逐帧对齐"
+}
