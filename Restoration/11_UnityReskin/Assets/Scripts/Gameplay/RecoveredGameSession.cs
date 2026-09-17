@@ -237,7 +237,7 @@ namespace CoinMerge.Recovery
         {
             Locale=new RecoveredLocalization(Profile.country);displayedMoney=double.NaN;
             foreach(var binding in localizedLabels)binding.label.text=Locale.Label(binding.key);
-            foreach(var binding in currencyIcons)binding.image.sprite=Locale.Icon(binding.type);
+            foreach(var binding in currencyIcons)Locale.ApplyIcon(binding.image,binding.type);
             rewardView.Locale=Locale;guideView.Locale=Locale;
             if(notice)notice.Configure(Locale,RecoveredGameRules.CashConfiguration(board.Config.rules,Profile.country).new_Fake_products);
         }
