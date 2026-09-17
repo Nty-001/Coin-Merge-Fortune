@@ -31880,7 +31880,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 6.763, y: 171.597}
   m_SizeDelta: {x: 139, y: 141}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.12, y: 0.9}
 --- !u!114 &8693714311805613676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32005,7 +32005,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 1b947db86ffa2bbb703a566d509afdb2, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
@@ -90914,6 +90914,11 @@ MonoBehaviour:
   fourButton: {fileID: 7009415746402894417}
   backdropButton: {fileID: 3218574637315355495}
   balance: {fileID: 5646739165850407264}
+  cashHand: {fileID: 5350944614008716334}
+  cashTarget: {fileID: 5449951520451492305}
+  cashPanel: {fileID: 2435890990628747988}
+  cashTargetPoint: {x: 0.65, y: 0.45}
+  cashPanelGap: 16
 --- !u!114 &5522627793046231882
 MonoBehaviour:
   m_ObjectHideFlags: 0
