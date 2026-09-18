@@ -97,7 +97,7 @@ namespace CoinMerge.Recovery
             {
                 bool overUi=EventSystem.current!=null&&(pointer<0?EventSystem.current.IsPointerOverGameObject():EventSystem.current.IsPointerOverGameObject(pointer));
                 Vector3 world=worldCamera.ScreenToWorldPoint(point);
-                inputStarted=!overUi&&!board.InputBlocked&&world.y>=board.ground.position.y&&world.y<=board.previewLine.position.y+2;
+                inputStarted=worldCamera.pixelRect.Contains(point)&&!overUi&&!board.InputBlocked&&world.y>=board.ground.position.y&&world.y<=board.previewLine.position.y+2;
             }
             if(!inputStarted)return;
             if(held||up)board.MovePreview(worldCamera.ScreenToWorldPoint(point).x);
