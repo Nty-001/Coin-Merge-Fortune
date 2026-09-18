@@ -27,7 +27,7 @@ namespace CoinMerge.Recovery
             Cash=0;Coins=0;
             if(isMoney)
             {
-                money.sprite=locale.Icon(reward.amount>5000?3:1);
+                locale.ApplyIcon(money,reward.amount>5000?3:1);
                 Cash=RecoveredGameRules.CalculateCash(player.fakeMoney,RecoveredGameRules.CashConfiguration(config.rules,locale.Data.country),randomSample)*config.wheel.cashMultiplier;
                 amountLabel.text=locale.Money(Cash);
             }

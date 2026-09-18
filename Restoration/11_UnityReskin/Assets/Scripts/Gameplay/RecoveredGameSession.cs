@@ -97,7 +97,7 @@ namespace CoinMerge.Recovery
             {
                 bool overUi=EventSystem.current!=null&&(pointer<0?EventSystem.current.IsPointerOverGameObject():EventSystem.current.IsPointerOverGameObject(pointer));
                 Vector3 world=worldCamera.ScreenToWorldPoint(point);
-                inputStarted=!overUi&&!board.InputBlocked&&world.y>=board.ground.position.y&&world.y<=board.previewLine.position.y+2;
+                inputStarted=worldCamera.pixelRect.Contains(point)&&!overUi&&!board.InputBlocked&&world.y>=board.ground.position.y&&world.y<=board.previewLine.position.y+2;
             }
             if(!inputStarted)return;
             if(held||up)board.MovePreview(worldCamera.ScreenToWorldPoint(point).x);
@@ -237,7 +237,7 @@ namespace CoinMerge.Recovery
         {
             Locale=new RecoveredLocalization(Profile.country);displayedMoney=double.NaN;
             foreach(var binding in localizedLabels)binding.label.text=Locale.Label(binding.key);
-            foreach(var binding in currencyIcons)binding.image.sprite=Locale.Icon(binding.type);
+            foreach(var binding in currencyIcons)Locale.ApplyIcon(binding.image,binding.type);
             rewardView.Locale=Locale;guideView.Locale=Locale;
             if(notice)notice.Configure(Locale,RecoveredGameRules.CashConfiguration(board.Config.rules,Profile.country).new_Fake_products);
         }

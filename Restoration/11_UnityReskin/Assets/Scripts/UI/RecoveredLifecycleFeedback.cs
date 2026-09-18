@@ -59,7 +59,7 @@ namespace CoinMerge.Recovery
                 f.a=new Vector2(Mathf.Lerp(f.start.x,f.target.x,.18f),top);f.b=new Vector2(Mathf.Lerp(f.start.x,f.target.x,.72f),top-.2f*lift);
                 f.duration=Mathf.Clamp(Vector2.Distance(f.start,f.target)/config.moneySpeed,config.moneyMinFlight,config.moneyMaxFlight);
                 f.delay=config.moneyAppear+config.moneyGrow+config.moneyHold+i*config.moneyStagger;
-                f.image.sprite=session.Locale.Icon(1);f.image.gameObject.SetActive(true);flights.Add(f);SetMoney(f,config.moneyStartScale,0,f.start);
+                session.Locale.ApplyIcon(f.image,1);f.image.gameObject.SetActive(true);flights.Add(f);SetMoney(f,config.moneyStartScale,0,f.start);
             }
         }
         static float Out(float t)=>Mathf.Sin(Mathf.Clamp01(t)*Mathf.PI*.5f);

@@ -35,6 +35,16 @@ namespace CoinMerge.Recovery
             if(!icons[index])throw new InvalidOperationException("Missing currency sprite "+Data.icons[index]);
             return icons[index];
         }
+        public void ApplyIcon(Image image,int type)
+        {
+            var sprite=Icon(type);
+            if(image.TryGetComponent<RecoveredCurrencyArtwork>(out var artwork))artwork.Apply(sprite,type);
+            else
+            {
+                if(type!=1)throw new InvalidOperationException("Missing authored banknote pile: "+image.name);
+                image.sprite=sprite;image.preserveAspect=true;
+            }
+        }
         public string Money(double amount)=>FormatMoney(amount,Data.id,Data.currency);
         // GameManagement.getRealMonstr differs from the main balance formatter in several countries.
         public string RealMoney(double amount)

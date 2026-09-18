@@ -12,6 +12,7 @@ namespace CoinMerge.Recovery
         public float distance=110;
         public int minimumDays=2,maximumDays=10;
         public string localeKey="109";
+        public bool matchFallbackWeight;
         RecoveredLocalization locale;
         WithdrawProduct[] products;
         Vector2 origin;
@@ -23,6 +24,11 @@ namespace CoinMerge.Recovery
         public void Configure(RecoveredLocalization language,WithdrawProduct[] amounts)
         {
             locale=language;products=amounts;ready=true;Restart();
+            if(matchFallbackWeight)
+            {
+                string country=language.Data.country;
+                label.fontStyle=country=="JP"||country=="KR"||country=="TH"||country=="BD"?FontStyle.Bold:FontStyle.Normal;
+            }
         }
         void OnEnable(){if(ready)Restart();}
         void OnDisable(){if(content)content.anchoredPosition=origin;animating=false;}

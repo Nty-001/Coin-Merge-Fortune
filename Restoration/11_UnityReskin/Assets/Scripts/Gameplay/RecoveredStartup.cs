@@ -11,11 +11,17 @@ namespace CoinMerge.Recovery
         public string rewardedView="Startup/RewardedLoading",packagedView="Startup/PackagedLoading";
         public float fakeTickSeconds=.1f,completedHoldSeconds=.3f,packagedSeconds=2;
         public float[] stages={.15f,.25f,.55f,.7f,.85f,.99f,1};
+        [Header("Loading presentation")]
+        [Min(0)] public float initialZeroHoldSeconds=.2f;
+        [Min(.01f)] public float displayDurationSeconds=1.8f;
+        [Range(.01f,.1f)] public float maximumDisplayDeltaSeconds=.05f;
         public RecoveredLoadingView View {get;private set;}
         public float Progress {get;private set;}
+        public float TargetProgress {get;private set;}
         public bool Completed {get;private set;}
         public VersionProfile Profile {get;private set;}
-        float fakeElapsed;
+        float fakeElapsed,zeroHoldElapsed;
+        bool firstFrameRendered,sceneReady;
         IEnumerator Start()
         {
             var store=new PlayerStore(saveNamespace);Profile=store.LoadProfile(balance);
@@ -25,6 +31,8 @@ namespace CoinMerge.Recovery
             var prefab=viewRequest.asset as GameObject;
             if(!prefab)throw new System.InvalidOperationException("Missing authored startup prefab");
             View=Instantiate(prefab,transform).GetComponent<RecoveredLoadingView>();View.SetProgress(0);
+            // Do not advance the display until the canvas has presented its initial zero.
+            Canvas.willRenderCanvases+=FirstFrame;
             yield return null;
             SetProgress(stages[0]); // Country/profile: existing local facade, no live attribution request.
             store.LoadPlayer();SetProgress(stages[1]);
@@ -39,27 +47,44 @@ namespace CoinMerge.Recovery
             float elapsed=0;
             while(loading.progress<.9f||!Profile.rewardedVariant&&elapsed<packagedSeconds)
             {
-                elapsed+=Time.deltaTime;
+                elapsed+=Time.unscaledDeltaTime;
                 if(Profile.rewardedVariant)SetProgress(Mathf.Lerp(stages[4],stages[5],loading.progress/.9f));
-                else{Progress=Mathf.Clamp01(elapsed/Mathf.Max(.01f,packagedSeconds));View.SetProgress(Progress);}
+                else TargetProgress=Mathf.Max(TargetProgress,Mathf.Clamp01(elapsed/Mathf.Max(.01f,packagedSeconds)));
                 yield return null;
             }
-            SetProgress(stages[5]);Completed=true;SetProgress(stages[6]);
-            if(Profile.rewardedVariant)yield return new WaitForSeconds(completedHoldSeconds);
+            SetProgress(stages[5]);sceneReady=true;SetProgress(stages[6]);
+            while(Progress<1)yield return null;
+            Completed=true;
+            // Both variants present a completed bar before activating the loaded scene.
+            yield return new WaitForSecondsRealtime(completedHoldSeconds);
             GameVersionRouter.SetPendingNamespace(saveNamespace);loading.allowSceneActivation=true;
         }
         void Update()
         {
-            if(!View||Completed||!Profile.rewardedVariant)return;
-            fakeElapsed+=Time.deltaTime;
-            if(fakeElapsed<fakeTickSeconds)return;fakeElapsed%=fakeTickSeconds;
-            // LoadingScene.updateFakeProgress; monotonic display and 90% simulated cap.
-            if(Progress<.9f)SetProgress(Mathf.Min(.9f,Progress+(Progress<.3f?.05f:Progress<.6f?.03f:Progress<.8f?.02f:.01f)));
+            if(!View||Completed)return;
+            if(Profile.rewardedVariant&&!sceneReady)
+            {
+                fakeElapsed+=Time.unscaledDeltaTime;
+                if(fakeElapsed>=Mathf.Max(.01f,fakeTickSeconds))
+                {
+                    fakeElapsed%=Mathf.Max(.01f,fakeTickSeconds);
+                    // Keep the recovered simulated 90% cap, independently of presentation.
+                    if(TargetProgress<.9f)SetProgress(Mathf.Min(.9f,TargetProgress+(TargetProgress<.3f?.05f:TargetProgress<.6f?.03f:TargetProgress<.8f?.02f:.01f)));
+                }
+            }
+            if(!firstFrameRendered)return;
+            // An import/IO hitch must not consume the entire visible loading animation.
+            float delta=Mathf.Min(Time.unscaledDeltaTime,Mathf.Max(.001f,maximumDisplayDeltaSeconds));
+            if(zeroHoldElapsed<initialZeroHoldSeconds){zeroHoldElapsed+=delta;return;}
+            float target=sceneReady?TargetProgress:Mathf.Min(TargetProgress,.99f);
+            Progress=Mathf.MoveTowards(Progress,target,delta/Mathf.Max(.01f,displayDurationSeconds));View.SetProgress(Progress);
         }
+        void FirstFrame(){if(!View)return;firstFrameRendered=true;Canvas.willRenderCanvases-=FirstFrame;}
+        void OnDestroy(){Canvas.willRenderCanvases-=FirstFrame;}
         public void SetProgress(float value)
         {
-            if(Profile!=null&&!Profile.rewardedVariant&&!Completed)return;
-            Progress=Mathf.Max(Progress,Mathf.Clamp01(value));if(View)View.SetProgress(Progress);
+            if(Profile!=null&&!Profile.rewardedVariant&&!sceneReady)return;
+            TargetProgress=Mathf.Max(TargetProgress,Mathf.Clamp01(value));
         }
     }
 }

@@ -40,9 +40,10 @@ namespace CoinMerge.Recovery
             {
                 var reward=config.rules.lotteryRewards[i];var slot=slots[i];slot.selected.SetActive(false);
                 bool money=reward.type=="money";slot.money.gameObject.SetActive(money);slot.coin.SetActive(!money);
-                if(money)slot.money.sprite=locale.Icon(reward.amount>5000?3:1);else slot.coinAmount.text="+"+reward.amount;
+                if(money)locale.ApplyIcon(slot.money,reward.amount>5000?3:1);else slot.coinAmount.text="+"+reward.amount;
             }
             gameObject.SetActive(true);
+            backgroundAnimation.ResetPose("idle");
         }
         public void Begin(int index)
         {

@@ -47,7 +47,7 @@ namespace CoinMerge.Recovery
             verification.Finished+=FinishVerification;
         }
         void Start(){initialized=true;ApplyLocale();audioCues.SetMusic(Player.open_bgm);}
-        void ApplyLocale(){foreach(var x in labels)x.label.text=Locale.Label(x.key);foreach(var x in currencies)x.image.sprite=Locale.Icon(x.type);}
+        void ApplyLocale(){foreach(var x in labels)x.label.text=Locale.Label(x.key);foreach(var x in currencies)Locale.ApplyIcon(x.image,x.type);}
         public void Act(int code)
         {
             if(!initialized)return;
