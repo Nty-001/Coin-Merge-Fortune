@@ -23,6 +23,14 @@
 
 提现分割线：禁用顶部局部天空切片和底栏单独的高亮横边图，改为显示连续页面背景。列表遮罩增加 12 像素柔化，保留提现按钮原尺寸、图片和交互。对应 `CashSeamRepair` 作者工具；无图片重绘或玩法修改。
 
+## 弹窗遮罩边缘修复
+
+用户反馈：奖励弹窗打开后，上下避让区域出现未压暗的亮条。原因是主相机限制在安全视口内，原有弹窗遮罩也被该相机裁切，而背景相机铺满全屏。
+
+`FullScreenModalEdges` 使用背景画布中保存的四个原生 Image，把现有 15 个弹窗遮罩的透明度同步到视口外边缘。它不覆盖视口内部，因此不会重复压暗游戏，也不改变弹窗位置、按钮或安全区域。多个弹窗的遮罩透明度按原叠加结果合成，关闭后恢复透明；边缘 Image 不接收点击。
+
+验证：`ModalEdgesAuthor.Review` 在隔离工程通过 Unity 导入及 Play Mode 渲染。900×1600 普通屏、1080×2400 上下避让、1536×2048 带左右避让，共 12 组「关闭／奖励打开／叠加设置／全部关闭」状态检查通过；对顶部和底部实际像素亮度及透明度作断言。截图位于忽略目录 `Restoration/Builds/Android/ModalEdgesReview`。本次按要求未构建 APK，也未安装到模拟器；现有 APK 尚不包含此修复。
+
 复核工具：`DeviceSafeAreaChecks.Run`、`DeviceLayoutReview.Run`（仅在独立验证副本运行）。截图与日志保存在忽略的 `Restoration/Builds/Android/DeviceLayoutReview`，不提交设备材料。
 
 依据：[Unity Screen.safeArea](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Screen-safeArea.html)。
