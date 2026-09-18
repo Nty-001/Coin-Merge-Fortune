@@ -27,7 +27,8 @@ namespace CoinMerge.Recovery.Editor
             if (!balance || !balance.defaultRewardedVariant || balance.defaultCohort != "B")
                 throw new InvalidOperationException("Expected the current B rewarded build configuration.");
 
-            PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.coinmergefortune.reskin");
+            PlayerSettings.productName = "Merge Stack Journey";
+            PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.pizza.mergejourney");
             PlayerSettings.SetScriptingBackend(BuildTargetGroup.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARMv7 | AndroidArchitecture.ARM64;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel22;
@@ -50,7 +51,9 @@ namespace CoinMerge.Recovery.Editor
                 "Result: " + summary.result + "\nBytes: " + summary.totalSize +
                 "\nErrors: " + summary.totalErrors + "\nWarnings: " + summary.totalWarnings +
                 "\nDuration: " + summary.totalTime + "\nUnity: " + Application.unityVersion +
-                "\nPackage: com.coinmergefortune.reskin\nABI: armeabi-v7a, arm64-v8a\nDefault: B / US\nSigning: Android debug key (local test APK)\n");
+                "\nName: " + PlayerSettings.productName +
+                "\nPackage: " + PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.Android) +
+                "\nABI: armeabi-v7a, arm64-v8a\nDefault: B / US\nSigning: Android debug key (local test APK)\n");
             if (summary.result != BuildResult.Succeeded) throw new InvalidOperationException("Android APK build failed: " + summary.result);
             Debug.Log("ANDROID_APK_BUILD_SUCCEEDED " + output);
         }
