@@ -22,8 +22,7 @@ namespace CoinMerge.Recovery.Editor
                 var fitted = DeviceSafeViewport.Fit(size,safe,design,6);
                 if (fitted.xMin < safe.xMin || fitted.yMin < safe.yMin || fitted.xMax > safe.xMax || fitted.yMax > safe.yMax)
                     throw new Exception("Content crossed safe area: "+size);
-                float scale = fitted.width/design.x;
-                if (fitted.height/scale < design.y-.01f) throw new Exception("Design height clipped: "+size);
+                if (Mathf.Abs(fitted.width-safe.width)>.01f) throw new Exception("Width-fit introduced side gutters: "+size);
                 if (Mathf.Abs(fitted.center.x-safe.center.x)>.01f) throw new Exception("Content not centered");
                 count++;
             }

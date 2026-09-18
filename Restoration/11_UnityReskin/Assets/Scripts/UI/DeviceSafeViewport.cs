@@ -27,9 +27,10 @@ namespace CoinMerge.Recovery
             // Padding is expressed in reference-canvas units, independent of pixel density.
             float scale = Mathf.Min((right-left)/design.x, (top-bottom)/design.y);
             float gap = Mathf.Max(0, padding)*scale;
-            left += gap; right -= gap; bottom += gap; top -= gap;
-            float width = Mathf.Min(right-left, (top-bottom)*design.x/design.y);
-            return new Rect((left+right-width)*.5f, bottom, width, top-bottom);
+            // Original cc.Canvas: fitWidth=true, fitHeight=false. The visible height
+            // changes with the device; never letterbox a tablet into a phone frame.
+            bottom += gap; top -= gap;
+            return new Rect(left, bottom, right-left, top-bottom);
         }
 
         public void Refresh()

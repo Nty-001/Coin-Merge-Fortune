@@ -15,7 +15,11 @@ namespace CoinMerge.Recovery.Editor
         const string Output="../Android/DeviceLayoutReview";
         static RecoveredGameSession s;
         static RenderTexture target;
+        static RenderTexture backdrop;
+        static Camera backdropCamera;
+        static Rect currentFit;
         static int resolutionIndex, pageIndex, checks, exitCode;
+        static readonly List<string> failures=new List<string>();
         static double next;
         static readonly Vector3[] corners=new Vector3[4];
         static readonly Vector2Int[] Sizes={new Vector2Int(900,1600),new Vector2Int(1080,2400),new Vector2Int(1536,2048)};
@@ -23,6 +27,7 @@ namespace CoinMerge.Recovery.Editor
         public static void Run()
         {
             Directory.CreateDirectory(Output);
+            failures.Clear();
             EditorSceneManager.OpenScene("Assets/Scenes/RecoveredMain.unity");
             var session=UnityEngine.Object.FindObjectOfType<RecoveredGameSession>();session.saveNamespace=Prefix;session.automaticInput=false;
             var store=new PlayerStore(Prefix);store.ResetPlayer();store.ResetProfile();store.Save(new PlayerProgress{guideStep=9999,fakeMoney=220});
@@ -46,21 +51,29 @@ namespace CoinMerge.Recovery.Editor
                     s=UnityEngine.Object.FindObjectOfType<RecoveredGameSession>();s.automaticInput=false;
                     s.guideView.gameObject.SetActive(false);s.gm.Hide();
                     s.worldCamera.GetComponent<DeviceSafeViewport>().enabled=false;
+                    backdropCamera=s.transform.Find("SafeAreaBackdrop").GetComponent<Camera>();
                 }
                 if(pageIndex==-2)
                 {
                     var size=Sizes[resolutionIndex];
                     var safe=resolutionIndex==1?new Rect(0,96,size.x,size.y-252):new Rect(0,0,size.x,size.y);
                     var fitted=DeviceSafeViewport.Fit(size,safe,new Vector2(750,1624),6);
+                    currentFit=fitted;
                     if(target){s.worldCamera.targetTexture=null;UnityEngine.Object.DestroyImmediate(target);}
+                    if(backdrop){backdropCamera.targetTexture=null;UnityEngine.Object.DestroyImmediate(backdrop);}
+                    backdrop=new RenderTexture(size.x,size.y,24);backdropCamera.targetTexture=backdrop;
                     target=new RenderTexture(Mathf.RoundToInt(fitted.width),Mathf.RoundToInt(fitted.height),24);
                     s.worldCamera.targetTexture=target;s.worldCamera.rect=new Rect(0,0,1,1);
                     foreach(var scaler in s.worldCamera.GetComponent<DeviceSafeViewport>().scalers)scaler.scaleFactor=target.width/750f;
-                    s.worldCamera.clearFlags=CameraClearFlags.SolidColor;s.worldCamera.backgroundColor=new Color(.3f,.7f,1);
+                    s.worldCamera.clearFlags=CameraClearFlags.Depth;
                     s.menus.CloseAll();pageIndex=-1;return;
                 }
                 Canvas.ForceUpdateCanvases();s.playfieldLayout.Refresh();
                 foreach(var popup in s.GetComponentsInChildren<RecoveredMenuPopup>())popup.Tick(1);
+                backdropCamera.Render();
+                var screenSize=Sizes[resolutionIndex];
+                Graphics.Blit(backdrop,target,new Vector2(currentFit.width/screenSize.x,currentFit.height/screenSize.y),
+                    new Vector2(currentFit.x/screenSize.x,currentFit.y/screenSize.y));
                 s.worldCamera.Render();
                 if(pageIndex==-1){Bounds(s.playfieldLayout.upper);Bounds(s.playfieldLayout.bottom);}
                 else
@@ -74,9 +87,12 @@ namespace CoinMerge.Recovery.Editor
                     }
                 }
                 Capture(Sizes[resolutionIndex]+"-page"+pageIndex+".png");checks++;
+                if(resolutionIndex==2&&(pageIndex==-1||pageIndex==3))CaptureFullTablet();
                 s.menus.CloseAll();pageIndex++;
-                if(pageIndex>=s.menus.pages.Length){resolutionIndex++;pageIndex=-2;if(resolutionIndex>=Sizes.Length){ReviewLoading();Finish(null);return;}}
-                if(pageIndex>=0)s.menus.Show(pageIndex);
+                if(pageIndex>=s.menus.pages.Length){resolutionIndex++;pageIndex=-2;if(resolutionIndex>=Sizes.Length){ReviewLoading();Finish(failures.Count==0?null:string.Join("\n",failures));return;}}
+                if(pageIndex==RecoveredMainMenus.Rules)s.menus.Act(2);
+                else if(pageIndex==RecoveredMainMenus.Policy)s.menus.Act(7);
+                else if(pageIndex>=0)s.menus.Show(pageIndex);
             }
             catch(Exception e){Finish(e.ToString());}
         }
@@ -87,16 +103,25 @@ namespace CoinMerge.Recovery.Editor
             {
                 var p=s.worldCamera.WorldToViewportPoint(corner);
                 if(p.x<-.01f||p.x>1.01f||p.y<-.01f||p.y>1.01f)
-                    throw new Exception("Out of safe viewport: "+rect.name+" "+p+" page="+pageIndex+" size="+Sizes[resolutionIndex]);
+                    {failures.Add("Out of safe viewport: "+rect.name+" "+p+" page="+pageIndex+" size="+Sizes[resolutionIndex]);break;}
             }
         }
         static void Capture(string file)
+        {CaptureTexture(target,file);}
+        static void CaptureTexture(RenderTexture textureTarget,string file)
         {
-            var old=RenderTexture.active;RenderTexture.active=target;
-            var texture=new Texture2D(target.width,target.height,TextureFormat.RGB24,false);
-            texture.ReadPixels(new Rect(0,0,target.width,target.height),0,0);texture.Apply();
+            var old=RenderTexture.active;RenderTexture.active=textureTarget;
+            var texture=new Texture2D(textureTarget.width,textureTarget.height,TextureFormat.RGB24,false);
+            texture.ReadPixels(new Rect(0,0,textureTarget.width,textureTarget.height),0,0);texture.Apply();
             File.WriteAllBytes(Path.Combine(Output,file),texture.EncodeToPNG());
             UnityEngine.Object.DestroyImmediate(texture);RenderTexture.active=old;
+        }
+        static void CaptureFullTablet()
+        {
+            var full=new RenderTexture(backdrop.width,backdrop.height,0);full.Create();Graphics.Blit(backdrop,full);
+            Graphics.CopyTexture(target,0,0,0,0,target.width,target.height,full,0,0,Mathf.RoundToInt(currentFit.x),Mathf.RoundToInt(currentFit.y));
+            CaptureTexture(full,pageIndex==-1?"tablet-1536x2048-home.png":"tablet-1536x2048-withdraw.png");
+            UnityEngine.Object.DestroyImmediate(full);
         }
         static void ReviewLoading()
         {
@@ -131,6 +156,7 @@ namespace CoinMerge.Recovery.Editor
             EditorApplication.update-=Tick;exitCode=error==null?0:1;
             File.WriteAllText(Output+"/result.txt",(error==null?"PASS":error)+"\nPage cases: "+checks);
             if(s)s.worldCamera.targetTexture=null;if(target)UnityEngine.Object.DestroyImmediate(target);
+            if(backdropCamera)backdropCamera.targetTexture=null;if(backdrop)UnityEngine.Object.DestroyImmediate(backdrop);
             EditorApplication.ExitPlaymode();
         }
     }

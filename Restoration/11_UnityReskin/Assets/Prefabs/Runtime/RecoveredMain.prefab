@@ -7568,6 +7568,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 650.906, y: 1260.054}
+  availableFrame: {fileID: 571246544895943756}
+  fitMargin: 20
 --- !u!114 &5254906614432292745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15200,6 +15203,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &876730466542704605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19138,6 +19144,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &5067116407960395244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22499,6 +22508,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &3571414069200884865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29077,6 +29089,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &5654104918778778138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36563,6 +36578,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &220400882146456272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41511,6 +41529,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &3289281515930715404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44655,7 +44676,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3197330387584749445}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -50211,6 +50232,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &3623632683892004928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55605,6 +55629,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &9124184730528368857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65692,7 +65719,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4498770935124805686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -66309,6 +66336,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &246977164941226985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66583,7 +66613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
-  m_Softness: {x: 0, y: 0}
+  m_Softness: {x: 0, y: 12}
 --- !u!1 &4498770935124807634
 GameObject:
   m_ObjectHideFlags: 0
@@ -78979,6 +79009,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &7666959899653569643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88850,6 +88883,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &2827913480180528748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91495,6 +91531,7 @@ GameObject:
   - component: {fileID: 3758387769785754816}
   - component: {fileID: 2382876285120494993}
   - component: {fileID: 4746438842682668709}
+  - component: {fileID: 8841604226167067184}
   m_Layer: 5
   m_Name: GameRealWDAccountBR
   m_TagString: Untagged
@@ -91764,6 +91801,26 @@ MonoBehaviour:
     resourcePath: UnifiedReskin/Body
   - image: {fileID: 7013073961597158705}
     resourcePath: UnifiedReskin/Button
+--- !u!114 &8841604226167067184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013073961597158122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ebb21be751a614593dac812368ca26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 7013073961597158139}
+  duration: 0.001
+  startScale: 1
+  smoothMotion: 0
+  opacity: {fileID: 0}
+  fittedVisualSize: {x: 654, y: 1293.11}
+  availableFrame: {fileID: 7013073961597158123}
+  fitMargin: 20
 --- !u!1 &7013073961597158124
 GameObject:
   m_ObjectHideFlags: 0
@@ -113184,6 +113241,9 @@ MonoBehaviour:
   startScale: 0.5
   smoothMotion: 0
   opacity: {fileID: 0}
+  fittedVisualSize: {x: 0, y: 0}
+  availableFrame: {fileID: 0}
+  fitMargin: 12
 --- !u!114 &874756360486613569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128132,6 +128192,9 @@ MonoBehaviour:
   startScale: 0.96
   smoothMotion: 1
   opacity: {fileID: 7396287337904050447}
+  fittedVisualSize: {x: 654, y: 1148.57}
+  availableFrame: {fileID: 8744366217767351599}
+  fitMargin: 20
 --- !u!114 &332528076796269847
 MonoBehaviour:
   m_ObjectHideFlags: 0
