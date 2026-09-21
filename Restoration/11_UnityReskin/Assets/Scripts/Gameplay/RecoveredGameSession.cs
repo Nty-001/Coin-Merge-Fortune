@@ -40,6 +40,7 @@ namespace CoinMerge.Recovery
         bool firstStrong;
         int pendingReward;
         bool inputStarted,initialized;
+        public bool IsBoardPointerHeld=>isActiveAndEnabled&&inputStarted&&!applicationPaused&&!applicationUnfocused&&!(gm&&gm.IsOpen);
         bool applicationPaused,applicationUnfocused,discardResumeFrame;
         float physicsElapsed;
         double displayedMoney=double.NaN;

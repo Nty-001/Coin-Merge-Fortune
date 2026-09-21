@@ -1,0 +1,20 @@
+PASS
+Delivered scene contains 128 authored world-space SpriteRenderer dots
+No guide without a held pointer
+Holding draws dotted line on empty board
+First dot begins at preview coin bottom
+Original 30-pixel spacing
+Original 5-pixel radius and 180 alpha
+Guide shortens above a coin stack
+Centered landing point matches upper coin surface
+No dots extend below predicted landing point
+Off-center landing uses circle intersection, not a vertical ray
+Dots follow dragged preview horizontally
+Preview and line share wall clamping
+Release hides the line
+Modal-blocked input hides guide
+Dropped preview cannot leave a stale line
+New preview supports a fresh hold
+Backgrounding cancels held input
+Backgrounding hides alignment dots
+Game over hides alignment dots
