@@ -1,0 +1,249 @@
+{
+  "variant": "HotUpdate",
+  "uuid": "8450e79a-6034-4f88-8bb0-c0e00e2d31c1",
+  "name": "prefab/coinItem",
+  "type": "cc.Prefab",
+  "nodes": [
+    {
+      "id": 1,
+      "name": "coinItem",
+      "parent": -1,
+      "children": [
+        2,
+        4
+      ],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        108,
+        114
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"coinItem\", \"_children\": [{\"$ref\": 2}, {\"$ref\": 4}], \"_components\": [{\"$ref\": 6}], \"_prefab\": {\"$ref\": 7}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [108, 114]}}",
+      "components": [
+        {
+          "type": "cdd4chPxjlBea7Xn2092bM9",
+          "className": "CoinItem",
+          "sourceId": 6,
+          "rawJson": "{\"__type__\": \"cdd4chPxjlBea7Xn2092bM9\", \"coinSprites\": [{\"$asset\": \"45cc6803-d18f-4689-b17f-7d42982414f1\"}, {\"$asset\": \"bb5cd37e-49a6-42b0-a930-9987e65b42fe\"}, {\"$asset\": \"9fea0c34-c4ba-4933-af53-afa53490cd44\"}, {\"$asset\": \"29f87d66-c648-42a5-b463-4e0f20112084\"}, {\"$asset\": \"77b099a0-d1d3-4e17-a50c-2b3e333ec827\"}, {\"$asset\": \"252e9df5-ded6-416b-ad00-e6c0c15c7f86\"}, {\"$asset\": \"206815fd-7015-4187-ae91-f50d36298f42\"}, {\"$asset\": \"cfdf5754-80a4-4164-9caf-8f8b0794b852\"}, {\"$asset\": \"026e5d46-7d46-49d2-a16a-9054bb583e64\"}, {\"$asset\": \"b1f93e32-b4f1-459f-b41b-23021bb3b474\"}, {\"$asset\": \"2fc65a1d-8e55-4e95-9e6a-419261e99044\"}], \"collisionEffect\": {\"$ref\": 5}, \"sprite\": {\"$ref\": 3}, \"node\": {\"$ref\": 1}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "sp",
+      "parent": 1,
+      "children": [],
+      "active": true,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        108,
+        114
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"sp\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 3}], \"_prefab\": {\"$ref\": 8}, \"_contentSize\": {\"__type__\": \"cc.Size\", \"values\": [108, 114]}}",
+      "components": [
+        {
+          "type": "cc.Sprite",
+          "className": "cc.Sprite",
+          "sourceId": 3,
+          "rawJson": "{\"__type__\": \"cc.Sprite\", \"node\": {\"$ref\": 2}, \"_materials\": [{\"$asset\": \"eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432\"}]}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "pengzhung",
+      "parent": 1,
+      "children": [],
+      "active": true,
+      "position": [
+        -0.847,
+        -52.498,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "size": [
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rawJson": "{\"__type__\": \"cc.Node\", \"_name\": \"pengzhung\", \"_parent\": {\"$ref\": 1}, \"_components\": [{\"$ref\": 5}], \"_prefab\": {\"$ref\": 9}, \"_trs\": [-0.847, -52.498, 0, 0, 0, 0, 1, 1, 1, 1]}",
+      "components": [
+        {
+          "type": "sp.Skeleton",
+          "className": "sp.Skeleton",
+          "sourceId": 5,
+          "rawJson": "{\"__type__\": \"sp.Skeleton\", \"defaultSkin\": \"default\", \"defaultAnimation\": \"idle\", \"_preCacheMode\": 0, \"premultipliedAlpha\": false, \"timeScale\": 4, \"_animationName\": \"idle\", \"node\": {\"$ref\": 4}, \"_materials\": [{\"$asset\": \"7afd064b-113f-480e-b793-8817d19f63c3\"}], \"_N$skeletonData\": {\"$asset\": \"1059e560-1ac0-4260-80ef-2291746bdd38\"}}",
+          "sprite": "",
+          "text": "",
+          "fontSize": 40,
+          "lineHeight": 40,
+          "horizontalAlign": 0,
+          "verticalAlign": 0,
+          "font": "",
+          "spriteType": 0,
+          "fillRange": 1,
+          "fillStart": 0,
+          "fillType": 0,
+          "enabled": true,
+          "target": -1,
+          "content": -1,
+          "viewport": -1,
+          "radius": 25,
+          "offset": [
+            0,
+            0
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "bodyType": 2,
+          "gravityScale": 1,
+          "linearDamping": 0,
+          "angularDamping": 0,
+          "friction": 0.2,
+          "restitution": 0,
+          "density": 1,
+          "sensor": false,
+          "isCustom": false
+        }
+      ]
+    }
+  ],
+  "originalObjectCount": 10
+}

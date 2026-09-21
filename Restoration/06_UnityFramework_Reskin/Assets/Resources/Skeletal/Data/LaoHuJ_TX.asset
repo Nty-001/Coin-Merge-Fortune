@@ -1,0 +1,374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5599744b6ad55b7409c75d913ea22cf1, type: 3}
+  m_Name: LaoHuJ_TX
+  m_EditorClassIdentifier: 
+  sourceUuid: e0434db8-76ce-4c32-a6f4-4088a1267d05
+  texturePath: Skeletal/Atlases/LaoHuJ_TX
+  bones:
+  - name: root
+    parent: -1
+    x: 0
+    y: 0
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: ND_04
+    parent: 0
+    x: -8.09
+    y: -384.14
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: ND_01
+    parent: 1
+    x: 272.85
+    y: 415.27
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: ND_02
+    parent: 2
+    x: 25.59
+    y: 28.17
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: ND_2
+    parent: 3
+    x: 17.02
+    y: 92.92
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  - name: ND_00
+    parent: 1
+    x: 326.21
+    y: 586.68
+    rotation: 0
+    scaleX: 1
+    scaleY: 1
+    shearX: 0
+    shearY: 0
+  slots:
+  - name: ND_04
+    bone: 1
+    initialAttachment: 0
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: ND_03
+    bone: 2
+    initialAttachment: 1
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: ND_02
+    bone: 3
+    initialAttachment: 2
+    blend: 0
+    deformLength: 34
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: ND_01
+    bone: 2
+    initialAttachment: 3
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  - name: ND_00
+    bone: 5
+    initialAttachment: 4
+    blend: 0
+    deformLength: 8
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+  attachments:
+  - name: ND_04
+    skin: default
+    slot: 0
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -357.91
+    - -32.86
+    - -357.91
+    - 801.14
+    - 302.09
+    - 801.14
+    - 302.09
+    - -32.86
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.891933
+    - 0.0042918324
+    - 0.00304414
+    - 0.0042918324
+    - 0.00304414
+    - 0.99570817
+    - 0.891933
+    - 0.99570817
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 01000000010000000100000001000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: ND_03
+    skin: default
+    slot: 1
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - 21.8
+    - -74.69983
+    - 21.8
+    - 52.585083
+    - 60.14
+    - 52.585083
+    - 60.14
+    - -74.69983
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.89497715
+    - 0.32403433
+    - 0.89497715
+    - 0.51502144
+    - 0.93607306
+    - 0.51502144
+    - 0.93607306
+    - 0.32403433
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 02000000020000000200000002000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: ND_02
+    skin: default
+    slot: 2
+    type: 1
+    endSlot: -1
+    weighted: 1
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - 1.67
+    - 5.58
+    - 37
+    - 94.71
+    - 19.98
+    - 1.79
+    - 16.92
+    - 1.19
+    - -0.1
+    - -91.73
+    - 11.3
+    - -3.13
+    - -5.72
+    - -96.05
+    - 5.66
+    - -6.34
+    - -11.36
+    - -99.26
+    - -4.31
+    - -6.32
+    - -10.35
+    - -0.38
+    - -27.37
+    - -93.3
+    - -13.34
+    - 4.2
+    - -30.36
+    - -88.72
+    - -13.41
+    - 12.01
+    - -30.43
+    - -80.91
+    - -14.37
+    - 9.31
+    weights:
+    - 1
+    - 0.00191
+    - 0.99809
+    - 0.97089
+    - 0.02911
+    - 0.98938
+    - 0.01062
+    - 0.9989
+    - 0.0011
+    - 1
+    - 0.99445
+    - 0.00555
+    - 0.98349
+    - 0.01651
+    - 0.95162
+    - 0.04838
+    - 1
+    uvs:
+    - 0.9297253
+    - 0.31262213
+    - 0.9493524
+    - 0.3069663
+    - 0.92782575
+    - 0.16719234
+    - 0.9218052
+    - 0.16074479
+    - 0.91575116
+    - 0.1559493
+    - 0.9050662
+    - 0.15597105
+    - 0.8985921
+    - 0.16484565
+    - 0.8953881
+    - 0.17169994
+    - 0.895312
+    - 0.18336642
+    - 0.91252893
+    - 0.31819427
+    offsets: 0000000001000000030000000500000007000000090000000a0000000c0000000e0000001000000011000000
+    boneIndices: 0400000003000000040000000300000004000000030000000400000003000000040000000300000003000000040000000300000004000000030000000400000004000000
+    triangles: 020000000000000001000000080000000900000000000000030000000400000006000000040000000500000006000000020000000300000008000000080000000300000006000000000000000200000008000000080000000600000007000000
+    clipTriangles: 
+  - name: ND_01
+    skin: default
+    slot: 3
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -3.76
+    - -92.70031
+    - -3.76
+    - 88.87
+    - 23.24
+    - 88.87
+    - 23.24
+    - -92.70031
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.89497715
+    - 0.51931334
+    - 0.89497715
+    - 0.7918455
+    - 0.9238965
+    - 0.7918455
+    - 0.9238965
+    - 0.51931334
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 02000000020000000200000002000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  - name: ND_00
+    skin: default
+    slot: 4
+    type: 0
+    endSlot: -1
+    weighted: 0
+    clipConvex: 0
+    color:
+    - 1
+    - 1
+    - 1
+    - 1
+    positions:
+    - -47.70353
+    - -51.54
+    - -47.70353
+    - 46.02522
+    - 47.87
+    - 46.02522
+    - 47.87
+    - -51.54
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    uvs:
+    - 0.89497715
+    - 0.0042918324
+    - 0.89497715
+    - 0.15021461
+    - 0.9969559
+    - 0.15021461
+    - 0.9969559
+    - 0.0042918324
+    offsets: 0000000001000000020000000300000004000000
+    boneIndices: 05000000050000000500000005000000
+    triangles: 000000000100000002000000020000000300000000000000
+    clipTriangles: 
+  animations:
+  - name: idle
+    resourcePath: Skeletal/Clips/LaoHuJ_TX/idle
+    duration: 1.6667
+    deforms: []
