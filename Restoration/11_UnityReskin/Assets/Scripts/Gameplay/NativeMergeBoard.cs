@@ -118,6 +118,7 @@ namespace CoinMerge.Recovery
             preview.transform.position=new Vector3(worldX,previewLine.position.y,transform.position.z);
             player.savedPreviewX=(worldX-transform.position.x)*Units;
         }
+        public void CancelPendingDrop(){pendingDrop=false;}
         public bool RequestDrop()
         {
             if(GameOver||InputBlocked||pendingFail||HighestFlowActive||pendingHighest||!preview)return false;

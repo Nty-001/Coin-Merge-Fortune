@@ -40,6 +40,8 @@ namespace CoinMerge.Recovery
         bool firstStrong;
         int pendingReward;
         bool inputStarted,initialized;
+        bool applicationPaused,applicationUnfocused,discardResumeFrame;
+        float physicsElapsed;
         double displayedMoney=double.NaN;
         public bool automaticInput=true;
         public string saveNamespace="coinmerge.recovered.v1";
@@ -67,11 +69,23 @@ namespace CoinMerge.Recovery
         public void Tick(float dt)
         {
             if(!initialized)return;
-            if(gm&&gm.IsOpen){board.InputBlocked=true;inputStarted=false;return;}
+            if(applicationPaused||applicationUnfocused)return;
+            // Android may deliver both focus and pause callbacks, in either order.
+            // Never feed the elapsed background time into the live physics world.
+            if(discardResumeFrame){discardResumeFrame=false;physicsElapsed=0;return;}
+            if(dt<=0||float.IsNaN(dt)||float.IsInfinity(dt))return;
+            if(gm&&gm.IsOpen){board.InputBlocked=true;inputStarted=false;physicsElapsed=0;return;}
+            float step=Mathf.Clamp(board.Config.physicsStep,.005f,.02f);
+            int maxSteps=Mathf.Clamp(board.Config.maxPhysicsStepsPerFrame,1,12);
             board.InputBlocked=AdShowing||rating.gameObject.activeSelf||(menus&&menus.IsOpen)||rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
             if(automaticInput)ReadBoardInput();
-            board.Tick(dt);
-            if(!board.GameOver)Physics2D.Simulate(dt);
+            physicsElapsed=Mathf.Min(physicsElapsed+dt,step*maxSteps);
+            for(int i=0;i<maxSteps&&physicsElapsed>=step;i++)
+            {
+                board.Tick(step);
+                if(!board.GameOver)Physics2D.Simulate(step);
+                physicsElapsed-=step;
+            }
             if(ratingDelay>=0&&(ratingDelay-=dt)<=0){ratingDelay=-1;rating.Show();Player.gameRateTimes=1;Save();}
             if(guideDelay>=0&&(guideDelay-=dt)<=0){guideDelay=-1;guideView.Show(Player.guideStep,Player.fakeMoney);}
             if(rewardDelay>=0&&(rewardDelay-=dt)<=0)
@@ -260,7 +274,18 @@ namespace CoinMerge.Recovery
             remainingText.text=Locale.Label("45").Replace("%{0}",Math.Max(0,required-displayScore).ToString());
             highestText.text=lifecycle.HighestForDisplay(Player.coin1024Number).ToString();nextImage.sprite=board.SpriteFor(Player.savedNextCoinValue);
         }
-        void OnApplicationPause(bool paused){if(paused&&initialized){Player.windowsCointimes=0;Save();}}
+        public void OnApplicationPause(bool paused)
+        {
+            applicationPaused=paused;ResetFrameAfterLifecycleChange();
+            if(paused&&initialized){Player.windowsCointimes=0;Save();}
+        }
+        public void OnApplicationFocus(bool focused)
+        {applicationUnfocused=!focused;ResetFrameAfterLifecycleChange();}
+        void ResetFrameAfterLifecycleChange()
+        {
+            inputStarted=false;physicsElapsed=0;discardResumeFrame=true;
+            if(board)board.CancelPendingDrop();
+        }
         void OnApplicationQuit(){Save();}
         void OnDestroy()
         {
