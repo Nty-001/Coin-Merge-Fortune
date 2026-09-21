@@ -9,6 +9,8 @@ namespace CoinMerge.Recovery
     public sealed class RecoveredGameSession : MonoBehaviour
     {
         public NativeMergeBoard board;
+        public RecoveredCoinFeedback coinFeedback;
+        public MockAdPlaybackView adPlayback;
         public VersionGmPanel gm;
         public RecoveredMainMenus menus;
         public RecoveredNoticeTicker notice;
@@ -42,6 +44,7 @@ namespace CoinMerge.Recovery
         bool inputStarted,initialized;
         public bool IsBoardPointerHeld=>isActiveAndEnabled&&inputStarted&&!applicationPaused&&!applicationUnfocused&&!(gm&&gm.IsOpen);
         bool applicationPaused,applicationUnfocused,discardResumeFrame;
+        public bool IsApplicationSuspended=>applicationPaused||applicationUnfocused;
         float physicsElapsed;
         double displayedMoney=double.NaN;
         public bool automaticInput=true;
@@ -61,6 +64,7 @@ namespace CoinMerge.Recovery
             Physics2D.velocityIterations=board.Config.velocityIterations;Physics2D.positionIterations=board.Config.positionIterations;
             Physics2D.simulationMode=SimulationMode2D.Script;Physics2D.reuseCollisionCallbacks=true;
             if(mergeFeedback)mergeFeedback.Initialize(this);lifecycle.Initialize();
+            coinFeedback.Initialize();Sdk.Playback=adPlayback;
             playfieldLayout.Refresh();board.Initialize(Player);initialized=true;guideView.Show(Player.guideStep,Player.fakeMoney);
             // Step 1 opens only after the first merge, as GameScene does.
             if(Player.guideStep==1)guideView.gameObject.SetActive(false);
@@ -71,6 +75,7 @@ namespace CoinMerge.Recovery
         {
             if(!initialized)return;
             if(applicationPaused||applicationUnfocused)return;
+            if(AdShowing){board.InputBlocked=true;inputStarted=false;physicsElapsed=0;return;}
             // Android may deliver both focus and pause callbacks, in either order.
             // Never feed the elapsed background time into the live physics world.
             if(discardResumeFrame){discardResumeFrame=false;physicsElapsed=0;return;}
@@ -78,7 +83,7 @@ namespace CoinMerge.Recovery
             if(gm&&gm.IsOpen){board.InputBlocked=true;inputStarted=false;physicsElapsed=0;return;}
             float step=Mathf.Clamp(board.Config.physicsStep,.005f,.02f);
             int maxSteps=Mathf.Clamp(board.Config.maxPhysicsStepsPerFrame,1,12);
-            board.InputBlocked=AdShowing||rating.gameObject.activeSelf||(menus&&menus.IsOpen)||rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
+            board.InputBlocked=board.Reviving||AdShowing||rating.gameObject.activeSelf||(menus&&menus.IsOpen)||rewardView.gameObject.activeSelf||failView.gameObject.activeSelf||wheelView.gameObject.activeSelf||wheelRewardView.gameObject.activeSelf||(guideView.gameObject.activeSelf&&Player.guideStep!=0);
             if(automaticInput)ReadBoardInput();
             physicsElapsed=Mathf.Min(physicsElapsed+dt,step*maxSteps);
             for(int i=0;i<maxSteps&&physicsElapsed>=step;i++)
@@ -137,6 +142,7 @@ namespace CoinMerge.Recovery
             {
                 board.InputBlocked=true;
                 var outcome=await ShowGameplayAd("1_A");
+                if(!this)return;
                 // HWLshowAd=false never invokes either callback; the original window stays at 22.
                 if(outcome!=AdOutcome.Unavailable)Player.windowsCointimes=0;
                 if(outcome==AdOutcome.Completed)ShowReward(2);else board.InputBlocked=false;
@@ -159,7 +165,7 @@ namespace CoinMerge.Recovery
             if(kind==1)board.Revive();
             if(kind==4)board.FinishHighestCoinFlow();
             if(kind==5&&Player.guideStep==2){Player.guideStep=3;guideView.Show(3,Player.fakeMoney);}
-            board.InputBlocked=false;Refresh();Save();
+            board.InputBlocked=board.Reviving;Refresh();Save();
         }
         void OnGuideAdvanced()
         {
@@ -173,8 +179,10 @@ namespace CoinMerge.Recovery
         void OnFailed(){rewardDelay=guideDelay=wheelDelay=-1;rewardView.gameObject.SetActive(false);wheelView.gameObject.SetActive(false);wheelRewardView.gameObject.SetActive(false);failView.Show(Player);Save();}
         async void OnRevive()
         {
+            if(AdShowing)return;
             failView.revive.interactable=false;
             var outcome=await ShowGameplayAd("3_A");
+            if(!this)return;
             if(outcome==AdOutcome.Completed){failView.gameObject.SetActive(false);ShowReward(1);}
             else failView.revive.interactable=true;
         }
@@ -206,7 +214,8 @@ namespace CoinMerge.Recovery
             if(wheelRewardView.Settled||wheelRewardView.WatchingAd)return;
             if(wheelRewardView.RequiresAd)
             {
-                wheelRewardView.WatchingAd=true;var outcome=await ShowGameplayAd("2_A");wheelRewardView.WatchingAd=false;
+                wheelRewardView.WatchingAd=true;var outcome=await ShowGameplayAd("2_A");
+                if(!this)return;wheelRewardView.WatchingAd=false;
                 // Both original success and error callbacks settle; a request that never starts does not.
                 if(outcome==AdOutcome.Unavailable)return;
             }
@@ -218,8 +227,11 @@ namespace CoinMerge.Recovery
         }
         async Task<AdOutcome> ShowGameplayAd(string placement)
         {
+            if(AdShowing)return AdOutcome.Unavailable;
             AdOutcome outcome;AdShowing=true;
-            try{outcome=await Sdk.ShowRewarded(placement);}finally{AdShowing=false;}
+            inputStarted=false;board.CancelPendingDrop();physicsElapsed=0;board.InputBlocked=true;
+            try{outcome=await Sdk.ShowRewarded(placement);}finally{AdShowing=false;discardResumeFrame=true;}
+            if(!this)return outcome;
             // HWL.addadnum -> PlayData.add_show_video, on the successful mock callback.
             if(outcome==AdOutcome.Completed){Player.watch_video_count++;Save();}
             return outcome;
@@ -245,7 +257,7 @@ namespace CoinMerge.Recovery
         public void GmSetNextWheel(int index){gmNextWheelIndex=Mathf.Clamp(index,0,board.Config.rules.lotteryRewards.Length-1);}
         public void GmRefresh(){Refresh();if(menus)menus.Refresh();Save();}
         public void RefreshPresentation(){Refresh();}
-        public bool GmCanTrigger=>initialized&&!board.GameOver&&!(menus&&menus.IsOpen)&&!rewardView.gameObject.activeSelf&&!wheelView.gameObject.activeSelf&&!wheelRewardView.gameObject.activeSelf&&!guideView.gameObject.activeSelf&&!rating.gameObject.activeSelf;
+        public bool GmCanTrigger=>initialized&&!AdShowing&&!board.GameOver&&!(menus&&menus.IsOpen)&&!rewardView.gameObject.activeSelf&&!wheelView.gameObject.activeSelf&&!wheelRewardView.gameObject.activeSelf&&!guideView.gameObject.activeSelf&&!rating.gameObject.activeSelf;
         public void GmPrepareDrop(int count)
         {Player.guideStep=9999;guideView.gameObject.SetActive(false);Player.windowsCointimes=Math.Max(0,count-1);Player.dropCointimes=Math.Max(Player.dropCointimes,count-1);rewardDelay=-1;GmRefresh();}
         void ApplyLocale()

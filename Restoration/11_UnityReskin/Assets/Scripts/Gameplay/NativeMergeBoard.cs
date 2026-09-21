@@ -8,6 +8,9 @@ namespace CoinMerge.Recovery
         public GameBalanceConfig config;
         public LifecycleVisualConfig visualConfig;
         public bool HighestFlowActive {get;private set;}
+        public bool Reviving {get;private set;}
+        public event Action<NativeMergeCoin> CoinContact;
+        public void NotifyCoinContact(NativeMergeCoin coin){CoinContact?.Invoke(coin);}
         public event Action<NativeMergeCoin> FailureStarted;
         public NativeMergeCoin coinPrefab;
         public Transform coinContainer,ground,previewLine,deadLine;
@@ -31,6 +34,8 @@ namespace CoinMerge.Recovery
         readonly Dictionary<int,Sprite> sprites=new Dictionary<int,Sprite>(16);
         readonly Queue<MergePair> merges=new Queue<MergePair>(64);
         readonly List<NativeMergeCoin> reviveOrder=new List<NativeMergeCoin>(128);
+        readonly List<NativeMergeCoin> reviveRemoving=new List<NativeMergeCoin>(64);
+        float reviveElapsed;
         struct MergePair {public NativeMergeCoin first,second;}
         PlayerProgress player;
         NativeMergeCoin preview,pendingFail,pendingHighest;
@@ -93,7 +98,7 @@ namespace CoinMerge.Recovery
             active.Remove(coin);coin.Recycle();pool.Push(coin);
             if(preview==coin)preview=null;
         }
-        void ClearBoard(){for(int i=active.Count-1;i>=0;i--)Remove(active[i]);merges.Clear();}
+        void ClearBoard(){Reviving=false;reviveRemoving.Clear();for(int i=active.Count-1;i>=0;i--)Remove(active[i]);merges.Clear();}
         int RandomDrop()
         {
             int highest=0;
@@ -176,6 +181,7 @@ namespace CoinMerge.Recovery
         public void Tick(float dt)
         {
             if(player==null)return;
+            if(Reviving){TickRevive(dt);return;}
             if(GameOver){if(failWait>=0&&(failWait-=dt)<=0){failWait=-1;Failed?.Invoke();}return;}
             while(merges.Count>0)CompleteMerge(merges.Dequeue());
             for(int i=0;i<active.Count;i++)active[i].Tick(dt);
@@ -228,14 +234,38 @@ namespace CoinMerge.Recovery
         }
         public int Revive()
         {
+            if(Reviving)return 0;
             reviveOrder.Clear();int highest=0;
             for(int i=0;i<active.Count;i++)if(!active[i].IsPreview){reviveOrder.Add(active[i]);highest=Mathf.Max(highest,active[i].value);}
             reviveOrder.Sort(TopFirst);
             int target=Mathf.Max(1,Mathf.CeilToInt(reviveOrder.Count/3f)),removed=0;
-            for(int i=0;i<reviveOrder.Count&&removed<target;i++)if(reviveOrder[i].value<highest){Remove(reviveOrder[i]);removed++;}
+            reviveRemoving.Clear();reviveElapsed=0;failWait=-1;
+            for(int i=0;i<active.Count;i++){active[i].visual.color=Color.white;active[i].visual.transform.localScale=Vector3.one;}
+            for(int i=0;i<reviveOrder.Count&&removed<target;i++)if(reviveOrder[i].value<highest)
+            {var coin=reviveOrder[i];coin.Freeze();coin.IsMerging=true;reviveRemoving.Add(coin);removed++;}
+            if(removed==0)FinishRevive();
+            else{Reviving=GameOver=InputBlocked=true;Capture();}
+            return removed;
+        }
+        void TickRevive(float dt)
+        {
+            reviveElapsed+=dt;
+            bool finished=true;
+            for(int i=0;i<reviveRemoving.Count;i++)
+            {
+                var coin=reviveRemoving[i];if(!coin.IsAlive)continue;
+                float t=Mathf.Clamp01((reviveElapsed-i*visualConfig.reviveRemoveStagger)/Mathf.Max(.001f,visualConfig.reviveRemoveDuration));
+                coin.transform.localScale=Vector3.one*(1-t);coin.visual.color=new Color(1,1,1,1-t);
+                if(t>=1)Remove(coin);else finished=false;
+            }
+            if(finished)FinishRevive();
+        }
+        void FinishRevive()
+        {
+            Reviving=false;reviveRemoving.Clear();
             GameOver=InputBlocked=HighestFlowActive=false;pendingFail=pendingHighest=null;failWait=checkWait=-1;
             for(int i=0;i<active.Count;i++){active[i].IsMerging=false;active[i].visual.color=Color.white;active[i].visual.transform.localScale=Vector3.one;active[i].transform.localScale=Vector3.one;active[i].SetupPhysics(false);}
-            if(!preview)CreatePreview();Capture();Changed?.Invoke();return removed;
+            if(!preview)CreatePreview();Capture();Changed?.Invoke();
         }
         static int TopFirst(NativeMergeCoin a,NativeMergeCoin b)=>(b.Position.y+b.HalfHeight).CompareTo(a.Position.y+a.HalfHeight);
         public void Capture()

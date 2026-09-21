@@ -1,0 +1,63 @@
+PASS
+Pause/focus overlap preserves body state, cycle 0
+Resume frame preserves position, rotation, sleep and count, cycle 0
+Pause/focus overlap preserves body state, cycle 1
+Resume frame preserves position, rotation, sleep and count, cycle 1
+Pause/focus overlap preserves body state, cycle 2
+Resume frame preserves position, rotation, sleep and count, cycle 2
+Pause/focus overlap preserves body state, cycle 3
+Resume frame preserves position, rotation, sleep and count, cycle 3
+Pause/focus overlap preserves body state, cycle 4
+Resume frame preserves position, rotation, sleep and count, cycle 4
+Pause/focus overlap preserves body state, cycle 5
+Resume frame preserves position, rotation, sleep and count, cycle 5
+Pause/focus overlap preserves body state, cycle 6
+Resume frame preserves position, rotation, sleep and count, cycle 6
+Pause/focus overlap preserves body state, cycle 7
+Resume frame preserves position, rotation, sleep and count, cycle 7
+Pause/focus overlap preserves body state, cycle 8
+Resume frame preserves position, rotation, sleep and count, cycle 8
+Pause/focus overlap preserves body state, cycle 9
+Resume frame preserves position, rotation, sleep and count, cycle 9
+Pause/focus overlap preserves body state, cycle 10
+Resume frame preserves position, rotation, sleep and count, cycle 10
+Pause/focus overlap preserves body state, cycle 11
+Resume frame preserves position, rotation, sleep and count, cycle 11
+Pause/focus overlap preserves body state, cycle 12
+Resume frame preserves position, rotation, sleep and count, cycle 12
+Pause/focus overlap preserves body state, cycle 13
+Resume frame preserves position, rotation, sleep and count, cycle 13
+Pause/focus overlap preserves body state, cycle 14
+Resume frame preserves position, rotation, sleep and count, cycle 14
+Pause/focus overlap preserves body state, cycle 15
+Resume frame preserves position, rotation, sleep and count, cycle 15
+Pause/focus overlap preserves body state, cycle 16
+Resume frame preserves position, rotation, sleep and count, cycle 16
+Pause/focus overlap preserves body state, cycle 17
+Resume frame preserves position, rotation, sleep and count, cycle 17
+Pause/focus overlap preserves body state, cycle 18
+Resume frame preserves position, rotation, sleep and count, cycle 18
+Pause/focus overlap preserves body state, cycle 19
+Resume frame preserves position, rotation, sleep and count, cycle 19
+Focus-first resume stays suspended until pause ends
+Pause-first suspension also discards the resume frame
+Settled coin remains stable after normal simulation resumes
+Ten-second stall matches bounded fixed steps instead of one oversized physics step
+In-flight coin keeps velocity through pause/resume
+In-flight coin continues falling normally after resume
+Drop can be queued during preview spawn animation
+Interrupted queued input does not drop a coin after resume
+Fresh input still drops after resume
+Stack coin retains exact body state after resume: 10
+Stack coin retains exact body state after resume: 50
+Stack coin retains exact body state after resume: 100
+Stack coin retains exact body state after resume: 200
+Stack coin retains exact body state after resume: 20
+Stack coin retains exact body state after resume: 5
+Settled stack does not scatter after resume: 10
+Settled stack does not scatter after resume: 50
+Settled stack does not scatter after resume: 100
+Settled stack does not scatter after resume: 200
+Settled stack does not scatter after resume: 20
+Settled stack does not scatter after resume: 5
+Board remains saveable after lifecycle transitions
