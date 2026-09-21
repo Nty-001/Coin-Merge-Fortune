@@ -123,6 +123,15 @@ namespace CoinMerge.Recovery
         {
             if(GameOver||InputBlocked||pendingFail||HighestFlowActive||pendingHighest||!preview)return false;
             if(preview.SpawnLocked){pendingDrop=true;return true;}
+            float bottom=preview.Position.y-preview.Radius,hit=GetDropLandingBottom();
+            preview.Release(Mathf.Max(0,bottom-hit)*Units);preview=null;pendingDrop=false;
+            player.savedCurrentCoinValue=player.savedNextCoinValue;player.savedNextCoinValue=RandomDrop();
+            previewWait=config.rules.flow.previewDelay;checkWait=1;
+            Capture();Dropped?.Invoke();Changed?.Invoke();return true;
+        }
+        public float GetDropLandingBottom()
+        {
+            if(!preview)return ground.position.y;
             float bottom=preview.Position.y-preview.Radius,hit=ground.position.y;
             for(int i=0;i<active.Count;i++)
             {
@@ -132,10 +141,7 @@ namespace CoinMerge.Recovery
                 float y=c.Position.y+Mathf.Sqrt(Mathf.Max(0,r*r-dx*dx))-preview.Radius;
                 if(y<bottom&&y>hit)hit=y;
             }
-            preview.Release(Mathf.Max(0,bottom-hit)*Units);preview=null;pendingDrop=false;
-            player.savedCurrentCoinValue=player.savedNextCoinValue;player.savedNextCoinValue=RandomDrop();
-            previewWait=config.rules.flow.previewDelay;checkWait=1;
-            Capture();Dropped?.Invoke();Changed?.Invoke();return true;
+            return hit;
         }
         public void TryMergeContact(NativeMergeCoin first,Collider2D collider)
         {
