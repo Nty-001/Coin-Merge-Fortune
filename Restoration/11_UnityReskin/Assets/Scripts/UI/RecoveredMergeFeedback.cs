@@ -99,6 +99,7 @@ namespace CoinMerge.Recovery
         public void Tick(float dt)
         {
             if(!initialized)return;
+            if(session.AdShowing||session.IsApplicationSuspended)return;
             if(session.board.GameOver){if(!wasOver){Clear();session.RefreshPresentation();}wasOver=true;return;}wasOver=false;
             float comboStep=dt;
             if(chainRemaining>=0&&(chainRemaining-=dt)<=0){if(chain>=2)comboStep=-chainRemaining;ShowCombo(chain);chainRemaining=-1;chain=0;}

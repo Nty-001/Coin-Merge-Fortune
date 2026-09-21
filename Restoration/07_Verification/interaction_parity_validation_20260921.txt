@@ -1,0 +1,42 @@
+PASS
+Authored scene contains feedback, blocking mock canvas and bound Buttons
+Original sfx_bom drop clip resolves at runtime
+Original collision skeleton and playback speed
+Original Android 20 ms / 255 pulse parameters
+Drop triggers original sound
+Music preference suppresses drop sound
+Real non-merge ground collision triggers effect and vibration once
+Resting contacts do not replay collision effect
+Finished collision effect returns to pool
+Vibration off preserves collision visuals and recycled coin can retrigger
+Real merge also triggers enabled haptic feedback
+Revive selects top third without immediate deletion and blocks input
+First coin shrinks/fades while second waits its 0.04 s stagger
+Repeated revive cannot restart an active removal
+First coin completes before second
+Animation completion preserves highest coin and resumes play (removed objects may be pooled as preview)
+Highest-only board resumes without a stuck animation
+Mock ad starts pending and cannot close successfully early
+Early successful-close request ignored
+Concurrent ads are rejected
+Background time does not advance playback
+No reward before playback duration
+Playback completion waits for user close
+Close resolves success and releases ad lock
+Early cancel returns cancellation
+Failure resolves after waiting and uses request-time outcome
+Unavailable ad never opens playback
+Real revive button enters waiting state
+Gameplay and reward remain frozen during ad
+Cancelled revive can retry without reward
+Successful revive ad follows original reward popup branch exactly once
+Closing revive reward resumes eligible board
+22nd drop enters original 1_A waiting branch
+Completed drop ad opens double reward and resets counter
+Wheel reward enters original 2_A waiting branch
+Wheel reward cannot settle while ad is pending
+Wheel error/cancel callback retains original settlement behavior
+Audio test starts an actual playing source
+Ad pauses currently playing audio
+Ad close resumes allowed audio
+Ad close respects sound switch changed while pending

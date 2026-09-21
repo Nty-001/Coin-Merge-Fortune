@@ -11,6 +11,8 @@ namespace CoinMerge.Recovery
         public bool IsPreview {get;private set;}
         public bool IsMerging {get;internal set;}
         public bool IsAlive {get;private set;}
+        public int Generation {get;private set;}
+        bool collisionPlayed;
         public float Radius=>definition.visualWidthPixels*.5f/board.Units;
         public float HalfHeight=>definition.visualHeightPixels*.5f/board.Units;
         public bool SpawnLocked=>spawnElapsed<spawnDuration;
@@ -27,6 +29,7 @@ namespace CoinMerge.Recovery
         {Initialize(owner);Configure(newValue,Vector2.zero,false,false);}
         public void Configure(int newValue,Vector2 position,bool preview,bool animate,bool merged=false)
         {
+            Generation++;collisionPlayed=false;
             definition=RecoveredGameRules.Coin(board.Config.rules,newValue);value=newValue;
             IsPreview=preview;IsMerging=false;IsAlive=true;contacts=0;settling=relaxOnContact=false;
             body.simulated=false;transform.localScale=Vector3.one;
@@ -85,6 +88,7 @@ namespace CoinMerge.Recovery
         {
             if(!IsAlive||IsPreview||IsMerging||board.GameOver)return;
             contacts++;
+            if(!collisionPlayed&&contacts==1){collisionPlayed=true;board.NotifyCoinContact(this);}
             if(relaxOnContact&&!board.IsSideWall(contact.collider))
             {relaxOnContact=false;settling=true;settleElapsed=0;body.collisionDetectionMode=CollisionDetectionMode2D.Discrete;}
             board.TryMergeContact(this,contact.collider);

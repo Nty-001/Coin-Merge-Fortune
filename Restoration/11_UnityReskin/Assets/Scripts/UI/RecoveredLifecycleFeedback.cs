@@ -70,6 +70,7 @@ namespace CoinMerge.Recovery
         void Update(){if(session.Player!=null)Tick(Time.deltaTime);}
         public void Tick(float dt)
         {
+            if(session.AdShowing||session.IsApplicationSuspended)return;
             if(HighestPhase!=0&&!session.board.GameOver)TickHighest(dt);
             if(highestPulse>=0){highestPulse+=dt;float period=config.highestPulseUp+config.highestPulseDown;float t=highestPulse%period;highestTarget.localScale=Vector3.one*(t<config.highestPulseUp?Mathf.Lerp(1,config.highestPulseScale,Out(t/config.highestPulseUp)):Mathf.Lerp(config.highestPulseScale,1,In((t-config.highestPulseUp)/config.highestPulseDown)));if(highestPulse>=period*2){highestPulse=-1;highestTarget.localScale=Vector3.one;}}
             if(moneyPulse>=0){moneyPulse+=dt;moneyTarget.localScale=Vector3.one*(moneyPulse<config.moneyPulseUp?Mathf.Lerp(1,config.moneyPulseScale,Out(moneyPulse/config.moneyPulseUp)):Mathf.Lerp(config.moneyPulseScale,1,In((moneyPulse-config.moneyPulseUp)/config.moneyPulseDown)));if(moneyPulse>=config.moneyPulseUp+config.moneyPulseDown){moneyPulse=-1;moneyTarget.localScale=Vector3.one;}}
@@ -87,6 +88,7 @@ namespace CoinMerge.Recovery
                     if(t>=1){f.image.gameObject.SetActive(false);flights.RemoveAt(i);pool.Push(f);if(--f.batch.remaining==0){CompletedMoneyBatches++;moneyPulse=0;plusTime=0;plusText.text="+"+session.Locale.Money(f.batch.amount);plus.localPosition=plusStart;plusAlpha.alpha=1;plus.gameObject.SetActive(true);}}
                 }
             }
+            if(session.board.Reviving)failTime=-1;
             if(failTime>=0)TickFailure(dt);
             warningPoll-=dt;if(warningPoll<=0){warningPoll=config.failureWarningInterval;RefreshWarning();}
             if(warningTime>=0){warningTime+=dt;float t=warningTime/config.warningStep;float alpha=t<1?Mathf.Lerp(0,1,t):t<2?Mathf.Lerp(1,170/255f,t-1):Mathf.Lerp(170/255f,1,t-2);var c=warning.color;c.a=alpha;warning.color=c;}

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 namespace CoinMerge.Recovery
 {
     public enum AdOutcome { Completed, Cancelled, Unavailable, Failed }
+    public enum AdKind { Rewarded, Interstitial }
     public sealed class WithdrawalRequest
     {
         public string RequestId, ProductId, Channel, Account;
@@ -15,11 +16,15 @@ namespace CoinMerge.Recovery
         public bool Accepted; public string RequestId, Status, Message;
     }
     public interface IAdFacade { Task<AdOutcome> ShowRewarded(string placement); Task<AdOutcome> ShowInterstitial(string placement); }
+    public interface IMockAdPlayback {Task<AdOutcome> Play(AdKind kind,string placement,AdOutcome outcome);}
     public interface IWithdrawalFacade { Task<WithdrawalResult> Request(WithdrawalRequest request); IReadOnlyList<WithdrawalResult> History { get; } }
     /// <summary>Local deterministic mock. Never makes network requests or transfers money.</summary>
     public sealed class MockSdkFacade : IAdFacade, IWithdrawalFacade
     {
         public AdOutcome NextAdOutcome = AdOutcome.Completed;
+        public IMockAdPlayback Playback {get;set;}
+        public bool AdInProgress {get;private set;}
+        public event Action<AdKind, string> AdRequested;
         public bool FailNextWithdrawal;
         public readonly List<string> Trace = new List<string>();
         readonly List<WithdrawalResult> history = new List<WithdrawalResult>();
@@ -27,9 +32,22 @@ namespace CoinMerge.Recovery
         public IReadOnlyList<WithdrawalResult> History => history;
         public void OpenMarket(){Trace.Add("market.request:mock");}
         public Task<AdOutcome> ShowRewarded(string placement)
-        { Trace.Add("ad.request:" + placement); Trace.Add("ad.result:" + NextAdOutcome); return Task.FromResult(NextAdOutcome); }
+        {return Show(AdKind.Rewarded,placement);}
         public Task<AdOutcome> ShowInterstitial(string placement)
-        { Trace.Add("interstitial.request:" + placement); return Task.FromResult(NextAdOutcome); }
+        {return Show(AdKind.Interstitial,placement);}
+        async Task<AdOutcome> Show(AdKind kind,string placement)
+        {
+            if(AdInProgress)return AdOutcome.Unavailable;
+            var outcome=NextAdOutcome;AdInProgress=true;
+            try
+            {
+                Trace.Add((kind==AdKind.Rewarded?"ad.request:":"interstitial.request:")+placement);
+                AdRequested?.Invoke(kind,placement);
+                if(outcome!=AdOutcome.Unavailable&&Playback!=null)outcome=await Playback.Play(kind,placement,outcome);
+                Trace.Add("ad.result:"+outcome);return outcome;
+            }
+            finally{AdInProgress=false;}
+        }
         public Task<WithdrawalResult> Request(WithdrawalRequest request)
         {
             if (request == null) throw new ArgumentNullException(nameof(request));

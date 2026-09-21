@@ -22,6 +22,7 @@ namespace CoinMerge.Recovery
         public Vector2[] failureScales={new Vector2(1.16f,.8f),new Vector2(.9f,1.14f),new Vector2(1.1f,.88f),new Vector2(.94f,1.08f),new Vector2(1.04f,.96f),Vector2.one};
         public Color failureTint=new Color(1,75/255f,75/255f,1);
         public float warningStep=.18f,revivePulseTime=1,revivePulseScale=1.05f;
+        public float reviveRemoveStagger=.04f,reviveRemoveDuration=.12f;
         public string[] sounds={"Lifecycle/Audio/fly_red_bag","Lifecycle/Audio/redbag_show","Lifecycle/Audio/reward","Lifecycle/Audio/guide_redbag_show","Lifecycle/Audio/collect","Lifecycle/Audio/fail"};
         public float FailureDuration(int count)
         {if(count==0)return 0;float result=Mathf.Min(count-1,failureStaggerModulo-1)*failureStagger;foreach(float t in failureTimes)result+=t;return result;}
