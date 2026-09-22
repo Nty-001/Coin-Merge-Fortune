@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path');
+const sharp=require('C:/Users/001/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const art=path.join(__dirname,'Staging/Assets/Resources/HomeReskin');
+(async()=>{
+ const inputs=[];const values=[1,2,5,10,20,50,100,200,500,1000,2000];
+ for(let i=0;i<values.length;i++)inputs.push({input:await sharp(path.join(art,`Coin${values[i]}.png`)).resize(190,190,{fit:'contain'}).png().toBuffer(),left:35+(i%4)*235,top:35+Math.floor(i/4)*225});
+ inputs.push({input:await sharp(path.join(art,'GoldButton.png')).resize(320,144).png().toBuffer(),left:35,top:735});
+ for(let i=0;i<2;i++)inputs.push({input:await sharp(path.join(art,i?'HomeRules.png':'HomeSettings.png')).resize(120,120).png().toBuffer(),left:445+i*160,top:745});
+ await sharp({create:{width:960,height:920,channels:4,background:'#7accfa'}}).composite(inputs).png().toFile(path.join(__dirname,'PreparedMaterials.png'));
+ fs.writeFileSync(path.join(__dirname,'REVIEW.html'),`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>主界面 R1 · 待确认范围</title><style>body{font:16px system-ui;background:#edf7ff;color:#173954;margin:32px;max-width:1200px}h1{font-size:28px}section{display:flex;gap:24px;align-items:flex-start}figure{margin:0;flex:1}img{max-width:100%;border-radius:12px}figcaption{font-weight:700;margin:12px 0}aside{padding:16px;background:#fff1c6;border-radius:12px;margin:18px 0}li{margin:10px 0}</style><h1>主界面 R1</h1><p>目标：蓝天彩虹、玻璃面板、金边绿按钮、用户指定的 11 级筹码。独立副本：Restoration/11_UnityReskin。</p><aside>这是目标图和已准备的独立素材，尚非 Unity 运行截图。自动审批要求确认版本和布局/落点圆点范围后，才能运行场景作者工具。</aside><section><figure><figcaption>用户指定目标图</figcaption><img src="Sources/TargetHome.png"></figure><figure><figcaption>已准备素材 · 真实透明底切图</figcaption><img src="PreparedMaterials.png"><ul><li>11 级筹码来源 RGB 逐字节一致。</li><li>按钮为空白底图，文字和数值保持原生动态组件。</li><li>玩法碰撞、合成、存档和商业化分支保留。</li><li>待确认：按图调整主界面布局与添加白色落点圆点。</li><li>待验证：Unity 导入、真实画面、按钮点击和地区文字。</li></ul></figure></section></html>`);
+ console.log('Wrote material board and scope review. No runtime verification claimed.');
+})().catch(e=>{console.error(e);process.exitCode=1});
