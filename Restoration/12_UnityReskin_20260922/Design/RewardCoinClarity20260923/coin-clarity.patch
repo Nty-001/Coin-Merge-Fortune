@@ -1,0 +1,553 @@
+--- a/Restoration/12_UnityReskin_20260922/Assets/Scripts/Animation/NativeSkeletonGraphic.cs
++++ b/Restoration/12_UnityReskin_20260922/Assets/Scripts/Animation/NativeSkeletonGraphic.cs
+@@ -7,17 +7,33 @@
+     {
+         // Authored replacement layers can reuse the source animation without drawing its old artwork.
+         public int[] hiddenSlots=System.Array.Empty<int>();
++        // Optional high-resolution attachment, authored alongside the original mesh UVs.
++        // Keeping it in this mesh preserves deformation, clipping and slot draw order.
++        public int replacementAttachment=-1;
++        public string replacementTexturePath;
++        public Vector2[] replacementUVs=System.Array.Empty<Vector2>();
+         NativeSkeletonPlayer player;
+         Texture2D atlas;
++        Texture2D replacementTexture;
++        Material replacementMaterial;
+         Vector2[] world,clipPoints;
+         readonly Vector2[] triangleClip=new Vector2[3];
+         ClipVertex[] bufferA,bufferB;
+-        struct ClipVertex {public Vector2 point,uv;}
++        struct ClipVertex {public Vector2 point,uv;public float replacement;}
+         public override Texture mainTexture=>atlas?atlas:Texture2D.whiteTexture;
+         public void Bind(NativeSkeletonPlayer owner)
+         {
+             player=owner;atlas=Resources.Load<Texture2D>(owner.Data.texturePath);
+             if(!atlas)throw new System.InvalidOperationException("Missing skeletal atlas: "+owner.Data.texturePath);
++            if(replacementAttachment>=0&&!string.IsNullOrEmpty(replacementTexturePath))
++            {
++                if(replacementAttachment>=owner.Data.attachments.Length||replacementUVs.Length!=owner.Data.attachments[replacementAttachment].VertexCount)
++                    throw new System.InvalidOperationException("Replacement attachment UVs differ from the authored mesh.");
++                replacementTexture=Resources.Load<Texture2D>(replacementTexturePath);
++                if(!replacementTexture)throw new System.InvalidOperationException("Missing replacement attachment texture: "+replacementTexturePath);
++                replacementMaterial=new Material(material){name=material.name+" (attachment texture)"};
++                replacementMaterial.SetTexture("_ReplacementTex",replacementTexture);material=replacementMaterial;
++            }
+             world=new Vector2[owner.MaxVertices];clipPoints=new Vector2[owner.MaxVertices];
+             bufferA=new ClipVertex[owner.MaxVertices+8];bufferB=new ClipVertex[owner.MaxVertices+8];SetAllDirty();
+         }
+@@ -53,7 +69,10 @@
+             }
+         }
+         ClipVertex Vertex(NativeAttachmentModel attachment,int index)
+-        {return new ClipVertex {point=world[index],uv=new Vector2(attachment.uvs[index*2],attachment.uvs[index*2+1])};}
++        {
++            bool replace=replacementTexture&&replacementAttachment>=0&&attachment==player.Data.attachments[replacementAttachment];
++            return new ClipVertex {point=world[index],uv=replace?replacementUVs[index]:new Vector2(attachment.uvs[index*2],attachment.uvs[index*2+1]),replacement=replace?1:0};
++        }
+         void Clip(VertexHelper output,ClipVertex a,ClipVertex b,ClipVertex c,Vector2[] polygon,int length,Color tint,float additive)
+         {
+             float area=0;for(int i=0;i<length;i++)area+=Cross(polygon[i],polygon[(i+1)%length]);
+@@ -71,7 +90,7 @@
+                     if(inside!=previousInside)
+                     {
+                         float fraction=previousDistance/(previousDistance-distance);
+-                        result[next++]=new ClipVertex {point=Vector2.LerpUnclamped(previous.point,current.point,fraction),uv=Vector2.LerpUnclamped(previous.uv,current.uv,fraction)};
++                        result[next++]=new ClipVertex {point=Vector2.LerpUnclamped(previous.point,current.point,fraction),uv=Vector2.LerpUnclamped(previous.uv,current.uv,fraction),replacement=current.replacement};
+                     }
+                     if(inside)result[next++]=current;
+                     previous=current;previousDistance=distance;
+@@ -87,7 +106,16 @@
+         }
+         static void Add(VertexHelper output,ClipVertex source,Color tint,float additive)
+         {
+-            var vertex=UIVertex.simpleVert;vertex.position=source.point;vertex.uv0=source.uv;vertex.uv1=new Vector4(additive,0,0,0);vertex.color=tint;output.AddVert(vertex);
++            var vertex=UIVertex.simpleVert;vertex.position=source.point;vertex.uv0=source.uv;vertex.uv1=new Vector4(additive,source.replacement,0,0);vertex.color=tint;output.AddVert(vertex);
++        }
++        protected override void OnDestroy()
++        {
++            base.OnDestroy();
++            if(replacementMaterial)
++            {
++                if(Application.isPlaying)Destroy(replacementMaterial);
++                else DestroyImmediate(replacementMaterial);
++            }
+         }
+     }
+ }
+--- a/Restoration/12_UnityReskin_20260922/Assets/Shaders/NativeSkeletalUI.shader
++++ b/Restoration/12_UnityReskin_20260922/Assets/Shaders/NativeSkeletalUI.shader
+@@ -3,6 +3,7 @@
+     Properties
+     {
+         [PerRendererData] _MainTex ("Atlas", 2D) = "white" {}
++        _ReplacementTex ("High resolution attachment", 2D) = "white" {}
+         _Color ("Tint", Color) = (1,1,1,1)
+         _StencilComp ("Stencil Comparison", Float) = 8
+         _Stencil ("Stencil ID", Float) = 0
+@@ -29,15 +30,17 @@
+             #include "UnityCG.cginc"
+             #include "UnityUI.cginc"
+             struct Input { float4 vertex:POSITION; fixed4 color:COLOR; float2 uv:TEXCOORD0; float2 mode:TEXCOORD1; };
+-            struct Output { float4 vertex:SV_POSITION; fixed4 color:COLOR; float2 uv:TEXCOORD0; float4 local:TEXCOORD1; float mode:TEXCOORD2; };
+-            sampler2D _MainTex; fixed4 _Color; float4 _ClipRect;
++            struct Output { float4 vertex:SV_POSITION; fixed4 color:COLOR; float2 uv:TEXCOORD0; float4 local:TEXCOORD1; float2 mode:TEXCOORD2; };
++            sampler2D _MainTex, _ReplacementTex; fixed4 _Color; float4 _ClipRect;
+             Output vert(Input v)
+             {
+-                Output o; o.local=v.vertex; o.vertex=UnityObjectToClipPos(v.vertex); o.color=v.color*_Color; o.uv=v.uv; o.mode=v.mode.x; return o;
++                Output o; o.local=v.vertex; o.vertex=UnityObjectToClipPos(v.vertex); o.color=v.color*_Color; o.uv=v.uv; o.mode=v.mode; return o;
+             }
+             fixed4 frag(Output i):SV_Target
+             {
+-                fixed4 c=tex2D(_MainTex,i.uv)*i.color;
++                fixed4 c;
++                if(i.mode.y>0.5) c=tex2D(_ReplacementTex,i.uv)*i.color;
++                else c=tex2D(_MainTex,i.uv)*i.color;
+                 #ifdef UNITY_UI_CLIP_RECT
+                 c.a*=UnityGet2DClipping(i.local.xy,_ClipRect);
+                 #endif
+@@ -45,7 +48,7 @@
+                 clip(c.a-0.001);
+                 #endif
+                 c.rgb*=c.a;
+-                c.a*=1-i.mode;
++                c.a*=1-i.mode.x;
+                 return c;
+             }
+             ENDCG
+--- a/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/RecoveredMain.prefab
++++ b/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/RecoveredMain.prefab
+@@ -115038,6 +115038,32 @@
+     m_PersistentCalls:
+       m_Calls: []
+   hiddenSlots: 
++  replacementAttachment: 4
++  replacementTexturePath: RulesReskin/Chip2000
++  replacementUVs:
++  - {x: 0.5883, y: 0.99011}
++  - {x: 0.68216, y: 0.96511}
++  - {x: 0.79806, y: 0.89909}
++  - {x: 0.88874, y: 0.79466}
++  - {x: 0.96434, y: 0.64849}
++  - {x: 0.98049, y: 0.55403}
++  - {x: 0.97901, y: 0.41009003}
++  - {x: 0.93133, y: 0.2704}
++  - {x: 0.8738, y: 0.18734998}
++  - {x: 0.75929, y: 0.07925999}
++  - {x: 0.64089, y: 0.033879995}
++  - {x: 0.57396, y: 0.019879997}
++  - {x: 0.43034, y: 0.019659996}
++  - {x: 0.30512, y: 0.048179984}
++  - {x: 0.21027, y: 0.10791999}
++  - {x: 0.10388, y: 0.20964998}
++  - {x: 0.04565, y: 0.32165003}
++  - {x: 0.01965, y: 0.42613}
++  - {x: 0.02085, y: 0.57434}
++  - {x: 0.05057, y: 0.67752004}
++  - {x: 0.11276, y: 0.79932}
++  - {x: 0.26198, y: 0.94131}
++  - {x: 0.41715, y: 0.99015}
+ --- !u!114 &3564162553359363886
+ MonoBehaviour:
+   m_ObjectHideFlags: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Scenes/RecoveredMain.unity
++++ b/Restoration/12_UnityReskin_20260922/Assets/Scenes/RecoveredMain.unity
+@@ -133518,6 +133518,32 @@
+     m_PersistentCalls:
+       m_Calls: []
+   hiddenSlots: 
++  replacementAttachment: 4
++  replacementTexturePath: RulesReskin/Chip2000
++  replacementUVs:
++  - {x: 0.5883, y: 0.99011}
++  - {x: 0.68216, y: 0.96511}
++  - {x: 0.79806, y: 0.89909}
++  - {x: 0.88874, y: 0.79466}
++  - {x: 0.96434, y: 0.64849}
++  - {x: 0.98049, y: 0.55403}
++  - {x: 0.97901, y: 0.41009003}
++  - {x: 0.93133, y: 0.2704}
++  - {x: 0.8738, y: 0.18734998}
++  - {x: 0.75929, y: 0.07925999}
++  - {x: 0.64089, y: 0.033879995}
++  - {x: 0.57396, y: 0.019879997}
++  - {x: 0.43034, y: 0.019659996}
++  - {x: 0.30512, y: 0.048179984}
++  - {x: 0.21027, y: 0.10791999}
++  - {x: 0.10388, y: 0.20964998}
++  - {x: 0.04565, y: 0.32165003}
++  - {x: 0.01965, y: 0.42613}
++  - {x: 0.02085, y: 0.57434}
++  - {x: 0.05057, y: 0.67752004}
++  - {x: 0.11276, y: 0.79932}
++  - {x: 0.26198, y: 0.94131}
++  - {x: 0.41715, y: 0.99015}
+ --- !u!4 &7167804709006001937
+ Transform:
+   m_ObjectHideFlags: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/Skeletal/AnNiu_TX.prefab
++++ b/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/Skeletal/AnNiu_TX.prefab
+@@ -2576,6 +2576,33 @@
+   m_OnCullStateChanged:
+     m_PersistentCalls:
+       m_Calls: []
++  hiddenSlots: 
++  replacementAttachment: 4
++  replacementTexturePath: RulesReskin/Chip2000
++  replacementUVs:
++  - {x: 0.5883, y: 0.99011}
++  - {x: 0.68216, y: 0.96511}
++  - {x: 0.79806, y: 0.89909}
++  - {x: 0.88874, y: 0.79466}
++  - {x: 0.96434, y: 0.64849}
++  - {x: 0.98049, y: 0.55403}
++  - {x: 0.97901, y: 0.41009003}
++  - {x: 0.93133, y: 0.2704}
++  - {x: 0.8738, y: 0.18734998}
++  - {x: 0.75929, y: 0.07925999}
++  - {x: 0.64089, y: 0.033879995}
++  - {x: 0.57396, y: 0.019879997}
++  - {x: 0.43034, y: 0.019659996}
++  - {x: 0.30512, y: 0.048179984}
++  - {x: 0.21027, y: 0.10791999}
++  - {x: 0.10388, y: 0.20964998}
++  - {x: 0.04565, y: 0.32165003}
++  - {x: 0.01965, y: 0.42613}
++  - {x: 0.02085, y: 0.57434}
++  - {x: 0.05057, y: 0.67752004}
++  - {x: 0.11276, y: 0.79932}
++  - {x: 0.26198, y: 0.94131}
++  - {x: 0.41715, y: 0.99015}
+ --- !u!114 &3840457174773134484
+ MonoBehaviour:
+   m_ObjectHideFlags: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/RulesReskin/Chip2000.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/RulesReskin/Chip2000.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
++    textureFormat: 4
+     textureCompression: 0
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+@@ -102,13 +89,13 @@
+     spriteID: 5e97eb03825dee720800000000000000
+     internalID: 0
+     vertices: []
+-    indices:
++    indices: 
+     edges: []
+     weights: []
+     secondaryTextures: []
+     nameFileIdTable: {}
+-  mipmapLimitGroupName:
++  mipmapLimitGroupName: 
+   pSDRemoveMatte: 0
+-  userData:
+-  assetBundleName:
+-  assetBundleVariant:
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/1.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/1.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/2.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/2.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/5.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/5.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/10.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/10.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/20.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/20.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/50.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/50.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/100.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/100.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/200.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/200.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/500.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/500.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/1000.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/1000.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/2000.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/Gameplay/Coins/2000.png.meta
+@@ -71,21 +71,8 @@
+     buildTarget: DefaultTexturePlatform
+     maxTextureSize: 2048
+     resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
+-    compressionQuality: 50
+-    crunchedCompression: 0
+-    allowsAlphaSplitting: 0
+-    overridden: 0
+-    ignorePlatformSupport: 0
+-    androidETC2FallbackOverride: 0
+-    forceMaximumCompressionQuality_BC6H_BC7: 0
+-  - serializedVersion: 3
+-    buildTarget: Standalone
+-    maxTextureSize: 2048
+-    resizeAlgorithm: 0
+-    textureFormat: -1
+-    textureCompression: 1
++    textureFormat: 4
++    textureCompression: 0
+     compressionQuality: 50
+     crunchedCompression: 0
+     allowsAlphaSplitting: 0
