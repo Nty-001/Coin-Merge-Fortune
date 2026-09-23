@@ -1,0 +1,272 @@
+--- a/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/RecoveredMain.prefab
++++ b/Restoration/12_UnityReskin_20260922/Assets/Prefabs/Runtime/RecoveredMain.prefab
+@@ -68464,7 +68464,7 @@
+   m_GameObject: {fileID: 4634996545240691693}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+   m_LocalPosition: {x: 0, y: 0, z: 0}
+-  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_LocalScale: {x: 0.6666667, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children: []
+   m_Father: {fileID: 7118816554744614111}
+@@ -68472,7 +68472,7 @@
+   m_AnchorMin: {x: 0.5, y: 0.5}
+   m_AnchorMax: {x: 0.5, y: 0.5}
+   m_AnchoredPosition: {x: 0, y: -25.028}
+-  m_SizeDelta: {x: 750, y: 250}
++  m_SizeDelta: {x: 1125, y: 250}
+   m_Pivot: {x: 0.5, y: 0.5}
+ --- !u!114 &6857618253794378724
+ MonoBehaviour:
+@@ -68602,7 +68602,7 @@
+   m_FillClockwise: 1
+   m_FillOrigin: 0
+   m_UseSpriteMesh: 0
+-  m_PixelsPerUnitMultiplier: 1
++  m_PixelsPerUnitMultiplier: 0.5333333
+ --- !u!223 &6061635225515379196
+ Canvas:
+   m_ObjectHideFlags: 0
+@@ -120553,6 +120553,7 @@
+   m_LocalScale: {x: 1, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children:
++  - {fileID: 4413133241159770928}
+   - {fileID: 9021289275703772997}
+   - {fileID: 8792971518910643172}
+   m_Father: {fileID: 4027008942003814127}
+@@ -120669,7 +120670,7 @@
+   m_PrefabInstance: {fileID: 0}
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 8046148278858231846}
+-  m_Enabled: 1
++  m_Enabled: 0
+   m_EditorHideFlags: 0
+   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+   m_Name: 
+@@ -151953,3 +151954,78 @@
+   m_FillOrigin: 0
+   m_UseSpriteMesh: 0
+   m_PixelsPerUnitMultiplier: 1
++--- !u!1 &8007927234695713618
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 4413133241159770928}
++  - component: {fileID: 8102191863752631693}
++  - component: {fileID: 7832943447704639573}
++  m_Layer: 5
++  m_Name: NoticePanelCorners
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!224 &4413133241159770928
++RectTransform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 8007927234695713618}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 0, y: 0, z: 0}
++  m_LocalScale: {x: 0.6666667, y: 1, z: 1}
++  m_ConstrainProportionsScale: 0
++  m_Children: []
++  m_Father: {fileID: 8242664576303315893}
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++  m_AnchorMin: {x: 0.5, y: 0.5}
++  m_AnchorMax: {x: 0.5, y: 0.5}
++  m_AnchoredPosition: {x: 0, y: 0}
++  m_SizeDelta: {x: 909, y: 94}
++  m_Pivot: {x: 0.5, y: 0.5}
++--- !u!222 &8102191863752631693
++CanvasRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 8007927234695713618}
++  m_CullTransparentMesh: 1
++--- !u!114 &7832943447704639573
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 8007927234695713618}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  m_Material: {fileID: 0}
++  m_Color: {r: 0.95, g: 0.78, b: 0.64, a: 0.8}
++  m_RaycastTarget: 0
++  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
++  m_Maskable: 1
++  m_OnCullStateChanged:
++    m_PersistentCalls:
++      m_Calls: []
++  m_Sprite: {fileID: 21300000, guid: ddd327dd1954a9b462d6e33e7fff2d5e, type: 3}
++  m_Type: 1
++  m_PreserveAspect: 0
++  m_FillCenter: 1
++  m_FillMethod: 4
++  m_FillAmount: 1
++  m_FillClockwise: 1
++  m_FillOrigin: 0
++  m_UseSpriteMesh: 0
++  m_PixelsPerUnitMultiplier: 0.42666665
+--- a/Restoration/12_UnityReskin_20260922/Assets/Scenes/RecoveredMain.unity
++++ b/Restoration/12_UnityReskin_20260922/Assets/Scenes/RecoveredMain.unity
+@@ -126419,7 +126419,7 @@
+   m_FillClockwise: 1
+   m_FillOrigin: 0
+   m_UseSpriteMesh: 0
+-  m_PixelsPerUnitMultiplier: 1
++  m_PixelsPerUnitMultiplier: 0.5333333
+ --- !u!222 &6984616429900557901
+ CanvasRenderer:
+   m_ObjectHideFlags: 0
+@@ -127256,7 +127256,7 @@
+   m_PrefabInstance: {fileID: 0}
+   m_PrefabAsset: {fileID: 0}
+   m_GameObject: {fileID: 6984616429900558055}
+-  m_Enabled: 1
++  m_Enabled: 0
+   m_EditorHideFlags: 0
+   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+   m_Name: 
+@@ -130588,7 +130588,7 @@
+   m_GameObject: {fileID: 6984616429900558023}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+   m_LocalPosition: {x: 0, y: 0, z: 0}
+-  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_LocalScale: {x: 0.6666667, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children: []
+   m_Father: {fileID: 6984616429900556560}
+@@ -130596,7 +130596,7 @@
+   m_AnchorMin: {x: 0.5, y: 0.5}
+   m_AnchorMax: {x: 0.5, y: 0.5}
+   m_AnchoredPosition: {x: 0, y: -25.028}
+-  m_SizeDelta: {x: 750, y: 250}
++  m_SizeDelta: {x: 1125, y: 250}
+   m_Pivot: {x: 0.5, y: 0.5}
+ --- !u!1 &6984616429900558023
+ GameObject:
+@@ -131210,6 +131210,7 @@
+   m_LocalScale: {x: 1, y: 1, z: 1}
+   m_ConstrainProportionsScale: 0
+   m_Children:
++  - {fileID: 1210060900}
+   - {fileID: 6984616429900558056}
+   - {fileID: 2064500317}
+   m_Father: {fileID: 6984616429900556554}
+@@ -152080,3 +152081,78 @@
+     m_VerticalOverflow: 0
+     m_LineSpacing: 1
+   m_Text: "\u6A21\u62DF\u64AD\u653E\u4E2D"
++--- !u!1 &1210060899
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1210060900}
++  - component: {fileID: 1210060902}
++  - component: {fileID: 1210060901}
++  m_Layer: 5
++  m_Name: NoticePanelCorners
++  m_TagString: Untagged
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!224 &1210060900
++RectTransform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1210060899}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 0, y: 0, z: 0}
++  m_LocalScale: {x: 0.6666667, y: 1, z: 1}
++  m_ConstrainProportionsScale: 0
++  m_Children: []
++  m_Father: {fileID: 6984616429900558054}
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++  m_AnchorMin: {x: 0.5, y: 0.5}
++  m_AnchorMax: {x: 0.5, y: 0.5}
++  m_AnchoredPosition: {x: 0, y: 0}
++  m_SizeDelta: {x: 909, y: 94}
++  m_Pivot: {x: 0.5, y: 0.5}
++--- !u!114 &1210060901
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1210060899}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  m_Material: {fileID: 0}
++  m_Color: {r: 0.95, g: 0.78, b: 0.64, a: 0.8}
++  m_RaycastTarget: 0
++  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
++  m_Maskable: 1
++  m_OnCullStateChanged:
++    m_PersistentCalls:
++      m_Calls: []
++  m_Sprite: {fileID: 21300000, guid: ddd327dd1954a9b462d6e33e7fff2d5e, type: 3}
++  m_Type: 1
++  m_PreserveAspect: 0
++  m_FillCenter: 1
++  m_FillMethod: 4
++  m_FillAmount: 1
++  m_FillClockwise: 1
++  m_FillOrigin: 0
++  m_UseSpriteMesh: 0
++  m_PixelsPerUnitMultiplier: 0.42666665
++--- !u!222 &1210060902
++CanvasRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1210060899}
++  m_CullTransparentMesh: 1
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/HomeReskin/Notice.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/HomeReskin/Notice.png.meta
+@@ -25,7 +25,7 @@
+   alignment: 0
+   spritePivot: {x: 0.5, y: 0.5}
+   spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
++  spriteBorder: {x: 48, y: 32, z: 48, w: 32}
+   alphaUsage: 1
+   alphaIsTransparency: 1
+   spriteSheet:
+--- a/Restoration/12_UnityReskin_20260922/Assets/Resources/HomeReskin/Bottom.png.meta
++++ b/Restoration/12_UnityReskin_20260922/Assets/Resources/HomeReskin/Bottom.png.meta
+@@ -25,7 +25,7 @@
+   alignment: 0
+   spritePivot: {x: 0.5, y: 0.5}
+   spritePixelsToUnits: 100
+-  spriteBorder: {x: 0, y: 78, z: 0, w: 60}
++  spriteBorder: {x: 90, y: 60, z: 90, w: 60}
+   alphaUsage: 1
+   alphaIsTransparency: 1
+   spriteSheet:
