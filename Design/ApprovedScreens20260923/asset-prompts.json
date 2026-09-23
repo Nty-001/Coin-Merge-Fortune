@@ -1,0 +1,78 @@
+{
+  "tool": "built-in image_gen__imagegen",
+  "sourceApproval": "用户：替换吧",
+  "jobs": [
+    {
+      "name": "FailPanel",
+      "ref": "01_game_over",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract the ENTIRE Game Over panel frame including protruding top gold crown, blue header with left/right golden stars, thin gold outline, pale cyan ray-pattern body, bottom small stars. Remove ALL text, all numbers, the entire green Revive button and play icon, and the orange X close button; seamlessly reconstruct panel underneath. Empty usable body and blank blue header for dynamic text. Preserve tall portrait shape and existing frame proportions. Only panel art.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/01_game_over.png"
+      ]
+    },
+    {
+      "name": "PrizePanel",
+      "ref": "03_lottery_reward",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ENTIRE blue-gold reward panel, top scroll ribbon, central small crown and stars, blue/cyan radial sunburst interior and gold crown corner fittings. Remove ALL words, ALL numbers, the entire 2000 coin, entire green Claim button, and bottom hint text; reconstruct underlying radial cyan background. Preserve tall shape exactly, top ribbon and crown intact. Empty ribbon and empty reward body. Only panel art.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/03_lottery_reward.png"
+      ]
+    },
+    {
+      "name": "RevivePanel",
+      "ref": "05_revive_success",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract entire compact blue-gold Resurrected panel, ribbon, stars, central small crown, cyan rays, gold crown corner fittings AND retain the green banknote heap in its exact place. Remove only ALL typography: Resurrected and +$2.33, reconstruct background. No new buttons. Preserve wide compact shape and banknote size/position. Blank ribbon title and blank lower amount area. Only panel art with money heap.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/05_revive_success.png"
+      ]
+    },
+    {
+      "name": "RatingPanel",
+      "ref": "06_rating",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract entire rating panel frame, cyan/royal blue header with two small cyan header stars, gold trim, pale cyan sunburst inner surface, gold crown corner fittings. Remove all text, all five large golden rating stars, entire green OK button, and entire orange X button. Seamlessly reconstruct background in these removed areas. Preserve square-like panel silhouette/proportions. Only empty panel art.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/06_rating.png"
+      ]
+    },
+    {
+      "name": "GreenButton",
+      "ref": "01_game_over",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ONLY the glossy lime-green and gold-rimmed horizontal capsule Revive action button at bottom of panel. Remove ALL text and the entire white circular play icon, replace their areas with continuous identical green button face. Preserve gold layered rim, lime yellow upper edge, rounded ends, white highlights and shallow bottom shadow. Wide aspect ratio exactly ~4:1, output approximately 1200x300. Whole button visible, tight transparent margin. No panel or decorations.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/01_game_over.png"
+      ]
+    },
+    {
+      "name": "MachineBody",
+      "ref": "02_lottery",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ONLY the complete blue/gold lottery machine body, from its green dome to its two gold/blue feet, including both side hinge housings, screws and bottom dispensing mouth. Remove the entire right-side green-ball lever and gold shaft leaving its side hinge housing intact. Remove all eight pale prize tiles and all prizes/coins/text inside the display, leaving ONE continuous clean dark royal-blue recessed rectangular display well. Preserve the exact original machine geometry, front panel, blue gold trim, stars, knobs, screen well and dome. NO separate button beneath machine. High-resolution transparent asset.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/02_lottery.png"
+      ]
+    },
+    {
+      "name": "LeverKnob",
+      "ref": "02_lottery",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ONLY the glossy spherical emerald-green ball from the lottery machine's right hand lever. Preserve exact original gloss, white oval glint upper left, dark green bottom edge and gentle asymmetric sphere shape. No shaft, no gold collar, no machine. One green ball on genuine transparent background, tight square canvas.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/02_lottery.png"
+      ]
+    },
+    {
+      "name": "LeverShaft",
+      "ref": "02_lottery",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ONLY the slender gold metallic shaft underneath the right green ball of the lottery machine. Include only the long golden beveled metal rod, slightly leaning right at top, not the green ball and not the lower machine side housing. Retain the same slight tilt about 12 degrees from vertical, round ends, gold specular shading. One narrow shaft on genuine transparent background, tight portrait canvas.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/02_lottery.png"
+      ]
+    },
+    {
+      "name": "PrizeTile",
+      "ref": "02_lottery",
+      "prompt": "Use case: background-extraction and precise-object-edit. Create production-ready 2D Unity UI sprite from the supplied APPROVED mockup, preserve the exact approved colors, shapes, gloss, bevels, trim and decoration. Isolate only the specified foreground element. Output genuine transparent RGBA outside it (not checkerboard, no black matte), closely fitted canvas with 8px transparent margin. Straight frontal orthographic view, crisp high resolution. No redesign, no screenshot background, no HUD, no typography unless specifically retained. Extract ONLY one pale icy-cyan rounded rectangular prize tile from the 3x3 display, e.g. top-left tile. Remove the cash illustration completely and reconstruct its plain subtle cyan glass gradient surface. Preserve bright cyan-white beveled edge, soft white shine, four rounded corners, exact near-square aspect ratio ~1.1:1. ONE empty tile, no coins, no cash, no numbers, no machine.",
+      "referenced_image_paths": [
+        "C:/Users/001/Desktop/Coin Merge Fortune/Design/PendingScreens20260923/02_lottery.png"
+      ]
+    }
+  ]
+}
