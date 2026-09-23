@@ -1,0 +1,106 @@
+{
+  "panels": [
+    {
+      "id": "PrivacyPanel",
+      "ref": "01_privacy",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove title, entire policy text, scroll bar and top-right close button. Keep NO stars because input privacy frame has none. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "TermsPanel",
+      "ref": "02_terms",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove title, entire legal body text and top-right close button. Preserve the two light blue decorative stars on header. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "VerifyPanel",
+      "ref": "03_withdraw_request",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove ALL titles, money amounts, all inner status cards, their icons and ALL buttons. Keep two decorative blue stars on header. The entire lower content body must be one clean empty pale blue surface. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "StagePanel",
+      "ref": "04_next_stage",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove title, amount, close button, inner condition card, progress bar and button. Keep header two stars. The lower content body must be clean plain pale blue. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "EmailPanel",
+      "ref": "05_email",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove all text, close button, PayPal card, check badge, input box, helper text, disabledbutton. Preserve outer sapphiregoldframe and two goldcrowncorner guards. Empty blue header and pale blue body. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "LimitPanel",
+      "ref": "08_limit",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove title, close, blue peopleicon, text and OKbutton. Retain outer frame exactly, blank blue header, plain pale blue body. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    },
+    {
+      "id": "NewbiePanel",
+      "ref": "10_newbie",
+      "prompt": "Use case: background-extraction and precise-object-edit. Production Unity UI sprite. Isolate ONLY the modal panel from the supplied APPROVED screenshot. Keep its exact visible frame shape, aspect ratio, sapphire gradients, thin gold bevel/ribbon, highlights and rounded corners. Remove ALL game scenery and scrim outside panel. Output cropped tightly around this single panel, with only 12 pixels of genuinely TRANSPARENT alpha padding, no checkerboard painted in. Do not redesign or stretch the frame. Remove title,cashpile,amount,Claimbutton,hand andconfetti. Preserve header decorative stars and corner guards. Entire body plain pale blue without any sunburst, glow, rays, sparkles or radial pattern. No letters, numbers or embedded controls anywhere. High resolution clean antialiased edges. Plain fill behind erased content must blend seamlessly. This is a production empty panel, not a screenshot."
+    }
+  ],
+  "components": [
+    {
+      "id": "LimitPanel",
+      "ref": "08_limit",
+      "prompt": "Extract ONLY the empty tall blue gold modal frame, remove ALL content, title, close, people and button. TRANSPARENT ALPHA outside rounded frame, NO blue background. Keep approved frame aspect ratio 825:1151. Header occupies 16% height. Plain ice blue body."
+    },
+    {
+      "id": "StatusCard",
+      "ref": "03_withdraw_request",
+      "prompt": "Extract ONLY the pale ice blue inset status rectangle behind 'Fee:0 Received:$500'. Remove all text. Gold thin double bevel outline, glossy white inner edging, rounded corners. Single rectangle 740:198 aspect. Transparent alpha outside. No frame, no screenshot."
+    },
+    {
+      "id": "Field",
+      "ref": "05_email",
+      "prompt": "Extract ONLY the empty Email input field. Remove placeholder text. Preserve very slim gold rim/blue inner bevel, pale iceblue gradient fill, gloss upper band, rounded corners. Single horizontal field 745:125 aspect. Transparent outside. No other elements."
+    },
+    {
+      "id": "DisabledButton",
+      "ref": "05_email",
+      "prompt": "Extract ONLY disabled silver-blue Confirm pill button, remove ALL letters and their shadows. Preserve glossy reflection, silverblue center, thin gold raised rim. Single horizontal pill aspect600:144, transparent outside."
+    },
+    {
+      "id": "People",
+      "ref": "08_limit",
+      "prompt": "Extract ONLY the central icon of three sapphire blue people with gold rims. Exact matching icon, 520:370 aspect, transparent outside. No panel or text."
+    },
+    {
+      "id": "ProgressTrack",
+      "ref": "04_next_stage",
+      "prompt": "Extract ONLY the dark royal blue EMPTY progress bar with thin gold outer bevel, cyan inner bevel and rounded ends. Remove 0% number. Horizontal single track aspect630:80. Transparent alpha outside. No panel or text."
+    },
+    {
+      "id": "StatusIcons",
+      "ref": "03_withdraw_request",
+      "prompt": "Create production sprite atlas of ONLY the three existing status icons in approved image. A SINGLE horizontal row of THREE equal square cells, 256x256 each (canvas768x256), with generous transparent gutter inside each cell. Left cell green round check with cyan rim. Middle cell cyan-blue circular loading ring with white center HOLE, NOT opaque white. Right cell upright golden hourglass with blue sand. No letters, numbers, background. True alpha everywhere outside icons. Keep exact graphic style."
+    }
+  ],
+  "reviewRound2": [
+    {
+      "id": "06_brazil",
+      "prompt": "Brazil account form. Use title 'Conta saque', small gold close top-right. A compact selected PagBank tile. Three vertically aligned fields: 'E-mail', 'Nome', 'CPF', pale blue empty entry wells with a thin blue rim. Helper 'Por favor, verifique sua conta cuidadosamente'. Silver blue disabled pill 'Confirmar' with thin gold rim. Keep enough space and large labels, harmonize with the already approved Email account page but distinctly simplify the excessive gold trim."
+    },
+    {
+      "id": "07_phone",
+      "prompt": "Indonesian account form. Title 'Rekening tarik tunai', gold close. Small selected DANA tile at upper left, same layout as approved Email form. Two fields 'Nomor HP' and 'Nama', pale blue empty entry wells with a thin blue rim. Helper 'Harap periksa akun Anda dengan teliti'. Disabled silver blue button 'Konfirmasi'. Compact uncluttered proportions, no huge full-width payment platform row."
+    },
+    {
+      "id": "09_rules",
+      "prompt": "Merge rules modal. Simple sapphire header title 'Merge rules', gold close. Remove the entire decorative coins crest above the header. Pale blue body with concise paragraph 'Two identical coins merge into a higher-level coin.' Subheading 'Synthesis order'. Show EXACTLY ELEVEN distinct crisp user-style coins along a thin sapphire serpentine arrow: first row left-to-right 1 silver, 2 orange, 5 green, 10 purple, 20 red, 50 cyan; second row RIGHT-to-LEFT 100 gold, 200 faceted blue, 500 magenta ornate, 1000 purple gold ornate, 2000 crowned gold red jewels. No omissions, no duplicated denominations. Each coin number is legible; preserve denominations. Below, glossy green gold-rim 'OK' button. Modal centered and no clipped elements."
+    },
+    {
+      "id": "11_guide_drag",
+      "prompt": "First move coin tutorial. Redesign ONLY tutorial: a compact pale blue speech card, no massive corner caps, thin blue/gold outline, sitting below the drop zone. Two-line exact text 'Swipe left/right' and 'Adjust drop position'. Small silver 1 coin icon instead of 2000 in card. White glove and two neat blue left/right arrows around the draggable silver 1 coin at upper middle. Don't add gold to HUD, don't redraw the established HUD, keep rest of original screenshot unchanged."
+    },
+    {
+      "id": "12_guide_merge",
+      "prompt": "Merge tutorial overlay. Compact pale blue rounded card with thin sapphire rim and small gold accents, no ornate guard corners. Show small simple example: two silver 1 coins, plus, arrow to orange 2 coin. Text 'Two identical coins merge into a higher-level coin'. Lower-right small green gold-rim 'Next' button and white glove indicating it. Keep card centered and sized to original tutorial region. Rest of screenshot unchanged."
+    },
+    {
+      "id": "13_guide_balance",
+      "prompt": "Balance withdrawal tutorial. Compact pale blue rounded speech card just below top balance, thin sapphire rim, tiny gold accents. Small bundle of green banknotes icon (NOT 2000 coin). Exact text 'Cash earned is here!' and 'Reach the target to withdraw'. Short pointer points up to cash balance; white glove at existing Withdraw button. No cropped hand outside screen. Keep all original HUD intact and dimmed except balance target."
+    },
+    {
+      "id": "14_guide_coin",
+      "prompt": "Coin withdrawal tutorial. Compact pale blue rounded speech card under highlighted 2000 coin withdrawal icon, thin sapphire border and subtle gold accent. Small original ornate crowned 2000 coin icon. Exact text 'Merge big coins to unlock cash withdrawals'. Small green gold-rim 'Start' button lower right with glove. A clear pointer toward top-left coin icon. Preserve the source game's HUD rather than adding gold borders or changing its layout."
+    }
+  ]
+}
