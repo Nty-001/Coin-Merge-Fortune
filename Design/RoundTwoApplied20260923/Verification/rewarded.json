@@ -1,0 +1,323 @@
+{
+    "error": "",
+    "screens": [
+        {
+            "name": "06_brazil",
+            "scope": "GameRealWDAccountBR",
+            "texts": [
+                "E-mail",
+                "Digite seu e-mail",
+                "Nome",
+                "Insira o nome completo",
+                "CPF",
+                "Enter your CPF",
+                "Por favor, verifique sua conta cuidadosamente",
+                "Confirmar",
+                "Conta saque"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RoundTwoApproved/GoldCheck",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/BrazilPanel",
+                "RoundTwoApproved/PagBankCard"
+            ],
+            "file": "06_brazil.png"
+        },
+        {
+            "name": "Brazil_filled",
+            "scope": "GameRealWDAccountBR",
+            "texts": [
+                "E-mail",
+                "review@example.com",
+                "Nome",
+                "Review User",
+                "CPF",
+                "12345678900",
+                "Por favor, verifique sua conta cuidadosamente",
+                "Confirmar",
+                "Conta saque"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RoundTwoApproved/GoldCheck",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/BrazilPanel",
+                "RoundTwoApproved/PagBankCard"
+            ],
+            "file": "Brazil_filled.png"
+        },
+        {
+            "name": "07_phone",
+            "scope": "GameRealWDAccountID",
+            "texts": [
+                "Nomor HP",
+                "Masukkan email Anda",
+                "Nama",
+                "Masukkan nama lengkap",
+                "Harap periksa akun Anda dengan teliti",
+                "Konfirmasi",
+                "Rekening tarik tunai"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RemainingApproved/Check",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/PhonePanel",
+                "RoundTwoApproved/DanaCard"
+            ],
+            "file": "07_phone.png"
+        },
+        {
+            "name": "Phone_filled",
+            "scope": "GameRealWDAccountID",
+            "texts": [
+                "Nomor HP",
+                "081234567890",
+                "Nama",
+                "Review User",
+                "Harap periksa akun Anda dengan teliti",
+                "Konfirmasi",
+                "Rekening tarik tunai"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RemainingApproved/Check",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/PhonePanel",
+                "RoundTwoApproved/DanaCard"
+            ],
+            "file": "Phone_filled.png"
+        },
+        {
+            "name": "Phone_TH",
+            "scope": "GameRealWDAccountID",
+            "texts": [
+                "อีเมล",
+                "กรุณากรอกอีเมล",
+                "ชื่อ",
+                "กรุณากรอกชื่อเต็ม",
+                "กรุณาตรวจสอบบัญชีของคุณอย่างละเอียด",
+                "ยืนยัน",
+                "บัญชีถอนเงิน"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RemainingApproved/Check",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/PhonePanel",
+                "RoundTwoApproved/DanaCard"
+            ],
+            "file": "Phone_TH.png"
+        },
+        {
+            "name": "11_guide_drag",
+            "scope": "GuideDialog",
+            "texts": [
+                "Swipe left/right\nAdjust drop position"
+            ],
+            "resources": [
+                "RoundTwoApproved/DragPanel",
+                "Gameplay/Coins/1",
+                "RoundTwoApproved/GuideArrow"
+            ],
+            "file": "11_guide_drag.png"
+        },
+        {
+            "name": "12_guide_merge",
+            "scope": "GuideDialog",
+            "texts": [
+                "Next",
+                "Two identical coins can be merged into a higher-level coin",
+                "+"
+            ],
+            "resources": [
+                "ApprovedScreens/GreenButton",
+                "Gameplay/Coins/1",
+                "RoundTwoApproved/MergePanel",
+                "Gameplay/Coins/2",
+                "RoundTwoApproved/GuideArrow"
+            ],
+            "file": "12_guide_merge.png"
+        },
+        {
+            "name": "13_guide_balance",
+            "scope": "GuideDialog",
+            "texts": [
+                "Cash earned is here!\nBalance met, withdraw now!"
+            ],
+            "resources": [
+                "RoundTwoApproved/CashBubble"
+            ],
+            "file": "13_guide_balance.png"
+        },
+        {
+            "name": "14_guide_coin",
+            "scope": "GuideDialog",
+            "texts": [
+                "Big coins can also be exchanged for cash, and withdrawals will be received!",
+                "Start"
+            ],
+            "resources": [
+                "ApprovedScreens/GreenButton",
+                "Gameplay/Coins/2000",
+                "RoundTwoApproved/CoinBubble"
+            ],
+            "file": "14_guide_coin.png"
+        },
+        {
+            "name": "Rules_reveal_start",
+            "scope": "mergeRuleDialog",
+            "texts": [
+                "Merge rules",
+                "Two identical coins can be merged into a higher-level coin, combine into a big coin, and withdraw a large amount of cash!",
+                "Synthesis order",
+                "OK",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RoundTwoApproved/RulesPanel",
+                "RemainingApproved/Close",
+                "ApprovedScreens/GreenButton",
+                "RoundTwoApproved/RulesTrack",
+                "Gameplay/Coins/200",
+                "Gameplay/Coins/500",
+                "Gameplay/Coins/1000",
+                "Gameplay/Coins/2000"
+            ],
+            "file": "Rules_reveal_start.png"
+        },
+        {
+            "name": "09_rules",
+            "scope": "mergeRuleDialog",
+            "texts": [
+                "Merge rules",
+                "Two identical coins can be merged into a higher-level coin, combine into a big coin, and withdraw a large amount of cash!",
+                "Synthesis order",
+                "OK",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›",
+                "›"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RoundTwoApproved/RulesPanel",
+                "RemainingApproved/Close",
+                "ApprovedScreens/GreenButton",
+                "RoundTwoApproved/RulesTrack",
+                "Gameplay/Coins/200",
+                "Gameplay/Coins/500",
+                "Gameplay/Coins/1000",
+                "Gameplay/Coins/2000",
+                "Gameplay/Coins/1",
+                "Gameplay/Coins/2",
+                "Gameplay/Coins/5",
+                "Gameplay/Coins/10",
+                "Gameplay/Coins/20",
+                "Gameplay/Coins/50",
+                "Gameplay/Coins/100"
+            ],
+            "file": "09_rules.png"
+        },
+        {
+            "name": "Tall_brazil",
+            "scope": "GameRealWDAccountBR",
+            "texts": [
+                "E-mail",
+                "Digite seu e-mail",
+                "Nome",
+                "Insira o nome completo",
+                "CPF",
+                "Enter your CPF",
+                "Por favor, verifique sua conta cuidadosamente",
+                "Confirmar",
+                "Conta saque"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RoundTwoApproved/GoldCheck",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/BrazilPanel",
+                "RoundTwoApproved/PagBankCard"
+            ],
+            "file": "Tall_brazil.png"
+        },
+        {
+            "name": "Tall_phone",
+            "scope": "GameRealWDAccountID",
+            "texts": [
+                "Nomor HP",
+                "Masukkan email Anda",
+                "Nama",
+                "Masukkan nama lengkap",
+                "Harap periksa akun Anda dengan teliti",
+                "Konfirmasi",
+                "Rekening tarik tunai"
+            ],
+            "resources": [
+                "MenuArt/4768ca23e1b5df8e42aadde59351d8b3",
+                "RemainingApproved/Close",
+                "RemainingApproved/Check",
+                "RoundTwoApproved/BlueField",
+                "RemainingApproved/DisabledButton",
+                "RoundTwoApproved/PhonePanel",
+                "RoundTwoApproved/DanaCard"
+            ],
+            "file": "Tall_phone.png"
+        },
+        {
+            "name": "Tall_coin_guide",
+            "scope": "GuideDialog",
+            "texts": [
+                "Big coins can also be exchanged for cash, and withdrawals will be received!",
+                "Start"
+            ],
+            "resources": [
+                "ApprovedScreens/GreenButton",
+                "Gameplay/Coins/2000",
+                "RoundTwoApproved/CoinBubble"
+            ],
+            "file": "Tall_coin_guide.png"
+        },
+        {
+            "name": "Cash_guide_JP",
+            "scope": "GuideDialog",
+            "texts": [
+                "獲得した現金はここ！\n残高達成で即出金！"
+            ],
+            "resources": [
+                "RoundTwoApproved/CashBubble"
+            ],
+            "file": "Cash_guide_JP.png"
+        }
+    ]
+}

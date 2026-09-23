@@ -10,4 +10,4 @@ Validation: Unity 2022.3.62f3c1 imported and rendered the seven screens in an is
 
 Art was extracted and cleaned with built-in image_gen from the approved designs. Unity imports use full-rect alpha sprites, RGBA32, no mipmaps or texture compression. Text, status badges, input fields and buttons are separate native objects. See prompts.json for provenance.
 
-The other seven designs are revised under `../RemainingSkinReview20260923/Round2` and are still pending approval. They have not been installed. The ordinary level-selection version remains excluded.
+The next six designs and the subsequently selected Rules A are now applied; see `../RoundTwoApplied20260923/index.html` for their actual runtime results. The ordinary level-selection version remains excluded.
