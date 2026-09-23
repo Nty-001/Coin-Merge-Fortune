@@ -121,7 +121,7 @@ namespace CoinMerge.Recovery.Editor
             n[24].gameObject.SetActive(false);n[22].gameObject.SetActive(false);
             v.normalTitle.transform.SetParent(normal,false);v.normalAmount.transform.SetParent(normal,false);
             var normalArt=normal.Find("ReferenceReward");if(normalArt)UnityEngine.Object.DestroyImmediate(normalArt.gameObject);
-            var frame=NewImage("ReferenceReward",normal);At(frame.rectTransform,normal,0,74.68f,719,613.84f);
+            var frame=NewImage("ReferenceReward",normal);At(frame.rectTransform,normal,0,74.68f,719,719);
             var normalSkin=new Skin(frame.gameObject);normalSkin.Set(frame,Art+"RewardPanel");normalSkin.Save();
             PlaceRewardLabel(v.normalTitle,frame.rectTransform,627,174,600,230,83,false);
             PlaceRewardLabel(v.normalAmount,frame.rectTransform,627,964,730,300,112,true);
@@ -132,7 +132,7 @@ namespace CoinMerge.Recovery.Editor
             At((RectTransform)group.transform,normal.parent,-2.135f,-2.693f,800,800);
             v.doubleRewardGroup=group;var skin=new Skin(group);
             // Original DJB_TX coin crown reaches y454.8; original 662x535 body ends at -300.576.
-            const float width=719,height=755.376f,cy=77.112f;
+            const float width=719,height=719,cy=77.112f;
             void Coin(string value,float x,float y,float diameter)
             {
                 var coin=NewImage("Coin"+value,group.transform);At(coin.rectTransform,group.transform,(x-627)*width/1254,cy+(627-y)*height/1254,diameter*width/1254,diameter*width/1254);
@@ -142,8 +142,7 @@ namespace CoinMerge.Recovery.Editor
             var panel=NewImage("DoubleRewardPanel",group.transform);At(panel.rectTransform,group.transform,0,cy,width,height);skin.Set(panel,Art+"DoubleRewardPanel");
             v.doubleRewardTitle=NewText("Title",group.transform);v.doubleRewardAmount=NewText("Amount",group.transform);
             PlaceRewardLabel(v.doubleRewardTitle,panel.rectTransform,627,392,835,230,73,false);
-            v.doubleRewardTitle.rectTransform.localScale=new Vector3(.83f,1,1);
-            v.doubleRewardTitle.rectTransform.sizeDelta=new Vector2(v.doubleRewardTitle.rectTransform.sizeDelta.x/.83f,v.doubleRewardTitle.rectTransform.sizeDelta.y);
+            v.doubleRewardTitle.rectTransform.localScale=Vector3.one;
             PlaceRewardLabel(v.doubleRewardAmount,panel.rectTransform,627,1017,730,300,112,true);
             skin.Save();group.SetActive(false);
         }

@@ -158,6 +158,7 @@ namespace CoinMerge.Recovery.Editor
             skin.Set(machine,Art+"MachineBody");
             var lever=machine.GetComponent<RecoveredWheelLever>();if(!lever)throw new InvalidOperationException("Missing original source-driven lever");
             skin.Set(lever.knob.GetComponent<Image>(),Art+"LeverKnob",true);skin.Set(lever.shaft.GetComponent<Image>(),Art+"LeverShaft");
+            RewardMotionAuthor.CalibrateLever(v);
             for(int i=0;i<v.slots.Length;i++)
             {
                 var slot=v.slots[i];skin.Set(n[32+i*4].GetComponent<Image>(),Art+"PrizeTile");

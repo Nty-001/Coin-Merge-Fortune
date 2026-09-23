@@ -1,0 +1,22 @@
+{
+  "RewardPanel": {
+    "mode": "built-in imagegen edit",
+    "prompt": "Use case: precise-object-edit. Input is edit target: square normal reward frame; retain full square canvas. Produce the clean EMPTY popup frame for Unity, exactly preserving current banner, crown, banner stars, trim, corner crowns and all their sizes/positions. REMOVE the entire central pile of green cash, its shadows, ALL white sunburst rays/radial wedges, all interior stars/dots and central glow. Fill the ENTIRE large interior body with a uniform OPAQUE pastel light blue #AEDFF8. The interior must be empty, plain and completely opaque. No money, no rays, no star sparkles, no gradients. Separate localized money and a rotating light will be placed in Unity later. Export OPAQUE RGB color plate: outside the popup use dark charcoal #202020; do NOT make anything transparent. Original sprite silhouette alpha will be reused separately in Unity. Keep exact aspect ratio, total canvas margins and original geometry; no redesign, no crop, no text.",
+    "output": "Restoration/12_UnityReskin_20260922/Assets/Resources/RewardMotion/Flat/RewardPanel.png"
+  },
+  "DoubleRewardPanel": {
+    "mode": "built-in imagegen edit",
+    "prompt": "Use case: precise-object-edit. Input is edit target: square double reward frame; retain the large empty area ABOVE the crown and banner exactly; full square canvas. Produce the clean EMPTY popup frame for Unity, exactly preserving current banner, crown, banner stars, trim, corner crowns and all their sizes/positions. REMOVE the entire central pile of green cash, its shadows, ALL white sunburst rays/radial wedges, all interior stars/dots and central glow. Fill the ENTIRE large interior body with a uniform OPAQUE pastel light blue #AEDFF8. The interior must be empty, plain and completely opaque. No money, no rays, no star sparkles, no gradients. Separate localized money and a rotating light will be placed in Unity later. Export OPAQUE RGB color plate: outside the popup use dark charcoal #202020; do NOT make anything transparent. Original sprite silhouette alpha will be reused separately in Unity. Keep exact aspect ratio, total canvas margins and original geometry; no redesign, no crop, no text.",
+    "output": "Restoration/12_UnityReskin_20260922/Assets/Resources/RewardMotion/Flat/DoubleRewardPanel.png"
+  },
+  "RevivePanel": {
+    "mode": "built-in imagegen edit",
+    "prompt": "Use case: precise-object-edit. Input is edit target: landscape revive frame; retain full landscape canvas. Produce the clean EMPTY popup frame for Unity, exactly preserving current banner, crown, banner stars, trim, corner crowns and all their sizes/positions. REMOVE the entire central pile of green cash, its shadows, ALL white sunburst rays/radial wedges, all interior stars/dots and central glow. Fill the ENTIRE large interior body with a uniform OPAQUE pastel light blue #AEDFF8. The interior must be empty, plain and completely opaque. No money, no rays, no star sparkles, no gradients. Separate localized money and a rotating light will be placed in Unity later. Export OPAQUE RGB color plate: outside the popup use dark charcoal #202020; do NOT make anything transparent. Original sprite silhouette alpha will be reused separately in Unity. Keep exact aspect ratio, total canvas margins and original geometry; no redesign, no crop, no text.",
+    "output": "Restoration/12_UnityReskin_20260922/Assets/Resources/RewardMotion/Flat/RevivePanel.png"
+  },
+  "PrizePanel": {
+    "mode": "built-in imagegen edit",
+    "prompt": "Use case: precise-object-edit. Edit target: the attached tall blank blue and gold prize popup. Remove ALL white radial rays, star sparkles and glow in the light-blue interior, replacing them with a completely OPAQUE uniform solid pastel light-blue fill #AEDFF8, covering the ENTIRE interior. No transparent hole anywhere inside the panel. Keep crown, banner, borders and all outside dimensions at exactly the same positions. Do not add text or objects. Output an OPAQUE RGB color plate, not a transparent PNG: replace the transparent OUTSIDE background with solid dark charcoal #202020. The original silhouette alpha will be applied separately in the Unity shader, so this output must have opaque pixels everywhere. Preserve exact full tall canvas and framing including top and bottom margins; no cropping or stretching.",
+    "output": "Restoration/12_UnityReskin_20260922/Assets/Resources/RewardMotion/Flat/PrizePanel.png"
+  }
+}
